@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Bleeding",
+    "image": "condition-cards/bleeding.png"
+  },
+  {
+    "name": "Focused",
+    "image": "condition-cards/focused.png"
+  },
+  {
+    "name": "Stunned",
+    "image": "condition-cards/stunned.png"
+  },
+  {
+    "name": "Weakened",
+    "image": "condition-cards/weakened.png"
+  },
+  {
+    "name": "Hidden",
+    "image": "condition-cards/hidden.png"
+  }
+]

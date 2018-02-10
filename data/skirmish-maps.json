@@ -1,0 +1,197 @@
+[
+  {
+    "id": 0,
+    "name": "Geonosis Foundry",
+    "image": "skirmish-maps/geonosis-foundry.png"
+  },
+  {
+    "id": 1,
+    "name": "Coruscant Landfill",
+    "image": "skirmish-maps/coruscant-landfill.png"
+  },
+  {
+    "id": 2,
+    "name": "Bespin Tibanna Facility",
+    "image": "skirmish-maps/bespin-tibanna-facility.png"
+  },
+  {
+    "id": 3,
+    "name": "Endor Wilderness",
+    "image": "skirmish-maps/endor-wilderness.png"
+  },
+  {
+    "id": 4,
+    "name": "Corellian Underground",
+    "image": "skirmish-maps/corellian-underground.png"
+  },
+  {
+    "id": 5,
+    "name": "Anchorhead Bar",
+    "image": "skirmish-maps/anchorhead-bar.png"
+  },
+  {
+    "id": 6,
+    "name": "Climate Research Camp",
+    "image": "skirmish-maps/climate-research-camp.png"
+  },
+  {
+    "id": 7,
+    "name": "Chopper Base Atollon",
+    "image": "skirmish-maps/chopper-base-atollon.png"
+  },
+  {
+    "id": 8,
+    "name": "Echo Base",
+    "image": "skirmish-maps/echo-base.png"
+  },
+  {
+    "id": 9,
+    "name": "Development Facility",
+    "image": "skirmish-maps/development-facility.png"
+  },
+  {
+    "id": 10,
+    "name": "Imperial Command Hub",
+    "image": "skirmish-maps/imperial-command-hub.png"
+  },
+  {
+    "id": 11,
+    "name": "Jabba's Palace",
+    "image": "skirmish-maps/jabbas-palace.png"
+  },
+  {
+    "id": 12,
+    "name": "ISB Training Grounds",
+    "image": "skirmish-maps/isb-training-grounds.png"
+  },
+  {
+    "id": 13,
+    "name": "Imperial Labour Camp",
+    "image": "skirmish-maps/imperial-labour-camp.png"
+  },
+  {
+    "id": 14,
+    "name": "Kuat Space Station",
+    "image": "skirmish-maps/kuat-space-station.png"
+  },
+  {
+    "id": 15,
+    "name": "Lothal Safehouse",
+    "image": "skirmish-maps/lothal-safehouse.png"
+  },
+  {
+    "id": 16,
+    "name": "ISB Headquarters",
+    "image": "skirmish-maps/isb-headquarters.png"
+  },
+  {
+    "id": 17,
+    "name": "Hoth Battle Station",
+    "image": "skirmish-maps/hoth-battle-station.png"
+  },
+  {
+    "id": 18,
+    "name": "Hangar Bay",
+    "image": "skirmish-maps/hangar-bay.png"
+  },
+  {
+    "id": 19,
+    "name": "Hoth Weather Shelter",
+    "image": "skirmish-maps/hoth-weather-shelter.png"
+  },
+  {
+    "id": 20,
+    "name": "Kashyyyk Station",
+    "image": "skirmish-maps/kashyyyk-station.png"
+  },
+  {
+    "id": 21,
+    "name": "Imperial Research Lab",
+    "image": "skirmish-maps/imperial-research-lab.png"
+  },
+  {
+    "id": 22,
+    "name": "Imperial Space Station",
+    "image": "skirmish-maps/imperial-space-station.png"
+  },
+  {
+    "id": 23,
+    "name": "Sewers Of Nar Shaddaa",
+    "image": "skirmish-maps/sewers-of-nar-shaddaa.png"
+  },
+  {
+    "id": 24,
+    "name": "Moisture Farm",
+    "image": "skirmish-maps/moisture-farm.png"
+  },
+  {
+    "id": 25,
+    "name": "Ord Mantell Junkyard",
+    "image": "skirmish-maps/ord-mantell-junkyard.png"
+  },
+  {
+    "id": 26,
+    "name": "Mos Eisley Outskirts",
+    "image": "skirmish-maps/mos-eisley-outskirts.png"
+  },
+  {
+    "id": 27,
+    "name": "Massassi Ruins",
+    "image": "skirmish-maps/massassi-ruins.png"
+  },
+  {
+    "id": 28,
+    "name": "Nelvaanian Warzone",
+    "image": "skirmish-maps/nelvaanian-warzone.png"
+  },
+  {
+    "id": 29,
+    "name": "Mos Eisley Cantina",
+    "image": "skirmish-maps/mos-eisley-cantina.png"
+  },
+  {
+    "id": 30,
+    "name": "Tarkin Initiative Labs",
+    "image": "skirmish-maps/tarkin-initiative-labs.png"
+  },
+  {
+    "id": 31,
+    "name": "Training Ground",
+    "image": "skirmish-maps/training-ground.png"
+  },
+  {
+    "id": 32,
+    "name": "Wasteland Outpost",
+    "image": "skirmish-maps/wasteland-outpost.png"
+  },
+  {
+    "id": 33,
+    "name": "Tython Meditation Field",
+    "image": "skirmish-maps/tython-meditation-field.png"
+  },
+  {
+    "id": 34,
+    "name": "Wasskah Hunting Ground",
+    "image": "skirmish-maps/wasskah-hunting-ground.png"
+  },
+  {
+    "id": 35,
+    "name": "Mos Eisley Back Alleys",
+    "image": "skirmish-maps/mos-eisley-back-alleys.png"
+  },
+  {
+    "id": 36,
+    "name": "The Pit of Carkoon",
+    "image": "skirmish-maps/the-pit-of-carkoon.png"
+  },
+  {
+    "id": 37,
+    "name": "Nal Hutta Swamps",
+    "image": "skirmish-maps/nal-hutta-swamps.png"
+  },
+  {
+    "id": 38,
+    "name": "Endor Defense Station",
+    "image": "skirmish-maps/endor-defense-station.png"
+  }
+]

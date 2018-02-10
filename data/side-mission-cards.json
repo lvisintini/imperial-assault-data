@@ -1,0 +1,194 @@
+[
+  {
+    "id": 0,
+    "name": "Hunted Down",
+    "color": "Green",
+    "image": "side-mission-cards/hunted-down.png"
+  },
+  {
+    "id": 1,
+    "name": "Canyon Run",
+    "color": "Grey",
+    "image": "side-mission-cards/canyon-run.png"
+  },
+  {
+    "id": 2,
+    "name": "Past Life Enemies",
+    "color": "Red",
+    "image": "side-mission-cards/past-life-enemies.png"
+  },
+  {
+    "id": 3,
+    "name": "Shady Dealings",
+    "color": "Red",
+    "image": "side-mission-cards/shady-dealings.png"
+  },
+  {
+    "id": 4,
+    "name": "Constant Vigilance",
+    "color": "Red",
+    "image": "side-mission-cards/constant-vigilance.png"
+  },
+  {
+    "id": 5,
+    "name": "Know Your Enemy",
+    "color": "Red",
+    "image": "side-mission-cards/know-your-enemy.png"
+  },
+  {
+    "id": 6,
+    "name": "Preventative Measures",
+    "color": "Red",
+    "image": "side-mission-cards/preventative-measures.png"
+  },
+  {
+    "id": 7,
+    "name": "Homecoming",
+    "color": "Green",
+    "image": "side-mission-cards/homecoming.png"
+  },
+  {
+    "id": 8,
+    "name": "Sorry About the Mess",
+    "color": "Green",
+    "image": "side-mission-cards/sorry-about-the-mess.png"
+  },
+  {
+    "id": 9,
+    "name": "A Simple Task",
+    "color": "Grey",
+    "image": "side-mission-cards/a-simple-task.png"
+  },
+  {
+    "id": 10,
+    "name": "Target of Opportunity",
+    "color": "Green",
+    "image": "side-mission-cards/target-of-opportunity.png"
+  },
+  {
+    "id": 11,
+    "name": "Generous Donations",
+    "color": "Grey",
+    "image": "side-mission-cards/generous-donations.png"
+  },
+  {
+    "id": 12,
+    "name": "The Spice Job",
+    "color": "Green",
+    "image": "side-mission-cards/the-spice-job.png"
+  },
+  {
+    "id": 13,
+    "name": "Brushfire",
+    "color": "Red",
+    "image": "side-mission-cards/brushfire.png"
+  },
+  {
+    "id": 14,
+    "name": "Luxury Cruise",
+    "color": "Grey",
+    "image": "side-mission-cards/luxury-cruise.png"
+  },
+  {
+    "id": 15,
+    "name": "Friends of Old",
+    "color": "Red",
+    "image": "side-mission-cards/friends-of-old.png"
+  },
+  {
+    "id": 16,
+    "name": "Sympathy for the Rebellion",
+    "color": "Grey",
+    "image": "side-mission-cards/sympathy-for-the-rebellion.png"
+  },
+  {
+    "id": 17,
+    "name": "High Moon",
+    "color": "Red",
+    "image": "side-mission-cards/high-moon.png"
+  },
+  {
+    "id": 18,
+    "name": "Vipers Den",
+    "color": "Grey",
+    "image": "side-mission-cards/vipers-den.png"
+  },
+  {
+    "id": 19,
+    "name": "Indebted",
+    "color": "Red",
+    "image": "side-mission-cards/indebted.png"
+  },
+  {
+    "id": 20,
+    "name": "Loose Cannon",
+    "color": "Red",
+    "image": "side-mission-cards/loose-cannon.png"
+  },
+  {
+    "id": 21,
+    "name": "Temptation",
+    "color": "Red",
+    "image": "side-mission-cards/temptation.png"
+  },
+  {
+    "id": 22,
+    "name": "Reclamation",
+    "color": "Green",
+    "image": "side-mission-cards/reclamation.png"
+  },
+  {
+    "id": 23,
+    "name": "Cloud Citys Secret",
+    "color": "Grey",
+    "image": "side-mission-cards/cloud-citys-secret.png"
+  },
+  {
+    "id": 24,
+    "name": "Freedom Fighters",
+    "color": "Grey",
+    "image": "side-mission-cards/freedom-fighters.png"
+  },
+  {
+    "id": 25,
+    "name": "Panic in the Streets",
+    "color": "Red",
+    "image": "side-mission-cards/panic-in-the-streets.png"
+  },
+  {
+    "id": 26,
+    "name": "Hostile Takeover",
+    "color": "Grey",
+    "image": "side-mission-cards/hostile-takeover.png"
+  },
+  {
+    "id": 27,
+    "name": "Reclassified",
+    "color": "Red",
+    "image": "side-mission-cards/reclassified.png"
+  },
+  {
+    "id": 28,
+    "name": "Perilous Hunt",
+    "color": "Grey",
+    "image": "side-mission-cards/perilous-hunt.png"
+  },
+  {
+    "id": 29,
+    "name": "A Heros Welcome",
+    "color": "Red",
+    "image": "side-mission-cards/a-heros-welcome.png"
+  },
+  {
+    "id": 30,
+    "name": "Born from Death",
+    "color": "Red",
+    "image": "side-mission-cards/born-from-death.png"
+  },
+  {
+    "id": 31,
+    "name": "Extortion",
+    "color": "Red",
+    "image": "side-mission-cards/extortion.png"
+  }
+]

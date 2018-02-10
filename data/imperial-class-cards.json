@@ -1,0 +1,576 @@
+[
+  {
+    "id": 0,
+    "class_id": 0,
+    "name": "Assault Armor",
+    "xp": 2,
+    "image": "imperial-class-cards/military-might-assault-armor.png"
+  },
+  {
+    "id": 1,
+    "class_id": 0,
+    "name": "Combat Medic",
+    "xp": 1,
+    "image": "imperial-class-cards/military-might-combat-medic.png"
+  },
+  {
+    "id": 2,
+    "class_id": 0,
+    "name": "Combat Veterans",
+    "xp": 4,
+    "image": "imperial-class-cards/military-might-combat-veterans.png"
+  },
+  {
+    "id": 3,
+    "class_id": 0,
+    "name": "Endless Ranks",
+    "xp": 2,
+    "image": "imperial-class-cards/military-might-endless-ranks.png"
+  },
+  {
+    "id": 4,
+    "class_id": 0,
+    "name": "Riot Grenades",
+    "xp": 1,
+    "image": "imperial-class-cards/military-might-riot-grenades.png"
+  },
+  {
+    "id": 5,
+    "class_id": 0,
+    "name": "Shock Troopers",
+    "xp": 3,
+    "image": "imperial-class-cards/military-might-shock-troopers.png"
+  },
+  {
+    "id": 6,
+    "class_id": 0,
+    "name": "Shock and Awe",
+    "xp": 4,
+    "image": "imperial-class-cards/military-might-shock-and-awe.png"
+  },
+  {
+    "id": 7,
+    "class_id": 0,
+    "name": "Show of Force",
+    "xp": null,
+    "image": "imperial-class-cards/military-might-show-of-force.png"
+  },
+  {
+    "id": 8,
+    "class_id": 0,
+    "name": "Sustained Fire",
+    "xp": 3,
+    "image": "imperial-class-cards/military-might-sustained-fire.png"
+  },
+  {
+    "id": 9,
+    "class_id": 1,
+    "name": "Field General",
+    "xp": 3,
+    "image": "imperial-class-cards/inspiring-leadership-field-general.png"
+  },
+  {
+    "id": 10,
+    "class_id": 1,
+    "name": "Field Officer",
+    "xp": null,
+    "image": "imperial-class-cards/inspiring-leadership-field-officer.png"
+  },
+  {
+    "id": 11,
+    "class_id": 1,
+    "name": "Imperial Dedication",
+    "xp": 3,
+    "image": "imperial-class-cards/inspiring-leadership-imperial-dedication.png"
+  },
+  {
+    "id": 12,
+    "class_id": 1,
+    "name": "Lead By Example",
+    "xp": 4,
+    "image": "imperial-class-cards/inspiring-leadership-lead-by-example.png"
+  },
+  {
+    "id": 13,
+    "class_id": 1,
+    "name": "Noble Sacrifice",
+    "xp": 2,
+    "image": "imperial-class-cards/inspiring-leadership-noble-sacrifice.png"
+  },
+  {
+    "id": 14,
+    "class_id": 1,
+    "name": "Optimal Tactics",
+    "xp": 4,
+    "image": "imperial-class-cards/inspiring-leadership-optimal-tactics.png"
+  },
+  {
+    "id": 15,
+    "class_id": 1,
+    "name": "Press On",
+    "xp": 1,
+    "image": "imperial-class-cards/inspiring-leadership-press-on.png"
+  },
+  {
+    "id": 16,
+    "class_id": 1,
+    "name": "Strategic Planning",
+    "xp": 2,
+    "image": "imperial-class-cards/inspiring-leadership-strategic-planning.png"
+  },
+  {
+    "id": 17,
+    "class_id": 1,
+    "name": "Supervisory Agent",
+    "xp": 1,
+    "image": "imperial-class-cards/inspiring-leadership-supervisory-agent.png"
+  },
+  {
+    "id": 18,
+    "class_id": 2,
+    "name": "Armor Corps",
+    "xp": 1,
+    "image": "imperial-class-cards/armored-onslaught-armor-corps.png"
+  },
+  {
+    "id": 19,
+    "class_id": 2,
+    "name": "Automated Repairs",
+    "xp": 1,
+    "image": "imperial-class-cards/armored-onslaught-automated-repairs.png"
+  },
+  {
+    "id": 20,
+    "class_id": 2,
+    "name": "Explosive Entry",
+    "xp": 2,
+    "image": "imperial-class-cards/armored-onslaught-explosive-entry.png"
+  },
+  {
+    "id": 21,
+    "class_id": 2,
+    "name": "Explosive Munitions",
+    "xp": null,
+    "image": "imperial-class-cards/armored-onslaught-explosive-munitions.png"
+  },
+  {
+    "id": 22,
+    "class_id": 2,
+    "name": "Heavy Firepower",
+    "xp": 2,
+    "image": "imperial-class-cards/armored-onslaught-heavy-firepower.png"
+  },
+  {
+    "id": 23,
+    "class_id": 2,
+    "name": "Mortar",
+    "xp": 3,
+    "image": "imperial-class-cards/armored-onslaught-mortar.png"
+  },
+  {
+    "id": 24,
+    "class_id": 2,
+    "name": "Power to Shields",
+    "xp": 4,
+    "image": "imperial-class-cards/armored-onslaught-power-to-shields.png"
+  },
+  {
+    "id": 25,
+    "class_id": 2,
+    "name": "Rapid Dominance",
+    "xp": 4,
+    "image": "imperial-class-cards/armored-onslaught-rapid-dominance.png"
+  },
+  {
+    "id": 26,
+    "class_id": 2,
+    "name": "Reactive Armor",
+    "xp": 3,
+    "image": "imperial-class-cards/armored-onslaught-reactive-armor.png"
+  },
+  {
+    "id": 27,
+    "class_id": 3,
+    "name": "Assassins",
+    "xp": 3,
+    "image": "imperial-class-cards/precision-training-assassins.png"
+  },
+  {
+    "id": 28,
+    "class_id": 3,
+    "name": "Exacting Strike",
+    "xp": 3,
+    "image": "imperial-class-cards/precision-training-exacting-strike.png"
+  },
+  {
+    "id": 29,
+    "class_id": 3,
+    "name": "Find the Weakness",
+    "xp": 4,
+    "image": "imperial-class-cards/precision-training-find-the-weakness.png"
+  },
+  {
+    "id": 30,
+    "class_id": 3,
+    "name": "Knowledge of Attack",
+    "xp": 2,
+    "image": "imperial-class-cards/precision-training-knowledge-of-attack.png"
+  },
+  {
+    "id": 31,
+    "class_id": 3,
+    "name": "Pinpoint Accuracy",
+    "xp": 1,
+    "image": "imperial-class-cards/precision-training-pinpoint-accuracy.png"
+  },
+  {
+    "id": 32,
+    "class_id": 3,
+    "name": "Sharpshooters",
+    "xp": 1,
+    "image": "imperial-class-cards/precision-training-sharpshooters.png"
+  },
+  {
+    "id": 33,
+    "class_id": 3,
+    "name": "Single Minded",
+    "xp": 4,
+    "image": "imperial-class-cards/precision-training-single-minded.png"
+  },
+  {
+    "id": 34,
+    "class_id": 3,
+    "name": "Strike Force",
+    "xp": null,
+    "image": "imperial-class-cards/precision-training-strike-force.png"
+  },
+  {
+    "id": 35,
+    "class_id": 3,
+    "name": "Versatile Attack",
+    "xp": 2,
+    "image": "imperial-class-cards/precision-training-versatile-attack.png"
+  },
+  {
+    "id": 36,
+    "class_id": 4,
+    "name": "Execution Squad",
+    "xp": 3,
+    "image": "imperial-class-cards/imperial-black-ops-execution-squad.png"
+  },
+  {
+    "id": 37,
+    "class_id": 4,
+    "name": "In the Shadows",
+    "xp": null,
+    "image": "imperial-class-cards/imperial-black-ops-in-the-shadows.png"
+  },
+  {
+    "id": 38,
+    "class_id": 4,
+    "name": "Shadow Armor",
+    "xp": 2,
+    "image": "imperial-class-cards/imperial-black-ops-shadow-armor.png"
+  },
+  {
+    "id": 39,
+    "class_id": 4,
+    "name": "Shadow Corps",
+    "xp": 1,
+    "image": "imperial-class-cards/imperial-black-ops-shadow-corps.png"
+  },
+  {
+    "id": 40,
+    "class_id": 4,
+    "name": "Stealth",
+    "xp": 1,
+    "image": "imperial-class-cards/imperial-black-ops-stealth.png"
+  },
+  {
+    "id": 41,
+    "class_id": 4,
+    "name": "Strategic Redeployment",
+    "xp": 3,
+    "image": "imperial-class-cards/imperial-black-ops-strategic-redeployment.png"
+  },
+  {
+    "id": 42,
+    "class_id": 4,
+    "name": "Surprise Attack",
+    "xp": 2,
+    "image": "imperial-class-cards/imperial-black-ops-surprise-attack.png"
+  },
+  {
+    "id": 43,
+    "class_id": 4,
+    "name": "True Shadow",
+    "xp": 4,
+    "image": "imperial-class-cards/imperial-black-ops-true-shadow.png"
+  },
+  {
+    "id": 44,
+    "class_id": 4,
+    "name": "Versatility",
+    "xp": 4,
+    "image": "imperial-class-cards/imperial-black-ops-versatility.png"
+  },
+  {
+    "id": 45,
+    "class_id": 5,
+    "name": "Cheap Shot",
+    "xp": 2,
+    "image": "imperial-class-cards/hutt-mercenaries-cheap-shot.png"
+  },
+  {
+    "id": 46,
+    "class_id": 5,
+    "name": "Guild Hunters",
+    "xp": 4,
+    "image": "imperial-class-cards/hutt-mercenaries-guild-hunters.png"
+  },
+  {
+    "id": 47,
+    "class_id": 5,
+    "name": "Most Wanted",
+    "xp": 4,
+    "image": "imperial-class-cards/hutt-mercenaries-most-wanted.png"
+  },
+  {
+    "id": 48,
+    "class_id": 5,
+    "name": "Nowhere to Hide",
+    "xp": 3,
+    "image": "imperial-class-cards/hutt-mercenaries-nowhere-to-hide.png"
+  },
+  {
+    "id": 49,
+    "class_id": 5,
+    "name": "Nowhere to Run",
+    "xp": 3,
+    "image": "imperial-class-cards/hutt-mercenaries-nowhere-to-run.png"
+  },
+  {
+    "id": 50,
+    "class_id": 5,
+    "name": "Savage Motivation",
+    "xp": 2,
+    "image": "imperial-class-cards/hutt-mercenaries-savage-motivation.png"
+  },
+  {
+    "id": 51,
+    "class_id": 5,
+    "name": "Scouted",
+    "xp": 1,
+    "image": "imperial-class-cards/hutt-mercenaries-scouted.png"
+  },
+  {
+    "id": 52,
+    "class_id": 5,
+    "name": "Vendetta",
+    "xp": 1,
+    "image": "imperial-class-cards/hutt-mercenaries-vendetta.png"
+  },
+  {
+    "id": 53,
+    "class_id": 5,
+    "name": "Wanted Dead",
+    "xp": null,
+    "image": "imperial-class-cards/hutt-mercenaries-wanted-dead.png"
+  },
+  {
+    "id": 54,
+    "class_id": 6,
+    "name": "Devastating Legion",
+    "xp": 4,
+    "image": "imperial-class-cards/nemeses-devastating-legion.png"
+  },
+  {
+    "id": 55,
+    "class_id": 6,
+    "name": "Fearsome Presence",
+    "xp": 1,
+    "image": "imperial-class-cards/nemeses-fearsome-presence.png"
+  },
+  {
+    "id": 56,
+    "class_id": 6,
+    "name": "Im on the Leader",
+    "xp": 2,
+    "image": "imperial-class-cards/nemeses-im-on-the-leader.png"
+  },
+  {
+    "id": 57,
+    "class_id": 6,
+    "name": "Indomitable",
+    "xp": 4,
+    "image": "imperial-class-cards/nemeses-indomitable.png"
+  },
+  {
+    "id": 58,
+    "class_id": 6,
+    "name": "Inspirational",
+    "xp": null,
+    "image": "imperial-class-cards/nemeses-inspirational.png"
+  },
+  {
+    "id": 59,
+    "class_id": 6,
+    "name": "Leave Them to Me",
+    "xp": 3,
+    "image": "imperial-class-cards/nemeses-leave-them-to-me.png"
+  },
+  {
+    "id": 60,
+    "class_id": 6,
+    "name": "Powerful Foes",
+    "xp": null,
+    "image": "imperial-class-cards/nemeses-powerful-foes.png"
+  },
+  {
+    "id": 61,
+    "class_id": 6,
+    "name": "Prepare the Ambush",
+    "xp": 1,
+    "image": "imperial-class-cards/nemeses-prepare-the-ambush.png"
+  },
+  {
+    "id": 62,
+    "class_id": 6,
+    "name": "Punishing Force",
+    "xp": 3,
+    "image": "imperial-class-cards/nemeses-punishing-force.png"
+  },
+  {
+    "id": 63,
+    "class_id": 6,
+    "name": "Ringleader",
+    "xp": 2,
+    "image": "imperial-class-cards/nemeses-ringleader.png"
+  },
+  {
+    "id": 64,
+    "class_id": 7,
+    "name": "Executioner",
+    "xp": 3,
+    "image": "imperial-class-cards/subversive-tactics-executioner.png"
+  },
+  {
+    "id": 65,
+    "class_id": 7,
+    "name": "Exploit Weakness",
+    "xp": 2,
+    "image": "imperial-class-cards/subversive-tactics-exploit-weakness.png"
+  },
+  {
+    "id": 66,
+    "class_id": 7,
+    "name": "Heavy Pressure",
+    "xp": 2,
+    "image": "imperial-class-cards/subversive-tactics-heavy-pressure.png"
+  },
+  {
+    "id": 67,
+    "class_id": 7,
+    "name": "No Quarter",
+    "xp": 4,
+    "image": "imperial-class-cards/subversive-tactics-no-quarter.png"
+  },
+  {
+    "id": 68,
+    "class_id": 7,
+    "name": "Oppression",
+    "xp": 4,
+    "image": "imperial-class-cards/subversive-tactics-oppression.png"
+  },
+  {
+    "id": 69,
+    "class_id": 7,
+    "name": "Prey Upon Doubt",
+    "xp": null,
+    "image": "imperial-class-cards/subversive-tactics-prey-upon-doubt.png"
+  },
+  {
+    "id": 70,
+    "class_id": 7,
+    "name": "Savage Weaponry",
+    "xp": 1,
+    "image": "imperial-class-cards/subversive-tactics-savage-weaponry.png"
+  },
+  {
+    "id": 71,
+    "class_id": 7,
+    "name": "Surgical Strike",
+    "xp": 1,
+    "image": "imperial-class-cards/subversive-tactics-surgical-strike.png"
+  },
+  {
+    "id": 72,
+    "class_id": 7,
+    "name": "Weary Target",
+    "xp": 3,
+    "image": "imperial-class-cards/subversive-tactics-weary-target.png"
+  },
+  {
+    "id": 73,
+    "class_id": 8,
+    "name": "Adaptive Weapons",
+    "xp": 4,
+    "image": "imperial-class-cards/technological-superiority-adaptive-weapons.png"
+  },
+  {
+    "id": 74,
+    "class_id": 8,
+    "name": "Arc Blasters",
+    "xp": 3,
+    "image": "imperial-class-cards/technological-superiority-arc-blasters.png"
+  },
+  {
+    "id": 75,
+    "class_id": 8,
+    "name": "Cloaking Device",
+    "xp": 3,
+    "image": "imperial-class-cards/technological-superiority-cloaking-device.png"
+  },
+  {
+    "id": 76,
+    "class_id": 8,
+    "name": "Experimental Arms",
+    "xp": null,
+    "image": "imperial-class-cards/technological-superiority-experimental-arms.png"
+  },
+  {
+    "id": 77,
+    "class_id": 8,
+    "name": "Failsafe",
+    "xp": 2,
+    "image": "imperial-class-cards/technological-superiority-failsafe.png"
+  },
+  {
+    "id": 78,
+    "class_id": 8,
+    "name": "Hidden Detonators",
+    "xp": 2,
+    "image": "imperial-class-cards/technological-superiority-hidden-detonators.png"
+  },
+  {
+    "id": 79,
+    "class_id": 8,
+    "name": "Jetpacks",
+    "xp": 1,
+    "image": "imperial-class-cards/technological-superiority-jetpacks.png"
+  },
+  {
+    "id": 80,
+    "class_id": 8,
+    "name": "Superior Augments",
+    "xp": 4,
+    "image": "imperial-class-cards/technological-superiority-superior-augments.png"
+  },
+  {
+    "id": 81,
+    "class_id": 8,
+    "name": "Technical Support",
+    "xp": 1,
+    "image": "imperial-class-cards/technological-superiority-technical-support.png"
+  }
+]

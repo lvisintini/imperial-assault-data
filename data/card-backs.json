@@ -1,0 +1,237 @@
+[
+  {
+    "deck": "Agenda",
+    "variant": null,
+    "image": "card-backs/agenda.png"
+  },
+  {
+    "deck": "Command",
+    "variant": null,
+    "image": "card-backs/command.png"
+  },
+  {
+    "deck": "Companion",
+    "variant": null,
+    "image": "card-backs/companion.png"
+  },
+  {
+    "deck": "Condition",
+    "variant": "Bleeding",
+    "image": "card-backs/condition-bleeding.png"
+  },
+  {
+    "deck": "Condition",
+    "variant": "Focused",
+    "image": "card-backs/condition-focused.png"
+  },
+  {
+    "deck": "Condition",
+    "variant": "Hidden",
+    "image": "card-backs/condition-hidden.png"
+  },
+  {
+    "deck": "Condition",
+    "variant": "Stunned",
+    "image": "card-backs/condition-stunned.png"
+  },
+  {
+    "deck": "Condition",
+    "variant": "Weakened",
+    "image": "card-backs/condition-weakened.png"
+  },
+  {
+    "deck": "Deployment",
+    "variant": "Imperial",
+    "image": "card-backs/deployment-imperial.png"
+  },
+  {
+    "deck": "Deployment",
+    "variant": "Mercenary",
+    "image": "card-backs/deployment-mercenary.png"
+  },
+  {
+    "deck": "Deployment",
+    "variant": "Neutral",
+    "image": "card-backs/deployment-neutral.png"
+  },
+  {
+    "deck": "Deployment",
+    "variant": "Rebel",
+    "image": "card-backs/deployment-rebel.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Armored Onslaught",
+    "image": "card-backs/imperial-class-armored-onslaught.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Hutt Mercenaries",
+    "image": "card-backs/imperial-class-hutt-mercenaries.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Imperial Black Ops",
+    "image": "card-backs/imperial-class-imperial-black-ops.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Inspiring Leadership",
+    "image": "card-backs/imperial-class-inspiring-leadership.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Military Might",
+    "image": "card-backs/imperial-class-military-might.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Nemeses",
+    "image": "card-backs/imperial-class-nemeses.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Precision Training",
+    "image": "card-backs/imperial-class-precision-training.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Subversive Tactics",
+    "image": "card-backs/imperial-class-subversive-tactics.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Technological Superiority",
+    "image": "card-backs/imperial-class-technological-superiority.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Biv Bodhrik",
+    "image": "card-backs/rebel-hero-biv-bodhrik.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Davith Elso",
+    "image": "card-backs/rebel-hero-davith-elso.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Diala Passil",
+    "image": "card-backs/rebel-hero-diala-passil.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Fenn Signis",
+    "image": "card-backs/rebel-hero-fenn-signis.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Gaarkhan",
+    "image": "card-backs/rebel-hero-gaarkhan.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Gideon Argus",
+    "image": "card-backs/rebel-hero-gideon-argus.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Jyn Odan",
+    "image": "card-backs/rebel-hero-jyn-odan.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Loku Kanoloa",
+    "image": "card-backs/rebel-hero-loku-kanoloa.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "MHD-19",
+    "image": "card-backs/rebel-hero-mhd-19.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Mak Eshka'rey",
+    "image": "card-backs/rebel-hero-mak-eshkarey.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Murne Rin",
+    "image": "card-backs/rebel-hero-murne-rin.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Onar Koma",
+    "image": "card-backs/rebel-hero-onar-koma.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Saska Teft",
+    "image": "card-backs/rebel-hero-saska-teft.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Shyla Varad",
+    "image": "card-backs/rebel-hero-shyla-varad.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Verena Talos",
+    "image": "card-backs/rebel-hero-verena-talos.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Vinto Hreeda",
+    "image": "card-backs/rebel-hero-vinto-hreeda.png"
+  },
+  {
+    "deck": "Rebel Upgrade",
+    "variant": "Tier 1",
+    "image": "card-backs/rebel-upgrade-tier-1.png"
+  },
+  {
+    "deck": "Rebel Upgrade",
+    "variant": "Tier 2",
+    "image": "card-backs/rebel-upgrade-tier-2.png"
+  },
+  {
+    "deck": "Rebel Upgrade",
+    "variant": "Tier 3",
+    "image": "card-backs/rebel-upgrade-tier-3.png"
+  },
+  {
+    "deck": "Reward",
+    "variant": null,
+    "image": "card-backs/reward.png"
+  },
+  {
+    "deck": "Side Mission",
+    "variant": null,
+    "image": "card-backs/side-mission.png"
+  },
+  {
+    "deck": "Story Mission",
+    "variant": "Imperial Assault",
+    "image": "card-backs/story-mission-imperial-assault.png"
+  },
+  {
+    "deck": "Story Mission",
+    "variant": "Jabba's Realm",
+    "image": "card-backs/story-mission-jabbas-realm.png"
+  },
+  {
+    "deck": "Story Mission",
+    "variant": "Return to Hoth",
+    "image": "card-backs/story-mission-return-to-hoth.png"
+  },
+  {
+    "deck": "Supply",
+    "variant": null,
+    "image": "card-backs/supply.png"
+  },
+  {
+    "deck": "Threat Mission",
+    "variant": "Return to Hoth",
+    "image": "card-backs/threat-mission-return-to-hoth.png"
+  }
+]

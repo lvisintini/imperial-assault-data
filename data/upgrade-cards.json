@@ -1,0 +1,807 @@
+[
+  {
+    "id": 0,
+    "tier": 1,
+    "name": "Armored Gauntlets",
+    "credits": 300,
+    "image": "upgrade-cards/armored-gauntlets.png",
+    "traits": [
+      "Fist"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 1,
+    "tier": 1,
+    "name": "Bacta Pump",
+    "credits": 300,
+    "image": "upgrade-cards/bacta-pump.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 2,
+    "tier": 1,
+    "name": "Balanced Hilt",
+    "credits": 300,
+    "image": "upgrade-cards/balanced-hilt.png",
+    "traits": [
+      "Modification",
+      "Balance"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "id": 3,
+    "tier": 1,
+    "name": "Combat Coat",
+    "credits": 500,
+    "image": "upgrade-cards/combat-coat.png",
+    "traits": [
+      "Armor",
+      "Light"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 4,
+    "tier": 1,
+    "name": "DDC Defender",
+    "credits": 550,
+    "image": "upgrade-cards/ddc-defender.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 5,
+    "tier": 1,
+    "name": "DH-17",
+    "credits": 200,
+    "image": "upgrade-cards/dh-17.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 6,
+    "tier": 1,
+    "name": "DL-44",
+    "credits": 500,
+    "image": "upgrade-cards/dl-44.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 7,
+    "tier": 1,
+    "name": "E-11",
+    "credits": 400,
+    "image": "upgrade-cards/e-11.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 8,
+    "tier": 1,
+    "name": "Emergency Injector",
+    "credits": 150,
+    "image": "upgrade-cards/emergency-injector.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 9,
+    "tier": 1,
+    "name": "Extended Haft",
+    "credits": 300,
+    "image": "upgrade-cards/extended-haft.png",
+    "traits": [
+      "Modification",
+      "Balance"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "id": 10,
+    "tier": 1,
+    "name": "Gaffi Stick",
+    "credits": 200,
+    "image": "upgrade-cards/gaffi-stick.png",
+    "traits": [
+      "Club"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 11,
+    "tier": 1,
+    "name": "Hand Cannon",
+    "credits": 400,
+    "image": "upgrade-cards/hand-cannon.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 12,
+    "tier": 1,
+    "name": "Marksman Barrel",
+    "credits": 300,
+    "image": "upgrade-cards/marksman-barrel.png",
+    "traits": [
+      "Modification",
+      "Barrel"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 13,
+    "tier": 1,
+    "name": "Portable Medkit",
+    "credits": 450,
+    "image": "upgrade-cards/portable-medkit.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 14,
+    "tier": 1,
+    "name": "Shadowsilk Cloak",
+    "credits": 350,
+    "image": "upgrade-cards/shadowsilk-cloak.png",
+    "traits": [
+      "Armor",
+      "Light"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 15,
+    "tier": 1,
+    "name": "Survival Gear",
+    "credits": 250,
+    "image": "upgrade-cards/survival-gear.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 16,
+    "tier": 1,
+    "name": "Tactical Display",
+    "credits": 300,
+    "image": "upgrade-cards/tactical-display.png",
+    "traits": [
+      "Modification",
+      "Sights"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 17,
+    "tier": 1,
+    "name": "Tatooine Hunting Rifle",
+    "credits": 250,
+    "image": "upgrade-cards/tatooine-hunting-rifle.png",
+    "traits": [
+      "Projectile",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 18,
+    "tier": 1,
+    "name": "Under-Barrel HH-4",
+    "credits": 300,
+    "image": "upgrade-cards/under-barrel-hh-4.png",
+    "traits": [
+      "Modification",
+      "Barrel"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 19,
+    "tier": 1,
+    "name": "Vibroblade",
+    "credits": 300,
+    "image": "upgrade-cards/vibroblade.png",
+    "traits": [
+      "Blade"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 20,
+    "tier": 1,
+    "name": "Vibroknife",
+    "credits": 150,
+    "image": "upgrade-cards/vibroknife.png",
+    "traits": [
+      "Blade"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 21,
+    "tier": 1,
+    "name": "Vibrosword",
+    "credits": 350,
+    "image": "upgrade-cards/vibrosword.png",
+    "traits": [
+      "Blade"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 22,
+    "tier": 2,
+    "name": "434 \"Deathhammer\"",
+    "credits": 600,
+    "image": "upgrade-cards/434-deathhammer.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 23,
+    "tier": 2,
+    "name": "A280",
+    "credits": 600,
+    "image": "upgrade-cards/a280.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 24,
+    "tier": 2,
+    "name": "BD-1 Vibro-Ax",
+    "credits": 600,
+    "image": "upgrade-cards/bd-1-vibro-ax.png",
+    "traits": [
+      "Blade",
+      "Staff"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 25,
+    "tier": 2,
+    "name": "Bolt Upgrade",
+    "credits": 250,
+    "image": "upgrade-cards/bolt-upgrade.png",
+    "traits": [
+      "Modification",
+      "Energy"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 26,
+    "tier": 2,
+    "name": "Combat Coat",
+    "credits": 500,
+    "image": "upgrade-cards/combat-coat.png",
+    "traits": [
+      "Armor",
+      "Light"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 27,
+    "tier": 2,
+    "name": "Cybernetic Arm",
+    "credits": 350,
+    "image": "upgrade-cards/cybernetic-arm.png",
+    "traits": [
+      "Medical",
+      "Enhancement"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 28,
+    "tier": 2,
+    "name": "DT-12 Heavy Blaster Pistol",
+    "credits": 600,
+    "image": "upgrade-cards/dt-12-heavy-blaster-pistol.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 29,
+    "tier": 2,
+    "name": "Double Vibrosword",
+    "credits": 650,
+    "image": "upgrade-cards/double-vibrosword.png",
+    "traits": [
+      "Blade"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 30,
+    "tier": 2,
+    "name": "EE-3 Carbine",
+    "credits": 550,
+    "image": "upgrade-cards/ee-3-carbine.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 31,
+    "tier": 2,
+    "name": "Energized Hilt",
+    "credits": 250,
+    "image": "upgrade-cards/energized-hilt.png",
+    "traits": [
+      "Modification",
+      "Energy"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "id": 32,
+    "tier": 2,
+    "name": "Environmental Hazard Suit",
+    "credits": 600,
+    "image": "upgrade-cards/environmental-hazard-suit.png",
+    "traits": [
+      "Armor"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 33,
+    "tier": 2,
+    "name": "Extra Ammunition",
+    "credits": 300,
+    "image": "upgrade-cards/extra-ammunition.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 34,
+    "tier": 2,
+    "name": "High-Impact Guard",
+    "credits": 500,
+    "image": "upgrade-cards/high-impact-guard.png",
+    "traits": [
+      "Modification",
+      "Impact"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "id": 35,
+    "tier": 2,
+    "name": "Laminate Armor",
+    "credits": 700,
+    "image": "upgrade-cards/laminate-armor.png",
+    "traits": [
+      "Armor",
+      "Medium"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 36,
+    "tier": 2,
+    "name": "Overcharger",
+    "credits": 300,
+    "image": "upgrade-cards/overcharger.png",
+    "traits": [
+      "Modification",
+      "Energy"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 37,
+    "tier": 2,
+    "name": "Plasma Cell",
+    "credits": 450,
+    "image": "upgrade-cards/plasma-cell.png",
+    "traits": [
+      "Modification",
+      "Energy"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 38,
+    "tier": 2,
+    "name": "R5 Astromech",
+    "credits": 250,
+    "image": "upgrade-cards/r5-astromech.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 39,
+    "tier": 2,
+    "name": "Slicing Tools",
+    "credits": 250,
+    "image": "upgrade-cards/slicing-tools.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 40,
+    "tier": 2,
+    "name": "Spread Barrel",
+    "credits": 300,
+    "image": "upgrade-cards/spread-barrel.png",
+    "traits": [
+      "Modification",
+      "Barrel"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 41,
+    "tier": 2,
+    "name": "Stun Baton",
+    "credits": 500,
+    "image": "upgrade-cards/stun-baton.png",
+    "traits": [
+      "Staff"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 42,
+    "tier": 2,
+    "name": "T-21",
+    "credits": 900,
+    "image": "upgrade-cards/t-21.png",
+    "traits": [
+      "Blaster",
+      "Heavy"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 43,
+    "tier": 2,
+    "name": "Vibro Knucklers",
+    "credits": 400,
+    "image": "upgrade-cards/vibro-knucklers.png",
+    "traits": [
+      "Fist",
+      "Blade"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 44,
+    "tier": 2,
+    "name": "Weighted Head",
+    "credits": 400,
+    "image": "upgrade-cards/weighted-head.png",
+    "traits": [
+      "Modification",
+      "Balance"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "id": 45,
+    "tier": 3,
+    "name": "Admiral's Uniform",
+    "credits": 350,
+    "image": "upgrade-cards/admirals-uniform.png",
+    "traits": [
+      "Armor"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 46,
+    "tier": 3,
+    "name": "Ancient Lightsaber",
+    "credits": 1000,
+    "image": "upgrade-cards/ancient-lightsaber.png",
+    "traits": [
+      "Blade",
+      "Energy"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 47,
+    "tier": 3,
+    "name": "Combat Knife",
+    "credits": 500,
+    "image": "upgrade-cards/combat-knife.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 48,
+    "tier": 3,
+    "name": "Combat Visor",
+    "credits": 350,
+    "image": "upgrade-cards/combat-visor.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 49,
+    "tier": 3,
+    "name": "Concussion Grenades",
+    "credits": 400,
+    "image": "upgrade-cards/concussion-grenades.png",
+    "traits": [
+      "Consumable",
+      "Explosive"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 50,
+    "tier": 3,
+    "name": "DLT-19",
+    "credits": 950,
+    "image": "upgrade-cards/dlt-19.png",
+    "traits": [
+      "Blaster",
+      "Heavy"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 51,
+    "tier": 3,
+    "name": "DXR-6",
+    "credits": 1000,
+    "image": "upgrade-cards/dxr-6.png",
+    "traits": [
+      "Disruptor",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 52,
+    "tier": 3,
+    "name": "Disruption Cell",
+    "credits": 600,
+    "image": "upgrade-cards/disruption-cell.png",
+    "traits": [
+      "Modification",
+      "Energy"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 53,
+    "tier": 3,
+    "name": "Disruptor Pistol",
+    "credits": 700,
+    "image": "upgrade-cards/disruptor-pistol.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 54,
+    "tier": 3,
+    "name": "Electrostaff",
+    "credits": 1250,
+    "image": "upgrade-cards/electrostaff.png",
+    "traits": [
+      "Staff",
+      "Energy"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 55,
+    "tier": 3,
+    "name": "Force Pike",
+    "credits": 1100,
+    "image": "upgrade-cards/force-pike.png",
+    "traits": [
+      "Staff"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 56,
+    "tier": 3,
+    "name": "Hidden Blade",
+    "credits": 300,
+    "image": "upgrade-cards/hidden-blade.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 57,
+    "tier": 3,
+    "name": "Laminate Armor",
+    "credits": 700,
+    "image": "upgrade-cards/laminate-armor.png",
+    "traits": [
+      "Armor",
+      "Medium"
+    ],
+    "type": "Armor"
+  },
+  {
+    "id": 58,
+    "tier": 3,
+    "name": "Modified Energy Cannon",
+    "credits": 1000,
+    "image": "upgrade-cards/modified-energy-cannon.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 59,
+    "tier": 3,
+    "name": "Personal Shields",
+    "credits": 550,
+    "image": "upgrade-cards/personal-shields.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 60,
+    "tier": 3,
+    "name": "Pulse Cannon",
+    "credits": 1200,
+    "image": "upgrade-cards/pulse-cannon.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 61,
+    "tier": 3,
+    "name": "Reinforced Helmet",
+    "credits": 300,
+    "image": "upgrade-cards/reinforced-helmet.png",
+    "traits": [
+      "Helmet"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 62,
+    "tier": 3,
+    "name": "Ryyk Blades",
+    "credits": 950,
+    "image": "upgrade-cards/ryyk-blades.png",
+    "traits": [
+      "Blade"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 63,
+    "tier": 3,
+    "name": "Shock Emitter",
+    "credits": 500,
+    "image": "upgrade-cards/shock-emitter.png",
+    "traits": [
+      "Modification",
+      "Impact"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "id": 64,
+    "tier": 3,
+    "name": "Sniper Scope",
+    "credits": 250,
+    "image": "upgrade-cards/sniper-scope.png",
+    "traits": [
+      "Modification",
+      "Sights"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 65,
+    "tier": 3,
+    "name": "Sporting Blaster",
+    "credits": 900,
+    "image": "upgrade-cards/sporting-blaster.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 66,
+    "tier": 3,
+    "name": "Telescoping Sights",
+    "credits": 400,
+    "image": "upgrade-cards/telescoping-sights.png",
+    "traits": [
+      "Modification",
+      "Sights"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "id": 67,
+    "tier": 3,
+    "name": "Valken-38 Carbine",
+    "credits": 1250,
+    "image": "upgrade-cards/valken-38-carbine.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 68,
+    "tier": 3,
+    "name": "Vibrogenerator",
+    "credits": 350,
+    "image": "upgrade-cards/vibrogenerator.png",
+    "traits": [
+      "Modification",
+      "Energy"
+    ],
+    "type": "Melee Weapon Modification"
+  }
+]

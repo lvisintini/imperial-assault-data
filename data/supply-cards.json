@@ -1,0 +1,183 @@
+[
+  {
+    "id": 0,
+    "name": "Adrenal Stim",
+    "source": 0,
+    "traits": [
+      "Consumable",
+      "Medical"
+    ],
+    "image": "supply-cards/adrenal-stim.png"
+  },
+  {
+    "id": 1,
+    "name": "Artificial Stimulants",
+    "source": 2,
+    "traits": [
+      "Consumable",
+      "Medical"
+    ],
+    "image": "supply-cards/artificial-stimulants.png"
+  },
+  {
+    "id": 2,
+    "name": "Bacta Infusion",
+    "source": 0,
+    "traits": [
+      "Consumable",
+      "Medical"
+    ],
+    "image": "supply-cards/bacta-infusion.png"
+  },
+  {
+    "id": 3,
+    "name": "C1 Comlink",
+    "source": 0,
+    "traits": [
+      "Consumable",
+      "Tool"
+    ],
+    "image": "supply-cards/c1-comlink.png"
+  },
+  {
+    "id": 4,
+    "name": "C22 Frag Grenade",
+    "source": 0,
+    "traits": [
+      "Consumable",
+      "Explosive"
+    ],
+    "image": "supply-cards/c22-frag-grenade.png"
+  },
+  {
+    "id": 5,
+    "name": "Chance Cubes",
+    "source": 1,
+    "traits": [
+      "Valuable"
+    ],
+    "image": "supply-cards/chance-cubes.png"
+  },
+  {
+    "id": 6,
+    "name": "Emergency Medpac",
+    "source": 0,
+    "traits": [
+      "Consumable",
+      "Medical"
+    ],
+    "image": "supply-cards/emergency-medpac.png"
+  },
+  {
+    "id": 7,
+    "name": "Flash Bomb",
+    "source": 4,
+    "traits": [
+      "Consumable",
+      "Explosive"
+    ],
+    "image": "supply-cards/flash-bomb.png"
+  },
+  {
+    "id": 8,
+    "name": "Flash Emitter",
+    "source": 3,
+    "traits": [
+      "Consumable",
+      "Energy"
+    ],
+    "image": "supply-cards/flash-emitter.png"
+  },
+  {
+    "id": 9,
+    "name": "Grappling Hook",
+    "source": 2,
+    "traits": [
+      "Tool"
+    ],
+    "image": "supply-cards/grappling-hook.png"
+  },
+  {
+    "id": 10,
+    "name": "Macrobinoculars",
+    "source": 1,
+    "traits": [
+      "Tool"
+    ],
+    "image": "supply-cards/macrobinoculars.png"
+  },
+  {
+    "id": 11,
+    "name": "Painkillers",
+    "source": 4,
+    "traits": [
+      "Medical"
+    ],
+    "image": "supply-cards/painkillers.png"
+  },
+  {
+    "id": 12,
+    "name": "Pit Droid",
+    "source": 4,
+    "traits": [
+      "Droid"
+    ],
+    "image": "supply-cards/pit-droid.png"
+  },
+  {
+    "id": 13,
+    "name": "Power Generator",
+    "source": 2,
+    "traits": [
+      "Consumable",
+      "Energy"
+    ],
+    "image": "supply-cards/power-generator.png"
+  },
+  {
+    "id": 14,
+    "name": "Shock Grenade",
+    "source": 0,
+    "traits": [
+      "Consumable",
+      "Explosive"
+    ],
+    "image": "supply-cards/shock-grenade.png"
+  },
+  {
+    "id": 15,
+    "name": "Troop Data",
+    "source": 0,
+    "traits": [
+      "Intel"
+    ],
+    "image": "supply-cards/troop-data.png"
+  },
+  {
+    "id": 16,
+    "name": "Turbocharger",
+    "source": 3,
+    "traits": [
+      "Energy"
+    ],
+    "image": "supply-cards/turbocharger.png"
+  },
+  {
+    "id": 17,
+    "name": "Valuable Goods",
+    "source": 0,
+    "traits": [
+      "Valuable"
+    ],
+    "image": "supply-cards/valuable-goods.png"
+  },
+  {
+    "id": 18,
+    "name": "Weapons Cache",
+    "source": 2,
+    "traits": [
+      "Tool"
+    ],
+    "image": "supply-cards/weapons-cache.png"
+  }
+]

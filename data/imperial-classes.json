@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "name": "Military Might",
+    "source": 0
+  },
+  {
+    "id": 1,
+    "name": "Inspiring Leadership",
+    "source": 1
+  },
+  {
+    "id": 2,
+    "name": "Armored Onslaught",
+    "source": 2
+  },
+  {
+    "id": 3,
+    "name": "Precision Training",
+    "source": 2
+  },
+  {
+    "id": 4,
+    "name": "Imperial Black Ops",
+    "source": 3
+  },
+  {
+    "id": 5,
+    "name": "Hutt Mercenaries",
+    "source": 4
+  },
+  {
+    "id": 6,
+    "name": "Nemeses",
+    "source": 4
+  },
+  {
+    "id": 7,
+    "name": "Subversive Tactics",
+    "source": 0
+  },
+  {
+    "id": 8,
+    "name": "Technological Superiority",
+    "source": 0
+  }
+]

@@ -1,0 +1,1150 @@
+[
+  {
+    "id": 0,
+    "name": "A Powerful Influence",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/a-powerful-influence.png"
+  },
+  {
+    "id": 1,
+    "name": "Adrenaline",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/adrenaline.png"
+  },
+  {
+    "id": 2,
+    "name": "Advance Warning",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/advance-warning.png"
+  },
+  {
+    "id": 3,
+    "name": "Against the Odds",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/against-the-odds.png"
+  },
+  {
+    "id": 4,
+    "name": "Assassinate",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/assassinate.png"
+  },
+  {
+    "id": 5,
+    "name": "Ballistics Matrix",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/ballistics-matrix.png"
+  },
+  {
+    "id": 6,
+    "name": "Battlefield Awareness",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/battlefield-awareness.png"
+  },
+  {
+    "id": 7,
+    "name": "Behind Enemy Lines",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/behind-enemy-lines.png"
+  },
+  {
+    "id": 8,
+    "name": "Black Market Prices",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/black-market-prices.png"
+  },
+  {
+    "id": 9,
+    "name": "Bladestorm",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/bladestorm.png"
+  },
+  {
+    "id": 10,
+    "name": "Blaze of Glory",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/blaze-of-glory.png"
+  },
+  {
+    "id": 11,
+    "name": "Blitz",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/blitz.png"
+  },
+  {
+    "id": 12,
+    "name": "Blood Feud",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/blood-feud.png"
+  },
+  {
+    "id": 13,
+    "name": "Bodyguard",
+    "cost": 1,
+    "limit": 2,
+    "image": "command-cards/bodyguard.png"
+  },
+  {
+    "id": 14,
+    "name": "Brace Yourself",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/brace-yourself.png"
+  },
+  {
+    "id": 15,
+    "name": "Brace for Impact",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/brace-for-impact.png"
+  },
+  {
+    "id": 16,
+    "name": "Burst Fire",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/burst-fire.png"
+  },
+  {
+    "id": 17,
+    "name": "Call the Vanguard",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/call-the-vanguard.png"
+  },
+  {
+    "id": 18,
+    "name": "Camouflage",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/camouflage.png"
+  },
+  {
+    "id": 19,
+    "name": "Capture The Weary",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/capture-the-weary.png"
+  },
+  {
+    "id": 20,
+    "name": "Cavalry Charge",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/cavalry-charge.png"
+  },
+  {
+    "id": 21,
+    "name": "Celebration",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/celebration.png"
+  },
+  {
+    "id": 22,
+    "name": "Change of Plans",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/change-of-plans.png"
+  },
+  {
+    "id": 23,
+    "name": "Cheat to Win",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/cheat-to-win.png"
+  },
+  {
+    "id": 24,
+    "name": "Close the Gap",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/close-the-gap.png"
+  },
+  {
+    "id": 25,
+    "name": "Collect Intel",
+    "cost": 1,
+    "limit": 2,
+    "image": "command-cards/collect-intel.png"
+  },
+  {
+    "id": 26,
+    "name": "Comm Disruption",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/comm-disruption.png"
+  },
+  {
+    "id": 27,
+    "name": "Coordinated Attack",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/coordinated-attack.png"
+  },
+  {
+    "id": 28,
+    "name": "Counter Attack",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/counter-attack.png"
+  },
+  {
+    "id": 29,
+    "name": "Covering Fire",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/covering-fire.png"
+  },
+  {
+    "id": 30,
+    "name": "Cripple",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/cripple.png"
+  },
+  {
+    "id": 31,
+    "name": "Cruel Strike",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/cruel-strike.png"
+  },
+  {
+    "id": 32,
+    "name": "Crush",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/crush.png"
+  },
+  {
+    "id": 33,
+    "name": "Cut Lines",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/cut-lines.png"
+  },
+  {
+    "id": 34,
+    "name": "Dangerous Bargains",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/dangerous-bargains.png"
+  },
+  {
+    "id": 35,
+    "name": "Data Theft",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/data-theft.png"
+  },
+  {
+    "id": 36,
+    "name": "Deadeye",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/deadeye.png"
+  },
+  {
+    "id": 37,
+    "name": "Deadly Precision",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/deadly-precision.png"
+  },
+  {
+    "id": 38,
+    "name": "Debts Repaid",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/debts-repaid.png"
+  },
+  {
+    "id": 39,
+    "name": "Deflection",
+    "cost": 1,
+    "limit": 2,
+    "image": "command-cards/deflection.png"
+  },
+  {
+    "id": 40,
+    "name": "Devotion",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/devotion.png"
+  },
+  {
+    "id": 41,
+    "name": "Dirty Trick",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/dirty-trick.png"
+  },
+  {
+    "id": 42,
+    "name": "Disable",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/disable.png"
+  },
+  {
+    "id": 43,
+    "name": "Disorient",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/disorient.png"
+  },
+  {
+    "id": 44,
+    "name": "Draw",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/draw.png"
+  },
+  {
+    "id": 45,
+    "name": "Eerie Visage",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/eerie-visage.png"
+  },
+  {
+    "id": 46,
+    "name": "Efficient Travel",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/efficient-travel.png"
+  },
+  {
+    "id": 47,
+    "name": "Element of Surprise",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/element-of-surprise.png"
+  },
+  {
+    "id": 48,
+    "name": "Emergency Aid",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/emergency-aid.png"
+  },
+  {
+    "id": 49,
+    "name": "Endless Reserves",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/endless-reserves.png"
+  },
+  {
+    "id": 50,
+    "name": "Espionage Mastery",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/espionage-mastery.png"
+  },
+  {
+    "id": 51,
+    "name": "Etiquette and Protocol",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/etiquette-and-protocol.png"
+  },
+  {
+    "id": 52,
+    "name": "Evacuate",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/evacuate.png"
+  },
+  {
+    "id": 53,
+    "name": "Explosive Weaponry",
+    "cost": 1,
+    "limit": 2,
+    "image": "command-cards/explosive-weaponry.png"
+  },
+  {
+    "id": 54,
+    "name": "Expose Weakness",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/expose-weakness.png"
+  },
+  {
+    "id": 55,
+    "name": "Extra Protection",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/extra-protection.png"
+  },
+  {
+    "id": 56,
+    "name": "Fatal Deception",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/fatal-deception.png"
+  },
+  {
+    "id": 57,
+    "name": "Feral Swipes",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/feral-swipes.png"
+  },
+  {
+    "id": 58,
+    "name": "Ferocity",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/ferocity.png"
+  },
+  {
+    "id": 59,
+    "name": "Field Tactician",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/field-tactician.png"
+  },
+  {
+    "id": 60,
+    "name": "Fleet Footed",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/fleet-footed.png"
+  },
+  {
+    "id": 61,
+    "name": "Flurry of Blades",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/flurry-of-blades.png"
+  },
+  {
+    "id": 62,
+    "name": "Focus",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/focus.png"
+  },
+  {
+    "id": 63,
+    "name": "Force Illusion",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/force-illusion.png"
+  },
+  {
+    "id": 64,
+    "name": "Force Lightning",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/force-lightning.png"
+  },
+  {
+    "id": 65,
+    "name": "Force Rush",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/force-rush.png"
+  },
+  {
+    "id": 66,
+    "name": "Force Surge",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/force-surge.png"
+  },
+  {
+    "id": 67,
+    "name": "Fuel Upgrade",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/fuel-upgrade.png"
+  },
+  {
+    "id": 68,
+    "name": "Furious Charge",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/furious-charge.png"
+  },
+  {
+    "id": 69,
+    "name": "Glory of the Kill",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/glory-of-the-kill.png"
+  },
+  {
+    "id": 70,
+    "name": "Grenadier",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/grenadier.png"
+  },
+  {
+    "id": 71,
+    "name": "Grisly Contest",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/grisly-contest.png"
+  },
+  {
+    "id": 72,
+    "name": "Guardian Stance",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/guardian-stance.png"
+  },
+  {
+    "id": 73,
+    "name": "Hard to Hit",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/hard-to-hit.png"
+  },
+  {
+    "id": 74,
+    "name": "Harsh Environment",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/harsh-environment.png"
+  },
+  {
+    "id": 75,
+    "name": "Heart of Freedom",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/heart-of-freedom.png"
+  },
+  {
+    "id": 76,
+    "name": "Heavy Armor",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/heavy-armor.png"
+  },
+  {
+    "id": 77,
+    "name": "Heightened Reflexes",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/heightened-reflexes.png"
+  },
+  {
+    "id": 78,
+    "name": "Hidden Trap",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/hidden-trap.png"
+  },
+  {
+    "id": 79,
+    "name": "Hide in Plain Sight",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/hide-in-plain-sight.png"
+  },
+  {
+    "id": 80,
+    "name": "Hit and Run",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/hit-and-run.png"
+  },
+  {
+    "id": 81,
+    "name": "Hold Ground",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/hold-ground.png"
+  },
+  {
+    "id": 82,
+    "name": "Hunt Them Down",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/hunt-them-down.png"
+  },
+  {
+    "id": 83,
+    "name": "Hunter Protocol",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/hunter-protocol.png"
+  },
+  {
+    "id": 84,
+    "name": "I Can Feel It",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/i-can-feel-it.png"
+  },
+  {
+    "id": 85,
+    "name": "I Must Go Alone",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/i-must-go-alone.png"
+  },
+  {
+    "id": 86,
+    "name": "I make my own Luck",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/i-make-my-own-luck.png"
+  },
+  {
+    "id": 87,
+    "name": "Improvised Weapons",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/improvised-weapons.png"
+  },
+  {
+    "id": 88,
+    "name": "In the Shadows",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/in-the-shadows.png"
+  },
+  {
+    "id": 89,
+    "name": "Inspiring Speech",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/inspiring-speech.png"
+  },
+  {
+    "id": 90,
+    "name": "Intelligence Leak",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/intelligence-leak.png"
+  },
+  {
+    "id": 91,
+    "name": "Jump Jets",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/jump-jets.png"
+  },
+  {
+    "id": 92,
+    "name": "Jundland Terror",
+    "cost": 2,
+    "limit": 2,
+    "image": "command-cards/jundland-terror.png"
+  },
+  {
+    "id": 93,
+    "name": "Knowledge and Defense",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/knowledge-and-defense.png"
+  },
+  {
+    "id": 94,
+    "name": "Lock On",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/lock-on.png"
+  },
+  {
+    "id": 95,
+    "name": "Lord of the Sith",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/lord-of-the-sith.png"
+  },
+  {
+    "id": 96,
+    "name": "Lure of the Dark Side",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/lure-of-the-dark-side.png"
+  },
+  {
+    "id": 97,
+    "name": "Mandalorian Tactics",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/mandalorian-tactics.png"
+  },
+  {
+    "id": 98,
+    "name": "Marksman",
+    "cost": 1,
+    "limit": 2,
+    "image": "command-cards/marksman.png"
+  },
+  {
+    "id": 99,
+    "name": "Master Operative",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/master-operative.png"
+  },
+  {
+    "id": 100,
+    "name": "Maximum Firepower",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/maximum-firepower.png"
+  },
+  {
+    "id": 101,
+    "name": "Meditation",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/meditation.png"
+  },
+  {
+    "id": 102,
+    "name": "Merciless",
+    "cost": 1,
+    "limit": 2,
+    "image": "command-cards/merciless.png"
+  },
+  {
+    "id": 103,
+    "name": "Miracle Worker",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/miracle-worker.png"
+  },
+  {
+    "id": 104,
+    "name": "Mitigate",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/mitigate.png"
+  },
+  {
+    "id": 105,
+    "name": "Navigation Upgrade",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/navigation-upgrade.png"
+  },
+  {
+    "id": 106,
+    "name": "Negation",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/negation.png"
+  },
+  {
+    "id": 107,
+    "name": "New Orders",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/new-orders.png"
+  },
+  {
+    "id": 108,
+    "name": "Of No Importance",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/of-no-importance.png"
+  },
+  {
+    "id": 109,
+    "name": "On a Mission",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/on-a-mission.png"
+  },
+  {
+    "id": 110,
+    "name": "On the Lam",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/on-the-lam.png"
+  },
+  {
+    "id": 111,
+    "name": "Opportunistic",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/opportunistic.png"
+  },
+  {
+    "id": 112,
+    "name": "Optimal Bombardment",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/optimal-bombardment.png"
+  },
+  {
+    "id": 113,
+    "name": "Overcharged Weapons",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/overcharged-weapons.png"
+  },
+  {
+    "id": 114,
+    "name": "Overdrive",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/overdrive.png"
+  },
+  {
+    "id": 115,
+    "name": "Overrun",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/overrun.png"
+  },
+  {
+    "id": 116,
+    "name": "Parry",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/parry.png"
+  },
+  {
+    "id": 117,
+    "name": "Parting Blow",
+    "cost": 2,
+    "limit": 2,
+    "image": "command-cards/parting-blow.png"
+  },
+  {
+    "id": 118,
+    "name": "Payback",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/payback.png"
+  },
+  {
+    "id": 119,
+    "name": "Pickpocket",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/pickpocket.png"
+  },
+  {
+    "id": 120,
+    "name": "Positioning Advantage",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/positioning-advantage.png"
+  },
+  {
+    "id": 121,
+    "name": "Primary Target",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/primary-target.png"
+  },
+  {
+    "id": 122,
+    "name": "Provoke",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/provoke.png"
+  },
+  {
+    "id": 123,
+    "name": "Rally The Troops",
+    "cost": 3,
+    "limit": 1,
+    "image": "command-cards/rally-the-troops.png"
+  },
+  {
+    "id": 124,
+    "name": "Rank and File",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/rank-and-file.png"
+  },
+  {
+    "id": 125,
+    "name": "Reinforcements",
+    "cost": 2,
+    "limit": 2,
+    "image": "command-cards/reinforcements.png"
+  },
+  {
+    "id": 126,
+    "name": "Repair",
+    "cost": 2,
+    "limit": 2,
+    "image": "command-cards/repair.png"
+  },
+  {
+    "id": 127,
+    "name": "Reposition",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/reposition.png"
+  },
+  {
+    "id": 128,
+    "name": "Roar",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/roar.png"
+  },
+  {
+    "id": 129,
+    "name": "Run for Cover",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/run-for-cover.png"
+  },
+  {
+    "id": 130,
+    "name": "Self Defense",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/self-defense.png"
+  },
+  {
+    "id": 131,
+    "name": "Set For Stun",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/set-for-stun.png"
+  },
+  {
+    "id": 132,
+    "name": "Set a Trap",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/set-a-trap.png"
+  },
+  {
+    "id": 133,
+    "name": "Shared Experience",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/shared-experience.png"
+  },
+  {
+    "id": 134,
+    "name": "Shoot the Messenger",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/shoot-the-messenger.png"
+  },
+  {
+    "id": 135,
+    "name": "Single Purpose",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/single-purpose.png"
+  },
+  {
+    "id": 136,
+    "name": "Size Advantage",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/size-advantage.png"
+  },
+  {
+    "id": 137,
+    "name": "Slippery Target",
+    "cost": 2,
+    "limit": 2,
+    "image": "command-cards/slippery-target.png"
+  },
+  {
+    "id": 138,
+    "name": "Smuggled Supplies",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/smuggled-supplies.png"
+  },
+  {
+    "id": 139,
+    "name": "Smugglers Tricks",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/smugglers-tricks.png"
+  },
+  {
+    "id": 140,
+    "name": "Squad Swarm",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/squad-swarm.png"
+  },
+  {
+    "id": 141,
+    "name": "Stall for Time",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/stall-for-time.png"
+  },
+  {
+    "id": 142,
+    "name": "Stay Down",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/stay-down.png"
+  },
+  {
+    "id": 143,
+    "name": "Stealth Tactics",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/stealth-tactics.png"
+  },
+  {
+    "id": 144,
+    "name": "Stimulants",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/stimulants.png"
+  },
+  {
+    "id": 145,
+    "name": "Strategic Shift",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/strategic-shift.png"
+  },
+  {
+    "id": 146,
+    "name": "Strength in Numbers",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/strength-in-numbers.png"
+  },
+  {
+    "id": 147,
+    "name": "Stroke of Brilliance",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/stroke-of-brilliance.png"
+  },
+  {
+    "id": 148,
+    "name": "Survival Instincts",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/survival-instincts.png"
+  },
+  {
+    "id": 149,
+    "name": "Take Position",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/take-position.png"
+  },
+  {
+    "id": 150,
+    "name": "Targeting Network",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/targeting-network.png"
+  },
+  {
+    "id": 151,
+    "name": "Terminal Network",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/terminal-network.png"
+  },
+  {
+    "id": 152,
+    "name": "Terminal Protocol",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/terminal-protocol.png"
+  },
+  {
+    "id": 153,
+    "name": "There is Another",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/there-is-another.png"
+  },
+  {
+    "id": 154,
+    "name": "Tools for the Job",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/tools-for-the-job.png"
+  },
+  {
+    "id": 155,
+    "name": "Tough Luck",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/tough-luck.png"
+  },
+  {
+    "id": 156,
+    "name": "Toxic Dart",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/toxic-dart.png"
+  },
+  {
+    "id": 157,
+    "name": "Trandoshan Terror",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/trandoshan-terror.png"
+  },
+  {
+    "id": 158,
+    "name": "Triangulate",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/triangulate.png"
+  },
+  {
+    "id": 159,
+    "name": "Utinni",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/utinni.png"
+  },
+  {
+    "id": 160,
+    "name": "Vanish",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/vanish.png"
+  },
+  {
+    "id": 161,
+    "name": "Wild Attack",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/wild-attack.png"
+  },
+  {
+    "id": 162,
+    "name": "Wild Fury",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/wild-fury.png"
+  },
+  {
+    "id": 163,
+    "name": "Wookiee Rage",
+    "cost": 2,
+    "limit": 2,
+    "image": "command-cards/wookiee-rage.png"
+  }
+]

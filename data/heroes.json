@@ -1,0 +1,98 @@
+[
+  {
+    "id": 4,
+    "name": "Biv Bodhrik",
+    "healthy": "heroes/biv-bodhrik-healthy.png",
+    "wounded": "heroes/biv-bodhrik-wounded.png"
+  },
+  {
+    "id": 11,
+    "name": "Davith Elso",
+    "healthy": "heroes/davith-elso-healthy.png",
+    "wounded": "heroes/davith-elso-wounded.png"
+  },
+  {
+    "id": 0,
+    "name": "Diala Passil",
+    "healthy": "heroes/diala-passil-healthy.png",
+    "wounded": "heroes/diala-passil-wounded.png"
+  },
+  {
+    "id": 1,
+    "name": "Fenn Signis",
+    "healthy": "heroes/fenn-signis-healthy.png",
+    "wounded": "heroes/fenn-signis-wounded.png"
+  },
+  {
+    "id": 2,
+    "name": "Gaarkhan",
+    "healthy": "heroes/gaarkhan-healthy.png",
+    "wounded": "heroes/gaarkhan-wounded.png"
+  },
+  {
+    "id": 3,
+    "name": "Gideon Argus",
+    "healthy": "heroes/gideon-argus-healthy.png",
+    "wounded": "heroes/gideon-argus-wounded.png"
+  },
+  {
+    "id": 6,
+    "name": "Jyn Odan",
+    "healthy": "heroes/jyn-odan-healthy.png",
+    "wounded": "heroes/jyn-odan-wounded.png"
+  },
+  {
+    "id": 8,
+    "name": "Loku Kanoloa",
+    "healthy": "heroes/loku-kanoloa-healthy.png",
+    "wounded": "heroes/loku-kanoloa-wounded.png"
+  },
+  {
+    "id": 9,
+    "name": "MHD-19",
+    "healthy": "heroes/mhd-19-healthy.png",
+    "wounded": "heroes/mhd-19-wounded.png"
+  },
+  {
+    "id": 7,
+    "name": "Mak Eshka'rey",
+    "healthy": "heroes/mak-eshkarey-healthy.png",
+    "wounded": "heroes/mak-eshkarey-wounded.png"
+  },
+  {
+    "id": 12,
+    "name": "Murne Rin",
+    "healthy": "heroes/murne-rin-healthy.png",
+    "wounded": "heroes/murne-rin-wounded.png"
+  },
+  {
+    "id": 13,
+    "name": "Onar Koma",
+    "healthy": "heroes/onar-koma-healthy.png",
+    "wounded": "heroes/onar-koma-wounded.png"
+  },
+  {
+    "id": 5,
+    "name": "Saska Teft",
+    "healthy": "heroes/saska-teft-healthy.png",
+    "wounded": "heroes/saska-teft-wounded.png"
+  },
+  {
+    "id": 14,
+    "name": "Shyla Varad",
+    "healthy": "heroes/shyla-varad-healthy.png",
+    "wounded": "heroes/shyla-varad-wounded.png"
+  },
+  {
+    "id": 10,
+    "name": "Verena Talos",
+    "healthy": "heroes/verena-talos-healthy.png",
+    "wounded": "heroes/verena-talos-wounded.png"
+  },
+  {
+    "id": 15,
+    "name": "Vinto Hreeda",
+    "healthy": "heroes/vinto-hreeda-healthy.png",
+    "wounded": "heroes/vinto-hreeda-wounded.png"
+  }
+]

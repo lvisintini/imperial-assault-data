@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "name": "Escape from Cloud City",
+    "image": "threat-mission-cards/escape-from-cloud-city.png"
+  },
+  {
+    "id": 1,
+    "name": "Scouring of the Homestead",
+    "image": "threat-mission-cards/scouring-of-the-homestead.png"
+  },
+  {
+    "id": 2,
+    "name": "Survival of the Fittest",
+    "image": "threat-mission-cards/survival-of-the-fittest.png"
+  },
+  {
+    "id": 3,
+    "name": "The Hard Way",
+    "image": "threat-mission-cards/the-hard-way.png"
+  }
+]

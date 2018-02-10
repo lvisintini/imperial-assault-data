@@ -1,0 +1,268 @@
+[
+  {
+    "id": 0,
+    "name": "Imperial Assault",
+    "type": "Core Game",
+    "wave": null,
+    "image": "sources/imperial-assault.png"
+  },
+  {
+    "id": 1,
+    "name": "Twin Shadows",
+    "type": "Expansion",
+    "wave": null,
+    "image": "sources/twin-shadows.png"
+  },
+  {
+    "id": 2,
+    "name": "Return to Hoth",
+    "type": "Expansion",
+    "wave": null,
+    "image": "sources/return-to-hoth.png"
+  },
+  {
+    "id": 3,
+    "name": "The Bespin Gambit",
+    "type": "Expansion",
+    "wave": null,
+    "image": "sources/the-bespin-gambit.png"
+  },
+  {
+    "id": 4,
+    "name": "Jabba's Realm",
+    "type": "Expansion",
+    "wave": null,
+    "image": "sources/jabbas-realm.png"
+  },
+  {
+    "id": 5,
+    "name": "IG88",
+    "type": "Villain Pack",
+    "wave": 1,
+    "image": "sources/ig88.png"
+  },
+  {
+    "id": 6,
+    "name": "Rebel Saboteurs",
+    "type": "Ally Pack",
+    "wave": 1,
+    "image": "sources/rebel-saboteurs.png"
+  },
+  {
+    "id": 7,
+    "name": "Rebel Troopers",
+    "type": "Ally Pack",
+    "wave": 1,
+    "image": "sources/rebel-troopers.png"
+  },
+  {
+    "id": 8,
+    "name": "Royal Guard Champion",
+    "type": "Villain Pack",
+    "wave": 1,
+    "image": "sources/royal-guard-champion.png"
+  },
+  {
+    "id": 9,
+    "name": "Boba Fett",
+    "type": "Villain Pack",
+    "wave": 2,
+    "image": "sources/boba-fett.png"
+  },
+  {
+    "id": 10,
+    "name": "Kayn Somos",
+    "type": "Villain Pack",
+    "wave": 2,
+    "image": "sources/kayn-somos.png"
+  },
+  {
+    "id": 11,
+    "name": "R2-D2 and C-3PO",
+    "type": "Ally Pack",
+    "wave": 2,
+    "image": "sources/r2-d2-and-c-3po.png"
+  },
+  {
+    "id": 12,
+    "name": "Hired Guns",
+    "type": "Villain Pack",
+    "wave": 3,
+    "image": "sources/hired-guns.png"
+  },
+  {
+    "id": 13,
+    "name": "Stormtroopers",
+    "type": "Villain Pack",
+    "wave": 3,
+    "image": "sources/stormtroopers.png"
+  },
+  {
+    "id": 14,
+    "name": "Wookie Warriors",
+    "type": "Ally Pack",
+    "wave": 3,
+    "image": "sources/wookie-warriors.png"
+  },
+  {
+    "id": 15,
+    "name": "Alliance Smuggler",
+    "type": "Ally Pack",
+    "wave": 4,
+    "image": "sources/alliance-smuggler.png"
+  },
+  {
+    "id": 16,
+    "name": "Bantha Rider",
+    "type": "Villain Pack",
+    "wave": 4,
+    "image": "sources/bantha-rider.png"
+  },
+  {
+    "id": 17,
+    "name": "Dengar",
+    "type": "Villain Pack",
+    "wave": 5,
+    "image": "sources/dengar.png"
+  },
+  {
+    "id": 18,
+    "name": "Echo Base Troopers",
+    "type": "Ally Pack",
+    "wave": 5,
+    "image": "sources/echo-base-troopers.png"
+  },
+  {
+    "id": 19,
+    "name": "General Sorin",
+    "type": "Villain Pack",
+    "wave": 5,
+    "image": "sources/general-sorin.png"
+  },
+  {
+    "id": 20,
+    "name": "Leia Organa",
+    "type": "Ally Pack",
+    "wave": 5,
+    "image": "sources/leia-organa.png"
+  },
+  {
+    "id": 21,
+    "name": "Agent Blaise",
+    "type": "Villain Pack",
+    "wave": 6,
+    "image": "sources/agent-blaise.png"
+  },
+  {
+    "id": 22,
+    "name": "Bossk",
+    "type": "Villain Pack",
+    "wave": 6,
+    "image": "sources/bossk.png"
+  },
+  {
+    "id": 23,
+    "name": "ISB Infiltrators",
+    "type": "Villain Pack",
+    "wave": 6,
+    "image": "sources/isb-infiltrators.png"
+  },
+  {
+    "id": 24,
+    "name": "Lando Calrissian",
+    "type": "Ally Pack",
+    "wave": 6,
+    "image": "sources/lando-calrissian.png"
+  },
+  {
+    "id": 25,
+    "name": "Greedo",
+    "type": "Villain Pack",
+    "wave": 7,
+    "image": "sources/greedo.png"
+  },
+  {
+    "id": 26,
+    "name": "Obi-Wan Kenobi",
+    "type": "Ally Pack",
+    "wave": 7,
+    "image": "sources/obi-wan-kenobi.png"
+  },
+  {
+    "id": 27,
+    "name": "The Grand Inquisitor",
+    "type": "Ally Pack",
+    "wave": 7,
+    "image": "sources/the-grand-inquisitor.png"
+  },
+  {
+    "id": 28,
+    "name": "Alliance Rangers",
+    "type": "Ally Pack",
+    "wave": 8,
+    "image": "sources/alliance-rangers.png"
+  },
+  {
+    "id": 29,
+    "name": "Captain Terro",
+    "type": "Villain Pack",
+    "wave": 8,
+    "image": "sources/captain-terro.png"
+  },
+  {
+    "id": 30,
+    "name": "Jabba the Hutt",
+    "type": "Villain Pack",
+    "wave": 8,
+    "image": "sources/jabba-the-hutt.png"
+  },
+  {
+    "id": 31,
+    "name": "Luke Skywalker Jedi Knight",
+    "type": "Ally Pack",
+    "wave": 8,
+    "image": "sources/luke-skywalker-jedi-knight.png"
+  },
+  {
+    "id": 32,
+    "name": "BT-1 and 0-0-0",
+    "type": "Ally Pack",
+    "wave": 9,
+    "image": "sources/bt-1-and-0-0-0.png"
+  },
+  {
+    "id": 33,
+    "name": "Hera Syndulla and C1-10P",
+    "type": "Ally Pack",
+    "wave": 9,
+    "image": "sources/hera-syndulla-and-c1-10p.png"
+  },
+  {
+    "id": 34,
+    "name": "Jawa Scavenger",
+    "type": "Ally Pack",
+    "wave": 9,
+    "image": "sources/jawa-scavenger.png"
+  },
+  {
+    "id": 35,
+    "name": "Chewbacca",
+    "type": "Ally Pack",
+    "wave": 1,
+    "image": "sources/chewbacca.png"
+  },
+  {
+    "id": 36,
+    "name": "General Weiss",
+    "type": "Villain Pack",
+    "wave": 1,
+    "image": "sources/general-weiss.png"
+  },
+  {
+    "id": 37,
+    "name": "Han Solo",
+    "type": "Ally Pack",
+    "wave": 1,
+    "image": "sources/han-solo.png"
+  }
+]

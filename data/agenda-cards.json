@@ -1,0 +1,818 @@
+[
+  {
+    "id": 0,
+    "name": "Imperial Informants",
+    "agenda_id": 0,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/agents-of-the-empire-imperial-informants.png"
+  },
+  {
+    "id": 1,
+    "name": "Impounded",
+    "agenda_id": 0,
+    "influence": 4,
+    "mission": true,
+    "image": "agenda-cards/agents-of-the-empire-impounded.png"
+  },
+  {
+    "id": 2,
+    "name": "Tracking Beacon",
+    "agenda_id": 0,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/agents-of-the-empire-tracking-beacon.png"
+  },
+  {
+    "id": 3,
+    "name": "High-Value Target",
+    "agenda_id": 1,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/for-the-right-price-high-value-target.png"
+  },
+  {
+    "id": 4,
+    "name": "Hired Help",
+    "agenda_id": 1,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/for-the-right-price-hired-help.png"
+  },
+  {
+    "id": 5,
+    "name": "Wanted",
+    "agenda_id": 1,
+    "influence": 4,
+    "mission": true,
+    "image": "agenda-cards/for-the-right-price-wanted.png"
+  },
+  {
+    "id": 6,
+    "name": "Fire at Will",
+    "agenda_id": 2,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/imperial-discipline-fire-at-will.png"
+  },
+  {
+    "id": 7,
+    "name": "Impending Doom",
+    "agenda_id": 2,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/imperial-discipline-impending-doom.png"
+  },
+  {
+    "id": 8,
+    "name": "Tactical Maneuvering",
+    "agenda_id": 2,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/imperial-discipline-tactical-maneuvering.png"
+  },
+  {
+    "id": 9,
+    "name": "Interrogation Protocol",
+    "agenda_id": 3,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/imperial-industry-interrogation-protocol.png"
+  },
+  {
+    "id": 10,
+    "name": "Means of Production",
+    "agenda_id": 3,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/imperial-industry-means-of-production.png"
+  },
+  {
+    "id": 11,
+    "name": "Restorative Supplies",
+    "agenda_id": 3,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/imperial-industry-restorative-supplies.png"
+  },
+  {
+    "id": 12,
+    "name": "ISB Enforcers",
+    "agenda_id": 4,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/imperial-security-bureau-isb-enforcers.png"
+  },
+  {
+    "id": 13,
+    "name": "Imperial Operative",
+    "agenda_id": 4,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/imperial-security-bureau-imperial-operative.png"
+  },
+  {
+    "id": 14,
+    "name": "Internal Affairs",
+    "agenda_id": 4,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/imperial-security-bureau-internal-affairs.png"
+  },
+  {
+    "id": 15,
+    "name": "A Dark Power",
+    "agenda_id": 5,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/lord-vaders-command-a-dark-power.png"
+  },
+  {
+    "id": 16,
+    "name": "As You Wish",
+    "agenda_id": 5,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/lord-vaders-command-as-you-wish.png"
+  },
+  {
+    "id": 17,
+    "name": "Dark Obsession",
+    "agenda_id": 5,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/lord-vaders-command-dark-obsession.png"
+  },
+  {
+    "id": 18,
+    "name": "Breaking Point",
+    "agenda_id": 6,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/retaliation-breaking-point.png"
+  },
+  {
+    "id": 19,
+    "name": "Tactical Explosives",
+    "agenda_id": 6,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/retaliation-tactical-explosives.png"
+  },
+  {
+    "id": 20,
+    "name": "Weakness Revealed",
+    "agenda_id": 6,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/retaliation-weakness-revealed.png"
+  },
+  {
+    "id": 21,
+    "name": "Death Mark",
+    "agenda_id": 7,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/pursuit-of-the-enemy-death-mark.png"
+  },
+  {
+    "id": 22,
+    "name": "Fire in the Sky",
+    "agenda_id": 7,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/pursuit-of-the-enemy-fire-in-the-sky.png"
+  },
+  {
+    "id": 23,
+    "name": "Strike and Subdue",
+    "agenda_id": 7,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/pursuit-of-the-enemy-strike-and-subdue.png"
+  },
+  {
+    "id": 24,
+    "name": "Advanced Prototypes",
+    "agenda_id": 8,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/the-empires-reach-advanced-prototypes.png"
+  },
+  {
+    "id": 25,
+    "name": "Data Security",
+    "agenda_id": 8,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/the-empires-reach-data-security.png"
+  },
+  {
+    "id": 26,
+    "name": "Infiltrated",
+    "agenda_id": 8,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/the-empires-reach-infiltrated.png"
+  },
+  {
+    "id": 27,
+    "name": "Counter Strike",
+    "agenda_id": 9,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/defensive-tactics-counter-strike.png"
+  },
+  {
+    "id": 28,
+    "name": "Enhanced Armor",
+    "agenda_id": 9,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/defensive-tactics-enhanced-armor.png"
+  },
+  {
+    "id": 29,
+    "name": "Personal Shield Generators",
+    "agenda_id": 9,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/defensive-tactics-personal-shield-generators.png"
+  },
+  {
+    "id": 30,
+    "name": "Bestial Fury",
+    "agenda_id": 10,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/natural-warfare-bestial-fury.png"
+  },
+  {
+    "id": 31,
+    "name": "Exposed to the Elements",
+    "agenda_id": 10,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/natural-warfare-exposed-to-the-elements.png"
+  },
+  {
+    "id": 32,
+    "name": "Unchained",
+    "agenda_id": 10,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/natural-warfare-unchained.png"
+  },
+  {
+    "id": 33,
+    "name": "Blackmail",
+    "agenda_id": 11,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/enhanced-interrogation-blackmail.png"
+  },
+  {
+    "id": 34,
+    "name": "Learn Their Weaknesses",
+    "agenda_id": 11,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/enhanced-interrogation-learn-their-weaknesses.png"
+  },
+  {
+    "id": 35,
+    "name": "Weak Links",
+    "agenda_id": 11,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/enhanced-interrogation-weak-links.png"
+  },
+  {
+    "id": 36,
+    "name": "Contingency Plan",
+    "agenda_id": 12,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/evasive-maneuvers-contingency-plan.png"
+  },
+  {
+    "id": 37,
+    "name": "Feigned Retreat",
+    "agenda_id": 12,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/evasive-maneuvers-feigned-retreat.png"
+  },
+  {
+    "id": 38,
+    "name": "Hasty Ambush",
+    "agenda_id": 12,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/evasive-maneuvers-hasty-ambush.png"
+  },
+  {
+    "id": 39,
+    "name": "Abandoned Contract",
+    "agenda_id": 13,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/guild-hunters-abandoned-contract.png"
+  },
+  {
+    "id": 40,
+    "name": "Call Your Shot",
+    "agenda_id": 13,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/guild-hunters-call-your-shot.png"
+  },
+  {
+    "id": 41,
+    "name": "Shoot First",
+    "agenda_id": 13,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/guild-hunters-shoot-first.png"
+  },
+  {
+    "id": 42,
+    "name": "Jetpacks",
+    "agenda_id": 14,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/persistence-jetpacks.png"
+  },
+  {
+    "id": 43,
+    "name": "No Rest for the Weary",
+    "agenda_id": 14,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/persistence-no-rest-for-the-weary.png"
+  },
+  {
+    "id": 44,
+    "name": "Snap Fire",
+    "agenda_id": 14,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/persistence-snap-fire.png"
+  },
+  {
+    "id": 45,
+    "name": "Binary Revolution",
+    "agenda_id": 15,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/droid-uprising-binary-revolution.png"
+  },
+  {
+    "id": 46,
+    "name": "Firepower Upgrade",
+    "agenda_id": 15,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/droid-uprising-firepower-upgrade.png"
+  },
+  {
+    "id": 47,
+    "name": "Sabotaged Plans",
+    "agenda_id": 15,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/droid-uprising-sabotaged-plans.png"
+  },
+  {
+    "id": 48,
+    "name": "Best of the Best",
+    "agenda_id": 16,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/crimson-empire-best-of-the-best.png"
+  },
+  {
+    "id": 49,
+    "name": "Infection",
+    "agenda_id": 16,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/crimson-empire-infection.png"
+  },
+  {
+    "id": 50,
+    "name": "Pulling the Strings",
+    "agenda_id": 16,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/crimson-empire-pulling-the-strings.png"
+  },
+  {
+    "id": 51,
+    "name": "By Any Means Necessary",
+    "agenda_id": 17,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/soldiers-for-hire-by-any-means-necessary.png"
+  },
+  {
+    "id": 52,
+    "name": "No Disintegrations",
+    "agenda_id": 17,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/soldiers-for-hire-no-disintegrations.png"
+  },
+  {
+    "id": 53,
+    "name": "Predator and Prey",
+    "agenda_id": 17,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/soldiers-for-hire-predator-and-prey.png"
+  },
+  {
+    "id": 54,
+    "name": "Military Presence",
+    "agenda_id": 18,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/stormtrooper-support-military-presence.png"
+  },
+  {
+    "id": 55,
+    "name": "Perpetual Reinforcements",
+    "agenda_id": 18,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/stormtrooper-support-perpetual-reinforcements.png"
+  },
+  {
+    "id": 56,
+    "name": "Strength Of Command",
+    "agenda_id": 18,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/stormtrooper-support-strength-of-command.png"
+  },
+  {
+    "id": 57,
+    "name": "Back-Room Bargains",
+    "agenda_id": 19,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/nefarious-dealings-back-room-bargains.png"
+  },
+  {
+    "id": 58,
+    "name": "Final Blast",
+    "agenda_id": 19,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/nefarious-dealings-final-blast.png"
+  },
+  {
+    "id": 59,
+    "name": "Trade Routes Disrupted",
+    "agenda_id": 19,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/nefarious-dealings-trade-routes-disrupted.png"
+  },
+  {
+    "id": 60,
+    "name": "Bunker Buster",
+    "agenda_id": 20,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/vaders-fist-bunker-buster.png"
+  },
+  {
+    "id": 61,
+    "name": "Set For Stun",
+    "agenda_id": 20,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/vaders-fist-set-for-stun.png"
+  },
+  {
+    "id": 62,
+    "name": "To The Last Man",
+    "agenda_id": 20,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/vaders-fist-to-the-last-man.png"
+  },
+  {
+    "id": 63,
+    "name": "Grievous Wound",
+    "agenda_id": 21,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/tusken-treachery-grievous-wound.png"
+  },
+  {
+    "id": 64,
+    "name": "Into the Wastes",
+    "agenda_id": 21,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/tusken-treachery-into-the-wastes.png"
+  },
+  {
+    "id": 65,
+    "name": "Relocated",
+    "agenda_id": 21,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/tusken-treachery-relocated.png"
+  },
+  {
+    "id": 66,
+    "name": "A Bounty Protected",
+    "agenda_id": 22,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/punishing-tactics-a-bounty-protected.png"
+  },
+  {
+    "id": 67,
+    "name": "Beaten Down",
+    "agenda_id": 22,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/punishing-tactics-beaten-down.png"
+  },
+  {
+    "id": 68,
+    "name": "Targeted Cruelty",
+    "agenda_id": 22,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/punishing-tactics-targeted-cruelty.png"
+  },
+  {
+    "id": 69,
+    "name": "Armored Division",
+    "agenda_id": 23,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/bombardment-armored-division.png"
+  },
+  {
+    "id": 70,
+    "name": "Explosive Shrapnel",
+    "agenda_id": 23,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/bombardment-explosive-shrapnel.png"
+  },
+  {
+    "id": 71,
+    "name": "Fully Charged",
+    "agenda_id": 23,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/bombardment-fully-charged.png"
+  },
+  {
+    "id": 72,
+    "name": "Classified Techniques",
+    "agenda_id": 24,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/imperial-intelligence-classified-techniques.png"
+  },
+  {
+    "id": 73,
+    "name": "Security Breach",
+    "agenda_id": 24,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/imperial-intelligence-security-breach.png"
+  },
+  {
+    "id": 74,
+    "name": "Under Surveillance",
+    "agenda_id": 24,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/imperial-intelligence-under-surveillance.png"
+  },
+  {
+    "id": 75,
+    "name": "Furious Retaliation",
+    "agenda_id": 25,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/base-instincts-furious-retaliation.png"
+  },
+  {
+    "id": 76,
+    "name": "Gunrunner",
+    "agenda_id": 25,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/base-instincts-gunrunner.png"
+  },
+  {
+    "id": 77,
+    "name": "On the Hunt",
+    "agenda_id": 25,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/base-instincts-on-the-hunt.png"
+  },
+  {
+    "id": 78,
+    "name": "Misdirection",
+    "agenda_id": 26,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/infiltration-misdirection.png"
+  },
+  {
+    "id": 79,
+    "name": "Quiet Entry",
+    "agenda_id": 26,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/infiltration-quiet-entry.png"
+  },
+  {
+    "id": 80,
+    "name": "Trip Mine",
+    "agenda_id": 26,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/infiltration-trip-mine.png"
+  },
+  {
+    "id": 81,
+    "name": "Hunter for a Fee",
+    "agenda_id": 27,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/contract-gunmen-hunter-for-a-fee.png"
+  },
+  {
+    "id": 82,
+    "name": "Stealth Squad",
+    "agenda_id": 27,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/contract-gunmen-stealth-squad.png"
+  },
+  {
+    "id": 83,
+    "name": "Top Target",
+    "agenda_id": 27,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/contract-gunmen-top-target.png"
+  },
+  {
+    "id": 84,
+    "name": "Cornered",
+    "agenda_id": 28,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/inquisition-cornered.png"
+  },
+  {
+    "id": 85,
+    "name": "Targeted by the Empire",
+    "agenda_id": 28,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/inquisition-targeted-by-the-empire.png"
+  },
+  {
+    "id": 86,
+    "name": "When They Least Expect It",
+    "agenda_id": 28,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/inquisition-when-they-least-expect-it.png"
+  },
+  {
+    "id": 87,
+    "name": "Anchorhead Affair",
+    "agenda_id": 29,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/wasteland-patrol-anchorhead-affair.png"
+  },
+  {
+    "id": 88,
+    "name": "Dewback Patrol",
+    "agenda_id": 29,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/wasteland-patrol-dewback-patrol.png"
+  },
+  {
+    "id": 89,
+    "name": "Flamethrower",
+    "agenda_id": 29,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/wasteland-patrol-flamethrower.png"
+  },
+  {
+    "id": 90,
+    "name": "Head-Hunting",
+    "agenda_id": 30,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/jabbas-empire-head-hunting.png"
+  },
+  {
+    "id": 91,
+    "name": "On Jabbas Orders",
+    "agenda_id": 30,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/jabbas-empire-on-jabbas-orders.png"
+  },
+  {
+    "id": 92,
+    "name": "One Fat Slug",
+    "agenda_id": 30,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/jabbas-empire-one-fat-slug.png"
+  },
+  {
+    "id": 93,
+    "name": "Etiquette and Torture",
+    "agenda_id": 31,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/devious-droids-etiquette-and-torture.png"
+  },
+  {
+    "id": 94,
+    "name": "Invasive Procedure",
+    "agenda_id": 31,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/devious-droids-invasive-procedure.png"
+  },
+  {
+    "id": 95,
+    "name": "Missile Salvo",
+    "agenda_id": 31,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/devious-droids-missile-salvo.png"
+  },
+  {
+    "id": 96,
+    "name": "Ion Blasters",
+    "agenda_id": 32,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/desert-scavengers-ion-blasters.png"
+  },
+  {
+    "id": 97,
+    "name": "Jawa Raid",
+    "agenda_id": 32,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/desert-scavengers-jawa-raid.png"
+  },
+  {
+    "id": 98,
+    "name": "Salvage Operatives",
+    "agenda_id": 32,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/desert-scavengers-salvage-operatives.png"
+  },
+  {
+    "id": 99,
+    "name": "Forest Ambush",
+    "agenda_id": 33,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/the-generals-scheme-forest-ambush.png"
+  },
+  {
+    "id": 100,
+    "name": "Inspiring Command",
+    "agenda_id": 33,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/the-generals-scheme-inspiring-command.png"
+  },
+  {
+    "id": 101,
+    "name": "Special Modifications",
+    "agenda_id": 33,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/the-generals-scheme-special-modifications.png"
+  }
+]

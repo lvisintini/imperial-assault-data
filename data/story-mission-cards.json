@@ -1,0 +1,147 @@
+[
+  {
+    "id": 0,
+    "name": "Disaster",
+    "image": "story-mission-cards/disaster.png"
+  },
+  {
+    "id": 1,
+    "name": "Home Front",
+    "image": "story-mission-cards/home-front.png"
+  },
+  {
+    "id": 2,
+    "name": "One Step Behind",
+    "image": "story-mission-cards/one-step-behind.png"
+  },
+  {
+    "id": 3,
+    "name": "Our Last Hope",
+    "image": "story-mission-cards/our-last-hope.png"
+  },
+  {
+    "id": 4,
+    "name": "Rescue Ops",
+    "image": "story-mission-cards/rescue-ops.png"
+  },
+  {
+    "id": 5,
+    "name": "Return to Echo Base",
+    "image": "story-mission-cards/return-to-echo-base.png"
+  },
+  {
+    "id": 6,
+    "name": "The Last Line",
+    "image": "story-mission-cards/the-last-line.png"
+  },
+  {
+    "id": 7,
+    "name": "White Noise",
+    "image": "story-mission-cards/white-noise.png"
+  },
+  {
+    "id": 8,
+    "name": "A New Threat",
+    "image": "story-mission-cards/a-new-threat.png"
+  },
+  {
+    "id": 9,
+    "name": "Chain of Command",
+    "image": "story-mission-cards/chain-of-command.png"
+  },
+  {
+    "id": 10,
+    "name": "Despertate Hour",
+    "image": "story-mission-cards/despertate-hour.png"
+  },
+  {
+    "id": 11,
+    "name": "Drawn In",
+    "image": "story-mission-cards/drawn-in.png"
+  },
+  {
+    "id": 12,
+    "name": "Fly Solo",
+    "image": "story-mission-cards/fly-solo.png"
+  },
+  {
+    "id": 13,
+    "name": "Imperial Hospitality",
+    "image": "story-mission-cards/imperial-hospitality.png"
+  },
+  {
+    "id": 14,
+    "name": "Incoming",
+    "image": "story-mission-cards/incoming.png"
+  },
+  {
+    "id": 15,
+    "name": "Last Stand",
+    "image": "story-mission-cards/last-stand.png"
+  },
+  {
+    "id": 16,
+    "name": "The Source",
+    "image": "story-mission-cards/the-source.png"
+  },
+  {
+    "id": 17,
+    "name": "Under Siege",
+    "image": "story-mission-cards/under-siege.png"
+  },
+  {
+    "id": 18,
+    "name": "Almost Home",
+    "image": "story-mission-cards/almost-home.png"
+  },
+  {
+    "id": 19,
+    "name": "Dangerous Allies",
+    "image": "story-mission-cards/dangerous-allies.png"
+  },
+  {
+    "id": 20,
+    "name": "Execute the Plan",
+    "image": "story-mission-cards/execute-the-plan.png"
+  },
+  {
+    "id": 21,
+    "name": "From All Sides",
+    "image": "story-mission-cards/from-all-sides.png"
+  },
+  {
+    "id": 22,
+    "name": "Hostile Negotiations",
+    "image": "story-mission-cards/hostile-negotiations.png"
+  },
+  {
+    "id": 23,
+    "name": "Moment of Fate",
+    "image": "story-mission-cards/moment-of-fate.png"
+  },
+  {
+    "id": 24,
+    "name": "Mutiny",
+    "image": "story-mission-cards/mutiny.png"
+  },
+  {
+    "id": 25,
+    "name": "Overcharged",
+    "image": "story-mission-cards/overcharged.png"
+  },
+  {
+    "id": 26,
+    "name": "Storming the Palace",
+    "image": "story-mission-cards/storming-the-palace.png"
+  },
+  {
+    "id": 27,
+    "name": "Trophy Hunting",
+    "image": "story-mission-cards/trophy-hunting.png"
+  },
+  {
+    "id": 28,
+    "name": "Turf War",
+    "image": "story-mission-cards/turf-war.png"
+  }
+]

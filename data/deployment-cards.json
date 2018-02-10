@@ -1,0 +1,2731 @@
+[
+  {
+    "id": 0,
+    "name": "0-0-0",
+    "description": "Specialized in Pain",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/0-0-0-specialized-in-pain.png"
+  },
+  {
+    "id": 1,
+    "name": "AT-ST",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Heavy Weapon",
+      "Vehicle"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 14,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/at-st-elite.png"
+  },
+  {
+    "id": 2,
+    "name": "Advanced Com Systems",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/advanced-com-systems-skirmish.png"
+  },
+  {
+    "id": 3,
+    "name": "Agent Blaise",
+    "description": "ISB Interrogator",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader",
+      "Spy"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/agent-blaise-isb-interrogator-campaign.png"
+  },
+  {
+    "id": 4,
+    "name": "Agent Blaise",
+    "description": "ISB Interrogator",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader",
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/agent-blaise-isb-interrogator-skirmish.png"
+  },
+  {
+    "id": 5,
+    "name": "Alliance Ranger",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Hunter",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": 3,
+    "deployment_group": 3,
+    "image": "deployment-cards/alliance-ranger.png"
+  },
+  {
+    "id": 6,
+    "name": "Alliance Ranger",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Hunter",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 12,
+    "reinforce_cost": 4,
+    "deployment_group": 3,
+    "image": "deployment-cards/alliance-ranger-elite.png"
+  },
+  {
+    "id": 7,
+    "name": "Alliance Smuggler",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/alliance-smuggler.png"
+  },
+  {
+    "id": 8,
+    "name": "Alliance Smuggler",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/alliance-smuggler-elite.png"
+  },
+  {
+    "id": 9,
+    "name": "BT-1",
+    "description": "Destructive Assassin",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Droid",
+      "Heavy Weapon",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/bt-1-destructive-assassin.png"
+  },
+  {
+    "id": 10,
+    "name": "Balance of the Force",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/balance-of-the-force-skirmish.png"
+  },
+  {
+    "id": 11,
+    "name": "Bantha Rider",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/bantha-rider-elite.png"
+  },
+  {
+    "id": 12,
+    "name": "Beast Tamer",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/beast-tamer-skirmish.png"
+  },
+  {
+    "id": 13,
+    "name": "Biv Bodhrik",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Hunter"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/biv-bodhrik-skirmish.png"
+  },
+  {
+    "id": 14,
+    "name": "Black Market",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/black-market-skirmish.png"
+  },
+  {
+    "id": 15,
+    "name": "Boba Fett",
+    "description": "Infamous Bounty Hunter",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 13,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/boba-fett-infamous-bounty-hunter.png"
+  },
+  {
+    "id": 16,
+    "name": "Bossk",
+    "description": "Born Hunter",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/bossk-born-hunter.png"
+  },
+  {
+    "id": 17,
+    "name": "Bossk",
+    "description": "Born Hunter",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/bossk-born-hunter.png"
+  },
+  {
+    "id": 18,
+    "name": "C-3PO",
+    "description": "Human-Cyborg Relations",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/c-3po-human-cyborg-relations.png"
+  },
+  {
+    "id": 19,
+    "name": "C1-10P",
+    "description": "\"Chopper\"",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/c1-10p-chopper.png"
+  },
+  {
+    "id": 20,
+    "name": "Captain Terro",
+    "description": "Wasteland Enforcer",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Creature",
+      "Leader",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/captain-terro-wasteland-enforcer.png"
+  },
+  {
+    "id": 21,
+    "name": "Channel the Force",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/channel-the-force-skirmish.png"
+  },
+  {
+    "id": 22,
+    "name": "Chewbacca",
+    "description": "Loyal Wookiee",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Guardian",
+      "Smuggler",
+      "Wookiee"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 15,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/chewbacca-loyal-wookiee.png"
+  },
+  {
+    "id": 23,
+    "name": "Combat Suit",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/combat-suit-skirmish.png"
+  },
+  {
+    "id": 24,
+    "name": "Cross-Training",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/cross-training-elite-skirmish.png"
+  },
+  {
+    "id": 25,
+    "name": "Darth Vader",
+    "description": "Lord of the Sith",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Brawler",
+      "Force User",
+      "Leader"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 18,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/darth-vader-lord-of-the-sith.png"
+  },
+  {
+    "id": 26,
+    "name": "Davith Elso",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User",
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/davith-elso-skirmish.png"
+  },
+  {
+    "id": 27,
+    "name": "Dengar",
+    "description": "Ruthless Killer",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/dengar-ruthless-killer.png"
+  },
+  {
+    "id": 28,
+    "name": "Devious Scheme",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/devious-scheme-skirmish.png"
+  },
+  {
+    "id": 29,
+    "name": "Dewback Rider",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Creature",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/dewback-rider-elite.png"
+  },
+  {
+    "id": 30,
+    "name": "Diala Passil",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Force User"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/diala-passil-skirmish.png"
+  },
+  {
+    "id": 31,
+    "name": "E-Web Engineer",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Heavy Weapon",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/e-web-engineer.png"
+  },
+  {
+    "id": 32,
+    "name": "E-Web Engineer",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Heavy Weapon",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/e-web-engineer-elite.png"
+  },
+  {
+    "id": 33,
+    "name": "Echo Base Trooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/echo-base-trooper.png"
+  },
+  {
+    "id": 34,
+    "name": "Echo Base Trooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/echo-base-trooper-elite.png"
+  },
+  {
+    "id": 35,
+    "name": "Explosive Armaments",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/explosive-armaments-skirmish.png"
+  },
+  {
+    "id": 36,
+    "name": "Feeding Frenzy",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/feeding-frenzy-elite-skirmish.png"
+  },
+  {
+    "id": 37,
+    "name": "Fenn Signis",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Trooper"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/fenn-signis-skirmish.png"
+  },
+  {
+    "id": 38,
+    "name": "First Strike",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/first-strike-skirmish.png"
+  },
+  {
+    "id": 39,
+    "name": "Focused on the Kill",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 0,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/focused-on-the-kill-skirmish.png"
+  },
+  {
+    "id": 40,
+    "name": "Fury Of Kashyyyk",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/fury-of-kashyyyk-skirmish.png"
+  },
+  {
+    "id": 41,
+    "name": "Gaarkhan",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Guardian",
+      "Wookiee"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/gaarkhan-skirmish.png"
+  },
+  {
+    "id": 42,
+    "name": "Gamorrean Guard",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/gamorrean-guard.png"
+  },
+  {
+    "id": 43,
+    "name": "Gamorrean Guard",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/gamorrean-guard-elite.png"
+  },
+  {
+    "id": 44,
+    "name": "General Sorin",
+    "description": "Vicious Tactician",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/general-sorin-vicious-tactician.png"
+  },
+  {
+    "id": 45,
+    "name": "General Weiss",
+    "description": "Field Commander",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Heavy Weapon",
+      "Leader",
+      "Vehicle"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 16,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/general-weiss-field-commander.png"
+  },
+  {
+    "id": 46,
+    "name": "Gideon Argus",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/gideon-argus-skirmish.png"
+  },
+  {
+    "id": 47,
+    "name": "Greedo",
+    "description": "Ambitious Mercenary",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/greedo-ambitious-mercenary.png"
+  },
+  {
+    "id": 48,
+    "name": "HK Assassin Droid",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Droid",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/hk-assassin-droid.png"
+  },
+  {
+    "id": 49,
+    "name": "HK Assassin Droid",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Droid",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 11,
+    "reinforce_cost": 6,
+    "deployment_group": 2,
+    "image": "deployment-cards/hk-assassin-droid-elite.png"
+  },
+  {
+    "id": 50,
+    "name": "Han Solo",
+    "description": "Scoundrel",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 12,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/han-solo-scoundrel.png"
+  },
+  {
+    "id": 51,
+    "name": "Headhunter",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/headhunter-skirmish.png"
+  },
+  {
+    "id": 52,
+    "name": "Heavy Stormtrooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Heavy Weapon",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/heavy-stormtrooper.png"
+  },
+  {
+    "id": 53,
+    "name": "Heavy Stormtrooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Heavy Weapon",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/heavy-stormtrooper-elite.png"
+  },
+  {
+    "id": 54,
+    "name": "Hera Syndulla",
+    "description": "Spectre-2",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/hera-syndulla-spectre-2.png"
+  },
+  {
+    "id": 55,
+    "name": "Heroic Effort",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 0,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/heroic-effort-skirmish.png"
+  },
+  {
+    "id": 56,
+    "name": "Hired Gun",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": 2,
+    "deployment_group": 2,
+    "image": "deployment-cards/hired-gun.png"
+  },
+  {
+    "id": 57,
+    "name": "Hired Gun",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/hired-gun-elite.png"
+  },
+  {
+    "id": 58,
+    "name": "IG-88",
+    "description": "Assassin Droid",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Droid",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 12,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/ig-88-assassin-droid.png"
+  },
+  {
+    "id": 59,
+    "name": "ISB Infiltrator",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Spy"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/isb-infiltrator.png"
+  },
+  {
+    "id": 60,
+    "name": "ISB Infiltrator",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Spy"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/isb-infiltrator-elite.png"
+  },
+  {
+    "id": 61,
+    "name": "Imperial Officer",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/imperial-officer.png"
+  },
+  {
+    "id": 62,
+    "name": "Imperial Officer",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/imperial-officer-elite.png"
+  },
+  {
+    "id": 63,
+    "name": "Indentured Jester",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/indentured-jester-skirmish.png"
+  },
+  {
+    "id": 64,
+    "name": "Jabba the Hutt",
+    "description": "Vile Gangster",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter",
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/jabba-the-hutt-vile-gangster-campaign.png"
+  },
+  {
+    "id": 65,
+    "name": "Jabba the Hutt",
+    "description": "Vile Gangster",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter",
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/jabba-the-hutt-vile-gangster-skirmish.png"
+  },
+  {
+    "id": 66,
+    "name": "Jawa Scavenger",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/jawa-scavenger.png"
+  },
+  {
+    "id": 67,
+    "name": "Jawa Scavenger",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/jawa-scavenger-elite-campaign.png"
+  },
+  {
+    "id": 68,
+    "name": "Jawa Scavenger",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/jawa-scavenger-elite-skirmish.png"
+  },
+  {
+    "id": 69,
+    "name": "Jet Trooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Trooper",
+      "Vehicle"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": 2,
+    "deployment_group": 2,
+    "image": "deployment-cards/jet-trooper.png"
+  },
+  {
+    "id": 70,
+    "name": "Jet Trooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Trooper",
+      "Vehicle"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/jet-trooper-elite.png"
+  },
+  {
+    "id": 71,
+    "name": "Jyn Odan",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/jyn-odan-skirmish.png"
+  },
+  {
+    "id": 72,
+    "name": "Kayn Somos",
+    "description": "Trooper Commander",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/kayn-somos-trooper-commander.png"
+  },
+  {
+    "id": 73,
+    "name": "Lando Calrissian",
+    "description": "Charming Gambler",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/lando-calrissian-charming-gambler.png"
+  },
+  {
+    "id": 74,
+    "name": "Last Resort",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/last-resort-skirmish.png"
+  },
+  {
+    "id": 75,
+    "name": "Leia Organa",
+    "description": "Rebel Commander",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Spy"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/leia-organa-rebel-commander-campaign.png"
+  },
+  {
+    "id": 76,
+    "name": "Leia Organa",
+    "description": "Rebel Commander",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/leia-organa-rebel-commander-skirmish.png"
+  },
+  {
+    "id": 77,
+    "name": "Loku Kanoloa",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/loku-kanoloa-skirmish.png"
+  },
+  {
+    "id": 78,
+    "name": "Luke Skywalker",
+    "description": "Hero of the Rebellion",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/luke-skywalker-hero-of-the-rebellion.png"
+  },
+  {
+    "id": 79,
+    "name": "Luke Skywalker",
+    "description": "Jedi Knight",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Force User",
+      "Leader"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 12,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/luke-skywalker-jedi-knight.png"
+  },
+  {
+    "id": 80,
+    "name": "MHD-19",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/mhd-19-skirmish.png"
+  },
+  {
+    "id": 81,
+    "name": "Mak Eshka'rey",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/mak-eshkarey-skirmish.png"
+  },
+  {
+    "id": 82,
+    "name": "Motivation",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/motivation-skirmish.png"
+  },
+  {
+    "id": 83,
+    "name": "Murne Rin",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Leader",
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/murne-rin-skirmish.png"
+  },
+  {
+    "id": 84,
+    "name": "Nexu",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/nexu.png"
+  },
+  {
+    "id": 85,
+    "name": "Nexu",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/nexu-elite.png"
+  },
+  {
+    "id": 86,
+    "name": "Obi-Wan Kenobi",
+    "description": "Jedi Knight",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/obi-wan-kenobi-jedi-knight-skirmish.png"
+  },
+  {
+    "id": 87,
+    "name": "Obi-Wan Kenobi",
+    "description": "Jedi Knight",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/obi-wan-kenobi-jedi-knight-campaign.png"
+  },
+  {
+    "id": 88,
+    "name": "On a Diplomatic Mission",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/on-a-diplomatic-mission-skirmish.png"
+  },
+  {
+    "id": 89,
+    "name": "Onar Koma",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Guardian",
+      "Hunter"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/onar-koma-skirmish.png"
+  },
+  {
+    "id": 90,
+    "name": "Prey on the Weak",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/prey-on-the-weak-skirmish.png"
+  },
+  {
+    "id": 91,
+    "name": "Probe Droid",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/probe-droid.png"
+  },
+  {
+    "id": 92,
+    "name": "Probe Droid",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/probe-droid-elite.png"
+  },
+  {
+    "id": 93,
+    "name": "Punishing Strike",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/punishing-strike-skirmish.png"
+  },
+  {
+    "id": 94,
+    "name": "R2-D2",
+    "description": "Loyal Astromech",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/r2-d2-loyal-astromech-campaign.png"
+  },
+  {
+    "id": 95,
+    "name": "R2-D2",
+    "description": "Loyal Astromech",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Droid"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/r2-d2-loyal-astromech-skirmish.png"
+  },
+  {
+    "id": 96,
+    "name": "Rancor",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/rancor-elite-campaign.png"
+  },
+  {
+    "id": 97,
+    "name": "Rancor",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/rancor-elite-skirmish.png"
+  },
+  {
+    "id": 98,
+    "name": "Rebel High Command",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/rebel-high-command-skirmish.png"
+  },
+  {
+    "id": 99,
+    "name": "Rebel Saboteur",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Heavy Weapon",
+      "Spy"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/rebel-saboteur.png"
+  },
+  {
+    "id": 100,
+    "name": "Rebel Saboteur",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Heavy Weapon",
+      "Spy"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/rebel-saboteur-elite.png"
+  },
+  {
+    "id": 101,
+    "name": "Rebel Trooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 2,
+    "deployment_group": 3,
+    "image": "deployment-cards/rebel-trooper.png"
+  },
+  {
+    "id": 102,
+    "name": "Rebel Trooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": 3,
+    "deployment_group": 3,
+    "image": "deployment-cards/rebel-trooper-elite.png"
+  },
+  {
+    "id": 103,
+    "name": "Royal Guard",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/royal-guard.png"
+  },
+  {
+    "id": 104,
+    "name": "Royal Guard",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 12,
+    "reinforce_cost": 6,
+    "deployment_group": 2,
+    "image": "deployment-cards/royal-guard-elite.png"
+  },
+  {
+    "id": 105,
+    "name": "Royal Guard Champion",
+    "description": null,
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 15,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/royal-guard-champion.png"
+  },
+  {
+    "id": 106,
+    "name": "Rule by Fear",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/rule-by-fear-skirmish.png"
+  },
+  {
+    "id": 107,
+    "name": "SC2-M Repulsor Tank",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Vehicle"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/sc2-m-repulsor-tank-elite.png"
+  },
+  {
+    "id": 108,
+    "name": "Saska Teft",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Smuggler",
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/saska-teft-skirmish.png"
+  },
+  {
+    "id": 109,
+    "name": "Scavenged Weaponry",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/scavenged-weaponry-skirmish.png"
+  },
+  {
+    "id": 110,
+    "name": "Shyla Varad",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Hunter"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/shyla-varad-skirmish.png"
+  },
+  {
+    "id": 111,
+    "name": "Smuggler's Run",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/smugglers-run-skirmish.png"
+  },
+  {
+    "id": 112,
+    "name": "Snowtrooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 2,
+    "deployment_group": 3,
+    "image": "deployment-cards/snowtrooper.png"
+  },
+  {
+    "id": 113,
+    "name": "Snowtrooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": 3,
+    "deployment_group": 3,
+    "image": "deployment-cards/snowtrooper-elite.png"
+  },
+  {
+    "id": 114,
+    "name": "Stormtrooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 2,
+    "deployment_group": 3,
+    "image": "deployment-cards/stormtrooper.png"
+  },
+  {
+    "id": 115,
+    "name": "Stormtrooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": 3,
+    "deployment_group": 3,
+    "image": "deployment-cards/stormtrooper-elite.png"
+  },
+  {
+    "id": 116,
+    "name": "Survivalist",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/survivalist-skirmish.png"
+  },
+  {
+    "id": 117,
+    "name": "Targeting Computer",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/targeting-computer-skirmish.png"
+  },
+  {
+    "id": 118,
+    "name": "Temporary Alliance",
+    "description": "A Common Enemy",
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/temporary-alliance-a-common-enemy-skirmish.png"
+  },
+  {
+    "id": 119,
+    "name": "Temporary Alliance",
+    "description": "Hired Guns",
+    "elite": false,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/temporary-alliance-hired-guns-skirmish.png"
+  },
+  {
+    "id": 120,
+    "name": "The General's Ranks",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/the-generals-ranks-skirmish.png"
+  },
+  {
+    "id": 121,
+    "name": "The Grand Inquisitor",
+    "description": "Sith Loyalist",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Force User",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/the-grand-inquisitor-sith-loyalist.png"
+  },
+  {
+    "id": 122,
+    "name": "Trandoshan Hunter",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/trandoshan-hunter.png"
+  },
+  {
+    "id": 123,
+    "name": "Trandoshan Hunter",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 10,
+    "reinforce_cost": 5,
+    "deployment_group": 2,
+    "image": "deployment-cards/trandoshan-hunter-elite.png"
+  },
+  {
+    "id": 124,
+    "name": "Trusted Ally",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/trusted-ally-skirmish.png"
+  },
+  {
+    "id": 125,
+    "name": "Tusken Raider",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": 2,
+    "deployment_group": 2,
+    "image": "deployment-cards/tusken-raider.png"
+  },
+  {
+    "id": 126,
+    "name": "Tusken Raider",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/tusken-raider-elite.png"
+  },
+  {
+    "id": 127,
+    "name": "Ugnaught Tinkerer",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/ugnaught-tinkerer.png"
+  },
+  {
+    "id": 128,
+    "name": "Ugnaught Tinkerer",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/ugnaught-tinkerer-elite.png"
+  },
+  {
+    "id": 129,
+    "name": "Under Duress",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/under-duress-skirmish.png"
+  },
+  {
+    "id": 130,
+    "name": "Unshakable",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/unshakable-skirmish.png"
+  },
+  {
+    "id": 131,
+    "name": "Vader's Finest",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/vaders-finest-skirmish.png"
+  },
+  {
+    "id": 132,
+    "name": "Verena Talos",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Spy"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/verena-talos-skirmish.png"
+  },
+  {
+    "id": 133,
+    "name": "Vinto Hreeda",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter",
+      "Smuggler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/vinto-hreeda-skirmish.png"
+  },
+  {
+    "id": 134,
+    "name": "Wampa",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/wampa.png"
+  },
+  {
+    "id": 135,
+    "name": "Wampa",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Brawler",
+      "Creature"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/wampa-elite.png"
+  },
+  {
+    "id": 136,
+    "name": "Weequay Pirate",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/weequay-pirate.png"
+  },
+  {
+    "id": 137,
+    "name": "Weequay Pirate",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Hunter",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/weequay-pirate-elite.png"
+  },
+  {
+    "id": 138,
+    "name": "Wing Guard",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 2,
+    "deployment_group": 3,
+    "image": "deployment-cards/wing-guard.png"
+  },
+  {
+    "id": 139,
+    "name": "Wing Guard",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 9,
+    "reinforce_cost": 3,
+    "deployment_group": 3,
+    "image": "deployment-cards/wing-guard-elite.png"
+  },
+  {
+    "id": 140,
+    "name": "Wookie Warrior",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Wookiee"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": 4,
+    "deployment_group": 2,
+    "image": "deployment-cards/wookie-warrior.png"
+  },
+  {
+    "id": 141,
+    "name": "Wookie Warrior",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Wookiee"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 11,
+    "reinforce_cost": 6,
+    "deployment_group": 2,
+    "image": "deployment-cards/wookie-warrior-elite.png"
+  },
+  {
+    "id": 142,
+    "name": "Zillo Technique",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": 0,
+    "image": "deployment-cards/zillo-technique-skirmish.png"
+  }
+]

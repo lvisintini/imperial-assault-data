@@ -1,0 +1,300 @@
+[
+  {
+    "id": 0,
+    "name": "Bounty",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/bounty.png"
+  },
+  {
+    "id": 1,
+    "name": "Counterparts",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/counterparts.png"
+  },
+  {
+    "id": 2,
+    "name": "Hunt Them Down",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/hunt-them-down.png"
+  },
+  {
+    "id": 3,
+    "name": "Surveillance Operatives",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/surveillance-operatives.png"
+  },
+  {
+    "id": 4,
+    "name": "Tech Goggles",
+    "type": "Equipment",
+    "traits": [
+      "Accessory"
+    ],
+    "image": "rewards-cards/tech-goggles.png"
+  },
+  {
+    "id": 5,
+    "name": "Adrenalin Implant",
+    "type": "Equipment",
+    "traits": [
+      "Accessory"
+    ],
+    "image": "rewards-cards/adrenalin-implant.png"
+  },
+  {
+    "id": 6,
+    "name": "Allied Operations",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/allied-operations.png"
+  },
+  {
+    "id": 7,
+    "name": "Fearless Leader",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/fearless-leader.png"
+  },
+  {
+    "id": 8,
+    "name": "Imperial Industry",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/imperial-industry.png"
+  },
+  {
+    "id": 9,
+    "name": "Life Debt",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/life-debt.png"
+  },
+  {
+    "id": 10,
+    "name": "Old Wounds",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/old-wounds.png"
+  },
+  {
+    "id": 11,
+    "name": "Peacemaker",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/peacemaker.png"
+  },
+  {
+    "id": 12,
+    "name": "Rebel Recon",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/rebel-recon.png"
+  },
+  {
+    "id": 13,
+    "name": "Shadow Suit",
+    "type": "Armor",
+    "traits": [
+      "Armor",
+      "Light"
+    ],
+    "image": "rewards-cards/shadow-suit.png"
+  },
+  {
+    "id": 14,
+    "name": "Shu Yen's Lightsaber",
+    "type": "Melee Weapon",
+    "traits": [
+      "Lightsaber",
+      "Blade"
+    ],
+    "image": "rewards-cards/shu-yens-lightsaber.png"
+  },
+  {
+    "id": 15,
+    "name": "Special Operations",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/special-operations.png"
+  },
+  {
+    "id": 16,
+    "name": "Supply Deficit",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/supply-deficit.png"
+  },
+  {
+    "id": 17,
+    "name": "The Ways of the Force",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/the-ways-of-the-force.png"
+  },
+  {
+    "id": 18,
+    "name": "Veteran Prowess",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/veteran-prowess.png"
+  },
+  {
+    "id": 19,
+    "name": "Battle Vision",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/battle-vision.png"
+  },
+  {
+    "id": 20,
+    "name": "Iron Hand",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/iron-hand.png"
+  },
+  {
+    "id": 21,
+    "name": "Systems Upgrade",
+    "type": "Equipment",
+    "traits": [
+      "Enhancement"
+    ],
+    "image": "rewards-cards/systems-upgrade.png"
+  },
+  {
+    "id": 22,
+    "name": "Cam Droid",
+    "type": "Equipment",
+    "traits": [
+      "Accessory"
+    ],
+    "image": "rewards-cards/cam-droid.png"
+  },
+  {
+    "id": 23,
+    "name": "Lobots Favor",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/lobots-favor.png"
+  },
+  {
+    "id": 24,
+    "name": "Radiant Holocron",
+    "type": "Equipment",
+    "traits": [
+      "Accessory"
+    ],
+    "image": "rewards-cards/radiant-holocron.png"
+  },
+  {
+    "id": 25,
+    "name": "Relief Effort",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/relief-effort.png"
+  },
+  {
+    "id": 26,
+    "name": "Under the Radar",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/under-the-radar.png"
+  },
+  {
+    "id": 27,
+    "name": "Bred for War",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/bred-for-war.png"
+  },
+  {
+    "id": 28,
+    "name": "Desperado",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/desperado.png"
+  },
+  {
+    "id": 29,
+    "name": "Haymaker",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/haymaker.png"
+  },
+  {
+    "id": 30,
+    "name": "Mandalorian Heritage",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/mandalorian-heritage.png"
+  },
+  {
+    "id": 31,
+    "name": "Mercenary Ties",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/mercenary-ties.png"
+  },
+  {
+    "id": 32,
+    "name": "501st Training",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/501st-training.png"
+  },
+  {
+    "id": 33,
+    "name": "Tusken Weaponry",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/tusken-weaponry.png"
+  },
+  {
+    "id": 34,
+    "name": "Cautious Approach",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/cautious-approach.png"
+  },
+  {
+    "id": 35,
+    "name": "Tactical Advance",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/tactical-advance.png"
+  },
+  {
+    "id": 36,
+    "name": "Lady Luck",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/lady-luck.png"
+  },
+  {
+    "id": 37,
+    "name": "Mechanical Salvage",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/mechanical-salvage.png"
+  },
+  {
+    "id": 38,
+    "name": "Intimidation",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/intimidation.png"
+  },
+  {
+    "id": 39,
+    "name": "Quickdraw Holster",
+    "type": "Equipment",
+    "traits": [
+      "Accessory"
+    ],
+    "image": "rewards-cards/quickdraw-holster.png"
+  }
+]
