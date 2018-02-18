@@ -43,5 +43,15 @@
     "id": 8,
     "name": "Technological Superiority",
     "source": 0
+  },
+  {
+    "id": 9,
+    "name": "Power of the Dark Side",
+    "source": 5
+  },
+  {
+    "id": 10,
+    "name": "Reactive Defenses",
+    "source": 5
   }
 ]

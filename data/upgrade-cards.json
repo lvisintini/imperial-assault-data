@@ -803,5 +803,110 @@
       "Energy"
     ],
     "type": "Melee Weapon Modification"
+  },
+  {
+    "tier": 1,
+    "name": "Charge Pistol",
+    "credits": 350,
+    "id": 70,
+    "image": "upgrade-cards/charge-pistol.png",
+    "traits": [
+      "Blaster",
+      "Pistol"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "tier": 1,
+    "name": "Charged Ammo Pack",
+    "credits": 100,
+    "id": 69,
+    "image": "upgrade-cards/charged-ammo-pack.png",
+    "traits": [
+      "Modification",
+      "Ammunition"
+    ],
+    "type": "Ranged Weapon Modification"
+  },
+  {
+    "tier": 1,
+    "name": "Responsive Armor",
+    "credits": 250,
+    "id": 72,
+    "image": "upgrade-cards/responsive-armor.png",
+    "traits": [
+      "Armor"
+    ],
+    "type": "Armor"
+  },
+  {
+    "tier": 2,
+    "name": "Focusing Beam",
+    "credits": 250,
+    "id": 71,
+    "image": "upgrade-cards/focusing-beam.png",
+    "traits": [
+      "Modification",
+      "Sights"
+    ],
+    "type": "Melee Weapon Modification"
+  },
+  {
+    "tier": 2,
+    "name": "Hunter's Rifle",
+    "credits": 600,
+    "id": 73,
+    "image": "upgrade-cards/hunters-rifle.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "tier": 2,
+    "name": "Polearm",
+    "credits": 650,
+    "id": 75,
+    "image": "upgrade-cards/polearm.png",
+    "traits": [
+      "Blade",
+      "Staff"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "tier": 3,
+    "name": "A-12 Sniper Rifle",
+    "credits": 1150,
+    "id": 74,
+    "image": "upgrade-cards/a-12-sniper-rifle.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "tier": 3,
+    "name": "Power Charger",
+    "credits": 400,
+    "id": 76,
+    "image": "upgrade-cards/power-charger.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "tier": 3,
+    "name": "Supply Pack",
+    "credits": 200,
+    "id": 77,
+    "image": "upgrade-cards/supply-pack.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
   }
 ]

@@ -43,5 +43,23 @@
     "traits": [
       "Brawler"
     ]
+  },
+  {
+    "id": 5,
+    "name": "88-Z",
+    "image": "companion-cards/88-z.png",
+    "source": 5,
+    "traits": [
+      "Droid"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "J4X-7",
+    "image": "companion-cards/j4x-7.png",
+    "source": 5,
+    "traits": [
+      "Droid"
+    ]
   }
 ]

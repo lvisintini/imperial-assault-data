@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "Streetrat",
+    "image": "form-cards/clawdite-shapeshifter-streetrat.png"
+  },
+  {
+    "id": 1,
+    "name": "Senator",
+    "image": "form-cards/clawdite-shapeshifter-senator.png"
+  },
+  {
+    "id": 2,
+    "name": "Scout",
+    "image": "form-cards/clawdite-shapeshifter-scout.png"
+  }
+]

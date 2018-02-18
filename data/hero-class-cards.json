@@ -1369,5 +1369,262 @@
     "image": "hero-class-cards/vinto-hreeda-rapid-fire.png",
     "type": "Feat",
     "traits": null
+  },
+  {
+    "id": 145,
+    "name": "MGL-9 Boomer",
+    "hero_id": 16,
+    "xp": null,
+    "image": "hero-class-cards/drokkatta-mgl-9-boomer.png",
+    "type": "Ranged Weapon",
+    "traits": [
+      "Projectile",
+      "Explosive"
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Charging Up",
+    "hero_id": 16,
+    "xp": 1,
+    "image": "hero-class-cards/drokkatta-charging-up.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 147,
+    "name": "Leave No One Behind",
+    "hero_id": 16,
+    "xp": 1,
+    "image": "hero-class-cards/drokkatta-leave-no-one-behind.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 148,
+    "name": "Bank Shot",
+    "hero_id": 16,
+    "xp": 2,
+    "image": "hero-class-cards/drokkatta-bank-shot.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 149,
+    "name": "Shrapnel Rounds",
+    "hero_id": 16,
+    "xp": 2,
+    "image": "hero-class-cards/drokkatta-shrapnel-rounds.png",
+    "type": "Ranged Weapon Modification",
+    "traits": [
+      "Explosive"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Repeater Cannon",
+    "hero_id": 16,
+    "xp": 3,
+    "image": "hero-class-cards/drokkatta-repeater-cannon.png",
+    "type": "Ranged Weapon",
+    "traits": [
+      "Projectile",
+      "Explosive"
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Structural Exploitation",
+    "hero_id": 16,
+    "xp": 3,
+    "image": "hero-class-cards/drokkatta-structural-exploitation.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 152,
+    "name": "Thermal Explosives",
+    "hero_id": 16,
+    "xp": 4,
+    "image": "hero-class-cards/drokkatta-thermal-explosives.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 153,
+    "name": "Vibro-Claws",
+    "hero_id": 17,
+    "xp": null,
+    "image": "hero-class-cards/jarrod-kelvin-vibro-claws.png",
+    "type": "Melee Weapon",
+    "traits": [
+      "Blade",
+      "Fist"
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Wookiee Wrath",
+    "hero_id": 16,
+    "xp": 4,
+    "image": "hero-class-cards/drokkatta-wookiee-wrath.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 155,
+    "name": "Balanced Approach",
+    "hero_id": 17,
+    "xp": 1,
+    "image": "hero-class-cards/jarrod-kelvin-balanced-approach.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 156,
+    "name": "Service Rifle",
+    "hero_id": 18,
+    "xp": null,
+    "image": "hero-class-cards/ko-tun-feralo-service-rifle.png",
+    "type": "Ranged Weapon",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Forward Momentum",
+    "hero_id": 17,
+    "xp": 1,
+    "image": "hero-class-cards/jarrod-kelvin-forward-momentum.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 158,
+    "name": "Auxiliary Training",
+    "hero_id": 18,
+    "xp": 1,
+    "image": "hero-class-cards/ko-tun-feralo-auxiliary-training.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 159,
+    "name": "Scouts Loadout",
+    "hero_id": 17,
+    "xp": 2,
+    "image": "hero-class-cards/jarrod-kelvin-scouts-loadout.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 160,
+    "name": "Inch By Inch",
+    "hero_id": 18,
+    "xp": 1,
+    "image": "hero-class-cards/ko-tun-feralo-inch-by-inch.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 161,
+    "name": "Slicers Upgrades",
+    "hero_id": 17,
+    "xp": 2,
+    "image": "hero-class-cards/jarrod-kelvin-slicers-upgrades.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 162,
+    "name": "Combat Logistics",
+    "hero_id": 18,
+    "xp": 2,
+    "image": "hero-class-cards/ko-tun-feralo-combat-logistics.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 163,
+    "name": "Explosive Reflexes",
+    "hero_id": 17,
+    "xp": 3,
+    "image": "hero-class-cards/jarrod-kelvin-explosive-reflexes.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 164,
+    "name": "Dig In",
+    "hero_id": 18,
+    "xp": 2,
+    "image": "hero-class-cards/ko-tun-feralo-dig-in.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 165,
+    "name": "Mutual Progression",
+    "hero_id": 17,
+    "xp": 3,
+    "image": "hero-class-cards/jarrod-kelvin-mutual-progression.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 166,
+    "name": "Fire Support Specialist",
+    "hero_id": 18,
+    "xp": 3,
+    "image": "hero-class-cards/ko-tun-feralo-fire-support-specialist.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 167,
+    "name": "Leaping Slash",
+    "hero_id": 17,
+    "xp": 4,
+    "image": "hero-class-cards/jarrod-kelvin-leaping-slash.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 168,
+    "name": "Opportunist",
+    "hero_id": 18,
+    "xp": 3,
+    "image": "hero-class-cards/ko-tun-feralo-opportunist.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 169,
+    "name": "Mechanical Master",
+    "hero_id": 17,
+    "xp": 4,
+    "image": "hero-class-cards/jarrod-kelvin-mechanical-master.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 170,
+    "name": "Self-sufficient",
+    "hero_id": 18,
+    "xp": 4,
+    "image": "hero-class-cards/ko-tun-feralo-self-sufficient.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 171,
+    "name": "Squad Cohesion",
+    "hero_id": 18,
+    "xp": 4,
+    "image": "hero-class-cards/ko-tun-feralo-squad-cohesion.png",
+    "type": "Feat",
+    "traits": null
   }
 ]

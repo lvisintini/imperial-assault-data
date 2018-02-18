@@ -179,5 +179,33 @@
       "Tool"
     ],
     "image": "supply-cards/weapons-cache.png"
+  },
+  {
+    "name": "Grappler Arm",
+    "id": 19,
+    "source": 5,
+    "traits": [
+      "Tool"
+    ],
+    "image": "supply-cards/grappler-arm.png"
+  },
+  {
+    "name": "Shield Pack",
+    "id": 20,
+    "source": 5,
+    "traits": [
+      "Consumable",
+      "Tool"
+    ],
+    "image": "supply-cards/shield-pack.png"
+  },
+  {
+    "name": "Supply Chest",
+    "id": 21,
+    "source": 5,
+    "traits": [
+      "Valuable"
+    ],
+    "image": "supply-cards/supply-chest.png"
   }
 ]

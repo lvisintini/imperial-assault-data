@@ -143,5 +143,60 @@
     "id": 28,
     "name": "Turf War",
     "image": "story-mission-cards/turf-war.png"
+  },
+  {
+    "id": 29,
+    "name": "Capital Escape",
+    "image": "story-mission-cards/capital-escape.png"
+  },
+  {
+    "id": 30,
+    "name": "Disruption",
+    "image": "story-mission-cards/disruption.png"
+  },
+  {
+    "id": 31,
+    "name": "Double Agent",
+    "image": "story-mission-cards/double-agent.png"
+  },
+  {
+    "id": 32,
+    "name": "Enemies Closer",
+    "image": "story-mission-cards/enemies-closer.png"
+  },
+  {
+    "id": 33,
+    "name": "From Dark Clutches",
+    "image": "story-mission-cards/from-dark-clutches.png"
+  },
+  {
+    "id": 34,
+    "name": "History Repeats",
+    "image": "story-mission-cards/history-repeats.png"
+  },
+  {
+    "id": 35,
+    "name": "Inside Man",
+    "image": "story-mission-cards/inside-man.png"
+  },
+  {
+    "id": 36,
+    "name": "Into a Corner",
+    "image": "story-mission-cards/into-a-corner.png"
+  },
+  {
+    "id": 37,
+    "name": "On the Run",
+    "image": "story-mission-cards/on-the-run.png"
+  },
+  {
+    "id": 38,
+    "name": "On the Trail",
+    "image": "story-mission-cards/on-the-trail.png"
+  },
+  {
+    "id": 39,
+    "name": "The Realm of the Dark Side",
+    "image": "story-mission-cards/the-realm-of-the-dark-side.png"
   }
 ]

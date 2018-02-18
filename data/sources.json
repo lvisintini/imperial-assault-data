@@ -264,5 +264,33 @@
     "type": "Ally Pack",
     "wave": 1,
     "image": "sources/han-solo.png"
+  },
+  {
+    "id": 38,
+    "name": "Heart of the Empire",
+    "type": "Expansion",
+    "wave": null,
+    "image": "sources/heart-of-the-empire.png"
+  },
+  {
+    "id": 39,
+    "name": "Ahsoka",
+    "type": "Ally Pack",
+    "wave": 10,
+    "image": "sources/ahsoka.png"
+  },
+  {
+    "id": 40,
+    "name": "Emperor Palpatine",
+    "type": "Villain Pack",
+    "wave": 10,
+    "image": "sources/emperor-palpatine.png"
+  },
+  {
+    "id": 41,
+    "name": "Maul",
+    "type": "Villain Pack",
+    "wave": 10,
+    "image": "sources/maul.png"
   }
 ]

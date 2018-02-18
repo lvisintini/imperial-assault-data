@@ -3153,5 +3153,490 @@
     "source_id": 2,
     "content_type": "supply-cards",
     "content_id": 18
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 29
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 30
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 31
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 32
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 33
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 34
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 35
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 36
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 37
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 38
+  },
+  {
+    "source_id": 38,
+    "content_type": "story-mission-cards",
+    "content_id": 39
+  },
+  {
+    "source_id": 38,
+    "content_type": "side-mission-cards",
+    "content_id": 32
+  },
+  {
+    "source_id": 38,
+    "content_type": "side-mission-cards",
+    "content_id": 33
+  },
+  {
+    "source_id": 38,
+    "content_type": "side-mission-cards",
+    "content_id": 34
+  },
+  {
+    "source_id": 38,
+    "content_type": "side-mission-cards",
+    "content_id": 35
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 40
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 41
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 42
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 43
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 44
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 45
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 46
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 47
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 48
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 49
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 50
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 51
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 52
+  },
+  {
+    "source_id": 38,
+    "content_type": "rewards-cards",
+    "content_id": 53
+  },
+  {
+    "source_id": 38,
+    "content_type": "heroes",
+    "content_id": 16
+  },
+  {
+    "source_id": 38,
+    "content_type": "heroes",
+    "content_id": 17
+  },
+  {
+    "source_id": 38,
+    "content_type": "heroes",
+    "content_id": 18
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 164
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 165
+  },
+  {
+    "source_id": 39,
+    "content_type": "command-cards",
+    "content_id": 174
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 166
+  },
+  {
+    "source_id": 41,
+    "content_type": "command-cards",
+    "content_id": 184
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 167
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 168
+  },
+  {
+    "source_id": 40,
+    "content_type": "command-cards",
+    "content_id": 179
+  },
+  {
+    "source_id": 40,
+    "content_type": "command-cards",
+    "content_id": 180
+  },
+  {
+    "source_id": 41,
+    "content_type": "command-cards",
+    "content_id": 185
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 169
+  },
+  {
+    "source_id": 41,
+    "content_type": "command-cards",
+    "content_id": 186
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 170
+  },
+  {
+    "source_id": 39,
+    "content_type": "command-cards",
+    "content_id": 175
+  },
+  {
+    "source_id": 39,
+    "content_type": "command-cards",
+    "content_id": 176
+  },
+  {
+    "source_id": 39,
+    "content_type": "command-cards",
+    "content_id": 177
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 171
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 172
+  },
+  {
+    "source_id": 41,
+    "content_type": "command-cards",
+    "content_id": 187
+  },
+  {
+    "source_id": 40,
+    "content_type": "command-cards",
+    "content_id": 181
+  },
+  {
+    "source_id": 40,
+    "content_type": "command-cards",
+    "content_id": 182
+  },
+  {
+    "source_id": 38,
+    "content_type": "command-cards",
+    "content_id": 173
+  },
+  {
+    "source_id": 39,
+    "content_type": "command-cards",
+    "content_id": 178
+  },
+  {
+    "source_id": 40,
+    "content_type": "command-cards",
+    "content_id": 183
+  },
+  {
+    "source_id": 41,
+    "content_type": "command-cards",
+    "content_id": 188
+  },
+  {
+    "source_id": 38,
+    "content_type": "agenda-decks",
+    "content_id": 34
+  },
+  {
+    "source_id": 38,
+    "content_type": "agenda-decks",
+    "content_id": 35
+  },
+  {
+    "source_id": 27,
+    "content_type": "agenda-decks",
+    "content_id": 36
+  },
+  {
+    "source_id": 40,
+    "content_type": "agenda-decks",
+    "content_id": 37
+  },
+  {
+    "source_id": 41,
+    "content_type": "agenda-decks",
+    "content_id": 38
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 143
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 144
+  },
+  {
+    "source_id": 39,
+    "content_type": "deployment-cards",
+    "content_id": 144
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 145
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 146
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 147
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 148
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 149
+  },
+  {
+    "source_id": 40,
+    "content_type": "deployment-cards",
+    "content_id": 149
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 150
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 151
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 152
+  },
+  {
+    "source_id": 41,
+    "content_type": "deployment-cards",
+    "content_id": 152
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 153
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 154
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 155
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 156
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 157
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 158
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 159
+  },
+  {
+    "source_id": 38,
+    "content_type": "deployment-cards",
+    "content_id": 160
+  },
+  {
+    "source_id": 38,
+    "content_type": "imperial-classes",
+    "content_id": 9
+  },
+  {
+    "source_id": 38,
+    "content_type": "imperial-classes",
+    "content_id": 10
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 70
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 69
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 72
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 71
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 73
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 75
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 74
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 76
+  },
+  {
+    "source_id": 38,
+    "content_type": "upgrade-cards",
+    "content_id": 77
+  },
+  {
+    "source_id": 38,
+    "content_type": "supply-cards",
+    "content_id": 19
+  },
+  {
+    "source_id": 38,
+    "content_type": "supply-cards",
+    "content_id": 20
+  },
+  {
+    "source_id": 38,
+    "content_type": "supply-cards",
+    "content_id": 21
   }
 ]

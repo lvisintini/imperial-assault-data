@@ -233,5 +233,40 @@
     "deck": "Threat Mission",
     "variant": "Return to Hoth",
     "image": "card-backs/threat-mission-return-to-hoth.png"
+  },
+  {
+    "deck": "Form Cards",
+    "variant": "Clawdite",
+    "image": "card-backs/form-cards-clawdite.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Power of the Dark Side",
+    "image": "card-backs/imperial-class-power-of-the-dark-side.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Reactive Defenses",
+    "image": "card-backs/imperial-class-reactive-defenses.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Drokkatta",
+    "image": "card-backs/rebel-hero-drokkatta.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Jarrod Kelvin",
+    "image": "card-backs/rebel-hero-jarrod-kelvin.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Ko-Tun Feralo",
+    "image": "card-backs/rebel-hero-ko-tun-feralo.png"
+  },
+  {
+    "deck": "Story Mission",
+    "variant": "Heart of the Empire",
+    "image": "card-backs/story-mission-heart-of-the-empire.png"
   }
 ]

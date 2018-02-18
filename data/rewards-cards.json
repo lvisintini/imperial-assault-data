@@ -296,5 +296,105 @@
       "Accessory"
     ],
     "image": "rewards-cards/quickdraw-holster.png"
+  },
+  {
+    "id": 40,
+    "name": "Alliance Efficiency",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/alliance-efficiency.png"
+  },
+  {
+    "id": 41,
+    "name": "Bardottan Shard",
+    "type": "Equipment",
+    "traits": [
+      "Accessory"
+    ],
+    "image": "rewards-cards/bardottan-shard.png"
+  },
+  {
+    "id": 42,
+    "name": "Explosives Clearance",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/explosives-clearance.png"
+  },
+  {
+    "id": 43,
+    "name": "Inside Source",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/inside-source.png"
+  },
+  {
+    "id": 44,
+    "name": "Intercepted Plans",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/intercepted-plans.png"
+  },
+  {
+    "id": 45,
+    "name": "Lessons of History",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/lessons-of-history.png"
+  },
+  {
+    "id": 46,
+    "name": "Mercenary Aid",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/mercenary-aid.png"
+  },
+  {
+    "id": 47,
+    "name": "Populist Support",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/populist-support.png"
+  },
+  {
+    "id": 48,
+    "name": "Power of the Shard",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/power-of-the-shard.png"
+  },
+  {
+    "id": 49,
+    "name": "Scouted Enemies",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/scouted-enemies.png"
+  },
+  {
+    "id": 50,
+    "name": "Tracked Movements",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/tracked-movements.png"
+  },
+  {
+    "id": 51,
+    "name": "Vaders Legion",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/vaders-legion.png"
+  },
+  {
+    "id": 52,
+    "name": "Wookiee Roar",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/wookiee-roar.png"
+  },
+  {
+    "id": 53,
+    "name": "X-8 Upgrade",
+    "type": "Feat",
+    "traits": null,
+    "image": "rewards-cards/x-8-upgrade.png"
   }
 ]

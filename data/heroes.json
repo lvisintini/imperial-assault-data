@@ -94,5 +94,23 @@
     "name": "Vinto Hreeda",
     "healthy": "heroes/vinto-hreeda-healthy.png",
     "wounded": "heroes/vinto-hreeda-wounded.png"
+  },
+  {
+    "id": 16,
+    "name": "Drokkatta",
+    "healthy": "heroes/drokkatta-healthy.png",
+    "wounded": "heroes/drokkatta-wounded.png"
+  },
+  {
+    "id": 17,
+    "name": "Jarrod Kelvin",
+    "healthy": "heroes/jarrod-kelvin-healthy.png",
+    "wounded": "heroes/jarrod-kelvin-wounded.png"
+  },
+  {
+    "id": 18,
+    "name": "Ko-Tun Feralo",
+    "healthy": "heroes/ko-tun-feralo-healthy.png",
+    "wounded": "heroes/ko-tun-feralo-wounded.png"
   }
 ]

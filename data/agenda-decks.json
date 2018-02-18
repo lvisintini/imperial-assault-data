@@ -134,5 +134,21 @@
   {
     "id": 33,
     "name": "The General's Scheme"
+  },
+  {
+    "id": 34,
+    "name": "Field Commander"
+  },
+  {
+    "id": 35,
+    "name": "Security Protocols"
+  },
+  {
+    "id": 36,
+    "name": "The Emperor's Plots"
+  },
+  {
+    "id": 37,
+    "name": "A Former Sith"
   }
 ]

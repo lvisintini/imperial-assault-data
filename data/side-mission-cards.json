@@ -190,5 +190,29 @@
     "name": "Extortion",
     "color": "Red",
     "image": "side-mission-cards/extortion.png"
+  },
+  {
+    "id": 32,
+    "name": "Civil Unrest",
+    "color": "Grey",
+    "image": "side-mission-cards/civil-unrest.png"
+  },
+  {
+    "id": 33,
+    "name": "Extraction",
+    "color": "Red",
+    "image": "side-mission-cards/extraction.png"
+  },
+  {
+    "id": 34,
+    "name": "Test of Metal",
+    "color": "Red",
+    "image": "side-mission-cards/test-of-metal.png"
+  },
+  {
+    "id": 35,
+    "name": "Unfninished Business",
+    "color": "Red",
+    "image": "side-mission-cards/unfninished-business.png"
   }
 ]

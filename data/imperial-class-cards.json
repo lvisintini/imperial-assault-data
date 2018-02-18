@@ -572,5 +572,131 @@
     "name": "Technical Support",
     "xp": 1,
     "image": "imperial-class-cards/technological-superiority-technical-support.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Dark Resurgence",
+    "xp": 1,
+    "id": 83,
+    "image": "imperial-class-cards/power-of-the-dark-side-dark-resurgence.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Embrace Anger",
+    "xp": 2,
+    "id": 89,
+    "image": "imperial-class-cards/power-of-the-dark-side-embrace-anger.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Embrace Fear",
+    "xp": 1,
+    "id": 85,
+    "image": "imperial-class-cards/power-of-the-dark-side-embrace-fear.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Embrace Hate",
+    "xp": 3,
+    "id": 91,
+    "image": "imperial-class-cards/power-of-the-dark-side-embrace-hate.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Embrace Suffering",
+    "xp": 4,
+    "id": 95,
+    "image": "imperial-class-cards/power-of-the-dark-side-embrace-suffering.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Manifest Agression",
+    "xp": null,
+    "id": 82,
+    "image": "imperial-class-cards/power-of-the-dark-side-manifest-agression.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Supernatural Vigor",
+    "xp": 2,
+    "id": 87,
+    "image": "imperial-class-cards/power-of-the-dark-side-supernatural-vigor.png"
+  },
+  {
+    "class_id": 9,
+    "name": "The Power of Passion",
+    "xp": 4,
+    "id": 97,
+    "image": "imperial-class-cards/power-of-the-dark-side-the-power-of-passion.png"
+  },
+  {
+    "class_id": 9,
+    "name": "Unnatural Abilities",
+    "xp": 3,
+    "id": 93,
+    "image": "imperial-class-cards/power-of-the-dark-side-unnatural-abilities.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Active Surveillance",
+    "xp": null,
+    "id": 84,
+    "image": "imperial-class-cards/reactive-defenses-active-surveillance.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Blaster Emplacements",
+    "xp": 1,
+    "id": 88,
+    "image": "imperial-class-cards/reactive-defenses-blaster-emplacements.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Electromagnetic Disruptors",
+    "xp": 3,
+    "id": 94,
+    "image": "imperial-class-cards/reactive-defenses-electromagnetic-disruptors.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Infrared Scanners",
+    "xp": 3,
+    "id": 96,
+    "image": "imperial-class-cards/reactive-defenses-infrared-scanners.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Mechanical Protocol",
+    "xp": 2,
+    "id": 92,
+    "image": "imperial-class-cards/reactive-defenses-mechanical-protocol.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Overclock",
+    "xp": 4,
+    "id": 98,
+    "image": "imperial-class-cards/reactive-defenses-overclock.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Remote Activator",
+    "xp": 2,
+    "id": 90,
+    "image": "imperial-class-cards/reactive-defenses-remote-activator.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Shielded",
+    "xp": 1,
+    "id": 86,
+    "image": "imperial-class-cards/reactive-defenses-shielded.png"
+  },
+  {
+    "class_id": 10,
+    "name": "Targeting Sensors",
+    "xp": 4,
+    "id": 99,
+    "image": "imperial-class-cards/reactive-defenses-targeting-sensors.png"
   }
 ]

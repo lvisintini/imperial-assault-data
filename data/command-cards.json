@@ -1146,5 +1146,180 @@
     "cost": 2,
     "limit": 2,
     "image": "command-cards/wookiee-rage.png"
+  },
+  {
+    "name": "Arcing Shot",
+    "cost": 1,
+    "limit": 1,
+    "id": 164,
+    "image": "command-cards/arcing-shot.png"
+  },
+  {
+    "name": "Armed Escort",
+    "cost": 1,
+    "limit": 1,
+    "id": 165,
+    "image": "command-cards/armed-escort.png"
+  },
+  {
+    "name": "Balancing Force",
+    "cost": 2,
+    "limit": 1,
+    "id": 174,
+    "image": "command-cards/balancing-force.png"
+  },
+  {
+    "name": "Battle Scars",
+    "cost": 0,
+    "limit": 1,
+    "id": 166,
+    "image": "command-cards/battle-scars.png"
+  },
+  {
+    "name": "Chaotic Force",
+    "cost": 2,
+    "limit": 1,
+    "id": 184,
+    "image": "command-cards/chaotic-force.png"
+  },
+  {
+    "name": "Collateral Damage",
+    "cost": 1,
+    "limit": 1,
+    "id": 167,
+    "image": "command-cards/collateral-damage.png"
+  },
+  {
+    "name": "Concentrated Fire",
+    "cost": 1,
+    "limit": 1,
+    "id": 168,
+    "image": "command-cards/concentrated-fire.png"
+  },
+  {
+    "name": "Corrupting Force",
+    "cost": 2,
+    "limit": 1,
+    "id": 179,
+    "image": "command-cards/corrupting-force.png"
+  },
+  {
+    "name": "Dark Energy",
+    "cost": 1,
+    "limit": 1,
+    "id": 180,
+    "image": "command-cards/dark-energy.png"
+  },
+  {
+    "name": "Deathblow",
+    "cost": 1,
+    "limit": 1,
+    "id": 185,
+    "image": "command-cards/deathblow.png"
+  },
+  {
+    "name": "Droid Mastery",
+    "cost": 0,
+    "limit": 1,
+    "id": 169,
+    "image": "command-cards/droid-mastery.png"
+  },
+  {
+    "name": "Face to Face",
+    "cost": 1,
+    "limit": 1,
+    "id": 186,
+    "image": "command-cards/face-to-face.png"
+  },
+  {
+    "name": "Field Supply",
+    "cost": 1,
+    "limit": 1,
+    "id": 170,
+    "image": "command-cards/field-supply.png"
+  },
+  {
+    "name": "Fool Me Once",
+    "cost": 0,
+    "limit": 1,
+    "id": 175,
+    "image": "command-cards/fool-me-once.png"
+  },
+  {
+    "name": "Force Jump",
+    "cost": 1,
+    "limit": 1,
+    "id": 176,
+    "image": "command-cards/force-jump.png"
+  },
+  {
+    "name": "Force Push",
+    "cost": 1,
+    "limit": 1,
+    "id": 177,
+    "image": "command-cards/force-push.png"
+  },
+  {
+    "name": "Forward March",
+    "cost": 1,
+    "limit": 1,
+    "id": 171,
+    "image": "command-cards/forward-march.png"
+  },
+  {
+    "name": "Heavy Ordnance",
+    "cost": 0,
+    "limit": 1,
+    "id": 172,
+    "image": "command-cards/heavy-ordnance.png"
+  },
+  {
+    "name": "Looking for a Fight",
+    "cost": 0,
+    "limit": 1,
+    "id": 187,
+    "image": "command-cards/looking-for-a-fight.png"
+  },
+  {
+    "name": "Officer's Training",
+    "cost": 0,
+    "limit": 1,
+    "id": 181,
+    "image": "command-cards/officers-training.png"
+  },
+  {
+    "name": "Prepared for Battle",
+    "cost": 2,
+    "limit": 1,
+    "id": 182,
+    "image": "command-cards/prepared-for-battle.png"
+  },
+  {
+    "name": "Ready Weapons",
+    "cost": 0,
+    "limit": 1,
+    "id": 173,
+    "image": "command-cards/ready-weapons.png"
+  },
+  {
+    "name": "Right Back At Ya",
+    "cost": 1,
+    "limit": 1,
+    "id": 178,
+    "image": "command-cards/right-back-at-ya.png"
+  },
+  {
+    "name": "Unlimited Power",
+    "cost": 2,
+    "limit": 1,
+    "id": 183,
+    "image": "command-cards/unlimited-power.png"
+  },
+  {
+    "name": "Wreak Vengeance",
+    "cost": 1,
+    "limit": 1,
+    "id": 188,
+    "image": "command-cards/wreak-vengeance.png"
   }
 ]

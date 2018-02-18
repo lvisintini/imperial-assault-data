@@ -814,5 +814,101 @@
     "influence": 1,
     "mission": false,
     "image": "agenda-cards/the-generals-scheme-special-modifications.png"
+  },
+  {
+    "id": 102,
+    "name": "Assault Coordination",
+    "agenda_id": 34,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/field-commander-assault-coordination.png"
+  },
+  {
+    "id": 103,
+    "name": "Reinforcements En Route",
+    "agenda_id": 34,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/field-commander-reinforcements-en-route.png"
+  },
+  {
+    "id": 104,
+    "name": "Unyieldng Dedication",
+    "agenda_id": 34,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/field-commander-unyieldng-dedication.png"
+  },
+  {
+    "id": 105,
+    "name": "Heavy Riot Gear",
+    "agenda_id": 35,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/security-protocols-heavy-riot-gear.png"
+  },
+  {
+    "id": 106,
+    "name": "Shields Online",
+    "agenda_id": 35,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/security-protocols-shields-online.png"
+  },
+  {
+    "id": 107,
+    "name": "Surveillance Cams",
+    "agenda_id": 35,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/security-protocols-surveillance-cams.png"
+  },
+  {
+    "id": 108,
+    "name": "For the Emperor",
+    "agenda_id": 36,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/the-emperors-plots-for-the-emperor.png"
+  },
+  {
+    "id": 109,
+    "name": "Insidious",
+    "agenda_id": 36,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/the-emperors-plots-insidious.png"
+  },
+  {
+    "id": 110,
+    "name": "Isolation",
+    "agenda_id": 36,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/the-emperors-plots-isolation.png"
+  },
+  {
+    "id": 111,
+    "name": "Critical Strikes",
+    "agenda_id": 37,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/a-former-sith-critical-strikes.png"
+  },
+  {
+    "id": 112,
+    "name": "Dubious Disposition",
+    "agenda_id": 37,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/a-former-sith-dubious-disposition.png"
+  },
+  {
+    "id": 113,
+    "name": "Imminent Reprisal",
+    "agenda_id": 37,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/a-former-sith-imminent-reprisal.png"
   }
 ]
