@@ -47,54 +47,72 @@ data files are valid for both sub-folders.
 The images rotated and aligned using fairly complex image manipulation via OpenCV.
 The images also have consistent sizes (except skirmish maps):
 
-**Large**:
- - sources: 300x300 px
- - agenda-cards: 476x740 px
- - command-cards: 424x657 px
- - condition-cards: 424x657 px
- - deployment-cards: 476x740 px
- - heroes: 1490x1186 px
- - hero-class-cards: 424x657 px
- - imperial-class-cards: 424x657 px
- - supply-cards: 424x657 px
- - story-mission-cards: 476x740 px
- - side-mission-cards: 476x740 px
- - reward-cards: 424x657 px
- - companion-cards: 476x740 px
- - companion-cards: 473x729 px
- - upgrade-cards: 424x657 px
- - card-backs: 476x740 px
- - card-backs: 473x729 px
- - card-backs: 655x424 px
- - card-backs: 424x657 px
- - card-backs: 482x740 px
- - threat-mission-cards: 476x740 px
- - form-cards: 657x424 px
+
+**Large:**
+ - 300x300
+    - sources
+ - 476x740
+    - story-mission-cards
+    - threat-mission-cards
+    - card-backs
+    - deployment-cards
+    - side-mission-cards
+    - agenda-cards
+    - companion-cards
+ - 424x657
+    - card-backs
+    - hero-class-cards
+    - upgrade-cards
+    - reward-cards
+    - imperial-class-cards
+    - condition-cards
+    - supply-cards
+    - command-cards
+ - 657x424
+    - form-cards
+ - 1490x1186
+    - heroes
+
+ - 473x729
+    - card-backs
+ - 482x740
+    - card-backs
+ - 655x424
+    - card-backs
 
 
-**Small**:
- - sources: 300x300 px
- - agenda-cards: 301x470 px
- - command-cards: 293x454 px
- - condition-cards: 293x454 px
- - deployment-cards: 301x470 px
- - heroes: 650x515 px
- - hero-class-cards: 293x454 px
- - imperial-class-cards: 293x454 px
- - supply-cards: 293x454 px
- - story-mission-cards: 301x470 px
- - side-mission-cards: 301x470 px
- - reward-cards: 293x454 px
- - companion-cards: 301x470 px
- - companion-cards: 299x465 px
- - upgrade-cards: 293x454 px
- - card-backs: 301x470 px
- - card-backs: 299x465 px
- - card-backs: 293x454 px
- - card-backs: 655x424 px
- - card-backs: 482x740 px
- - threat-mission-cards: 301x470 px
- - form-cards: 454x293 px
+**Small:**
+ - 300x300
+    - sources
+ - 301x470
+    - story-mission-cards
+    - threat-mission-cards
+    - card-backs
+    - deployment-cards
+    - side-mission-cards
+    - agenda-cards
+    - companion-cards
+ - 293x454
+    - card-backs
+    - hero-class-cards
+    - upgrade-cards
+    - reward-cards
+    - imperial-class-cards
+    - condition-cards
+    - supply-cards
+    - command-cards
+ - 454x293
+    - form-cards
+ - 650x515
+    - heroes
+
+ - 299x465
+    - card-backs
+ - 482x740
+    - card-backs
+ - 655x424
+    - card-backs
+
 
 ## Versioning
 
