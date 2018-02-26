@@ -47,37 +47,30 @@ data files are valid for both sub-folders.
 The images rotated and aligned using fairly complex image manipulation via OpenCV.
 The images also have consistent sizes (except skirmish maps):
 
-
 **Large:**
  - 300x300
     - sources
  - 476x740
+    - deployment-cards
+    - companion-cards
+    - agenda-cards
     - story-mission-cards
+    - side-mission-cards
     - threat-mission-cards
     - card-backs
-    - deployment-cards
-    - side-mission-cards
-    - agenda-cards
-    - companion-cards
  - 424x657
-    - card-backs
+    - command-cards
     - hero-class-cards
+    - imperial-class-cards
     - upgrade-cards
     - reward-cards
-    - imperial-class-cards
-    - condition-cards
     - supply-cards
-    - command-cards
- - 657x424
-    - form-cards
+    - condition-cards
+    - card-backs
  - 1490x1186
     - heroes
-
- - 473x729
-    - card-backs
- - 482x740
-    - card-backs
- - 655x424
+ - 657x424
+    - form-cards
     - card-backs
 
 
@@ -85,32 +78,26 @@ The images also have consistent sizes (except skirmish maps):
  - 300x300
     - sources
  - 301x470
+    - deployment-cards
+    - companion-cards
+    - agenda-cards
     - story-mission-cards
+    - side-mission-cards
     - threat-mission-cards
     - card-backs
-    - deployment-cards
-    - side-mission-cards
-    - agenda-cards
-    - companion-cards
  - 293x454
-    - card-backs
+    - command-cards
     - hero-class-cards
+    - imperial-class-cards
     - upgrade-cards
     - reward-cards
-    - imperial-class-cards
-    - condition-cards
     - supply-cards
-    - command-cards
- - 454x293
-    - form-cards
+    - condition-cards
+    - card-backs
  - 650x515
     - heroes
-
- - 299x465
-    - card-backs
- - 482x740
-    - card-backs
- - 655x424
+ - 454x293
+    - form-cards
     - card-backs
 
 
