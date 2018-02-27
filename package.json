@@ -2,7 +2,6 @@
   "name": "imperial-assault-data",
   "version": "1.0.0",
   "description": "An easy-to-use collection of data and images from the Imperial Assault game by Fantasy Flight Games.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
