@@ -105,13 +105,18 @@ The images also have consistent sizes (except skirmish maps):
 
 You can use this data to build your own apps, web sites, etc.
 
-The easiest way to do this is via [Yarn](https://yarnpkg.com/), [npm](https://www.npmjs.com/package/imperial-assault-data) or as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Starting-with-Submodules):
+The easiest way to do this is via [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Starting-with-Submodules):
+```
+git submodule add https://github.com/lvisintini/imperial-assault-data.git
+```
 
-* Yarn: `yarn add imperial-assault-data`
-* npm: `npm install imperial-assault-data`
-* Git submodule: `git submodule add https://github.com/lvisintini/imperial-assault-data.git`
+Alternatively all releases for this project include 2 build files:
+ - one with the low-res images and,
+ - one with the high-res images.
 
-## Bugs / Issues
+I do not know what would be the best way to distribute this assets, but I'm open to suggestions.
+
+## Bugs / Issues / Suggestions
 
 Please [open a ticket](https://github.com/lvisintini/imperial-assault-data/issues/new) on Github.
 
