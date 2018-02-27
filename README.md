@@ -101,6 +101,30 @@ The images also have consistent sizes (except skirmish maps):
     - card-backs
 
 
+## Usage
+
+You can use this data to build your own apps, web sites, etc.
+
+The easiest way to do this is via [Yarn](https://yarnpkg.com/), [npm](https://www.npmjs.com/package/imperial-assault-data) or as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Starting-with-Submodules):
+
+* Yarn: `yarn add imperial-assault-data`
+* npm: `npm install imperial-assault-data`
+* Git submodule: `git submodule add https://github.com/lvisintini/imperial-assault-data.git`
+
+## Bugs / Issues
+
+Please [open a ticket](https://github.com/lvisintini/imperial-assault-data/issues/new) on Github.
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :tada:
+
+When adding images please use [TinyPNG](https://tinypng.com/) to reduce their filesize as much as possible without affecting image quality.
+
 ## Versioning
 
 This project uses [SemVer](http://semver.org/). Given a `MAJOR.MINOR.PATCH` version number, we will increment the:
