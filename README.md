@@ -33,6 +33,8 @@ The data structure loosely mimics that of a relational database.
 With `data/source-contents.json` you can find the contents of a particular product by filtering the entries on this file by the `source_id`.
 After that, you can use the value of `content_type` and `content_id` the components contained in the product file.
 
+There is an example in the examples folder. You can run it by doing `python3.6 examples/show_source_contents.py`
+
 You can also use this file to determine the sources on which a particular component can be found.
 You you this by filter in the entries on this using the id of the component and it's type.
 
@@ -115,6 +117,8 @@ Alternatively all releases for this project include 2 build files:
  - one with the high-res images.
 
 I do not know what would be the best way to distribute this assets, but I'm open to suggestions.
+
+There are also examples of how to use this data inside the `examples` folder.
 
 ## Bugs / Issues / Suggestions
 
