@@ -3,7 +3,6 @@
     "id": 0,
     "name": "Cam Droid",
     "image": "companion-cards/cam-droid.png",
-    "source": 3,
     "traits": [
       "Droid"
     ]
@@ -12,7 +11,6 @@
     "id": 1,
     "name": "Junk Droid",
     "image": "companion-cards/junk-droid.png",
-    "source": 3,
     "traits": [
       "Droid"
     ]
@@ -21,7 +19,6 @@
     "id": 2,
     "name": "R5 Astromech",
     "image": "companion-cards/r5-astromech.png",
-    "source": 3,
     "traits": [
       "Droid"
     ]
@@ -30,7 +27,6 @@
     "id": 3,
     "name": "Pit Droid",
     "image": "companion-cards/pit-droid.png",
-    "source": 4,
     "traits": [
       "Droid"
     ]
@@ -39,7 +35,6 @@
     "id": 4,
     "name": "Salacious B. Crumb",
     "image": "companion-cards/salacious-b-crumb.png",
-    "source": 4,
     "traits": [
       "Brawler"
     ]
@@ -48,7 +43,6 @@
     "id": 5,
     "name": "88-Z",
     "image": "companion-cards/88-z.png",
-    "source": 5,
     "traits": [
       "Droid"
     ]
@@ -57,7 +51,6 @@
     "id": 6,
     "name": "J4X-7",
     "image": "companion-cards/j4x-7.png",
-    "source": 5,
     "traits": [
       "Droid"
     ]

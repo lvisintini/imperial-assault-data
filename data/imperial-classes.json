@@ -1,57 +1,46 @@
 [
   {
     "id": 0,
-    "name": "Military Might",
-    "source": 0
+    "name": "Military Might"
   },
   {
     "id": 1,
-    "name": "Inspiring Leadership",
-    "source": 1
+    "name": "Inspiring Leadership"
   },
   {
     "id": 2,
-    "name": "Armored Onslaught",
-    "source": 2
+    "name": "Armored Onslaught"
   },
   {
     "id": 3,
-    "name": "Precision Training",
-    "source": 2
+    "name": "Precision Training"
   },
   {
     "id": 4,
-    "name": "Imperial Black Ops",
-    "source": 3
+    "name": "Imperial Black Ops"
   },
   {
     "id": 5,
-    "name": "Hutt Mercenaries",
-    "source": 4
+    "name": "Hutt Mercenaries"
   },
   {
     "id": 6,
-    "name": "Nemeses",
-    "source": 4
+    "name": "Nemeses"
   },
   {
     "id": 7,
-    "name": "Subversive Tactics",
-    "source": 0
+    "name": "Subversive Tactics"
   },
   {
     "id": 8,
-    "name": "Technological Superiority",
-    "source": 0
+    "name": "Technological Superiority"
   },
   {
     "id": 9,
-    "name": "Power of the Dark Side",
-    "source": 5
+    "name": "Power of the Dark Side"
   },
   {
     "id": 10,
-    "name": "Reactive Defenses",
-    "source": 5
+    "name": "Reactive Defenses"
   }
 ]

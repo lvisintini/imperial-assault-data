@@ -3633,5 +3633,40 @@
     "source_id": 38,
     "content_type": "supply-cards",
     "content_id": 21
+  },
+  {
+    "source_id": 3,
+    "content_type": "companion-cards",
+    "content_id": 0
+  },
+  {
+    "source_id": 3,
+    "content_type": "companion-cards",
+    "content_id": 1
+  },
+  {
+    "source_id": 3,
+    "content_type": "companion-cards",
+    "content_id": 2
+  },
+  {
+    "source_id": 4,
+    "content_type": "companion-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 4,
+    "content_type": "companion-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 38,
+    "content_type": "companion-cards",
+    "content_id": 5
+  },
+  {
+    "source_id": 38,
+    "content_type": "companion-cards",
+    "content_id": 6
   }
 ]

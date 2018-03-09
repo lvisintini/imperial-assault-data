@@ -2,7 +2,6 @@
   {
     "id": 0,
     "name": "Adrenal Stim",
-    "source": 0,
     "traits": [
       "Consumable",
       "Medical"
@@ -12,7 +11,6 @@
   {
     "id": 1,
     "name": "Artificial Stimulants",
-    "source": 2,
     "traits": [
       "Consumable",
       "Medical"
@@ -22,7 +20,6 @@
   {
     "id": 2,
     "name": "Bacta Infusion",
-    "source": 0,
     "traits": [
       "Consumable",
       "Medical"
@@ -32,7 +29,6 @@
   {
     "id": 3,
     "name": "C1 Comlink",
-    "source": 0,
     "traits": [
       "Consumable",
       "Tool"
@@ -42,7 +38,6 @@
   {
     "id": 4,
     "name": "C22 Frag Grenade",
-    "source": 0,
     "traits": [
       "Consumable",
       "Explosive"
@@ -52,7 +47,6 @@
   {
     "id": 5,
     "name": "Chance Cubes",
-    "source": 1,
     "traits": [
       "Valuable"
     ],
@@ -61,7 +55,6 @@
   {
     "id": 6,
     "name": "Emergency Medpac",
-    "source": 0,
     "traits": [
       "Consumable",
       "Medical"
@@ -71,7 +64,6 @@
   {
     "id": 7,
     "name": "Flash Bomb",
-    "source": 4,
     "traits": [
       "Consumable",
       "Explosive"
@@ -81,7 +73,6 @@
   {
     "id": 8,
     "name": "Flash Emitter",
-    "source": 3,
     "traits": [
       "Consumable",
       "Energy"
@@ -91,7 +82,6 @@
   {
     "id": 9,
     "name": "Grappling Hook",
-    "source": 2,
     "traits": [
       "Tool"
     ],
@@ -100,7 +90,6 @@
   {
     "id": 10,
     "name": "Macrobinoculars",
-    "source": 1,
     "traits": [
       "Tool"
     ],
@@ -109,7 +98,6 @@
   {
     "id": 11,
     "name": "Painkillers",
-    "source": 4,
     "traits": [
       "Medical"
     ],
@@ -118,7 +106,6 @@
   {
     "id": 12,
     "name": "Pit Droid",
-    "source": 4,
     "traits": [
       "Droid"
     ],
@@ -127,7 +114,6 @@
   {
     "id": 13,
     "name": "Power Generator",
-    "source": 2,
     "traits": [
       "Consumable",
       "Energy"
@@ -137,7 +123,6 @@
   {
     "id": 14,
     "name": "Shock Grenade",
-    "source": 0,
     "traits": [
       "Consumable",
       "Explosive"
@@ -147,7 +132,6 @@
   {
     "id": 15,
     "name": "Troop Data",
-    "source": 0,
     "traits": [
       "Intel"
     ],
@@ -156,7 +140,6 @@
   {
     "id": 16,
     "name": "Turbocharger",
-    "source": 3,
     "traits": [
       "Energy"
     ],
@@ -165,7 +148,6 @@
   {
     "id": 17,
     "name": "Valuable Goods",
-    "source": 0,
     "traits": [
       "Valuable"
     ],
@@ -174,7 +156,6 @@
   {
     "id": 18,
     "name": "Weapons Cache",
-    "source": 2,
     "traits": [
       "Tool"
     ],
@@ -183,7 +164,6 @@
   {
     "name": "Grappler Arm",
     "id": 19,
-    "source": 5,
     "traits": [
       "Tool"
     ],
@@ -192,7 +172,6 @@
   {
     "name": "Shield Pack",
     "id": 20,
-    "source": 5,
     "traits": [
       "Consumable",
       "Tool"
@@ -202,7 +181,6 @@
   {
     "name": "Supply Chest",
     "id": 21,
-    "source": 5,
     "traits": [
       "Valuable"
     ],
