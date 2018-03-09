@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "supply-cards.json#",
+  "title": "Schema for the supply cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Supply card name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this supply card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "traits": {
+      "type": "array",
+      "description": "Traits that apply to this supply card.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "description": "A trait that applies to this supply.",
+        "$ref": "definitions.json#/definitions/supply-trait"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image",
+    "traits"
+  ],
+  "additionalProperties": false
+}

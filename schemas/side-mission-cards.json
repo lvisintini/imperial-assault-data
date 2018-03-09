@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "side-mission-cards.json#",
+  "title": "Schema for the side mission cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Side mission name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this side mission's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "color": {
+      "description": "The file path for this story mission's image.",
+      "enum": [
+        "Red",
+        "Grey",
+        "Green"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "color",
+    "image"
+  ],
+  "additionalProperties": false
+}

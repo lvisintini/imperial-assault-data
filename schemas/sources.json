@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "source.json#",
+  "title": "Schema for the sources data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Source name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this source's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "type": {
+      "type": "string",
+      "description": "Source type.",
+      "enum": [
+        "Core Game",
+        "Expansion",
+        "Ally Pack",
+        "Villain Pack"
+      ]
+    },
+    "wave": {
+      "description": "Wave number",
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "type",
+    "image",
+    "wave"
+  ],
+  "additionalProperties": false
+}

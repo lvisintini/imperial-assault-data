@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "condition-cards.json#",
+  "title": "Schema for the condition cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Condition name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this condition card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "name",
+    "image"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "source-contents.json#",
+  "title": "Schema for the source contents data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "source_id": {
+      "type": "integer",
+      "description": "Foreign key to a source in the data/sources.json.",
+      "minimum": 0
+    },
+    "content_type": {
+      "type": "string",
+      "description": "Content type for the component contained in the source.",
+      "enum": [
+        "sources",
+        "skirmish-maps",
+        "agenda-cards",
+        "agenda-decks",
+        "command-cards",
+        "condition-cards",
+        "deployment-cards",
+        "heroes",
+        "hero-class-cards",
+        "imperial-classes",
+        "imperial-class-cards",
+        "supply-cards",
+        "story-mission-cards",
+        "side-mission-cards",
+        "reward-cards",
+        "companion-cards",
+        "upgrade-cards",
+        "card-backs",
+        "threat-mission-cards",
+        "form-cards"
+      ]
+    },
+    "content_id": {
+      "type": "integer",
+      "description": "Unique id for the component contained in the source.",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "source_id",
+    "content_type",
+    "content_id"
+  ],
+  "additionalProperties": false
+}

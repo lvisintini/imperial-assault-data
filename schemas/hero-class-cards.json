@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "hero-class-cards.json#",
+  "title": "Schema for the hero class cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "hero_id": {
+      "type": "integer",
+      "description": "Foreign key id for entry in data/heroes.json",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Hero class card name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this hero class card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "xp": {
+      "description": "Hero class xp cost",
+      "oneOf":[
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "type": {
+      "description": "Hero class card type",
+      "$ref": "definitions.json#/definitions/buff-type"
+    },
+    "traits": {
+      "description": "Traits that apply to this hero class card.",
+      "oneOf": [
+        {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "description": "A trait that applies to this hero class card.",
+            "$ref": "definitions.json#/definitions/item-trait"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image",
+    "hero_id",
+    "xp",
+    "type",
+    "traits"
+  ],
+  "additionalProperties": false
+}

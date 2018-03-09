@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "definitions.json#",
+  "title": "Schema for common fields in data files",
+  "definitions": {
+    "affiliation": {
+      "type": "string",
+      "description": "Affiliation for component in the game.",
+      "enum": [
+        "Rebel",
+        "Imperial",
+        "Mercenary",
+        "Neutral"
+      ]
+    },
+    "item-trait": {
+      "type": "string",
+      "description": "Trait for items in the game.",
+      "enum": [
+        "Accessory",
+        "Ammunition",
+        "Armor",
+        "Balance",
+        "Barrel",
+        "Blade",
+        "Blaster",
+        "Club",
+        "Consumable",
+        "Disruptor",
+        "Energy",
+        "Enhancement",
+        "Explosive",
+        "Fist",
+        "Heavy",
+        "Helmet",
+        "Impact",
+        "Light",
+        "Lightsaber",
+        "Medical",
+        "Medium",
+        "Modification",
+        "Pistol",
+        "Projectile",
+        "Rifle",
+        "Sights",
+        "Staff"
+      ]
+    },
+    "supply-trait": {
+      "type": "string",
+      "description": "Trait for supply items in the game.",
+      "enum": [
+        "Consumable",
+        "Droid",
+        "Energy",
+        "Explosive",
+        "Intel",
+        "Medical",
+        "Tool",
+        "Valuable"
+      ]
+    },
+    "deployment-trait": {
+      "type": "string",
+      "description": "Trait for deployment cards in the game.",
+      "enum": [
+        "Spy",
+        "Brawler",
+        "Force User",
+        "Skirmish Upgrade",
+        "Wookiee",
+        "Guardian",
+        "Trooper",
+        "Creature",
+        "Heavy Weapon",
+        "Leader",
+        "Smuggler",
+        "Vehicle",
+        "Hunter",
+        "Droid"
+      ]
+    },
+    "buff-type": {
+      "type": "string",
+      "description": "Upgrade/Reward/Feat type.",
+      "enum": [
+        "Armor",
+        "Equipment",
+        "Feat",
+        "Melee Weapon",
+        "Melee Weapon Modification",
+        "Ranged Weapon",
+        "Ranged Weapon Modification"
+      ]
+    },
+    "image-file-path": {
+      "type": "string",
+      "description": "A file path for an image in this package.",
+      "pattern": "^[a-zA-Z\\(\\)\\.0-9_-](?:[a-zA-Z\\(\\)\\.0-9\\ _-]*[a-zA-Z\\(\\)\\.0-9\\ _-])?(?:\\/[a-zA-Z\\(\\)\\.0-9_-](?:[a-zA-Z\\(\\)\\.0-9\\ _-]*[a-zA-Z\\(\\)\\.0-9\\ _-])?)*\\.[a-z0-9]{3}$"
+    }
+  }
+}

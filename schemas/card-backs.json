@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "card-backs.json#",
+  "title": "Schema for the card backs data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "deck": {
+      "type": "string",
+      "description": "Deck name",
+      "minLength": 1
+    },
+    "variant": {
+      "description": "Variation or sub-type of the deck",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "image": {
+      "description": "The file path for this deck back's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "deck",
+    "variant",
+    "image"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "skirmish-maps.json#",
+  "title": "Schema for the skirmish maps data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Skirmish map name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this skirmish maps's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image"
+  ],
+  "additionalProperties": false
+}

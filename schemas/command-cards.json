@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "command-cards.json#",
+  "title": "Schema for the command cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Command card name",
+      "minLength": 1
+    },
+    "cost": {
+      "description": "The cost associated with using this command card.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "limit": {
+      "description": "Determines the maximum number of copies of this command card in your command deck.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2
+    },
+    "image": {
+      "description": "The file path for this command card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "cost",
+    "limit",
+    "image"
+  ],
+  "additionalProperties": false
+}

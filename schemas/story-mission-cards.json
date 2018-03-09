@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "story-mission-cards.json#",
+  "title": "Schema for the story mission cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Story mission name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this story mission's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image"
+  ],
+  "additionalProperties": false
+}

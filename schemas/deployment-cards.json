@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "deployment-cards.json#",
+  "title": "Schema for the deployment cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Deployment card name",
+      "minLength": 1
+    },
+    "description": {
+      "description": "Deployment card description",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "elite": {
+      "description": "Determines if the deployment card is elite or not",
+      "type": "boolean"
+    },
+    "unique": {
+      "description": "Determines if the deployment card is unique or not",
+      "type": "boolean"
+    },
+    "affiliation": {
+      "description": "Affiliation for this deployment card.",
+      "$ref": "definitions.json#/definitions/affiliation"
+    },
+    "modes": {
+      "type": "array",
+      "minItems": 0,
+      "description": "Game modes in which this deployment card can be used.",
+      "uniqueItems": true,
+      "items": {
+          "type": "string",
+          "description": "A game mode in which this deployment card can be used.",
+          "enum": [
+            "Campaign",
+            "Skirmish"
+          ]
+      }
+
+    },
+    "image": {
+      "description": "The file path for this deployment card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "traits": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Traits that apply to this deployment card.",
+      "uniqueItems": true,
+      "items": {
+        "description": "A trait that applies to this deployment card.",
+        "$ref": "definitions.json#/definitions/deployment-trait"
+      }
+    },
+    "deployment_cost": {
+      "description": "The cost associated with deploying this deployment card.",
+      "type": "integer"
+    },
+    "reinforce_cost": {
+      "description": "The cost associated with re-deploying a unit associated with this deployment card's.",
+      "oneOf":[
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "deployment_group": {
+      "description": "The number of units that get added to the board when deploying this deployment card.",
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image",
+    "traits",
+    "description",
+    "elite",
+    "unique",
+    "deployment_group",
+    "reinforce_cost",
+    "deployment_cost",
+    "affiliation",
+    "modes"
+  ],
+  "additionalProperties": false
+}

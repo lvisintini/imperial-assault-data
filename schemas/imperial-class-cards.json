@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "imperial-class-cards.json#",
+  "title": "Schema for the imperial class cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "class_id": {
+      "type": "integer",
+      "description": "Foreign key id for entry in data/imperial-classes.json",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Imperial class card name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this imperial class card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "xp": {
+      "description": "Imperial class xp cost",
+      "oneOf":[
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image",
+    "class_id",
+    "xp"
+  ],
+  "additionalProperties": false
+}

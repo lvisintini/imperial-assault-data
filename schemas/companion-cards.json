@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "companion-cards.json#",
+  "title": "Schema for the companion cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Companion card name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this companion card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "traits": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Traits that apply to this companion card.",
+      "uniqueItems": true,
+      "items": {
+        "description": "A trait that applies to this companion.",
+        "$ref": "definitions.json#/definitions/deployment-trait"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image",
+    "traits"
+  ],
+  "additionalProperties": false
+}

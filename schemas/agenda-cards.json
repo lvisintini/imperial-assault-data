@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "agenda-cards.json#",
+  "title": "Schema for the agenda cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string",
+      "description": "Agenda card name",
+      "minLength": 1
+    },
+    "influence": {
+      "description": "The influence cost associated obtaining this agenda card.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "agenda_id": {
+      "description": "Foreign key id for entry in data/agenda-decks.json",
+      "type": "integer",
+      "minimum": 0
+    },
+    "mission": {
+      "description": "Determines if the agenda card is a mission or not",
+      "type": "boolean"
+    },
+    "image": {
+      "description": "The file path for this command card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "influence",
+    "agenda_id",
+    "mission",
+    "image"
+  ],
+  "additionalProperties": false
+}
