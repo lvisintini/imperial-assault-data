@@ -120,6 +120,19 @@ I do not know what would be the best way to distribute this assets, but I'm open
 
 There are also examples of how to use this data inside the `examples` folder.
 
+## Testing
+
+```
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt update
+sudo apt install python3.6
+sudo apt install python3.6-dev virtualwrapper
+mkvirtualenv --python=/usr/bin/python3.6 imperial-assault-tools
+pip install -r requirements.txt
+
+py.test
+```
+
 ## Bugs / Issues / Suggestions
 
 Please [open a ticket](https://github.com/lvisintini/imperial-assault-data/issues/new) on Github.
