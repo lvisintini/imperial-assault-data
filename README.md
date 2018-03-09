@@ -151,4 +151,7 @@ personally, but I'm grateful to them for putting together such a great source of
 ## Disclaimer
 
 This project is not produced, endorsed, supported, or affiliated with Fantasy Flight Games.
-The copyrightable portions of Star Wars: Imperial Assault and its expansions are © 2014 - 2018 Fantasy Flight Publishing, Inc. Star Wars, and the characters, items, events and places therein are trademarks or registered trademarks of Lucas Film Limited and are used, under license, by Fantasy Flight Games. All Rights Reserved to their respective owners.
+
+The copyrightable portions of Star Wars: Imperial Assault and its expansions are © 2014 - 2018 Fantasy Flight Publishing, Inc. Star Wars, and the characters, items, events and places therein are trademarks or registered trademarks of Lucas Film Limited and are used, under license, by Fantasy Flight Games.
+
+All Rights Reserved to their respective owners.

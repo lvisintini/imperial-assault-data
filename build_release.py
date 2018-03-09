@@ -15,7 +15,8 @@ RELEASES = [
             ('images/large', 'images'),
             ('data', 'data'),
             ('schemas', 'schemas'),
-            ('LICENSE', 'LICENSE')
+            ('LICENSE', 'LICENSE'),
+            ('README.md', 'README.md')
         ],
     },
     {
@@ -25,7 +26,8 @@ RELEASES = [
             ('images/small', 'images'),
             ('data', 'data'),
             ('schemas', 'schemas'),
-            ('LICENSE', 'LICENSE')
+            ('LICENSE', 'LICENSE'),
+            ('README.md', 'README.md')
         ],
     }
 ]
