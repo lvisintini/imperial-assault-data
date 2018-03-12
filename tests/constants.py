@@ -45,22 +45,16 @@ class CONTENT_TYPES:
         FORM_CARDS,
     ]
 
-    with_ids = [
-        SOURCE,
-        AGENDA,
+    without_ids = [
+        SOURCE_CONTENTS,
+        SKIRMISH_MAP,
+        CONDITION,
+        CARD,
+    ]
+
+    without_image_attr = [
+        SOURCE_CONTENTS,
         AGENDA_DECKS,
-        COMMAND,
-        DEPLOYMENT,
         HERO,
-        HERO_CLASS,
         IMPERIAL_CLASSES,
-        IMPERIAL_CLASS_CARD,
-        SUPPLY,
-        STORY_MISSION,
-        SIDE_MISSION,
-        REWARD,
-        COMPANION,
-        UPGRADE,
-        THREAT_MISSION,
-        FORM_CARDS,
     ]
