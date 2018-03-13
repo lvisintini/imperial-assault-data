@@ -45,22 +45,96 @@ class CONTENT_TYPES:
         FORM_CARDS,
     ]
 
-    with_ids = [
-        SOURCE,
-        AGENDA,
-        AGENDA_DECKS,
-        COMMAND,
-        DEPLOYMENT,
-        HERO,
-        HERO_CLASS,
-        IMPERIAL_CLASSES,
-        IMPERIAL_CLASS_CARD,
-        SUPPLY,
-        STORY_MISSION,
-        SIDE_MISSION,
-        REWARD,
-        COMPANION,
-        UPGRADE,
-        THREAT_MISSION,
-        FORM_CARDS,
+    without_ids = [
+        SOURCE_CONTENTS,
+        SKIRMISH_MAP,
+        CONDITION,
+        CARD,
     ]
+
+    without_image_attr = [
+        SOURCE_CONTENTS,
+        AGENDA_DECKS,
+        HERO,
+        IMPERIAL_CLASSES,
+    ]
+
+
+class DEPLOYMENT_TRAITS:
+    SPY = 'Spy'
+    BRAWLER = 'Brawler'
+    FORCE_USER = 'Force User'
+    SKIRMISH_UPGRADE = 'Skirmish Upgrade'
+    WOOKIEE = 'Wookiee'
+    GUARDIAN = 'Guardian'
+    TROOPER = 'Trooper'
+    CREATURE = 'Creature'
+    HEAVY_WEAPON = 'Heavy Weapon'
+    LEADER = 'Leader'
+    SMUGGLER = 'Smuggler'
+    VEHICLE = 'Vehicle'
+    HUNTER = 'Hunter'
+    DROID = 'Droid'
+
+
+class SUPPLY_TRAITS:
+    CONSUMABLE = 'Consumable'
+    DROID = 'Droid'
+    ENERGY = 'Energy'
+    EXPLOSIVE = 'Explosive'
+    INTEL = 'Intel'
+    MEDICAL = 'Medical'
+    TOOL = 'Tool'
+    VALUABLE = 'Valuable'
+
+
+class BUFF_TRAITS:
+    ACCESSORY = 'Accessory'
+    ARMOR = 'Armor'
+    BALANCE = 'Balance'
+    BARREL = 'Barrel'
+    BLADE = 'Blade'
+    BLASTER = 'Blaster'
+    CLUB = 'Club'
+    CONSUMABLE = 'Consumable'
+    DISRUPTOR = 'Disruptor'
+    ENERGY = 'Energy'
+    ENHANCEMENT = 'Enhancement'
+    EXPLOSIVE = 'Explosive'
+    FIST = 'Fist'
+    HEAVY = 'Heavy'
+    HELMET = 'Helmet'
+    IMPACT = 'Impact'
+    LIGHT = 'Light'
+    LIGHTSABER = 'Lightsaber'
+    MEDICAL = 'Medical'
+    MEDIUM = 'Medium'
+    MODIFICATION = 'Modification'
+    PISTOL = 'Pistol'
+    PROJECTILE = 'Projectile'
+    RIFLE = 'Rifle'
+    SIGHTS = 'Sights'
+    STAFF = 'Staff'
+    AMMUNITION = 'Ammunition'
+
+
+class BUFF_TYPES:
+    EQUIPMENT = 'Equipment'
+    MELEE = 'Melee Weapon'
+    RANGED = 'Ranged Weapon'
+    ARMOR = 'Armor'
+    MELEE_MOD = 'Melee Weapon Modification'
+    RANGED_MOD = 'Ranged Weapon Modification'
+    FEAT = 'Feat'
+
+
+class GAME_MODES:
+    CAMPAIGN = 'Campaign'
+    SKIRMISH = 'Skirmish'
+
+
+class AFFILIATION:
+    REBEL = 'Rebel'
+    IMPERIAL = 'Imperial'
+    MERCENARY = 'Mercenary'
+    NEUTRAL = 'Neutral'
