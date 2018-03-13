@@ -86,8 +86,15 @@
     },
     "deployment_group": {
       "description": "The number of units that get added to the board when deploying this deployment card.",
-      "type": "integer",
-      "minimum": 0
+      "oneOf":[
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [

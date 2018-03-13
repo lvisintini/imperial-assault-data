@@ -3,7 +3,7 @@ from itertools import product, chain
 
 import pytest
 
-from tests.constants import CONTENT_TYPES
+from tests.constants import CONTENT_TYPES, DEPLOYMENT_TRAITS, GAME_MODES, BUFF_TYPES
 from tests.utils import get_data
 
 
@@ -57,3 +57,77 @@ class TestIntegrity:
         absolute_path = path.abspath(path.join(path.dirname(__file__), f'../images/{image_subdir}/{entry[image_attr]}'))
         assert path.exists(absolute_path)
         assert path.isfile(absolute_path)
+
+
+class TestDeploymentsIntegrity:
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
+    ])
+    def test_skirmish_upgrades_have_skirmish_game_mode_only(self, entry):
+        assert entry['modes'] == [GAME_MODES.SKIRMISH, ]
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
+    ])
+    def test_skirmish_upgrades_do_not_have_deployment_group(self, entry):
+        assert entry['deployment_group'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
+    ])
+    def test_skirmish_upgrades_do_not_have_reinforce_cost(self, entry):
+        assert entry['reinforce_cost'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if d['deployment_group'] is not None
+    ])
+    def test_reinforce_cost_only_available_if_appropriate(self, entry):
+        if entry['deployment_group'] > 1:
+            assert entry['reinforce_cost'] is not None
+            assert entry['reinforce_cost'] > 0
+        else:
+            assert entry['reinforce_cost'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT)
+        if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE not in d['traits'] and d['unique']
+    ])
+    def test_unique_deployment_does_not_have_a_reinforce_cost(self, entry):
+        assert entry['reinforce_cost'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT)
+        if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE not in d['traits'] and d['unique']
+    ])
+    def test_unique_deployment_have_a_deployment_group_of_1(self, entry):
+        assert entry['deployment_group'] == 1
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if d['deployment_group'] is not None and d['deployment_group'] > 1
+    ])
+    def test_deployment_has_reinforce_cost_if_deployment_group(self, entry):
+        assert entry['reinforce_cost'] > 0
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if d['reinforce_cost'] is not None and d['reinforce_cost'] > 1
+    ])
+    def test_deployment_has_deployment_group_if_reinforce_cost(self, entry):
+        assert entry['deployment_group'] > 1
+
+
+class TestHeroClassCardIntegrity:
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.HERO_CLASS) if d['type'] == BUFF_TYPES.FEAT
+    ])
+    def test_unique_deployment_does_not_have_a_reinforce_cost(self, entry):
+        assert entry['traits'] is None
+
+
+class TestRewardIntegrity:
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.REWARD) if d['type'] == BUFF_TYPES.FEAT
+    ])
+    def test_unique_deployment_does_not_have_a_reinforce_cost(self, entry):
+        assert entry['traits'] is None
