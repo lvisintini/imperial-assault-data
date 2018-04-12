@@ -1321,5 +1321,124 @@
     "limit": 1,
     "id": 188,
     "image": "command-cards/wreak-vengeance.png"
+  },
+  {
+    "name": "One in a Million",
+    "cost": 2,
+    "limit": 1,
+    "id": 189,
+    "image": "command-cards/one-in-a-million.png"
+  },
+  {
+    "name": "Planning",
+    "cost": 0,
+    "limit": 1,
+    "id": 190,
+    "image": "command-cards/planning.png"
+  },
+  {
+    "name": "Price on Their Heads",
+    "cost": 1,
+    "limit": 1,
+    "id": 191,
+    "image": "command-cards/price-on-their-heads.png"
+  },
+  {
+    "name": "Pummel",
+    "cost": 1,
+    "limit": 2,
+    "id": 192,
+    "image": "command-cards/pummel.png"
+  },
+  {
+    "name": "Rally",
+    "cost": 0,
+    "limit": 1,
+    "id": 193,
+    "image": "command-cards/rally.png"
+  },
+  {
+    "name": "Recovery",
+    "cost": 0,
+    "limit": 1,
+    "id": 194,
+    "image": "command-cards/recovery.png"
+  },
+  {
+    "name": "Regroup",
+    "cost": 1,
+    "limit": 2,
+    "id": 195,
+    "image": "command-cards/regroup.png"
+  },
+  {
+    "name": "Sarlacc Sweep",
+    "cost": 2,
+    "limit": 1,
+    "id": 196,
+    "image": "command-cards/sarlacc-sweep.png"
+  },
+  {
+    "name": "Shadow Ops",
+    "cost": 3,
+    "limit": 1,
+    "id": 197,
+    "image": "command-cards/shadow-ops.png"
+  },
+  {
+    "name": "Sit Tight",
+    "cost": 0,
+    "limit": 1,
+    "id": 198,
+    "image": "command-cards/sit-tight.png"
+  },
+  {
+    "name": "Son of Skywalker",
+    "cost": 3,
+    "limit": 1,
+    "id": 199,
+    "image": "command-cards/son-of-skywalker.png"
+  },
+  {
+    "name": "Take Cover",
+    "cost": 0,
+    "limit": 1,
+    "id": 200,
+    "image": "command-cards/take-cover.png"
+  },
+  {
+    "name": "Take Initiative",
+    "cost": 0,
+    "limit": 1,
+    "id": 201,
+    "image": "command-cards/take-initiative.png"
+  },
+  {
+    "name": "Take it Down",
+    "cost": 3,
+    "limit": 1,
+    "id": 202,
+    "image": "command-cards/take-it-down.png"
+  },
+  {
+    "name": "Telekinetic Throw",
+    "cost": 1,
+    "limit": 1,
+    "id": 203,
+    "image": "command-cards/telekinetic-throw.png"
+  },
+  {
+    "name": "To the Limit",
+    "cost": 0,
+    "limit": 1,
+    "id": 204,
+    "image": "command-cards/to-the-limit.png"
+  },
+  {
+    "name": "Urgency",
+    "cost": 0,
+    "limit": 1,
+    "id": 205,
+    "image": "command-cards/urgency.png"
   }
 ]
