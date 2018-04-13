@@ -2672,7 +2672,7 @@
   },
   {
     "id": 140,
-    "name": "Wookie Warrior",
+    "name": "Wookiee Warrior",
     "description": null,
     "elite": false,
     "unique": false,
@@ -2688,11 +2688,11 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/wookie-warrior.png"
+    "image": "deployment-cards/wookiee-warrior.png"
   },
   {
     "id": 141,
-    "name": "Wookie Warrior",
+    "name": "Wookiee Warrior",
     "description": null,
     "elite": true,
     "unique": false,
@@ -2708,7 +2708,7 @@
     "deployment_cost": 11,
     "reinforce_cost": 6,
     "deployment_group": 2,
-    "image": "deployment-cards/wookie-warrior-elite.png"
+    "image": "deployment-cards/wookiee-warrior-elite.png"
   },
   {
     "id": 142,
