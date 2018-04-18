@@ -52,13 +52,6 @@ class CONTENT_TYPES:
         CARD,
     ]
 
-    without_image_attr = [
-        SOURCE_CONTENTS,
-        AGENDA_DECKS,
-        HERO,
-        IMPERIAL_CLASSES,
-    ]
-
 
 class DEPLOYMENT_TRAITS:
     SPY = 'Spy'

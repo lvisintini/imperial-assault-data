@@ -2,271 +2,325 @@
   {
     "deck": "Agenda",
     "variant": null,
+    "content_type": "agenda-decks",
     "image": "card-backs/agenda.png"
   },
   {
     "deck": "Command",
     "variant": null,
+    "content_type": "command-cards",
     "image": "card-backs/command.png"
   },
   {
     "deck": "Companion",
     "variant": null,
+    "content_type": "companion-cards",
     "image": "card-backs/companion.png"
   },
   {
     "deck": "Condition",
     "variant": "Bleeding",
+    "content_type": "condition-cards",
     "image": "card-backs/condition-bleeding.png"
   },
   {
     "deck": "Condition",
     "variant": "Focused",
+    "content_type": "condition-cards",
     "image": "card-backs/condition-focused.png"
   },
   {
     "deck": "Condition",
     "variant": "Hidden",
+    "content_type": "condition-cards",
     "image": "card-backs/condition-hidden.png"
   },
   {
     "deck": "Condition",
     "variant": "Stunned",
+    "content_type": "condition-cards",
     "image": "card-backs/condition-stunned.png"
   },
   {
     "deck": "Condition",
     "variant": "Weakened",
+    "content_type": "condition-cards",
     "image": "card-backs/condition-weakened.png"
   },
   {
     "deck": "Deployment",
     "variant": "Imperial",
+    "content_type": "deployment-cards",
     "image": "card-backs/deployment-imperial.png"
   },
   {
     "deck": "Deployment",
     "variant": "Mercenary",
+    "content_type": "deployment-cards",
     "image": "card-backs/deployment-mercenary.png"
   },
   {
     "deck": "Deployment",
     "variant": "Neutral",
+    "content_type": "deployment-cards",
     "image": "card-backs/deployment-neutral.png"
   },
   {
     "deck": "Deployment",
     "variant": "Rebel",
+    "content_type": "deployment-cards",
     "image": "card-backs/deployment-rebel.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Armored Onslaught",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-armored-onslaught.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Hutt Mercenaries",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-hutt-mercenaries.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Imperial Black Ops",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-imperial-black-ops.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Inspiring Leadership",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-inspiring-leadership.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Military Might",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-military-might.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Nemeses",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-nemeses.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Precision Training",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-precision-training.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Subversive Tactics",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-subversive-tactics.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Technological Superiority",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-technological-superiority.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Biv Bodhrik",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-biv-bodhrik.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Davith Elso",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-davith-elso.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Diala Passil",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-diala-passil.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Fenn Signis",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-fenn-signis.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Gaarkhan",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-gaarkhan.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Gideon Argus",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-gideon-argus.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Jyn Odan",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-jyn-odan.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Loku Kanoloa",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-loku-kanoloa.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "MHD-19",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-mhd-19.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Mak Eshka'rey",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-mak-eshkarey.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Murne Rin",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-murne-rin.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Onar Koma",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-onar-koma.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Saska Teft",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-saska-teft.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Shyla Varad",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-shyla-varad.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Verena Talos",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-verena-talos.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Vinto Hreeda",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-vinto-hreeda.png"
   },
   {
     "deck": "Rebel Upgrade",
     "variant": "Tier 1",
+    "content_type": "upgrade-cards",
     "image": "card-backs/rebel-upgrade-tier-1.png"
   },
   {
     "deck": "Rebel Upgrade",
     "variant": "Tier 2",
+    "content_type": "upgrade-cards",
     "image": "card-backs/rebel-upgrade-tier-2.png"
   },
   {
     "deck": "Rebel Upgrade",
     "variant": "Tier 3",
+    "content_type": "upgrade-cards",
     "image": "card-backs/rebel-upgrade-tier-3.png"
   },
   {
     "deck": "Reward",
     "variant": null,
+    "content_type": "reward-cards",
     "image": "card-backs/reward.png"
   },
   {
     "deck": "Side Mission",
     "variant": null,
+    "content_type": "side-mission-cards",
     "image": "card-backs/side-mission.png"
   },
   {
     "deck": "Story Mission",
     "variant": "Imperial Assault",
+    "content_type": "story-mission-cards",
     "image": "card-backs/story-mission-imperial-assault.png"
   },
   {
     "deck": "Story Mission",
     "variant": "Jabba's Realm",
+    "content_type": "story-mission-cards",
     "image": "card-backs/story-mission-jabbas-realm.png"
   },
   {
     "deck": "Story Mission",
     "variant": "Return to Hoth",
+    "content_type": "story-mission-cards",
     "image": "card-backs/story-mission-return-to-hoth.png"
   },
   {
     "deck": "Supply",
     "variant": null,
+    "content_type": "supply-cards",
     "image": "card-backs/supply.png"
   },
   {
     "deck": "Threat Mission",
     "variant": "Return to Hoth",
+    "content_type": "threat-mission-cards",
     "image": "card-backs/threat-mission-return-to-hoth.png"
   },
   {
     "deck": "Form Cards",
     "variant": "Clawdite",
+    "content_type": "form-cards",
     "image": "card-backs/form-cards-clawdite.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Power of the Dark Side",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-power-of-the-dark-side.png"
   },
   {
     "deck": "Imperial Class",
     "variant": "Reactive Defenses",
+    "content_type": "imperial-classes",
     "image": "card-backs/imperial-class-reactive-defenses.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Drokkatta",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-drokkatta.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Jarrod Kelvin",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-jarrod-kelvin.png"
   },
   {
     "deck": "Rebel Hero",
     "variant": "Ko-Tun Feralo",
+    "content_type": "heroes",
     "image": "card-backs/rebel-hero-ko-tun-feralo.png"
   },
   {
     "deck": "Story Mission",
     "variant": "Heart of the Empire",
+    "content_type": "story-mission-cards",
     "image": "card-backs/story-mission-heart-of-the-empire.png"
   }
 ]

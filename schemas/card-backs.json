@@ -22,6 +22,10 @@
         }
       ]
     },
+    "content_type": {
+      "description": "Content type for the component referenced on this entry.",
+      "$ref": "definitions.json#/definitions/content_type"
+    },
     "image": {
       "description": "The file path for this deck back's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
