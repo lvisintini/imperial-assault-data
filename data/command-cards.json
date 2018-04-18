@@ -4,1441 +4,1647 @@
     "name": "A Powerful Influence",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/a-powerful-influence.png"
+    "image": "command-cards/a-powerful-influence.png",
+    "iaspec": "apowerfulinfluence"
   },
   {
     "id": 1,
     "name": "Adrenaline",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/adrenaline.png"
+    "image": "command-cards/adrenaline.png",
+    "iaspec": "adrenaline"
   },
   {
     "id": 2,
     "name": "Advance Warning",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/advance-warning.png"
+    "image": "command-cards/advance-warning.png",
+    "iaspec": "advancewarning"
   },
   {
     "id": 3,
     "name": "Against the Odds",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/against-the-odds.png"
+    "image": "command-cards/against-the-odds.png",
+    "iaspec": "againsttheodds"
   },
   {
     "id": 4,
     "name": "Assassinate",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/assassinate.png"
+    "image": "command-cards/assassinate.png",
+    "iaspec": "assassinate"
   },
   {
     "id": 5,
     "name": "Ballistics Matrix",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/ballistics-matrix.png"
+    "image": "command-cards/ballistics-matrix.png",
+    "iaspec": "ballisticsmatrix"
   },
   {
     "id": 6,
     "name": "Battlefield Awareness",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/battlefield-awareness.png"
+    "image": "command-cards/battlefield-awareness.png",
+    "iaspec": "battlefieldawareness"
   },
   {
     "id": 7,
     "name": "Behind Enemy Lines",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/behind-enemy-lines.png"
+    "image": "command-cards/behind-enemy-lines.png",
+    "iaspec": "behindenemylines"
   },
   {
     "id": 8,
     "name": "Black Market Prices",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/black-market-prices.png"
+    "image": "command-cards/black-market-prices.png",
+    "iaspec": "blackmarketprices"
   },
   {
     "id": 9,
     "name": "Bladestorm",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/bladestorm.png"
+    "image": "command-cards/bladestorm.png",
+    "iaspec": "bladestorm"
   },
   {
     "id": 10,
     "name": "Blaze of Glory",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/blaze-of-glory.png"
+    "image": "command-cards/blaze-of-glory.png",
+    "iaspec": "blazeofglory"
   },
   {
     "id": 11,
     "name": "Blitz",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/blitz.png"
+    "image": "command-cards/blitz.png",
+    "iaspec": "blitz"
   },
   {
     "id": 12,
     "name": "Blood Feud",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/blood-feud.png"
+    "image": "command-cards/blood-feud.png",
+    "iaspec": "bloodfeud"
   },
   {
     "id": 13,
     "name": "Bodyguard",
     "cost": 1,
     "limit": 2,
-    "image": "command-cards/bodyguard.png"
+    "image": "command-cards/bodyguard.png",
+    "iaspec": "bodyguard"
   },
   {
     "id": 14,
     "name": "Brace Yourself",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/brace-yourself.png"
+    "image": "command-cards/brace-yourself.png",
+    "iaspec": "braceyourself"
   },
   {
     "id": 15,
     "name": "Brace for Impact",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/brace-for-impact.png"
+    "image": "command-cards/brace-for-impact.png",
+    "iaspec": "braceforimpact"
   },
   {
     "id": 16,
     "name": "Burst Fire",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/burst-fire.png"
+    "image": "command-cards/burst-fire.png",
+    "iaspec": "burstfire"
   },
   {
     "id": 17,
     "name": "Call the Vanguard",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/call-the-vanguard.png"
+    "image": "command-cards/call-the-vanguard.png",
+    "iaspec": "callthevanguard"
   },
   {
     "id": 18,
     "name": "Camouflage",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/camouflage.png"
+    "image": "command-cards/camouflage.png",
+    "iaspec": "camouflage"
   },
   {
     "id": 19,
     "name": "Capture The Weary",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/capture-the-weary.png"
+    "image": "command-cards/capture-the-weary.png",
+    "iaspec": "capturetheweary"
   },
   {
     "id": 20,
     "name": "Cavalry Charge",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/cavalry-charge.png"
+    "image": "command-cards/cavalry-charge.png",
+    "iaspec": "cavalrycharge"
   },
   {
     "id": 21,
     "name": "Celebration",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/celebration.png"
+    "image": "command-cards/celebration.png",
+    "iaspec": "celebration"
   },
   {
     "id": 22,
     "name": "Change of Plans",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/change-of-plans.png"
+    "image": "command-cards/change-of-plans.png",
+    "iaspec": "changeofplans"
   },
   {
     "id": 23,
     "name": "Cheat to Win",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/cheat-to-win.png"
+    "image": "command-cards/cheat-to-win.png",
+    "iaspec": "cheattowin"
   },
   {
     "id": 24,
     "name": "Close the Gap",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/close-the-gap.png"
+    "image": "command-cards/close-the-gap.png",
+    "iaspec": "closethegap"
   },
   {
     "id": 25,
     "name": "Collect Intel",
     "cost": 1,
     "limit": 2,
-    "image": "command-cards/collect-intel.png"
+    "image": "command-cards/collect-intel.png",
+    "iaspec": "collectintel"
   },
   {
     "id": 26,
     "name": "Comm Disruption",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/comm-disruption.png"
+    "image": "command-cards/comm-disruption.png",
+    "iaspec": "commdisruption"
   },
   {
     "id": 27,
     "name": "Coordinated Attack",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/coordinated-attack.png"
+    "image": "command-cards/coordinated-attack.png",
+    "iaspec": "coordinatedattack"
   },
   {
     "id": 28,
     "name": "Counter Attack",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/counter-attack.png"
+    "image": "command-cards/counter-attack.png",
+    "iaspec": "counterattack"
   },
   {
     "id": 29,
     "name": "Covering Fire",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/covering-fire.png"
+    "image": "command-cards/covering-fire.png",
+    "iaspec": "coveringfire"
   },
   {
     "id": 30,
     "name": "Cripple",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/cripple.png"
+    "image": "command-cards/cripple.png",
+    "iaspec": "cripple"
   },
   {
     "id": 31,
     "name": "Cruel Strike",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/cruel-strike.png"
+    "image": "command-cards/cruel-strike.png",
+    "iaspec": "cruelstrike"
   },
   {
     "id": 32,
     "name": "Crush",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/crush.png"
+    "image": "command-cards/crush.png",
+    "iaspec": "crush"
   },
   {
     "id": 33,
     "name": "Cut Lines",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/cut-lines.png"
+    "image": "command-cards/cut-lines.png",
+    "iaspec": "cutlines"
   },
   {
     "id": 34,
     "name": "Dangerous Bargains",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/dangerous-bargains.png"
+    "image": "command-cards/dangerous-bargains.png",
+    "iaspec": "dangerousbargains"
   },
   {
     "id": 35,
     "name": "Data Theft",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/data-theft.png"
+    "image": "command-cards/data-theft.png",
+    "iaspec": "datatheft"
   },
   {
     "id": 36,
     "name": "Deadeye",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/deadeye.png"
+    "image": "command-cards/deadeye.png",
+    "iaspec": "deadeye"
   },
   {
     "id": 37,
     "name": "Deadly Precision",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/deadly-precision.png"
+    "image": "command-cards/deadly-precision.png",
+    "iaspec": "deadlyprecision"
   },
   {
     "id": 38,
     "name": "Debts Repaid",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/debts-repaid.png"
+    "image": "command-cards/debts-repaid.png",
+    "iaspec": "debtsrepaid"
   },
   {
     "id": 39,
     "name": "Deflection",
     "cost": 1,
     "limit": 2,
-    "image": "command-cards/deflection.png"
+    "image": "command-cards/deflection.png",
+    "iaspec": "deflection"
   },
   {
     "id": 40,
     "name": "Devotion",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/devotion.png"
+    "image": "command-cards/devotion.png",
+    "iaspec": "devotion"
   },
   {
     "id": 41,
     "name": "Dirty Trick",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/dirty-trick.png"
+    "image": "command-cards/dirty-trick.png",
+    "iaspec": "dirtytrick"
   },
   {
     "id": 42,
     "name": "Disable",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/disable.png"
+    "image": "command-cards/disable.png",
+    "iaspec": "disable"
   },
   {
     "id": 43,
     "name": "Disorient",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/disorient.png"
+    "image": "command-cards/disorient.png",
+    "iaspec": "disorient"
   },
   {
     "id": 44,
     "name": "Draw",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/draw.png"
+    "image": "command-cards/draw.png",
+    "iaspec": "draw"
   },
   {
     "id": 45,
     "name": "Eerie Visage",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/eerie-visage.png"
+    "image": "command-cards/eerie-visage.png",
+    "iaspec": "eerievisage"
   },
   {
     "id": 46,
     "name": "Efficient Travel",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/efficient-travel.png"
+    "image": "command-cards/efficient-travel.png",
+    "iaspec": "efficienttravel"
   },
   {
     "id": 47,
     "name": "Element of Surprise",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/element-of-surprise.png"
+    "image": "command-cards/element-of-surprise.png",
+    "iaspec": "elementofsurprise"
   },
   {
     "id": 48,
     "name": "Emergency Aid",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/emergency-aid.png"
+    "image": "command-cards/emergency-aid.png",
+    "iaspec": "emergencyaid"
   },
   {
     "id": 49,
     "name": "Endless Reserves",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/endless-reserves.png"
+    "image": "command-cards/endless-reserves.png",
+    "iaspec": "endlessreserves"
   },
   {
     "id": 50,
     "name": "Espionage Mastery",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/espionage-mastery.png"
+    "image": "command-cards/espionage-mastery.png",
+    "iaspec": "espionagemastery"
   },
   {
     "id": 51,
     "name": "Etiquette and Protocol",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/etiquette-and-protocol.png"
+    "image": "command-cards/etiquette-and-protocol.png",
+    "iaspec": "etiquetteandprotocol"
   },
   {
     "id": 52,
     "name": "Evacuate",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/evacuate.png"
+    "image": "command-cards/evacuate.png",
+    "iaspec": "evacuate"
   },
   {
     "id": 53,
     "name": "Explosive Weaponry",
     "cost": 1,
     "limit": 2,
-    "image": "command-cards/explosive-weaponry.png"
+    "image": "command-cards/explosive-weaponry.png",
+    "iaspec": "explosiveweaponry"
   },
   {
     "id": 54,
     "name": "Expose Weakness",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/expose-weakness.png"
+    "image": "command-cards/expose-weakness.png",
+    "iaspec": "exposeweakness"
   },
   {
     "id": 55,
     "name": "Extra Protection",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/extra-protection.png"
+    "image": "command-cards/extra-protection.png",
+    "iaspec": "extraprotection"
   },
   {
     "id": 56,
     "name": "Fatal Deception",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/fatal-deception.png"
+    "image": "command-cards/fatal-deception.png",
+    "iaspec": "fataldeception"
   },
   {
     "id": 57,
     "name": "Feral Swipes",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/feral-swipes.png"
+    "image": "command-cards/feral-swipes.png",
+    "iaspec": "feralswipes"
   },
   {
     "id": 58,
     "name": "Ferocity",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/ferocity.png"
+    "image": "command-cards/ferocity.png",
+    "iaspec": "ferocity"
   },
   {
     "id": 59,
     "name": "Field Tactician",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/field-tactician.png"
+    "image": "command-cards/field-tactician.png",
+    "iaspec": "fieldtactician"
   },
   {
     "id": 60,
     "name": "Fleet Footed",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/fleet-footed.png"
+    "image": "command-cards/fleet-footed.png",
+    "iaspec": "fleetfooted"
   },
   {
     "id": 61,
     "name": "Flurry of Blades",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/flurry-of-blades.png"
+    "image": "command-cards/flurry-of-blades.png",
+    "iaspec": "flurryofblades"
   },
   {
     "id": 62,
     "name": "Focus",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/focus.png"
+    "image": "command-cards/focus.png",
+    "iaspec": "focus"
   },
   {
     "id": 63,
     "name": "Force Illusion",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/force-illusion.png"
+    "image": "command-cards/force-illusion.png",
+    "iaspec": "forceillusion"
   },
   {
     "id": 64,
     "name": "Force Lightning",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/force-lightning.png"
+    "image": "command-cards/force-lightning.png",
+    "iaspec": "forcelightning"
   },
   {
     "id": 65,
     "name": "Force Rush",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/force-rush.png"
+    "image": "command-cards/force-rush.png",
+    "iaspec": "forcerush"
   },
   {
     "id": 66,
     "name": "Force Surge",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/force-surge.png"
+    "image": "command-cards/force-surge.png",
+    "iaspec": "forcesurge"
   },
   {
     "id": 67,
     "name": "Fuel Upgrade",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/fuel-upgrade.png"
+    "image": "command-cards/fuel-upgrade.png",
+    "iaspec": "fuelupgrade"
   },
   {
     "id": 68,
     "name": "Furious Charge",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/furious-charge.png"
+    "image": "command-cards/furious-charge.png",
+    "iaspec": "furiouscharge"
   },
   {
     "id": 69,
     "name": "Glory of the Kill",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/glory-of-the-kill.png"
+    "image": "command-cards/glory-of-the-kill.png",
+    "iaspec": "gloryofthekill"
   },
   {
     "id": 70,
     "name": "Grenadier",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/grenadier.png"
+    "image": "command-cards/grenadier.png",
+    "iaspec": "grenadier"
   },
   {
     "id": 71,
     "name": "Grisly Contest",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/grisly-contest.png"
+    "image": "command-cards/grisly-contest.png",
+    "iaspec": "grislycontest"
   },
   {
     "id": 72,
     "name": "Guardian Stance",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/guardian-stance.png"
+    "image": "command-cards/guardian-stance.png",
+    "iaspec": "guardianstance"
   },
   {
     "id": 73,
     "name": "Hard to Hit",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/hard-to-hit.png"
+    "image": "command-cards/hard-to-hit.png",
+    "iaspec": "hardtohit"
   },
   {
     "id": 74,
     "name": "Harsh Environment",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/harsh-environment.png"
+    "image": "command-cards/harsh-environment.png",
+    "iaspec": "harshenvironment"
   },
   {
     "id": 75,
     "name": "Heart of Freedom",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/heart-of-freedom.png"
+    "image": "command-cards/heart-of-freedom.png",
+    "iaspec": "heartoffreedom"
   },
   {
     "id": 76,
     "name": "Heavy Armor",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/heavy-armor.png"
+    "image": "command-cards/heavy-armor.png",
+    "iaspec": "heavyarmor"
   },
   {
     "id": 77,
     "name": "Heightened Reflexes",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/heightened-reflexes.png"
+    "image": "command-cards/heightened-reflexes.png",
+    "iaspec": "heightenedreflexes"
   },
   {
     "id": 78,
     "name": "Hidden Trap",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/hidden-trap.png"
+    "image": "command-cards/hidden-trap.png",
+    "iaspec": "hiddentrap"
   },
   {
     "id": 79,
     "name": "Hide in Plain Sight",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/hide-in-plain-sight.png"
+    "image": "command-cards/hide-in-plain-sight.png",
+    "iaspec": "hideinplainsight"
   },
   {
     "id": 80,
     "name": "Hit and Run",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/hit-and-run.png"
+    "image": "command-cards/hit-and-run.png",
+    "iaspec": "hitandrun"
   },
   {
     "id": 81,
     "name": "Hold Ground",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/hold-ground.png"
+    "image": "command-cards/hold-ground.png",
+    "iaspec": "holdground"
   },
   {
     "id": 82,
     "name": "Hunt Them Down",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/hunt-them-down.png"
+    "image": "command-cards/hunt-them-down.png",
+    "iaspec": "huntthemdown"
   },
   {
     "id": 83,
     "name": "Hunter Protocol",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/hunter-protocol.png"
+    "image": "command-cards/hunter-protocol.png",
+    "iaspec": "hunterprotocol"
   },
   {
     "id": 84,
     "name": "I Can Feel It",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/i-can-feel-it.png"
+    "image": "command-cards/i-can-feel-it.png",
+    "iaspec": "icanfeelit"
   },
   {
     "id": 85,
     "name": "I Must Go Alone",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/i-must-go-alone.png"
+    "image": "command-cards/i-must-go-alone.png",
+    "iaspec": "imustgoalone"
   },
   {
     "id": 86,
     "name": "I make my own Luck",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/i-make-my-own-luck.png"
+    "image": "command-cards/i-make-my-own-luck.png",
+    "iaspec": "imakemyownluck"
   },
   {
     "id": 87,
     "name": "Improvised Weapons",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/improvised-weapons.png"
+    "image": "command-cards/improvised-weapons.png",
+    "iaspec": "improvisedweapons"
   },
   {
     "id": 88,
     "name": "In the Shadows",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/in-the-shadows.png"
+    "image": "command-cards/in-the-shadows.png",
+    "iaspec": "intheshadows"
   },
   {
     "id": 89,
     "name": "Inspiring Speech",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/inspiring-speech.png"
+    "image": "command-cards/inspiring-speech.png",
+    "iaspec": "inspiringspeech"
   },
   {
     "id": 90,
     "name": "Intelligence Leak",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/intelligence-leak.png"
+    "image": "command-cards/intelligence-leak.png",
+    "iaspec": "intelligenceleak"
   },
   {
     "id": 91,
     "name": "Jump Jets",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/jump-jets.png"
+    "image": "command-cards/jump-jets.png",
+    "iaspec": "jumpjets"
   },
   {
     "id": 92,
     "name": "Jundland Terror",
     "cost": 2,
     "limit": 2,
-    "image": "command-cards/jundland-terror.png"
+    "image": "command-cards/jundland-terror.png",
+    "iaspec": "jundlandterror"
   },
   {
     "id": 93,
     "name": "Knowledge and Defense",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/knowledge-and-defense.png"
+    "image": "command-cards/knowledge-and-defense.png",
+    "iaspec": "knowledgeanddefense"
   },
   {
     "id": 94,
     "name": "Lock On",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/lock-on.png"
+    "image": "command-cards/lock-on.png",
+    "iaspec": "lockon"
   },
   {
     "id": 95,
     "name": "Lord of the Sith",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/lord-of-the-sith.png"
+    "image": "command-cards/lord-of-the-sith.png",
+    "iaspec": "lordofthesith"
   },
   {
     "id": 96,
     "name": "Lure of the Dark Side",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/lure-of-the-dark-side.png"
+    "image": "command-cards/lure-of-the-dark-side.png",
+    "iaspec": "lureofthedarkside"
   },
   {
     "id": 97,
     "name": "Mandalorian Tactics",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/mandalorian-tactics.png"
+    "image": "command-cards/mandalorian-tactics.png",
+    "iaspec": "mandaloriantactics"
   },
   {
     "id": 98,
     "name": "Marksman",
     "cost": 1,
     "limit": 2,
-    "image": "command-cards/marksman.png"
+    "image": "command-cards/marksman.png",
+    "iaspec": "marksman"
   },
   {
     "id": 99,
     "name": "Master Operative",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/master-operative.png"
+    "image": "command-cards/master-operative.png",
+    "iaspec": "masteroperative"
   },
   {
     "id": 100,
     "name": "Maximum Firepower",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/maximum-firepower.png"
+    "image": "command-cards/maximum-firepower.png",
+    "iaspec": "maximumfirepower"
   },
   {
     "id": 101,
     "name": "Meditation",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/meditation.png"
+    "image": "command-cards/meditation.png",
+    "iaspec": "meditation"
   },
   {
     "id": 102,
     "name": "Merciless",
     "cost": 1,
     "limit": 2,
-    "image": "command-cards/merciless.png"
+    "image": "command-cards/merciless.png",
+    "iaspec": "merciless"
   },
   {
     "id": 103,
     "name": "Miracle Worker",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/miracle-worker.png"
+    "image": "command-cards/miracle-worker.png",
+    "iaspec": "miracleworker"
   },
   {
     "id": 104,
     "name": "Mitigate",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/mitigate.png"
+    "image": "command-cards/mitigate.png",
+    "iaspec": "mitigate"
   },
   {
     "id": 105,
     "name": "Navigation Upgrade",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/navigation-upgrade.png"
+    "image": "command-cards/navigation-upgrade.png",
+    "iaspec": "navigationupgrade"
   },
   {
     "id": 106,
     "name": "Negation",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/negation.png"
+    "image": "command-cards/negation.png",
+    "iaspec": "negation"
   },
   {
     "id": 107,
     "name": "New Orders",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/new-orders.png"
+    "image": "command-cards/new-orders.png",
+    "iaspec": "neworders"
   },
   {
     "id": 108,
     "name": "Of No Importance",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/of-no-importance.png"
+    "image": "command-cards/of-no-importance.png",
+    "iaspec": "ofnoimportance"
   },
   {
     "id": 109,
     "name": "On a Mission",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/on-a-mission.png"
+    "image": "command-cards/on-a-mission.png",
+    "iaspec": "onamission"
   },
   {
     "id": 110,
     "name": "On the Lam",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/on-the-lam.png"
+    "image": "command-cards/on-the-lam.png",
+    "iaspec": "onthelam"
   },
   {
     "id": 111,
     "name": "Opportunistic",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/opportunistic.png"
+    "image": "command-cards/opportunistic.png",
+    "iaspec": "opportunistic"
   },
   {
     "id": 112,
     "name": "Optimal Bombardment",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/optimal-bombardment.png"
+    "image": "command-cards/optimal-bombardment.png",
+    "iaspec": "optimalbombardment"
   },
   {
     "id": 113,
     "name": "Overcharged Weapons",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/overcharged-weapons.png"
+    "image": "command-cards/overcharged-weapons.png",
+    "iaspec": "overchargedweapons"
   },
   {
     "id": 114,
     "name": "Overdrive",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/overdrive.png"
+    "image": "command-cards/overdrive.png",
+    "iaspec": "overdrive"
   },
   {
     "id": 115,
     "name": "Overrun",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/overrun.png"
+    "image": "command-cards/overrun.png",
+    "iaspec": "overrun"
   },
   {
     "id": 116,
     "name": "Parry",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/parry.png"
+    "image": "command-cards/parry.png",
+    "iaspec": "parry"
   },
   {
     "id": 117,
     "name": "Parting Blow",
     "cost": 2,
     "limit": 2,
-    "image": "command-cards/parting-blow.png"
+    "image": "command-cards/parting-blow.png",
+    "iaspec": "partingblow"
   },
   {
     "id": 118,
     "name": "Payback",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/payback.png"
+    "image": "command-cards/payback.png",
+    "iaspec": "payback"
   },
   {
     "id": 119,
     "name": "Pickpocket",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/pickpocket.png"
+    "image": "command-cards/pickpocket.png",
+    "iaspec": "pickpocket"
   },
   {
     "id": 120,
     "name": "Positioning Advantage",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/positioning-advantage.png"
+    "image": "command-cards/positioning-advantage.png",
+    "iaspec": "positioningadvantage"
   },
   {
     "id": 121,
     "name": "Primary Target",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/primary-target.png"
+    "image": "command-cards/primary-target.png",
+    "iaspec": "primarytarget"
   },
   {
     "id": 122,
     "name": "Provoke",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/provoke.png"
+    "image": "command-cards/provoke.png",
+    "iaspec": "provoke"
   },
   {
     "id": 123,
     "name": "Rally The Troops",
     "cost": 3,
     "limit": 1,
-    "image": "command-cards/rally-the-troops.png"
+    "image": "command-cards/rally-the-troops.png",
+    "iaspec": "rallythetroops"
   },
   {
     "id": 124,
     "name": "Rank and File",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/rank-and-file.png"
+    "image": "command-cards/rank-and-file.png",
+    "iaspec": "rankandfile"
   },
   {
     "id": 125,
     "name": "Reinforcements",
     "cost": 2,
     "limit": 2,
-    "image": "command-cards/reinforcements.png"
+    "image": "command-cards/reinforcements.png",
+    "iaspec": "reinforcements"
   },
   {
     "id": 126,
     "name": "Repair",
     "cost": 2,
     "limit": 2,
-    "image": "command-cards/repair.png"
+    "image": "command-cards/repair.png",
+    "iaspec": "repair"
   },
   {
     "id": 127,
     "name": "Reposition",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/reposition.png"
+    "image": "command-cards/reposition.png",
+    "iaspec": "reposition"
   },
   {
     "id": 128,
     "name": "Roar",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/roar.png"
+    "image": "command-cards/roar.png",
+    "iaspec": "roar"
   },
   {
     "id": 129,
     "name": "Run for Cover",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/run-for-cover.png"
+    "image": "command-cards/run-for-cover.png",
+    "iaspec": "runforcover"
   },
   {
     "id": 130,
     "name": "Self Defense",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/self-defense.png"
+    "image": "command-cards/self-defense.png",
+    "iaspec": "selfdefense"
   },
   {
     "id": 131,
     "name": "Set For Stun",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/set-for-stun.png"
+    "image": "command-cards/set-for-stun.png",
+    "iaspec": "setforstun"
   },
   {
     "id": 132,
     "name": "Set a Trap",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/set-a-trap.png"
+    "image": "command-cards/set-a-trap.png",
+    "iaspec": "setatrap"
   },
   {
     "id": 133,
     "name": "Shared Experience",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/shared-experience.png"
+    "image": "command-cards/shared-experience.png",
+    "iaspec": "sharedexperience"
   },
   {
     "id": 134,
     "name": "Shoot the Messenger",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/shoot-the-messenger.png"
+    "image": "command-cards/shoot-the-messenger.png",
+    "iaspec": "shootthemessenger"
   },
   {
     "id": 135,
     "name": "Single Purpose",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/single-purpose.png"
+    "image": "command-cards/single-purpose.png",
+    "iaspec": "singlepurpose"
   },
   {
     "id": 136,
     "name": "Size Advantage",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/size-advantage.png"
+    "image": "command-cards/size-advantage.png",
+    "iaspec": "sizeadvantage"
   },
   {
     "id": 137,
     "name": "Slippery Target",
     "cost": 2,
     "limit": 2,
-    "image": "command-cards/slippery-target.png"
+    "image": "command-cards/slippery-target.png",
+    "iaspec": "slipperytarget"
   },
   {
     "id": 138,
     "name": "Smuggled Supplies",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/smuggled-supplies.png"
+    "image": "command-cards/smuggled-supplies.png",
+    "iaspec": "smuggledsupplies"
   },
   {
     "id": 139,
     "name": "Smugglers Tricks",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/smugglers-tricks.png"
+    "image": "command-cards/smugglers-tricks.png",
+    "iaspec": "smugglerstricks"
   },
   {
     "id": 140,
     "name": "Squad Swarm",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/squad-swarm.png"
+    "image": "command-cards/squad-swarm.png",
+    "iaspec": "squadswarm"
   },
   {
     "id": 141,
     "name": "Stall for Time",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/stall-for-time.png"
+    "image": "command-cards/stall-for-time.png",
+    "iaspec": "stallfortime"
   },
   {
     "id": 142,
     "name": "Stay Down",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/stay-down.png"
+    "image": "command-cards/stay-down.png",
+    "iaspec": "staydown"
   },
   {
     "id": 143,
     "name": "Stealth Tactics",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/stealth-tactics.png"
+    "image": "command-cards/stealth-tactics.png",
+    "iaspec": "stealthtactics"
   },
   {
     "id": 144,
     "name": "Stimulants",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/stimulants.png"
+    "image": "command-cards/stimulants.png",
+    "iaspec": "stimulants"
   },
   {
     "id": 145,
     "name": "Strategic Shift",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/strategic-shift.png"
+    "image": "command-cards/strategic-shift.png",
+    "iaspec": "strategicshift"
   },
   {
     "id": 146,
     "name": "Strength in Numbers",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/strength-in-numbers.png"
+    "image": "command-cards/strength-in-numbers.png",
+    "iaspec": "strengthinnumbers"
   },
   {
     "id": 147,
     "name": "Stroke of Brilliance",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/stroke-of-brilliance.png"
+    "image": "command-cards/stroke-of-brilliance.png",
+    "iaspec": "strokeofbrilliance"
   },
   {
     "id": 148,
     "name": "Survival Instincts",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/survival-instincts.png"
+    "image": "command-cards/survival-instincts.png",
+    "iaspec": "survivalinstincts"
   },
   {
     "id": 149,
     "name": "Take Position",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/take-position.png"
+    "image": "command-cards/take-position.png",
+    "iaspec": "takeposition"
   },
   {
     "id": 150,
     "name": "Targeting Network",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/targeting-network.png"
+    "image": "command-cards/targeting-network.png",
+    "iaspec": "targetingnetwork"
   },
   {
     "id": 151,
     "name": "Terminal Network",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/terminal-network.png"
+    "image": "command-cards/terminal-network.png",
+    "iaspec": "terminalnetwork"
   },
   {
     "id": 152,
     "name": "Terminal Protocol",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/terminal-protocol.png"
+    "image": "command-cards/terminal-protocol.png",
+    "iaspec": "terminalprotocol"
   },
   {
     "id": 153,
     "name": "There is Another",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/there-is-another.png"
+    "image": "command-cards/there-is-another.png",
+    "iaspec": "thereisanother"
   },
   {
     "id": 154,
     "name": "Tools for the Job",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/tools-for-the-job.png"
+    "image": "command-cards/tools-for-the-job.png",
+    "iaspec": "toolsforthejob"
   },
   {
     "id": 155,
     "name": "Tough Luck",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/tough-luck.png"
+    "image": "command-cards/tough-luck.png",
+    "iaspec": "toughluck"
   },
   {
     "id": 156,
     "name": "Toxic Dart",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/toxic-dart.png"
+    "image": "command-cards/toxic-dart.png",
+    "iaspec": "toxicdart"
   },
   {
     "id": 157,
     "name": "Trandoshan Terror",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/trandoshan-terror.png"
+    "image": "command-cards/trandoshan-terror.png",
+    "iaspec": "trandoshanterror"
   },
   {
     "id": 158,
     "name": "Triangulate",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/triangulate.png"
+    "image": "command-cards/triangulate.png",
+    "iaspec": "triangulate"
   },
   {
     "id": 159,
     "name": "Utinni",
     "cost": 1,
     "limit": 1,
-    "image": "command-cards/utinni.png"
+    "image": "command-cards/utinni.png",
+    "iaspec": "utinni"
   },
   {
     "id": 160,
     "name": "Vanish",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/vanish.png"
+    "image": "command-cards/vanish.png",
+    "iaspec": "vanish"
   },
   {
     "id": 161,
     "name": "Wild Attack",
     "cost": 0,
     "limit": 1,
-    "image": "command-cards/wild-attack.png"
+    "image": "command-cards/wild-attack.png",
+    "iaspec": "wildattack"
   },
   {
     "id": 162,
     "name": "Wild Fury",
     "cost": 2,
     "limit": 1,
-    "image": "command-cards/wild-fury.png"
+    "image": "command-cards/wild-fury.png",
+    "iaspec": "wildfury"
   },
   {
     "id": 163,
     "name": "Wookiee Rage",
     "cost": 2,
     "limit": 2,
-    "image": "command-cards/wookiee-rage.png"
+    "image": "command-cards/wookiee-rage.png",
+    "iaspec": "wookieerage"
   },
   {
     "name": "Arcing Shot",
     "cost": 1,
     "limit": 1,
     "id": 164,
-    "image": "command-cards/arcing-shot.png"
+    "image": "command-cards/arcing-shot.png",
+    "iaspec": "arcingshot"
   },
   {
     "name": "Armed Escort",
     "cost": 1,
     "limit": 1,
     "id": 165,
-    "image": "command-cards/armed-escort.png"
+    "image": "command-cards/armed-escort.png",
+    "iaspec": "armedescort"
   },
   {
     "name": "Balancing Force",
     "cost": 2,
     "limit": 1,
     "id": 174,
-    "image": "command-cards/balancing-force.png"
+    "image": "command-cards/balancing-force.png",
+    "iaspec": "balancingforce"
   },
   {
     "name": "Battle Scars",
     "cost": 0,
     "limit": 1,
     "id": 166,
-    "image": "command-cards/battle-scars.png"
+    "image": "command-cards/battle-scars.png",
+    "iaspec": "battlescars"
   },
   {
     "name": "Chaotic Force",
     "cost": 2,
     "limit": 1,
     "id": 184,
-    "image": "command-cards/chaotic-force.png"
+    "image": "command-cards/chaotic-force.png",
+    "iaspec": "chaoticforce"
   },
   {
     "name": "Collateral Damage",
     "cost": 1,
     "limit": 1,
     "id": 167,
-    "image": "command-cards/collateral-damage.png"
+    "image": "command-cards/collateral-damage.png",
+    "iaspec": "collateraldamage"
   },
   {
     "name": "Concentrated Fire",
     "cost": 1,
     "limit": 1,
     "id": 168,
-    "image": "command-cards/concentrated-fire.png"
+    "image": "command-cards/concentrated-fire.png",
+    "iaspec": "concentratedfire"
   },
   {
     "name": "Corrupting Force",
     "cost": 2,
     "limit": 1,
     "id": 179,
-    "image": "command-cards/corrupting-force.png"
+    "image": "command-cards/corrupting-force.png",
+    "iaspec": "corruptingforce"
   },
   {
     "name": "Dark Energy",
     "cost": 1,
     "limit": 1,
     "id": 180,
-    "image": "command-cards/dark-energy.png"
+    "image": "command-cards/dark-energy.png",
+    "iaspec": "darkenergy"
   },
   {
     "name": "Deathblow",
     "cost": 1,
     "limit": 1,
     "id": 185,
-    "image": "command-cards/deathblow.png"
+    "image": "command-cards/deathblow.png",
+    "iaspec": "deathblow"
   },
   {
     "name": "Droid Mastery",
     "cost": 0,
     "limit": 1,
     "id": 169,
-    "image": "command-cards/droid-mastery.png"
+    "image": "command-cards/droid-mastery.png",
+    "iaspec": "droidmastery"
   },
   {
     "name": "Face to Face",
     "cost": 1,
     "limit": 1,
     "id": 186,
-    "image": "command-cards/face-to-face.png"
+    "image": "command-cards/face-to-face.png",
+    "iaspec": "facetoface"
   },
   {
     "name": "Field Supply",
     "cost": 1,
     "limit": 1,
     "id": 170,
-    "image": "command-cards/field-supply.png"
+    "image": "command-cards/field-supply.png",
+    "iaspec": "fieldsupply"
   },
   {
     "name": "Fool Me Once",
     "cost": 0,
     "limit": 1,
     "id": 175,
-    "image": "command-cards/fool-me-once.png"
+    "image": "command-cards/fool-me-once.png",
+    "iaspec": "foolmeonce"
   },
   {
     "name": "Force Jump",
     "cost": 1,
     "limit": 1,
     "id": 176,
-    "image": "command-cards/force-jump.png"
+    "image": "command-cards/force-jump.png",
+    "iaspec": "forcejump"
   },
   {
     "name": "Force Push",
     "cost": 1,
     "limit": 1,
     "id": 177,
-    "image": "command-cards/force-push.png"
+    "image": "command-cards/force-push.png",
+    "iaspec": "forcepush"
   },
   {
     "name": "Forward March",
     "cost": 1,
     "limit": 1,
     "id": 171,
-    "image": "command-cards/forward-march.png"
+    "image": "command-cards/forward-march.png",
+    "iaspec": "forwardmarch"
   },
   {
     "name": "Heavy Ordnance",
     "cost": 0,
     "limit": 1,
     "id": 172,
-    "image": "command-cards/heavy-ordnance.png"
+    "image": "command-cards/heavy-ordnance.png",
+    "iaspec": "heavyordnance"
   },
   {
     "name": "Looking for a Fight",
     "cost": 0,
     "limit": 1,
     "id": 187,
-    "image": "command-cards/looking-for-a-fight.png"
+    "image": "command-cards/looking-for-a-fight.png",
+    "iaspec": "lookingforafight"
   },
   {
     "name": "Officer's Training",
     "cost": 0,
     "limit": 1,
     "id": 181,
-    "image": "command-cards/officers-training.png"
+    "image": "command-cards/officers-training.png",
+    "iaspec": "officerstraining"
   },
   {
     "name": "Prepared for Battle",
     "cost": 2,
     "limit": 1,
     "id": 182,
-    "image": "command-cards/prepared-for-battle.png"
+    "image": "command-cards/prepared-for-battle.png",
+    "iaspec": "preparedforbattle"
   },
   {
     "name": "Ready Weapons",
     "cost": 0,
     "limit": 1,
     "id": 173,
-    "image": "command-cards/ready-weapons.png"
+    "image": "command-cards/ready-weapons.png",
+    "iaspec": "readyweapons"
   },
   {
     "name": "Right Back At Ya",
     "cost": 1,
     "limit": 1,
     "id": 178,
-    "image": "command-cards/right-back-at-ya.png"
+    "image": "command-cards/right-back-at-ya.png",
+    "iaspec": "rightbackatya"
   },
   {
     "name": "Unlimited Power",
     "cost": 2,
     "limit": 1,
     "id": 183,
-    "image": "command-cards/unlimited-power.png"
+    "image": "command-cards/unlimited-power.png",
+    "iaspec": "unlimitedpower"
   },
   {
     "name": "Wreak Vengeance",
     "cost": 1,
     "limit": 1,
     "id": 188,
-    "image": "command-cards/wreak-vengeance.png"
+    "image": "command-cards/wreak-vengeance.png",
+    "iaspec": "wreakvengeance"
   },
   {
     "name": "One in a Million",
     "cost": 2,
     "limit": 1,
     "id": 189,
-    "image": "command-cards/one-in-a-million.png"
+    "image": "command-cards/one-in-a-million.png",
+    "iaspec": "oneinamillion"
   },
   {
     "name": "Planning",
     "cost": 0,
     "limit": 1,
     "id": 190,
-    "image": "command-cards/planning.png"
+    "image": "command-cards/planning.png",
+    "iaspec": "planning"
   },
   {
     "name": "Price on Their Heads",
     "cost": 1,
     "limit": 1,
     "id": 191,
-    "image": "command-cards/price-on-their-heads.png"
+    "image": "command-cards/price-on-their-heads.png",
+    "iaspec": "priceontheirheads"
   },
   {
     "name": "Pummel",
     "cost": 1,
     "limit": 2,
     "id": 192,
-    "image": "command-cards/pummel.png"
+    "image": "command-cards/pummel.png",
+    "iaspec": "pummel"
   },
   {
     "name": "Rally",
     "cost": 0,
     "limit": 1,
     "id": 193,
-    "image": "command-cards/rally.png"
+    "image": "command-cards/rally.png",
+    "iaspec": "rally"
   },
   {
     "name": "Recovery",
     "cost": 0,
     "limit": 1,
     "id": 194,
-    "image": "command-cards/recovery.png"
+    "image": "command-cards/recovery.png",
+    "iaspec": "recovery"
   },
   {
     "name": "Regroup",
     "cost": 1,
     "limit": 2,
     "id": 195,
-    "image": "command-cards/regroup.png"
+    "image": "command-cards/regroup.png",
+    "iaspec": "regroup"
   },
   {
     "name": "Sarlacc Sweep",
     "cost": 2,
     "limit": 1,
     "id": 196,
-    "image": "command-cards/sarlacc-sweep.png"
+    "image": "command-cards/sarlacc-sweep.png",
+    "iaspec": "sarlaccsweep"
   },
   {
     "name": "Shadow Ops",
     "cost": 3,
     "limit": 1,
     "id": 197,
-    "image": "command-cards/shadow-ops.png"
+    "image": "command-cards/shadow-ops.png",
+    "iaspec": "shadowops"
   },
   {
     "name": "Sit Tight",
     "cost": 0,
     "limit": 1,
     "id": 198,
-    "image": "command-cards/sit-tight.png"
+    "image": "command-cards/sit-tight.png",
+    "iaspec": "sittight"
   },
   {
     "name": "Son of Skywalker",
     "cost": 3,
     "limit": 1,
     "id": 199,
-    "image": "command-cards/son-of-skywalker.png"
+    "image": "command-cards/son-of-skywalker.png",
+    "iaspec": "sonofskywalker"
   },
   {
     "name": "Take Cover",
     "cost": 0,
     "limit": 1,
     "id": 200,
-    "image": "command-cards/take-cover.png"
+    "image": "command-cards/take-cover.png",
+    "iaspec": "takecover"
   },
   {
     "name": "Take Initiative",
     "cost": 0,
     "limit": 1,
     "id": 201,
-    "image": "command-cards/take-initiative.png"
+    "image": "command-cards/take-initiative.png",
+    "iaspec": "takeinitiative"
   },
   {
     "name": "Take it Down",
     "cost": 3,
     "limit": 1,
     "id": 202,
-    "image": "command-cards/take-it-down.png"
+    "image": "command-cards/take-it-down.png",
+    "iaspec": "takeitdown"
   },
   {
     "name": "Telekinetic Throw",
     "cost": 1,
     "limit": 1,
     "id": 203,
-    "image": "command-cards/telekinetic-throw.png"
+    "image": "command-cards/telekinetic-throw.png",
+    "iaspec": "telekineticthrow"
   },
   {
     "name": "To the Limit",
     "cost": 0,
     "limit": 1,
     "id": 204,
-    "image": "command-cards/to-the-limit.png"
+    "image": "command-cards/to-the-limit.png",
+    "iaspec": "tothelimit"
   },
   {
     "name": "Urgency",
     "cost": 0,
     "limit": 1,
     "id": 205,
-    "image": "command-cards/urgency.png"
+    "image": "command-cards/urgency.png",
+    "iaspec": "urgency"
   }
 ]

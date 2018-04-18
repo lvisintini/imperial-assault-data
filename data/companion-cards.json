@@ -5,7 +5,8 @@
     "image": "companion-cards/cam-droid.png",
     "traits": [
       "Droid"
-    ]
+    ],
+    "iaspec": "camdroid"
   },
   {
     "id": 1,
@@ -13,7 +14,8 @@
     "image": "companion-cards/junk-droid.png",
     "traits": [
       "Droid"
-    ]
+    ],
+    "iaspec": "junkdroid"
   },
   {
     "id": 2,
@@ -21,7 +23,8 @@
     "image": "companion-cards/r5-astromech.png",
     "traits": [
       "Droid"
-    ]
+    ],
+    "iaspec": "r5astromech"
   },
   {
     "id": 3,
@@ -29,7 +32,8 @@
     "image": "companion-cards/pit-droid.png",
     "traits": [
       "Droid"
-    ]
+    ],
+    "iaspec": "pitdroid"
   },
   {
     "id": 4,
@@ -37,7 +41,8 @@
     "image": "companion-cards/salacious-b-crumb.png",
     "traits": [
       "Brawler"
-    ]
+    ],
+    "iaspec": "salaciousbcrumb"
   },
   {
     "id": 5,
@@ -45,7 +50,8 @@
     "image": "companion-cards/88-z.png",
     "traits": [
       "Droid"
-    ]
+    ],
+    "iaspec": "88z"
   },
   {
     "id": 6,
@@ -53,6 +59,7 @@
     "image": "companion-cards/j4x-7.png",
     "traits": [
       "Droid"
-    ]
+    ],
+    "iaspec": "j4x7"
   }
 ]

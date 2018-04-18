@@ -15,6 +15,11 @@
       "description": "Deployment card name",
       "minLength": 1
     },
+    "iaspec": {
+      "type": "string",
+      "description": "iaspec code",
+      "minLength": 1
+    },
     "description": {
       "description": "Deployment card description",
       "oneOf": [
@@ -99,6 +104,7 @@
   },
   "required": [
     "id",
+    "iaspec",
     "name",
     "image",
     "traits",

@@ -1,10 +1,11 @@
 from os import path
 from itertools import product, chain
+from collections import Counter
 
 import pytest
 
 from tests.constants import CONTENT_TYPES, DEPLOYMENT_TRAITS, GAME_MODES, BUFF_TYPES
-from tests.utils import get_data
+from tests.utils import get_data, flatten_list, get_data_for
 
 
 class TestIntegrity:
@@ -131,3 +132,22 @@ class TestRewardIntegrity:
     ])
     def test_unique_deployment_does_not_have_a_reinforce_cost(self, entry):
         assert entry['traits'] is None
+
+
+class TestCanonicalNames:
+    def test_no_duplicate_iaspec_names(self):
+        canonical_names = [
+            m['iaspec']
+            for m in flatten_list(
+                get_data_for(
+                    CONTENT_TYPES.DEPLOYMENT, CONTENT_TYPES.COMMAND, CONTENT_TYPES.COMPANION
+                ).values()
+            )
+        ]
+
+        Counter(canonical_names)
+
+        duplicates = [item for item, count in Counter(canonical_names).items() if count > 1]
+
+        if duplicates:
+            pytest.fail(f"The following canonical names are duplicated: {', '.join(duplicates)}")

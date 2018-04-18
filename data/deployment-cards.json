@@ -16,7 +16,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/0-0-0-specialized-in-pain.png"
+    "image": "deployment-cards/0-0-0-specialized-in-pain.png",
+    "iaspec": "000"
   },
   {
     "id": 1,
@@ -36,7 +37,8 @@
     "deployment_cost": 14,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/at-st-elite.png"
+    "image": "deployment-cards/at-st-elite.png",
+    "iaspec": "eliteatst"
   },
   {
     "id": 2,
@@ -54,7 +56,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/advanced-com-systems-skirmish.png"
+    "image": "deployment-cards/advanced-com-systems-skirmish.png",
+    "iaspec": "advancedcomsystems"
   },
   {
     "id": 3,
@@ -73,7 +76,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/agent-blaise-isb-interrogator-campaign.png"
+    "image": "deployment-cards/agent-blaise-isb-interrogator-campaign.png",
+    "iaspec": "agentblaisecampaign"
   },
   {
     "id": 4,
@@ -92,7 +96,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/agent-blaise-isb-interrogator-skirmish.png"
+    "image": "deployment-cards/agent-blaise-isb-interrogator-skirmish.png",
+    "iaspec": "agentblaiseskirmish"
   },
   {
     "id": 5,
@@ -112,7 +117,8 @@
     "deployment_cost": 9,
     "reinforce_cost": 3,
     "deployment_group": 3,
-    "image": "deployment-cards/alliance-ranger.png"
+    "image": "deployment-cards/alliance-ranger.png",
+    "iaspec": "allianceranger"
   },
   {
     "id": 6,
@@ -132,7 +138,8 @@
     "deployment_cost": 12,
     "reinforce_cost": 4,
     "deployment_group": 3,
-    "image": "deployment-cards/alliance-ranger-elite.png"
+    "image": "deployment-cards/alliance-ranger-elite.png",
+    "iaspec": "eliteallianceranger"
   },
   {
     "id": 7,
@@ -151,7 +158,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/alliance-smuggler.png"
+    "image": "deployment-cards/alliance-smuggler.png",
+    "iaspec": "alliancesmuggler"
   },
   {
     "id": 8,
@@ -170,7 +178,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/alliance-smuggler-elite.png"
+    "image": "deployment-cards/alliance-smuggler-elite.png",
+    "iaspec": "elitealliancesmuggler"
   },
   {
     "id": 9,
@@ -191,7 +200,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/bt-1-destructive-assassin.png"
+    "image": "deployment-cards/bt-1-destructive-assassin.png",
+    "iaspec": "bt1"
   },
   {
     "id": 10,
@@ -209,7 +219,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/balance-of-the-force-skirmish.png"
+    "image": "deployment-cards/balance-of-the-force-skirmish.png",
+    "iaspec": "balanceoftheforce"
   },
   {
     "id": 11,
@@ -229,7 +240,8 @@
     "deployment_cost": 9,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/bantha-rider-elite.png"
+    "image": "deployment-cards/bantha-rider-elite.png",
+    "iaspec": "elitebantharider"
   },
   {
     "id": 12,
@@ -247,7 +259,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/beast-tamer-skirmish.png"
+    "image": "deployment-cards/beast-tamer-skirmish.png",
+    "iaspec": "beasttamer"
   },
   {
     "id": 13,
@@ -266,7 +279,8 @@
     "deployment_cost": 9,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/biv-bodhrik-skirmish.png"
+    "image": "deployment-cards/biv-bodhrik-skirmish.png",
+    "iaspec": "bivbodhrik"
   },
   {
     "id": 14,
@@ -284,7 +298,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/black-market-skirmish.png"
+    "image": "deployment-cards/black-market-skirmish.png",
+    "iaspec": "blackmarket"
   },
   {
     "id": 15,
@@ -303,7 +318,8 @@
     "deployment_cost": 13,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/boba-fett-infamous-bounty-hunter.png"
+    "image": "deployment-cards/boba-fett-infamous-bounty-hunter.png",
+    "iaspec": "bobafett"
   },
   {
     "id": 16,
@@ -323,7 +339,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/bossk-born-hunter.png"
+    "image": "deployment-cards/bossk-born-hunter.png",
+    "iaspec": "bosskmercenary"
   },
   {
     "id": 17,
@@ -343,7 +360,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/bossk-born-hunter.png"
+    "image": "deployment-cards/bossk-born-hunter.png",
+    "iaspec": "bosskrebel"
   },
   {
     "id": 18,
@@ -362,7 +380,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/c-3po-human-cyborg-relations.png"
+    "image": "deployment-cards/c-3po-human-cyborg-relations.png",
+    "iaspec": "c3po"
   },
   {
     "id": 19,
@@ -381,7 +400,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/c1-10p-chopper.png"
+    "image": "deployment-cards/c1-10p-chopper.png",
+    "iaspec": "c110p"
   },
   {
     "id": 20,
@@ -402,7 +422,8 @@
     "deployment_cost": 7,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/captain-terro-wasteland-enforcer.png"
+    "image": "deployment-cards/captain-terro-wasteland-enforcer.png",
+    "iaspec": "captainterro"
   },
   {
     "id": 21,
@@ -420,7 +441,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/channel-the-force-skirmish.png"
+    "image": "deployment-cards/channel-the-force-skirmish.png",
+    "iaspec": "channeltheforce"
   },
   {
     "id": 22,
@@ -441,7 +463,8 @@
     "deployment_cost": 15,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/chewbacca-loyal-wookiee.png"
+    "image": "deployment-cards/chewbacca-loyal-wookiee.png",
+    "iaspec": "chewbacca"
   },
   {
     "id": 23,
@@ -459,7 +482,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/combat-suit-skirmish.png"
+    "image": "deployment-cards/combat-suit-skirmish.png",
+    "iaspec": "combatsuit"
   },
   {
     "id": 24,
@@ -477,7 +501,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/cross-training-elite-skirmish.png"
+    "image": "deployment-cards/cross-training-elite-skirmish.png",
+    "iaspec": "elitecrosstraining"
   },
   {
     "id": 25,
@@ -498,7 +523,8 @@
     "deployment_cost": 18,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/darth-vader-lord-of-the-sith.png"
+    "image": "deployment-cards/darth-vader-lord-of-the-sith.png",
+    "iaspec": "darthvader"
   },
   {
     "id": 26,
@@ -517,7 +543,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/davith-elso-skirmish.png"
+    "image": "deployment-cards/davith-elso-skirmish.png",
+    "iaspec": "davithelso"
   },
   {
     "id": 27,
@@ -536,7 +563,8 @@
     "deployment_cost": 7,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/dengar-ruthless-killer.png"
+    "image": "deployment-cards/dengar-ruthless-killer.png",
+    "iaspec": "dengar"
   },
   {
     "id": 28,
@@ -554,7 +582,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/devious-scheme-skirmish.png"
+    "image": "deployment-cards/devious-scheme-skirmish.png",
+    "iaspec": "deviousscheme"
   },
   {
     "id": 29,
@@ -574,7 +603,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/dewback-rider-elite.png"
+    "image": "deployment-cards/dewback-rider-elite.png",
+    "iaspec": "elitedewbackrider"
   },
   {
     "id": 30,
@@ -593,7 +623,8 @@
     "deployment_cost": 7,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/diala-passil-skirmish.png"
+    "image": "deployment-cards/diala-passil-skirmish.png",
+    "iaspec": "dialapassil"
   },
   {
     "id": 31,
@@ -613,7 +644,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/e-web-engineer.png"
+    "image": "deployment-cards/e-web-engineer.png",
+    "iaspec": "ewebengineer"
   },
   {
     "id": 32,
@@ -633,7 +665,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/e-web-engineer-elite.png"
+    "image": "deployment-cards/e-web-engineer-elite.png",
+    "iaspec": "eliteewebengineer"
   },
   {
     "id": 33,
@@ -652,7 +685,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/echo-base-trooper.png"
+    "image": "deployment-cards/echo-base-trooper.png",
+    "iaspec": "echobasetrooper"
   },
   {
     "id": 34,
@@ -671,7 +705,8 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/echo-base-trooper-elite.png"
+    "image": "deployment-cards/echo-base-trooper-elite.png",
+    "iaspec": "eliteechobasetrooper"
   },
   {
     "id": 35,
@@ -689,7 +724,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/explosive-armaments-skirmish.png"
+    "image": "deployment-cards/explosive-armaments-skirmish.png",
+    "iaspec": "explosivearmaments"
   },
   {
     "id": 36,
@@ -707,7 +743,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/feeding-frenzy-elite-skirmish.png"
+    "image": "deployment-cards/feeding-frenzy-elite-skirmish.png",
+    "iaspec": "elitefeedingfrenzy"
   },
   {
     "id": 37,
@@ -726,7 +763,8 @@
     "deployment_cost": 9,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/fenn-signis-skirmish.png"
+    "image": "deployment-cards/fenn-signis-skirmish.png",
+    "iaspec": "fennsignis"
   },
   {
     "id": 38,
@@ -744,7 +782,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/first-strike-skirmish.png"
+    "image": "deployment-cards/first-strike-skirmish.png",
+    "iaspec": "firststrike"
   },
   {
     "id": 39,
@@ -762,7 +801,8 @@
     "deployment_cost": 0,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/focused-on-the-kill-skirmish.png"
+    "image": "deployment-cards/focused-on-the-kill-skirmish.png",
+    "iaspec": "focusedonthekill"
   },
   {
     "id": 40,
@@ -780,7 +820,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/fury-of-kashyyyk-skirmish.png"
+    "image": "deployment-cards/fury-of-kashyyyk-skirmish.png",
+    "iaspec": "furyofkashyyyk"
   },
   {
     "id": 41,
@@ -800,7 +841,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/gaarkhan-skirmish.png"
+    "image": "deployment-cards/gaarkhan-skirmish.png",
+    "iaspec": "gaarkhan"
   },
   {
     "id": 42,
@@ -820,7 +862,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/gamorrean-guard.png"
+    "image": "deployment-cards/gamorrean-guard.png",
+    "iaspec": "gamorreanguard"
   },
   {
     "id": 43,
@@ -840,7 +883,8 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/gamorrean-guard-elite.png"
+    "image": "deployment-cards/gamorrean-guard-elite.png",
+    "iaspec": "elitegamorreanguard"
   },
   {
     "id": 44,
@@ -859,7 +903,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/general-sorin-vicious-tactician.png"
+    "image": "deployment-cards/general-sorin-vicious-tactician.png",
+    "iaspec": "generalsorin"
   },
   {
     "id": 45,
@@ -880,7 +925,8 @@
     "deployment_cost": 16,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/general-weiss-field-commander.png"
+    "image": "deployment-cards/general-weiss-field-commander.png",
+    "iaspec": "generalweiss"
   },
   {
     "id": 46,
@@ -898,7 +944,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/gideon-argus-skirmish.png"
+    "image": "deployment-cards/gideon-argus-skirmish.png",
+    "iaspec": "gideonargus"
   },
   {
     "id": 47,
@@ -918,7 +965,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/greedo-ambitious-mercenary.png"
+    "image": "deployment-cards/greedo-ambitious-mercenary.png",
+    "iaspec": "greedo"
   },
   {
     "id": 48,
@@ -938,7 +986,8 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/hk-assassin-droid.png"
+    "image": "deployment-cards/hk-assassin-droid.png",
+    "iaspec": "hkassassindroid"
   },
   {
     "id": 49,
@@ -958,7 +1007,8 @@
     "deployment_cost": 11,
     "reinforce_cost": 6,
     "deployment_group": 2,
-    "image": "deployment-cards/hk-assassin-droid-elite.png"
+    "image": "deployment-cards/hk-assassin-droid-elite.png",
+    "iaspec": "elitehkassassindroid"
   },
   {
     "id": 50,
@@ -978,7 +1028,8 @@
     "deployment_cost": 12,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/han-solo-scoundrel.png"
+    "image": "deployment-cards/han-solo-scoundrel.png",
+    "iaspec": "hansolo"
   },
   {
     "id": 51,
@@ -996,7 +1047,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/headhunter-skirmish.png"
+    "image": "deployment-cards/headhunter-skirmish.png",
+    "iaspec": "headhunter"
   },
   {
     "id": 52,
@@ -1016,7 +1068,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/heavy-stormtrooper.png"
+    "image": "deployment-cards/heavy-stormtrooper.png",
+    "iaspec": "heavystormtrooper"
   },
   {
     "id": 53,
@@ -1036,7 +1089,8 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/heavy-stormtrooper-elite.png"
+    "image": "deployment-cards/heavy-stormtrooper-elite.png",
+    "iaspec": "eliteheavystormtrooper"
   },
   {
     "id": 54,
@@ -1056,7 +1110,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/hera-syndulla-spectre-2.png"
+    "image": "deployment-cards/hera-syndulla-spectre-2.png",
+    "iaspec": "herasyndulla"
   },
   {
     "id": 55,
@@ -1074,7 +1129,8 @@
     "deployment_cost": 0,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/heroic-effort-skirmish.png"
+    "image": "deployment-cards/heroic-effort-skirmish.png",
+    "iaspec": "heroiceffort"
   },
   {
     "id": 56,
@@ -1093,7 +1149,8 @@
     "deployment_cost": 4,
     "reinforce_cost": 2,
     "deployment_group": 2,
-    "image": "deployment-cards/hired-gun.png"
+    "image": "deployment-cards/hired-gun.png",
+    "iaspec": "hiredgun"
   },
   {
     "id": 57,
@@ -1112,7 +1169,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/hired-gun-elite.png"
+    "image": "deployment-cards/hired-gun-elite.png",
+    "iaspec": "elitehiredgun"
   },
   {
     "id": 58,
@@ -1132,7 +1190,8 @@
     "deployment_cost": 12,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/ig-88-assassin-droid.png"
+    "image": "deployment-cards/ig-88-assassin-droid.png",
+    "iaspec": "ig88"
   },
   {
     "id": 59,
@@ -1151,7 +1210,8 @@
     "deployment_cost": 5,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/isb-infiltrator.png"
+    "image": "deployment-cards/isb-infiltrator.png",
+    "iaspec": "isbinfiltrator"
   },
   {
     "id": 60,
@@ -1170,7 +1230,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/isb-infiltrator-elite.png"
+    "image": "deployment-cards/isb-infiltrator-elite.png",
+    "iaspec": "eliteisbinfiltrator"
   },
   {
     "id": 61,
@@ -1189,7 +1250,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/imperial-officer.png"
+    "image": "deployment-cards/imperial-officer.png",
+    "iaspec": "imperialofficer"
   },
   {
     "id": 62,
@@ -1208,7 +1270,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/imperial-officer-elite.png"
+    "image": "deployment-cards/imperial-officer-elite.png",
+    "iaspec": "eliteimperialofficer"
   },
   {
     "id": 63,
@@ -1226,7 +1289,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/indentured-jester-skirmish.png"
+    "image": "deployment-cards/indentured-jester-skirmish.png",
+    "iaspec": "indenturedjester"
   },
   {
     "id": 64,
@@ -1246,7 +1310,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jabba-the-hutt-vile-gangster-campaign.png"
+    "image": "deployment-cards/jabba-the-hutt-vile-gangster-campaign.png",
+    "iaspec": "jabbathehuttcampaign"
   },
   {
     "id": 65,
@@ -1266,7 +1331,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jabba-the-hutt-vile-gangster-skirmish.png"
+    "image": "deployment-cards/jabba-the-hutt-vile-gangster-skirmish.png",
+    "iaspec": "jabbathehuttskirmish"
   },
   {
     "id": 66,
@@ -1285,7 +1351,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jawa-scavenger.png"
+    "image": "deployment-cards/jawa-scavenger.png",
+    "iaspec": "jawascavenger"
   },
   {
     "id": 67,
@@ -1304,7 +1371,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jawa-scavenger-elite-campaign.png"
+    "image": "deployment-cards/jawa-scavenger-elite-campaign.png",
+    "iaspec": "elitejawascavengercampaign"
   },
   {
     "id": 68,
@@ -1323,7 +1391,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jawa-scavenger-elite-skirmish.png"
+    "image": "deployment-cards/jawa-scavenger-elite-skirmish.png",
+    "iaspec": "elitejawascavengerskirmish"
   },
   {
     "id": 69,
@@ -1343,7 +1412,8 @@
     "deployment_cost": 4,
     "reinforce_cost": 2,
     "deployment_group": 2,
-    "image": "deployment-cards/jet-trooper.png"
+    "image": "deployment-cards/jet-trooper.png",
+    "iaspec": "jettrooper"
   },
   {
     "id": 70,
@@ -1363,7 +1433,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/jet-trooper-elite.png"
+    "image": "deployment-cards/jet-trooper-elite.png",
+    "iaspec": "elitejettrooper"
   },
   {
     "id": 71,
@@ -1381,7 +1452,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jyn-odan-skirmish.png"
+    "image": "deployment-cards/jyn-odan-skirmish.png",
+    "iaspec": "jynodan"
   },
   {
     "id": 72,
@@ -1401,7 +1473,8 @@
     "deployment_cost": 10,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/kayn-somos-trooper-commander.png"
+    "image": "deployment-cards/kayn-somos-trooper-commander.png",
+    "iaspec": "kaynsomos"
   },
   {
     "id": 73,
@@ -1421,7 +1494,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/lando-calrissian-charming-gambler.png"
+    "image": "deployment-cards/lando-calrissian-charming-gambler.png",
+    "iaspec": "landocalrissian"
   },
   {
     "id": 74,
@@ -1439,7 +1513,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/last-resort-skirmish.png"
+    "image": "deployment-cards/last-resort-skirmish.png",
+    "iaspec": "lastresort"
   },
   {
     "id": 75,
@@ -1458,7 +1533,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/leia-organa-rebel-commander-campaign.png"
+    "image": "deployment-cards/leia-organa-rebel-commander-campaign.png",
+    "iaspec": "leiaorganacampaign"
   },
   {
     "id": 76,
@@ -1477,7 +1553,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/leia-organa-rebel-commander-skirmish.png"
+    "image": "deployment-cards/leia-organa-rebel-commander-skirmish.png",
+    "iaspec": "leiaorganaskirmish"
   },
   {
     "id": 77,
@@ -1495,7 +1572,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/loku-kanoloa-skirmish.png"
+    "image": "deployment-cards/loku-kanoloa-skirmish.png",
+    "iaspec": "lokukanoloa"
   },
   {
     "id": 78,
@@ -1514,7 +1592,8 @@
     "deployment_cost": 10,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/luke-skywalker-hero-of-the-rebellion.png"
+    "image": "deployment-cards/luke-skywalker-hero-of-the-rebellion.png",
+    "iaspec": "lukeskywalkerherooftherebellion"
   },
   {
     "id": 79,
@@ -1535,7 +1614,8 @@
     "deployment_cost": 12,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/luke-skywalker-jedi-knight.png"
+    "image": "deployment-cards/luke-skywalker-jedi-knight.png",
+    "iaspec": "lukeskywalkerjediknight"
   },
   {
     "id": 80,
@@ -1553,7 +1633,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/mhd-19-skirmish.png"
+    "image": "deployment-cards/mhd-19-skirmish.png",
+    "iaspec": "mhd19"
   },
   {
     "id": 81,
@@ -1571,7 +1652,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/mak-eshkarey-skirmish.png"
+    "image": "deployment-cards/mak-eshkarey-skirmish.png",
+    "iaspec": "makeshkarey"
   },
   {
     "id": 82,
@@ -1589,7 +1671,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/motivation-skirmish.png"
+    "image": "deployment-cards/motivation-skirmish.png",
+    "iaspec": "motivation"
   },
   {
     "id": 83,
@@ -1608,7 +1691,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/murne-rin-skirmish.png"
+    "image": "deployment-cards/murne-rin-skirmish.png",
+    "iaspec": "murnerin"
   },
   {
     "id": 84,
@@ -1628,7 +1712,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/nexu.png"
+    "image": "deployment-cards/nexu.png",
+    "iaspec": "nexu"
   },
   {
     "id": 85,
@@ -1648,7 +1733,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/nexu-elite.png"
+    "image": "deployment-cards/nexu-elite.png",
+    "iaspec": "elitenexu"
   },
   {
     "id": 86,
@@ -1666,7 +1752,8 @@
     "deployment_cost": 7,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/obi-wan-kenobi-jedi-knight-skirmish.png"
+    "image": "deployment-cards/obi-wan-kenobi-jedi-knight-skirmish.png",
+    "iaspec": "obiwankenobiskirmish"
   },
   {
     "id": 87,
@@ -1684,7 +1771,8 @@
     "deployment_cost": 10,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/obi-wan-kenobi-jedi-knight-campaign.png"
+    "image": "deployment-cards/obi-wan-kenobi-jedi-knight-campaign.png",
+    "iaspec": "obiwankenobicampaign"
   },
   {
     "id": 88,
@@ -1702,7 +1790,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/on-a-diplomatic-mission-skirmish.png"
+    "image": "deployment-cards/on-a-diplomatic-mission-skirmish.png",
+    "iaspec": "onadiplomaticmission"
   },
   {
     "id": 89,
@@ -1721,7 +1810,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/onar-koma-skirmish.png"
+    "image": "deployment-cards/onar-koma-skirmish.png",
+    "iaspec": "onarkoma"
   },
   {
     "id": 90,
@@ -1739,7 +1829,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/prey-on-the-weak-skirmish.png"
+    "image": "deployment-cards/prey-on-the-weak-skirmish.png",
+    "iaspec": "preyontheweak"
   },
   {
     "id": 91,
@@ -1758,7 +1849,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/probe-droid.png"
+    "image": "deployment-cards/probe-droid.png",
+    "iaspec": "probedroid"
   },
   {
     "id": 92,
@@ -1777,7 +1869,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/probe-droid-elite.png"
+    "image": "deployment-cards/probe-droid-elite.png",
+    "iaspec": "eliteprobedroid"
   },
   {
     "id": 93,
@@ -1795,7 +1888,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/punishing-strike-skirmish.png"
+    "image": "deployment-cards/punishing-strike-skirmish.png",
+    "iaspec": "punishingstrike"
   },
   {
     "id": 94,
@@ -1813,7 +1907,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/r2-d2-loyal-astromech-campaign.png"
+    "image": "deployment-cards/r2-d2-loyal-astromech-campaign.png",
+    "iaspec": "r2d2campaign"
   },
   {
     "id": 95,
@@ -1831,7 +1926,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/r2-d2-loyal-astromech-skirmish.png"
+    "image": "deployment-cards/r2-d2-loyal-astromech-skirmish.png",
+    "iaspec": "r2d2skirmish"
   },
   {
     "id": 96,
@@ -1850,7 +1946,8 @@
     "deployment_cost": 10,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/rancor-elite-campaign.png"
+    "image": "deployment-cards/rancor-elite-campaign.png",
+    "iaspec": "eliterancorcampaign"
   },
   {
     "id": 97,
@@ -1869,7 +1966,8 @@
     "deployment_cost": 10,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/rancor-elite-skirmish.png"
+    "image": "deployment-cards/rancor-elite-skirmish.png",
+    "iaspec": "eliterancorskirmish"
   },
   {
     "id": 98,
@@ -1887,7 +1985,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/rebel-high-command-skirmish.png"
+    "image": "deployment-cards/rebel-high-command-skirmish.png",
+    "iaspec": "rebelhighcommand"
   },
   {
     "id": 99,
@@ -1907,7 +2006,8 @@
     "deployment_cost": 5,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/rebel-saboteur.png"
+    "image": "deployment-cards/rebel-saboteur.png",
+    "iaspec": "rebelsaboteur"
   },
   {
     "id": 100,
@@ -1927,7 +2027,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/rebel-saboteur-elite.png"
+    "image": "deployment-cards/rebel-saboteur-elite.png",
+    "iaspec": "eliterebelsaboteur"
   },
   {
     "id": 101,
@@ -1946,7 +2047,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 2,
     "deployment_group": 3,
-    "image": "deployment-cards/rebel-trooper.png"
+    "image": "deployment-cards/rebel-trooper.png",
+    "iaspec": "rebeltrooper"
   },
   {
     "id": 102,
@@ -1965,7 +2067,8 @@
     "deployment_cost": 9,
     "reinforce_cost": 3,
     "deployment_group": 3,
-    "image": "deployment-cards/rebel-trooper-elite.png"
+    "image": "deployment-cards/rebel-trooper-elite.png",
+    "iaspec": "eliterebeltrooper"
   },
   {
     "id": 103,
@@ -1985,7 +2088,8 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/royal-guard.png"
+    "image": "deployment-cards/royal-guard.png",
+    "iaspec": "royalguard"
   },
   {
     "id": 104,
@@ -2005,7 +2109,8 @@
     "deployment_cost": 12,
     "reinforce_cost": 6,
     "deployment_group": 2,
-    "image": "deployment-cards/royal-guard-elite.png"
+    "image": "deployment-cards/royal-guard-elite.png",
+    "iaspec": "eliteroyalguard"
   },
   {
     "id": 105,
@@ -2025,7 +2130,8 @@
     "deployment_cost": 15,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/royal-guard-champion.png"
+    "image": "deployment-cards/royal-guard-champion.png",
+    "iaspec": "royalguardchampion"
   },
   {
     "id": 106,
@@ -2043,7 +2149,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/rule-by-fear-skirmish.png"
+    "image": "deployment-cards/rule-by-fear-skirmish.png",
+    "iaspec": "rulebyfear"
   },
   {
     "id": 107,
@@ -2062,7 +2169,8 @@
     "deployment_cost": 10,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/sc2-m-repulsor-tank-elite.png"
+    "image": "deployment-cards/sc2-m-repulsor-tank-elite.png",
+    "iaspec": "elitesc2mrepulsortank"
   },
   {
     "id": 108,
@@ -2081,7 +2189,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/saska-teft-skirmish.png"
+    "image": "deployment-cards/saska-teft-skirmish.png",
+    "iaspec": "saskateft"
   },
   {
     "id": 109,
@@ -2099,7 +2208,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/scavenged-weaponry-skirmish.png"
+    "image": "deployment-cards/scavenged-weaponry-skirmish.png",
+    "iaspec": "scavengedweaponry"
   },
   {
     "id": 110,
@@ -2118,7 +2228,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/shyla-varad-skirmish.png"
+    "image": "deployment-cards/shyla-varad-skirmish.png",
+    "iaspec": "shylavarad"
   },
   {
     "id": 111,
@@ -2136,7 +2247,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/smugglers-run-skirmish.png"
+    "image": "deployment-cards/smugglers-run-skirmish.png",
+    "iaspec": "smugglersrun"
   },
   {
     "id": 112,
@@ -2155,7 +2267,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 2,
     "deployment_group": 3,
-    "image": "deployment-cards/snowtrooper.png"
+    "image": "deployment-cards/snowtrooper.png",
+    "iaspec": "snowtrooper"
   },
   {
     "id": 113,
@@ -2174,7 +2287,8 @@
     "deployment_cost": 10,
     "reinforce_cost": 3,
     "deployment_group": 3,
-    "image": "deployment-cards/snowtrooper-elite.png"
+    "image": "deployment-cards/snowtrooper-elite.png",
+    "iaspec": "elitesnowtrooper"
   },
   {
     "id": 114,
@@ -2193,7 +2307,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 2,
     "deployment_group": 3,
-    "image": "deployment-cards/stormtrooper.png"
+    "image": "deployment-cards/stormtrooper.png",
+    "iaspec": "stormtrooper"
   },
   {
     "id": 115,
@@ -2212,7 +2327,8 @@
     "deployment_cost": 9,
     "reinforce_cost": 3,
     "deployment_group": 3,
-    "image": "deployment-cards/stormtrooper-elite.png"
+    "image": "deployment-cards/stormtrooper-elite.png",
+    "iaspec": "elitestormtrooper"
   },
   {
     "id": 116,
@@ -2230,7 +2346,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/survivalist-skirmish.png"
+    "image": "deployment-cards/survivalist-skirmish.png",
+    "iaspec": "survivalist"
   },
   {
     "id": 117,
@@ -2248,7 +2365,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/targeting-computer-skirmish.png"
+    "image": "deployment-cards/targeting-computer-skirmish.png",
+    "iaspec": "targetingcomputer"
   },
   {
     "id": 118,
@@ -2266,7 +2384,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/temporary-alliance-a-common-enemy-skirmish.png"
+    "image": "deployment-cards/temporary-alliance-a-common-enemy-skirmish.png",
+    "iaspec": "temporaryalliancemercenary"
   },
   {
     "id": 119,
@@ -2284,7 +2403,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/temporary-alliance-hired-guns-skirmish.png"
+    "image": "deployment-cards/temporary-alliance-hired-guns-skirmish.png",
+    "iaspec": "temporaryallianceimperial"
   },
   {
     "id": 120,
@@ -2302,7 +2422,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/the-generals-ranks-skirmish.png"
+    "image": "deployment-cards/the-generals-ranks-skirmish.png",
+    "iaspec": "thegeneralsranks"
   },
   {
     "id": 121,
@@ -2322,7 +2443,8 @@
     "deployment_cost": 9,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/the-grand-inquisitor-sith-loyalist.png"
+    "image": "deployment-cards/the-grand-inquisitor-sith-loyalist.png",
+    "iaspec": "thegrandinquisitor"
   },
   {
     "id": 122,
@@ -2342,7 +2464,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/trandoshan-hunter.png"
+    "image": "deployment-cards/trandoshan-hunter.png",
+    "iaspec": "trandoshanhunter"
   },
   {
     "id": 123,
@@ -2362,7 +2485,8 @@
     "deployment_cost": 10,
     "reinforce_cost": 5,
     "deployment_group": 2,
-    "image": "deployment-cards/trandoshan-hunter-elite.png"
+    "image": "deployment-cards/trandoshan-hunter-elite.png",
+    "iaspec": "elitetrandoshanhunter"
   },
   {
     "id": 124,
@@ -2380,7 +2504,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/trusted-ally-skirmish.png"
+    "image": "deployment-cards/trusted-ally-skirmish.png",
+    "iaspec": "trustedally"
   },
   {
     "id": 125,
@@ -2399,7 +2524,8 @@
     "deployment_cost": 5,
     "reinforce_cost": 2,
     "deployment_group": 2,
-    "image": "deployment-cards/tusken-raider.png"
+    "image": "deployment-cards/tusken-raider.png",
+    "iaspec": "tuskenraider"
   },
   {
     "id": 126,
@@ -2418,7 +2544,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/tusken-raider-elite.png"
+    "image": "deployment-cards/tusken-raider-elite.png",
+    "iaspec": "elitetuskenraider"
   },
   {
     "id": 127,
@@ -2437,7 +2564,8 @@
     "deployment_cost": 3,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/ugnaught-tinkerer.png"
+    "image": "deployment-cards/ugnaught-tinkerer.png",
+    "iaspec": "ugnaughttinkerer"
   },
   {
     "id": 128,
@@ -2456,7 +2584,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/ugnaught-tinkerer-elite.png"
+    "image": "deployment-cards/ugnaught-tinkerer-elite.png",
+    "iaspec": "eliteugnaughttinkerer"
   },
   {
     "id": 129,
@@ -2474,7 +2603,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/under-duress-skirmish.png"
+    "image": "deployment-cards/under-duress-skirmish.png",
+    "iaspec": "underduress"
   },
   {
     "id": 130,
@@ -2492,7 +2622,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/unshakable-skirmish.png"
+    "image": "deployment-cards/unshakable-skirmish.png",
+    "iaspec": "unshakable"
   },
   {
     "id": 131,
@@ -2510,7 +2641,8 @@
     "deployment_cost": 2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/vaders-finest-skirmish.png"
+    "image": "deployment-cards/vaders-finest-skirmish.png",
+    "iaspec": "vadersfinest"
   },
   {
     "id": 132,
@@ -2529,7 +2661,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/verena-talos-skirmish.png"
+    "image": "deployment-cards/verena-talos-skirmish.png",
+    "iaspec": "verenatalos"
   },
   {
     "id": 133,
@@ -2548,7 +2681,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/vinto-hreeda-skirmish.png"
+    "image": "deployment-cards/vinto-hreeda-skirmish.png",
+    "iaspec": "vintohreeda"
   },
   {
     "id": 134,
@@ -2568,7 +2702,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/wampa.png"
+    "image": "deployment-cards/wampa.png",
+    "iaspec": "wampa"
   },
   {
     "id": 135,
@@ -2588,7 +2723,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/wampa-elite.png"
+    "image": "deployment-cards/wampa-elite.png",
+    "iaspec": "elitewampa"
   },
   {
     "id": 136,
@@ -2608,7 +2744,8 @@
     "deployment_cost": 5,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/weequay-pirate.png"
+    "image": "deployment-cards/weequay-pirate.png",
+    "iaspec": "weequaypirate"
   },
   {
     "id": 137,
@@ -2628,7 +2765,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/weequay-pirate-elite.png"
+    "image": "deployment-cards/weequay-pirate-elite.png",
+    "iaspec": "eliteweequaypirate"
   },
   {
     "id": 138,
@@ -2648,7 +2786,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 2,
     "deployment_group": 3,
-    "image": "deployment-cards/wing-guard.png"
+    "image": "deployment-cards/wing-guard.png",
+    "iaspec": "wingguard"
   },
   {
     "id": 139,
@@ -2668,7 +2807,8 @@
     "deployment_cost": 9,
     "reinforce_cost": 3,
     "deployment_group": 3,
-    "image": "deployment-cards/wing-guard-elite.png"
+    "image": "deployment-cards/wing-guard-elite.png",
+    "iaspec": "elitewingguard"
   },
   {
     "id": 140,
@@ -2688,7 +2828,8 @@
     "deployment_cost": 8,
     "reinforce_cost": 4,
     "deployment_group": 2,
-    "image": "deployment-cards/wookiee-warrior.png"
+    "image": "deployment-cards/wookiee-warrior.png",
+    "iaspec": "wookieewarrior"
   },
   {
     "id": 141,
@@ -2708,7 +2849,8 @@
     "deployment_cost": 11,
     "reinforce_cost": 6,
     "deployment_group": 2,
-    "image": "deployment-cards/wookiee-warrior-elite.png"
+    "image": "deployment-cards/wookiee-warrior-elite.png",
+    "iaspec": "elitewookieewarrior"
   },
   {
     "id": 142,
@@ -2726,7 +2868,8 @@
     "deployment_cost": 1,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/zillo-technique-skirmish.png"
+    "image": "deployment-cards/zillo-technique-skirmish.png",
+    "iaspec": "zillotechnique"
   },
   {
     "id": 143,
@@ -2746,7 +2889,8 @@
     "deployment_cost": 9,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/at-dp-elite.png"
+    "image": "deployment-cards/at-dp-elite.png",
+    "iaspec": "eliteatdp"
   },
   {
     "id": 144,
@@ -2767,7 +2911,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/ahsoka-tano-rebel-instigator.png"
+    "image": "deployment-cards/ahsoka-tano-rebel-instigator.png",
+    "iaspec": "ahsokatano"
   },
   {
     "id": 145,
@@ -2787,7 +2932,8 @@
     "deployment_cost": 4,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/clawdite-shapeshifter.png"
+    "image": "deployment-cards/clawdite-shapeshifter.png",
+    "iaspec": "clawditeshapeshifter"
   },
   {
     "id": 146,
@@ -2807,7 +2953,8 @@
     "deployment_cost": 6,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/clawdite-shapeshifter-elite.png"
+    "image": "deployment-cards/clawdite-shapeshifter-elite.png",
+    "iaspec": "eliteclawditeshapeshifter"
   },
   {
     "id": 147,
@@ -2825,7 +2972,8 @@
     "deployment_cost": -5,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/driven-by-hatred-skirmish.png"
+    "image": "deployment-cards/driven-by-hatred-skirmish.png",
+    "iaspec": "drivenbyhatred"
   },
   {
     "id": 148,
@@ -2844,7 +2992,8 @@
     "deployment_cost": 9,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/drokkatta-skirmish.png"
+    "image": "deployment-cards/drokkatta-skirmish.png",
+    "iaspec": "drokkatta"
   },
   {
     "id": 149,
@@ -2864,7 +3013,8 @@
     "deployment_cost": 8,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/emperor-palpatine-sith-master.png"
+    "image": "deployment-cards/emperor-palpatine-sith-master.png",
+    "iaspec": "emperorpalpatine"
   },
   {
     "id": 150,
@@ -2884,7 +3034,8 @@
     "deployment_cost": 5,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/jarrod-kelvin-skirmish.png"
+    "image": "deployment-cards/jarrod-kelvin-skirmish.png",
+    "iaspec": "jarrodkelvin"
   },
   {
     "id": 151,
@@ -2903,7 +3054,8 @@
     "deployment_cost": 7,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/ko-tun-feralo-skirmish.png"
+    "image": "deployment-cards/ko-tun-feralo-skirmish.png",
+    "iaspec": "kotunferalo"
   },
   {
     "id": 152,
@@ -2923,7 +3075,8 @@
     "deployment_cost": 7,
     "reinforce_cost": null,
     "deployment_group": 1,
-    "image": "deployment-cards/maul-seeker-of-vengeance.png"
+    "image": "deployment-cards/maul-seeker-of-vengeance.png",
+    "iaspec": "maul"
   },
   {
     "id": 153,
@@ -2943,7 +3096,8 @@
     "deployment_cost": 5,
     "reinforce_cost": 2,
     "deployment_group": 2,
-    "image": "deployment-cards/riot-trooper-campaign.png"
+    "image": "deployment-cards/riot-trooper-campaign.png",
+    "iaspec": "riottroopercampaign"
   },
   {
     "id": 154,
@@ -2963,7 +3117,8 @@
     "deployment_cost": 5,
     "reinforce_cost": 2,
     "deployment_group": 2,
-    "image": "deployment-cards/riot-trooper-skirmish.png"
+    "image": "deployment-cards/riot-trooper-skirmish.png",
+    "iaspec": "riottrooperskirmish"
   },
   {
     "id": 155,
@@ -2983,7 +3138,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/riot-trooper-elite-campaign.png"
+    "image": "deployment-cards/riot-trooper-elite-campaign.png",
+    "iaspec": "eliteriottroopercampaign"
   },
   {
     "id": 156,
@@ -3003,7 +3159,8 @@
     "deployment_cost": 7,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/riot-trooper-elite-skirmish.png"
+    "image": "deployment-cards/riot-trooper-elite-skirmish.png",
+    "iaspec": "eliteriottrooperskirmish"
   },
   {
     "id": 157,
@@ -3021,7 +3178,8 @@
     "deployment_cost": -2,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/rogue-smuggler-skirmish.png"
+    "image": "deployment-cards/rogue-smuggler-skirmish.png",
+    "iaspec": "roguesmuggler"
   },
   {
     "id": 158,
@@ -3042,7 +3200,8 @@
     "deployment_cost": 6,
     "reinforce_cost": 3,
     "deployment_group": 2,
-    "image": "deployment-cards/sentry-droid.png"
+    "image": "deployment-cards/sentry-droid.png",
+    "iaspec": "sentrydroid"
   },
   {
     "id": 159,
@@ -3063,7 +3222,8 @@
     "deployment_cost": 10,
     "reinforce_cost": 5,
     "deployment_group": 2,
-    "image": "deployment-cards/sentry-droid-elite.png"
+    "image": "deployment-cards/sentry-droid-elite.png",
+    "iaspec": "elitesentrydroid"
   },
   {
     "id": 160,
@@ -3081,6 +3241,7 @@
     "deployment_cost": -4,
     "reinforce_cost": null,
     "deployment_group": null,
-    "image": "deployment-cards/wookiee-avenger-skirmish.png"
+    "image": "deployment-cards/wookiee-avenger-skirmish.png",
+    "iaspec": "wookieeavenger"
   }
 ]
