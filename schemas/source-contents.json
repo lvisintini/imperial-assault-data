@@ -11,30 +11,8 @@
       "minimum": 0
     },
     "content_type": {
-      "type": "string",
       "description": "Content type for the component contained in the source.",
-      "enum": [
-        "sources",
-        "skirmish-maps",
-        "agenda-cards",
-        "agenda-decks",
-        "command-cards",
-        "condition-cards",
-        "deployment-cards",
-        "heroes",
-        "hero-class-cards",
-        "imperial-classes",
-        "imperial-class-cards",
-        "supply-cards",
-        "story-mission-cards",
-        "side-mission-cards",
-        "reward-cards",
-        "companion-cards",
-        "upgrade-cards",
-        "card-backs",
-        "threat-mission-cards",
-        "form-cards"
-      ]
+      "$ref": "definitions.json#/definitions/content_type"
     },
     "content_id": {
       "type": "integer",

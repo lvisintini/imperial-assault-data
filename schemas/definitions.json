@@ -3,6 +3,32 @@
   "id": "definitions.json#",
   "title": "Schema for common fields in data files",
   "definitions": {
+    "content_type": {
+      "type": "string",
+      "description": "Content type in imperial-assault-data dataset.",
+      "enum": [
+        "sources",
+        "skirmish-maps",
+        "agenda-cards",
+        "agenda-decks",
+        "command-cards",
+        "condition-cards",
+        "deployment-cards",
+        "heroes",
+        "hero-class-cards",
+        "imperial-classes",
+        "imperial-class-cards",
+        "supply-cards",
+        "story-mission-cards",
+        "side-mission-cards",
+        "reward-cards",
+        "companion-cards",
+        "upgrade-cards",
+        "card-backs",
+        "threat-mission-cards",
+        "form-cards"
+      ]
+    },
     "affiliation": {
       "type": "string",
       "description": "Affiliation for component in the game.",

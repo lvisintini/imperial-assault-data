@@ -1,11 +1,8 @@
-from os import path
-from itertools import product, chain
-from collections import Counter
-
 import pytest
 
 from tests.constants import CONTENT_TYPES, DEPLOYMENT_TRAITS, GAME_MODES, BUFF_TYPES
-from tests.utils import get_data, flatten_list, get_data_for
+from tests.utils import get_data, get_data_for, flatten_list
+from collections import Counter
 
 
 class TestIntegrity:
@@ -39,25 +36,6 @@ class TestIntegrity:
     @pytest.mark.parametrize("imperial_class_card_entry", get_data(CONTENT_TYPES.IMPERIAL_CLASS_CARD))
     def test_imperial_class_cards_foreign_keys(self, imperial_class_card_entry, imperial_classes):
         assert self.fetch_fk_data(imperial_classes, imperial_class_card_entry["class_id"]) is not None
-
-    @pytest.mark.parametrize("image_subdir,entry", product(
-        ('small', 'large'),
-        chain(*[
-            get_data(ct) for ct in CONTENT_TYPES.as_list if ct not in CONTENT_TYPES.without_image_attr
-        ])
-    ))
-    def test_image_paths(self, image_subdir, entry):
-        absolute_path = path.abspath(path.join(path.dirname(__file__), f'../images/{image_subdir}/{entry["image"]}'))
-        assert path.exists(absolute_path)
-        assert path.isfile(absolute_path)
-
-    @pytest.mark.parametrize("image_attr,image_subdir,entry", product(
-        ('wounded', 'healthy'), ('small', 'large'), get_data(CONTENT_TYPES.HERO)
-    ))
-    def test_hero_image_paths(self, image_attr, image_subdir, entry):
-        absolute_path = path.abspath(path.join(path.dirname(__file__), f'../images/{image_subdir}/{entry[image_attr]}'))
-        assert path.exists(absolute_path)
-        assert path.isfile(absolute_path)
 
 
 class TestDeploymentsIntegrity:
@@ -117,7 +95,6 @@ class TestDeploymentsIntegrity:
 
 
 class TestHeroClassCardIntegrity:
-
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.HERO_CLASS) if d['type'] == BUFF_TYPES.FEAT
     ])
