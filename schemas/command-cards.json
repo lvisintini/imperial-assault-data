@@ -15,6 +15,11 @@
       "description": "Command card name",
       "minLength": 1
     },
+    "iaspec": {
+      "type": "string",
+      "description": "iaspec code",
+      "minLength": 1
+    },
     "cost": {
       "description": "The cost associated with using this command card.",
       "type": "integer",
@@ -33,6 +38,7 @@
   },
   "required": [
     "id",
+    "iaspec",
     "name",
     "cost",
     "limit",

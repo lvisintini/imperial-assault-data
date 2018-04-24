@@ -15,6 +15,11 @@
       "description": "Companion card name",
       "minLength": 1
     },
+    "iaspec": {
+      "type": "string",
+      "description": "iaspec code",
+      "minLength": 1
+    },
     "image": {
       "description": "The file path for this companion card's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -32,6 +37,7 @@
   },
   "required": [
     "id",
+    "iaspec",
     "name",
     "image",
     "traits"

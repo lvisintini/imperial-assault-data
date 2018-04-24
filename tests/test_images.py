@@ -190,5 +190,4 @@ class TestImages:
         "image_path,expected_size", ImageTestHelper.get_paths_and_expected_sizes(get_data_for(*CONTENT_TYPES.as_list))
     )
     def test_image_sizes(self, image_path, expected_size):
-
         assert self.get_image_size(image_path) == expected_size
