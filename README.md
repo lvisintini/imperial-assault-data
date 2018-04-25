@@ -4,134 +4,35 @@ An easy-to-use collection of data and images from the [Imperial Assault](https:/
 
 ## What you can find inside
 
-In the `data` directory you will find all the data for the game in JSON format, separated by type.
+In the `data` directory you will find all the data for the game in JSON formatted files.
 The data structure loosely mimics that of a relational database.
 
- - `data/sources.json` (contains data for the Products and Expansions available in for the game)
- - `data/source-contents.json` (the contents of this file tie together the products in `data/sources.json` with their contents in the files below)
- - `data/deployment-cards.json`
- - `data/companion-cards.json`
- - `data/form-cards.json` (contains data for the form cards introduced in "Heart of the Empire" expansion box)
- - `data/heroes.json`
- - `data/hero-class-cards.json`
- - `data/imperial-classes.json`
- - `data/imperial-class-cards.json`
- - `data/agenda-decks.json`
- - `data/agenda-cards.json`
- - `data/story-mission-cards.json`
- - `data/side-mission-cards.json`
- - `data/threat-mission-cards.json`
- - `data/supply-cards.json`
- - `data/reward-cards.json`
- - `data/upgrade-cards.json`
- - `data/command-cards.json`
- - `data/condition-cards.json`
- - `data/skirmish-maps.json`
- - `data/card-backs` (contains the data for the images of the back of the different decks you will find in the game)
+For example, with the `.data/source-contents.json` file you can determine the contents of a particular product by filtering the entries by `source_id`.
 
+You can find an example on how to do this in the `./examples` folder, along with other examples.
 
-With `data/source-contents.json` you can find the contents of a particular product by filtering the entries on this file by the `source_id`.
-After that, you can use the value of `content_type` and `content_id` the components contained in the product file.
+All entries have an associated image (or 2) that you can find inside the `./images/large` (for high resolution images) and the `./images/small` folder (for low resolution images).
 
-There is an example in the examples folder. You can run it by doing `python3.6 examples/show_source_contents.py`
+The images rotated and aligned so that they are not askew, and they all have consistent sizes (check the [Image Sizes](#image-sizes) section for more on this).
 
-You can also use this file to determine the sources on which a particular component can be found.
-You you this by filter in the entries on this using the id of the component and it's type.
-
-The structure in this file can also be expanded to accommodate for additional data (number of copies, etc.)
-
-All entries have an associated image that you can find inside the `images` folder.
-
-The `images` folder has 2 sub-folders, `small` and `large` and contain what you would expect.
-All images in the `large` folder have a scaled version inside the `small` folder and all the file paths found in the
-data files are valid for both sub-folders.
-
-The images rotated and aligned using fairly complex image manipulation via OpenCV.
-The images also have consistent sizes (except skirmish maps):
-
-**Large:**
- - 300x300
-    - sources
- - 476x740
-    - deployment-cards
-    - companion-cards
-    - agenda-cards
-    - story-mission-cards
-    - side-mission-cards
-    - threat-mission-cards
-    - card-backs
- - 424x657
-    - command-cards
-    - hero-class-cards
-    - imperial-class-cards
-    - upgrade-cards
-    - reward-cards
-    - supply-cards
-    - condition-cards
-    - card-backs
- - 1490x1186
-    - heroes
- - 657x424
-    - form-cards
-    - card-backs
-
-
-**Small:**
- - 300x300
-    - sources
- - 301x470
-    - deployment-cards
-    - companion-cards
-    - agenda-cards
-    - story-mission-cards
-    - side-mission-cards
-    - threat-mission-cards
-    - card-backs
- - 293x454
-    - command-cards
-    - hero-class-cards
-    - imperial-class-cards
-    - upgrade-cards
-    - reward-cards
-    - supply-cards
-    - condition-cards
-    - card-backs
- - 650x515
-    - heroes
- - 454x293
-    - form-cards
-    - card-backs
 
 
 ## Usage
 
-You can use this data to build your own apps, web sites, etc.
+There are several ways you could include this in your project.
 
-The easiest way to do this is via [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Starting-with-Submodules):
+- Via [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules#Starting-with-Submodules):
 ```
 git submodule add https://github.com/lvisintini/imperial-assault-data.git
 ```
+- By downloading the release zip files. All releases for this project include 2 builds
+    - one with the low-res images and,
+    - one with the high-res images.
 
-Alternatively all releases for this project include 2 build files:
- - one with the low-res images and,
- - one with the high-res images.
+I do not know what would be the best way to distribute these assets, as they are meant to be cross platform.
 
-I do not know what would be the best way to distribute this assets, but I'm open to suggestions.
+I this regard, the project is open to suggestions
 
-There are also examples of how to use this data inside the `examples` folder.
-
-## Testing
-
-```
-sudo add-apt-repository ppa:jonathonf/python-3.6
-sudo apt update
-sudo apt install python3.6
-sudo apt install python3.6-dev virtualwrapper
-mkvirtualenv --python=/usr/bin/python3.6 imperial-assault-tools
-pip install -r requirements.txt
-
-py.test
-```
 
 ## Bugs / Issues / Suggestions
 
@@ -145,7 +46,30 @@ Please [open a ticket](https://github.com/lvisintini/imperial-assault-data/issue
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :tada:
 
-When adding images please use [TinyPNG](https://tinypng.com/) to reduce their filesize as much as possible without affecting image quality.
+When adding images please use [TinyPNG](https://tinypng.com/) to reduce their file size as much as possible without affecting image quality.
+
+If you want to contribute to the project and you know how to program in python, you may be interesting on setting up a development environment, although this is optional.
+
+```
+git clone git@github.com:lvisintini/imperial-assault-data.git
+cd ./imperial-assault-data
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt update
+sudo apt install python3.6
+sudo apt install python3.6-dev virtualwrapper
+mkvirtualenv --python=/usr/bin/python3.6 imperial-assault-data
+pip install -r requirements.txt
+
+py.test
+```
+
+## Testing
+
+Each change in the dataset is checked against a multitude of test that are meant to preserve the integrity of the data.
+This is done automatically for each code change on this repo.
+
+Alternatively, you can also run the test suit yourself by setting up your environment and running `py.test`
+
 
 ## Versioning
 
@@ -159,6 +83,56 @@ This project uses [SemVer](http://semver.org/). Given a `MAJOR.MINOR.PATCH` vers
 
 The initial load of images and data was put together by scraping http://cards.boardwars.eu/, I do not know this guys
 personally, but I'm grateful to them for putting together such a great source of data.
+
+
+# Image sizes
+
+What follows is a list of all the image types and their sizes for large and small.
+
+|                    | Large     | Small   |
+|--------------------|-----------|---------|
+| **Source**         | 300x300   | 300x300 |
+| **Standard**       | 476x740   | 301x470 |
+| **Mini**           | 424x657   | 293x454 |
+| **Mini (Flipped)** | 657x424   | 454x293 |
+| **Hero Sheet**     | 1490x1186 | 650x515 |
+
+The table bellow shows you the expected for all the different images included in this data set.
+
+|                                        | Source  | Standard | Mini    | Mini (Flipped) | Hero Sheet | Any |
+|----------------------------------------|---------|----------|---------|----------------|------------|-----|
+| sources.image                          | ✔       |          |         |                |            |     |
+| skirmish-maps.image                    |         |          |         |                |            | ✔   |
+| agenda-cards.image                     |         | ✔        |         |                |            |     |
+| command-cards.image                    |         |          | ✔       |                |            |     |
+| condition-cards.image                  |         |          | ✔       |                |            |     |
+| deployment-cards.image                 |         | ✔        |         |                |            |     |
+| heroes.healthy                         |         |          |         |                | ✔          |     |
+| heroes.wounded                         |         |          |         |                | ✔          |     |
+| hero-class-cards.image                 |         |          | ✔       |                |            |     |
+| imperial-class-cards.image             |         |          | ✔       |                |            |     |
+| supply-cards.image                     |         |          | ✔       |                |            |     |
+| story-mission-cards.image              |         | ✔        |         |                |            |     |
+| side-mission-cards.image               |         | ✔        |         |                |            |     |
+| reward-cards.image                     |         |          | ✔       |                |            |     |
+| companion-cards.image                  |         | ✔        |         |                |            |     |
+| upgrade-cards.image                    |         |          | ✔       |                |            |     |
+| threat-mission-cards.image             |         | ✔        |         |                |            |     |
+| form-cards.image                       |         |          |         | ✔              |            |     |
+| card-backs.image(agenda-decks)         |         | ✔        |         |                |            |     |
+| card-backs.image(command-cards)        |         |          | ✔       |                |            |     |
+| card-backs.image(companion-cards)      |         | ✔        |         |                |            |     |
+| card-backs.image(condition-cards)      |         |          | ✔       |                |            |     |
+| card-backs.image(deployment-cards)     |         | ✔        |         |                |            |     |
+| card-backs.image(imperial-classes)     |         |          | ✔       |                |            |     |
+| card-backs.image(heroes)               |         |          | ✔       |                |            |     |
+| card-backs.image(upgrade-cards)        |         |          | ✔       |                |            |     |
+| card-backs.image(reward-cards)         |         |          | ✔       |                |            |     |
+| card-backs.image(supply-cards)         |         |          | ✔       |                |            |     |
+| card-backs.image(side-mission-cards)   |         | ✔        |         |                |            |     |
+| card-backs.image(story-mission-cards)  |         | ✔        |         |                |            |     |
+| card-backs.image(threat-mission-cards) |         | ✔        |         |                |            |     |
+| card-backs.image(form-cards)           |         |          |         | ✔              |            |     |
 
 
 ## Disclaimer

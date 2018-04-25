@@ -20,9 +20,6 @@ class ImageDefinition:
             os.path.join(os.path.dirname(__file__), f'../images/{self.image_subdir}/{entry[self.attr]}')
         )
 
-    def get_dims_for_entry(self, entry):
-        return self.dims
-
     def filter(self, content_type, entry):
         return all(
             [self.content_type == content_type] + [entry[k] == v for k, v in self.additional_filters.items()]
