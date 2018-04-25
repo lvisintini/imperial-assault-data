@@ -97,7 +97,7 @@ What follows is a list of all the image types and their sizes for large and smal
 | **Mini (Flipped)** | 657x424   | 454x293 |
 | **Hero Sheet**     | 1490x1186 | 650x515 |
 
-The table bellow shows you the expected for all the different images included in this data set.
+The table bellow shows you the expected sizes for all the different images included in this data set.
 
 |                                        | Source  | Standard | Mini    | Mini (Flipped) | Hero Sheet | Any |
 |----------------------------------------|---------|----------|---------|----------------|------------|-----|
