@@ -48,6 +48,18 @@ class TestDeploymentsIntegrity:
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
     ])
+    def test_skirmish_upgrades_do_not_have_health(self, entry):
+        assert entry['health'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
+    ])
+    def test_skirmish_upgrades_do_not_have_speed(self, entry):
+        assert entry['speed'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
+    ])
     def test_skirmish_upgrades_do_not_have_deployment_group(self, entry):
         assert entry['deployment_group'] is None
 

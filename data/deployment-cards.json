@@ -17,7 +17,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/0-0-0-specialized-in-pain.png",
-    "iaspec": "000"
+    "iaspec": "000",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 1,
@@ -38,7 +40,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/at-st-elite.png",
-    "iaspec": "eliteatst"
+    "iaspec": "eliteatst",
+    "health": 15,
+    "speed": 4
   },
   {
     "id": 2,
@@ -57,7 +61,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/advanced-com-systems-skirmish.png",
-    "iaspec": "advancedcomsystems"
+    "iaspec": "advancedcomsystems",
+    "health": null,
+    "speed": null
   },
   {
     "id": 3,
@@ -77,7 +83,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/agent-blaise-isb-interrogator-campaign.png",
-    "iaspec": "agentblaisecampaign"
+    "iaspec": "agentblaisecampaign",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 4,
@@ -97,7 +105,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/agent-blaise-isb-interrogator-skirmish.png",
-    "iaspec": "agentblaiseskirmish"
+    "iaspec": "agentblaiseskirmish",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 5,
@@ -118,7 +128,9 @@
     "reinforce_cost": 3,
     "deployment_group": 3,
     "image": "deployment-cards/alliance-ranger.png",
-    "iaspec": "allianceranger"
+    "iaspec": "allianceranger",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 6,
@@ -139,7 +151,9 @@
     "reinforce_cost": 4,
     "deployment_group": 3,
     "image": "deployment-cards/alliance-ranger-elite.png",
-    "iaspec": "eliteallianceranger"
+    "iaspec": "eliteallianceranger",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 7,
@@ -159,7 +173,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/alliance-smuggler.png",
-    "iaspec": "alliancesmuggler"
+    "iaspec": "alliancesmuggler",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 8,
@@ -179,7 +195,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/alliance-smuggler-elite.png",
-    "iaspec": "elitealliancesmuggler"
+    "iaspec": "elitealliancesmuggler",
+    "health": 5,
+    "speed": 5
   },
   {
     "id": 9,
@@ -201,7 +219,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/bt-1-destructive-assassin.png",
-    "iaspec": "bt1"
+    "iaspec": "bt1",
+    "health": 10,
+    "speed": 4
   },
   {
     "id": 10,
@@ -220,7 +240,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/balance-of-the-force-skirmish.png",
-    "iaspec": "balanceoftheforce"
+    "iaspec": "balanceoftheforce",
+    "health": null,
+    "speed": null
   },
   {
     "id": 11,
@@ -241,7 +263,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/bantha-rider-elite.png",
-    "iaspec": "elitebantharider"
+    "iaspec": "elitebantharider",
+    "health": 21,
+    "speed": 5
   },
   {
     "id": 12,
@@ -260,7 +284,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/beast-tamer-skirmish.png",
-    "iaspec": "beasttamer"
+    "iaspec": "beasttamer",
+    "health": null,
+    "speed": null
   },
   {
     "id": 13,
@@ -280,7 +306,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/biv-bodhrik-skirmish.png",
-    "iaspec": "bivbodhrik"
+    "iaspec": "bivbodhrik",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 14,
@@ -299,7 +327,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/black-market-skirmish.png",
-    "iaspec": "blackmarket"
+    "iaspec": "blackmarket",
+    "health": null,
+    "speed": null
   },
   {
     "id": 15,
@@ -319,7 +349,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/boba-fett-infamous-bounty-hunter.png",
-    "iaspec": "bobafett"
+    "iaspec": "bobafett",
+    "health": 12,
+    "speed": 6
   },
   {
     "id": 16,
@@ -340,7 +372,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/bossk-born-hunter.png",
-    "iaspec": "bosskmercenary"
+    "iaspec": "bosskmercenary",
+    "health": 10,
+    "speed": 4
   },
   {
     "id": 17,
@@ -361,7 +395,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/bossk-born-hunter.png",
-    "iaspec": "bosskrebel"
+    "iaspec": "bosskrebel",
+    "health": 10,
+    "speed": 4
   },
   {
     "id": 18,
@@ -381,7 +417,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/c-3po-human-cyborg-relations.png",
-    "iaspec": "c3po"
+    "iaspec": "c3po",
+    "health": 4,
+    "speed": 3
   },
   {
     "id": 19,
@@ -401,7 +439,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/c1-10p-chopper.png",
-    "iaspec": "c110p"
+    "iaspec": "c110p",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 20,
@@ -423,7 +463,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/captain-terro-wasteland-enforcer.png",
-    "iaspec": "captainterro"
+    "iaspec": "captainterro",
+    "health": 13,
+    "speed": 5
   },
   {
     "id": 21,
@@ -442,7 +484,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/channel-the-force-skirmish.png",
-    "iaspec": "channeltheforce"
+    "iaspec": "channeltheforce",
+    "health": null,
+    "speed": null
   },
   {
     "id": 22,
@@ -464,7 +508,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/chewbacca-loyal-wookiee.png",
-    "iaspec": "chewbacca"
+    "iaspec": "chewbacca",
+    "health": 14,
+    "speed": 4
   },
   {
     "id": 23,
@@ -483,7 +529,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/combat-suit-skirmish.png",
-    "iaspec": "combatsuit"
+    "iaspec": "combatsuit",
+    "health": null,
+    "speed": null
   },
   {
     "id": 24,
@@ -502,7 +550,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/cross-training-elite-skirmish.png",
-    "iaspec": "elitecrosstraining"
+    "iaspec": "elitecrosstraining",
+    "health": null,
+    "speed": null
   },
   {
     "id": 25,
@@ -524,7 +574,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/darth-vader-lord-of-the-sith.png",
-    "iaspec": "darthvader"
+    "iaspec": "darthvader",
+    "health": 16,
+    "speed": 4
   },
   {
     "id": 26,
@@ -544,7 +596,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/davith-elso-skirmish.png",
-    "iaspec": "davithelso"
+    "iaspec": "davithelso",
+    "health": 10,
+    "speed": 5
   },
   {
     "id": 27,
@@ -564,7 +618,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/dengar-ruthless-killer.png",
-    "iaspec": "dengar"
+    "iaspec": "dengar",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 28,
@@ -583,7 +639,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/devious-scheme-skirmish.png",
-    "iaspec": "deviousscheme"
+    "iaspec": "deviousscheme",
+    "health": null,
+    "speed": null
   },
   {
     "id": 29,
@@ -604,7 +662,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/dewback-rider-elite.png",
-    "iaspec": "elitedewbackrider"
+    "iaspec": "elitedewbackrider",
+    "health": 9,
+    "speed": 4
   },
   {
     "id": 30,
@@ -624,7 +684,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/diala-passil-skirmish.png",
-    "iaspec": "dialapassil"
+    "iaspec": "dialapassil",
+    "health": 8,
+    "speed": 5
   },
   {
     "id": 31,
@@ -645,7 +707,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/e-web-engineer.png",
-    "iaspec": "ewebengineer"
+    "iaspec": "ewebengineer",
+    "health": 5,
+    "speed": 2
   },
   {
     "id": 32,
@@ -666,7 +730,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/e-web-engineer-elite.png",
-    "iaspec": "eliteewebengineer"
+    "iaspec": "eliteewebengineer",
+    "health": 7,
+    "speed": 3
   },
   {
     "id": 33,
@@ -686,7 +752,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/echo-base-trooper.png",
-    "iaspec": "echobasetrooper"
+    "iaspec": "echobasetrooper",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 34,
@@ -706,7 +774,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/echo-base-trooper-elite.png",
-    "iaspec": "eliteechobasetrooper"
+    "iaspec": "eliteechobasetrooper",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 35,
@@ -725,7 +795,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/explosive-armaments-skirmish.png",
-    "iaspec": "explosivearmaments"
+    "iaspec": "explosivearmaments",
+    "health": null,
+    "speed": null
   },
   {
     "id": 36,
@@ -744,7 +816,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/feeding-frenzy-elite-skirmish.png",
-    "iaspec": "elitefeedingfrenzy"
+    "iaspec": "elitefeedingfrenzy",
+    "health": null,
+    "speed": null
   },
   {
     "id": 37,
@@ -764,7 +838,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/fenn-signis-skirmish.png",
-    "iaspec": "fennsignis"
+    "iaspec": "fennsignis",
+    "health": 10,
+    "speed": 4
   },
   {
     "id": 38,
@@ -783,7 +859,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/first-strike-skirmish.png",
-    "iaspec": "firststrike"
+    "iaspec": "firststrike",
+    "health": null,
+    "speed": null
   },
   {
     "id": 39,
@@ -802,7 +880,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/focused-on-the-kill-skirmish.png",
-    "iaspec": "focusedonthekill"
+    "iaspec": "focusedonthekill",
+    "health": null,
+    "speed": null
   },
   {
     "id": 40,
@@ -821,7 +901,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/fury-of-kashyyyk-skirmish.png",
-    "iaspec": "furyofkashyyyk"
+    "iaspec": "furyofkashyyyk",
+    "health": null,
+    "speed": null
   },
   {
     "id": 41,
@@ -842,7 +924,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/gaarkhan-skirmish.png",
-    "iaspec": "gaarkhan"
+    "iaspec": "gaarkhan",
+    "health": 10,
+    "speed": 4
   },
   {
     "id": 42,
@@ -863,7 +947,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/gamorrean-guard.png",
-    "iaspec": "gamorreanguard"
+    "iaspec": "gamorreanguard",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 43,
@@ -884,7 +970,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/gamorrean-guard-elite.png",
-    "iaspec": "elitegamorreanguard"
+    "iaspec": "elitegamorreanguard",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 44,
@@ -904,7 +992,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/general-sorin-vicious-tactician.png",
-    "iaspec": "generalsorin"
+    "iaspec": "generalsorin",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 45,
@@ -926,7 +1016,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/general-weiss-field-commander.png",
-    "iaspec": "generalweiss"
+    "iaspec": "generalweiss",
+    "health": 15,
+    "speed": 4
   },
   {
     "id": 46,
@@ -945,7 +1037,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/gideon-argus-skirmish.png",
-    "iaspec": "gideonargus"
+    "iaspec": "gideonargus",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 47,
@@ -966,7 +1060,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/greedo-ambitious-mercenary.png",
-    "iaspec": "greedo"
+    "iaspec": "greedo",
+    "health": 7,
+    "speed": 5
   },
   {
     "id": 48,
@@ -987,7 +1083,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/hk-assassin-droid.png",
-    "iaspec": "hkassassindroid"
+    "iaspec": "hkassassindroid",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 49,
@@ -1008,7 +1106,9 @@
     "reinforce_cost": 6,
     "deployment_group": 2,
     "image": "deployment-cards/hk-assassin-droid-elite.png",
-    "iaspec": "elitehkassassindroid"
+    "iaspec": "elitehkassassindroid",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 50,
@@ -1029,7 +1129,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/han-solo-scoundrel.png",
-    "iaspec": "hansolo"
+    "iaspec": "hansolo",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 51,
@@ -1048,7 +1150,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/headhunter-skirmish.png",
-    "iaspec": "headhunter"
+    "iaspec": "headhunter",
+    "health": null,
+    "speed": null
   },
   {
     "id": 52,
@@ -1069,7 +1173,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/heavy-stormtrooper.png",
-    "iaspec": "heavystormtrooper"
+    "iaspec": "heavystormtrooper",
+    "health": 6,
+    "speed": 3
   },
   {
     "id": 53,
@@ -1090,7 +1196,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/heavy-stormtrooper-elite.png",
-    "iaspec": "eliteheavystormtrooper"
+    "iaspec": "eliteheavystormtrooper",
+    "health": 8,
+    "speed": 3
   },
   {
     "id": 54,
@@ -1111,7 +1219,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/hera-syndulla-spectre-2.png",
-    "iaspec": "herasyndulla"
+    "iaspec": "herasyndulla",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 55,
@@ -1130,7 +1240,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/heroic-effort-skirmish.png",
-    "iaspec": "heroiceffort"
+    "iaspec": "heroiceffort",
+    "health": null,
+    "speed": null
   },
   {
     "id": 56,
@@ -1150,7 +1262,9 @@
     "reinforce_cost": 2,
     "deployment_group": 2,
     "image": "deployment-cards/hired-gun.png",
-    "iaspec": "hiredgun"
+    "iaspec": "hiredgun",
+    "health": 3,
+    "speed": 5
   },
   {
     "id": 57,
@@ -1170,7 +1284,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/hired-gun-elite.png",
-    "iaspec": "elitehiredgun"
+    "iaspec": "elitehiredgun",
+    "health": 4,
+    "speed": 5
   },
   {
     "id": 58,
@@ -1191,7 +1307,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/ig-88-assassin-droid.png",
-    "iaspec": "ig88"
+    "iaspec": "ig88",
+    "health": 10,
+    "speed": 5
   },
   {
     "id": 59,
@@ -1211,7 +1329,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/isb-infiltrator.png",
-    "iaspec": "isbinfiltrator"
+    "iaspec": "isbinfiltrator",
+    "health": 4,
+    "speed": 4
   },
   {
     "id": 60,
@@ -1231,7 +1351,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/isb-infiltrator-elite.png",
-    "iaspec": "eliteisbinfiltrator"
+    "iaspec": "eliteisbinfiltrator",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 61,
@@ -1251,7 +1373,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/imperial-officer.png",
-    "iaspec": "imperialofficer"
+    "iaspec": "imperialofficer",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 62,
@@ -1271,7 +1395,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/imperial-officer-elite.png",
-    "iaspec": "eliteimperialofficer"
+    "iaspec": "eliteimperialofficer",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 63,
@@ -1290,7 +1416,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/indentured-jester-skirmish.png",
-    "iaspec": "indenturedjester"
+    "iaspec": "indenturedjester",
+    "health": null,
+    "speed": null
   },
   {
     "id": 64,
@@ -1311,7 +1439,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jabba-the-hutt-vile-gangster-campaign.png",
-    "iaspec": "jabbathehuttcampaign"
+    "iaspec": "jabbathehuttcampaign",
+    "health": 10,
+    "speed": 2
   },
   {
     "id": 65,
@@ -1332,7 +1462,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jabba-the-hutt-vile-gangster-skirmish.png",
-    "iaspec": "jabbathehuttskirmish"
+    "iaspec": "jabbathehuttskirmish",
+    "health": 10,
+    "speed": 2
   },
   {
     "id": 66,
@@ -1352,7 +1484,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jawa-scavenger.png",
-    "iaspec": "jawascavenger"
+    "iaspec": "jawascavenger",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 67,
@@ -1372,7 +1506,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jawa-scavenger-elite-campaign.png",
-    "iaspec": "elitejawascavengercampaign"
+    "iaspec": "elitejawascavengercampaign",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 68,
@@ -1392,7 +1528,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jawa-scavenger-elite-skirmish.png",
-    "iaspec": "elitejawascavengerskirmish"
+    "iaspec": "elitejawascavengerskirmish",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 69,
@@ -1413,7 +1551,9 @@
     "reinforce_cost": 2,
     "deployment_group": 2,
     "image": "deployment-cards/jet-trooper.png",
-    "iaspec": "jettrooper"
+    "iaspec": "jettrooper",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 70,
@@ -1434,7 +1574,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/jet-trooper-elite.png",
-    "iaspec": "elitejettrooper"
+    "iaspec": "elitejettrooper",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 71,
@@ -1453,7 +1595,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jyn-odan-skirmish.png",
-    "iaspec": "jynodan"
+    "iaspec": "jynodan",
+    "health": 6,
+    "speed": 5
   },
   {
     "id": 72,
@@ -1474,7 +1618,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/kayn-somos-trooper-commander.png",
-    "iaspec": "kaynsomos"
+    "iaspec": "kaynsomos",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 73,
@@ -1495,7 +1641,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/lando-calrissian-charming-gambler.png",
-    "iaspec": "landocalrissian"
+    "iaspec": "landocalrissian",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 74,
@@ -1514,7 +1662,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/last-resort-skirmish.png",
-    "iaspec": "lastresort"
+    "iaspec": "lastresort",
+    "health": null,
+    "speed": null
   },
   {
     "id": 75,
@@ -1534,7 +1684,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/leia-organa-rebel-commander-campaign.png",
-    "iaspec": "leiaorganacampaign"
+    "iaspec": "leiaorganacampaign",
+    "health": 8,
+    "speed": 5
   },
   {
     "id": 76,
@@ -1554,7 +1706,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/leia-organa-rebel-commander-skirmish.png",
-    "iaspec": "leiaorganaskirmish"
+    "iaspec": "leiaorganaskirmish",
+    "health": 8,
+    "speed": 5
   },
   {
     "id": 77,
@@ -1573,7 +1727,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/loku-kanoloa-skirmish.png",
-    "iaspec": "lokukanoloa"
+    "iaspec": "lokukanoloa",
+    "health": 4,
+    "speed": 5
   },
   {
     "id": 78,
@@ -1593,7 +1749,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/luke-skywalker-hero-of-the-rebellion.png",
-    "iaspec": "lukeskywalkerherooftherebellion"
+    "iaspec": "lukeskywalkerherooftherebellion",
+    "health": 10,
+    "speed": 5
   },
   {
     "id": 79,
@@ -1615,7 +1773,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/luke-skywalker-jedi-knight.png",
-    "iaspec": "lukeskywalkerjediknight"
+    "iaspec": "lukeskywalkerjediknight",
+    "health": 16,
+    "speed": 4
   },
   {
     "id": 80,
@@ -1634,7 +1794,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/mhd-19-skirmish.png",
-    "iaspec": "mhd19"
+    "iaspec": "mhd19",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 81,
@@ -1653,7 +1815,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/mak-eshkarey-skirmish.png",
-    "iaspec": "makeshkarey"
+    "iaspec": "makeshkarey",
+    "health": 4,
+    "speed": 4
   },
   {
     "id": 82,
@@ -1672,7 +1836,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/motivation-skirmish.png",
-    "iaspec": "motivation"
+    "iaspec": "motivation",
+    "health": null,
+    "speed": null
   },
   {
     "id": 83,
@@ -1692,7 +1858,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/murne-rin-skirmish.png",
-    "iaspec": "murnerin"
+    "iaspec": "murnerin",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 84,
@@ -1713,7 +1881,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/nexu.png",
-    "iaspec": "nexu"
+    "iaspec": "nexu",
+    "health": 6,
+    "speed": 6
   },
   {
     "id": 85,
@@ -1734,7 +1904,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/nexu-elite.png",
-    "iaspec": "elitenexu"
+    "iaspec": "elitenexu",
+    "health": 8,
+    "speed": 6
   },
   {
     "id": 86,
@@ -1753,7 +1925,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/obi-wan-kenobi-jedi-knight-skirmish.png",
-    "iaspec": "obiwankenobiskirmish"
+    "iaspec": "obiwankenobiskirmish",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 87,
@@ -1772,7 +1946,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/obi-wan-kenobi-jedi-knight-campaign.png",
-    "iaspec": "obiwankenobicampaign"
+    "iaspec": "obiwankenobicampaign",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 88,
@@ -1791,7 +1967,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/on-a-diplomatic-mission-skirmish.png",
-    "iaspec": "onadiplomaticmission"
+    "iaspec": "onadiplomaticmission",
+    "health": null,
+    "speed": null
   },
   {
     "id": 89,
@@ -1811,7 +1989,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/onar-koma-skirmish.png",
-    "iaspec": "onarkoma"
+    "iaspec": "onarkoma",
+    "health": 15,
+    "speed": 4
   },
   {
     "id": 90,
@@ -1830,7 +2010,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/prey-on-the-weak-skirmish.png",
-    "iaspec": "preyontheweak"
+    "iaspec": "preyontheweak",
+    "health": null,
+    "speed": null
   },
   {
     "id": 91,
@@ -1850,7 +2032,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/probe-droid.png",
-    "iaspec": "probedroid"
+    "iaspec": "probedroid",
+    "health": 5,
+    "speed": 3
   },
   {
     "id": 92,
@@ -1870,7 +2054,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/probe-droid-elite.png",
-    "iaspec": "eliteprobedroid"
+    "iaspec": "eliteprobedroid",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 93,
@@ -1889,7 +2075,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/punishing-strike-skirmish.png",
-    "iaspec": "punishingstrike"
+    "iaspec": "punishingstrike",
+    "health": null,
+    "speed": null
   },
   {
     "id": 94,
@@ -1908,7 +2096,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/r2-d2-loyal-astromech-campaign.png",
-    "iaspec": "r2d2campaign"
+    "iaspec": "r2d2campaign",
+    "health": 6,
+    "speed": 3
   },
   {
     "id": 95,
@@ -1927,7 +2117,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/r2-d2-loyal-astromech-skirmish.png",
-    "iaspec": "r2d2skirmish"
+    "iaspec": "r2d2skirmish",
+    "health": 6,
+    "speed": 3
   },
   {
     "id": 96,
@@ -1947,7 +2139,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/rancor-elite-campaign.png",
-    "iaspec": "eliterancorcampaign"
+    "iaspec": "eliterancorcampaign",
+    "health": 15,
+    "speed": 4
   },
   {
     "id": 97,
@@ -1967,7 +2161,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/rancor-elite-skirmish.png",
-    "iaspec": "eliterancorskirmish"
+    "iaspec": "eliterancorskirmish",
+    "health": 15,
+    "speed": 4
   },
   {
     "id": 98,
@@ -1986,7 +2182,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/rebel-high-command-skirmish.png",
-    "iaspec": "rebelhighcommand"
+    "iaspec": "rebelhighcommand",
+    "health": null,
+    "speed": null
   },
   {
     "id": 99,
@@ -2007,7 +2205,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/rebel-saboteur.png",
-    "iaspec": "rebelsaboteur"
+    "iaspec": "rebelsaboteur",
+    "health": 4,
+    "speed": 5
   },
   {
     "id": 100,
@@ -2028,7 +2228,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/rebel-saboteur-elite.png",
-    "iaspec": "eliterebelsaboteur"
+    "iaspec": "eliterebelsaboteur",
+    "health": 6,
+    "speed": 5
   },
   {
     "id": 101,
@@ -2048,7 +2250,9 @@
     "reinforce_cost": 2,
     "deployment_group": 3,
     "image": "deployment-cards/rebel-trooper.png",
-    "iaspec": "rebeltrooper"
+    "iaspec": "rebeltrooper",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 102,
@@ -2068,7 +2272,9 @@
     "reinforce_cost": 3,
     "deployment_group": 3,
     "image": "deployment-cards/rebel-trooper-elite.png",
-    "iaspec": "eliterebeltrooper"
+    "iaspec": "eliterebeltrooper",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 103,
@@ -2089,7 +2295,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/royal-guard.png",
-    "iaspec": "royalguard"
+    "iaspec": "royalguard",
+    "health": 8,
+    "speed": 5
   },
   {
     "id": 104,
@@ -2110,7 +2318,9 @@
     "reinforce_cost": 6,
     "deployment_group": 2,
     "image": "deployment-cards/royal-guard-elite.png",
-    "iaspec": "eliteroyalguard"
+    "iaspec": "eliteroyalguard",
+    "health": 10,
+    "speed": 5
   },
   {
     "id": 105,
@@ -2131,7 +2341,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/royal-guard-champion.png",
-    "iaspec": "royalguardchampion"
+    "iaspec": "royalguardchampion",
+    "health": 13,
+    "speed": 6
   },
   {
     "id": 106,
@@ -2150,7 +2362,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/rule-by-fear-skirmish.png",
-    "iaspec": "rulebyfear"
+    "iaspec": "rulebyfear",
+    "health": null,
+    "speed": null
   },
   {
     "id": 107,
@@ -2170,7 +2384,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/sc2-m-repulsor-tank-elite.png",
-    "iaspec": "elitesc2mrepulsortank"
+    "iaspec": "elitesc2mrepulsortank",
+    "health": 10,
+    "speed": 4
   },
   {
     "id": 108,
@@ -2190,7 +2406,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/saska-teft-skirmish.png",
-    "iaspec": "saskateft"
+    "iaspec": "saskateft",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 109,
@@ -2209,7 +2427,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/scavenged-weaponry-skirmish.png",
-    "iaspec": "scavengedweaponry"
+    "iaspec": "scavengedweaponry",
+    "health": null,
+    "speed": null
   },
   {
     "id": 110,
@@ -2229,7 +2449,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/shyla-varad-skirmish.png",
-    "iaspec": "shylavarad"
+    "iaspec": "shylavarad",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 111,
@@ -2248,7 +2470,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/smugglers-run-skirmish.png",
-    "iaspec": "smugglersrun"
+    "iaspec": "smugglersrun",
+    "health": null,
+    "speed": null
   },
   {
     "id": 112,
@@ -2268,7 +2492,9 @@
     "reinforce_cost": 2,
     "deployment_group": 3,
     "image": "deployment-cards/snowtrooper.png",
-    "iaspec": "snowtrooper"
+    "iaspec": "snowtrooper",
+    "health": 4,
+    "speed": 4
   },
   {
     "id": 113,
@@ -2288,7 +2514,9 @@
     "reinforce_cost": 3,
     "deployment_group": 3,
     "image": "deployment-cards/snowtrooper-elite.png",
-    "iaspec": "elitesnowtrooper"
+    "iaspec": "elitesnowtrooper",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 114,
@@ -2308,7 +2536,9 @@
     "reinforce_cost": 2,
     "deployment_group": 3,
     "image": "deployment-cards/stormtrooper.png",
-    "iaspec": "stormtrooper"
+    "iaspec": "stormtrooper",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 115,
@@ -2328,7 +2558,9 @@
     "reinforce_cost": 3,
     "deployment_group": 3,
     "image": "deployment-cards/stormtrooper-elite.png",
-    "iaspec": "elitestormtrooper"
+    "iaspec": "elitestormtrooper",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 116,
@@ -2347,7 +2579,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/survivalist-skirmish.png",
-    "iaspec": "survivalist"
+    "iaspec": "survivalist",
+    "health": null,
+    "speed": null
   },
   {
     "id": 117,
@@ -2366,7 +2600,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/targeting-computer-skirmish.png",
-    "iaspec": "targetingcomputer"
+    "iaspec": "targetingcomputer",
+    "health": null,
+    "speed": null
   },
   {
     "id": 118,
@@ -2385,7 +2621,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/temporary-alliance-a-common-enemy-skirmish.png",
-    "iaspec": "temporaryalliancemercenary"
+    "iaspec": "temporaryalliancemercenary",
+    "health": null,
+    "speed": null
   },
   {
     "id": 119,
@@ -2404,7 +2642,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/temporary-alliance-hired-guns-skirmish.png",
-    "iaspec": "temporaryallianceimperial"
+    "iaspec": "temporaryallianceimperial",
+    "health": null,
+    "speed": null
   },
   {
     "id": 120,
@@ -2423,7 +2663,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/the-generals-ranks-skirmish.png",
-    "iaspec": "thegeneralsranks"
+    "iaspec": "thegeneralsranks",
+    "health": null,
+    "speed": null
   },
   {
     "id": 121,
@@ -2444,7 +2686,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/the-grand-inquisitor-sith-loyalist.png",
-    "iaspec": "thegrandinquisitor"
+    "iaspec": "thegrandinquisitor",
+    "health": 15,
+    "speed": 5
   },
   {
     "id": 122,
@@ -2465,7 +2709,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/trandoshan-hunter.png",
-    "iaspec": "trandoshanhunter"
+    "iaspec": "trandoshanhunter",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 123,
@@ -2486,7 +2732,9 @@
     "reinforce_cost": 5,
     "deployment_group": 2,
     "image": "deployment-cards/trandoshan-hunter-elite.png",
-    "iaspec": "elitetrandoshanhunter"
+    "iaspec": "elitetrandoshanhunter",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 124,
@@ -2505,7 +2753,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/trusted-ally-skirmish.png",
-    "iaspec": "trustedally"
+    "iaspec": "trustedally",
+    "health": null,
+    "speed": null
   },
   {
     "id": 125,
@@ -2525,7 +2775,9 @@
     "reinforce_cost": 2,
     "deployment_group": 2,
     "image": "deployment-cards/tusken-raider.png",
-    "iaspec": "tuskenraider"
+    "iaspec": "tuskenraider",
+    "health": 4,
+    "speed": 4
   },
   {
     "id": 126,
@@ -2545,7 +2797,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/tusken-raider-elite.png",
-    "iaspec": "elitetuskenraider"
+    "iaspec": "elitetuskenraider",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 127,
@@ -2565,7 +2819,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/ugnaught-tinkerer.png",
-    "iaspec": "ugnaughttinkerer"
+    "iaspec": "ugnaughttinkerer",
+    "health": 4,
+    "speed": 4
   },
   {
     "id": 128,
@@ -2585,7 +2841,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/ugnaught-tinkerer-elite.png",
-    "iaspec": "eliteugnaughttinkerer"
+    "iaspec": "eliteugnaughttinkerer",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 129,
@@ -2604,7 +2862,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/under-duress-skirmish.png",
-    "iaspec": "underduress"
+    "iaspec": "underduress",
+    "health": null,
+    "speed": null
   },
   {
     "id": 130,
@@ -2623,7 +2883,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/unshakable-skirmish.png",
-    "iaspec": "unshakable"
+    "iaspec": "unshakable",
+    "health": null,
+    "speed": null
   },
   {
     "id": 131,
@@ -2642,7 +2904,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/vaders-finest-skirmish.png",
-    "iaspec": "vadersfinest"
+    "iaspec": "vadersfinest",
+    "health": null,
+    "speed": null
   },
   {
     "id": 132,
@@ -2662,7 +2926,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/verena-talos-skirmish.png",
-    "iaspec": "verenatalos"
+    "iaspec": "verenatalos",
+    "health": 11,
+    "speed": 4
   },
   {
     "id": 133,
@@ -2682,7 +2948,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/vinto-hreeda-skirmish.png",
-    "iaspec": "vintohreeda"
+    "iaspec": "vintohreeda",
+    "health": 8,
+    "speed": 5
   },
   {
     "id": 134,
@@ -2703,7 +2971,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/wampa.png",
-    "iaspec": "wampa"
+    "iaspec": "wampa",
+    "health": 9,
+    "speed": 3
   },
   {
     "id": 135,
@@ -2724,7 +2994,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/wampa-elite.png",
-    "iaspec": "elitewampa"
+    "iaspec": "elitewampa",
+    "health": 12,
+    "speed": 3
   },
   {
     "id": 136,
@@ -2745,7 +3017,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/weequay-pirate.png",
-    "iaspec": "weequaypirate"
+    "iaspec": "weequaypirate",
+    "health": 4,
+    "speed": 4
   },
   {
     "id": 137,
@@ -2766,7 +3040,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/weequay-pirate-elite.png",
-    "iaspec": "eliteweequaypirate"
+    "iaspec": "eliteweequaypirate",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 138,
@@ -2787,7 +3063,9 @@
     "reinforce_cost": 2,
     "deployment_group": 3,
     "image": "deployment-cards/wing-guard.png",
-    "iaspec": "wingguard"
+    "iaspec": "wingguard",
+    "health": 3,
+    "speed": 4
   },
   {
     "id": 139,
@@ -2808,7 +3086,9 @@
     "reinforce_cost": 3,
     "deployment_group": 3,
     "image": "deployment-cards/wing-guard-elite.png",
-    "iaspec": "elitewingguard"
+    "iaspec": "elitewingguard",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 140,
@@ -2829,7 +3109,9 @@
     "reinforce_cost": 4,
     "deployment_group": 2,
     "image": "deployment-cards/wookiee-warrior.png",
-    "iaspec": "wookieewarrior"
+    "iaspec": "wookieewarrior",
+    "health": 11,
+    "speed": 4
   },
   {
     "id": 141,
@@ -2850,7 +3132,9 @@
     "reinforce_cost": 6,
     "deployment_group": 2,
     "image": "deployment-cards/wookiee-warrior-elite.png",
-    "iaspec": "elitewookieewarrior"
+    "iaspec": "elitewookieewarrior",
+    "health": 13,
+    "speed": 4
   },
   {
     "id": 142,
@@ -2869,7 +3153,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/zillo-technique-skirmish.png",
-    "iaspec": "zillotechnique"
+    "iaspec": "zillotechnique",
+    "health": null,
+    "speed": null
   },
   {
     "id": 143,
@@ -2890,7 +3176,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/at-dp-elite.png",
-    "iaspec": "eliteatdp"
+    "iaspec": "eliteatdp",
+    "health": 16,
+    "speed": 3
   },
   {
     "id": 144,
@@ -2912,7 +3200,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/ahsoka-tano-rebel-instigator.png",
-    "iaspec": "ahsokatano"
+    "iaspec": "ahsokatano",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 145,
@@ -2933,7 +3223,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/clawdite-shapeshifter.png",
-    "iaspec": "clawditeshapeshifter"
+    "iaspec": "clawditeshapeshifter",
+    "health": 6,
+    "speed": 4
   },
   {
     "id": 146,
@@ -2954,7 +3246,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/clawdite-shapeshifter-elite.png",
-    "iaspec": "eliteclawditeshapeshifter"
+    "iaspec": "eliteclawditeshapeshifter",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 147,
@@ -2973,7 +3267,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/driven-by-hatred-skirmish.png",
-    "iaspec": "drivenbyhatred"
+    "iaspec": "drivenbyhatred",
+    "health": null,
+    "speed": null
   },
   {
     "id": 148,
@@ -2993,7 +3289,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/drokkatta-skirmish.png",
-    "iaspec": "drokkatta"
+    "iaspec": "drokkatta",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 149,
@@ -3014,7 +3312,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/emperor-palpatine-sith-master.png",
-    "iaspec": "emperorpalpatine"
+    "iaspec": "emperorpalpatine",
+    "health": 13,
+    "speed": 3
   },
   {
     "id": 150,
@@ -3035,7 +3335,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/jarrod-kelvin-skirmish.png",
-    "iaspec": "jarrodkelvin"
+    "iaspec": "jarrodkelvin",
+    "health": 7,
+    "speed": 5
   },
   {
     "id": 151,
@@ -3055,7 +3357,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/ko-tun-feralo-skirmish.png",
-    "iaspec": "kotunferalo"
+    "iaspec": "kotunferalo",
+    "health": 9,
+    "speed": 4
   },
   {
     "id": 152,
@@ -3076,7 +3380,9 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/maul-seeker-of-vengeance.png",
-    "iaspec": "maul"
+    "iaspec": "maul",
+    "health": 12,
+    "speed": 4
   },
   {
     "id": 153,
@@ -3097,7 +3403,9 @@
     "reinforce_cost": 2,
     "deployment_group": 2,
     "image": "deployment-cards/riot-trooper-campaign.png",
-    "iaspec": "riottroopercampaign"
+    "iaspec": "riottroopercampaign",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 154,
@@ -3118,7 +3426,9 @@
     "reinforce_cost": 2,
     "deployment_group": 2,
     "image": "deployment-cards/riot-trooper-skirmish.png",
-    "iaspec": "riottrooperskirmish"
+    "iaspec": "riottrooperskirmish",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 155,
@@ -3139,7 +3449,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/riot-trooper-elite-campaign.png",
-    "iaspec": "eliteriottroopercampaign"
+    "iaspec": "eliteriottroopercampaign",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 156,
@@ -3160,7 +3472,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/riot-trooper-elite-skirmish.png",
-    "iaspec": "eliteriottrooperskirmish"
+    "iaspec": "eliteriottrooperskirmish",
+    "health": 7,
+    "speed": 4
   },
   {
     "id": 157,
@@ -3179,7 +3493,9 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/rogue-smuggler-skirmish.png",
-    "iaspec": "roguesmuggler"
+    "iaspec": "roguesmuggler",
+    "health": null,
+    "speed": null
   },
   {
     "id": 158,
@@ -3201,7 +3517,9 @@
     "reinforce_cost": 3,
     "deployment_group": 2,
     "image": "deployment-cards/sentry-droid.png",
-    "iaspec": "sentrydroid"
+    "iaspec": "sentrydroid",
+    "health": 5,
+    "speed": 4
   },
   {
     "id": 159,
@@ -3223,7 +3541,9 @@
     "reinforce_cost": 5,
     "deployment_group": 2,
     "image": "deployment-cards/sentry-droid-elite.png",
-    "iaspec": "elitesentrydroid"
+    "iaspec": "elitesentrydroid",
+    "health": 8,
+    "speed": 4
   },
   {
     "id": 160,
@@ -3242,6 +3562,8 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/wookiee-avenger-skirmish.png",
-    "iaspec": "wookieeavenger"
+    "iaspec": "wookieeavenger",
+    "health": null,
+    "speed": null
   }
 ]
