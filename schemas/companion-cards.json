@@ -33,6 +33,16 @@
         "description": "A trait that applies to this companion.",
         "$ref": "definitions.json#/definitions/deployment-trait"
       }
+    },
+    "health": {
+      "type": "integer",
+      "description": "This companion's health",
+      "minimum": 1
+    },
+    "speed": {
+      "type": "integer",
+      "description": "This companion's speed",
+      "minimum": 1
     }
   },
   "required": [
@@ -40,7 +50,9 @@
     "iaspec",
     "name",
     "image",
-    "traits"
+    "traits",
+    "health",
+    "speed"
   ],
   "additionalProperties": false
 }
