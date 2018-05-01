@@ -78,7 +78,31 @@
       "type": "integer"
     },
     "reinforce_cost": {
-      "description": "The cost associated with re-deploying a unit associated with this deployment card's.",
+      "description": "The cost associated with re-deploying a unit associated with this deployment card's (if appropriate).",
+      "oneOf":[
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "health": {
+      "description": "This deployment's health (if appropriate).",
+      "oneOf":[
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "speed": {
+      "description": "This deployment's speed (if appropriate).",
       "oneOf":[
         {
           "type": "integer",
@@ -115,7 +139,9 @@
     "reinforce_cost",
     "deployment_cost",
     "affiliation",
-    "modes"
+    "modes",
+    "health",
+    "speed"
   ],
   "additionalProperties": false
 }
