@@ -1,4 +1,4 @@
-# Imperial Assault Data [![Build Status](https://travis-ci.org/lvisintini/imperial-assault-data.svg?branch=master)](https://travis-ci.org/lvisintini/imperial-assault-data)
+# Imperial Assault Data
 
 An easy-to-use collection of data and images from the [Imperial Assault](https://www.fantasyflightgames.com/en/products/star-wars-imperial-assault/) game by [Fantasy Flight Games](https://www.fantasyflightgames.com).
 
