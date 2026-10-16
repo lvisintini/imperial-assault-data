@@ -1,6 +1,5 @@
 import os
 import struct
-import imghdr
 import pytest
 
 from tests.constants import CONTENT_TYPES
@@ -133,40 +132,16 @@ class ImageTestHelper:
 
 class TestImages:
 
-    @staticmethod
-    def get_image_size(fname):
-        # https://stackoverflow.com/questions/8032642/how-to-obtain-image-size-using-standard-python-class-without-using-external-lib/20380514#20380514
+    PNG_SIGNATURE = b'\x89PNG\r\n\x1a\n'
+
+    @classmethod
+    def get_image_size(cls, fname):
+        # All images are PNG; width and height are the first fields of the IHDR chunk.
         with open(fname, 'rb') as fhandle:
             head = fhandle.read(24)
-            if len(head) != 24:
-                return
-            if imghdr.what(fname) == 'png':
-                check = struct.unpack('>i', head[4:8])[0]
-                if check != 0x0d0a1a0a:
-                    return
-                width, height = struct.unpack('>ii', head[16:24])
-            elif imghdr.what(fname) == 'gif':
-                width, height = struct.unpack('<HH', head[6:10])
-            elif imghdr.what(fname) == 'jpeg':
-                try:
-                    fhandle.seek(0)  # Read 0xff next
-                    size = 2
-                    ftype = 0
-                    while not 0xc0 <= ftype <= 0xcf:
-                        fhandle.seek(size, 1)
-                        byte = fhandle.read(1)
-                        while ord(byte) == 0xff:
-                            byte = fhandle.read(1)
-                        ftype = ord(byte)
-                        size = struct.unpack('>H', fhandle.read(2))[0] - 2
-                    # We are at a SOFn block
-                    fhandle.seek(1, 1)  # Skip `precision' byte.
-                    height, width = struct.unpack('>HH', fhandle.read(4))
-                except Exception:  #IGNORE:W0703
-                    return
-            else:
-                return
-            return width, height
+        if len(head) != 24 or head[:8] != cls.PNG_SIGNATURE:
+            return
+        return struct.unpack('>II', head[16:24])
 
     def test_all_images_are_accounted_for_in_helper(self):
         helper_images = set(list(ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list))))
@@ -178,13 +153,14 @@ class TestImages:
 
         assert helper_images == files_found
 
-    @pytest.mark.parametrize("image_path", ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list)))
+    @pytest.mark.parametrize("image_path", list(ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list))))
     def test_image_paths(self, image_path):
         assert os.path.exists(image_path)
         assert os.path.isfile(image_path)
 
     @pytest.mark.parametrize(
-        "image_path,expected_size", ImageTestHelper.get_paths_and_expected_sizes(get_data_for(*CONTENT_TYPES.as_list))
+        "image_path,expected_size",
+        list(ImageTestHelper.get_paths_and_expected_sizes(get_data_for(*CONTENT_TYPES.as_list)))
     )
     def test_image_sizes(self, image_path, expected_size):
         assert self.get_image_size(image_path) == expected_size

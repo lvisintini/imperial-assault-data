@@ -1,6 +1,6 @@
 import os
+import tomllib
 import zipfile
-from configparser import ConfigParser
 from io import StringIO
 from itertools import chain
 
@@ -39,9 +39,8 @@ class ReleaseBuilder:
 
     def __init__(self):
         self.root = os.path.abspath(os.path.dirname(__file__))
-        config = ConfigParser()
-        config.read(os.path.join(self.root, 'imperial-assault-data.cfg'))
-        self.version = config['default']['version']
+        with open(os.path.join(self.root, 'pyproject.toml'), 'rb') as f:
+            self.version = tomllib.load(f)['project']['version']
 
     @staticmethod
     def get_file_paths(root, dest):
