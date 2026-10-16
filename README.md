@@ -50,17 +50,15 @@ When adding images please use [TinyPNG](https://tinypng.com/) to reduce their fi
 
 If you want to contribute to the project and you know how to program in python, you may be interesting on setting up a development environment, although this is optional.
 
+The project uses [uv](https://docs.astral.sh/uv/) and requires Python 3.12 or newer (uv will fetch one for you if needed).
+
 ```
+curl -LsSf https://astral.sh/uv/install.sh | sh
 git clone git@github.com:lvisintini/imperial-assault-data.git
 cd ./imperial-assault-data
-sudo add-apt-repository ppa:jonathonf/python-3.6
-sudo apt update
-sudo apt install python3.6
-sudo apt install python3.6-dev virtualwrapper
-mkvirtualenv --python=/usr/bin/python3.6 imperial-assault-data
-pip install -r requirements.txt
+uv sync
 
-py.test
+uv run pytest
 ```
 
 ## Testing
@@ -68,7 +66,7 @@ py.test
 Each change in the dataset is checked against a multitude of test that are meant to preserve the integrity of the data.
 This is done automatically for each code change on this repo.
 
-Alternatively, you can also run the test suit yourself by setting up your environment and running `py.test`
+Alternatively, you can also run the test suit yourself by setting up your environment and running `uv run pytest`
 
 
 ## Versioning

@@ -1,0 +1,24 @@
+[project]
+name = "imperial-assault-data"
+version = "1.1.0"
+description = "Data, JSON Schemas and card images for FFG's Star Wars: Imperial Assault"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "jsonschema>=4",
+    "jsonref>=1",
+    "tqdm>=4",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+python_classes = ["*Test", "Test*"]

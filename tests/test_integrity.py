@@ -110,7 +110,7 @@ class TestHeroClassCardIntegrity:
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.HERO_CLASS) if d['type'] == BUFF_TYPES.FEAT
     ])
-    def test_unique_deployment_does_not_have_a_reinforce_cost(self, entry):
+    def test_feat_has_no_traits(self, entry):
         assert entry['traits'] is None
 
 
@@ -119,7 +119,7 @@ class TestRewardIntegrity:
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.REWARD) if d['type'] == BUFF_TYPES.FEAT
     ])
-    def test_unique_deployment_does_not_have_a_reinforce_cost(self, entry):
+    def test_feat_has_no_traits(self, entry):
         assert entry['traits'] is None
 
 
