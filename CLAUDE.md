@@ -19,6 +19,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 - `tests/constants.py` — `CONTENT_TYPES` registry (`as_list`, `without_ids`) plus Python mirrors of the trait/type enums.
 - `pyproject.toml` — holds the dataset `version` (`[project].version`, SemVer, see README; `build_release.py` reads it), the `dev` dependency group, and pytest config. Non-package uv project; `uv.lock` is committed.
 - `.github/workflows/test.yml` — runs `uv run pytest` on push/PR against Python 3.12 and 3.14.
+- `.github/workflows/pages.yml` — deploys the data explorer (https://lvisintini.github.io/imperial-assault-data/) on master pushes touching `data/`, `images/` or `docs/`, and on `workflow_dispatch`. It checks out the orphan `gh-pages` branch (site source only: static HTML/CSS/ES modules, no build) and moves master's `data/`, `images/` and `docs/` into it before deploying, so images are never committed twice. Pushes to `gh-pages` start it through `gh-pages`' own `trigger.yml`, because the `github-pages` environment only accepts deployments from master. The site's relationship config (`js/relations.js` on gh-pages) mirrors `docs/data-model.md`.
 - `.github/workflows/release.yml` — on a `v*.*.*` tag push: checks the tag equals `v` + `[project].version`, runs tests, runs `build_release.py`, and `gh release create`s with both zips (tags with a `-suffix` become pre-releases). `workflow_dispatch` is a dry run that uploads the zips as a workflow artifact instead.
 
 ## Invariants enforced by tests
@@ -32,7 +33,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 
 ## Adding a new content type
 
-Touch all of: `data/`, `schemas/`, `schemas/definitions.json` (`content_type` enum), `tests/constants.py` (`as_list`, maybe `without_ids`), `ImageTestHelper.definitions` (large + small, plus a card-back entry), the README image tables, `docs/data-model.md`, and the `SOURCES` list in `examples/show_source_contents.py`.
+Touch all of: `data/`, `schemas/`, `schemas/definitions.json` (`content_type` enum), `tests/constants.py` (`as_list`, maybe `without_ids`), `ImageTestHelper.definitions` (large + small, plus a card-back entry), the README image tables, `docs/data-model.md`, `js/types.js` and maybe `js/relations.js` on the `gh-pages` branch, and the `SOURCES` list in `examples/show_source_contents.py`.
 
 ## Commands
 
