@@ -76,6 +76,14 @@ This project uses [SemVer](http://semver.org/). Given a `MAJOR.MINOR.PATCH` vers
 - `MINOR` version when new content is added in a backwards-compatible manner, or existing content is changed in a backwards-compatible manner
 - `PATCH` version when fixing mistakes in existing content
 
+### Releasing
+
+1. Bump `[project].version` in `pyproject.toml` (following the rules above) in a PR.
+2. Once it is merged, tag that commit on `master` and push the tag: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+3. The [Release workflow](.github/workflows/release.yml) checks that the tag matches the version, runs the tests, builds the
+   high-res and low-res zips, and publishes them as a GitHub Release with generated notes. A tag with a suffix
+   (e.g. `v1.2.0-rc1`) is published as a pre-release. Edit the release notes on GitHub if needed.
+
 
 ## Contributors
 
