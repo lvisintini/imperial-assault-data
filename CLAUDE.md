@@ -36,6 +36,16 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 
 Touch all of: `data/`, `schemas/`, `schemas/definitions.json` (`content_type` enum), `tests/constants.py` (`as_list`, maybe `without_ids`), `ImageTestHelper.definitions` (large + small, plus a card-back entry), the README image tables, `docs/data-model.md`, `site/js/types.js` and maybe `site/js/relations.js`, and the `SOURCES` list in `examples/show_source_contents.py`.
 
+## Tools (sibling repo)
+
+New content is added with `ia_tools` in [imperial-assault-tools](https://github.com/lvisintini/imperial-assault-tools), checked out next to this repo at `../imperial-assault-tools` (this project's `.claude/settings.local.json` adds it as a working directory). It finds this repo through `IA_DATA_ROOT` (default `../imperial-assault-data`). The workflow:
+
+1. `uv run --project ../imperial-assault-tools ia scrape <boardwars album url>` stages the product in the tools repo's `staging/` (or `ia audit` to look for gaps across all of boardwars).
+2. The user runs `ia enter` and goes through the cards in the browser. Card text and visual checks are theirs; never open image files, only inspect them programmatically (size, format, hash).
+3. `ia import <product> --check`, then `ia import <product>`, writes records, `source-contents` rows and images here. Then run `uv run pytest`, and open a PR that names the tools commit used.
+
+Images come from cards.boardwars.eu only, so the dataset stays consistent.
+
 ## Commands
 
 ```bash

@@ -8,3 +8,6 @@ build
 
 # Virtual environment
 .venv/
+
+# Claude Code local settings (per machine)
+.claude/settings.local.json
