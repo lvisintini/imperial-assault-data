@@ -74,6 +74,10 @@ uv sync
 uv run pytest
 ```
 
+The [data explorer](https://lvisintini.github.io/imperial-assault-data/) lives in `site/` (plain HTML, CSS and JavaScript, no build step).
+Run `uv run python serve_site.py` to try it locally on http://localhost:8000. It's deployed automatically when `site/`,
+`data/`, `images/` or `docs/` change on `master`.
+
 ## Testing
 
 Each change in the dataset is checked against a multitude of test that are meant to preserve the integrity of the data.
