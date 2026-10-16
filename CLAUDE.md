@@ -15,6 +15,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
   - `card-backs.json` keys on `content_type` (+ `variant`), not an id.
 - `schemas/<content-type>.json` — Draft-04 JSON Schema per data file; shared enums (affiliations, traits, buff types, image path pattern) live in `schemas/definitions.json` and are pulled in via `$ref`. Schemas set `additionalProperties: false` and list all fields as `required` (nullable fields use `oneOf [..., null]`).
 - `images/large/` and `images/small/` — mirror trees (`<content-type>/<slug>.png`); data `image`/`healthy`/`wounded` fields are paths relative to these roots. Do not open image files when evaluating data; they are ~500MB of binaries.
+- `docs/data-model.md` — Mermaid ER diagrams of the relationships above, plus the card-back `variant` matching rules (which field `variant` matches per content type). Keep it in sync when relationships change.
 - `tests/constants.py` — `CONTENT_TYPES` registry (`as_list`, `without_ids`) plus Python mirrors of the trait/type enums.
 - `pyproject.toml` — holds the dataset `version` (`[project].version`, SemVer, see README; `build_release.py` reads it), the `dev` dependency group, and pytest config. Non-package uv project; `uv.lock` is committed.
 - `.github/workflows/test.yml` — runs `uv run pytest` on push/PR against Python 3.12 and 3.14.
@@ -31,7 +32,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 
 ## Adding a new content type
 
-Touch all of: `data/`, `schemas/`, `schemas/definitions.json` (`content_type` enum), `tests/constants.py` (`as_list`, maybe `without_ids`), `ImageTestHelper.definitions` (large + small, plus a card-back entry), the README image tables, and the `SOURCES` list in `examples/show_source_contents.py`.
+Touch all of: `data/`, `schemas/`, `schemas/definitions.json` (`content_type` enum), `tests/constants.py` (`as_list`, maybe `without_ids`), `ImageTestHelper.definitions` (large + small, plus a card-back entry), the README image tables, `docs/data-model.md`, and the `SOURCES` list in `examples/show_source_contents.py`.
 
 ## Commands
 

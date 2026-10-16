@@ -9,6 +9,16 @@ The data structure loosely mimics that of a relational database.
 
 For example, with the `.data/source-contents.json` file you can determine the contents of a particular product by filtering the entries by `source_id`.
 
+The [data model](docs/data-model.md) page has an Entity-Relationship diagram of how the files relate. In short:
+
+```
+sources 1──* source-contents *──1 <any content type>   (content_type + content_id)
+agenda-decks     1──* agenda-cards          (agenda_id)
+heroes           1──* hero-class-cards      (hero_id)
+imperial-classes 1──* imperial-class-cards  (class_id)
+card-backs       1──* <content type>        (content_type + variant)
+```
+
 You can find an example on how to do this in the `./examples` folder, along with other examples.
 
 All entries have an associated image (or 2) that you can find inside the `./images/large` (for high resolution images) and the `./images/small` folder (for low resolution images).
