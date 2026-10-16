@@ -4,6 +4,9 @@ An easy-to-use collection of data and images from the [Imperial Assault](https:/
 
 ## What you can find inside
 
+You can browse everything in the [data explorer](https://lvisintini.github.io/imperial-assault-data/): every record
+with its images, metadata and links to the records it relates to.
+
 In the `data` directory you will find all the data for the game in JSON formatted files.
 The data structure loosely mimics that of a relational database.
 

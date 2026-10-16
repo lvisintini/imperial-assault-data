@@ -1,0 +1,49 @@
+name: Pages
+
+# Builds the data explorer: the site source from the gh-pages branch plus master's data/, images/ and docs/, deployed
+# with Pages' Actions deployment so the images are never committed twice. gh-pages pushes start this through
+# workflow_dispatch (its trigger.yml), because the github-pages environment only accepts deployments from master.
+on:
+  push:
+    branches: [master]
+    paths:
+      - "data/**"
+      - "images/**"
+      - "docs/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: _site
+
+      - name: Assemble site
+        run: |
+          rm -rf _site/.git _site/.github
+          mv data images docs _site/
+          du -sh _site
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
