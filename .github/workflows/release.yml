@@ -1,0 +1,65 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+  workflow_dispatch:  # dry run: test + build, zips uploaded as a workflow artifact, no release
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.14"
+
+      - name: Read dataset version
+        id: version
+        run: |
+          version=$(uv run python -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Check tag matches version
+        if: github.ref_type == 'tag'
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          if [ "${GITHUB_REF_NAME#v}" != "$VERSION" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match pyproject.toml version $VERSION"
+            exit 1
+          fi
+
+      - run: uv run pytest
+
+      - run: uv run python build_release.py
+
+      - name: Check release zips exist
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          for flavour in high-res low-res; do
+            test -f "build/imperial-assault-data-v$VERSION-$flavour.zip"
+          done
+          ls -lh build/
+
+      - name: Create GitHub Release
+        if: github.ref_type == 'tag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prerelease=""
+          case "$GITHUB_REF_NAME" in *-*) prerelease="--prerelease" ;; esac
+          gh release create "$GITHUB_REF_NAME" build/*.zip \
+            --title "Release $GITHUB_REF_NAME" --generate-notes $prerelease
+
+      - name: Upload zips (dry run)
+        if: github.ref_type != 'tag'
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-zips
+          path: build/*.zip
+          retention-days: 1

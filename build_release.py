@@ -35,7 +35,6 @@ RELEASES = [
 
 class ReleaseBuilder:
     destination = 'build'
-    filename_pattern = "imperial-assault-data-v{version}-{flavour}.zip"
 
     def __init__(self):
         self.root = os.path.abspath(os.path.dirname(__file__))
@@ -57,10 +56,9 @@ class ReleaseBuilder:
             os.makedirs(build_path)
 
         for release_config in RELEASES:
-            release_filename = os.path.join(build_path, self.filename_pattern.format(
-                version=self.version,
-                flavour=release_config['flavour']
-            ))
+            release_filename = os.path.join(
+                build_path, release_config['filename_pattern'].format(version=self.version)
+            )
             zip_file = zipfile.ZipFile(release_filename, 'w', zipfile.ZIP_DEFLATED)
 
             files = list(chain(*[

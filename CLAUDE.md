@@ -18,6 +18,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 - `tests/constants.py` — `CONTENT_TYPES` registry (`as_list`, `without_ids`) plus Python mirrors of the trait/type enums.
 - `pyproject.toml` — holds the dataset `version` (`[project].version`, SemVer, see README; `build_release.py` reads it), the `dev` dependency group, and pytest config. Non-package uv project; `uv.lock` is committed.
 - `.github/workflows/test.yml` — runs `uv run pytest` on push/PR against Python 3.12 and 3.14.
+- `.github/workflows/release.yml` — on a `v*.*.*` tag push: checks the tag equals `v` + `[project].version`, runs tests, runs `build_release.py`, and `gh release create`s with both zips (tags with a `-suffix` become pre-releases). `workflow_dispatch` is a dry run that uploads the zips as a workflow artifact instead.
 
 ## Invariants enforced by tests
 
@@ -40,5 +41,6 @@ uv run pytest                               # full suite (~8.4k parametrized tes
 uv run pytest tests/test_schemas.py         # single file
 uv run pytest -k deployment                 # subset
 uv run python build_release.py              # writes build/imperial-assault-data-v<version>-{high,low}-res.zip
+git tag v<version> && git push origin v<version>   # after the version bump is merged: triggers the Release workflow
 uv run python examples/show_source_contents.py   # run from repo root (uses ./data relative paths)
 ```
