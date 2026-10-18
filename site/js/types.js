@@ -1,12 +1,21 @@
 // One entry per data/<file>.json, in navigation order. `images` lists the record's image fields (paths relative to
-// images/large and images/small); `hidden` keeps a type out of navigation and routing.
+// images/large and images/small); `hidden` keeps a type out of navigation and routing. `sort` is the default order
+// (field names, '-' for descending; name when missing). `groups` splits the type's list page into nested sections:
+// by whether records have a trait, or by a field's values in a fixed order.
 export const TYPES = [
-  {file: 'sources', label: 'Sources', singular: 'Source', images: ['image'], sortById: true},
+  {file: 'sources', label: 'Sources', singular: 'Source', images: ['image'], sort: ['id']},
   {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded']},
   {file: 'hero-class-cards', label: 'Hero class cards', singular: 'Hero class card', images: ['image']},
   {file: 'imperial-classes', label: 'Imperial classes', singular: 'Imperial class', images: []},
   {file: 'imperial-class-cards', label: 'Imperial class cards', singular: 'Imperial class card', images: ['image']},
-  {file: 'deployment-cards', label: 'Deployment cards', singular: 'Deployment card', images: ['image']},
+  {
+    file: 'deployment-cards', label: 'Deployment cards', singular: 'Deployment card', images: ['image'],
+    sort: ['-unique', 'name', '-deployment_cost'],
+    groups: [
+      {trait: 'Skirmish Upgrade', yes: 'Skirmish upgrades', no: 'Deployments'},
+      {field: 'affiliation', order: ['Rebel', 'Imperial', 'Mercenary', 'Neutral']},
+    ],
+  },
   {file: 'command-cards', label: 'Command cards', singular: 'Command card', images: ['image']},
   {file: 'companion-cards', label: 'Companion cards', singular: 'Companion card', images: ['image']},
   {file: 'form-cards', label: 'Form cards', singular: 'Form card', images: ['image']},
@@ -20,7 +29,7 @@ export const TYPES = [
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},
   {file: 'condition-cards', label: 'Condition cards', singular: 'Condition card', images: ['image']},
   {file: 'skirmish-maps', label: 'Skirmish maps', singular: 'Skirmish map', images: ['image']},
-  {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image']},
+  {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image'], sort: ['deck', 'variant']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
 ];
 

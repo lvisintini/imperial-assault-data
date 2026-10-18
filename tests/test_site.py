@@ -10,13 +10,23 @@ def get_site_js(name):
         return file_object.read()
 
 
+def site_types():
+    """content type → its entry's source text in types.js."""
+    entries = get_site_js('types.js').split("file: '")[1:]
+    return {entry.split("'", 1)[0]: entry for entry in entries}
+
+
+def strings(js_list):
+    return re.findall(r"'([^']*)'", js_list)
+
+
 class TestSite:
     """The data explorer's config (site/js) has to keep up with the data model."""
 
     def test_types_cover_every_content_type(self):
-        files = re.findall(r"\{file: '([a-z-]+)'", get_site_js('types.js'))
+        files = re.findall(r"file: '([a-z-]+)'", get_site_js('types.js'))
         assert len(files) == len(set(files))
-        assert set(files) == set(CONTENT_TYPES.as_list)
+        assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
 
     def test_foreign_keys_cover_every_id_field(self):
         site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'\}", get_site_js('relations.js')))
@@ -37,3 +47,18 @@ class TestSite:
             backs_per_type[back['content_type']] = backs_per_type.get(back['content_type'], 0) + 1
         assert {content_type for content_type, n in backs_per_type.items() if n > 1} <= rules
         assert rules <= set(backs_per_type)
+
+    def test_default_sorts_use_schema_fields(self):
+        for content_type, entry in site_types().items():
+            if 'hidden: true' in entry:
+                continue
+            sort = re.search(r"sort: \[([^\]]*)\]", entry)
+            keys = [key.removeprefix('-') for key in strings(sort.group(1))] if sort else ['name']
+            assert set(keys) <= set(get_schema(content_type)['properties']), content_type
+
+    def test_deployment_groups_use_schema_values(self):
+        entry = site_types()[CONTENT_TYPES.DEPLOYMENT]
+        definitions = get_schema('definitions')['definitions']
+        assert re.search(r"trait: '([^']+)'", entry).group(1) in definitions['deployment-trait']['enum']
+        field, order = re.search(r"field: '(\w+)', order: \[([^\]]*)\]", entry).groups()
+        assert field == 'affiliation' and strings(order) == definitions['affiliation']['enum']

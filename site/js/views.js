@@ -1,5 +1,6 @@
 import {html} from './html.js';
 import {FKS} from './relations.js';
+import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, title} from './types.js';
 
 const MERMAID_URL = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
@@ -8,10 +9,8 @@ const VISIBLE = TYPES.filter(t => !t.hidden);
 
 export const href = ref => `#/${ref.type}/${ref.key}`;
 
-function sorted(refs) {
-  if (refs.length && TYPE[refs[0].type].sortById) return [...refs].sort((a, b) => a.key - b.key);
-  return [...refs].sort((a, b) => title(a).localeCompare(title(b)) || a.key - b.key);
-}
+// In the given order, or the type's default one (lists of a single type).
+const sorted = (refs, keys) => refs.length ? sortRefs(refs, keys ?? defaultSort(refs[0].type)) : refs;
 
 // Records without images of their own (agenda decks, imperial classes) show their card back.
 function thumbPath(ref, db) {
@@ -51,7 +50,46 @@ function tile(ref, db) {
   </a>`;
 }
 
-const grid = (refs, db) => html`<div class="grid">${sorted(refs).map(ref => tile(ref, db))}</div>`;
+const grid = (refs, db, keys) => html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db))}</div>`;
+
+// A type's `groups` (types.js) as nested sections: <h2> for the first level, <h3> below it.
+const groupOf = (level, {record}) =>
+  level.trait ? (record.traits?.includes(level.trait) ? level.yes : level.no) : record[level.field];
+const groupOrder = level => level.trait ? [level.no, level.yes] : level.order;
+
+function sections(refs, levels, db, keys, depth = 0) {
+  if (!levels.length) return grid(refs, db, keys);
+  const [level, ...rest] = levels;
+  const byGroup = Map.groupBy(refs, ref => groupOf(level, ref));
+  const order = groupOrder(level);
+  return [...order, ...[...byGroup.keys()].filter(g => !order.includes(g))].filter(g => byGroup.has(g)).map(g => {
+    const count = html` <span class="count">${byGroup.get(g).length}</span>`;
+    return html`<section class="group">
+      ${depth ? html`<h3>${g}${count}</h3>` : html`<h2>${g}${count}</h2>`}
+      ${sections(byGroup.get(g), rest, db, keys, depth + 1)}
+    </section>`;
+  });
+}
+
+const SORT_LEVELS = 3;
+
+// "Sort by [field] [direction] then by …": a level per key, plus an empty one to add a key, up to SORT_LEVELS.
+function sortControls(type, fields, keys) {
+  const levels = keys.slice(0, SORT_LEVELS);
+  if (levels.length < Math.min(SORT_LEVELS, fields.length)) levels.push('');
+  return html`<span class="sort-label">Sort by</span>${levels.map((key, i) => {
+    const field = key.replace(/^-/, '');
+    const desc = key.startsWith('-');
+    return html`<span class="sort-level">${i ? html`<span class="sort-label">then</span>` : ''}
+      <select data-level="${i}" aria-label="${i ? `Then sort by` : 'Sort by'}">
+        <option value="">—</option>
+        ${fields.map(f => html`<option value="${f}"${f === field ? html` selected` : ''}>${fieldLabel(f)}</option>`)}
+      </select>
+      ${field ? html`<button type="button" data-direction="${i}" aria-pressed="${desc ? 'true' : 'false'}"
+        aria-label="${fieldLabel(field)}: ${desc ? 'descending' : 'ascending'}">${desc ? '↓ Desc' : '↑ Asc'}</button>` : ''}
+    </span>`;
+  })}${sameKeys(keys, defaultSort(type)) ? '' : html`<button type="button" data-reset>Reset</button>`}`;
+}
 
 // Refs of mixed types, one sub-heading per type, in navigation order.
 function grouped(refs, db) {
@@ -115,26 +153,67 @@ async function renderDiagrams(el) {
   }
 }
 
-export function index(db, type, query) {
+export function index(db, type, query, sortParam) {
   const t = TYPE[type];
+  const refs = db.refs[type];
+  const fields = sortableFields(type, refs);
+  let keys = parseSort(type, sortParam, fields);
+  const list = () => t.groups ? sections(refs, t.groups, db, keys) : grid(refs, db, keys);
   return {
     title: t.label,
     body: html`
-      <h1>${t.label} <span class="count">${db.refs[type].length}</span></h1>
-      <input type="search" id="filter" class="filter" placeholder="Filter by name" aria-label="Filter by name"
-        value="${query}">
-      ${grid(db.refs[type], db)}
+      <h1>${t.label} <span class="count">${refs.length}</span></h1>
+      <div class="controls">
+        <input type="search" id="filter" class="filter" placeholder="Filter by name" aria-label="Filter by name"
+          value="${query}">
+        <div class="sort" id="sort">${sortControls(type, fields, keys)}</div>
+      </div>
+      <div id="list">${list()}</div>
       <p class="status" id="no-matches" hidden>No matches.</p>`,
     mount: el => {
       const input = el.querySelector('#filter');
-      const tiles = [...el.querySelectorAll('.tile')];
+      const sortEl = el.querySelector('#sort');
+      const listEl = el.querySelector('#list');
       const apply = () => {
         const q = input.value.trim();
+        const tiles = [...listEl.querySelectorAll('.tile')];
         for (const tile of tiles) tile.hidden = !tile.dataset.name.includes(q.toLowerCase());
+        for (const group of listEl.querySelectorAll('.group')) {
+          const shown = group.querySelectorAll('.tile:not([hidden])').length;
+          group.hidden = !shown;
+          group.querySelector(':scope > :is(h2, h3) .count').textContent = shown;
+        }
         el.querySelector('#no-matches').hidden = tiles.some(tile => !tile.hidden);
-        // replaceState doesn't fire hashchange, so typing doesn't re-render (or steal focus).
-        history.replaceState(null, '', `#/${type}${q ? `?q=${encodeURIComponent(q)}` : ''}`);
+        const params = [q && `q=${encodeURIComponent(q)}`, !sameKeys(keys, defaultSort(type)) && `sort=${keys.join(',')}`];
+        // replaceState doesn't fire hashchange, so typing or sorting doesn't re-render the page (or steal focus).
+        history.replaceState(null, '', `#/${type}${params.some(Boolean) ? `?${params.filter(Boolean).join('&')}` : ''}`);
       };
+      const setKeys = next => {
+        // Re-rendering the controls drops focus; put it back on the same control (or the first one).
+        const active = sortEl.contains(document.activeElement) ? document.activeElement.dataset : null;
+        const selector = active?.level ? `[data-level="${active.level}"]`
+          : active?.direction ? `[data-direction="${active.direction}"]` : 'select';
+        keys = next.length ? next : defaultSort(type);
+        listEl.innerHTML = String(list());
+        sortEl.innerHTML = String(sortControls(type, fields, keys));
+        if (active) (sortEl.querySelector(selector) ?? sortEl.querySelector('select')).focus();
+        apply();
+      };
+      sortEl.addEventListener('change', event => {
+        const i = Number(event.target.dataset.level);
+        const field = event.target.value;
+        const next = [...keys];
+        if (!field) next.splice(i, 1);
+        else next[i] = (next[i]?.startsWith('-') ? '-' : '') + field;
+        setKeys(next.filter((key, j) => !field || j === i || key.replace(/^-/, '') !== field));
+      });
+      sortEl.addEventListener('click', event => {
+        const button = event.target.closest('button');
+        if (!button) return;
+        if (button.dataset.reset !== undefined) return setKeys(defaultSort(type));
+        const i = Number(button.dataset.direction);
+        setKeys(keys.map((key, j) => j !== i ? key : key.startsWith('-') ? key.slice(1) : `-${key}`));
+      });
       input.addEventListener('input', apply);
       if (query) apply();
     },
