@@ -72,7 +72,30 @@ input[type="search"] {
   border-radius: var(--radius);
 }
 #search { flex: 1 1 200px; display: flex; justify-content: flex-end; }
-.filter { margin-bottom: 16px; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-bottom: 16px;
+}
+.sort, .sort-level { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.sort { font-size: 0.875rem; }
+.sort-label { color: var(--muted); }
+.sort select, .sort button {
+  padding: 4px 8px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.sort button { cursor: pointer; }
+.sort select:hover, .sort button:hover { border-color: var(--accent); }
+
+.group > h2 { margin-top: 24px; }
+.group[hidden] { display: none; }
 
 .nav {
   display: flex;
