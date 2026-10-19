@@ -908,5 +908,75 @@
       "Accessory"
     ],
     "type": "Equipment"
+  },
+  {
+    "id": 78,
+    "tier": 1,
+    "name": "Combat Vambrace",
+    "credits": 200,
+    "image": "upgrade-cards/combat-vambrace.png",
+    "traits": [
+      "Accessory"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 79,
+    "tier": 1,
+    "name": "Punch Dagger",
+    "credits": 400,
+    "image": "upgrade-cards/punch-dagger.png",
+    "traits": [
+      "Blade",
+      "Fist"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 80,
+    "tier": 2,
+    "name": "E-11D",
+    "credits": 700,
+    "image": "upgrade-cards/e-11d.png",
+    "traits": [
+      "Blaster",
+      "Rifle"
+    ],
+    "type": "Ranged Weapon"
+  },
+  {
+    "id": 81,
+    "tier": 2,
+    "name": "Mandalorian Helmet",
+    "credits": 250,
+    "image": "upgrade-cards/mandalorian-helmet.png",
+    "traits": [
+      "Helmet"
+    ],
+    "type": "Equipment"
+  },
+  {
+    "id": 82,
+    "tier": 3,
+    "name": "Bo-Rifle",
+    "credits": 750,
+    "image": "upgrade-cards/bo-rifle.png",
+    "traits": [
+      "Rifle",
+      "Staff"
+    ],
+    "type": "Melee Weapon"
+  },
+  {
+    "id": 83,
+    "tier": 3,
+    "name": "Plastoid Armor",
+    "credits": 350,
+    "image": "upgrade-cards/plastoid-armor.png",
+    "traits": [
+      "Armor",
+      "Light"
+    ],
+    "type": "Armor"
   }
 ]

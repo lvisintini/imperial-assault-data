@@ -3565,5 +3565,438 @@
     "iaspec": "wookieeavenger",
     "health": null,
     "speed": null
+  },
+  {
+    "id": 161,
+    "name": "Thrawn",
+    "description": "Grand Admiral",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/thrawn-grand-admiral-skirmish.png",
+    "iaspec": "thrawnskirmish",
+    "health": 9,
+    "speed": 4
+  },
+  {
+    "id": 162,
+    "name": "Thrawn",
+    "description": "Grand Admiral",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Imperial",
+    "traits": [
+      "Leader"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/thrawn-grand-admiral-campaign.png",
+    "iaspec": "thrawncampaign",
+    "health": 9,
+    "speed": 4
+  },
+  {
+    "id": 163,
+    "name": "Death Trooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/death-trooper-campaign.png",
+    "iaspec": "deathtroopercampaign",
+    "health": 5,
+    "speed": 4
+  },
+  {
+    "id": 164,
+    "name": "Death Trooper",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 3,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/death-trooper-skirmish.png",
+    "iaspec": "deathtrooperskirmish",
+    "health": 5,
+    "speed": 4
+  },
+  {
+    "id": 165,
+    "name": "Death Trooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/death-trooper-elite-campaign.png",
+    "iaspec": "elitedeathtroopercampaign",
+    "health": 7,
+    "speed": 4
+  },
+  {
+    "id": 166,
+    "name": "Death Trooper",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Imperial",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 4,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/death-trooper-elite-skirmish.png",
+    "iaspec": "elitedeathtrooperskirmish",
+    "health": 7,
+    "speed": 4
+  },
+  {
+    "id": 167,
+    "name": "Loth-cat",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Creature"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": 3,
+    "deployment_group": 2,
+    "image": "deployment-cards/loth-cat-elite.png",
+    "iaspec": "elitelothcat",
+    "health": 5,
+    "speed": 5
+  },
+  {
+    "id": 168,
+    "name": "Hondo Ohnaka",
+    "description": "Friend for hire",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/hondo-ohnaka-friend-for-hire-campaign.png",
+    "iaspec": "hondoohnakacampaign",
+    "health": 9,
+    "speed": 5
+  },
+  {
+    "id": 169,
+    "name": "Hondo Ohnaka",
+    "description": "Friend for hire",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 6,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/hondo-ohnaka-friend-for-hire-skirmish.png",
+    "iaspec": "hondoohnakaskirmish",
+    "health": 9,
+    "speed": 5
+  },
+  {
+    "id": 170,
+    "name": "Loth-cat",
+    "description": null,
+    "elite": false,
+    "unique": false,
+    "affiliation": "Mercenary",
+    "traits": [
+      "Creature"
+    ],
+    "modes": [],
+    "deployment_cost": 4,
+    "reinforce_cost": 2,
+    "deployment_group": 2,
+    "image": "deployment-cards/loth-cat.png",
+    "iaspec": "lothcat",
+    "health": 3,
+    "speed": 4
+  },
+  {
+    "id": 171,
+    "name": "CT-1701",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Guardian",
+      "Trooper"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/ct-1701-skirmish.png",
+    "iaspec": "ct1701",
+    "health": 12,
+    "speed": 4
+  },
+  {
+    "id": 172,
+    "name": "Ezra Bridger",
+    "description": "Spectre-6",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User",
+      "Smuggler"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/ezra-bridger-spectre-6-campaign.png",
+    "iaspec": "ezrabridgercampaign",
+    "health": 10,
+    "speed": 4
+  },
+  {
+    "id": 173,
+    "name": "Ezra Bridger",
+    "description": "Spectre-6",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User",
+      "Smuggler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/ezra-bridger-spectre-6-skirmish.png",
+    "iaspec": "ezrabridgerskirmish",
+    "health": 10,
+    "speed": 4
+  },
+  {
+    "id": 174,
+    "name": "Kanan Jarrus",
+    "description": "Spectre-1",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User",
+      "Leader"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/kanan-jarrus-spectre-1-campaign.png",
+    "iaspec": "kananjarruscampaign",
+    "health": 14,
+    "speed": 4
+  },
+  {
+    "id": 175,
+    "name": "Kanan Jarrus",
+    "description": "Spectre-1",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Force User",
+      "Leader"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/kanan-jarrus-spectre-1-skirmish.png",
+    "iaspec": "kananjarrusskirmish",
+    "health": 14,
+    "speed": 4
+  },
+  {
+    "id": 176,
+    "name": "Sabine Wren",
+    "description": "Spectre-5",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Hunter"
+    ],
+    "modes": [
+      "Campaign"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/sabine-wren-spectre-5-campaign.png",
+    "iaspec": "sabinewrencampaign",
+    "health": 11,
+    "speed": 4
+  },
+  {
+    "id": 177,
+    "name": "Sabine Wren",
+    "description": "Spectre-5",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Vehicle",
+      "Hunter"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 7,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/sabine-wren-spectre-5-skirmish.png",
+    "iaspec": "sabinewrenskirmish",
+    "health": 11,
+    "speed": 4
+  },
+  {
+    "id": 178,
+    "name": "Spectre Cell",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 2,
+    "reinforce_cost": null,
+    "deployment_group": null,
+    "image": "deployment-cards/spectre-cell-skirmish.png",
+    "iaspec": "spectrecell",
+    "health": null,
+    "speed": null
+  },
+  {
+    "id": 179,
+    "name": "Tress Hacnua",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 5,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/tress-hacnua-skirmish.png",
+    "iaspec": "tresshacnua",
+    "health": 9,
+    "speed": 5
+  },
+  {
+    "id": 180,
+    "name": "Zeb Orrelios",
+    "description": "Spectre-4",
+    "elite": true,
+    "unique": true,
+    "affiliation": "Rebel",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
+    "deployment_cost": 8,
+    "reinforce_cost": null,
+    "deployment_group": 1,
+    "image": "deployment-cards/zeb-orrelios-spectre-4.png",
+    "iaspec": "zeborrelios",
+    "health": 15,
+    "speed": 4
   }
 ]

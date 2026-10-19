@@ -910,5 +910,53 @@
     "influence": 1,
     "mission": false,
     "image": "agenda-cards/a-former-sith-imminent-reprisal.png"
+  },
+  {
+    "id": 114,
+    "name": "Acceptable Margins",
+    "agenda_id": 38,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/war-of-attrition-acceptable-margins.png"
+  },
+  {
+    "id": 115,
+    "name": "Costly Victory",
+    "agenda_id": 38,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/war-of-attrition-costly-victory.png"
+  },
+  {
+    "id": 116,
+    "name": "Selfless Devotion",
+    "agenda_id": 38,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/war-of-attrition-selfless-devotion.png"
+  },
+  {
+    "id": 117,
+    "name": "Gas Canisters",
+    "agenda_id": 39,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/weapons-division-gas-canisters.png"
+  },
+  {
+    "id": 118,
+    "name": "Ongoing Research",
+    "agenda_id": 39,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/weapons-division-ongoing-research.png"
+  },
+  {
+    "id": 119,
+    "name": "Prototypes",
+    "agenda_id": 39,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/weapons-division-prototypes.png"
   }
 ]

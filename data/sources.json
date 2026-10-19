@@ -292,5 +292,12 @@
     "type": "Villain Pack",
     "wave": 10,
     "image": "sources/maul.png"
+  },
+  {
+    "id": 42,
+    "name": "Tyrants of Lothal",
+    "type": "Expansion",
+    "wave": 11,
+    "image": "sources/tyrants-of-lothal.png"
   }
 ]

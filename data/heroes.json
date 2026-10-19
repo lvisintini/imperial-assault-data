@@ -112,5 +112,17 @@
     "name": "Ko-Tun Feralo",
     "healthy": "heroes/ko-tun-feralo-healthy.png",
     "wounded": "heroes/ko-tun-feralo-wounded.png"
+  },
+  {
+    "id": 19,
+    "name": "CT-1701",
+    "healthy": "heroes/ct-1701-healthy.png",
+    "wounded": "heroes/ct-1701-wounded.png"
+  },
+  {
+    "id": 20,
+    "name": "Tress Hacnua",
+    "healthy": "heroes/tress-hacnua-healthy.png",
+    "wounded": "heroes/tress-hacnua-wounded.png"
   }
 ]

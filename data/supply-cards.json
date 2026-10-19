@@ -185,5 +185,21 @@
       "Valuable"
     ],
     "image": "supply-cards/supply-chest.png"
+  },
+  {
+    "id": 22,
+    "name": "Locked Chest",
+    "traits": [
+      "Valuable"
+    ],
+    "image": "supply-cards/locked-chest.png"
+  },
+  {
+    "id": 23,
+    "name": "Missing Key",
+    "traits": [
+      "Valuable"
+    ],
+    "image": "supply-cards/missing-key.png"
   }
 ]

@@ -1646,5 +1646,45 @@
     "id": 205,
     "image": "command-cards/urgency.png",
     "iaspec": "urgency"
+  },
+  {
+    "id": 206,
+    "name": "Marked Territory",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/marked-territory.png",
+    "iaspec": "markedterritory"
+  },
+  {
+    "id": 207,
+    "name": "Pack Alpha",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/pack-alpha.png",
+    "iaspec": "packalpha"
+  },
+  {
+    "id": 208,
+    "name": "Signal Jammer",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/signal-jammer.png",
+    "iaspec": "signaljammer"
+  },
+  {
+    "id": 209,
+    "name": "Spinning Kick",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/spinning-kick.png",
+    "iaspec": "spinningkick"
+  },
+  {
+    "id": 210,
+    "name": "Wild Fire",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/wild-fire.png",
+    "iaspec": "wildfire"
   }
 ]

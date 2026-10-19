@@ -214,5 +214,41 @@
     "name": "Unfninished Business",
     "color": "Red",
     "image": "side-mission-cards/unfninished-business.png"
+  },
+  {
+    "id": 36,
+    "name": "Race on Ryloth",
+    "color": "Green",
+    "image": "side-mission-cards/race-on-ryloth.png"
+  },
+  {
+    "id": 37,
+    "name": "Siege on Geonosis",
+    "color": "Green",
+    "image": "side-mission-cards/siege-on-geonosis.png"
+  },
+  {
+    "id": 38,
+    "name": "Call to Action",
+    "color": "Grey",
+    "image": "side-mission-cards/call-to-action.png"
+  },
+  {
+    "id": 39,
+    "name": "The Final Order",
+    "color": "Grey",
+    "image": "side-mission-cards/the-final-order.png"
+  },
+  {
+    "id": 40,
+    "name": "Duel on Devaron",
+    "color": "Red",
+    "image": "side-mission-cards/duel-on-devaron.png"
+  },
+  {
+    "id": 41,
+    "name": "Sands of Seelos",
+    "color": "Red",
+    "image": "side-mission-cards/sands-of-seelos.png"
   }
 ]

@@ -698,5 +698,68 @@
     "xp": 4,
     "id": 99,
     "image": "imperial-class-cards/reactive-defenses-targeting-sensors.png"
+  },
+  {
+    "id": 100,
+    "class_id": 11,
+    "name": "Commence Landing",
+    "xp": null,
+    "image": "imperial-class-cards/overwhelming-oppression-commence-landing.png"
+  },
+  {
+    "id": 101,
+    "class_id": 11,
+    "name": "Personal Flagship",
+    "xp": 1,
+    "image": "imperial-class-cards/overwhelming-oppression-personal-flagship.png"
+  },
+  {
+    "id": 102,
+    "class_id": 11,
+    "name": "Redouble Our Efforts",
+    "xp": 1,
+    "image": "imperial-class-cards/overwhelming-oppression-redouble-our-efforts.png"
+  },
+  {
+    "id": 103,
+    "class_id": 11,
+    "name": "Implacable",
+    "xp": 2,
+    "image": "imperial-class-cards/overwhelming-oppression-implacable.png"
+  },
+  {
+    "id": 104,
+    "class_id": 11,
+    "name": "TIE Landers",
+    "xp": 2,
+    "image": "imperial-class-cards/overwhelming-oppression-tie-landers.png"
+  },
+  {
+    "id": 105,
+    "class_id": 11,
+    "name": "Tactical Mastery",
+    "xp": 3,
+    "image": "imperial-class-cards/overwhelming-oppression-tactical-mastery.png"
+  },
+  {
+    "id": 106,
+    "class_id": 11,
+    "name": "TIE Fighter Patrol",
+    "xp": 3,
+    "image": "imperial-class-cards/overwhelming-oppression-tie-fighter-patrol.png"
+  },
+  {
+    "id": 107,
+    "class_id": 11,
+    "name": "Indomitable Force",
+    "xp": 4,
+    "image": "imperial-class-cards/overwhelming-oppression-indomitable-force.png"
+  },
+  {
+    "id": 108,
+    "class_id": 11,
+    "name": "Limitless Arsenal",
+    "xp": 4,
+    "image": "imperial-class-cards/overwhelming-oppression-limitless-arsenal.png"
   }
 ]

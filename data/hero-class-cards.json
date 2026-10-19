@@ -1626,5 +1626,171 @@
     "image": "hero-class-cards/ko-tun-feralo-squad-cohesion.png",
     "type": "Feat",
     "traits": null
+  },
+  {
+    "id": 172,
+    "name": "DC-15S Blaster",
+    "hero_id": 19,
+    "xp": null,
+    "image": "hero-class-cards/ct-1701-dc-15s-blaster.png",
+    "type": "Ranged Weapon",
+    "traits": [
+      "Blaster"
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Covering Fire",
+    "hero_id": 19,
+    "xp": 1,
+    "image": "hero-class-cards/ct-1701-covering-fire.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 174,
+    "name": "Reload",
+    "hero_id": 19,
+    "xp": 1,
+    "image": "hero-class-cards/ct-1701-reload.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 175,
+    "name": "Pin Them Down",
+    "hero_id": 19,
+    "xp": 2,
+    "image": "hero-class-cards/ct-1701-pin-them-down.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 176,
+    "name": "Strafing Run",
+    "hero_id": 19,
+    "xp": 2,
+    "image": "hero-class-cards/ct-1701-strafing-run.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 177,
+    "name": "Squad Tactics",
+    "hero_id": 19,
+    "xp": 3,
+    "image": "hero-class-cards/ct-1701-squad-tactics.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 178,
+    "name": "Weakness Identified",
+    "hero_id": 19,
+    "xp": 3,
+    "image": "hero-class-cards/ct-1701-weakness-identified.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 179,
+    "name": "Wild Fire",
+    "hero_id": 19,
+    "xp": 4,
+    "image": "hero-class-cards/ct-1701-wild-fire.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 180,
+    "name": "Concentrated Fire",
+    "hero_id": 19,
+    "xp": 4,
+    "image": "hero-class-cards/ct-1701-concentrated-fire.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 181,
+    "name": "Reinforced Cyberarm",
+    "hero_id": 20,
+    "xp": null,
+    "image": "hero-class-cards/tress-hacnua-reinforced-cyberarm.png",
+    "type": "Melee Weapon",
+    "traits": [
+      "Fist"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Aryx Variation",
+    "hero_id": 20,
+    "xp": 1,
+    "image": "hero-class-cards/tress-hacnua-aryx-variation.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 183,
+    "name": "Mynock Strike",
+    "hero_id": 20,
+    "xp": 1,
+    "image": "hero-class-cards/tress-hacnua-mynock-strike.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 184,
+    "name": "Dianoga Sweep",
+    "hero_id": 20,
+    "xp": 2,
+    "image": "hero-class-cards/tress-hacnua-dianoga-sweep.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 185,
+    "name": "Gundark Throw",
+    "hero_id": 20,
+    "xp": 2,
+    "image": "hero-class-cards/tress-hacnua-gundark-throw.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 186,
+    "name": "Dragonsnake Variation",
+    "hero_id": 20,
+    "xp": 3,
+    "image": "hero-class-cards/tress-hacnua-dragonsnake-variation.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 187,
+    "name": "Acklay Counter",
+    "hero_id": 20,
+    "xp": 3,
+    "image": "hero-class-cards/tress-hacnua-acklay-counter.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 188,
+    "name": "Krayt Dragon Fury",
+    "hero_id": 20,
+    "xp": 4,
+    "image": "hero-class-cards/tress-hacnua-krayt-dragon-fury.png",
+    "type": "Feat",
+    "traits": null
+  },
+  {
+    "id": 189,
+    "name": "Fluidity",
+    "hero_id": 20,
+    "xp": 4,
+    "image": "hero-class-cards/tress-hacnua-fluidity.png",
+    "type": "Feat",
+    "traits": null
   }
 ]
