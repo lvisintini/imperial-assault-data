@@ -3772,7 +3772,10 @@
     "traits": [
       "Creature"
     ],
-    "modes": [],
+    "modes": [
+      "Campaign",
+      "Skirmish"
+    ],
     "deployment_cost": 4,
     "reinforce_cost": 2,
     "deployment_group": 2,
