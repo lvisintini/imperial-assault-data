@@ -322,5 +322,23 @@
     "variant": "Heart of the Empire",
     "content_type": "story-mission-cards",
     "image": "card-backs/story-mission-heart-of-the-empire.png"
+  },
+  {
+    "deck": "Imperial Class",
+    "variant": "Overwhelming Oppression",
+    "content_type": "imperial-classes",
+    "image": "card-backs/imperial-class-overwhelming-oppression.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "CT-1701",
+    "content_type": "heroes",
+    "image": "card-backs/rebel-hero-ct-1701.png"
+  },
+  {
+    "deck": "Rebel Hero",
+    "variant": "Tress Hacnua",
+    "content_type": "heroes",
+    "image": "card-backs/rebel-hero-tress-hacnua.png"
   }
 ]
