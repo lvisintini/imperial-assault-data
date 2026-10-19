@@ -1,5 +1,6 @@
 import {html} from './html.js';
 import {FKS} from './relations.js';
+import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, writeFilters} from './facets.js';
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, title} from './types.js';
 
@@ -41,7 +42,7 @@ function subtitle(ref, db) {
 function tile(ref, db) {
   const path = thumbPath(ref, db);
   const name = title(ref);
-  return html`<a class="tile" href="${href(ref)}" data-name="${name.toLowerCase()}">
+  return html`<a class="tile" href="${href(ref)}"${path ? html` data-peek="${imageUrl('large', path)}"` : ''}>
     <span class="thumb">${path
       ? html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">`
       : html`<span class="no-image">No image</span>`}</span>
@@ -52,21 +53,18 @@ function tile(ref, db) {
 
 const grid = (refs, db, keys) => html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db))}</div>`;
 
-// A type's `groups` (types.js) as nested sections: <h2> for the first level, <h3> below it.
-const groupOf = (level, {record}) =>
-  level.trait ? (record.traits?.includes(level.trait) ? level.yes : level.no) : record[level.field];
-const groupOrder = level => level.trait ? [level.no, level.yes] : level.order;
-
+// Nested sections by facet (facets.js): <h2> for the first level, <h3> below it. Records with several values (traits,
+// products) appear under each of them; records with none come last.
 function sections(refs, levels, db, keys, depth = 0) {
   if (!levels.length) return grid(refs, db, keys);
-  const [level, ...rest] = levels;
-  const byGroup = Map.groupBy(refs, ref => groupOf(level, ref));
-  const order = groupOrder(level);
-  return [...order, ...[...byGroup.keys()].filter(g => !order.includes(g))].filter(g => byGroup.has(g)).map(g => {
-    const count = html` <span class="count">${byGroup.get(g).length}</span>`;
+  const [facet, ...rest] = levels;
+  const groups = facet.choices.map(c => [c.heading, refs.filter(ref => facet.of(ref).includes(c.key))]);
+  groups.push([`No ${facet.label.toLowerCase()}`, refs.filter(ref => !facet.of(ref).length)]);
+  return groups.filter(([, members]) => members.length).map(([heading, members]) => {
+    const count = html` <span class="count">${members.length}</span>`;
     return html`<section class="group">
-      ${depth ? html`<h3>${g}${count}</h3>` : html`<h2>${g}${count}</h2>`}
-      ${sections(byGroup.get(g), rest, db, keys, depth + 1)}
+      ${depth ? html`<h3>${heading}${count}</h3>` : html`<h2>${heading}${count}</h2>`}
+      ${sections(members, rest, db, keys, depth + 1)}
     </section>`;
   });
 }
@@ -89,6 +87,58 @@ function sortControls(type, fields, keys) {
         aria-label="${fieldLabel(field)}: ${desc ? 'descending' : 'ascending'}">${desc ? '↓ Desc' : '↑ Asc'}</button>` : ''}
     </span>`;
   })}${sameKeys(keys, defaultSort(type)) ? '' : html`<button type="button" data-reset>Reset</button>`}`;
+}
+
+const GROUP_LEVELS = 2;
+
+// "Group by [facet] then [facet]", from the facets with fixed values.
+function groupControls(groupable, groups, defaults) {
+  const levels = groups.slice(0, GROUP_LEVELS);
+  if (levels.length < Math.min(GROUP_LEVELS, groupable.length)) levels.push('');
+  return html`<span class="sort-label">Group by</span>${levels.map((id, i) => html`<span class="sort-level">
+      ${i ? html`<span class="sort-label">then</span>` : ''}
+      <select data-group-level="${i}" aria-label="${i ? 'Then group by' : 'Group by'}">
+        <option value="">—</option>
+        ${groupable.map(f => html`<option value="${f.id}"${f.id === id ? html` selected` : ''}>${f.label}</option>`)}
+      </select>
+    </span>`)}${sameKeys(groups, defaults) ? '' : html`<button type="button" data-group-reset>Reset</button>`}`;
+}
+
+// A fieldset per facet: checkboxes (their counts are filled in by the page) or a min/max pair.
+function filterPanel(facets, filters) {
+  return facets.map(facet => facet.kind === 'range' ? html`
+    <fieldset class="facet">
+      <legend>${facet.label}</legend>
+      <span class="range">${['min', 'max'].map((bound, i) => html`${i ? html`<span aria-hidden="true">–</span>` : ''}
+        <input type="number" inputmode="numeric" data-facet="${facet.id}" data-bound="${bound}" min="${facet.min}"
+          max="${facet.max}" placeholder="${facet[bound]}" value="${filters[facet.id]?.[bound] ?? ''}"
+          aria-label="${facet.label}: ${i ? 'at most' : 'at least'}">`)}
+      </span>
+    </fieldset>` : html`
+    <fieldset class="facet${facet.choices.length > 8 ? ' long' : ''}">
+      <legend>${facet.label}</legend>
+      ${facet.choices.map(c => html`<label class="choice">
+        <input type="checkbox" data-facet="${facet.id}" data-key="${c.key}"
+          ${filters[facet.id]?.has(c.key) ? html`checked` : ''}>
+        <span class="choice-label">${c.label}</span> <span class="count" data-count="${facet.id}:${c.key}"></span>
+      </label>`)}
+    </fieldset>`);
+}
+
+// Groups from ?group=: facet ids; "none" for no grouping; the type's default when missing.
+function readGroups(param, groupable, defaults) {
+  if (param == null) return defaults;
+  const ids = param.split(',').filter(id => groupable.some(f => f.id === id));
+  return [...new Set(ids)].slice(0, GROUP_LEVELS);
+}
+
+// Re-render a control group, keeping focus on the same control (matched by its data attributes) or its first select.
+function rerender(container, markup) {
+  const active = container.contains(document.activeElement) ? document.activeElement : null;
+  const selector = active && Object.entries(active.dataset)
+    .map(([k, v]) => `[data-${k.replace(/[A-Z]/g, c => `-${c.toLowerCase()}`)}="${v}"]`).join('');
+  container.innerHTML = String(markup);
+  if (active) (selector && container.querySelector(selector) || container.querySelector('select'))?.focus();
 }
 
 // Refs of mixed types, one sub-heading per type, in navigation order.
@@ -153,56 +203,132 @@ async function renderDiagrams(el) {
   }
 }
 
-export function index(db, type, query, sortParam) {
+export function index(db, type, params) {
   const t = TYPE[type];
   const refs = db.refs[type];
   const fields = sortableFields(type, refs);
-  let keys = parseSort(type, sortParam, fields);
-  const list = () => t.groups ? sections(refs, t.groups, db, keys) : grid(refs, db, keys);
+  const facets = facetsFor(type, refs, db);
+  const groupable = facets.filter(f => f.kind === 'choice');
+  const defaults = defaultGroups(type, facets);
+  const state = {
+    q: params.get('q') ?? '',
+    keys: parseSort(type, params.get('sort'), fields),
+    groups: readGroups(params.get('group'), groupable, defaults),
+    filters: readFilters(params, facets),
+  };
+  const matching = () => applyFilters(refs, facets, state.filters, state.q);
+  const list = shown => {
+    if (!shown.length) return html`<p class="status">No matches.</p>`;
+    const levels = state.groups.map(id => groupable.find(f => f.id === id));
+    return levels.length ? sections(shown, levels, db, state.keys) : grid(shown, db, state.keys);
+  };
   return {
     title: t.label,
     body: html`
       <h1>${t.label} <span class="count">${refs.length}</span></h1>
       <div class="controls">
         <input type="search" id="filter" class="filter" placeholder="Filter by name" aria-label="Filter by name"
-          value="${query}">
-        <div class="sort" id="sort">${sortControls(type, fields, keys)}</div>
+          value="${state.q}">
+        <div class="sort" id="sort">${sortControls(type, fields, state.keys)}</div>
+        ${groupable.length
+          ? html`<div class="sort" id="group">${groupControls(groupable, state.groups, defaults)}</div>` : ''}
       </div>
-      <div id="list">${list()}</div>
-      <p class="status" id="no-matches" hidden>No matches.</p>`,
+      <div class="browse">
+        ${facets.length ? html`<details class="filters" id="filters">
+          <summary>Filters</summary>
+          <div class="filters-body">${filterPanel(facets, state.filters)}</div>
+        </details>` : ''}
+        <div class="results">
+          <p class="summary" id="summary"></p>
+          <div id="list">${list(matching())}</div>
+        </div>
+      </div>`,
     mount: el => {
       const input = el.querySelector('#filter');
       const sortEl = el.querySelector('#sort');
+      const groupEl = el.querySelector('#group');
+      const panel = el.querySelector('#filters');
       const listEl = el.querySelector('#list');
-      const apply = () => {
-        const q = input.value.trim();
-        const tiles = [...listEl.querySelectorAll('.tile')];
-        for (const tile of tiles) tile.hidden = !tile.dataset.name.includes(q.toLowerCase());
-        for (const group of listEl.querySelectorAll('.group')) {
-          const shown = group.querySelectorAll('.tile:not([hidden])').length;
-          group.hidden = !shown;
-          group.querySelector(':scope > :is(h2, h3) .count').textContent = shown;
-        }
-        el.querySelector('#no-matches').hidden = tiles.some(tile => !tile.hidden);
-        const params = [q && `q=${encodeURIComponent(q)}`, !sameKeys(keys, defaultSort(type)) && `sort=${keys.join(',')}`];
-        // replaceState doesn't fire hashchange, so typing or sorting doesn't re-render the page (or steal focus).
-        history.replaceState(null, '', `#/${type}${params.some(Boolean) ? `?${params.filter(Boolean).join('&')}` : ''}`);
+      const summary = el.querySelector('#summary');
+
+      const writeUrl = () => {
+        const parts = [
+          state.q.trim() && `q=${encodeURIComponent(state.q.trim())}`,
+          !sameKeys(state.keys, defaultSort(type)) && `sort=${state.keys.join(',')}`,
+          !sameKeys(state.groups, defaults) && `group=${state.groups.join(',') || 'none'}`,
+          ...writeFilters(state.filters, facets),
+        ].filter(Boolean);
+        // replaceState doesn't fire hashchange, so changing the controls doesn't re-render the page (or steal focus).
+        history.replaceState(null, '', `#/${type}${parts.length ? `?${parts.join('&')}` : ''}`);
       };
+      const update = ({rerenderList = true} = {}) => {
+        const shown = matching();
+        if (rerenderList) listEl.innerHTML = String(list(shown));
+        const filtered = anyActive(state.filters) || state.q.trim();
+        summary.innerHTML = String(html`Showing ${shown.length} of ${refs.length}${filtered
+          ? html` <button type="button" data-clear>Clear filters</button>` : ''}`);
+        const tally = counts(refs, facets, state.filters, state.q);
+        for (const count of panel?.querySelectorAll('[data-count]') ?? []) {
+          const at = count.dataset.count.indexOf(':');
+          const [id, key] = [count.dataset.count.slice(0, at), count.dataset.count.slice(at + 1)];
+          const n = tally[id]?.[key] ?? 0;
+          const box = count.parentElement.querySelector('input');
+          count.textContent = n;
+          box.disabled = !box.checked && n === 0;
+          count.parentElement.classList.toggle('empty', box.disabled);
+        }
+        writeUrl();
+      };
+
+      input.addEventListener('input', () => {
+        state.q = input.value;
+        update();
+      });
+      summary.addEventListener('click', event => {
+        if (!event.target.closest('[data-clear]')) return;
+        state.filters = {};
+        state.q = input.value = '';
+        for (const box of panel?.querySelectorAll('input[type=checkbox]') ?? []) box.checked = false;
+        for (const bound of panel?.querySelectorAll('input[type=number]') ?? []) bound.value = '';
+        update();
+        input.focus();
+      });
+
+      panel?.addEventListener('change', event => {
+        const box = event.target.closest('input[type=checkbox]');
+        if (!box) return;
+        const chosen = state.filters[box.dataset.facet] ??= new Set();
+        if (box.checked) chosen.add(box.dataset.key);
+        else chosen.delete(box.dataset.key);
+        update();
+      });
+      let typing = null;
+      panel?.addEventListener('input', event => {
+        const bound = event.target.closest('input[type=number]');
+        if (!bound) return;
+        const read = side => {
+          const value = panel.querySelector(`[data-facet="${bound.dataset.facet}"][data-bound="${side}"]`).value;
+          return value === '' ? null : Number(value);
+        };
+        clearTimeout(typing);
+        typing = setTimeout(() => {
+          state.filters[bound.dataset.facet] = {min: read('min'), max: read('max')};
+          update();
+        }, 250);
+      });
+      // Open beside the list on wide screens; on narrow ones only when filters are already set.
+      const wide = globalThis.matchMedia?.('(min-width: 900px)').matches;
+      if (panel && (wide || anyActive(state.filters))) panel.open = true;
+
       const setKeys = next => {
-        // Re-rendering the controls drops focus; put it back on the same control (or the first one).
-        const active = sortEl.contains(document.activeElement) ? document.activeElement.dataset : null;
-        const selector = active?.level ? `[data-level="${active.level}"]`
-          : active?.direction ? `[data-direction="${active.direction}"]` : 'select';
-        keys = next.length ? next : defaultSort(type);
-        listEl.innerHTML = String(list());
-        sortEl.innerHTML = String(sortControls(type, fields, keys));
-        if (active) (sortEl.querySelector(selector) ?? sortEl.querySelector('select')).focus();
-        apply();
+        state.keys = next.length ? next : defaultSort(type);
+        rerender(sortEl, sortControls(type, fields, state.keys));
+        update();
       };
       sortEl.addEventListener('change', event => {
         const i = Number(event.target.dataset.level);
         const field = event.target.value;
-        const next = [...keys];
+        const next = [...state.keys];
         if (!field) next.splice(i, 1);
         else next[i] = (next[i]?.startsWith('-') ? '-' : '') + field;
         setKeys(next.filter((key, j) => !field || j === i || key.replace(/^-/, '') !== field));
@@ -212,10 +338,27 @@ export function index(db, type, query, sortParam) {
         if (!button) return;
         if (button.dataset.reset !== undefined) return setKeys(defaultSort(type));
         const i = Number(button.dataset.direction);
-        setKeys(keys.map((key, j) => j !== i ? key : key.startsWith('-') ? key.slice(1) : `-${key}`));
+        setKeys(state.keys.map((key, j) => j !== i ? key : key.startsWith('-') ? key.slice(1) : `-${key}`));
       });
-      input.addEventListener('input', apply);
-      if (query) apply();
+
+      const setGroups = next => {
+        state.groups = next;
+        rerender(groupEl, groupControls(groupable, state.groups, defaults));
+        update();
+      };
+      groupEl?.addEventListener('change', event => {
+        const i = Number(event.target.dataset.groupLevel);
+        const id = event.target.value;
+        const next = [...state.groups];
+        if (!id) next.splice(i, 1);
+        else next[i] = id;
+        setGroups(next.filter((g, j) => !id || j === i || g !== id));
+      });
+      groupEl?.addEventListener('click', event => {
+        if (event.target.closest('[data-group-reset]')) setGroups(defaults);
+      });
+
+      update({rerenderList: false});
     },
   };
 }

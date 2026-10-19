@@ -56,9 +56,30 @@ class TestSite:
             keys = [key.removeprefix('-') for key in strings(sort.group(1))] if sort else ['name']
             assert set(keys) <= set(get_schema(content_type)['properties']), content_type
 
-    def test_deployment_groups_use_schema_values(self):
-        entry = site_types()[CONTENT_TYPES.DEPLOYMENT]
+    def test_facet_config_uses_schema_fields(self):
+        """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave' (facets.js)."""
         definitions = get_schema('definitions')['definitions']
-        assert re.search(r"trait: '([^']+)'", entry).group(1) in definitions['deployment-trait']['enum']
-        field, order = re.search(r"field: '(\w+)', order: \[([^\]]*)\]", entry).groups()
-        assert field == 'affiliation' and strings(order) == definitions['affiliation']['enum']
+        for content_type, entry in site_types().items():
+            facets = re.search(r"facets: \[(.*?)\n    \],", entry, re.S)
+            derived = {}
+            if facets:
+                for spec in re.findall(r"\{([^}]*)\}", facets.group(1)):
+                    derived[re.search(r"id: '([^']+)'", spec).group(1)] = re.search(r"trait: '([^']+)'", spec).group(1)
+                named = strings(re.sub(r"\{[^}]*\}", '', facets.group(1)))
+            else:
+                named = []
+            groups = re.search(r"groups: \[([^\]]*)\]", entry)
+            order = re.search(r"order: \{(.*?)\}", entry, re.S)
+            fields = set(get_schema(content_type)['properties']) if 'hidden: true' not in entry else set()
+            known = fields | set(derived) | {'source', 'wave'}
+            assert set(named) <= known, content_type
+            assert set(strings(groups.group(1)) if groups else []) <= set(named) | set(derived), content_type
+            for field in re.findall(r"(\w+): \[", order.group(1)) if order else []:
+                assert field in fields, (content_type, field)
+            for trait in derived.values():
+                assert trait in definitions['deployment-trait']['enum'], (content_type, trait)
+
+    def test_deployment_affiliation_order_is_the_schema_enum(self):
+        entry = site_types()[CONTENT_TYPES.DEPLOYMENT]
+        order = re.search(r"affiliation: \[([^\]]*)\]", entry).group(1)
+        assert strings(order) == get_schema('definitions')['definitions']['affiliation']['enum']
