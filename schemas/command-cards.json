@@ -29,7 +29,7 @@
       "description": "Determines the maximum number of copies of this command card in your command deck.",
       "type": "integer",
       "minimum": 1,
-      "maximum": 2
+      "maximum": 3
     },
     "image": {
       "description": "The file path for this command card's image.",
