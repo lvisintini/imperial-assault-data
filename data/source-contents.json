@@ -3753,5 +3753,435 @@
     "source_id": 0,
     "content_type": "command-cards",
     "content_id": 205
+  },
+  {
+    "source_id": 42,
+    "content_type": "command-cards",
+    "content_id": 206
+  },
+  {
+    "source_id": 42,
+    "content_type": "command-cards",
+    "content_id": 207
+  },
+  {
+    "source_id": 42,
+    "content_type": "command-cards",
+    "content_id": 208
+  },
+  {
+    "source_id": 42,
+    "content_type": "command-cards",
+    "content_id": 209
+  },
+  {
+    "source_id": 42,
+    "content_type": "command-cards",
+    "content_id": 210
+  },
+  {
+    "source_id": 42,
+    "content_type": "reward-cards",
+    "content_id": 54
+  },
+  {
+    "source_id": 42,
+    "content_type": "reward-cards",
+    "content_id": 55
+  },
+  {
+    "source_id": 42,
+    "content_type": "reward-cards",
+    "content_id": 56
+  },
+  {
+    "source_id": 42,
+    "content_type": "reward-cards",
+    "content_id": 57
+  },
+  {
+    "source_id": 42,
+    "content_type": "reward-cards",
+    "content_id": 58
+  },
+  {
+    "source_id": 42,
+    "content_type": "reward-cards",
+    "content_id": 59
+  },
+  {
+    "source_id": 42,
+    "content_type": "supply-cards",
+    "content_id": 22
+  },
+  {
+    "source_id": 42,
+    "content_type": "supply-cards",
+    "content_id": 23
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 161
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 162
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 163
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 164
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 165
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 166
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 167
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 168
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 169
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 170
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 171
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 172
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 173
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 174
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 175
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 176
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 177
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 178
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 179
+  },
+  {
+    "source_id": 42,
+    "content_type": "deployment-cards",
+    "content_id": 180
+  },
+  {
+    "source_id": 42,
+    "content_type": "heroes",
+    "content_id": 19
+  },
+  {
+    "source_id": 42,
+    "content_type": "heroes",
+    "content_id": 20
+  },
+  {
+    "source_id": 42,
+    "content_type": "upgrade-cards",
+    "content_id": 78
+  },
+  {
+    "source_id": 42,
+    "content_type": "upgrade-cards",
+    "content_id": 79
+  },
+  {
+    "source_id": 42,
+    "content_type": "upgrade-cards",
+    "content_id": 80
+  },
+  {
+    "source_id": 42,
+    "content_type": "upgrade-cards",
+    "content_id": 81
+  },
+  {
+    "source_id": 42,
+    "content_type": "upgrade-cards",
+    "content_id": 82
+  },
+  {
+    "source_id": 42,
+    "content_type": "upgrade-cards",
+    "content_id": 83
+  },
+  {
+    "source_id": 42,
+    "content_type": "side-mission-cards",
+    "content_id": 36
+  },
+  {
+    "source_id": 42,
+    "content_type": "side-mission-cards",
+    "content_id": 37
+  },
+  {
+    "source_id": 42,
+    "content_type": "side-mission-cards",
+    "content_id": 38
+  },
+  {
+    "source_id": 42,
+    "content_type": "side-mission-cards",
+    "content_id": 39
+  },
+  {
+    "source_id": 42,
+    "content_type": "side-mission-cards",
+    "content_id": 40
+  },
+  {
+    "source_id": 42,
+    "content_type": "side-mission-cards",
+    "content_id": 41
+  },
+  {
+    "source_id": 42,
+    "content_type": "agenda-decks",
+    "content_id": 38
+  },
+  {
+    "source_id": 42,
+    "content_type": "agenda-decks",
+    "content_id": 39
+  },
+  {
+    "source_id": 42,
+    "content_type": "imperial-classes",
+    "content_id": 11
+  },
+  {
+    "source_id": 43,
+    "content_type": "command-cards",
+    "content_id": 211
+  },
+  {
+    "source_id": 43,
+    "content_type": "command-cards",
+    "content_id": 212
+  },
+  {
+    "source_id": 43,
+    "content_type": "command-cards",
+    "content_id": 213
+  },
+  {
+    "source_id": 43,
+    "content_type": "command-cards",
+    "content_id": 214
+  },
+  {
+    "source_id": 43,
+    "content_type": "command-cards",
+    "content_id": 215
+  },
+  {
+    "source_id": 43,
+    "content_type": "deployment-cards",
+    "content_id": 181
+  },
+  {
+    "source_id": 43,
+    "content_type": "side-mission-cards",
+    "content_id": 42
+  },
+  {
+    "source_id": 43,
+    "content_type": "deployment-cards",
+    "content_id": 172
+  },
+  {
+    "source_id": 43,
+    "content_type": "deployment-cards",
+    "content_id": 173
+  },
+  {
+    "source_id": 43,
+    "content_type": "deployment-cards",
+    "content_id": 174
+  },
+  {
+    "source_id": 43,
+    "content_type": "deployment-cards",
+    "content_id": 175
+  },
+  {
+    "source_id": 44,
+    "content_type": "command-cards",
+    "content_id": 216
+  },
+  {
+    "source_id": 44,
+    "content_type": "command-cards",
+    "content_id": 217
+  },
+  {
+    "source_id": 44,
+    "content_type": "command-cards",
+    "content_id": 218
+  },
+  {
+    "source_id": 44,
+    "content_type": "command-cards",
+    "content_id": 219
+  },
+  {
+    "source_id": 44,
+    "content_type": "deployment-cards",
+    "content_id": 182
+  },
+  {
+    "source_id": 44,
+    "content_type": "agenda-decks",
+    "content_id": 40
+  },
+  {
+    "source_id": 44,
+    "content_type": "deployment-cards",
+    "content_id": 168
+  },
+  {
+    "source_id": 44,
+    "content_type": "deployment-cards",
+    "content_id": 169
+  },
+  {
+    "source_id": 45,
+    "content_type": "command-cards",
+    "content_id": 220
+  },
+  {
+    "source_id": 45,
+    "content_type": "command-cards",
+    "content_id": 221
+  },
+  {
+    "source_id": 45,
+    "content_type": "command-cards",
+    "content_id": 222
+  },
+  {
+    "source_id": 45,
+    "content_type": "command-cards",
+    "content_id": 223
+  },
+  {
+    "source_id": 45,
+    "content_type": "deployment-cards",
+    "content_id": 183
+  },
+  {
+    "source_id": 45,
+    "content_type": "side-mission-cards",
+    "content_id": 43
+  },
+  {
+    "source_id": 45,
+    "content_type": "deployment-cards",
+    "content_id": 176
+  },
+  {
+    "source_id": 45,
+    "content_type": "deployment-cards",
+    "content_id": 177
+  },
+  {
+    "source_id": 45,
+    "content_type": "deployment-cards",
+    "content_id": 180
+  },
+  {
+    "source_id": 46,
+    "content_type": "command-cards",
+    "content_id": 224
+  },
+  {
+    "source_id": 46,
+    "content_type": "command-cards",
+    "content_id": 225
+  },
+  {
+    "source_id": 46,
+    "content_type": "command-cards",
+    "content_id": 226
+  },
+  {
+    "source_id": 46,
+    "content_type": "command-cards",
+    "content_id": 227
+  },
+  {
+    "source_id": 46,
+    "content_type": "deployment-cards",
+    "content_id": 184
+  },
+  {
+    "source_id": 46,
+    "content_type": "agenda-decks",
+    "content_id": 41
+  },
+  {
+    "source_id": 46,
+    "content_type": "deployment-cards",
+    "content_id": 162
+  },
+  {
+    "source_id": 46,
+    "content_type": "deployment-cards",
+    "content_id": 161
   }
 ]

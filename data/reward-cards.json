@@ -396,5 +396,47 @@
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/x-8-upgrade.png"
+  },
+  {
+    "id": 54,
+    "name": "Bullseye!",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/bullseye.png"
+  },
+  {
+    "id": 55,
+    "name": "Hondo's Treasure",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/hondos-treasure.png"
+  },
+  {
+    "id": 56,
+    "name": "Nova Cell Leader",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/nova-cell-leader.png"
+  },
+  {
+    "id": 57,
+    "name": "Rough Rider",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/rough-rider.png"
+  },
+  {
+    "id": 58,
+    "name": "Tech Specialist",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/tech-specialist.png"
+  },
+  {
+    "id": 59,
+    "name": "Wholeness",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/wholeness.png"
   }
 ]

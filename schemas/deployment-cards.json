@@ -46,7 +46,7 @@
     },
     "modes": {
       "type": "array",
-      "minItems": 0,
+      "minItems": 1,
       "description": "Game modes in which this deployment card can be used.",
       "uniqueItems": true,
       "items": {
