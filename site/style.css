@@ -95,7 +95,74 @@ input[type="search"] {
 .sort select:hover, .sort button:hover { border-color: var(--accent); }
 
 .group > h2 { margin-top: 24px; }
-.group[hidden] { display: none; }
+
+.browse { display: grid; gap: 16px; }
+.results { min-width: 0; }
+.summary { margin: 0 0 12px; color: var(--muted); font-size: 0.875rem; }
+.summary button {
+  margin-left: 8px;
+  padding: 2px 8px;
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.filters {
+  align-self: start;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.filters summary { font-weight: 600; cursor: pointer; }
+.filters-body { display: grid; gap: 12px; margin-top: 8px; }
+.facet { margin: 0; padding: 0; border: 0; min-width: 0; }
+.facet legend { padding: 0; margin-bottom: 4px; font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+.facet.long { max-height: 220px; overflow-y: auto; }
+.choice { display: flex; align-items: baseline; gap: 6px; font-size: 0.875rem; cursor: pointer; }
+.choice .count { margin-left: auto; font-size: 0.75rem; }
+.choice.empty { color: var(--muted); cursor: default; }
+.range { display: flex; align-items: center; gap: 6px; }
+.range input {
+  width: 100%;
+  min-width: 0;
+  padding: 4px 6px;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 900px) {
+  .browse { grid-template-columns: 240px minmax(0, 1fr); }
+  .filters { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; }
+}
+
+/* The hover peek (peek.js): a large image beside the tile, never in the pointer's way. */
+.peek {
+  position: fixed;
+  z-index: 10;
+  padding: 6px;
+  pointer-events: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
+}
+.peek[hidden] { display: none; }
+.peek img {
+  display: block;
+  width: 340px;
+  max-width: calc(100vw - 48px);
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
 
 .nav {
   display: flex;
@@ -140,7 +207,6 @@ main {
   border-radius: var(--radius);
 }
 .tile:hover, .tile:focus-visible { border-color: var(--accent); }
-.tile[hidden] { display: none; }
 
 .thumb {
   display: flex;
