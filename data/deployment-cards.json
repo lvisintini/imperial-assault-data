@@ -4001,5 +4001,89 @@
     "iaspec": "zeborrelios",
     "health": 15,
     "speed": 4
+  },
+  {
+    "id": 181,
+    "name": "Doubt",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": null,
+    "image": "deployment-cards/doubt-skirmish.png",
+    "iaspec": "doubt",
+    "health": null,
+    "speed": null
+  },
+  {
+    "id": 182,
+    "name": "Lie in Ambush",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": null,
+    "image": "deployment-cards/lie-in-ambush-skirmish.png",
+    "iaspec": "lieinambush",
+    "health": null,
+    "speed": null
+  },
+  {
+    "id": 183,
+    "name": "Extra Armor",
+    "description": null,
+    "elite": true,
+    "unique": false,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": null,
+    "image": "deployment-cards/extra-armor-elite-skirmish.png",
+    "iaspec": "extraarmor",
+    "health": null,
+    "speed": null
+  },
+  {
+    "id": 184,
+    "name": "Heavy Fire",
+    "description": null,
+    "elite": false,
+    "unique": true,
+    "affiliation": "Neutral",
+    "traits": [
+      "Skirmish Upgrade"
+    ],
+    "modes": [
+      "Skirmish"
+    ],
+    "deployment_cost": 1,
+    "reinforce_cost": null,
+    "deployment_group": null,
+    "image": "deployment-cards/heavy-fire-skirmish.png",
+    "iaspec": "heavyfire",
+    "health": null,
+    "speed": null
   }
 ]

@@ -1686,5 +1686,141 @@
     "limit": 1,
     "image": "command-cards/wild-fire.png",
     "iaspec": "wildfire"
+  },
+  {
+    "id": 211,
+    "name": "Dying Lunge",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/dying-lunge.png",
+    "iaspec": "dyinglunge"
+  },
+  {
+    "id": 212,
+    "name": "Hour of Need",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/hour-of-need.png",
+    "iaspec": "hourofneed"
+  },
+  {
+    "id": 213,
+    "name": "Learn by Example",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/learn-by-example.png",
+    "iaspec": "learnbyexample"
+  },
+  {
+    "id": 214,
+    "name": "Protect the Old Ways",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/protect-the-old-ways.png",
+    "iaspec": "protecttheoldways"
+  },
+  {
+    "id": 215,
+    "name": "Second Chance",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/second-chance.png",
+    "iaspec": "secondchance"
+  },
+  {
+    "id": 216,
+    "name": "Hostile Negotiation",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/hostile-negotiation.png",
+    "iaspec": "hostilenegotiation"
+  },
+  {
+    "id": 217,
+    "name": "Let's Make a Deal",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/lets-make-a-deal.png",
+    "iaspec": "letsmakeadeal"
+  },
+  {
+    "id": 218,
+    "name": "Out of Time",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/out-of-time.png",
+    "iaspec": "outoftime"
+  },
+  {
+    "id": 219,
+    "name": "Worth Every Credit",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/worth-every-credit.png",
+    "iaspec": "wortheverycredit"
+  },
+  {
+    "id": 220,
+    "name": "Escalating Hostility",
+    "cost": 1,
+    "limit": 3,
+    "image": "command-cards/escalating-hostility.png",
+    "iaspec": "escalatinghostility"
+  },
+  {
+    "id": 221,
+    "name": "Karabast!",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/karabast.png",
+    "iaspec": "karabast"
+  },
+  {
+    "id": 222,
+    "name": "Rebel Graffiti",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/rebel-graffiti.png",
+    "iaspec": "rebelgraffiti"
+  },
+  {
+    "id": 223,
+    "name": "Veteran Instincts",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/veteran-instincts.png",
+    "iaspec": "veteraninstincts"
+  },
+  {
+    "id": 224,
+    "name": "Combat Resupply",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/combat-resupply.png",
+    "iaspec": "combatresupply"
+  },
+  {
+    "id": 225,
+    "name": "Foresee",
+    "cost": 0,
+    "limit": 1,
+    "image": "command-cards/foresee.png",
+    "iaspec": "foresee"
+  },
+  {
+    "id": 226,
+    "name": "Induce Rage",
+    "cost": 1,
+    "limit": 1,
+    "image": "command-cards/induce-rage.png",
+    "iaspec": "inducerage"
+  },
+  {
+    "id": 227,
+    "name": "Price of Glory",
+    "cost": 2,
+    "limit": 1,
+    "image": "command-cards/price-of-glory.png",
+    "iaspec": "priceofglory"
   }
 ]

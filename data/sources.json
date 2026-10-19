@@ -299,5 +299,33 @@
     "type": "Expansion",
     "wave": 11,
     "image": "sources/tyrants-of-lothal.png"
+  },
+  {
+    "id": 43,
+    "name": "Ezra Bridger and Kanan Jarrus",
+    "type": "Ally Pack",
+    "wave": 11,
+    "image": "sources/ezra-bridger-and-kanan-jarrus.png"
+  },
+  {
+    "id": 44,
+    "name": "Hondo Ohnaka",
+    "type": "Villain Pack",
+    "wave": 11,
+    "image": "sources/hondo-ohnaka.png"
+  },
+  {
+    "id": 45,
+    "name": "Sabine Wren and Zeb Orrelios",
+    "type": "Ally Pack",
+    "wave": 11,
+    "image": "sources/sabine-wren-and-zeb-orrelios.png"
+  },
+  {
+    "id": 46,
+    "name": "Thrawn",
+    "type": "Villain Pack",
+    "wave": 11,
+    "image": "sources/thrawn.png"
   }
 ]

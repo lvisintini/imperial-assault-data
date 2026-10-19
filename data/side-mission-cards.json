@@ -250,5 +250,17 @@
     "name": "Sands of Seelos",
     "color": "Red",
     "image": "side-mission-cards/sands-of-seelos.png"
+  },
+  {
+    "id": 42,
+    "name": "Executive Overreach",
+    "color": "Green",
+    "image": "side-mission-cards/executive-overreach.png"
+  },
+  {
+    "id": 43,
+    "name": "Intimidation Factor",
+    "color": "Green",
+    "image": "side-mission-cards/intimidation-factor.png"
   }
 ]

@@ -958,5 +958,53 @@
     "influence": 2,
     "mission": false,
     "image": "agenda-cards/weapons-division-prototypes.png"
+  },
+  {
+    "id": 120,
+    "name": "Final Offer",
+    "agenda_id": 40,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/ohnaka-gang-final-offer.png"
+  },
+  {
+    "id": 121,
+    "name": "Missing Treasure",
+    "agenda_id": 40,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/ohnaka-gang-missing-treasure.png"
+  },
+  {
+    "id": 122,
+    "name": "The Pirate's Ploy",
+    "agenda_id": 40,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/ohnaka-gang-the-pirates-ploy.png"
+  },
+  {
+    "id": 123,
+    "name": "Piece By Piece",
+    "agenda_id": 41,
+    "influence": 1,
+    "mission": false,
+    "image": "agenda-cards/the-art-of-war-piece-by-piece.png"
+  },
+  {
+    "id": 124,
+    "name": "The Admiral's Grip",
+    "agenda_id": 41,
+    "influence": 3,
+    "mission": true,
+    "image": "agenda-cards/the-art-of-war-the-admirals-grip.png"
+  },
+  {
+    "id": 125,
+    "name": "Three Steps Ahead",
+    "agenda_id": 41,
+    "influence": 2,
+    "mission": false,
+    "image": "agenda-cards/the-art-of-war-three-steps-ahead.png"
   }
 ]
