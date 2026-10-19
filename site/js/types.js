@@ -1,7 +1,9 @@
 // One entry per data/<file>.json, in navigation order. `images` lists the record's image fields (paths relative to
 // images/large and images/small); `hidden` keeps a type out of navigation and routing. `sort` is the default order
-// (field names, '-' for descending; name when missing). `groups` splits the type's list page into nested sections:
-// by whether records have a trait, or by a field's values in a fixed order.
+// (field names, '-' for descending; name when missing).
+// List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
+// ('source', 'wave'). `facets` picks and orders them, and can add a trait as a yes/no facet with its own labels;
+// `groups` is the default grouping (facet ids); `order` fixes the order of a field's values.
 export const TYPES = [
   {file: 'sources', label: 'Sources', singular: 'Source', images: ['image'], sort: ['id']},
   {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded']},
@@ -11,10 +13,14 @@ export const TYPES = [
   {
     file: 'deployment-cards', label: 'Deployment cards', singular: 'Deployment card', images: ['image'],
     sort: ['-unique', 'name', '-deployment_cost'],
-    groups: [
-      {trait: 'Skirmish Upgrade', yes: 'Skirmish upgrades', no: 'Deployments'},
-      {field: 'affiliation', order: ['Rebel', 'Imperial', 'Mercenary', 'Neutral']},
+    facets: [
+      {id: 'skirmish-upgrade', label: 'Skirmish upgrade', trait: 'Skirmish Upgrade',
+        no: 'Deployments', yes: 'Skirmish upgrades'},
+      'affiliation', 'elite', 'unique', 'modes', 'traits', 'deployment_cost', 'reinforce_cost', 'health', 'speed',
+      'deployment_group', 'source', 'wave',
     ],
+    groups: ['skirmish-upgrade', 'affiliation'],
+    order: {affiliation: ['Rebel', 'Imperial', 'Mercenary', 'Neutral']},
   },
   {file: 'command-cards', label: 'Command cards', singular: 'Command card', images: ['image']},
   {file: 'companion-cards', label: 'Companion cards', singular: 'Companion card', images: ['image']},

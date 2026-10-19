@@ -1,4 +1,5 @@
 import {load} from './data.js';
+import {initPeek} from './peek.js';
 import {TYPE, TYPES} from './types.js';
 import * as views from './views.js';
 
@@ -17,7 +18,7 @@ function resolve(db) {
   if (!type) return views.landing(db);
   if (type === 'search' && key === undefined) return views.search(db, q);
   if (!TYPE[type] || TYPE[type].hidden || rest.length) return views.notFound();
-  if (key === undefined) return views.index(db, type, q, params.get('sort'));
+  if (key === undefined) return views.index(db, type, params);
   const ref = /^\d+$/.test(key) ? db.get(type, Number(key)) : undefined;
   return ref ? views.detail(db, ref) : views.notFound();
 }
@@ -47,6 +48,7 @@ nav.innerHTML = TYPES.filter(t => !t.hidden)
 
 try {
   const db = await load();
+  initPeek(app);
   window.addEventListener('hashchange', () => render(db));
   render(db);
 } catch (error) {
