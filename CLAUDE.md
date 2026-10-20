@@ -29,7 +29,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 - Ids are exactly `0..len-1`, contiguous, with no duplicates (for types not in `CONTENT_TYPES.without_ids`). New records get the next id; never renumber.
 - `source-contents` FKs and the child→parent FKs above must resolve.
 - Deployment rules: skirmish upgrades have no health/speed/group/reinforce cost and are Skirmish-only; unique ⇒ group 1, no reinforce cost; group > 1 ⇔ reinforce cost.
-- `iaspec` values are unique across deployment, command and companion cards.
+- `iaspec` values are unique across deployment, command and companion cards, and follow the rule in `TestCanonicalNames`: `elite` (elite, non-unique cards only) + name, adding mode, then affiliation, then description only while another card would get the same value.
 - Images (`tests/test_images.py`): every referenced file exists in both `large` and `small`, every file on disk is referenced (no orphans), and pixel sizes match the table in README (`ImageTestHelper` holds the expected dims).
 
 ## Adding a new content type
