@@ -1,21 +1,26 @@
 [
   {
+    "id": 0,
     "name": "Bleeding",
     "image": "condition-cards/bleeding.png"
   },
   {
+    "id": 1,
     "name": "Focused",
     "image": "condition-cards/focused.png"
   },
   {
+    "id": 2,
     "name": "Stunned",
     "image": "condition-cards/stunned.png"
   },
   {
+    "id": 3,
     "name": "Weakened",
     "image": "condition-cards/weakened.png"
   },
   {
+    "id": 4,
     "name": "Hidden",
     "image": "condition-cards/hidden.png"
   }

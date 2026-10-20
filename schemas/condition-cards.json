@@ -5,6 +5,11 @@
   "type": "object",
   "definitions": {},
   "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Id for entry",
+      "minimum": 0
+    },
     "name": {
       "type": "string",
       "description": "Condition name",
@@ -16,6 +21,7 @@
     }
   },
   "required": [
+    "id",
     "name",
     "image"
   ],
