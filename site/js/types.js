@@ -5,7 +5,7 @@
 // ('source', 'wave'). `facets` picks and orders them, and can add a trait as a yes/no facet with its own labels;
 // `groups` is the default grouping (facet ids); `order` fixes the order of a field's values.
 export const TYPES = [
-  {file: 'sources', label: 'Sources', singular: 'Source', images: ['image'], sort: ['release_date', 'product_code']},
+  {file: 'sources', label: 'Sources', singular: 'Source', images: ['image'], sort: ['product_code']},
   {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded']},
   {file: 'hero-class-cards', label: 'Hero class cards', singular: 'Hero class card', images: ['image']},
   {file: 'imperial-classes', label: 'Imperial classes', singular: 'Imperial class', images: []},
