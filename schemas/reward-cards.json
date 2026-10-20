@@ -39,6 +39,30 @@
     "type": {
       "description": "Reward type",
       "$ref": "definitions.json#/definitions/buff-type"
+    },
+    "class": {
+      "type": "string",
+      "description": "Reward class: Regular, or a Boon/Bane from a Return to Hoth threat mission.",
+      "enum": [
+        "Regular",
+        "Boon",
+        "Bane"
+      ]
+    },
+    "for": {
+      "description": "The side that can use this reward. Null until it is filled in.",
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": [
+            "Imperial player",
+            "Rebel players"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [
@@ -46,7 +70,8 @@
     "name",
     "image",
     "traits",
-    "type"
+    "type",
+    "class"
   ],
   "additionalProperties": false
 }

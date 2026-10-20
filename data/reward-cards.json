@@ -3,6 +3,8 @@
     "id": 0,
     "name": "Bounty",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/bounty.png"
   },
@@ -10,6 +12,8 @@
     "id": 1,
     "name": "Counterparts",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/counterparts.png"
   },
@@ -17,6 +21,8 @@
     "id": 2,
     "name": "Hunt Them Down",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/hunt-them-down.png"
   },
@@ -24,6 +30,8 @@
     "id": 3,
     "name": "Surveillance Operatives",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/surveillance-operatives.png"
   },
@@ -31,6 +39,8 @@
     "id": 4,
     "name": "Tech Goggles",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Accessory"
     ],
@@ -40,6 +50,8 @@
     "id": 5,
     "name": "Adrenalin Implant",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Accessory"
     ],
@@ -49,6 +61,8 @@
     "id": 6,
     "name": "Allied Operations",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/allied-operations.png"
   },
@@ -56,6 +70,8 @@
     "id": 7,
     "name": "Fearless Leader",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/fearless-leader.png"
   },
@@ -63,6 +79,8 @@
     "id": 8,
     "name": "Imperial Industry",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/imperial-industry.png"
   },
@@ -70,6 +88,8 @@
     "id": 9,
     "name": "Life Debt",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/life-debt.png"
   },
@@ -77,6 +97,8 @@
     "id": 10,
     "name": "Old Wounds",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/old-wounds.png"
   },
@@ -84,6 +106,8 @@
     "id": 11,
     "name": "Peacemaker",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/peacemaker.png"
   },
@@ -91,6 +115,8 @@
     "id": 12,
     "name": "Rebel Recon",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/rebel-recon.png"
   },
@@ -98,6 +124,8 @@
     "id": 13,
     "name": "Shadow Suit",
     "type": "Armor",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Armor",
       "Light"
@@ -108,6 +136,8 @@
     "id": 14,
     "name": "Shu Yen's Lightsaber",
     "type": "Melee Weapon",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Lightsaber",
       "Blade"
@@ -118,6 +148,8 @@
     "id": 15,
     "name": "Special Operations",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/special-operations.png"
   },
@@ -125,6 +157,8 @@
     "id": 16,
     "name": "Supply Deficit",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/supply-deficit.png"
   },
@@ -132,6 +166,8 @@
     "id": 17,
     "name": "The Ways of the Force",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/the-ways-of-the-force.png"
   },
@@ -139,6 +175,8 @@
     "id": 18,
     "name": "Veteran Prowess",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/veteran-prowess.png"
   },
@@ -146,6 +184,8 @@
     "id": 19,
     "name": "Battle Vision",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/battle-vision.png"
   },
@@ -153,6 +193,8 @@
     "id": 20,
     "name": "Iron Hand",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/iron-hand.png"
   },
@@ -160,6 +202,8 @@
     "id": 21,
     "name": "Systems Upgrade",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Enhancement"
     ],
@@ -169,6 +213,8 @@
     "id": 22,
     "name": "Cam Droid",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Accessory"
     ],
@@ -178,6 +224,8 @@
     "id": 23,
     "name": "Lobots Favor",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/lobots-favor.png"
   },
@@ -185,6 +233,8 @@
     "id": 24,
     "name": "Radiant Holocron",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Accessory"
     ],
@@ -194,6 +244,8 @@
     "id": 25,
     "name": "Relief Effort",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/relief-effort.png"
   },
@@ -201,6 +253,8 @@
     "id": 26,
     "name": "Under the Radar",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/under-the-radar.png"
   },
@@ -208,6 +262,8 @@
     "id": 27,
     "name": "Bred for War",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/bred-for-war.png"
   },
@@ -215,6 +271,8 @@
     "id": 28,
     "name": "Desperado",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/desperado.png"
   },
@@ -222,6 +280,8 @@
     "id": 29,
     "name": "Haymaker",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/haymaker.png"
   },
@@ -229,6 +289,8 @@
     "id": 30,
     "name": "Mandalorian Heritage",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/mandalorian-heritage.png"
   },
@@ -236,6 +298,8 @@
     "id": 31,
     "name": "Mercenary Ties",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/mercenary-ties.png"
   },
@@ -243,6 +307,8 @@
     "id": 32,
     "name": "501st Training",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/501st-training.png"
   },
@@ -250,6 +316,8 @@
     "id": 33,
     "name": "Tusken Weaponry",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/tusken-weaponry.png"
   },
@@ -257,6 +325,8 @@
     "id": 34,
     "name": "Cautious Approach",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/cautious-approach.png"
   },
@@ -264,6 +334,8 @@
     "id": 35,
     "name": "Tactical Advance",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/tactical-advance.png"
   },
@@ -271,6 +343,8 @@
     "id": 36,
     "name": "Lady Luck",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/lady-luck.png"
   },
@@ -278,6 +352,8 @@
     "id": 37,
     "name": "Mechanical Salvage",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/mechanical-salvage.png"
   },
@@ -285,6 +361,8 @@
     "id": 38,
     "name": "Intimidation",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/intimidation.png"
   },
@@ -292,6 +370,8 @@
     "id": 39,
     "name": "Quickdraw Holster",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Accessory"
     ],
@@ -301,6 +381,8 @@
     "id": 40,
     "name": "Alliance Efficiency",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/alliance-efficiency.png"
   },
@@ -308,6 +390,8 @@
     "id": 41,
     "name": "Bardottan Shard",
     "type": "Equipment",
+    "class": "Regular",
+    "for": null,
     "traits": [
       "Accessory"
     ],
@@ -317,6 +401,8 @@
     "id": 42,
     "name": "Explosives Clearance",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/explosives-clearance.png"
   },
@@ -324,6 +410,8 @@
     "id": 43,
     "name": "Inside Source",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/inside-source.png"
   },
@@ -331,6 +419,8 @@
     "id": 44,
     "name": "Intercepted Plans",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/intercepted-plans.png"
   },
@@ -338,6 +428,8 @@
     "id": 45,
     "name": "Lessons of History",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/lessons-of-history.png"
   },
@@ -345,6 +437,8 @@
     "id": 46,
     "name": "Mercenary Aid",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/mercenary-aid.png"
   },
@@ -352,6 +446,8 @@
     "id": 47,
     "name": "Populist Support",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/populist-support.png"
   },
@@ -359,6 +455,8 @@
     "id": 48,
     "name": "Power of the Shard",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/power-of-the-shard.png"
   },
@@ -366,6 +464,8 @@
     "id": 49,
     "name": "Scouted Enemies",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/scouted-enemies.png"
   },
@@ -373,6 +473,8 @@
     "id": 50,
     "name": "Tracked Movements",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/tracked-movements.png"
   },
@@ -380,6 +482,8 @@
     "id": 51,
     "name": "Vaders Legion",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/vaders-legion.png"
   },
@@ -387,6 +491,8 @@
     "id": 52,
     "name": "Wookiee Roar",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/wookiee-roar.png"
   },
@@ -394,6 +500,8 @@
     "id": 53,
     "name": "X-8 Upgrade",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/x-8-upgrade.png"
   },
@@ -401,6 +509,8 @@
     "id": 54,
     "name": "Bullseye!",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/bullseye.png"
   },
@@ -408,6 +518,8 @@
     "id": 55,
     "name": "Hondo's Treasure",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/hondos-treasure.png"
   },
@@ -415,6 +527,8 @@
     "id": 56,
     "name": "Nova Cell Leader",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/nova-cell-leader.png"
   },
@@ -422,6 +536,8 @@
     "id": 57,
     "name": "Rough Rider",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/rough-rider.png"
   },
@@ -429,6 +545,8 @@
     "id": 58,
     "name": "Tech Specialist",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/tech-specialist.png"
   },
@@ -436,6 +554,8 @@
     "id": 59,
     "name": "Wholeness",
     "type": "Feat",
+    "class": "Regular",
+    "for": null,
     "traits": null,
     "image": "reward-cards/wholeness.png"
   },
@@ -443,6 +563,8 @@
     "id": 60,
     "name": "Supply Disruption",
     "type": "Feat",
+    "class": "Bane",
+    "for": null,
     "traits": null,
     "image": "reward-cards/supply-disruption.png"
   },
@@ -450,6 +572,8 @@
     "id": 61,
     "name": "Networks Restored",
     "type": "Feat",
+    "class": "Boon",
+    "for": null,
     "traits": null,
     "image": "reward-cards/networks-restored.png"
   },
@@ -457,6 +581,8 @@
     "id": 62,
     "name": "Constant Advantage",
     "type": "Feat",
+    "class": "Bane",
+    "for": null,
     "traits": null,
     "image": "reward-cards/constant-advantage.png"
   },
@@ -464,6 +590,8 @@
     "id": 63,
     "name": "Resurgence",
     "type": "Feat",
+    "class": "Boon",
+    "for": null,
     "traits": null,
     "image": "reward-cards/resurgence.png"
   },
@@ -471,6 +599,8 @@
     "id": 64,
     "name": "Weary from Toil",
     "type": "Feat",
+    "class": "Bane",
+    "for": null,
     "traits": null,
     "image": "reward-cards/weary-from-toil.png"
   },
@@ -478,6 +608,8 @@
     "id": 65,
     "name": "Invigorated by Success",
     "type": "Feat",
+    "class": "Boon",
+    "for": null,
     "traits": null,
     "image": "reward-cards/invigorated-by-success.png"
   },
@@ -485,6 +617,8 @@
     "id": 66,
     "name": "Distractions",
     "type": "Feat",
+    "class": "Bane",
+    "for": null,
     "traits": null,
     "image": "reward-cards/distractions.png"
   },
@@ -492,6 +626,8 @@
     "id": 67,
     "name": "Strategy Executed",
     "type": "Feat",
+    "class": "Boon",
+    "for": null,
     "traits": null,
     "image": "reward-cards/strategy-executed.png"
   }
