@@ -20,18 +20,26 @@ export function parseSort(type, param, fields) {
 
 export const sameKeys = (a, b) => a.join(',') === b.join(',');
 
-const compareValues = (a, b) => typeof a === 'string' ? a.localeCompare(b, undefined, {numeric: true}) : a - b;
+// Values listed in the field's `order` (types.js) come first, in that order; the rest follow, compared as usual.
+function compareValues(a, b, ranked = []) {
+  const rank = value => ranked.indexOf(value) + 1 || ranked.length + 1;
+  return rank(a) - rank(b) || (typeof a === 'string' ? a.localeCompare(b, undefined, {numeric: true}) : a - b);
+}
 
 export function sortRefs(refs, keys) {
-  const order = keys.map(key => ({field: key.replace(/^-/, ''), sign: key.startsWith('-') ? -1 : 1}));
+  const orders = TYPE[refs[0]?.type]?.order ?? {};
+  const order = keys.map(key => {
+    const field = key.replace(/^-/, '');
+    return {field, sign: key.startsWith('-') ? -1 : 1, ranked: orders[field]};
+  });
   return [...refs].sort((a, b) => {
-    for (const {field, sign} of order) {
+    for (const {field, sign, ranked} of order) {
       const x = a.record[field], y = b.record[field];
       if (x == null || y == null) {
         if (x != null || y != null) return x == null ? 1 : -1;  // missing values last, in either direction
         continue;
       }
-      const diff = compareValues(x, y);
+      const diff = compareValues(x, y, ranked);
       if (diff) return sign * diff;
     }
     return a.index - b.index;  // ties keep the file's order

@@ -89,3 +89,15 @@ class TestSite:
         entry = site_types()[CONTENT_TYPES.DEPLOYMENT]
         order = re.search(r"affiliation: \[([^\]]*)\]", entry).group(1)
         assert strings(order) == get_schema('definitions')['definitions']['affiliation']['enum']
+
+    def test_source_type_order_is_the_schema_enum(self):
+        entry = site_types()[CONTENT_TYPES.SOURCE]
+        order = re.search(r"type: \[([^\]]*)\]", entry).group(1)
+        assert strings(order) == get_schema(CONTENT_TYPES.SOURCE)['properties']['type']['enum']
+
+    def test_back_thumbnails_have_card_backs(self):
+        """Types whose tiles show the card back (thumb: 'back') have one."""
+        backed = {back['content_type'] for back in get_data(CONTENT_TYPES.CARD)}
+        for content_type, entry in site_types().items():
+            if "thumb: 'back'" in entry:
+                assert content_type in backed, content_type
