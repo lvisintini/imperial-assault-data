@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "be340262-93bf-5bee-ad8a-82b87571806e",
     "name": "Imperial Assault",
     "type": "Core Game",
     "wave": 0,
@@ -10,7 +10,7 @@
     "image": "sources/imperial-assault.png"
   },
   {
-    "id": 1,
+    "id": "6ad8d013-ef6f-527c-8130-2189b7ca4a4e",
     "name": "Twin Shadows",
     "type": "Expansion",
     "wave": 2,
@@ -20,7 +20,7 @@
     "image": "sources/twin-shadows.png"
   },
   {
-    "id": 2,
+    "id": "08c20ecd-d4d7-52f3-931a-152c313bb45a",
     "name": "Return to Hoth",
     "type": "Expansion",
     "wave": 5,
@@ -30,7 +30,7 @@
     "image": "sources/return-to-hoth.png"
   },
   {
-    "id": 3,
+    "id": "b89d8380-ece4-5ef2-9992-7fd0edbe52b5",
     "name": "The Bespin Gambit",
     "type": "Expansion",
     "wave": 6,
@@ -40,7 +40,7 @@
     "image": "sources/the-bespin-gambit.png"
   },
   {
-    "id": 4,
+    "id": "a30322d3-f1d9-56c7-a3bc-962c0ca1cedc",
     "name": "Jabba's Realm",
     "type": "Expansion",
     "wave": 8,
@@ -50,7 +50,7 @@
     "image": "sources/jabbas-realm.png"
   },
   {
-    "id": 5,
+    "id": "dbb68952-9156-5b2d-b202-42269d182c5a",
     "name": "IG-88",
     "type": "Villain Pack",
     "wave": 1,
@@ -60,7 +60,7 @@
     "image": "sources/ig-88.png"
   },
   {
-    "id": 6,
+    "id": "2113d895-30c4-55f0-a61e-4088ac6a7027",
     "name": "Rebel Saboteurs",
     "type": "Ally Pack",
     "wave": 1,
@@ -70,7 +70,7 @@
     "image": "sources/rebel-saboteurs.png"
   },
   {
-    "id": 7,
+    "id": "c132675f-67c4-58ec-aab3-5d95c8dafb2a",
     "name": "Rebel Troopers",
     "type": "Ally Pack",
     "wave": 1,
@@ -80,7 +80,7 @@
     "image": "sources/rebel-troopers.png"
   },
   {
-    "id": 8,
+    "id": "ee94b1a0-0cac-5d05-823e-ede91410653c",
     "name": "Royal Guard Champion",
     "type": "Villain Pack",
     "wave": 1,
@@ -90,7 +90,7 @@
     "image": "sources/royal-guard-champion.png"
   },
   {
-    "id": 9,
+    "id": "1abfaba1-9a0f-51e8-8ac7-ebaf515f2ebf",
     "name": "Boba Fett",
     "type": "Villain Pack",
     "wave": 2,
@@ -100,7 +100,7 @@
     "image": "sources/boba-fett.png"
   },
   {
-    "id": 10,
+    "id": "db94481e-e6cb-564b-9b55-bee69e26fd52",
     "name": "Kayn Somos",
     "type": "Villain Pack",
     "wave": 2,
@@ -110,7 +110,7 @@
     "image": "sources/kayn-somos.png"
   },
   {
-    "id": 11,
+    "id": "4ba87c1a-bf00-5ce6-8297-f6f030f20483",
     "name": "R2-D2 and C-3PO",
     "type": "Ally Pack",
     "wave": 2,
@@ -120,7 +120,7 @@
     "image": "sources/r2-d2-and-c-3po.png"
   },
   {
-    "id": 12,
+    "id": "5508b6b6-0819-5209-b18b-531fd1e13d50",
     "name": "Hired Guns",
     "type": "Villain Pack",
     "wave": 3,
@@ -130,7 +130,7 @@
     "image": "sources/hired-guns.png"
   },
   {
-    "id": 13,
+    "id": "d9cd0f2e-baea-59ba-a4da-87c703d6deea",
     "name": "Stormtroopers",
     "type": "Villain Pack",
     "wave": 3,
@@ -140,7 +140,7 @@
     "image": "sources/stormtroopers.png"
   },
   {
-    "id": 14,
+    "id": "c74e1066-ae7e-5ab5-b1af-68272abdf910",
     "name": "Wookiee Warriors",
     "type": "Ally Pack",
     "wave": 3,
@@ -150,7 +150,7 @@
     "image": "sources/wookiee-warriors.png"
   },
   {
-    "id": 15,
+    "id": "c6fbcc27-7fdd-5bda-ad82-712b236c3242",
     "name": "Alliance Smuggler",
     "type": "Ally Pack",
     "wave": 4,
@@ -160,7 +160,7 @@
     "image": "sources/alliance-smuggler.png"
   },
   {
-    "id": 16,
+    "id": "69676d2e-1b85-5689-a9ee-44e339976b76",
     "name": "Bantha Rider",
     "type": "Villain Pack",
     "wave": 4,
@@ -170,7 +170,7 @@
     "image": "sources/bantha-rider.png"
   },
   {
-    "id": 17,
+    "id": "cfdb0bd8-aeae-55ce-8092-d9a5345be8ca",
     "name": "Dengar",
     "type": "Villain Pack",
     "wave": 5,
@@ -180,7 +180,7 @@
     "image": "sources/dengar.png"
   },
   {
-    "id": 18,
+    "id": "09179759-7a27-596f-9207-27b455219c05",
     "name": "Echo Base Troopers",
     "type": "Ally Pack",
     "wave": 5,
@@ -190,7 +190,7 @@
     "image": "sources/echo-base-troopers.png"
   },
   {
-    "id": 19,
+    "id": "75f89154-18cb-596c-96d4-4b758295fad4",
     "name": "General Sorin",
     "type": "Villain Pack",
     "wave": 5,
@@ -200,7 +200,7 @@
     "image": "sources/general-sorin.png"
   },
   {
-    "id": 20,
+    "id": "7a74a5a5-b886-5a2b-b5a9-68c33e5623a7",
     "name": "Leia Organa",
     "type": "Ally Pack",
     "wave": 5,
@@ -210,7 +210,7 @@
     "image": "sources/leia-organa.png"
   },
   {
-    "id": 21,
+    "id": "c00cf712-86f4-543d-8b27-d47164be3c00",
     "name": "Agent Blaise",
     "type": "Villain Pack",
     "wave": 6,
@@ -220,7 +220,7 @@
     "image": "sources/agent-blaise.png"
   },
   {
-    "id": 22,
+    "id": "b3ab91aa-b6ed-567c-9ac0-f3615d598384",
     "name": "Bossk",
     "type": "Villain Pack",
     "wave": 6,
@@ -230,7 +230,7 @@
     "image": "sources/bossk.png"
   },
   {
-    "id": 23,
+    "id": "7c44ed20-990e-50e7-81ac-ecd47ab172b0",
     "name": "ISB Infiltrators",
     "type": "Villain Pack",
     "wave": 6,
@@ -240,7 +240,7 @@
     "image": "sources/isb-infiltrators.png"
   },
   {
-    "id": 24,
+    "id": "9a49af11-11e3-5a96-be5b-8853dd9db759",
     "name": "Lando Calrissian",
     "type": "Ally Pack",
     "wave": 6,
@@ -250,7 +250,7 @@
     "image": "sources/lando-calrissian.png"
   },
   {
-    "id": 25,
+    "id": "66eb3148-44ac-5430-b674-e4498fac71f3",
     "name": "Greedo",
     "type": "Villain Pack",
     "wave": 7,
@@ -260,7 +260,7 @@
     "image": "sources/greedo.png"
   },
   {
-    "id": 26,
+    "id": "a978609e-6397-5a59-bbe6-6be3a355e99c",
     "name": "Obi-Wan Kenobi",
     "type": "Ally Pack",
     "wave": 7,
@@ -270,7 +270,7 @@
     "image": "sources/obi-wan-kenobi.png"
   },
   {
-    "id": 27,
+    "id": "cf883a9d-7bb9-5915-bea0-7587e48423af",
     "name": "The Grand Inquisitor",
     "type": "Villain Pack",
     "wave": 7,
@@ -280,7 +280,7 @@
     "image": "sources/the-grand-inquisitor.png"
   },
   {
-    "id": 28,
+    "id": "15b96a11-004b-5ccd-9610-e1f0a7b317d8",
     "name": "Alliance Rangers",
     "type": "Ally Pack",
     "wave": 8,
@@ -290,7 +290,7 @@
     "image": "sources/alliance-rangers.png"
   },
   {
-    "id": 29,
+    "id": "6ebfa9ea-c447-52fe-bb84-61c3e848753c",
     "name": "Captain Terro",
     "type": "Villain Pack",
     "wave": 8,
@@ -300,7 +300,7 @@
     "image": "sources/captain-terro.png"
   },
   {
-    "id": 30,
+    "id": "2dcd1cd4-cb09-5e92-859d-6949763ba493",
     "name": "Jabba the Hutt",
     "type": "Villain Pack",
     "wave": 8,
@@ -310,7 +310,7 @@
     "image": "sources/jabba-the-hutt.png"
   },
   {
-    "id": 31,
+    "id": "ced23ac2-0189-5d08-888a-4256da79cf42",
     "name": "Luke Skywalker",
     "type": "Ally Pack",
     "wave": 8,
@@ -320,7 +320,7 @@
     "image": "sources/luke-skywalker.png"
   },
   {
-    "id": 32,
+    "id": "4f159e4b-114f-5ad1-8fcb-fa1100af3e42",
     "name": "BT-1 and 0-0-0",
     "type": "Villain Pack",
     "wave": 9,
@@ -330,7 +330,7 @@
     "image": "sources/bt-1-and-0-0-0.png"
   },
   {
-    "id": 33,
+    "id": "9bb30378-156f-51fd-b439-3a403d6baf51",
     "name": "Hera Syndulla and C1-10P",
     "type": "Ally Pack",
     "wave": 9,
@@ -340,7 +340,7 @@
     "image": "sources/hera-syndulla-and-c1-10p.png"
   },
   {
-    "id": 34,
+    "id": "3fd682b7-b3b0-5793-bd90-de6d5b978308",
     "name": "Jawa Scavenger",
     "type": "Villain Pack",
     "wave": 9,
@@ -350,7 +350,7 @@
     "image": "sources/jawa-scavenger.png"
   },
   {
-    "id": 35,
+    "id": "1cf6bbe7-a32f-5c73-b8af-bceb7f3345ea",
     "name": "Chewbacca",
     "type": "Ally Pack",
     "wave": 1,
@@ -360,7 +360,7 @@
     "image": "sources/chewbacca.png"
   },
   {
-    "id": 36,
+    "id": "3b8ab0d0-61a7-57d0-9005-23ab356b6524",
     "name": "General Weiss",
     "type": "Villain Pack",
     "wave": 1,
@@ -370,7 +370,7 @@
     "image": "sources/general-weiss.png"
   },
   {
-    "id": 37,
+    "id": "ba3de859-0fbf-51cd-98d1-33875b0dcfac",
     "name": "Han Solo",
     "type": "Ally Pack",
     "wave": 1,
@@ -380,7 +380,7 @@
     "image": "sources/han-solo.png"
   },
   {
-    "id": 38,
+    "id": "9e59a2f7-e778-5356-a3e5-bde5846eed3b",
     "name": "Heart of the Empire",
     "type": "Expansion",
     "wave": 10,
@@ -390,7 +390,7 @@
     "image": "sources/heart-of-the-empire.png"
   },
   {
-    "id": 39,
+    "id": "09b48dcb-3462-5d4e-b384-8f8d9a3ae951",
     "name": "Ahsoka Tano",
     "type": "Ally Pack",
     "wave": 10,
@@ -400,7 +400,7 @@
     "image": "sources/ahsoka-tano.png"
   },
   {
-    "id": 40,
+    "id": "ce7bfab5-fc63-5f5e-a7be-eb8a1de92cd5",
     "name": "Emperor Palpatine",
     "type": "Villain Pack",
     "wave": 10,
@@ -410,7 +410,7 @@
     "image": "sources/emperor-palpatine.png"
   },
   {
-    "id": 41,
+    "id": "a25f4c51-e207-5a24-9a41-69125601fb8c",
     "name": "Maul",
     "type": "Villain Pack",
     "wave": 10,
@@ -420,7 +420,7 @@
     "image": "sources/maul.png"
   },
   {
-    "id": 42,
+    "id": "3c6e4c77-8a6a-582e-af76-95b2df6588d7",
     "name": "Tyrants of Lothal",
     "type": "Expansion",
     "wave": 11,
@@ -430,7 +430,7 @@
     "image": "sources/tyrants-of-lothal.png"
   },
   {
-    "id": 43,
+    "id": "22c4cda1-5985-5ffb-bf57-f879f2966c70",
     "name": "Ezra Bridger and Kanan Jarrus",
     "type": "Ally Pack",
     "wave": 11,
@@ -440,7 +440,7 @@
     "image": "sources/ezra-bridger-and-kanan-jarrus.png"
   },
   {
-    "id": 44,
+    "id": "a4912fbc-09dd-5cab-a069-c1cfb904c03c",
     "name": "Hondo Ohnaka",
     "type": "Villain Pack",
     "wave": 11,
@@ -450,7 +450,7 @@
     "image": "sources/hondo-ohnaka.png"
   },
   {
-    "id": 45,
+    "id": "c932e5e7-a0f8-5e75-8034-e6fa0e9593a6",
     "name": "Sabine Wren and Zeb Orrelios",
     "type": "Ally Pack",
     "wave": 11,
@@ -460,7 +460,7 @@
     "image": "sources/sabine-wren-and-zeb-orrelios.png"
   },
   {
-    "id": 46,
+    "id": "78ecd709-3aad-5571-8f34-86025af1fc16",
     "name": "Thrawn",
     "type": "Villain Pack",
     "wave": 11,

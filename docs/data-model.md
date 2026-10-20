@@ -4,6 +4,20 @@ The dataset is laid out like a relational database: each file in `data/` is a ta
 records point at each other through id fields. This page shows how the 21 files relate. Only key fields are listed;
 see `schemas/` for every field.
 
+## Ids
+
+Every record has an `id` (all files but `source-contents`), and every foreign key holds one. Ids are lowercase
+UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
+- Records that existed in 1.x have `uuid5(NAMESPACE, "<content type>:<old numeric id>")`, where `NAMESPACE` is
+  `uuid5(NAMESPACE_URL, "https://github.com/lvisintini/imperial-assault-data")`. So 1.x ids can be translated: in
+  Python, `uuid.uuid5(NAMESPACE, "deployment-cards:114")` is the 1.x Stormtrooper (114). Card backs had no id; theirs
+  is `uuid5(NAMESPACE, "card-backs:<content type>:<variant, or empty>")`.
+- Records added from 2.0.0 on get a random `uuid4`.
+- Ids never change once published. Records are kept in file order, not sorted by id.
+
+The conversion is `migrations/2.0.0/01_uuid_ids.py`. It also retired 1.x deployment card 17, a duplicate "Rebel"
+Bossk; the Bossk pack now lists the one (Mercenary) Bossk, card 16.
+
 ## Products and their contents
 
 `sources` are the products (core game, expansions, ally and villain packs). `source-contents` is a join table that
@@ -39,92 +53,92 @@ erDiagram
     imperial-classes ||--|{ imperial-class-cards : "class_id"
 
     sources {
-        int id PK
+        uuid id PK
         string name
         string type "Core Game, Expansion, Ally Pack, Villain Pack"
         string product_code "SWI##, unique"
     }
     source-contents {
-        int source_id FK
+        uuid source_id FK
         string content_type "target file"
-        int content_id FK "id in that file"
+        uuid content_id FK "id in that file"
     }
     agenda-decks {
-        int id PK
+        uuid id PK
         string name
     }
     agenda-cards {
-        int id PK
-        int agenda_id FK
+        uuid id PK
+        uuid agenda_id FK
         string name
     }
     heroes {
-        int id PK
+        uuid id PK
         string name
     }
     hero-class-cards {
-        int id PK
-        int hero_id FK
+        uuid id PK
+        uuid hero_id FK
         string name
     }
     imperial-classes {
-        int id PK
+        uuid id PK
         string name
     }
     imperial-class-cards {
-        int id PK
-        int class_id FK
+        uuid id PK
+        uuid class_id FK
         string name
     }
     command-cards {
-        int id PK
+        uuid id PK
         string name
         string iaspec UK
     }
     companion-cards {
-        int id PK
+        uuid id PK
         string name
         string iaspec UK
     }
     deployment-cards {
-        int id PK
+        uuid id PK
         string name
         string iaspec UK
     }
     reward-cards {
-        int id PK
+        uuid id PK
         string name
     }
     side-mission-cards {
-        int id PK
+        uuid id PK
         string name
     }
     skirmish-maps {
-        int id PK
+        uuid id PK
         string name
     }
     story-mission-cards {
-        int id PK
+        uuid id PK
         string name
     }
     supply-cards {
-        int id PK
+        uuid id PK
         string name
     }
     threat-mission-cards {
-        int id PK
+        uuid id PK
         string name
     }
     upgrade-cards {
-        int id PK
+        uuid id PK
         string name
     }
     condition-cards {
-        int id PK
+        uuid id PK
         string name
     }
     form-cards {
-        int id PK
+        uuid id PK
         string name
     }
 ```
@@ -140,7 +154,8 @@ cards are the Clawdite Shapeshifter's alternative forms. A link from them to the
 
 ## Card backs
 
-`card-backs` has no `id`. Each record is the back of one deck and points at a content type through `content_type`.
+Each `card-backs` record is the back of one deck and points at a content type through `content_type`. It has an
+`id`, though nothing references it yet (#52 will replace the matching rules below with a `back_id` on each card).
 When a content type has several backs, `variant` says which records a back belongs to, and it matches a different
 field in each content type:
 
@@ -178,6 +193,7 @@ erDiagram
     card-backs ||--|{ supply-cards : "one back"
 
     card-backs {
+        uuid id PK
         string deck "deck name shown on the back"
         string content_type "target file"
         string variant "null when the type has one back"

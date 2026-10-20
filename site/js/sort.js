@@ -5,10 +5,10 @@ export const defaultSort = type => TYPE[type].sort ?? ['name'];
 
 const SCALARS = ['string', 'number', 'boolean'];
 
-// Fields worth sorting a type by: plain values only, not lists, image paths or foreign keys.
+// Fields worth sorting a type by: plain values only, not lists, image paths, ids or foreign keys.
 export function sortableFields(type, refs) {
   const fields = new Set(refs.flatMap(ref => Object.keys(ref.record)));
-  return [...fields].filter(field => !TYPE[type].images.includes(field) && !field.endsWith('_id')
+  return [...fields].filter(field => field !== 'id' && !TYPE[type].images.includes(field) && !field.endsWith('_id')
     && refs.every(({record}) => record[field] == null || SCALARS.includes(typeof record[field])));
 }
 
@@ -42,6 +42,6 @@ export function sortRefs(refs, keys) {
       const diff = compareValues(x, y, ranked);
       if (diff) return sign * diff;
     }
-    return a.key - b.key;
+    return a.index - b.index;  // ties keep the file's order
   });
 }

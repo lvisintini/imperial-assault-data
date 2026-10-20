@@ -15,9 +15,15 @@ class TestIntegrity:
         return next(iter([d for d in data if d["id"] == fk_id]), None)
 
     @pytest.mark.parametrize("content_type", list(set(CONTENT_TYPES.as_list).difference(CONTENT_TYPES.without_ids)))
-    def test_no_skipped_or_duplicate_id_numbers(self, content_type):
-        data = get_data(content_type)
-        assert set(range(len(data))) == set([d["id"] for d in data])
+    def test_ids_are_unique(self, content_type):
+        """Ids are UUIDs (the schemas check the format); within a file they must not repeat."""
+        ids = [d["id"] for d in get_data(content_type)]
+        duplicates = [i for i, count in Counter(ids).items() if count > 1]
+        assert not duplicates, duplicates
+
+    def test_ids_are_unique_across_files(self, all_data):
+        ids = [d["id"] for name, data in all_data.items() if name not in CONTENT_TYPES.without_ids for d in data]
+        assert len(ids) == len(set(ids))
 
     @pytest.mark.parametrize("source_contents_entry", get_data(CONTENT_TYPES.SOURCE_CONTENTS))
     def test_source_contents_foreign_keys(self, source_contents_entry, all_data):

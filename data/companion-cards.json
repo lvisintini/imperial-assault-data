@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "5d883b8b-ea0e-581d-98c4-c4ccadd7558f",
     "name": "Cam Droid",
     "image": "companion-cards/cam-droid.png",
     "traits": [
@@ -11,7 +11,7 @@
     "speed": 5
   },
   {
-    "id": 1,
+    "id": "3292445b-6a2e-5e7c-be18-ceee868d17bf",
     "name": "Junk Droid",
     "image": "companion-cards/junk-droid.png",
     "traits": [
@@ -22,7 +22,7 @@
     "speed": 4
   },
   {
-    "id": 2,
+    "id": "8b8ee864-1614-5f13-961e-f0c5188c4e10",
     "name": "R5 Astromech",
     "image": "companion-cards/r5-astromech.png",
     "traits": [
@@ -33,7 +33,7 @@
     "speed": 3
   },
   {
-    "id": 3,
+    "id": "da4e58ff-ee29-5b77-8396-7f0e66adfe41",
     "name": "Pit Droid",
     "image": "companion-cards/pit-droid.png",
     "traits": [
@@ -44,7 +44,7 @@
     "speed": 4
   },
   {
-    "id": 4,
+    "id": "4a8d861a-cf73-57da-b713-ff6ab1e350d3",
     "name": "Salacious B. Crumb",
     "image": "companion-cards/salacious-b-crumb.png",
     "traits": [
@@ -55,7 +55,7 @@
     "speed": 3
   },
   {
-    "id": 5,
+    "id": "02506600-fc27-51bc-9b1e-9c6217aa18cb",
     "name": "88-Z",
     "image": "companion-cards/88-z.png",
     "traits": [
@@ -66,7 +66,7 @@
     "speed": 3
   },
   {
-    "id": 6,
+    "id": "76900d88-dd01-5354-a3da-92907c671a73",
     "name": "J4X-7",
     "image": "companion-cards/j4x-7.png",
     "traits": [

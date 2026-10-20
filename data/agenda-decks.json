@@ -1,170 +1,170 @@
 [
   {
-    "id": 0,
+    "id": "03703a2b-8690-5245-8575-ef7e1be52323",
     "name": "Agents of the Empire"
   },
   {
-    "id": 1,
+    "id": "2733e25f-0fbe-52de-8dc9-7fb729195888",
     "name": "For The Right Price"
   },
   {
-    "id": 2,
+    "id": "e0744683-124a-5b9a-abc1-6a41685cb612",
     "name": "Imperial Discipline"
   },
   {
-    "id": 3,
+    "id": "ade45f3d-4517-597f-ba6c-b1e04cffc2e6",
     "name": "Imperial Industry"
   },
   {
-    "id": 4,
+    "id": "91dce242-6c4d-5e18-939c-00e0794ed86f",
     "name": "Imperial Security Bureau"
   },
   {
-    "id": 5,
+    "id": "09c32c88-3808-5774-97c9-3cd082b60ff2",
     "name": "Lord Vaders Command"
   },
   {
-    "id": 6,
+    "id": "2c8251ab-fea5-5b92-806e-41df38051ea4",
     "name": "Retaliation"
   },
   {
-    "id": 7,
+    "id": "e8897411-6574-5516-8925-9c0c722e5129",
     "name": "Pursuit of the Enemy"
   },
   {
-    "id": 8,
+    "id": "42866b3b-eced-55d2-96c8-3dd2e2254803",
     "name": "The Empires Reach"
   },
   {
-    "id": 9,
+    "id": "40b26911-4729-51cb-8822-5873d5e68fd9",
     "name": "Defensive Tactics"
   },
   {
-    "id": 10,
+    "id": "f2d613e0-5ff4-5cf1-aab9-2b4a2a963561",
     "name": "Natural Warfare"
   },
   {
-    "id": 11,
+    "id": "bbc040a7-6c19-5c08-8ead-bf8e245daacc",
     "name": "Enhanced Interrogation"
   },
   {
-    "id": 12,
+    "id": "88e4bded-1f96-508b-a15a-bbb03993cbbb",
     "name": "Evasive Maneuvers"
   },
   {
-    "id": 13,
+    "id": "bb910ec4-85fa-5597-a73e-9c186a89e89a",
     "name": "Guild Hunters"
   },
   {
-    "id": 14,
+    "id": "47a684d4-a959-559f-a2e0-b74c905c4eea",
     "name": "Persistence"
   },
   {
-    "id": 15,
+    "id": "91882bf0-a7c3-5128-b647-7dc6d3481aae",
     "name": "Droid Uprising"
   },
   {
-    "id": 16,
+    "id": "f614bd12-4fcf-59d6-88b0-7609ff8a4e44",
     "name": "Crimson Empire"
   },
   {
-    "id": 17,
+    "id": "d1e195b8-5a7b-5567-9511-6e302d1996bb",
     "name": "Soldiers for Hire"
   },
   {
-    "id": 18,
+    "id": "334a0ba7-9945-56c6-821a-b0909578ca1a",
     "name": "Stormtrooper support"
   },
   {
-    "id": 19,
+    "id": "bd987e90-30d8-548c-a858-c2039effdddc",
     "name": "Nefarious Dealings"
   },
   {
-    "id": 20,
+    "id": "dd386966-d430-55b8-8c71-6e5c535c6b49",
     "name": "Vader's Fist"
   },
   {
-    "id": 21,
+    "id": "30b280d2-cc04-5273-a33e-ef31003399c8",
     "name": "Tusken Treachery"
   },
   {
-    "id": 22,
+    "id": "46bbe30b-ee5d-5726-8c5a-aa79c151b92f",
     "name": "Punishing Tactics"
   },
   {
-    "id": 23,
+    "id": "7f9b1501-0916-5316-9fa9-11c20b996ae4",
     "name": "Bombardment"
   },
   {
-    "id": 24,
+    "id": "eb756336-cfe5-571f-979e-fa4a53163901",
     "name": "Imperial Intelligence"
   },
   {
-    "id": 25,
+    "id": "12af9cee-a541-5ea3-ac29-c76afffafd6a",
     "name": "Base Instincts"
   },
   {
-    "id": 26,
+    "id": "fc2002b6-2a69-5b26-966a-145d4ebb2358",
     "name": "Infiltration"
   },
   {
-    "id": 27,
+    "id": "8a8789d2-4aff-569b-9e89-7a9a27f71fe0",
     "name": "Contract Gunmen"
   },
   {
-    "id": 28,
+    "id": "a8d7a1e8-cea6-50db-bc1e-f388dcfce6ba",
     "name": "Inquisition"
   },
   {
-    "id": 29,
+    "id": "e0f97d8e-f5ed-558e-b660-c185322061bb",
     "name": "Wasteland Patrol"
   },
   {
-    "id": 30,
+    "id": "a896fb92-90f2-52bc-ad09-4ad1b0a4ea9c",
     "name": "Jabba's Empire"
   },
   {
-    "id": 31,
+    "id": "bf063bdb-b1c0-5a4a-837b-38b5e69a1fca",
     "name": "Devious Droids"
   },
   {
-    "id": 32,
+    "id": "e352e0be-16a0-50ae-b399-b76f7c28fdd3",
     "name": "Desert Scavengers"
   },
   {
-    "id": 33,
+    "id": "44d9c7b5-ece3-576f-a953-8835fd93b79b",
     "name": "The General's Scheme"
   },
   {
-    "id": 34,
+    "id": "6142030b-fb0f-545f-85e5-35da985b9c2a",
     "name": "Field Commander"
   },
   {
-    "id": 35,
+    "id": "84b71b35-65d3-5654-af1f-79db4597d496",
     "name": "Security Protocols"
   },
   {
-    "id": 36,
+    "id": "c0b10d40-7952-5384-adb8-4de837bc6142",
     "name": "The Emperor's Plots"
   },
   {
-    "id": 37,
+    "id": "8933f356-91a7-524e-ad5d-b2b94a8720a5",
     "name": "A Former Sith"
   },
   {
-    "id": 38,
+    "id": "a762f2a2-fa7c-5fa6-95c5-b0c3de5b259c",
     "name": "War of Attrition"
   },
   {
-    "id": 39,
+    "id": "4e2d7f79-46b0-552c-92c7-c80f2122d4cb",
     "name": "Weapons Division"
   },
   {
-    "id": 40,
+    "id": "7ef78ad6-b29d-5f3f-8a5d-653aee2d798c",
     "name": "Ohnaka Gang"
   },
   {
-    "id": 41,
+    "id": "3072c03a-e101-566c-a863-4a2e8af18b34",
     "name": "The Art of War"
   }
 ]

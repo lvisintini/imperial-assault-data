@@ -44,14 +44,9 @@ for s in SOURCES:
 with open(f'./data/source-contents.json') as f:
     source_contents = json.load(f)
 
-# We are going to group this entries by source id, so we need to have them ordered before doing that
-source_contents = sorted(source_contents, key=lambda m: (m['source_id'], m['content_type']))
-source_contents_grouped_by_source_id = groupby(source_contents, lambda x: x['source_id'])
-
-for source_id, group in source_contents_grouped_by_source_id:
-
-    # Get the data for the source (the product name contained within will be used later)
-    source_data = next(iter([m for m in all_data['sources'] if m["id"] == source_id]))
+# Ids are UUIDs, so go through the sources in file order and pick each one's rows (sorted by content type, for groupby)
+for source_data in all_data['sources']:
+    group = sorted((m for m in source_contents if m['source_id'] == source_data['id']), key=lambda m: m['content_type'])
 
     # Output the source name and type
     print(f"'{source_data['name']}' {source_data['type']}")

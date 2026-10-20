@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "0387f7e5-d0e5-5595-94aa-494e11aba101",
     "name": "0-0-0",
     "description": "Specialized in Pain",
     "elite": true,
@@ -22,7 +22,7 @@
     "speed": 4
   },
   {
-    "id": 1,
+    "id": "f2a1c20b-ce85-5f1a-bb2b-c9b964b11d18",
     "name": "AT-ST",
     "description": null,
     "elite": true,
@@ -45,7 +45,7 @@
     "speed": 4
   },
   {
-    "id": 2,
+    "id": "b9c2aeac-9b2b-5613-83bc-36d25a26930b",
     "name": "Advanced Com Systems",
     "description": null,
     "elite": false,
@@ -66,7 +66,7 @@
     "speed": null
   },
   {
-    "id": 3,
+    "id": "65cf43a8-3eed-5975-b35b-00d8b8fea518",
     "name": "Agent Blaise",
     "description": "ISB Interrogator",
     "elite": true,
@@ -88,7 +88,7 @@
     "speed": 4
   },
   {
-    "id": 4,
+    "id": "9b8816ae-d1aa-5705-ab1f-5b84c88e3d4b",
     "name": "Agent Blaise",
     "description": "ISB Interrogator",
     "elite": true,
@@ -110,7 +110,7 @@
     "speed": 4
   },
   {
-    "id": 5,
+    "id": "691da5f4-f11f-5725-9161-9df8ef358cbe",
     "name": "Alliance Ranger",
     "description": null,
     "elite": false,
@@ -133,7 +133,7 @@
     "speed": 4
   },
   {
-    "id": 6,
+    "id": "65cd1970-7b7e-5eff-8ef4-6fd52a918191",
     "name": "Alliance Ranger",
     "description": null,
     "elite": true,
@@ -156,7 +156,7 @@
     "speed": 4
   },
   {
-    "id": 7,
+    "id": "790c1993-8488-5f22-a23e-f1a21534bdb0",
     "name": "Alliance Smuggler",
     "description": null,
     "elite": false,
@@ -178,7 +178,7 @@
     "speed": 4
   },
   {
-    "id": 8,
+    "id": "08cac016-0d84-5624-a07b-21f242bb2682",
     "name": "Alliance Smuggler",
     "description": null,
     "elite": true,
@@ -200,7 +200,7 @@
     "speed": 5
   },
   {
-    "id": 9,
+    "id": "758ca3ec-5b5d-5cbd-8ef4-49dd3416a9ce",
     "name": "BT-1",
     "description": "Destructive Assassin",
     "elite": true,
@@ -224,7 +224,7 @@
     "speed": 4
   },
   {
-    "id": 10,
+    "id": "f4468fe2-c512-50c0-ba06-1dd44e660ed7",
     "name": "Balance of the Force",
     "description": null,
     "elite": false,
@@ -245,7 +245,7 @@
     "speed": null
   },
   {
-    "id": 11,
+    "id": "26c67b31-7ec7-54ef-9a54-f3c2f68f740a",
     "name": "Bantha Rider",
     "description": null,
     "elite": true,
@@ -268,7 +268,7 @@
     "speed": 5
   },
   {
-    "id": 12,
+    "id": "13e81d05-ba79-5c2b-876a-ca2953000ee7",
     "name": "Beast Tamer",
     "description": null,
     "elite": false,
@@ -289,7 +289,7 @@
     "speed": null
   },
   {
-    "id": 13,
+    "id": "c1ec5eeb-e148-5f99-a6a5-88fe3ef6280c",
     "name": "Biv Bodhrik",
     "description": null,
     "elite": false,
@@ -311,7 +311,7 @@
     "speed": 4
   },
   {
-    "id": 14,
+    "id": "382b574b-3aed-52ea-9463-dc546a8d1aee",
     "name": "Black Market",
     "description": null,
     "elite": false,
@@ -332,7 +332,7 @@
     "speed": null
   },
   {
-    "id": 15,
+    "id": "eea0a2fc-f761-5475-a8d7-6e830ce7212b",
     "name": "Boba Fett",
     "description": "Infamous Bounty Hunter",
     "elite": true,
@@ -354,7 +354,7 @@
     "speed": 6
   },
   {
-    "id": 16,
+    "id": "367a3295-e168-544f-adc5-a533b763b2c9",
     "name": "Bossk",
     "description": "Born Hunter",
     "elite": true,
@@ -372,35 +372,12 @@
     "reinforce_cost": null,
     "deployment_group": 1,
     "image": "deployment-cards/bossk-born-hunter.png",
-    "iaspec": "bosskmercenary",
+    "iaspec": "bossk",
     "health": 10,
     "speed": 4
   },
   {
-    "id": 17,
-    "name": "Bossk",
-    "description": "Born Hunter",
-    "elite": true,
-    "unique": true,
-    "affiliation": "Rebel",
-    "traits": [
-      "Brawler",
-      "Hunter"
-    ],
-    "modes": [
-      "Campaign",
-      "Skirmish"
-    ],
-    "deployment_cost": 8,
-    "reinforce_cost": null,
-    "deployment_group": 1,
-    "image": "deployment-cards/bossk-born-hunter.png",
-    "iaspec": "bosskrebel",
-    "health": 10,
-    "speed": 4
-  },
-  {
-    "id": 18,
+    "id": "77f5417b-fa50-52bc-b44f-87f47fdd01a4",
     "name": "C-3PO",
     "description": "Human-Cyborg Relations",
     "elite": true,
@@ -422,7 +399,7 @@
     "speed": 3
   },
   {
-    "id": 19,
+    "id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
     "name": "C1-10P",
     "description": "\"Chopper\"",
     "elite": true,
@@ -444,7 +421,7 @@
     "speed": 4
   },
   {
-    "id": 20,
+    "id": "2d696dfc-532f-57b2-ac33-7f625d1f3f78",
     "name": "Captain Terro",
     "description": "Wasteland Enforcer",
     "elite": true,
@@ -468,7 +445,7 @@
     "speed": 5
   },
   {
-    "id": 21,
+    "id": "29e20bcf-f998-5413-aa0a-5b7a3a8488a9",
     "name": "Channel the Force",
     "description": null,
     "elite": false,
@@ -489,7 +466,7 @@
     "speed": null
   },
   {
-    "id": 22,
+    "id": "fe4c1348-e1d3-5459-8a40-5025298311e8",
     "name": "Chewbacca",
     "description": "Loyal Wookiee",
     "elite": true,
@@ -513,7 +490,7 @@
     "speed": 4
   },
   {
-    "id": 23,
+    "id": "5e2af615-8a07-53ac-be10-544607f25daa",
     "name": "Combat Suit",
     "description": null,
     "elite": false,
@@ -534,7 +511,7 @@
     "speed": null
   },
   {
-    "id": 24,
+    "id": "75818806-367d-5455-a5c0-9df46565fde1",
     "name": "Cross-Training",
     "description": null,
     "elite": true,
@@ -555,7 +532,7 @@
     "speed": null
   },
   {
-    "id": 25,
+    "id": "487c2d05-aed5-508b-af2a-9132f846eedc",
     "name": "Darth Vader",
     "description": "Lord of the Sith",
     "elite": true,
@@ -579,7 +556,7 @@
     "speed": 4
   },
   {
-    "id": 26,
+    "id": "6c52c1ae-d37e-51e1-ba26-7fe5db38bf90",
     "name": "Davith Elso",
     "description": null,
     "elite": false,
@@ -601,7 +578,7 @@
     "speed": 5
   },
   {
-    "id": 27,
+    "id": "59e0f986-0922-51a1-8835-8db17142a6ab",
     "name": "Dengar",
     "description": "Ruthless Killer",
     "elite": true,
@@ -623,7 +600,7 @@
     "speed": 4
   },
   {
-    "id": 28,
+    "id": "11dcdba0-4f1d-5e5b-a3c6-eb55fe1b29c6",
     "name": "Devious Scheme",
     "description": null,
     "elite": false,
@@ -644,7 +621,7 @@
     "speed": null
   },
   {
-    "id": 29,
+    "id": "3cca6575-e1d4-5667-8cfa-2019e00fb2c9",
     "name": "Dewback Rider",
     "description": null,
     "elite": true,
@@ -667,7 +644,7 @@
     "speed": 4
   },
   {
-    "id": 30,
+    "id": "f0fc2da5-6a0f-5073-b9bb-01f49eb93349",
     "name": "Diala Passil",
     "description": null,
     "elite": false,
@@ -689,7 +666,7 @@
     "speed": 5
   },
   {
-    "id": 31,
+    "id": "9188010f-9a86-549f-97b7-4d357d4687f4",
     "name": "E-Web Engineer",
     "description": null,
     "elite": false,
@@ -712,7 +689,7 @@
     "speed": 2
   },
   {
-    "id": 32,
+    "id": "7217415c-c215-537c-9c98-23e120ed94b8",
     "name": "E-Web Engineer",
     "description": null,
     "elite": true,
@@ -735,7 +712,7 @@
     "speed": 3
   },
   {
-    "id": 33,
+    "id": "1d41b532-8626-5e3a-9238-373a8223fe9a",
     "name": "Echo Base Trooper",
     "description": null,
     "elite": false,
@@ -757,7 +734,7 @@
     "speed": 4
   },
   {
-    "id": 34,
+    "id": "e6aa9a84-6c98-553d-b190-0cf9fd269131",
     "name": "Echo Base Trooper",
     "description": null,
     "elite": true,
@@ -779,7 +756,7 @@
     "speed": 4
   },
   {
-    "id": 35,
+    "id": "84be7b27-888f-56a0-b713-6bd641d26aad",
     "name": "Explosive Armaments",
     "description": null,
     "elite": false,
@@ -800,7 +777,7 @@
     "speed": null
   },
   {
-    "id": 36,
+    "id": "91849e7c-897b-5538-9577-4f9f0af61a36",
     "name": "Feeding Frenzy",
     "description": null,
     "elite": true,
@@ -821,7 +798,7 @@
     "speed": null
   },
   {
-    "id": 37,
+    "id": "db5b3478-512a-5e56-9726-b0c17f428cc5",
     "name": "Fenn Signis",
     "description": null,
     "elite": false,
@@ -843,7 +820,7 @@
     "speed": 4
   },
   {
-    "id": 38,
+    "id": "fb79d6ec-8515-52cf-a318-e485bb26bf20",
     "name": "First Strike",
     "description": null,
     "elite": false,
@@ -864,7 +841,7 @@
     "speed": null
   },
   {
-    "id": 39,
+    "id": "903fc3de-8915-56d1-86e8-f75c53c6afbe",
     "name": "Focused on the Kill",
     "description": null,
     "elite": false,
@@ -885,7 +862,7 @@
     "speed": null
   },
   {
-    "id": 40,
+    "id": "0d0ca1bb-af26-519b-b0b5-797bcb482c04",
     "name": "Fury Of Kashyyyk",
     "description": null,
     "elite": false,
@@ -906,7 +883,7 @@
     "speed": null
   },
   {
-    "id": 41,
+    "id": "9ab864e6-2ab4-5a39-8937-f60ab01f75c3",
     "name": "Gaarkhan",
     "description": null,
     "elite": false,
@@ -929,7 +906,7 @@
     "speed": 4
   },
   {
-    "id": 42,
+    "id": "643073cc-0fa1-574b-b0b1-6b6c2edf7201",
     "name": "Gamorrean Guard",
     "description": null,
     "elite": false,
@@ -952,7 +929,7 @@
     "speed": 4
   },
   {
-    "id": 43,
+    "id": "ee8c8649-699f-56fc-a9e6-664ba9656bf8",
     "name": "Gamorrean Guard",
     "description": null,
     "elite": true,
@@ -975,7 +952,7 @@
     "speed": 4
   },
   {
-    "id": 44,
+    "id": "21b545dd-0fdf-59a4-b623-eb5aa1fc4656",
     "name": "General Sorin",
     "description": "Vicious Tactician",
     "elite": true,
@@ -997,7 +974,7 @@
     "speed": 4
   },
   {
-    "id": 45,
+    "id": "439490d4-98da-536a-90e6-a399faa70aaf",
     "name": "General Weiss",
     "description": "Field Commander",
     "elite": true,
@@ -1021,7 +998,7 @@
     "speed": 4
   },
   {
-    "id": 46,
+    "id": "d6c87c9e-1c69-509d-a651-3dd359e5824d",
     "name": "Gideon Argus",
     "description": null,
     "elite": false,
@@ -1042,7 +1019,7 @@
     "speed": 4
   },
   {
-    "id": 47,
+    "id": "843b0a7d-74f5-5d72-b73f-b490ffdf392d",
     "name": "Greedo",
     "description": "Ambitious Mercenary",
     "elite": true,
@@ -1065,7 +1042,7 @@
     "speed": 5
   },
   {
-    "id": 48,
+    "id": "92887ea5-0475-5595-a10c-92e47cefc029",
     "name": "HK Assassin Droid",
     "description": null,
     "elite": false,
@@ -1088,7 +1065,7 @@
     "speed": 4
   },
   {
-    "id": 49,
+    "id": "039848e3-c1a5-55b0-8e4f-f8e94fa17e5b",
     "name": "HK Assassin Droid",
     "description": null,
     "elite": true,
@@ -1111,7 +1088,7 @@
     "speed": 4
   },
   {
-    "id": 50,
+    "id": "c1b43496-afea-5548-975a-f77963a761ef",
     "name": "Han Solo",
     "description": "Scoundrel",
     "elite": true,
@@ -1134,7 +1111,7 @@
     "speed": 4
   },
   {
-    "id": 51,
+    "id": "08eb1d7c-c3b9-522a-86cf-a4b7cdd386de",
     "name": "Headhunter",
     "description": null,
     "elite": false,
@@ -1155,7 +1132,7 @@
     "speed": null
   },
   {
-    "id": 52,
+    "id": "c7ddf67d-b868-5b1e-9b15-3d6f8c686d1e",
     "name": "Heavy Stormtrooper",
     "description": null,
     "elite": false,
@@ -1178,7 +1155,7 @@
     "speed": 3
   },
   {
-    "id": 53,
+    "id": "e68d84c2-ce05-5534-b2c2-fad4a965716c",
     "name": "Heavy Stormtrooper",
     "description": null,
     "elite": true,
@@ -1201,7 +1178,7 @@
     "speed": 3
   },
   {
-    "id": 54,
+    "id": "4e2fe0d0-5aa4-540d-9b38-7e9b30f5535b",
     "name": "Hera Syndulla",
     "description": "Spectre-2",
     "elite": true,
@@ -1224,7 +1201,7 @@
     "speed": 4
   },
   {
-    "id": 55,
+    "id": "8f6da99c-6566-547b-85f8-e5d464314006",
     "name": "Heroic Effort",
     "description": null,
     "elite": false,
@@ -1245,7 +1222,7 @@
     "speed": null
   },
   {
-    "id": 56,
+    "id": "0ba4bfc1-9757-578d-a7a6-dc926826ada5",
     "name": "Hired Gun",
     "description": null,
     "elite": false,
@@ -1267,7 +1244,7 @@
     "speed": 5
   },
   {
-    "id": 57,
+    "id": "65139c98-8ee9-5c63-be88-79d69e24e251",
     "name": "Hired Gun",
     "description": null,
     "elite": true,
@@ -1289,7 +1266,7 @@
     "speed": 5
   },
   {
-    "id": 58,
+    "id": "fbc2b270-b325-524a-b6bc-2d5e92ec2222",
     "name": "IG-88",
     "description": "Assassin Droid",
     "elite": true,
@@ -1312,7 +1289,7 @@
     "speed": 5
   },
   {
-    "id": 59,
+    "id": "1df31845-9106-54e3-9f37-e7a0aff8438a",
     "name": "ISB Infiltrator",
     "description": null,
     "elite": false,
@@ -1334,7 +1311,7 @@
     "speed": 4
   },
   {
-    "id": 60,
+    "id": "d47338ff-3603-5bb0-9667-01be8ca0c2fd",
     "name": "ISB Infiltrator",
     "description": null,
     "elite": true,
@@ -1356,7 +1333,7 @@
     "speed": 4
   },
   {
-    "id": 61,
+    "id": "9901e4e1-f2bf-556a-bc4d-6719be9f9055",
     "name": "Imperial Officer",
     "description": null,
     "elite": false,
@@ -1378,7 +1355,7 @@
     "speed": 4
   },
   {
-    "id": 62,
+    "id": "185b2837-1fe5-56b8-9e63-bbb99f22b211",
     "name": "Imperial Officer",
     "description": null,
     "elite": true,
@@ -1400,7 +1377,7 @@
     "speed": 4
   },
   {
-    "id": 63,
+    "id": "37ce0ced-e400-5208-bb18-c7cb831de583",
     "name": "Indentured Jester",
     "description": null,
     "elite": false,
@@ -1421,7 +1398,7 @@
     "speed": null
   },
   {
-    "id": 64,
+    "id": "9f37ca09-2b9a-5621-9ef0-750097654701",
     "name": "Jabba the Hutt",
     "description": "Vile Gangster",
     "elite": true,
@@ -1444,7 +1421,7 @@
     "speed": 2
   },
   {
-    "id": 65,
+    "id": "8d6bdf20-183f-50bd-bd97-dfc07accd2e1",
     "name": "Jabba the Hutt",
     "description": "Vile Gangster",
     "elite": true,
@@ -1467,7 +1444,7 @@
     "speed": 2
   },
   {
-    "id": 66,
+    "id": "6834ce0a-1bae-518b-b33a-ea903c61f1df",
     "name": "Jawa Scavenger",
     "description": null,
     "elite": false,
@@ -1489,7 +1466,7 @@
     "speed": 4
   },
   {
-    "id": 67,
+    "id": "21c55f2e-f8e8-58f9-adde-963741ffa7ce",
     "name": "Jawa Scavenger",
     "description": null,
     "elite": true,
@@ -1511,7 +1488,7 @@
     "speed": 4
   },
   {
-    "id": 68,
+    "id": "80c02e76-9c20-5d07-995f-5c98653bed66",
     "name": "Jawa Scavenger",
     "description": null,
     "elite": true,
@@ -1533,7 +1510,7 @@
     "speed": 4
   },
   {
-    "id": 69,
+    "id": "73375e4c-8405-58e1-827b-4a71e84cebde",
     "name": "Jet Trooper",
     "description": null,
     "elite": false,
@@ -1556,7 +1533,7 @@
     "speed": 4
   },
   {
-    "id": 70,
+    "id": "07390987-ab34-55bc-b4cc-7770f6a3a271",
     "name": "Jet Trooper",
     "description": null,
     "elite": true,
@@ -1579,7 +1556,7 @@
     "speed": 4
   },
   {
-    "id": 71,
+    "id": "3e818577-c542-5d2d-a1ff-f5335a365c9c",
     "name": "Jyn Odan",
     "description": null,
     "elite": false,
@@ -1600,7 +1577,7 @@
     "speed": 5
   },
   {
-    "id": 72,
+    "id": "2499bb95-68c0-5a40-9cae-45f54452c6e4",
     "name": "Kayn Somos",
     "description": "Trooper Commander",
     "elite": true,
@@ -1623,7 +1600,7 @@
     "speed": 4
   },
   {
-    "id": 73,
+    "id": "73ec1673-9207-5bec-a3d2-b46ebecc7d1f",
     "name": "Lando Calrissian",
     "description": "Charming Gambler",
     "elite": true,
@@ -1646,7 +1623,7 @@
     "speed": 4
   },
   {
-    "id": 74,
+    "id": "97902823-64d6-5b7c-86d2-2d0df872e1d4",
     "name": "Last Resort",
     "description": null,
     "elite": false,
@@ -1667,7 +1644,7 @@
     "speed": null
   },
   {
-    "id": 75,
+    "id": "cdf9297b-8918-5421-9c7c-e50c3ff440dd",
     "name": "Leia Organa",
     "description": "Rebel Commander",
     "elite": true,
@@ -1689,7 +1666,7 @@
     "speed": 5
   },
   {
-    "id": 76,
+    "id": "59e37fde-c6ac-53c5-abcf-23d3abe213d4",
     "name": "Leia Organa",
     "description": "Rebel Commander",
     "elite": true,
@@ -1711,7 +1688,7 @@
     "speed": 5
   },
   {
-    "id": 77,
+    "id": "f619747a-eb75-5a8a-ba79-92923d33bc20",
     "name": "Loku Kanoloa",
     "description": null,
     "elite": false,
@@ -1732,7 +1709,7 @@
     "speed": 5
   },
   {
-    "id": 78,
+    "id": "ae9ce593-c113-5001-829d-c912baa7ac07",
     "name": "Luke Skywalker",
     "description": "Hero of the Rebellion",
     "elite": true,
@@ -1754,7 +1731,7 @@
     "speed": 5
   },
   {
-    "id": 79,
+    "id": "0e7a2a60-9311-5b31-ba94-c0f9d6c44173",
     "name": "Luke Skywalker",
     "description": "Jedi Knight",
     "elite": true,
@@ -1778,7 +1755,7 @@
     "speed": 4
   },
   {
-    "id": 80,
+    "id": "6f8dac27-bb0e-59f7-af72-8213ed39fd74",
     "name": "MHD-19",
     "description": null,
     "elite": false,
@@ -1799,7 +1776,7 @@
     "speed": 4
   },
   {
-    "id": 81,
+    "id": "cfe4e96a-d1eb-5384-83ba-327fcfca1417",
     "name": "Mak Eshka'rey",
     "description": null,
     "elite": false,
@@ -1820,7 +1797,7 @@
     "speed": 4
   },
   {
-    "id": 82,
+    "id": "7cd34b84-5cb6-57cc-9eac-1de45c48f6ac",
     "name": "Motivation",
     "description": null,
     "elite": false,
@@ -1841,7 +1818,7 @@
     "speed": null
   },
   {
-    "id": 83,
+    "id": "f9969e77-8af5-5451-bbdd-8dc5a2fe27db",
     "name": "Murne Rin",
     "description": null,
     "elite": false,
@@ -1863,7 +1840,7 @@
     "speed": 4
   },
   {
-    "id": 84,
+    "id": "f7913b45-0a0f-5c01-8be1-711618f85cf2",
     "name": "Nexu",
     "description": null,
     "elite": false,
@@ -1886,7 +1863,7 @@
     "speed": 6
   },
   {
-    "id": 85,
+    "id": "6c654997-bff4-5b72-ab3e-51532b19dbb9",
     "name": "Nexu",
     "description": null,
     "elite": true,
@@ -1909,7 +1886,7 @@
     "speed": 6
   },
   {
-    "id": 86,
+    "id": "ebb4df5e-ef8e-550a-8de2-6eb0b3ec072c",
     "name": "Obi-Wan Kenobi",
     "description": "Jedi Knight",
     "elite": true,
@@ -1930,7 +1907,7 @@
     "speed": 4
   },
   {
-    "id": 87,
+    "id": "d9549f76-910f-5a58-89de-6d5dea176bb4",
     "name": "Obi-Wan Kenobi",
     "description": "Jedi Knight",
     "elite": true,
@@ -1951,7 +1928,7 @@
     "speed": 4
   },
   {
-    "id": 88,
+    "id": "e699e077-d87d-5f51-bf5c-85b4b630e69b",
     "name": "On a Diplomatic Mission",
     "description": null,
     "elite": false,
@@ -1972,7 +1949,7 @@
     "speed": null
   },
   {
-    "id": 89,
+    "id": "6a6b072f-2d16-5a55-8b44-59550b219027",
     "name": "Onar Koma",
     "description": null,
     "elite": false,
@@ -1994,7 +1971,7 @@
     "speed": 4
   },
   {
-    "id": 90,
+    "id": "5fd8b5f5-a498-5e80-88ed-fa5b0c7a03f2",
     "name": "Prey on the Weak",
     "description": null,
     "elite": false,
@@ -2015,7 +1992,7 @@
     "speed": null
   },
   {
-    "id": 91,
+    "id": "91139b33-3d62-5d51-bd87-f4d92b454bb0",
     "name": "Probe Droid",
     "description": null,
     "elite": false,
@@ -2037,7 +2014,7 @@
     "speed": 3
   },
   {
-    "id": 92,
+    "id": "30ab9d0c-12a2-5cfd-8039-b2ab168ab74c",
     "name": "Probe Droid",
     "description": null,
     "elite": true,
@@ -2059,7 +2036,7 @@
     "speed": 4
   },
   {
-    "id": 93,
+    "id": "a60c3aa5-eb38-5046-88d1-620d0a0f0c8e",
     "name": "Punishing Strike",
     "description": null,
     "elite": false,
@@ -2080,7 +2057,7 @@
     "speed": null
   },
   {
-    "id": 94,
+    "id": "2c3a8c91-97fd-5e56-b82b-63a73157a4f5",
     "name": "R2-D2",
     "description": "Loyal Astromech",
     "elite": true,
@@ -2101,7 +2078,7 @@
     "speed": 3
   },
   {
-    "id": 95,
+    "id": "fe22e57b-bfdb-50ae-9c11-3f000308efb6",
     "name": "R2-D2",
     "description": "Loyal Astromech",
     "elite": true,
@@ -2122,7 +2099,7 @@
     "speed": 3
   },
   {
-    "id": 96,
+    "id": "01a90474-fb91-59ce-80d8-6e33f402e073",
     "name": "Rancor",
     "description": null,
     "elite": true,
@@ -2144,7 +2121,7 @@
     "speed": 4
   },
   {
-    "id": 97,
+    "id": "b928a15b-034b-57dd-9f0e-025a17b7d02a",
     "name": "Rancor",
     "description": null,
     "elite": true,
@@ -2166,7 +2143,7 @@
     "speed": 4
   },
   {
-    "id": 98,
+    "id": "c5b334d4-4acd-510a-a544-4320efc12001",
     "name": "Rebel High Command",
     "description": null,
     "elite": false,
@@ -2187,7 +2164,7 @@
     "speed": null
   },
   {
-    "id": 99,
+    "id": "ccdbb3f0-f0c2-5311-9eb1-276875574410",
     "name": "Rebel Saboteur",
     "description": null,
     "elite": false,
@@ -2210,7 +2187,7 @@
     "speed": 5
   },
   {
-    "id": 100,
+    "id": "c7c2ce4f-ce5f-5cd0-b0ae-8cbfe8ff9c03",
     "name": "Rebel Saboteur",
     "description": null,
     "elite": true,
@@ -2233,7 +2210,7 @@
     "speed": 5
   },
   {
-    "id": 101,
+    "id": "79a638ad-5b9d-5a31-bdc6-c0384c86f264",
     "name": "Rebel Trooper",
     "description": null,
     "elite": false,
@@ -2255,7 +2232,7 @@
     "speed": 4
   },
   {
-    "id": 102,
+    "id": "5c084571-957a-5245-8940-2c473798db90",
     "name": "Rebel Trooper",
     "description": null,
     "elite": true,
@@ -2277,7 +2254,7 @@
     "speed": 4
   },
   {
-    "id": 103,
+    "id": "8694fbd4-0165-527e-aea4-a9dc48e46d87",
     "name": "Royal Guard",
     "description": null,
     "elite": false,
@@ -2300,7 +2277,7 @@
     "speed": 5
   },
   {
-    "id": 104,
+    "id": "6caab715-26a5-532e-88ec-9ac22e9da08b",
     "name": "Royal Guard",
     "description": null,
     "elite": true,
@@ -2323,7 +2300,7 @@
     "speed": 5
   },
   {
-    "id": 105,
+    "id": "06498bf6-c2f7-568e-b008-e2a79523b4e3",
     "name": "Royal Guard Champion",
     "description": null,
     "elite": true,
@@ -2346,7 +2323,7 @@
     "speed": 6
   },
   {
-    "id": 106,
+    "id": "ef4e89f3-1aa7-5b10-ad2d-a68dba3cfeeb",
     "name": "Rule by Fear",
     "description": null,
     "elite": false,
@@ -2367,7 +2344,7 @@
     "speed": null
   },
   {
-    "id": 107,
+    "id": "7b6bda51-10b4-5936-82ac-e1a7a4ce349a",
     "name": "SC2-M Repulsor Tank",
     "description": null,
     "elite": true,
@@ -2389,7 +2366,7 @@
     "speed": 4
   },
   {
-    "id": 108,
+    "id": "3368aa5b-2880-5e10-b2f1-84d730954584",
     "name": "Saska Teft",
     "description": null,
     "elite": false,
@@ -2411,7 +2388,7 @@
     "speed": 4
   },
   {
-    "id": 109,
+    "id": "d0cebb38-0c79-5995-84a4-c1ba39c92683",
     "name": "Scavenged Weaponry",
     "description": null,
     "elite": false,
@@ -2432,7 +2409,7 @@
     "speed": null
   },
   {
-    "id": 110,
+    "id": "f09e903c-7c97-55ea-ba0f-8bdb89d63f13",
     "name": "Shyla Varad",
     "description": null,
     "elite": false,
@@ -2454,7 +2431,7 @@
     "speed": 4
   },
   {
-    "id": 111,
+    "id": "2f173869-803b-5ae7-9f8b-8c3f32ced160",
     "name": "Smuggler's Run",
     "description": null,
     "elite": false,
@@ -2475,7 +2452,7 @@
     "speed": null
   },
   {
-    "id": 112,
+    "id": "f9f661a7-21bd-5306-9e64-b5f5a091edc2",
     "name": "Snowtrooper",
     "description": null,
     "elite": false,
@@ -2497,7 +2474,7 @@
     "speed": 4
   },
   {
-    "id": 113,
+    "id": "374ae56a-fd40-59ea-9278-5cadbb943696",
     "name": "Snowtrooper",
     "description": null,
     "elite": true,
@@ -2519,7 +2496,7 @@
     "speed": 4
   },
   {
-    "id": 114,
+    "id": "8ab9c881-2ea6-5e88-99df-40caac828a75",
     "name": "Stormtrooper",
     "description": null,
     "elite": false,
@@ -2541,7 +2518,7 @@
     "speed": 4
   },
   {
-    "id": 115,
+    "id": "901168b6-f1ae-564b-81d0-ad253f5e2e52",
     "name": "Stormtrooper",
     "description": null,
     "elite": true,
@@ -2563,7 +2540,7 @@
     "speed": 4
   },
   {
-    "id": 116,
+    "id": "6ba82028-9482-5b54-8de3-417de1a699f7",
     "name": "Survivalist",
     "description": null,
     "elite": false,
@@ -2584,7 +2561,7 @@
     "speed": null
   },
   {
-    "id": 117,
+    "id": "7dd6ad99-e3a1-52a5-a42d-99282d9e5d51",
     "name": "Targeting Computer",
     "description": null,
     "elite": false,
@@ -2605,7 +2582,7 @@
     "speed": null
   },
   {
-    "id": 118,
+    "id": "df25d4e2-b8b4-548f-9f5b-c4c570d45d23",
     "name": "Temporary Alliance",
     "description": "A Common Enemy",
     "elite": false,
@@ -2626,7 +2603,7 @@
     "speed": null
   },
   {
-    "id": 119,
+    "id": "138acad0-0139-56dd-867c-fd5e4092f33f",
     "name": "Temporary Alliance",
     "description": "Hired Guns",
     "elite": false,
@@ -2647,7 +2624,7 @@
     "speed": null
   },
   {
-    "id": 120,
+    "id": "eab4f682-0928-5fdb-bdf0-392f506cae4a",
     "name": "The General's Ranks",
     "description": null,
     "elite": false,
@@ -2668,7 +2645,7 @@
     "speed": null
   },
   {
-    "id": 121,
+    "id": "24365c13-2f11-5691-9e5d-2eed4fbf90d1",
     "name": "The Grand Inquisitor",
     "description": "Sith Loyalist",
     "elite": true,
@@ -2691,7 +2668,7 @@
     "speed": 5
   },
   {
-    "id": 122,
+    "id": "f4536050-3b54-5e93-8a93-6aa1bf460519",
     "name": "Trandoshan Hunter",
     "description": null,
     "elite": false,
@@ -2714,7 +2691,7 @@
     "speed": 4
   },
   {
-    "id": 123,
+    "id": "0ea2e2a5-0f1c-5ae3-b316-b1628832858c",
     "name": "Trandoshan Hunter",
     "description": null,
     "elite": true,
@@ -2737,7 +2714,7 @@
     "speed": 4
   },
   {
-    "id": 124,
+    "id": "556d9e6e-6daa-53ac-bf54-1f620540ad12",
     "name": "Trusted Ally",
     "description": null,
     "elite": false,
@@ -2758,7 +2735,7 @@
     "speed": null
   },
   {
-    "id": 125,
+    "id": "eaf3a1bc-0162-5551-a57e-69072d17033f",
     "name": "Tusken Raider",
     "description": null,
     "elite": false,
@@ -2780,7 +2757,7 @@
     "speed": 4
   },
   {
-    "id": 126,
+    "id": "8ff70ca5-b259-5dcc-a301-e7b963f28713",
     "name": "Tusken Raider",
     "description": null,
     "elite": true,
@@ -2802,7 +2779,7 @@
     "speed": 4
   },
   {
-    "id": 127,
+    "id": "d2c7de25-5a95-5ed8-a73e-4c99317287cf",
     "name": "Ugnaught Tinkerer",
     "description": null,
     "elite": false,
@@ -2824,7 +2801,7 @@
     "speed": 4
   },
   {
-    "id": 128,
+    "id": "1fe73f47-e3d6-5f94-ba19-f220582f54f3",
     "name": "Ugnaught Tinkerer",
     "description": null,
     "elite": true,
@@ -2846,7 +2823,7 @@
     "speed": 4
   },
   {
-    "id": 129,
+    "id": "ad2cfeab-47f8-5f59-8ef5-965c73d63b83",
     "name": "Under Duress",
     "description": null,
     "elite": false,
@@ -2867,7 +2844,7 @@
     "speed": null
   },
   {
-    "id": 130,
+    "id": "73df749e-21d4-50b9-904f-e13b09240927",
     "name": "Unshakable",
     "description": null,
     "elite": false,
@@ -2888,7 +2865,7 @@
     "speed": null
   },
   {
-    "id": 131,
+    "id": "3e088729-474f-5a32-80fe-3a4f220bfaf7",
     "name": "Vader's Finest",
     "description": null,
     "elite": false,
@@ -2909,7 +2886,7 @@
     "speed": null
   },
   {
-    "id": 132,
+    "id": "c401dff8-1079-5bac-900b-217aca0f4fb7",
     "name": "Verena Talos",
     "description": null,
     "elite": false,
@@ -2931,7 +2908,7 @@
     "speed": 4
   },
   {
-    "id": 133,
+    "id": "95ea10f3-13c0-51f8-b8a9-e4c90524bbca",
     "name": "Vinto Hreeda",
     "description": null,
     "elite": false,
@@ -2953,7 +2930,7 @@
     "speed": 5
   },
   {
-    "id": 134,
+    "id": "4fff22e9-9dcc-5d5c-8523-c9024a0b4f5b",
     "name": "Wampa",
     "description": null,
     "elite": false,
@@ -2976,7 +2953,7 @@
     "speed": 3
   },
   {
-    "id": 135,
+    "id": "46987d54-3d48-5840-907d-7ada0413df8e",
     "name": "Wampa",
     "description": null,
     "elite": true,
@@ -2999,7 +2976,7 @@
     "speed": 3
   },
   {
-    "id": 136,
+    "id": "ff1500f4-cbd6-5015-b7d6-2b6a0e0820ec",
     "name": "Weequay Pirate",
     "description": null,
     "elite": false,
@@ -3022,7 +2999,7 @@
     "speed": 4
   },
   {
-    "id": 137,
+    "id": "a75a386b-7b0d-5b95-b50d-733dcfde59e1",
     "name": "Weequay Pirate",
     "description": null,
     "elite": true,
@@ -3045,7 +3022,7 @@
     "speed": 4
   },
   {
-    "id": 138,
+    "id": "dc2920b8-b976-5f28-8ad0-2a7166991d74",
     "name": "Wing Guard",
     "description": null,
     "elite": false,
@@ -3068,7 +3045,7 @@
     "speed": 4
   },
   {
-    "id": 139,
+    "id": "9af148aa-f5db-5e7e-b911-7ba062439714",
     "name": "Wing Guard",
     "description": null,
     "elite": true,
@@ -3091,7 +3068,7 @@
     "speed": 4
   },
   {
-    "id": 140,
+    "id": "6389283c-5e67-55b6-bfae-bbbde0d245ce",
     "name": "Wookiee Warrior",
     "description": null,
     "elite": false,
@@ -3114,7 +3091,7 @@
     "speed": 4
   },
   {
-    "id": 141,
+    "id": "053f1556-9a15-5ed3-88bd-ab482aa749b3",
     "name": "Wookiee Warrior",
     "description": null,
     "elite": true,
@@ -3137,7 +3114,7 @@
     "speed": 4
   },
   {
-    "id": 142,
+    "id": "668c0afd-7094-537a-b902-28d84374565f",
     "name": "Zillo Technique",
     "description": null,
     "elite": false,
@@ -3158,7 +3135,7 @@
     "speed": null
   },
   {
-    "id": 143,
+    "id": "f2137455-7401-51fd-ae3d-f9f8c32e11b3",
     "name": "AT-DP",
     "description": null,
     "elite": true,
@@ -3181,7 +3158,7 @@
     "speed": 3
   },
   {
-    "id": 144,
+    "id": "1e44fe14-5e25-51c9-aead-1b0937e7496b",
     "name": "Ahsoka Tano",
     "description": "Rebel Instigator",
     "elite": true,
@@ -3205,7 +3182,7 @@
     "speed": 4
   },
   {
-    "id": 145,
+    "id": "b082689e-633b-51c7-ab34-c93fc3d04159",
     "name": "Clawdite Shapeshifter",
     "description": null,
     "elite": false,
@@ -3228,7 +3205,7 @@
     "speed": 4
   },
   {
-    "id": 146,
+    "id": "d3c12791-5103-5be5-9669-c08367abb8a2",
     "name": "Clawdite Shapeshifter",
     "description": null,
     "elite": true,
@@ -3251,7 +3228,7 @@
     "speed": 4
   },
   {
-    "id": 147,
+    "id": "29490331-8433-578c-a55e-f3687a2a1df0",
     "name": "Driven by Hatred",
     "description": null,
     "elite": false,
@@ -3272,7 +3249,7 @@
     "speed": null
   },
   {
-    "id": 148,
+    "id": "310931f2-c1da-5ba5-b71b-a38a3a754978",
     "name": "Drokkatta",
     "description": null,
     "elite": false,
@@ -3294,7 +3271,7 @@
     "speed": 4
   },
   {
-    "id": 149,
+    "id": "bee96d07-07ec-54df-83fd-83bbcdf73a96",
     "name": "Emperor Palpatine",
     "description": "Sith Master",
     "elite": true,
@@ -3317,7 +3294,7 @@
     "speed": 3
   },
   {
-    "id": 150,
+    "id": "0ea3a1c5-73d5-59be-aea7-a8568009a470",
     "name": "Jarrod Kelvin",
     "description": null,
     "elite": false,
@@ -3340,7 +3317,7 @@
     "speed": 5
   },
   {
-    "id": 151,
+    "id": "4ee3ffb7-cf4e-5f11-8f2b-a787bf4dde59",
     "name": "Ko-Tun Feralo",
     "description": null,
     "elite": false,
@@ -3362,7 +3339,7 @@
     "speed": 4
   },
   {
-    "id": 152,
+    "id": "87ccccd8-ea06-5347-9a68-1cd6facdb4eb",
     "name": "Maul",
     "description": "Seeker of Vengeance",
     "elite": true,
@@ -3385,7 +3362,7 @@
     "speed": 4
   },
   {
-    "id": 153,
+    "id": "216123cf-61c8-524e-8d8d-63bf44831dcd",
     "name": "Riot Trooper",
     "description": null,
     "elite": false,
@@ -3408,7 +3385,7 @@
     "speed": 4
   },
   {
-    "id": 154,
+    "id": "aedbe382-a938-5b33-882c-61abcb82b53f",
     "name": "Riot Trooper",
     "description": null,
     "elite": false,
@@ -3431,7 +3408,7 @@
     "speed": 4
   },
   {
-    "id": 155,
+    "id": "242a2e1d-36fc-5479-9c8a-ed920b4a4da5",
     "name": "Riot Trooper",
     "description": null,
     "elite": true,
@@ -3454,7 +3431,7 @@
     "speed": 4
   },
   {
-    "id": 156,
+    "id": "54d2a283-3930-58f3-8b3f-1a6df968fbfa",
     "name": "Riot Trooper",
     "description": null,
     "elite": true,
@@ -3477,7 +3454,7 @@
     "speed": 4
   },
   {
-    "id": 157,
+    "id": "f9d7ab08-9d95-5ec9-b2d1-c381eb9e5553",
     "name": "Rogue Smuggler",
     "description": null,
     "elite": false,
@@ -3498,7 +3475,7 @@
     "speed": null
   },
   {
-    "id": 158,
+    "id": "2c5e972c-9e3e-5bfe-9a78-5517a97b1cb6",
     "name": "Sentry Droid",
     "description": null,
     "elite": false,
@@ -3522,7 +3499,7 @@
     "speed": 4
   },
   {
-    "id": 159,
+    "id": "bb166036-95db-5181-9592-9253ef89a451",
     "name": "Sentry Droid",
     "description": null,
     "elite": true,
@@ -3546,7 +3523,7 @@
     "speed": 4
   },
   {
-    "id": 160,
+    "id": "2693fe76-8390-5f4c-bea0-96f529994192",
     "name": "Wookiee Avenger",
     "description": null,
     "elite": false,
@@ -3567,7 +3544,7 @@
     "speed": null
   },
   {
-    "id": 161,
+    "id": "a1b90237-b396-5ead-a33c-96ab39debba8",
     "name": "Thrawn",
     "description": "Grand Admiral",
     "elite": true,
@@ -3588,7 +3565,7 @@
     "speed": 4
   },
   {
-    "id": 162,
+    "id": "e300aba5-537a-5def-a45b-0e11eeada754",
     "name": "Thrawn",
     "description": "Grand Admiral",
     "elite": true,
@@ -3609,7 +3586,7 @@
     "speed": 4
   },
   {
-    "id": 163,
+    "id": "eb51c24b-d9a5-5f0e-a7e7-42db1f7b5036",
     "name": "Death Trooper",
     "description": null,
     "elite": false,
@@ -3631,7 +3608,7 @@
     "speed": 4
   },
   {
-    "id": 164,
+    "id": "5f98d5e5-3fde-5d1b-b3d4-f581c8f560ab",
     "name": "Death Trooper",
     "description": null,
     "elite": false,
@@ -3653,7 +3630,7 @@
     "speed": 4
   },
   {
-    "id": 165,
+    "id": "375509e2-4789-5f2c-a57d-c0017ce28124",
     "name": "Death Trooper",
     "description": null,
     "elite": true,
@@ -3675,7 +3652,7 @@
     "speed": 4
   },
   {
-    "id": 166,
+    "id": "afc3ddab-a84d-53e4-b618-28cc5c7281e6",
     "name": "Death Trooper",
     "description": null,
     "elite": true,
@@ -3697,7 +3674,7 @@
     "speed": 4
   },
   {
-    "id": 167,
+    "id": "1b3b6f6c-306d-536d-a7aa-ac560139d43a",
     "name": "Loth-cat",
     "description": null,
     "elite": true,
@@ -3719,7 +3696,7 @@
     "speed": 5
   },
   {
-    "id": 168,
+    "id": "29eca1d6-7229-57a5-ae14-31c37a17b7b4",
     "name": "Hondo Ohnaka",
     "description": "Friend for hire",
     "elite": true,
@@ -3741,7 +3718,7 @@
     "speed": 5
   },
   {
-    "id": 169,
+    "id": "55f57317-1839-5ecf-9bb9-297aebfee172",
     "name": "Hondo Ohnaka",
     "description": "Friend for hire",
     "elite": true,
@@ -3763,7 +3740,7 @@
     "speed": 5
   },
   {
-    "id": 170,
+    "id": "79a95a65-4901-58b1-84a1-579053f339e8",
     "name": "Loth-cat",
     "description": null,
     "elite": false,
@@ -3785,7 +3762,7 @@
     "speed": 4
   },
   {
-    "id": 171,
+    "id": "60f4e9fd-7e8d-5cc1-b056-13450d469bc0",
     "name": "CT-1701",
     "description": null,
     "elite": false,
@@ -3807,7 +3784,7 @@
     "speed": 4
   },
   {
-    "id": 172,
+    "id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
     "name": "Ezra Bridger",
     "description": "Spectre-6",
     "elite": true,
@@ -3829,7 +3806,7 @@
     "speed": 4
   },
   {
-    "id": 173,
+    "id": "4e24aa9f-aee8-5291-afe3-b8c7b9562046",
     "name": "Ezra Bridger",
     "description": "Spectre-6",
     "elite": true,
@@ -3851,7 +3828,7 @@
     "speed": 4
   },
   {
-    "id": 174,
+    "id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
     "name": "Kanan Jarrus",
     "description": "Spectre-1",
     "elite": true,
@@ -3873,7 +3850,7 @@
     "speed": 4
   },
   {
-    "id": 175,
+    "id": "506dbdde-f631-5110-ab2f-babb2042cfa2",
     "name": "Kanan Jarrus",
     "description": "Spectre-1",
     "elite": true,
@@ -3895,7 +3872,7 @@
     "speed": 4
   },
   {
-    "id": 176,
+    "id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
     "name": "Sabine Wren",
     "description": "Spectre-5",
     "elite": true,
@@ -3916,7 +3893,7 @@
     "speed": 4
   },
   {
-    "id": 177,
+    "id": "e9636aee-1434-5477-9dab-937cabae927b",
     "name": "Sabine Wren",
     "description": "Spectre-5",
     "elite": true,
@@ -3938,7 +3915,7 @@
     "speed": 4
   },
   {
-    "id": 178,
+    "id": "6d264e65-6092-5512-bc2a-fe0acc0a5e76",
     "name": "Spectre Cell",
     "description": null,
     "elite": false,
@@ -3959,7 +3936,7 @@
     "speed": null
   },
   {
-    "id": 179,
+    "id": "ade8fc28-3c9b-54e0-9323-e49e8b0376cd",
     "name": "Tress Hacnua",
     "description": null,
     "elite": false,
@@ -3980,7 +3957,7 @@
     "speed": 5
   },
   {
-    "id": 180,
+    "id": "0959b4d4-d924-55bb-9897-bc974403fa00",
     "name": "Zeb Orrelios",
     "description": "Spectre-4",
     "elite": true,
@@ -4003,7 +3980,7 @@
     "speed": 4
   },
   {
-    "id": 181,
+    "id": "091f8f4c-baa0-5a6b-82b5-16e0db175383",
     "name": "Doubt",
     "description": null,
     "elite": false,
@@ -4024,7 +4001,7 @@
     "speed": null
   },
   {
-    "id": 182,
+    "id": "46ed5a7c-60ae-55a2-ab3d-92838340168b",
     "name": "Lie in Ambush",
     "description": null,
     "elite": false,
@@ -4045,7 +4022,7 @@
     "speed": null
   },
   {
-    "id": 183,
+    "id": "a7921eee-70f1-517d-a6bb-3aff27cb5cb7",
     "name": "Extra Armor",
     "description": null,
     "elite": true,
@@ -4066,7 +4043,7 @@
     "speed": null
   },
   {
-    "id": 184,
+    "id": "0b94ce76-d208-5962-afc2-332c1ce829ab",
     "name": "Heavy Fire",
     "description": null,
     "elite": false,

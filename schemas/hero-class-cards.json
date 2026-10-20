@@ -6,14 +6,12 @@
   "definitions": {},
   "properties": {
     "id": {
-      "type": "integer",
-      "description": "Id for entry",
-      "minimum": 0
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
     },
     "hero_id": {
-      "type": "integer",
       "description": "Foreign key id for entry in data/heroes.json",
-      "minimum": 0
+      "$ref": "definitions.json#/definitions/uuid"
     },
     "name": {
       "type": "string",

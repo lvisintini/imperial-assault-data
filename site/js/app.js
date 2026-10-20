@@ -19,7 +19,7 @@ function resolve(db) {
   if (type === 'search' && key === undefined) return views.search(db, q);
   if (!TYPE[type] || TYPE[type].hidden || rest.length) return views.notFound();
   if (key === undefined) return views.index(db, type, params);
-  const ref = /^\d+$/.test(key) ? db.get(type, Number(key)) : undefined;
+  const ref = db.get(type, key);
   return ref ? views.detail(db, ref) : views.notFound();
 }
 
