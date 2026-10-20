@@ -4,6 +4,9 @@
     "name": "Imperial Assault",
     "type": "Core Game",
     "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/imperial-assault.png"
   },
   {
@@ -11,6 +14,9 @@
     "name": "Twin Shadows",
     "type": "Expansion",
     "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/twin-shadows.png"
   },
   {
@@ -18,6 +24,9 @@
     "name": "Return to Hoth",
     "type": "Expansion",
     "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/return-to-hoth.png"
   },
   {
@@ -25,6 +34,9 @@
     "name": "The Bespin Gambit",
     "type": "Expansion",
     "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/the-bespin-gambit.png"
   },
   {
@@ -32,6 +44,9 @@
     "name": "Jabba's Realm",
     "type": "Expansion",
     "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/jabbas-realm.png"
   },
   {
@@ -39,6 +54,9 @@
     "name": "IG-88",
     "type": "Villain Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/ig-88.png"
   },
   {
@@ -46,6 +64,9 @@
     "name": "Rebel Saboteurs",
     "type": "Ally Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/rebel-saboteurs.png"
   },
   {
@@ -53,6 +74,9 @@
     "name": "Rebel Troopers",
     "type": "Ally Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/rebel-troopers.png"
   },
   {
@@ -60,6 +84,9 @@
     "name": "Royal Guard Champion",
     "type": "Villain Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/royal-guard-champion.png"
   },
   {
@@ -67,6 +94,9 @@
     "name": "Boba Fett",
     "type": "Villain Pack",
     "wave": 2,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/boba-fett.png"
   },
   {
@@ -74,6 +104,9 @@
     "name": "Kayn Somos",
     "type": "Villain Pack",
     "wave": 2,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/kayn-somos.png"
   },
   {
@@ -81,6 +114,9 @@
     "name": "R2-D2 and C-3PO",
     "type": "Ally Pack",
     "wave": 2,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/r2-d2-and-c-3po.png"
   },
   {
@@ -88,6 +124,9 @@
     "name": "Hired Guns",
     "type": "Villain Pack",
     "wave": 3,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/hired-guns.png"
   },
   {
@@ -95,6 +134,9 @@
     "name": "Stormtroopers",
     "type": "Villain Pack",
     "wave": 3,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/stormtroopers.png"
   },
   {
@@ -102,6 +144,9 @@
     "name": "Wookiee Warriors",
     "type": "Ally Pack",
     "wave": 3,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/wookiee-warriors.png"
   },
   {
@@ -109,6 +154,9 @@
     "name": "Alliance Smuggler",
     "type": "Ally Pack",
     "wave": 4,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/alliance-smuggler.png"
   },
   {
@@ -116,6 +164,9 @@
     "name": "Bantha Rider",
     "type": "Villain Pack",
     "wave": 4,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/bantha-rider.png"
   },
   {
@@ -123,6 +174,9 @@
     "name": "Dengar",
     "type": "Villain Pack",
     "wave": 5,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/dengar.png"
   },
   {
@@ -130,6 +184,9 @@
     "name": "Echo Base Troopers",
     "type": "Ally Pack",
     "wave": 5,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/echo-base-troopers.png"
   },
   {
@@ -137,6 +194,9 @@
     "name": "General Sorin",
     "type": "Villain Pack",
     "wave": 5,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/general-sorin.png"
   },
   {
@@ -144,6 +204,9 @@
     "name": "Leia Organa",
     "type": "Ally Pack",
     "wave": 5,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/leia-organa.png"
   },
   {
@@ -151,6 +214,9 @@
     "name": "Agent Blaise",
     "type": "Villain Pack",
     "wave": 6,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/agent-blaise.png"
   },
   {
@@ -158,6 +224,9 @@
     "name": "Bossk",
     "type": "Villain Pack",
     "wave": 6,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/bossk.png"
   },
   {
@@ -165,6 +234,9 @@
     "name": "ISB Infiltrators",
     "type": "Villain Pack",
     "wave": 6,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/isb-infiltrators.png"
   },
   {
@@ -172,6 +244,9 @@
     "name": "Lando Calrissian",
     "type": "Ally Pack",
     "wave": 6,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/lando-calrissian.png"
   },
   {
@@ -179,6 +254,9 @@
     "name": "Greedo",
     "type": "Villain Pack",
     "wave": 7,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/greedo.png"
   },
   {
@@ -186,6 +264,9 @@
     "name": "Obi-Wan Kenobi",
     "type": "Ally Pack",
     "wave": 7,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/obi-wan-kenobi.png"
   },
   {
@@ -193,6 +274,9 @@
     "name": "The Grand Inquisitor",
     "type": "Ally Pack",
     "wave": 7,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/the-grand-inquisitor.png"
   },
   {
@@ -200,6 +284,9 @@
     "name": "Alliance Rangers",
     "type": "Ally Pack",
     "wave": 8,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/alliance-rangers.png"
   },
   {
@@ -207,6 +294,9 @@
     "name": "Captain Terro",
     "type": "Villain Pack",
     "wave": 8,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/captain-terro.png"
   },
   {
@@ -214,6 +304,9 @@
     "name": "Jabba the Hutt",
     "type": "Villain Pack",
     "wave": 8,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/jabba-the-hutt.png"
   },
   {
@@ -221,6 +314,9 @@
     "name": "Luke Skywalker",
     "type": "Ally Pack",
     "wave": 8,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/luke-skywalker.png"
   },
   {
@@ -228,6 +324,9 @@
     "name": "BT-1 and 0-0-0",
     "type": "Ally Pack",
     "wave": 9,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/bt-1-and-0-0-0.png"
   },
   {
@@ -235,6 +334,9 @@
     "name": "Hera Syndulla and C1-10P",
     "type": "Ally Pack",
     "wave": 9,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/hera-syndulla-and-c1-10p.png"
   },
   {
@@ -242,6 +344,9 @@
     "name": "Jawa Scavenger",
     "type": "Ally Pack",
     "wave": 9,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/jawa-scavenger.png"
   },
   {
@@ -249,6 +354,9 @@
     "name": "Chewbacca",
     "type": "Ally Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/chewbacca.png"
   },
   {
@@ -256,6 +364,9 @@
     "name": "General Weiss",
     "type": "Villain Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/general-weiss.png"
   },
   {
@@ -263,6 +374,9 @@
     "name": "Han Solo",
     "type": "Ally Pack",
     "wave": 1,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/han-solo.png"
   },
   {
@@ -270,6 +384,9 @@
     "name": "Heart of the Empire",
     "type": "Expansion",
     "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/heart-of-the-empire.png"
   },
   {
@@ -277,6 +394,9 @@
     "name": "Ahsoka Tano",
     "type": "Ally Pack",
     "wave": 10,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/ahsoka-tano.png"
   },
   {
@@ -284,6 +404,9 @@
     "name": "Emperor Palpatine",
     "type": "Villain Pack",
     "wave": 10,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/emperor-palpatine.png"
   },
   {
@@ -291,6 +414,9 @@
     "name": "Maul",
     "type": "Villain Pack",
     "wave": 10,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/maul.png"
   },
   {
@@ -298,6 +424,9 @@
     "name": "Tyrants of Lothal",
     "type": "Expansion",
     "wave": 11,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/tyrants-of-lothal.png"
   },
   {
@@ -305,6 +434,9 @@
     "name": "Ezra Bridger and Kanan Jarrus",
     "type": "Ally Pack",
     "wave": 11,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/ezra-bridger-and-kanan-jarrus.png"
   },
   {
@@ -312,6 +444,9 @@
     "name": "Hondo Ohnaka",
     "type": "Villain Pack",
     "wave": 11,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/hondo-ohnaka.png"
   },
   {
@@ -319,6 +454,9 @@
     "name": "Sabine Wren and Zeb Orrelios",
     "type": "Ally Pack",
     "wave": 11,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/sabine-wren-and-zeb-orrelios.png"
   },
   {
@@ -326,6 +464,9 @@
     "name": "Thrawn",
     "type": "Villain Pack",
     "wave": 11,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": null,
     "image": "sources/thrawn.png"
   }
 ]

@@ -40,6 +40,40 @@
           "type": "null"
         }
       ]
+    },
+    "product_code": {
+      "description": "FFG's product code (SKU), e.g. SWI01. Null for products without one of their own.",
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^SWI\\d{2}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "announced_date": {
+      "description": "The date FFG announced the product.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "release_date": {
+      "description": "The date the product was released.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [
@@ -47,7 +81,10 @@
     "name",
     "type",
     "image",
-    "wave"
+    "wave",
+    "product_code",
+    "announced_date",
+    "release_date"
   ],
   "additionalProperties": false
 }

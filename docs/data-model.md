@@ -42,6 +42,7 @@ erDiagram
         int id PK
         string name
         string type "Core Game, Expansion, Ally Pack, Villain Pack"
+        string product_code "SWI##, unique"
     }
     source-contents {
         int source_id FK
