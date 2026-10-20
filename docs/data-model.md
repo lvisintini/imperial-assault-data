@@ -126,6 +126,9 @@ erDiagram
 ```
 
 `iaspec` is unique across deployment, command and companion cards together, not just within each file.
+It's built from the card: `elite` for elite, non-unique cards, then the name, lowercased with spaces and punctuation
+removed (`elitecrosstraining`). Only when two cards would get the same value does it add the game mode (when the card
+has only one), then the affiliation, then the description.
 
 ### Not linked to any product yet
 
