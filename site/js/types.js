@@ -1,12 +1,21 @@
 // One entry per data/<file>.json, in navigation order. `images` lists the record's image fields (paths relative to
 // images/large and images/small); `hidden` keeps a type out of navigation and routing. `sort` is the default order
-// (field names, '-' for descending; name when missing).
+// (field names, '-' for descending; name when missing). `thumb: 'back'` makes tiles show the record's card back
+// instead of its own image, which the peek still shows.
 // List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
-// ('source', 'wave'). `facets` picks and orders them, and can add a trait as a yes/no facet with its own labels;
-// `groups` is the default grouping (facet ids); `order` fixes the order of a field's values.
+// ('source', 'wave'; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
+// facet with its own labels; `groups` is the default grouping (facet ids); `order` fixes the order of a field's
+// values, in facets, groups and sorting.
 export const TYPES = [
-  {file: 'sources', label: 'Sources', singular: 'Source', images: ['image'], sort: ['id']},
-  {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded']},
+  {
+    file: 'sources', label: 'Sources', singular: 'Source', images: ['image'],
+    sort: ['product_code'],
+    facets: [
+      'type', 'wave',
+    ],
+    order: {type: ['Core Game', 'Expansion', 'Ally Pack', 'Villain Pack']},
+  },
+  {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded'], thumb: 'back'},
   {file: 'hero-class-cards', label: 'Hero class cards', singular: 'Hero class card', images: ['image']},
   {file: 'imperial-classes', label: 'Imperial classes', singular: 'Imperial class', images: []},
   {file: 'imperial-class-cards', label: 'Imperial class cards', singular: 'Imperial class card', images: ['image']},
