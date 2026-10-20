@@ -101,6 +101,16 @@ This project uses [SemVer](http://semver.org/). Given a `MAJOR.MINOR.PATCH` vers
    high-res and low-res zips, and publishes them as a GitHub Release with generated notes. A tag with a suffix
    (e.g. `v1.2.0-rc1`) is published as a pre-release. Edit the release notes on GitHub if needed.
 
+#### Major releases
+
+Breaking changes are collected on a release branch instead of going straight to `master`:
+
+1. Cut `release/X.0.0` from `master`. Each breaking change is its own PR into that branch, tracked in the `X.0.0`
+   milestone. Merge `master` into the branch when `master` moves on.
+2. For a release candidate, set the version to `X.0.0-rcN` on the branch and tag that commit `vX.0.0-rcN`. The Release
+   workflow publishes it as a pre-release.
+3. When it's ready, set the version to `X.0.0`, merge the branch into `master` in one PR, then tag `vX.0.0` there.
+
 
 ## Contributors
 
