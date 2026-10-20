@@ -262,5 +262,101 @@
     "name": "Intimidation Factor",
     "color": "Green",
     "image": "side-mission-cards/intimidation-factor.png"
+  },
+  {
+    "id": 44,
+    "name": "Celebration",
+    "color": "Grey",
+    "image": "side-mission-cards/celebration.png"
+  },
+  {
+    "id": 45,
+    "name": "Imperial Entanglements",
+    "color": "Grey",
+    "image": "side-mission-cards/imperial-entanglements.png"
+  },
+  {
+    "id": 46,
+    "name": "Armed and Operational",
+    "color": "Green",
+    "image": "side-mission-cards/armed-and-operational.png"
+  },
+  {
+    "id": 47,
+    "name": "Brace For Impact",
+    "color": "Green",
+    "image": "side-mission-cards/brace-for-impact.png"
+  },
+  {
+    "id": 48,
+    "name": "Open to Interpretation",
+    "color": "Green",
+    "image": "side-mission-cards/open-to-interpretation.png"
+  },
+  {
+    "id": 49,
+    "name": "Brute Force",
+    "color": "Green",
+    "image": "side-mission-cards/brute-force.png"
+  },
+  {
+    "id": 50,
+    "name": "Precious Cargo",
+    "color": "Green",
+    "image": "side-mission-cards/precious-cargo.png"
+  },
+  {
+    "id": 51,
+    "name": "Snowcrash",
+    "color": "Green",
+    "image": "side-mission-cards/snowcrash.png"
+  },
+  {
+    "id": 52,
+    "name": "Communication Breakdown",
+    "color": "Green",
+    "image": "side-mission-cards/communication-breakdown.png"
+  },
+  {
+    "id": 53,
+    "name": "Into the Unknown",
+    "color": "Grey",
+    "image": "side-mission-cards/into-the-unknown.png"
+  },
+  {
+    "id": 54,
+    "name": "Paying Debts",
+    "color": "Grey",
+    "image": "side-mission-cards/paying-debts.png"
+  },
+  {
+    "id": 55,
+    "name": "Deadly Transmission",
+    "color": "Green",
+    "image": "side-mission-cards/deadly-transmission.png"
+  },
+  {
+    "id": 56,
+    "name": "Strike Force Xesh",
+    "color": "Green",
+    "image": "side-mission-cards/strike-force-xesh.png"
+  },
+  {
+    "id": 57,
+    "name": "A Light in the Darkness",
+    "color": "Green",
+    "image": "side-mission-cards/a-light-in-the-darkness.png"
+  },
+  {
+    "id": 58,
+    "name": "Phantom Extraction",
+    "color": "Green",
+    "image": "side-mission-cards/phantom-extraction.png"
+  },
+  {
+    "id": 59,
+    "name": "Home Invasion",
+    "color": "Green",
+    "image": "side-mission-cards/home-invasion.png"
   }
 ]

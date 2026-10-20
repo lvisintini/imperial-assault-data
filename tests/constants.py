@@ -48,7 +48,6 @@ class CONTENT_TYPES:
     without_ids = [
         SOURCE_CONTENTS,
         SKIRMISH_MAP,
-        CONDITION,
         CARD,
     ]
 

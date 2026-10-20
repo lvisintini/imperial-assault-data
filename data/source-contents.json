@@ -4183,5 +4183,275 @@
     "source_id": 46,
     "content_type": "deployment-cards",
     "content_id": 161
+  },
+  {
+    "source_id": 39,
+    "content_type": "skirmish-maps",
+    "content_id": 39
+  },
+  {
+    "source_id": 40,
+    "content_type": "skirmish-maps",
+    "content_id": 40
+  },
+  {
+    "source_id": 45,
+    "content_type": "skirmish-maps",
+    "content_id": 41
+  },
+  {
+    "source_id": 41,
+    "content_type": "skirmish-maps",
+    "content_id": 42
+  },
+  {
+    "source_id": 43,
+    "content_type": "skirmish-maps",
+    "content_id": 43
+  },
+  {
+    "source_id": 42,
+    "content_type": "skirmish-maps",
+    "content_id": 44
+  },
+  {
+    "source_id": 38,
+    "content_type": "skirmish-maps",
+    "content_id": 45
+  },
+  {
+    "source_id": 44,
+    "content_type": "skirmish-maps",
+    "content_id": 46
+  },
+  {
+    "source_id": 46,
+    "content_type": "skirmish-maps",
+    "content_id": 47
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 60
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 61
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 62
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 63
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 64
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 65
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 66
+  },
+  {
+    "source_id": 2,
+    "content_type": "reward-cards",
+    "content_id": 67
+  },
+  {
+    "source_id": 35,
+    "content_type": "side-mission-cards",
+    "content_id": 44
+  },
+  {
+    "source_id": 37,
+    "content_type": "side-mission-cards",
+    "content_id": 45
+  },
+  {
+    "source_id": 6,
+    "content_type": "side-mission-cards",
+    "content_id": 46
+  },
+  {
+    "source_id": 7,
+    "content_type": "side-mission-cards",
+    "content_id": 47
+  },
+  {
+    "source_id": 11,
+    "content_type": "side-mission-cards",
+    "content_id": 48
+  },
+  {
+    "source_id": 14,
+    "content_type": "side-mission-cards",
+    "content_id": 49
+  },
+  {
+    "source_id": 15,
+    "content_type": "side-mission-cards",
+    "content_id": 50
+  },
+  {
+    "source_id": 18,
+    "content_type": "side-mission-cards",
+    "content_id": 51
+  },
+  {
+    "source_id": 20,
+    "content_type": "side-mission-cards",
+    "content_id": 52
+  },
+  {
+    "source_id": 23,
+    "content_type": "side-mission-cards",
+    "content_id": 53
+  },
+  {
+    "source_id": 24,
+    "content_type": "side-mission-cards",
+    "content_id": 54
+  },
+  {
+    "source_id": 26,
+    "content_type": "side-mission-cards",
+    "content_id": 55
+  },
+  {
+    "source_id": 28,
+    "content_type": "side-mission-cards",
+    "content_id": 56
+  },
+  {
+    "source_id": 31,
+    "content_type": "side-mission-cards",
+    "content_id": 57
+  },
+  {
+    "source_id": 33,
+    "content_type": "side-mission-cards",
+    "content_id": 58
+  },
+  {
+    "source_id": 39,
+    "content_type": "side-mission-cards",
+    "content_id": 59
+  },
+  {
+    "source_id": 0,
+    "content_type": "condition-cards",
+    "content_id": 2
+  },
+  {
+    "source_id": 0,
+    "content_type": "condition-cards",
+    "content_id": 0
+  },
+  {
+    "source_id": 0,
+    "content_type": "condition-cards",
+    "content_id": 1
+  },
+  {
+    "source_id": 1,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 9,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 11,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 2,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 3,
+    "content_type": "condition-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 21,
+    "content_type": "condition-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 24,
+    "content_type": "condition-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 23,
+    "content_type": "condition-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 4,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 4,
+    "content_type": "condition-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 28,
+    "content_type": "condition-cards",
+    "content_id": 4
+  },
+  {
+    "source_id": 29,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 32,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 38,
+    "content_type": "form-cards",
+    "content_id": 2
+  },
+  {
+    "source_id": 38,
+    "content_type": "form-cards",
+    "content_id": 1
+  },
+  {
+    "source_id": 38,
+    "content_type": "form-cards",
+    "content_id": 0
+  },
+  {
+    "source_id": 38,
+    "content_type": "condition-cards",
+    "content_id": 3
+  },
+  {
+    "source_id": 42,
+    "content_type": "condition-cards",
+    "content_id": 3
   }
 ]

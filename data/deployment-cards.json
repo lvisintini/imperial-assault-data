@@ -3322,7 +3322,7 @@
     "description": null,
     "elite": false,
     "unique": true,
-    "affiliation": "Imperial",
+    "affiliation": "Rebel",
     "traits": [
       "Brawler",
       "Leader",
@@ -3436,7 +3436,7 @@
     "description": null,
     "elite": true,
     "unique": false,
-    "affiliation": "Mercenary",
+    "affiliation": "Imperial",
     "traits": [
       "Brawler",
       "Guardian",

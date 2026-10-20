@@ -193,5 +193,50 @@
     "id": 38,
     "name": "Endor Defense Station",
     "image": "skirmish-maps/endor-defense-station.png"
+  },
+  {
+    "id": 39,
+    "name": "Uscru Entertainment District",
+    "image": "skirmish-maps/uscru-entertainment-district.png"
+  },
+  {
+    "id": 40,
+    "name": "Coruscant Senate Office",
+    "image": "skirmish-maps/coruscant-senate-office.png"
+  },
+  {
+    "id": 41,
+    "name": "Devaron Garrison",
+    "image": "skirmish-maps/devaron-garrison.png"
+  },
+  {
+    "id": 42,
+    "name": "Coruscant Back Alleys",
+    "image": "skirmish-maps/coruscant-back-alleys.png"
+  },
+  {
+    "id": 43,
+    "name": "Lothal Battlefront",
+    "image": "skirmish-maps/lothal-battlefront.png"
+  },
+  {
+    "id": 44,
+    "name": "Lothal Wastes",
+    "image": "skirmish-maps/lothal-wastes.png"
+  },
+  {
+    "id": 45,
+    "name": "30th Floor Plaza",
+    "image": "skirmish-maps/30th-floor-plaza.png"
+  },
+  {
+    "id": 46,
+    "name": "Lothal Spaceport",
+    "image": "skirmish-maps/lothal-spaceport.png"
+  },
+  {
+    "id": 47,
+    "name": "Imperial Tower",
+    "image": "skirmish-maps/imperial-tower.png"
   }
 ]

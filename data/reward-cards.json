@@ -438,5 +438,61 @@
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/wholeness.png"
+  },
+  {
+    "id": 60,
+    "name": "Supply Disruption",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/supply-disruption.png"
+  },
+  {
+    "id": 61,
+    "name": "Networks Restored",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/networks-restored.png"
+  },
+  {
+    "id": 62,
+    "name": "Constant Advantage",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/constant-advantage.png"
+  },
+  {
+    "id": 63,
+    "name": "Resurgence",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/resurgence.png"
+  },
+  {
+    "id": 64,
+    "name": "Weary from Toil",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/weary-from-toil.png"
+  },
+  {
+    "id": 65,
+    "name": "Invigorated by Success",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/invigorated-by-success.png"
+  },
+  {
+    "id": 66,
+    "name": "Distractions",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/distractions.png"
+  },
+  {
+    "id": 67,
+    "name": "Strategy Executed",
+    "type": "Feat",
+    "traits": null,
+    "image": "reward-cards/strategy-executed.png"
   }
 ]
