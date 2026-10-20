@@ -73,6 +73,17 @@
           "type": "null"
         }
       ]
+    },
+    "included_in": {
+      "description": "The source this product ships inside (e.g. the Luke Skywalker Ally Pack in the Core Set), or null when it's sold on its own.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/uuid"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [
@@ -83,7 +94,8 @@
     "wave",
     "product_code",
     "announced_date",
-    "release_date"
+    "release_date",
+    "included_in"
   ],
   "additionalProperties": false
 }

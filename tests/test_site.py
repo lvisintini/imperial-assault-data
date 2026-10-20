@@ -29,13 +29,19 @@ class TestSite:
         assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
 
     def test_foreign_keys_cover_every_id_field(self):
-        site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'\}", get_site_js('relations.js')))
+        site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*\}",
+                                  get_site_js('relations.js')))
+        uuid = get_schema('definitions')['definitions']['uuid']['pattern']
+
+        def references(prop):  # a uuid, or a nullable one
+            return prop.get('pattern') == uuid or any(o.get('pattern') == uuid for o in prop.get('oneOf', []))
+
         schema_fks = {
             (content_type, field)
             for content_type in CONTENT_TYPES.as_list
             if content_type != CONTENT_TYPES.SOURCE_CONTENTS
-            for field in get_schema(content_type)['properties']
-            if field.endswith('_id')
+            for field, prop in get_schema(content_type)['properties'].items()
+            if field != 'id' and references(prop)
         }
         assert site_fks == schema_fks
 
