@@ -3,6 +3,7 @@
 //           Filtering keeps records with any ticked value; grouping puts a record under each of its values.
 //   range:  records have a number, or none. Filtering keeps records within min..max.
 // Facets combine with AND, the values ticked within one facet with OR.
+import {JOIN} from './relations.js';
 import {TYPE, fieldLabel, title} from './types.js';
 
 const SKIPPED = new Set(['id', 'name', 'description', 'iaspec']);
@@ -32,7 +33,9 @@ function traitFacet({id, label, trait, yes, no}) {
 }
 
 // Products a record comes in: its own source-contents rows, or its parent's (hero class cards, agenda cards, ...).
+// A source is its own product, so the sources page gets the same Wave facet, in place of a range on its wave field.
 function products(ref, db) {
+  if (ref.type === JOIN.parent) return [ref];
   const own = db.sources(ref);
   const parent = db.parent.get(ref);
   return own.length || !parent ? own : db.sources(parent.ref);
