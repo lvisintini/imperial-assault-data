@@ -13,11 +13,17 @@ export const href = ref => `#/${ref.type}/${ref.key}`;
 // In the given order, or the type's default one (lists of a single type).
 const sorted = (refs, keys) => refs.length ? sortRefs(refs, keys ?? defaultSort(refs[0].type)) : refs;
 
-// Records without images of their own (agenda decks, imperial classes) show their card back.
+const ownImage = ref => ref.record[TYPE[ref.type].images.find(f => ref.record[f])];
+const backImage = (ref, db) => db.back.get(ref)?.ref.record.image;
+
+// Tiles show a record's own image, or its card back when it has none (agenda decks, imperial classes) or its type
+// asks for it (`thumb: 'back'`: heroes). The peek prefers the record's own image.
 function thumbPath(ref, db) {
-  const field = TYPE[ref.type].images.find(f => ref.record[f]);
-  return field ? ref.record[field] : db.back.get(ref)?.ref.record.image;
+  return TYPE[ref.type].thumb === 'back'
+    ? backImage(ref, db) ?? ownImage(ref) : ownImage(ref) ?? backImage(ref, db);
 }
+
+const peekPath = (ref, db) => ownImage(ref) ?? backImage(ref, db);
 
 const imageUrl = (size, path) => `images/${size}/${encodeURI(path)}`;
 
@@ -41,8 +47,9 @@ function subtitle(ref, db) {
 
 function tile(ref, db) {
   const path = thumbPath(ref, db);
+  const peek = peekPath(ref, db);
   const name = title(ref);
-  return html`<a class="tile" href="${href(ref)}"${path ? html` data-peek="${imageUrl('large', path)}"` : ''}>
+  return html`<a class="tile" href="${href(ref)}"${peek ? html` data-peek="${imageUrl('large', peek)}"` : ''}>
     <span class="thumb">${path
       ? html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">`
       : html`<span class="no-image">No image</span>`}</span>
