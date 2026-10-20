@@ -4,6 +4,7 @@ which ship inside the Core Set, become sources of their own.
 - `included_in` (nullable): the source a product ships inside. Null for everything except the two new packs.
 - Source 31 (the Luke Skywalker, Jedi Knight Ally Pack, renamed to plain "Luke Skywalker" in 1.4.0) gets FFG's name
   back, "Luke Skywalker, Jedi Knight", and its image moves to match, so the new Core Set pack can be "Luke Skywalker".
+- The packs share the Core Set's wave (0) and dates, and have no product code of their own.
 - The two packs' contents (per the wiki's pack pages) move off the Core Set: their source-contents rows now point at
   the pack. The Core Set box still contains them, through `included_in`.
 - Fixes the agenda deck name "Lord Vaders Command" → "Lord Vader's Command".
@@ -75,8 +76,8 @@ def main():
     core = next(s for s in sources if s['name'] == CORE)
 
     for name, pack in PACKS.items():
-        source = {'id': str(uuid.uuid4()), 'name': name, 'type': pack['type'], 'wave': None, 'product_code': None,
-                  'announced_date': core['announced_date'], 'release_date': core['release_date'],
+        source = {'id': str(uuid.uuid4()), 'name': name, 'type': pack['type'], 'wave': core['wave'],
+                  'product_code': None, 'announced_date': core['announced_date'], 'release_date': core['release_date'],
                   'included_in': core['id'], 'image': pack['image']}
         sources.append(source)
         for content_type, wanted in pack['contents'].items():
