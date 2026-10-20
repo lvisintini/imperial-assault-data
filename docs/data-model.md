@@ -21,7 +21,9 @@ erDiagram
     source-contents }|--|| agenda-decks : "content_id"
     source-contents }|--|| command-cards : "content_id"
     source-contents }|--|| companion-cards : "content_id"
+    source-contents }|--|| condition-cards : "content_id"
     source-contents }|--|| deployment-cards : "content_id"
+    source-contents }|--|| form-cards : "content_id"
     source-contents }|--|| heroes : "content_id"
     source-contents }|--|| imperial-classes : "content_id"
     source-contents }|--|| reward-cards : "content_id"
@@ -117,7 +119,8 @@ erDiagram
         string name
     }
     condition-cards {
-        string name PK
+        int id PK
+        string name
     }
     form-cards {
         int id PK
@@ -130,12 +133,9 @@ It's built from the card: `elite` for elite, non-unique cards, then the name, lo
 removed (`elitecrosstraining`). Only when two cards would get the same value does it add the game mode (when the card
 has only one), then the affiliation, then the description.
 
-### Not linked to any product yet
-
-- `condition-cards` (keyed by `name`, no `id`) and `form-cards` aren't referenced by `source-contents`, so you can't
-  tell which product they come from.
-- Form cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned
-  in [#3](https://github.com/lvisintini/imperial-assault-data/issues/3).
+Condition cards come in several products: each expansion or pack that uses a condition includes its own cards. Form
+cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned in
+[#3](https://github.com/lvisintini/imperial-assault-data/issues/3).
 
 ## Card backs
 

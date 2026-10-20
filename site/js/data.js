@@ -17,7 +17,7 @@ function push(map, key, value) {
 }
 
 // Records are wrapped in refs, {type, key, record}, where key is the record's id, or its array index in files
-// without ids (card-backs, condition-cards, source-contents). Files aren't sorted by id, so the two differ.
+// without ids (card-backs, source-contents). Files aren't sorted by id, so the two differ.
 class Db {
   constructor(tables) {
     this.refs = {};
