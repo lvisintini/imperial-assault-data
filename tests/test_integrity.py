@@ -41,6 +41,20 @@ class TestIntegrity:
         assert self.fetch_fk_data(imperial_classes, imperial_class_card_entry["class_id"]) is not None
 
 
+class TestSourcesIntegrity:
+    def test_no_duplicate_product_codes(self):
+        codes = [s['product_code'] for s in get_data(CONTENT_TYPES.SOURCE) if s['product_code'] is not None]
+        duplicates = [code for code, count in Counter(codes).items() if count > 1]
+        if duplicates:
+            pytest.fail(f"The following product codes are duplicated: {', '.join(duplicates)}")
+
+    @pytest.mark.parametrize("entry", [
+        s for s in get_data(CONTENT_TYPES.SOURCE) if s['announced_date'] and s['release_date']
+    ], ids=lambda s: s['name'])
+    def test_release_date_is_not_before_announced_date(self, entry):
+        assert entry['release_date'] >= entry['announced_date']
+
+
 class TestDeploymentsIntegrity:
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']
