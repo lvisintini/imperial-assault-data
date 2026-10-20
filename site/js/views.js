@@ -26,7 +26,7 @@ function subtitle(ref, db) {
   const parent = db.parent.get(ref);
   if (parent) return title(parent.ref);
   switch (ref.type) {
-    case 'sources': return record.wave ? `${record.type} · Wave ${record.wave}` : record.type;
+    case 'sources': return record.wave != null ? `${record.type} · Wave ${record.wave}` : record.type;
     // Enough to tell apart same-named cards: elite/regular pairs and campaign/skirmish versions.
     case 'deployment-cards': return [
       record.description,

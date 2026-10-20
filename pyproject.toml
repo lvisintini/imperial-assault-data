@@ -1,6 +1,6 @@
 [project]
 name = "imperial-assault-data"
-version = "1.5.0"
+version = "1.5.1"
 description = "Data, JSON Schemas and card images for FFG's Star Wars: Imperial Assault"
 readme = "README.md"
 license = { file = "LICENSE" }

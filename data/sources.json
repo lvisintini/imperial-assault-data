@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Imperial Assault",
     "type": "Core Game",
-    "wave": null,
+    "wave": 0,
     "product_code": "SWI01",
     "announced_date": "2014-08-15",
     "release_date": "2014-12-15",
