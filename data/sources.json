@@ -99,10 +99,10 @@
   },
   {
     "id": 14,
-    "name": "Wookie Warriors",
+    "name": "Wookiee Warriors",
     "type": "Ally Pack",
     "wave": 3,
-    "image": "sources/wookie-warriors.png"
+    "image": "sources/wookiee-warriors.png"
   },
   {
     "id": 15,
