@@ -4061,7 +4061,7 @@
     "reinforce_cost": null,
     "deployment_group": null,
     "image": "deployment-cards/extra-armor-elite-skirmish.png",
-    "iaspec": "extraarmor",
+    "iaspec": "eliteextraarmor",
     "health": null,
     "speed": null
   },
