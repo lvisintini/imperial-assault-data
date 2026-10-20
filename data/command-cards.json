@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "d9350bd2-3ff3-55b2-83ee-831572cd09f6",
     "name": "A Powerful Influence",
     "cost": 2,
     "limit": 1,
@@ -8,7 +8,7 @@
     "iaspec": "apowerfulinfluence"
   },
   {
-    "id": 1,
+    "id": "e9aa2803-a906-5361-ae70-c644033c2f65",
     "name": "Adrenaline",
     "cost": 2,
     "limit": 1,
@@ -16,7 +16,7 @@
     "iaspec": "adrenaline"
   },
   {
-    "id": 2,
+    "id": "62c7177e-0525-5ad3-8980-5adb4190d8e4",
     "name": "Advance Warning",
     "cost": 0,
     "limit": 1,
@@ -24,7 +24,7 @@
     "iaspec": "advancewarning"
   },
   {
-    "id": 3,
+    "id": "01829a46-c7ef-51f0-bb86-1bad0809a716",
     "name": "Against the Odds",
     "cost": 0,
     "limit": 1,
@@ -32,7 +32,7 @@
     "iaspec": "againsttheodds"
   },
   {
-    "id": 4,
+    "id": "96423f3c-4b8f-5e30-b7ea-ec38d593dda4",
     "name": "Assassinate",
     "cost": 3,
     "limit": 1,
@@ -40,7 +40,7 @@
     "iaspec": "assassinate"
   },
   {
-    "id": 5,
+    "id": "a6d07539-e379-5614-90f1-cde14c07735f",
     "name": "Ballistics Matrix",
     "cost": 1,
     "limit": 1,
@@ -48,7 +48,7 @@
     "iaspec": "ballisticsmatrix"
   },
   {
-    "id": 6,
+    "id": "83acd353-f6e1-505a-bbf6-0c198396da07",
     "name": "Battlefield Awareness",
     "cost": 1,
     "limit": 1,
@@ -56,7 +56,7 @@
     "iaspec": "battlefieldawareness"
   },
   {
-    "id": 7,
+    "id": "44db67d4-a74d-52b0-a5f0-82202a29789b",
     "name": "Behind Enemy Lines",
     "cost": 1,
     "limit": 1,
@@ -64,7 +64,7 @@
     "iaspec": "behindenemylines"
   },
   {
-    "id": 8,
+    "id": "48de23b8-0e0f-5b2d-b8ae-192f7941efa3",
     "name": "Black Market Prices",
     "cost": 1,
     "limit": 1,
@@ -72,7 +72,7 @@
     "iaspec": "blackmarketprices"
   },
   {
-    "id": 9,
+    "id": "0f4717b7-4974-5350-b4da-7ffa87f96a6c",
     "name": "Bladestorm",
     "cost": 1,
     "limit": 1,
@@ -80,7 +80,7 @@
     "iaspec": "bladestorm"
   },
   {
-    "id": 10,
+    "id": "623e1284-73cb-591f-8107-837f1d19c48c",
     "name": "Blaze of Glory",
     "cost": 2,
     "limit": 1,
@@ -88,7 +88,7 @@
     "iaspec": "blazeofglory"
   },
   {
-    "id": 11,
+    "id": "5bf96b56-a654-524f-a2e7-6ad99c1c83f1",
     "name": "Blitz",
     "cost": 1,
     "limit": 1,
@@ -96,7 +96,7 @@
     "iaspec": "blitz"
   },
   {
-    "id": 12,
+    "id": "bacd4b01-30bc-54ed-8902-747f99cec626",
     "name": "Blood Feud",
     "cost": 2,
     "limit": 1,
@@ -104,7 +104,7 @@
     "iaspec": "bloodfeud"
   },
   {
-    "id": 13,
+    "id": "9b760c6f-1677-5ea7-ba85-fce84d2e6c80",
     "name": "Bodyguard",
     "cost": 1,
     "limit": 2,
@@ -112,7 +112,7 @@
     "iaspec": "bodyguard"
   },
   {
-    "id": 14,
+    "id": "8618cddd-43b4-5dba-b5f1-8341abb81c4a",
     "name": "Brace Yourself",
     "cost": 0,
     "limit": 1,
@@ -120,7 +120,7 @@
     "iaspec": "braceyourself"
   },
   {
-    "id": 15,
+    "id": "49413b34-5b3f-50dd-9d27-845033210e2a",
     "name": "Brace for Impact",
     "cost": 1,
     "limit": 1,
@@ -128,7 +128,7 @@
     "iaspec": "braceforimpact"
   },
   {
-    "id": 16,
+    "id": "c7c5c49a-7387-5d6f-8439-5f4719eee94c",
     "name": "Burst Fire",
     "cost": 2,
     "limit": 1,
@@ -136,7 +136,7 @@
     "iaspec": "burstfire"
   },
   {
-    "id": 17,
+    "id": "f6a0aa1e-77b7-5a77-9131-17c96529518f",
     "name": "Call the Vanguard",
     "cost": 2,
     "limit": 1,
@@ -144,7 +144,7 @@
     "iaspec": "callthevanguard"
   },
   {
-    "id": 18,
+    "id": "42d45747-611a-56f1-b7ca-99be4d80671e",
     "name": "Camouflage",
     "cost": 1,
     "limit": 1,
@@ -152,7 +152,7 @@
     "iaspec": "camouflage"
   },
   {
-    "id": 19,
+    "id": "87ff6cf5-3453-5d60-a09c-0282bbb5a890",
     "name": "Capture The Weary",
     "cost": 1,
     "limit": 1,
@@ -160,7 +160,7 @@
     "iaspec": "capturetheweary"
   },
   {
-    "id": 20,
+    "id": "1359459e-451d-536b-a88d-ad31b822d57d",
     "name": "Cavalry Charge",
     "cost": 2,
     "limit": 1,
@@ -168,7 +168,7 @@
     "iaspec": "cavalrycharge"
   },
   {
-    "id": 21,
+    "id": "6287abef-f564-5ffc-bcad-5b21fd1c5569",
     "name": "Celebration",
     "cost": 0,
     "limit": 1,
@@ -176,7 +176,7 @@
     "iaspec": "celebration"
   },
   {
-    "id": 22,
+    "id": "6e552e03-6443-5a1f-bac7-8eeaa2c52e83",
     "name": "Change of Plans",
     "cost": 1,
     "limit": 1,
@@ -184,7 +184,7 @@
     "iaspec": "changeofplans"
   },
   {
-    "id": 23,
+    "id": "9b3c5450-5e45-5673-96d0-56d133e61123",
     "name": "Cheat to Win",
     "cost": 1,
     "limit": 1,
@@ -192,7 +192,7 @@
     "iaspec": "cheattowin"
   },
   {
-    "id": 24,
+    "id": "a4c79ecb-d4de-53d1-ae30-d0a2c8cfb019",
     "name": "Close the Gap",
     "cost": 2,
     "limit": 1,
@@ -200,7 +200,7 @@
     "iaspec": "closethegap"
   },
   {
-    "id": 25,
+    "id": "ba7a2822-b360-5df7-aa17-de01b908b1c0",
     "name": "Collect Intel",
     "cost": 1,
     "limit": 2,
@@ -208,7 +208,7 @@
     "iaspec": "collectintel"
   },
   {
-    "id": 26,
+    "id": "9883bda4-9c34-5c9a-ae06-9fddd84c9b5e",
     "name": "Comm Disruption",
     "cost": 2,
     "limit": 1,
@@ -216,7 +216,7 @@
     "iaspec": "commdisruption"
   },
   {
-    "id": 27,
+    "id": "42f0316e-735b-5fe4-bc12-a7f851345fd3",
     "name": "Coordinated Attack",
     "cost": 2,
     "limit": 1,
@@ -224,7 +224,7 @@
     "iaspec": "coordinatedattack"
   },
   {
-    "id": 28,
+    "id": "af892ce7-a373-5237-92c9-750d9e59e83d",
     "name": "Counter Attack",
     "cost": 2,
     "limit": 1,
@@ -232,7 +232,7 @@
     "iaspec": "counterattack"
   },
   {
-    "id": 29,
+    "id": "5bf89d47-d8b7-5485-af4f-850a47b5bdf6",
     "name": "Covering Fire",
     "cost": 3,
     "limit": 1,
@@ -240,7 +240,7 @@
     "iaspec": "coveringfire"
   },
   {
-    "id": 30,
+    "id": "01734317-05f7-5fa3-b6c2-4dba07ca67ef",
     "name": "Cripple",
     "cost": 2,
     "limit": 1,
@@ -248,7 +248,7 @@
     "iaspec": "cripple"
   },
   {
-    "id": 31,
+    "id": "53af0585-8b21-573f-a511-90839c4c568b",
     "name": "Cruel Strike",
     "cost": 0,
     "limit": 1,
@@ -256,7 +256,7 @@
     "iaspec": "cruelstrike"
   },
   {
-    "id": 32,
+    "id": "1421e717-dac9-57b2-8ef4-dac190fb74b2",
     "name": "Crush",
     "cost": 3,
     "limit": 1,
@@ -264,7 +264,7 @@
     "iaspec": "crush"
   },
   {
-    "id": 33,
+    "id": "b15f85ec-c103-5f24-a072-ea8095a6650b",
     "name": "Cut Lines",
     "cost": 0,
     "limit": 1,
@@ -272,7 +272,7 @@
     "iaspec": "cutlines"
   },
   {
-    "id": 34,
+    "id": "a6f15ae7-b65e-5252-8306-70526a93b242",
     "name": "Dangerous Bargains",
     "cost": 1,
     "limit": 1,
@@ -280,7 +280,7 @@
     "iaspec": "dangerousbargains"
   },
   {
-    "id": 35,
+    "id": "9da42961-f64d-58b4-a0ff-d2ad4dcdfaff",
     "name": "Data Theft",
     "cost": 1,
     "limit": 1,
@@ -288,7 +288,7 @@
     "iaspec": "datatheft"
   },
   {
-    "id": 36,
+    "id": "17a8d439-b590-57f3-90d3-82630c81b308",
     "name": "Deadeye",
     "cost": 0,
     "limit": 1,
@@ -296,7 +296,7 @@
     "iaspec": "deadeye"
   },
   {
-    "id": 37,
+    "id": "58c60d43-4749-50ff-897a-27fa94a0dd08",
     "name": "Deadly Precision",
     "cost": 0,
     "limit": 1,
@@ -304,7 +304,7 @@
     "iaspec": "deadlyprecision"
   },
   {
-    "id": 38,
+    "id": "5efd7ad0-10f3-545a-852a-8ac92d75ba92",
     "name": "Debts Repaid",
     "cost": 3,
     "limit": 1,
@@ -312,7 +312,7 @@
     "iaspec": "debtsrepaid"
   },
   {
-    "id": 39,
+    "id": "7acd9e29-7a0b-5a12-8dcb-eedb9e4d2e22",
     "name": "Deflection",
     "cost": 1,
     "limit": 2,
@@ -320,7 +320,7 @@
     "iaspec": "deflection"
   },
   {
-    "id": 40,
+    "id": "00617306-7dba-5fae-8bf9-e4cc9d6deaca",
     "name": "Devotion",
     "cost": 0,
     "limit": 1,
@@ -328,7 +328,7 @@
     "iaspec": "devotion"
   },
   {
-    "id": 41,
+    "id": "e2b26f0d-438f-5fea-bdc1-52e32652d688",
     "name": "Dirty Trick",
     "cost": 2,
     "limit": 1,
@@ -336,7 +336,7 @@
     "iaspec": "dirtytrick"
   },
   {
-    "id": 42,
+    "id": "54359d64-fe28-5115-be1e-52544e50191e",
     "name": "Disable",
     "cost": 2,
     "limit": 1,
@@ -344,7 +344,7 @@
     "iaspec": "disable"
   },
   {
-    "id": 43,
+    "id": "fcf84ad3-76e1-5f92-bc45-98aabdb231a4",
     "name": "Disorient",
     "cost": 0,
     "limit": 1,
@@ -352,7 +352,7 @@
     "iaspec": "disorient"
   },
   {
-    "id": 44,
+    "id": "41f77431-3aa3-5a32-8127-902413d8b859",
     "name": "Draw",
     "cost": 1,
     "limit": 1,
@@ -360,7 +360,7 @@
     "iaspec": "draw"
   },
   {
-    "id": 45,
+    "id": "5fe95d3f-b3b2-57e8-9403-8c56f52c0362",
     "name": "Eerie Visage",
     "cost": 1,
     "limit": 1,
@@ -368,7 +368,7 @@
     "iaspec": "eerievisage"
   },
   {
-    "id": 46,
+    "id": "8adad805-de04-5287-9b15-ddd241116982",
     "name": "Efficient Travel",
     "cost": 1,
     "limit": 1,
@@ -376,7 +376,7 @@
     "iaspec": "efficienttravel"
   },
   {
-    "id": 47,
+    "id": "0c44f104-418a-5ff4-bb36-488d3d3a1beb",
     "name": "Element of Surprise",
     "cost": 0,
     "limit": 1,
@@ -384,7 +384,7 @@
     "iaspec": "elementofsurprise"
   },
   {
-    "id": 48,
+    "id": "b0519194-42e6-544e-b594-936092b44c82",
     "name": "Emergency Aid",
     "cost": 2,
     "limit": 1,
@@ -392,7 +392,7 @@
     "iaspec": "emergencyaid"
   },
   {
-    "id": 49,
+    "id": "1d8186ec-b00f-5d5c-b811-955c163902a1",
     "name": "Endless Reserves",
     "cost": 2,
     "limit": 1,
@@ -400,7 +400,7 @@
     "iaspec": "endlessreserves"
   },
   {
-    "id": 50,
+    "id": "28f69449-007e-537e-afc2-a0bfe68f46b5",
     "name": "Espionage Mastery",
     "cost": 0,
     "limit": 1,
@@ -408,7 +408,7 @@
     "iaspec": "espionagemastery"
   },
   {
-    "id": 51,
+    "id": "50e68a1c-86c2-5e9c-ba8f-97dc1751f058",
     "name": "Etiquette and Protocol",
     "cost": 2,
     "limit": 1,
@@ -416,7 +416,7 @@
     "iaspec": "etiquetteandprotocol"
   },
   {
-    "id": 52,
+    "id": "4652d369-ceef-565f-843c-c488eca99d7b",
     "name": "Evacuate",
     "cost": 2,
     "limit": 1,
@@ -424,7 +424,7 @@
     "iaspec": "evacuate"
   },
   {
-    "id": 53,
+    "id": "b13a038b-37d1-5a11-98ab-1d82613e30fd",
     "name": "Explosive Weaponry",
     "cost": 1,
     "limit": 2,
@@ -432,7 +432,7 @@
     "iaspec": "explosiveweaponry"
   },
   {
-    "id": 54,
+    "id": "73d15eda-df2f-5a99-85a3-1000f4923817",
     "name": "Expose Weakness",
     "cost": 0,
     "limit": 1,
@@ -440,7 +440,7 @@
     "iaspec": "exposeweakness"
   },
   {
-    "id": 55,
+    "id": "8122ea59-b8fa-519d-900e-ff877e35ca1c",
     "name": "Extra Protection",
     "cost": 1,
     "limit": 1,
@@ -448,7 +448,7 @@
     "iaspec": "extraprotection"
   },
   {
-    "id": 56,
+    "id": "9f9dad1e-005c-5466-9f5c-43276d19080e",
     "name": "Fatal Deception",
     "cost": 1,
     "limit": 1,
@@ -456,7 +456,7 @@
     "iaspec": "fataldeception"
   },
   {
-    "id": 57,
+    "id": "599b011f-b6b7-555d-8413-39c034d61ac6",
     "name": "Feral Swipes",
     "cost": 1,
     "limit": 1,
@@ -464,7 +464,7 @@
     "iaspec": "feralswipes"
   },
   {
-    "id": 58,
+    "id": "90499758-8171-5af1-8443-7e792fe9fbb1",
     "name": "Ferocity",
     "cost": 1,
     "limit": 1,
@@ -472,7 +472,7 @@
     "iaspec": "ferocity"
   },
   {
-    "id": 59,
+    "id": "b2cf5636-d4ae-5a7d-8ed6-176530a1f69c",
     "name": "Field Tactician",
     "cost": 1,
     "limit": 1,
@@ -480,7 +480,7 @@
     "iaspec": "fieldtactician"
   },
   {
-    "id": 60,
+    "id": "53fe5315-1a9d-5c26-bba8-4401908fa235",
     "name": "Fleet Footed",
     "cost": 0,
     "limit": 1,
@@ -488,7 +488,7 @@
     "iaspec": "fleetfooted"
   },
   {
-    "id": 61,
+    "id": "833ffc02-903c-5685-ae77-4461e0784dbc",
     "name": "Flurry of Blades",
     "cost": 2,
     "limit": 1,
@@ -496,7 +496,7 @@
     "iaspec": "flurryofblades"
   },
   {
-    "id": 62,
+    "id": "7e442d69-7f29-52e5-b77f-e1f7ab97bf35",
     "name": "Focus",
     "cost": 1,
     "limit": 1,
@@ -504,7 +504,7 @@
     "iaspec": "focus"
   },
   {
-    "id": 63,
+    "id": "abca0be1-8177-5c17-af47-af8b15b969db",
     "name": "Force Illusion",
     "cost": 2,
     "limit": 1,
@@ -512,7 +512,7 @@
     "iaspec": "forceillusion"
   },
   {
-    "id": 64,
+    "id": "98828d70-4375-5577-9f2c-8a7e4a42e9a1",
     "name": "Force Lightning",
     "cost": 3,
     "limit": 1,
@@ -520,7 +520,7 @@
     "iaspec": "forcelightning"
   },
   {
-    "id": 65,
+    "id": "a57f88f7-0b37-5ab5-8893-70249f2e463b",
     "name": "Force Rush",
     "cost": 0,
     "limit": 1,
@@ -528,7 +528,7 @@
     "iaspec": "forcerush"
   },
   {
-    "id": 66,
+    "id": "6e59be52-e2d7-527d-9821-9e2b9c17316a",
     "name": "Force Surge",
     "cost": 2,
     "limit": 1,
@@ -536,7 +536,7 @@
     "iaspec": "forcesurge"
   },
   {
-    "id": 67,
+    "id": "58d9b6e7-f9fe-5275-9146-2ac45f15622d",
     "name": "Fuel Upgrade",
     "cost": 1,
     "limit": 1,
@@ -544,7 +544,7 @@
     "iaspec": "fuelupgrade"
   },
   {
-    "id": 68,
+    "id": "f9b28272-38f5-5f75-b2a4-fafe7406e1db",
     "name": "Furious Charge",
     "cost": 2,
     "limit": 1,
@@ -552,7 +552,7 @@
     "iaspec": "furiouscharge"
   },
   {
-    "id": 69,
+    "id": "1ba52b29-5b76-5b1e-8ba8-942c5303ffbe",
     "name": "Glory of the Kill",
     "cost": 1,
     "limit": 1,
@@ -560,7 +560,7 @@
     "iaspec": "gloryofthekill"
   },
   {
-    "id": 70,
+    "id": "36d4a482-43db-5ebc-a031-36919e92f0fc",
     "name": "Grenadier",
     "cost": 3,
     "limit": 1,
@@ -568,7 +568,7 @@
     "iaspec": "grenadier"
   },
   {
-    "id": 71,
+    "id": "55e19054-34de-5628-87b4-f24e36439287",
     "name": "Grisly Contest",
     "cost": 2,
     "limit": 1,
@@ -576,7 +576,7 @@
     "iaspec": "grislycontest"
   },
   {
-    "id": 72,
+    "id": "4975d46a-0fe3-5c44-991a-46d270bdc65d",
     "name": "Guardian Stance",
     "cost": 1,
     "limit": 1,
@@ -584,7 +584,7 @@
     "iaspec": "guardianstance"
   },
   {
-    "id": 73,
+    "id": "dd7f0872-b3ec-5627-a45e-c01b2e4b2780",
     "name": "Hard to Hit",
     "cost": 0,
     "limit": 1,
@@ -592,7 +592,7 @@
     "iaspec": "hardtohit"
   },
   {
-    "id": 74,
+    "id": "7a0a27a9-15a6-581d-926f-3cc6683fe103",
     "name": "Harsh Environment",
     "cost": 0,
     "limit": 1,
@@ -600,7 +600,7 @@
     "iaspec": "harshenvironment"
   },
   {
-    "id": 75,
+    "id": "00d07aaf-6561-5410-9f45-aaae52214423",
     "name": "Heart of Freedom",
     "cost": 2,
     "limit": 1,
@@ -608,7 +608,7 @@
     "iaspec": "heartoffreedom"
   },
   {
-    "id": 76,
+    "id": "b2f46e74-e480-5cbf-874c-ca8560b4d476",
     "name": "Heavy Armor",
     "cost": 1,
     "limit": 1,
@@ -616,7 +616,7 @@
     "iaspec": "heavyarmor"
   },
   {
-    "id": 77,
+    "id": "6748f7e5-2239-5fc3-a339-378aa1f6e7d5",
     "name": "Heightened Reflexes",
     "cost": 2,
     "limit": 1,
@@ -624,7 +624,7 @@
     "iaspec": "heightenedreflexes"
   },
   {
-    "id": 78,
+    "id": "2ae26af3-ade6-57a6-bfd3-a3339bb70d45",
     "name": "Hidden Trap",
     "cost": 2,
     "limit": 1,
@@ -632,7 +632,7 @@
     "iaspec": "hiddentrap"
   },
   {
-    "id": 79,
+    "id": "fa239056-a5ab-54ee-8b89-e23268106304",
     "name": "Hide in Plain Sight",
     "cost": 3,
     "limit": 1,
@@ -640,7 +640,7 @@
     "iaspec": "hideinplainsight"
   },
   {
-    "id": 80,
+    "id": "08839237-3fe3-5d5e-86dd-1b8e32189f34",
     "name": "Hit and Run",
     "cost": 1,
     "limit": 1,
@@ -648,7 +648,7 @@
     "iaspec": "hitandrun"
   },
   {
-    "id": 81,
+    "id": "a796c5d3-31fd-5d12-974d-3cdb5ee013ad",
     "name": "Hold Ground",
     "cost": 2,
     "limit": 1,
@@ -656,7 +656,7 @@
     "iaspec": "holdground"
   },
   {
-    "id": 82,
+    "id": "04ef8457-c6a7-5112-b256-3c4c9113626f",
     "name": "Hunt Them Down",
     "cost": 2,
     "limit": 1,
@@ -664,7 +664,7 @@
     "iaspec": "huntthemdown"
   },
   {
-    "id": 83,
+    "id": "b8a5dfec-edf6-5c6e-93bc-8ca504a23386",
     "name": "Hunter Protocol",
     "cost": 1,
     "limit": 1,
@@ -672,7 +672,7 @@
     "iaspec": "hunterprotocol"
   },
   {
-    "id": 84,
+    "id": "91bc088d-b2f7-5c8f-8d30-a8f15661a987",
     "name": "I Can Feel It",
     "cost": 0,
     "limit": 1,
@@ -680,7 +680,7 @@
     "iaspec": "icanfeelit"
   },
   {
-    "id": 85,
+    "id": "9eda81f6-8c71-535d-b500-4b3cdf022c92",
     "name": "I Must Go Alone",
     "cost": 1,
     "limit": 1,
@@ -688,7 +688,7 @@
     "iaspec": "imustgoalone"
   },
   {
-    "id": 86,
+    "id": "36160904-31c2-59fa-9b1d-1178684acccd",
     "name": "I make my own Luck",
     "cost": 2,
     "limit": 1,
@@ -696,7 +696,7 @@
     "iaspec": "imakemyownluck"
   },
   {
-    "id": 87,
+    "id": "105a225a-6e0c-5fa2-98fc-b81633f7834a",
     "name": "Improvised Weapons",
     "cost": 0,
     "limit": 1,
@@ -704,7 +704,7 @@
     "iaspec": "improvisedweapons"
   },
   {
-    "id": 88,
+    "id": "a90c669a-a94d-5ab9-81d5-0334264ecc47",
     "name": "In the Shadows",
     "cost": 1,
     "limit": 1,
@@ -712,7 +712,7 @@
     "iaspec": "intheshadows"
   },
   {
-    "id": 89,
+    "id": "22b1deac-02cc-5d8a-a066-4383e2d9b46c",
     "name": "Inspiring Speech",
     "cost": 2,
     "limit": 1,
@@ -720,7 +720,7 @@
     "iaspec": "inspiringspeech"
   },
   {
-    "id": 90,
+    "id": "e7629307-2836-5d84-a6d8-512c674958e4",
     "name": "Intelligence Leak",
     "cost": 1,
     "limit": 1,
@@ -728,7 +728,7 @@
     "iaspec": "intelligenceleak"
   },
   {
-    "id": 91,
+    "id": "d2112538-f13a-582f-badc-470640685402",
     "name": "Jump Jets",
     "cost": 1,
     "limit": 1,
@@ -736,7 +736,7 @@
     "iaspec": "jumpjets"
   },
   {
-    "id": 92,
+    "id": "aab311c5-3749-5a78-a311-0e4ec78e4f2c",
     "name": "Jundland Terror",
     "cost": 2,
     "limit": 2,
@@ -744,7 +744,7 @@
     "iaspec": "jundlandterror"
   },
   {
-    "id": 93,
+    "id": "c2a78c7b-7d4a-5a69-942e-b679af708f78",
     "name": "Knowledge and Defense",
     "cost": 2,
     "limit": 1,
@@ -752,7 +752,7 @@
     "iaspec": "knowledgeanddefense"
   },
   {
-    "id": 94,
+    "id": "db71bb70-9ada-59a9-9f77-46b1226d24d6",
     "name": "Lock On",
     "cost": 2,
     "limit": 1,
@@ -760,7 +760,7 @@
     "iaspec": "lockon"
   },
   {
-    "id": 95,
+    "id": "1721f3f0-f806-5b27-917e-ae64ebae58af",
     "name": "Lord of the Sith",
     "cost": 3,
     "limit": 1,
@@ -768,7 +768,7 @@
     "iaspec": "lordofthesith"
   },
   {
-    "id": 96,
+    "id": "2f349312-3915-57a4-aa32-b096d0aaf5d2",
     "name": "Lure of the Dark Side",
     "cost": 3,
     "limit": 1,
@@ -776,7 +776,7 @@
     "iaspec": "lureofthedarkside"
   },
   {
-    "id": 97,
+    "id": "989ba64c-6a18-56ea-bccc-53e30c60fd38",
     "name": "Mandalorian Tactics",
     "cost": 3,
     "limit": 1,
@@ -784,7 +784,7 @@
     "iaspec": "mandaloriantactics"
   },
   {
-    "id": 98,
+    "id": "79c4d338-094d-5a01-9ae7-394684ec933c",
     "name": "Marksman",
     "cost": 1,
     "limit": 2,
@@ -792,7 +792,7 @@
     "iaspec": "marksman"
   },
   {
-    "id": 99,
+    "id": "181d4717-7602-5a9b-b40a-6bc833281636",
     "name": "Master Operative",
     "cost": 2,
     "limit": 1,
@@ -800,7 +800,7 @@
     "iaspec": "masteroperative"
   },
   {
-    "id": 100,
+    "id": "7a28db91-36a7-54d7-9e0b-e77ec8fcc3bd",
     "name": "Maximum Firepower",
     "cost": 3,
     "limit": 1,
@@ -808,7 +808,7 @@
     "iaspec": "maximumfirepower"
   },
   {
-    "id": 101,
+    "id": "058e468f-722e-5609-9628-b4bbda22922e",
     "name": "Meditation",
     "cost": 2,
     "limit": 1,
@@ -816,7 +816,7 @@
     "iaspec": "meditation"
   },
   {
-    "id": 102,
+    "id": "ea6b0aa9-e702-5811-9325-6a520f9bb8de",
     "name": "Merciless",
     "cost": 1,
     "limit": 2,
@@ -824,7 +824,7 @@
     "iaspec": "merciless"
   },
   {
-    "id": 103,
+    "id": "7b4cb4b7-7912-5086-ac8c-ae879ca06698",
     "name": "Miracle Worker",
     "cost": 2,
     "limit": 1,
@@ -832,7 +832,7 @@
     "iaspec": "miracleworker"
   },
   {
-    "id": 104,
+    "id": "d3a27e62-c8c2-5af3-a523-df8a7e564a41",
     "name": "Mitigate",
     "cost": 0,
     "limit": 1,
@@ -840,7 +840,7 @@
     "iaspec": "mitigate"
   },
   {
-    "id": 105,
+    "id": "84d2074f-11fc-5bc8-af35-ad9600390d9d",
     "name": "Navigation Upgrade",
     "cost": 2,
     "limit": 1,
@@ -848,7 +848,7 @@
     "iaspec": "navigationupgrade"
   },
   {
-    "id": 106,
+    "id": "e0483ec9-ce97-5479-87cc-099057ed1fa4",
     "name": "Negation",
     "cost": 1,
     "limit": 1,
@@ -856,7 +856,7 @@
     "iaspec": "negation"
   },
   {
-    "id": 107,
+    "id": "da6f7cd9-e743-569d-a88c-18ce641be9b3",
     "name": "New Orders",
     "cost": 3,
     "limit": 1,
@@ -864,7 +864,7 @@
     "iaspec": "neworders"
   },
   {
-    "id": 108,
+    "id": "2b75c228-7daf-5ba9-a07b-bb8c309d358d",
     "name": "Of No Importance",
     "cost": 0,
     "limit": 1,
@@ -872,7 +872,7 @@
     "iaspec": "ofnoimportance"
   },
   {
-    "id": 109,
+    "id": "3736b38e-a860-569f-bae1-25427cb74115",
     "name": "On a Mission",
     "cost": 0,
     "limit": 1,
@@ -880,7 +880,7 @@
     "iaspec": "onamission"
   },
   {
-    "id": 110,
+    "id": "3c244e5a-51db-5e99-a565-6cbdb782b999",
     "name": "On the Lam",
     "cost": 3,
     "limit": 1,
@@ -888,7 +888,7 @@
     "iaspec": "onthelam"
   },
   {
-    "id": 111,
+    "id": "587a6872-0804-5cd6-9faf-069c34666175",
     "name": "Opportunistic",
     "cost": 0,
     "limit": 1,
@@ -896,7 +896,7 @@
     "iaspec": "opportunistic"
   },
   {
-    "id": 112,
+    "id": "c4e191cf-fb76-520c-ba95-3c50e60d947d",
     "name": "Optimal Bombardment",
     "cost": 3,
     "limit": 1,
@@ -904,7 +904,7 @@
     "iaspec": "optimalbombardment"
   },
   {
-    "id": 113,
+    "id": "c8c4b30e-6de0-5033-bd13-01d58f2998a8",
     "name": "Overcharged Weapons",
     "cost": 0,
     "limit": 1,
@@ -912,7 +912,7 @@
     "iaspec": "overchargedweapons"
   },
   {
-    "id": 114,
+    "id": "13a14940-5f95-5af3-bb09-dd1e3f3556f1",
     "name": "Overdrive",
     "cost": 3,
     "limit": 1,
@@ -920,7 +920,7 @@
     "iaspec": "overdrive"
   },
   {
-    "id": 115,
+    "id": "26d2b72c-5085-521c-b8ee-e561a8fbc892",
     "name": "Overrun",
     "cost": 2,
     "limit": 1,
@@ -928,7 +928,7 @@
     "iaspec": "overrun"
   },
   {
-    "id": 116,
+    "id": "d67e1f75-75f1-52f6-9bc0-dcca94c06900",
     "name": "Parry",
     "cost": 0,
     "limit": 1,
@@ -936,7 +936,7 @@
     "iaspec": "parry"
   },
   {
-    "id": 117,
+    "id": "30b20bc3-0f7a-5775-9559-5122833f7ce4",
     "name": "Parting Blow",
     "cost": 2,
     "limit": 2,
@@ -944,7 +944,7 @@
     "iaspec": "partingblow"
   },
   {
-    "id": 118,
+    "id": "f1fae5b6-ff58-5056-bb1f-0dbb174214e5",
     "name": "Payback",
     "cost": 2,
     "limit": 1,
@@ -952,7 +952,7 @@
     "iaspec": "payback"
   },
   {
-    "id": 119,
+    "id": "73e31ebc-ad7d-5786-a3c9-163b6fdeb70f",
     "name": "Pickpocket",
     "cost": 1,
     "limit": 1,
@@ -960,7 +960,7 @@
     "iaspec": "pickpocket"
   },
   {
-    "id": 120,
+    "id": "69691453-39e1-5666-a4d0-b2ff987150fe",
     "name": "Positioning Advantage",
     "cost": 0,
     "limit": 1,
@@ -968,7 +968,7 @@
     "iaspec": "positioningadvantage"
   },
   {
-    "id": 121,
+    "id": "a71d73cf-8da2-5e26-aee8-b4b25bc0c4f1",
     "name": "Primary Target",
     "cost": 1,
     "limit": 1,
@@ -976,7 +976,7 @@
     "iaspec": "primarytarget"
   },
   {
-    "id": 122,
+    "id": "a22d03a5-b31d-5dfe-86f6-bdfb720278f0",
     "name": "Provoke",
     "cost": 1,
     "limit": 1,
@@ -984,7 +984,7 @@
     "iaspec": "provoke"
   },
   {
-    "id": 123,
+    "id": "63b71759-0c9c-5135-8de5-82dbaf201461",
     "name": "Rally The Troops",
     "cost": 3,
     "limit": 1,
@@ -992,7 +992,7 @@
     "iaspec": "rallythetroops"
   },
   {
-    "id": 124,
+    "id": "9ad59fa8-c190-536c-8cca-c37125851a85",
     "name": "Rank and File",
     "cost": 1,
     "limit": 1,
@@ -1000,7 +1000,7 @@
     "iaspec": "rankandfile"
   },
   {
-    "id": 125,
+    "id": "4bcaebd8-4b1b-51d3-8613-c9fe0f5f44bd",
     "name": "Reinforcements",
     "cost": 2,
     "limit": 2,
@@ -1008,7 +1008,7 @@
     "iaspec": "reinforcements"
   },
   {
-    "id": 126,
+    "id": "4e525c64-4e8b-5287-81f2-ffccf98a9a85",
     "name": "Repair",
     "cost": 2,
     "limit": 2,
@@ -1016,7 +1016,7 @@
     "iaspec": "repair"
   },
   {
-    "id": 127,
+    "id": "431f49e9-9374-58c4-803b-56037c58f738",
     "name": "Reposition",
     "cost": 1,
     "limit": 1,
@@ -1024,7 +1024,7 @@
     "iaspec": "reposition"
   },
   {
-    "id": 128,
+    "id": "7f09df39-7b82-561e-83e0-4e59e1e0ca6c",
     "name": "Roar",
     "cost": 1,
     "limit": 1,
@@ -1032,7 +1032,7 @@
     "iaspec": "roar"
   },
   {
-    "id": 129,
+    "id": "ab8f40ed-46da-559d-9c9c-ff7878cd5d39",
     "name": "Run for Cover",
     "cost": 2,
     "limit": 1,
@@ -1040,7 +1040,7 @@
     "iaspec": "runforcover"
   },
   {
-    "id": 130,
+    "id": "5196a659-e4de-501b-ba94-ec62738e23b6",
     "name": "Self Defense",
     "cost": 0,
     "limit": 1,
@@ -1048,7 +1048,7 @@
     "iaspec": "selfdefense"
   },
   {
-    "id": 131,
+    "id": "102585de-7123-5944-a070-b367f4dad834",
     "name": "Set For Stun",
     "cost": 0,
     "limit": 1,
@@ -1056,7 +1056,7 @@
     "iaspec": "setforstun"
   },
   {
-    "id": 132,
+    "id": "721e4dc2-03ca-5aba-99cf-fbca513e2127",
     "name": "Set a Trap",
     "cost": 0,
     "limit": 1,
@@ -1064,7 +1064,7 @@
     "iaspec": "setatrap"
   },
   {
-    "id": 133,
+    "id": "92150688-eb9d-53ed-8175-668b9e231786",
     "name": "Shared Experience",
     "cost": 1,
     "limit": 1,
@@ -1072,7 +1072,7 @@
     "iaspec": "sharedexperience"
   },
   {
-    "id": 134,
+    "id": "493abc95-49bc-5a60-a754-2f53fc80f9b7",
     "name": "Shoot the Messenger",
     "cost": 0,
     "limit": 1,
@@ -1080,7 +1080,7 @@
     "iaspec": "shootthemessenger"
   },
   {
-    "id": 135,
+    "id": "a9ef7800-0966-5843-84f4-d28a6b3ef89e",
     "name": "Single Purpose",
     "cost": 1,
     "limit": 1,
@@ -1088,7 +1088,7 @@
     "iaspec": "singlepurpose"
   },
   {
-    "id": 136,
+    "id": "bd0436a7-d39a-5d4c-ab18-d5893df4cdc7",
     "name": "Size Advantage",
     "cost": 2,
     "limit": 1,
@@ -1096,7 +1096,7 @@
     "iaspec": "sizeadvantage"
   },
   {
-    "id": 137,
+    "id": "d62a9cd5-935e-57e3-9311-ec0291ac3170",
     "name": "Slippery Target",
     "cost": 2,
     "limit": 2,
@@ -1104,7 +1104,7 @@
     "iaspec": "slipperytarget"
   },
   {
-    "id": 138,
+    "id": "f8cc07b3-bd59-5b76-a55a-8c3014350281",
     "name": "Smuggled Supplies",
     "cost": 1,
     "limit": 1,
@@ -1112,7 +1112,7 @@
     "iaspec": "smuggledsupplies"
   },
   {
-    "id": 139,
+    "id": "cc21e35a-5e21-55b3-b3e8-216de3301dc9",
     "name": "Smugglers Tricks",
     "cost": 1,
     "limit": 1,
@@ -1120,7 +1120,7 @@
     "iaspec": "smugglerstricks"
   },
   {
-    "id": 140,
+    "id": "d8c4a8e0-5616-5102-bf5c-c7e26aa5cc53",
     "name": "Squad Swarm",
     "cost": 2,
     "limit": 1,
@@ -1128,7 +1128,7 @@
     "iaspec": "squadswarm"
   },
   {
-    "id": 141,
+    "id": "78e9691c-9088-5501-858e-cd17e4b3d1be",
     "name": "Stall for Time",
     "cost": 0,
     "limit": 1,
@@ -1136,7 +1136,7 @@
     "iaspec": "stallfortime"
   },
   {
-    "id": 142,
+    "id": "01eef9e0-c54f-55d2-962e-b87330232628",
     "name": "Stay Down",
     "cost": 2,
     "limit": 1,
@@ -1144,7 +1144,7 @@
     "iaspec": "staydown"
   },
   {
-    "id": 143,
+    "id": "3e4406ac-a532-516a-ba62-82de3915d95f",
     "name": "Stealth Tactics",
     "cost": 1,
     "limit": 1,
@@ -1152,7 +1152,7 @@
     "iaspec": "stealthtactics"
   },
   {
-    "id": 144,
+    "id": "c0ef0bac-7b8f-50e4-bda4-9857f5d2eaf9",
     "name": "Stimulants",
     "cost": 0,
     "limit": 1,
@@ -1160,7 +1160,7 @@
     "iaspec": "stimulants"
   },
   {
-    "id": 145,
+    "id": "63431541-a5b1-54d5-880a-b48370adf49d",
     "name": "Strategic Shift",
     "cost": 1,
     "limit": 1,
@@ -1168,7 +1168,7 @@
     "iaspec": "strategicshift"
   },
   {
-    "id": 146,
+    "id": "36ab4b35-12b1-58c9-9b0d-6bb353c2596c",
     "name": "Strength in Numbers",
     "cost": 1,
     "limit": 1,
@@ -1176,7 +1176,7 @@
     "iaspec": "strengthinnumbers"
   },
   {
-    "id": 147,
+    "id": "d9950324-f0ee-57bc-b893-d67711953eb0",
     "name": "Stroke of Brilliance",
     "cost": 0,
     "limit": 1,
@@ -1184,7 +1184,7 @@
     "iaspec": "strokeofbrilliance"
   },
   {
-    "id": 148,
+    "id": "485ff358-391c-593b-b7b5-71a3caf1866d",
     "name": "Survival Instincts",
     "cost": 1,
     "limit": 1,
@@ -1192,7 +1192,7 @@
     "iaspec": "survivalinstincts"
   },
   {
-    "id": 149,
+    "id": "2faf0752-f076-5875-9e16-63fee4728072",
     "name": "Take Position",
     "cost": 0,
     "limit": 1,
@@ -1200,7 +1200,7 @@
     "iaspec": "takeposition"
   },
   {
-    "id": 150,
+    "id": "353364a8-f535-5ec3-9d37-1a6e8f30ea97",
     "name": "Targeting Network",
     "cost": 0,
     "limit": 1,
@@ -1208,7 +1208,7 @@
     "iaspec": "targetingnetwork"
   },
   {
-    "id": 151,
+    "id": "d7e21fea-5f3b-5389-9043-4f697694a839",
     "name": "Terminal Network",
     "cost": 2,
     "limit": 1,
@@ -1216,7 +1216,7 @@
     "iaspec": "terminalnetwork"
   },
   {
-    "id": 152,
+    "id": "65de6170-f526-5306-b61d-d0bb64f001dc",
     "name": "Terminal Protocol",
     "cost": 1,
     "limit": 1,
@@ -1224,7 +1224,7 @@
     "iaspec": "terminalprotocol"
   },
   {
-    "id": 153,
+    "id": "0ff757da-00c7-597c-8d74-84f3eddfd861",
     "name": "There is Another",
     "cost": 0,
     "limit": 1,
@@ -1232,7 +1232,7 @@
     "iaspec": "thereisanother"
   },
   {
-    "id": 154,
+    "id": "0fe60b6c-cbf8-5860-bf69-6ff1b39f5425",
     "name": "Tools for the Job",
     "cost": 2,
     "limit": 1,
@@ -1240,7 +1240,7 @@
     "iaspec": "toolsforthejob"
   },
   {
-    "id": 155,
+    "id": "5fb9ece2-5de0-5f42-9985-b1005be46369",
     "name": "Tough Luck",
     "cost": 1,
     "limit": 1,
@@ -1248,7 +1248,7 @@
     "iaspec": "toughluck"
   },
   {
-    "id": 156,
+    "id": "79a6db05-6d2a-5bfa-8167-7a5a47ee0d88",
     "name": "Toxic Dart",
     "cost": 0,
     "limit": 1,
@@ -1256,7 +1256,7 @@
     "iaspec": "toxicdart"
   },
   {
-    "id": 157,
+    "id": "c4f980d4-7be3-515c-9630-38058de59f90",
     "name": "Trandoshan Terror",
     "cost": 2,
     "limit": 1,
@@ -1264,7 +1264,7 @@
     "iaspec": "trandoshanterror"
   },
   {
-    "id": 158,
+    "id": "96f1fe3d-6102-5870-b087-4a9d5261818e",
     "name": "Triangulate",
     "cost": 2,
     "limit": 1,
@@ -1272,7 +1272,7 @@
     "iaspec": "triangulate"
   },
   {
-    "id": 159,
+    "id": "2a84a4f8-90b3-5ac0-b838-7802275c13d6",
     "name": "Utinni",
     "cost": 1,
     "limit": 1,
@@ -1280,7 +1280,7 @@
     "iaspec": "utinni"
   },
   {
-    "id": 160,
+    "id": "4017247d-b421-590c-803b-4b46fe31dc51",
     "name": "Vanish",
     "cost": 2,
     "limit": 1,
@@ -1288,7 +1288,7 @@
     "iaspec": "vanish"
   },
   {
-    "id": 161,
+    "id": "95b688f3-5020-503d-b54a-eacefcd80cc3",
     "name": "Wild Attack",
     "cost": 0,
     "limit": 1,
@@ -1296,7 +1296,7 @@
     "iaspec": "wildattack"
   },
   {
-    "id": 162,
+    "id": "0e5fdbf0-da16-54c0-a372-13aae3ae056a",
     "name": "Wild Fury",
     "cost": 2,
     "limit": 1,
@@ -1304,7 +1304,7 @@
     "iaspec": "wildfury"
   },
   {
-    "id": 163,
+    "id": "e285e447-3ee5-5ef2-b4e7-e6743930c69c",
     "name": "Wookiee Rage",
     "cost": 2,
     "limit": 2,
@@ -1315,7 +1315,7 @@
     "name": "Arcing Shot",
     "cost": 1,
     "limit": 1,
-    "id": 164,
+    "id": "72a62b51-fee6-5129-a928-aacf3f30995a",
     "image": "command-cards/arcing-shot.png",
     "iaspec": "arcingshot"
   },
@@ -1323,7 +1323,7 @@
     "name": "Armed Escort",
     "cost": 1,
     "limit": 1,
-    "id": 165,
+    "id": "e366159a-6603-598d-90a0-5acb8aa8fff3",
     "image": "command-cards/armed-escort.png",
     "iaspec": "armedescort"
   },
@@ -1331,7 +1331,7 @@
     "name": "Balancing Force",
     "cost": 2,
     "limit": 1,
-    "id": 174,
+    "id": "d94f44b1-0ba3-52ff-abff-150489e55441",
     "image": "command-cards/balancing-force.png",
     "iaspec": "balancingforce"
   },
@@ -1339,7 +1339,7 @@
     "name": "Battle Scars",
     "cost": 0,
     "limit": 1,
-    "id": 166,
+    "id": "41dbf3b3-5c0b-5a84-b86f-132952d1c9fb",
     "image": "command-cards/battle-scars.png",
     "iaspec": "battlescars"
   },
@@ -1347,7 +1347,7 @@
     "name": "Chaotic Force",
     "cost": 2,
     "limit": 1,
-    "id": 184,
+    "id": "0d37c0eb-78bd-5062-8f0c-cd40b9068c6f",
     "image": "command-cards/chaotic-force.png",
     "iaspec": "chaoticforce"
   },
@@ -1355,7 +1355,7 @@
     "name": "Collateral Damage",
     "cost": 1,
     "limit": 1,
-    "id": 167,
+    "id": "f7f72b0b-3450-5901-b108-86fe3d1830bc",
     "image": "command-cards/collateral-damage.png",
     "iaspec": "collateraldamage"
   },
@@ -1363,7 +1363,7 @@
     "name": "Concentrated Fire",
     "cost": 1,
     "limit": 1,
-    "id": 168,
+    "id": "17d1f6a1-6b4e-56d7-a9dc-372a104c1212",
     "image": "command-cards/concentrated-fire.png",
     "iaspec": "concentratedfire"
   },
@@ -1371,7 +1371,7 @@
     "name": "Corrupting Force",
     "cost": 2,
     "limit": 1,
-    "id": 179,
+    "id": "b4505bad-f605-56f4-a316-9953397644dc",
     "image": "command-cards/corrupting-force.png",
     "iaspec": "corruptingforce"
   },
@@ -1379,7 +1379,7 @@
     "name": "Dark Energy",
     "cost": 1,
     "limit": 1,
-    "id": 180,
+    "id": "207d4065-9c4d-515d-94f1-4947adcd3c94",
     "image": "command-cards/dark-energy.png",
     "iaspec": "darkenergy"
   },
@@ -1387,7 +1387,7 @@
     "name": "Deathblow",
     "cost": 1,
     "limit": 1,
-    "id": 185,
+    "id": "f6640bb9-8e9e-55eb-a3bd-e43be68588e3",
     "image": "command-cards/deathblow.png",
     "iaspec": "deathblow"
   },
@@ -1395,7 +1395,7 @@
     "name": "Droid Mastery",
     "cost": 0,
     "limit": 1,
-    "id": 169,
+    "id": "017ee815-e425-5c2c-8543-f71ff890ac4c",
     "image": "command-cards/droid-mastery.png",
     "iaspec": "droidmastery"
   },
@@ -1403,7 +1403,7 @@
     "name": "Face to Face",
     "cost": 1,
     "limit": 1,
-    "id": 186,
+    "id": "a20cea7a-c4df-51c7-b4a8-c44ffb9f9077",
     "image": "command-cards/face-to-face.png",
     "iaspec": "facetoface"
   },
@@ -1411,7 +1411,7 @@
     "name": "Field Supply",
     "cost": 1,
     "limit": 1,
-    "id": 170,
+    "id": "6803f9dc-27aa-5229-91a1-dab8030308f5",
     "image": "command-cards/field-supply.png",
     "iaspec": "fieldsupply"
   },
@@ -1419,7 +1419,7 @@
     "name": "Fool Me Once",
     "cost": 0,
     "limit": 1,
-    "id": 175,
+    "id": "11289781-ad78-5a43-aa1e-26086754a268",
     "image": "command-cards/fool-me-once.png",
     "iaspec": "foolmeonce"
   },
@@ -1427,7 +1427,7 @@
     "name": "Force Jump",
     "cost": 1,
     "limit": 1,
-    "id": 176,
+    "id": "cea3d9f2-8bab-58ab-b3fd-601d5ad3b881",
     "image": "command-cards/force-jump.png",
     "iaspec": "forcejump"
   },
@@ -1435,7 +1435,7 @@
     "name": "Force Push",
     "cost": 1,
     "limit": 1,
-    "id": 177,
+    "id": "5829f914-18b2-54de-8cbb-3861880b89cd",
     "image": "command-cards/force-push.png",
     "iaspec": "forcepush"
   },
@@ -1443,7 +1443,7 @@
     "name": "Forward March",
     "cost": 1,
     "limit": 1,
-    "id": 171,
+    "id": "6014d508-5050-5d71-be78-9dd6e1684a6d",
     "image": "command-cards/forward-march.png",
     "iaspec": "forwardmarch"
   },
@@ -1451,7 +1451,7 @@
     "name": "Heavy Ordnance",
     "cost": 0,
     "limit": 1,
-    "id": 172,
+    "id": "b7b9230d-2259-584d-94b4-48e482cc6fd4",
     "image": "command-cards/heavy-ordnance.png",
     "iaspec": "heavyordnance"
   },
@@ -1459,7 +1459,7 @@
     "name": "Looking for a Fight",
     "cost": 0,
     "limit": 1,
-    "id": 187,
+    "id": "8b65dda2-3e38-58b5-b052-f66fae6a3ca2",
     "image": "command-cards/looking-for-a-fight.png",
     "iaspec": "lookingforafight"
   },
@@ -1467,7 +1467,7 @@
     "name": "Officer's Training",
     "cost": 0,
     "limit": 1,
-    "id": 181,
+    "id": "5bd6c417-a679-5b1c-82bb-c9a06f22871b",
     "image": "command-cards/officers-training.png",
     "iaspec": "officerstraining"
   },
@@ -1475,7 +1475,7 @@
     "name": "Prepared for Battle",
     "cost": 2,
     "limit": 1,
-    "id": 182,
+    "id": "10590dd6-10b3-510e-b3c9-325c34a5b0e3",
     "image": "command-cards/prepared-for-battle.png",
     "iaspec": "preparedforbattle"
   },
@@ -1483,7 +1483,7 @@
     "name": "Ready Weapons",
     "cost": 0,
     "limit": 1,
-    "id": 173,
+    "id": "90321b65-2322-5e61-a9fb-7dfbcaf1ef73",
     "image": "command-cards/ready-weapons.png",
     "iaspec": "readyweapons"
   },
@@ -1491,7 +1491,7 @@
     "name": "Right Back At Ya",
     "cost": 1,
     "limit": 1,
-    "id": 178,
+    "id": "8bf86170-971b-5ac1-9200-28cf608138c6",
     "image": "command-cards/right-back-at-ya.png",
     "iaspec": "rightbackatya"
   },
@@ -1499,7 +1499,7 @@
     "name": "Unlimited Power",
     "cost": 2,
     "limit": 1,
-    "id": 183,
+    "id": "847263a9-7fd0-57b7-8600-19d7b52d63a7",
     "image": "command-cards/unlimited-power.png",
     "iaspec": "unlimitedpower"
   },
@@ -1507,7 +1507,7 @@
     "name": "Wreak Vengeance",
     "cost": 1,
     "limit": 1,
-    "id": 188,
+    "id": "163ca708-9b5f-5bd5-9dde-5b55c8a07f95",
     "image": "command-cards/wreak-vengeance.png",
     "iaspec": "wreakvengeance"
   },
@@ -1515,7 +1515,7 @@
     "name": "One in a Million",
     "cost": 2,
     "limit": 1,
-    "id": 189,
+    "id": "489eeb4a-54dd-54e9-b268-b1e69776c1e1",
     "image": "command-cards/one-in-a-million.png",
     "iaspec": "oneinamillion"
   },
@@ -1523,7 +1523,7 @@
     "name": "Planning",
     "cost": 0,
     "limit": 1,
-    "id": 190,
+    "id": "b1589ad7-e505-5d6e-9fd0-b0e5ad235b04",
     "image": "command-cards/planning.png",
     "iaspec": "planning"
   },
@@ -1531,7 +1531,7 @@
     "name": "Price on Their Heads",
     "cost": 1,
     "limit": 1,
-    "id": 191,
+    "id": "bd4da1d0-fef3-5221-bf55-74c46b1cd0c9",
     "image": "command-cards/price-on-their-heads.png",
     "iaspec": "priceontheirheads"
   },
@@ -1539,7 +1539,7 @@
     "name": "Pummel",
     "cost": 1,
     "limit": 2,
-    "id": 192,
+    "id": "d0c73637-96e0-5f82-9d3e-587e669ec2ad",
     "image": "command-cards/pummel.png",
     "iaspec": "pummel"
   },
@@ -1547,7 +1547,7 @@
     "name": "Rally",
     "cost": 0,
     "limit": 1,
-    "id": 193,
+    "id": "10be4a0a-4d87-5383-b209-9b5797d2b92d",
     "image": "command-cards/rally.png",
     "iaspec": "rally"
   },
@@ -1555,7 +1555,7 @@
     "name": "Recovery",
     "cost": 0,
     "limit": 1,
-    "id": 194,
+    "id": "d76f6672-c11d-5104-94a1-21116afb3a52",
     "image": "command-cards/recovery.png",
     "iaspec": "recovery"
   },
@@ -1563,7 +1563,7 @@
     "name": "Regroup",
     "cost": 1,
     "limit": 2,
-    "id": 195,
+    "id": "a1027cc2-1011-5021-898b-e6c85cc6956c",
     "image": "command-cards/regroup.png",
     "iaspec": "regroup"
   },
@@ -1571,7 +1571,7 @@
     "name": "Sarlacc Sweep",
     "cost": 2,
     "limit": 1,
-    "id": 196,
+    "id": "1b925785-42f7-5389-bfde-3be6eef8ad8d",
     "image": "command-cards/sarlacc-sweep.png",
     "iaspec": "sarlaccsweep"
   },
@@ -1579,7 +1579,7 @@
     "name": "Shadow Ops",
     "cost": 3,
     "limit": 1,
-    "id": 197,
+    "id": "7389ffa5-a7bf-5fc7-9157-2c9e210259e8",
     "image": "command-cards/shadow-ops.png",
     "iaspec": "shadowops"
   },
@@ -1587,7 +1587,7 @@
     "name": "Sit Tight",
     "cost": 0,
     "limit": 1,
-    "id": 198,
+    "id": "240f2d12-d82a-5a1c-89e2-047dc7d60968",
     "image": "command-cards/sit-tight.png",
     "iaspec": "sittight"
   },
@@ -1595,7 +1595,7 @@
     "name": "Son of Skywalker",
     "cost": 3,
     "limit": 1,
-    "id": 199,
+    "id": "b2701e23-b546-5a0f-869e-1f97aa872fc4",
     "image": "command-cards/son-of-skywalker.png",
     "iaspec": "sonofskywalker"
   },
@@ -1603,7 +1603,7 @@
     "name": "Take Cover",
     "cost": 0,
     "limit": 1,
-    "id": 200,
+    "id": "f16c0db6-52c4-5747-87d0-9d8be122577e",
     "image": "command-cards/take-cover.png",
     "iaspec": "takecover"
   },
@@ -1611,7 +1611,7 @@
     "name": "Take Initiative",
     "cost": 0,
     "limit": 1,
-    "id": 201,
+    "id": "f5bea603-31cb-5f33-8ff6-6d7592bb0cb2",
     "image": "command-cards/take-initiative.png",
     "iaspec": "takeinitiative"
   },
@@ -1619,7 +1619,7 @@
     "name": "Take it Down",
     "cost": 3,
     "limit": 1,
-    "id": 202,
+    "id": "526e0eea-f00d-554b-b1f8-ad89701f6267",
     "image": "command-cards/take-it-down.png",
     "iaspec": "takeitdown"
   },
@@ -1627,7 +1627,7 @@
     "name": "Telekinetic Throw",
     "cost": 1,
     "limit": 1,
-    "id": 203,
+    "id": "d37ae4db-7c53-5d48-8795-7110ccf45d16",
     "image": "command-cards/telekinetic-throw.png",
     "iaspec": "telekineticthrow"
   },
@@ -1635,7 +1635,7 @@
     "name": "To the Limit",
     "cost": 0,
     "limit": 1,
-    "id": 204,
+    "id": "647a841c-d74f-52ce-b0a3-15ebfd4dd1b4",
     "image": "command-cards/to-the-limit.png",
     "iaspec": "tothelimit"
   },
@@ -1643,12 +1643,12 @@
     "name": "Urgency",
     "cost": 0,
     "limit": 1,
-    "id": 205,
+    "id": "b29e2a38-01a0-50bf-aa99-eee4550c4d99",
     "image": "command-cards/urgency.png",
     "iaspec": "urgency"
   },
   {
-    "id": 206,
+    "id": "0025d20e-9ffa-5847-8c42-c5f6def4e730",
     "name": "Marked Territory",
     "cost": 0,
     "limit": 1,
@@ -1656,7 +1656,7 @@
     "iaspec": "markedterritory"
   },
   {
-    "id": 207,
+    "id": "2d8052bb-d2bb-5fb6-a603-4f23dc78bd09",
     "name": "Pack Alpha",
     "cost": 1,
     "limit": 1,
@@ -1664,7 +1664,7 @@
     "iaspec": "packalpha"
   },
   {
-    "id": 208,
+    "id": "f8ac3d7f-33d8-520f-9be1-e12b2b8dab5a",
     "name": "Signal Jammer",
     "cost": 1,
     "limit": 1,
@@ -1672,7 +1672,7 @@
     "iaspec": "signaljammer"
   },
   {
-    "id": 209,
+    "id": "4b3004bb-14b8-519a-a2c7-5378a135efa2",
     "name": "Spinning Kick",
     "cost": 1,
     "limit": 1,
@@ -1680,7 +1680,7 @@
     "iaspec": "spinningkick"
   },
   {
-    "id": 210,
+    "id": "496b14f8-8973-5166-9f30-2f7eb1a77629",
     "name": "Wild Fire",
     "cost": 1,
     "limit": 1,
@@ -1688,7 +1688,7 @@
     "iaspec": "wildfire"
   },
   {
-    "id": 211,
+    "id": "236fd356-520a-5661-8ef5-29d3cd7d7d17",
     "name": "Dying Lunge",
     "cost": 2,
     "limit": 1,
@@ -1696,7 +1696,7 @@
     "iaspec": "dyinglunge"
   },
   {
-    "id": 212,
+    "id": "922e14d4-2ed6-5375-a716-f043e92bb785",
     "name": "Hour of Need",
     "cost": 0,
     "limit": 1,
@@ -1704,7 +1704,7 @@
     "iaspec": "hourofneed"
   },
   {
-    "id": 213,
+    "id": "f7c11efc-96f1-5094-b5d1-a1dd49b0e67b",
     "name": "Learn by Example",
     "cost": 1,
     "limit": 1,
@@ -1712,7 +1712,7 @@
     "iaspec": "learnbyexample"
   },
   {
-    "id": 214,
+    "id": "e703ffef-34fe-5369-a554-44bb6990c292",
     "name": "Protect the Old Ways",
     "cost": 1,
     "limit": 1,
@@ -1720,7 +1720,7 @@
     "iaspec": "protecttheoldways"
   },
   {
-    "id": 215,
+    "id": "87129c8e-cb84-5642-97c4-5b666c537b16",
     "name": "Second Chance",
     "cost": 2,
     "limit": 1,
@@ -1728,7 +1728,7 @@
     "iaspec": "secondchance"
   },
   {
-    "id": 216,
+    "id": "d811a890-87d5-58a2-be7f-ca90bd2b37b7",
     "name": "Hostile Negotiation",
     "cost": 1,
     "limit": 1,
@@ -1736,7 +1736,7 @@
     "iaspec": "hostilenegotiation"
   },
   {
-    "id": 217,
+    "id": "4ecddb0c-d866-523b-a110-475825ed510e",
     "name": "Let's Make a Deal",
     "cost": 0,
     "limit": 1,
@@ -1744,7 +1744,7 @@
     "iaspec": "letsmakeadeal"
   },
   {
-    "id": 218,
+    "id": "6a63cebf-0d4c-52ee-90a5-ab38cb123ec4",
     "name": "Out of Time",
     "cost": 1,
     "limit": 1,
@@ -1752,7 +1752,7 @@
     "iaspec": "outoftime"
   },
   {
-    "id": 219,
+    "id": "70565ed6-e241-5970-991e-caf9aefd3461",
     "name": "Worth Every Credit",
     "cost": 2,
     "limit": 1,
@@ -1760,7 +1760,7 @@
     "iaspec": "wortheverycredit"
   },
   {
-    "id": 220,
+    "id": "1c01a448-7544-5b3c-9454-d1aaab55d2ee",
     "name": "Escalating Hostility",
     "cost": 1,
     "limit": 3,
@@ -1768,7 +1768,7 @@
     "iaspec": "escalatinghostility"
   },
   {
-    "id": 221,
+    "id": "2f133659-f514-59a2-b7ca-dcaec3b1135d",
     "name": "Karabast!",
     "cost": 1,
     "limit": 1,
@@ -1776,7 +1776,7 @@
     "iaspec": "karabast"
   },
   {
-    "id": 222,
+    "id": "fc139a73-9e0a-53f0-ac21-d0bc1cc64537",
     "name": "Rebel Graffiti",
     "cost": 0,
     "limit": 1,
@@ -1784,7 +1784,7 @@
     "iaspec": "rebelgraffiti"
   },
   {
-    "id": 223,
+    "id": "c4c997f8-a58e-5938-a8d1-59db5faca45f",
     "name": "Veteran Instincts",
     "cost": 1,
     "limit": 1,
@@ -1792,7 +1792,7 @@
     "iaspec": "veteraninstincts"
   },
   {
-    "id": 224,
+    "id": "2e0caa6f-a56f-5d69-abaa-fb0f2f992b38",
     "name": "Combat Resupply",
     "cost": 1,
     "limit": 1,
@@ -1800,7 +1800,7 @@
     "iaspec": "combatresupply"
   },
   {
-    "id": 225,
+    "id": "9228cf72-c0ae-5908-aed0-cfa19e1356fb",
     "name": "Foresee",
     "cost": 0,
     "limit": 1,
@@ -1808,7 +1808,7 @@
     "iaspec": "foresee"
   },
   {
-    "id": 226,
+    "id": "50f81c63-acd9-5abc-9052-a7146d2547eb",
     "name": "Induce Rage",
     "cost": 1,
     "limit": 1,
@@ -1816,7 +1816,7 @@
     "iaspec": "inducerage"
   },
   {
-    "id": 227,
+    "id": "1b58d788-dc1a-576f-bc60-291aa66b40fc",
     "name": "Price of Glory",
     "cost": 2,
     "limit": 1,

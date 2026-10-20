@@ -1,34 +1,34 @@
 [
   {
-    "id": 0,
+    "id": "4f4353d0-e0be-54a9-aa7b-fb902f7c387d",
     "name": "Bounty",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/bounty.png"
   },
   {
-    "id": 1,
+    "id": "a5f9e580-e452-53ae-9bf7-bcf9ec59e578",
     "name": "Counterparts",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/counterparts.png"
   },
   {
-    "id": 2,
+    "id": "441368fb-d277-5004-b542-d4c69860a6e9",
     "name": "Hunt Them Down",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/hunt-them-down.png"
   },
   {
-    "id": 3,
+    "id": "697085bd-631f-5ead-aac2-54b0700b5f26",
     "name": "Surveillance Operatives",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/surveillance-operatives.png"
   },
   {
-    "id": 4,
+    "id": "f0e5b86e-4dfc-5c05-99e6-bd4b33a86294",
     "name": "Tech Goggles",
     "type": "Equipment",
     "traits": [
@@ -37,7 +37,7 @@
     "image": "reward-cards/tech-goggles.png"
   },
   {
-    "id": 5,
+    "id": "5c5d58e8-2708-5253-aa65-1fff44bdc7cb",
     "name": "Adrenalin Implant",
     "type": "Equipment",
     "traits": [
@@ -46,56 +46,56 @@
     "image": "reward-cards/adrenalin-implant.png"
   },
   {
-    "id": 6,
+    "id": "18f91426-e778-5114-b4e4-c51f9e4abc1a",
     "name": "Allied Operations",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/allied-operations.png"
   },
   {
-    "id": 7,
+    "id": "9a0bb796-7c83-560b-8cfb-a41849584b80",
     "name": "Fearless Leader",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/fearless-leader.png"
   },
   {
-    "id": 8,
+    "id": "526b88de-90da-51f4-8bfa-ff37d191e2a7",
     "name": "Imperial Industry",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/imperial-industry.png"
   },
   {
-    "id": 9,
+    "id": "212de08e-f967-5a3c-88da-b3a4d32091b2",
     "name": "Life Debt",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/life-debt.png"
   },
   {
-    "id": 10,
+    "id": "97c171b8-5f88-5e7b-b14e-662f8a6cc19b",
     "name": "Old Wounds",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/old-wounds.png"
   },
   {
-    "id": 11,
+    "id": "9a155cac-9b4c-56d4-8028-5b8aeab2e574",
     "name": "Peacemaker",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/peacemaker.png"
   },
   {
-    "id": 12,
+    "id": "32c18c87-41fc-5650-9b87-4797f42c6433",
     "name": "Rebel Recon",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/rebel-recon.png"
   },
   {
-    "id": 13,
+    "id": "90cea9c1-f830-586e-abf4-b34f7af1e1b2",
     "name": "Shadow Suit",
     "type": "Armor",
     "traits": [
@@ -105,7 +105,7 @@
     "image": "reward-cards/shadow-suit.png"
   },
   {
-    "id": 14,
+    "id": "65f456d4-6a14-5fe0-af66-8962e667d691",
     "name": "Shu Yen's Lightsaber",
     "type": "Melee Weapon",
     "traits": [
@@ -115,49 +115,49 @@
     "image": "reward-cards/shu-yens-lightsaber.png"
   },
   {
-    "id": 15,
+    "id": "decc9a6f-fc5d-5589-9b9e-0150dfaafdbe",
     "name": "Special Operations",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/special-operations.png"
   },
   {
-    "id": 16,
+    "id": "c83c635b-54c6-5491-a163-1940cdc4b399",
     "name": "Supply Deficit",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/supply-deficit.png"
   },
   {
-    "id": 17,
+    "id": "6d300aae-5787-5516-aaa6-21efbff53494",
     "name": "The Ways of the Force",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/the-ways-of-the-force.png"
   },
   {
-    "id": 18,
+    "id": "58110173-948c-5cac-b843-df2d0f4d966f",
     "name": "Veteran Prowess",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/veteran-prowess.png"
   },
   {
-    "id": 19,
+    "id": "2842cc42-6870-5b86-97c2-fd7a7d550a38",
     "name": "Battle Vision",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/battle-vision.png"
   },
   {
-    "id": 20,
+    "id": "d722bb31-6e1e-593f-8182-f5cd9c10bd20",
     "name": "Iron Hand",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/iron-hand.png"
   },
   {
-    "id": 21,
+    "id": "8c328237-1092-53fc-bb88-cc845b617aa1",
     "name": "Systems Upgrade",
     "type": "Equipment",
     "traits": [
@@ -166,7 +166,7 @@
     "image": "reward-cards/systems-upgrade.png"
   },
   {
-    "id": 22,
+    "id": "daa8f12c-b023-5ed1-b360-00b30c122760",
     "name": "Cam Droid",
     "type": "Equipment",
     "traits": [
@@ -175,14 +175,14 @@
     "image": "reward-cards/cam-droid.png"
   },
   {
-    "id": 23,
+    "id": "0889f073-7b07-5148-8f28-be40eb3690dd",
     "name": "Lobots Favor",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/lobots-favor.png"
   },
   {
-    "id": 24,
+    "id": "7220527b-563e-54ed-90ee-e6f1c2259511",
     "name": "Radiant Holocron",
     "type": "Equipment",
     "traits": [
@@ -191,105 +191,105 @@
     "image": "reward-cards/radiant-holocron.png"
   },
   {
-    "id": 25,
+    "id": "335d6b4b-0bed-58bc-95d2-179eec025952",
     "name": "Relief Effort",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/relief-effort.png"
   },
   {
-    "id": 26,
+    "id": "44f560b4-7cfc-5631-bbb5-b653b3a2fb21",
     "name": "Under the Radar",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/under-the-radar.png"
   },
   {
-    "id": 27,
+    "id": "a3b3190a-a554-522a-b553-e01a48a6cf5d",
     "name": "Bred for War",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/bred-for-war.png"
   },
   {
-    "id": 28,
+    "id": "b6ecc9cb-5e4e-5fa6-85fd-2f81ba919e06",
     "name": "Desperado",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/desperado.png"
   },
   {
-    "id": 29,
+    "id": "2c26b9fe-0294-5546-b9ec-60504d417841",
     "name": "Haymaker",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/haymaker.png"
   },
   {
-    "id": 30,
+    "id": "fbf79395-cc1a-541e-890b-4afce0771eb8",
     "name": "Mandalorian Heritage",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/mandalorian-heritage.png"
   },
   {
-    "id": 31,
+    "id": "dcc44e61-93af-5286-b987-b3683224ab04",
     "name": "Mercenary Ties",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/mercenary-ties.png"
   },
   {
-    "id": 32,
+    "id": "5867cc39-2f50-555f-9ce2-58144292b0cb",
     "name": "501st Training",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/501st-training.png"
   },
   {
-    "id": 33,
+    "id": "e2e5af2b-61da-5f73-8d12-7db339e81a62",
     "name": "Tusken Weaponry",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/tusken-weaponry.png"
   },
   {
-    "id": 34,
+    "id": "28c9f2ab-72e9-5003-8bca-509af3a0b5ef",
     "name": "Cautious Approach",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/cautious-approach.png"
   },
   {
-    "id": 35,
+    "id": "fd332dd1-2256-56fd-9532-2b5f0b6aead9",
     "name": "Tactical Advance",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/tactical-advance.png"
   },
   {
-    "id": 36,
+    "id": "eccc79f6-1637-5e13-96ed-dcdafb455fbd",
     "name": "Lady Luck",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/lady-luck.png"
   },
   {
-    "id": 37,
+    "id": "7b86cc6b-13c2-5f59-8419-799e710ee992",
     "name": "Mechanical Salvage",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/mechanical-salvage.png"
   },
   {
-    "id": 38,
+    "id": "551e4a0c-8ed1-59c4-84fe-65da6c1b0482",
     "name": "Intimidation",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/intimidation.png"
   },
   {
-    "id": 39,
+    "id": "f6b32578-15b2-5847-8e19-cabf0fb7b532",
     "name": "Quickdraw Holster",
     "type": "Equipment",
     "traits": [
@@ -298,14 +298,14 @@
     "image": "reward-cards/quickdraw-holster.png"
   },
   {
-    "id": 40,
+    "id": "646896f8-92bc-5937-beb9-c98452442460",
     "name": "Alliance Efficiency",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/alliance-efficiency.png"
   },
   {
-    "id": 41,
+    "id": "518159df-f667-501d-9f19-91874759966f",
     "name": "Bardottan Shard",
     "type": "Equipment",
     "traits": [
@@ -314,182 +314,182 @@
     "image": "reward-cards/bardottan-shard.png"
   },
   {
-    "id": 42,
+    "id": "6d6ea7a9-8c87-5779-b7ac-7394573918ee",
     "name": "Explosives Clearance",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/explosives-clearance.png"
   },
   {
-    "id": 43,
+    "id": "d740268f-2bcf-5064-a975-d454bba3af8b",
     "name": "Inside Source",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/inside-source.png"
   },
   {
-    "id": 44,
+    "id": "b9e91838-c404-5625-8669-4342642494bb",
     "name": "Intercepted Plans",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/intercepted-plans.png"
   },
   {
-    "id": 45,
+    "id": "b9f31a9e-8b6c-54b8-9075-f40491d4e45e",
     "name": "Lessons of History",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/lessons-of-history.png"
   },
   {
-    "id": 46,
+    "id": "0a3f0a3a-cb5a-50dc-8039-834cdfe0ca59",
     "name": "Mercenary Aid",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/mercenary-aid.png"
   },
   {
-    "id": 47,
+    "id": "b4c3ec9e-272b-5114-9cd2-60154082c82d",
     "name": "Populist Support",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/populist-support.png"
   },
   {
-    "id": 48,
+    "id": "969e9660-0712-5f4d-aa76-50673c7d03ca",
     "name": "Power of the Shard",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/power-of-the-shard.png"
   },
   {
-    "id": 49,
+    "id": "ef9a4d3d-ed90-5e59-96a1-0cc856125700",
     "name": "Scouted Enemies",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/scouted-enemies.png"
   },
   {
-    "id": 50,
+    "id": "141edda5-240c-501a-9fbe-4693250e88fb",
     "name": "Tracked Movements",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/tracked-movements.png"
   },
   {
-    "id": 51,
+    "id": "0913e6a2-5369-5266-b7b4-46f3f831f2c9",
     "name": "Vaders Legion",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/vaders-legion.png"
   },
   {
-    "id": 52,
+    "id": "de63a870-8cb9-56ce-a522-27d283ff588d",
     "name": "Wookiee Roar",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/wookiee-roar.png"
   },
   {
-    "id": 53,
+    "id": "a7e8a228-26cc-53e2-8798-80668f4d7703",
     "name": "X-8 Upgrade",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/x-8-upgrade.png"
   },
   {
-    "id": 54,
+    "id": "0db0bb2c-9d3c-5e40-93e7-cd21c378eb87",
     "name": "Bullseye!",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/bullseye.png"
   },
   {
-    "id": 55,
+    "id": "12446650-bebe-5e7a-a5fa-18af72c86ada",
     "name": "Hondo's Treasure",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/hondos-treasure.png"
   },
   {
-    "id": 56,
+    "id": "3fa1492a-647f-5720-a12e-6ac5cfd5e5c1",
     "name": "Nova Cell Leader",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/nova-cell-leader.png"
   },
   {
-    "id": 57,
+    "id": "2b8bbc83-31f3-59a1-8aa6-b677a8248cd7",
     "name": "Rough Rider",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/rough-rider.png"
   },
   {
-    "id": 58,
+    "id": "4c2308c6-ea30-5752-818e-1f31d90b2ad0",
     "name": "Tech Specialist",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/tech-specialist.png"
   },
   {
-    "id": 59,
+    "id": "bd9b0b82-0760-58f1-baf7-3ae9a30a435b",
     "name": "Wholeness",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/wholeness.png"
   },
   {
-    "id": 60,
+    "id": "adc59f43-077f-5396-b1fb-68a9f1379d4d",
     "name": "Supply Disruption",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/supply-disruption.png"
   },
   {
-    "id": 61,
+    "id": "41ba0e27-0367-513c-87af-dff958baf256",
     "name": "Networks Restored",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/networks-restored.png"
   },
   {
-    "id": 62,
+    "id": "5c3d1cc1-1d65-5b63-9aba-3b4abdadca41",
     "name": "Constant Advantage",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/constant-advantage.png"
   },
   {
-    "id": 63,
+    "id": "ed04b492-4f22-565b-8217-c782878ea7e5",
     "name": "Resurgence",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/resurgence.png"
   },
   {
-    "id": 64,
+    "id": "f132b8e0-9a1e-5b9d-bd1c-8949fa51b6f0",
     "name": "Weary from Toil",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/weary-from-toil.png"
   },
   {
-    "id": 65,
+    "id": "4faba9d9-2a0b-5989-931b-5802778685cf",
     "name": "Invigorated by Success",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/invigorated-by-success.png"
   },
   {
-    "id": 66,
+    "id": "5472de3f-23e0-599f-8f55-2090f887c881",
     "name": "Distractions",
     "type": "Feat",
     "traits": null,
     "image": "reward-cards/distractions.png"
   },
   {
-    "id": 67,
+    "id": "f10ebe3e-16d9-531d-b965-79104f3d1a25",
     "name": "Strategy Executed",
     "type": "Feat",
     "traits": null,

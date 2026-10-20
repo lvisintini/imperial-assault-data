@@ -1,26 +1,26 @@
 [
   {
-    "id": 0,
+    "id": "4def469d-0db7-5306-92be-eff4307f757d",
     "name": "Bleeding",
     "image": "condition-cards/bleeding.png"
   },
   {
-    "id": 1,
+    "id": "bbeb6a4c-4767-52d0-a0ac-01423dd6b20e",
     "name": "Focused",
     "image": "condition-cards/focused.png"
   },
   {
-    "id": 2,
+    "id": "2d38bd5d-67a0-5b00-962a-c1e9b507fe68",
     "name": "Stunned",
     "image": "condition-cards/stunned.png"
   },
   {
-    "id": 3,
+    "id": "47d9361e-aaa7-58f8-9b2a-3dedb592d663",
     "name": "Weakened",
     "image": "condition-cards/weakened.png"
   },
   {
-    "id": 4,
+    "id": "e64e5a82-3604-5aae-9868-3195ce17391e",
     "name": "Hidden",
     "image": "condition-cards/hidden.png"
   }

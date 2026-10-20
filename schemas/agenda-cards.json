@@ -6,9 +6,8 @@
   "definitions": {},
   "properties": {
     "id": {
-      "type": "integer",
-      "description": "Id for entry",
-      "minimum": 0
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
     },
     "name": {
       "type": "string",
@@ -23,8 +22,7 @@
     },
     "agenda_id": {
       "description": "Foreign key id for entry in data/agenda-decks.json",
-      "type": "integer",
-      "minimum": 0
+      "$ref": "definitions.json#/definitions/uuid"
     },
     "mission": {
       "description": "Determines if the agenda card is a mission or not",

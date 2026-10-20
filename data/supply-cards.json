@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "f6cc1e28-f76e-5dc8-a6a5-da79b61ea7d5",
     "name": "Adrenal Stim",
     "traits": [
       "Consumable",
@@ -9,7 +9,7 @@
     "image": "supply-cards/adrenal-stim.png"
   },
   {
-    "id": 1,
+    "id": "068accca-c631-5382-b26c-066ce04a3929",
     "name": "Artificial Stimulants",
     "traits": [
       "Consumable",
@@ -18,7 +18,7 @@
     "image": "supply-cards/artificial-stimulants.png"
   },
   {
-    "id": 2,
+    "id": "f34418c6-d057-58cc-bd54-1fbd17ffb2a4",
     "name": "Bacta Infusion",
     "traits": [
       "Consumable",
@@ -27,7 +27,7 @@
     "image": "supply-cards/bacta-infusion.png"
   },
   {
-    "id": 3,
+    "id": "50b1df8f-a313-5e8b-8484-200d7ac82ffb",
     "name": "C1 Comlink",
     "traits": [
       "Consumable",
@@ -36,7 +36,7 @@
     "image": "supply-cards/c1-comlink.png"
   },
   {
-    "id": 4,
+    "id": "c7c2eb82-10c5-5cb4-8c5a-044360ca9d9e",
     "name": "C22 Frag Grenade",
     "traits": [
       "Consumable",
@@ -45,7 +45,7 @@
     "image": "supply-cards/c22-frag-grenade.png"
   },
   {
-    "id": 5,
+    "id": "bb845e9b-9368-5bd7-86a1-2bf2e6a59d21",
     "name": "Chance Cubes",
     "traits": [
       "Valuable"
@@ -53,7 +53,7 @@
     "image": "supply-cards/chance-cubes.png"
   },
   {
-    "id": 6,
+    "id": "66ca6a92-b177-536b-b480-8559a1d323e5",
     "name": "Emergency Medpac",
     "traits": [
       "Consumable",
@@ -62,7 +62,7 @@
     "image": "supply-cards/emergency-medpac.png"
   },
   {
-    "id": 7,
+    "id": "74b97418-57b3-5151-9c0b-a376783581ed",
     "name": "Flash Bomb",
     "traits": [
       "Consumable",
@@ -71,7 +71,7 @@
     "image": "supply-cards/flash-bomb.png"
   },
   {
-    "id": 8,
+    "id": "5130e76d-27d5-5d72-9284-b66d3a856ed7",
     "name": "Flash Emitter",
     "traits": [
       "Consumable",
@@ -80,7 +80,7 @@
     "image": "supply-cards/flash-emitter.png"
   },
   {
-    "id": 9,
+    "id": "b3810ef0-b5d0-5fef-bf1c-d3b2778d6889",
     "name": "Grappling Hook",
     "traits": [
       "Tool"
@@ -88,7 +88,7 @@
     "image": "supply-cards/grappling-hook.png"
   },
   {
-    "id": 10,
+    "id": "8bf3c002-127a-5a8f-bf40-436a634b8cf7",
     "name": "Macrobinoculars",
     "traits": [
       "Tool"
@@ -96,7 +96,7 @@
     "image": "supply-cards/macrobinoculars.png"
   },
   {
-    "id": 11,
+    "id": "b40dd688-2efd-5afa-912b-65a9271527c5",
     "name": "Painkillers",
     "traits": [
       "Medical"
@@ -104,7 +104,7 @@
     "image": "supply-cards/painkillers.png"
   },
   {
-    "id": 12,
+    "id": "970d3649-2bc2-57c8-aab3-61edd56f6024",
     "name": "Pit Droid",
     "traits": [
       "Droid"
@@ -112,7 +112,7 @@
     "image": "supply-cards/pit-droid.png"
   },
   {
-    "id": 13,
+    "id": "f9fc9632-0c30-5f88-a6dd-ed9c523af772",
     "name": "Power Generator",
     "traits": [
       "Consumable",
@@ -121,7 +121,7 @@
     "image": "supply-cards/power-generator.png"
   },
   {
-    "id": 14,
+    "id": "a704696b-2659-5039-8b5c-2fe814a843f0",
     "name": "Shock Grenade",
     "traits": [
       "Consumable",
@@ -130,7 +130,7 @@
     "image": "supply-cards/shock-grenade.png"
   },
   {
-    "id": 15,
+    "id": "5732e22a-098f-53e9-bdd5-ec494138689b",
     "name": "Troop Data",
     "traits": [
       "Intel"
@@ -138,7 +138,7 @@
     "image": "supply-cards/troop-data.png"
   },
   {
-    "id": 16,
+    "id": "ce9977a8-c075-53a7-9e96-cd88937c7ad4",
     "name": "Turbocharger",
     "traits": [
       "Energy"
@@ -146,7 +146,7 @@
     "image": "supply-cards/turbocharger.png"
   },
   {
-    "id": 17,
+    "id": "4e6eab7f-0db8-5dfb-8e02-4fc605ed251e",
     "name": "Valuable Goods",
     "traits": [
       "Valuable"
@@ -154,7 +154,7 @@
     "image": "supply-cards/valuable-goods.png"
   },
   {
-    "id": 18,
+    "id": "9fa9d5ac-4c40-50dc-ba38-a28bf5151f1a",
     "name": "Weapons Cache",
     "traits": [
       "Tool"
@@ -163,7 +163,7 @@
   },
   {
     "name": "Grappler Arm",
-    "id": 19,
+    "id": "c72807ae-c976-5797-a395-69e50ab93077",
     "traits": [
       "Tool"
     ],
@@ -171,7 +171,7 @@
   },
   {
     "name": "Shield Pack",
-    "id": 20,
+    "id": "48cda03d-5300-5b66-b23c-f0c782891613",
     "traits": [
       "Consumable",
       "Tool"
@@ -180,14 +180,14 @@
   },
   {
     "name": "Supply Chest",
-    "id": 21,
+    "id": "7d0faa77-9723-5a75-bfdf-e3b97fc60fa8",
     "traits": [
       "Valuable"
     ],
     "image": "supply-cards/supply-chest.png"
   },
   {
-    "id": 22,
+    "id": "e42beae7-bb39-5828-9fa4-242c67a8fefd",
     "name": "Locked Chest",
     "traits": [
       "Valuable"
@@ -195,7 +195,7 @@
     "image": "supply-cards/locked-chest.png"
   },
   {
-    "id": 23,
+    "id": "6a92c3bc-ef93-5525-8b7a-1052d92d9f03",
     "name": "Missing Key",
     "traits": [
       "Valuable"

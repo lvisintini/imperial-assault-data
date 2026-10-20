@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "abd2c175-33ec-589c-934e-cdd97b7bac88",
     "tier": 1,
     "name": "Armored Gauntlets",
     "credits": 300,
@@ -11,7 +11,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 1,
+    "id": "f2e6ee75-317d-51b6-a00f-f5ffbf45b7cf",
     "tier": 1,
     "name": "Bacta Pump",
     "credits": 300,
@@ -22,7 +22,7 @@
     "type": "Equipment"
   },
   {
-    "id": 2,
+    "id": "6147bae7-aec5-5906-829f-2eb76f840b39",
     "tier": 1,
     "name": "Balanced Hilt",
     "credits": 300,
@@ -34,7 +34,7 @@
     "type": "Melee Weapon Modification"
   },
   {
-    "id": 3,
+    "id": "7f3af9f0-aedf-58a1-8e23-30313d00c5ec",
     "tier": 1,
     "name": "Combat Coat",
     "credits": 500,
@@ -46,7 +46,7 @@
     "type": "Armor"
   },
   {
-    "id": 4,
+    "id": "3faeb4c6-8591-566b-9423-4cc1cd09e22b",
     "tier": 1,
     "name": "DDC Defender",
     "credits": 550,
@@ -58,7 +58,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 5,
+    "id": "8d532b78-1a2b-5411-a32c-70dc7534b941",
     "tier": 1,
     "name": "DH-17",
     "credits": 200,
@@ -70,7 +70,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 6,
+    "id": "bdf8c72e-afcf-5c1a-ac05-dd17beba3506",
     "tier": 1,
     "name": "DL-44",
     "credits": 500,
@@ -82,7 +82,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 7,
+    "id": "0ba6cdb5-bfcc-50be-afc8-331b2b68936b",
     "tier": 1,
     "name": "E-11",
     "credits": 400,
@@ -94,7 +94,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 8,
+    "id": "884668fb-4e24-5b10-a0c4-d5956aabc290",
     "tier": 1,
     "name": "Emergency Injector",
     "credits": 150,
@@ -105,7 +105,7 @@
     "type": "Equipment"
   },
   {
-    "id": 9,
+    "id": "eec65579-b4a6-55cc-88df-02246af98c6e",
     "tier": 1,
     "name": "Extended Haft",
     "credits": 300,
@@ -117,7 +117,7 @@
     "type": "Melee Weapon Modification"
   },
   {
-    "id": 10,
+    "id": "3ef9759c-e285-5c29-a0ca-74882592f74b",
     "tier": 1,
     "name": "Gaffi Stick",
     "credits": 200,
@@ -128,7 +128,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 11,
+    "id": "14ece05f-d8fc-5511-bc3f-923377733da2",
     "tier": 1,
     "name": "Hand Cannon",
     "credits": 400,
@@ -140,7 +140,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 12,
+    "id": "022b861a-1fe1-5da3-af3e-0aec4942dc82",
     "tier": 1,
     "name": "Marksman Barrel",
     "credits": 300,
@@ -152,7 +152,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 13,
+    "id": "6abf0f45-bb52-5510-bb50-7a538242377b",
     "tier": 1,
     "name": "Portable Medkit",
     "credits": 450,
@@ -163,7 +163,7 @@
     "type": "Equipment"
   },
   {
-    "id": 14,
+    "id": "150f0662-d019-5d61-a351-643fa0fb67a1",
     "tier": 1,
     "name": "Shadowsilk Cloak",
     "credits": 350,
@@ -175,7 +175,7 @@
     "type": "Armor"
   },
   {
-    "id": 15,
+    "id": "c9055be5-f006-5066-a32e-16d772aed10a",
     "tier": 1,
     "name": "Survival Gear",
     "credits": 250,
@@ -186,7 +186,7 @@
     "type": "Equipment"
   },
   {
-    "id": 16,
+    "id": "c239b050-3e55-5aa6-ac94-3d9daf01edbe",
     "tier": 1,
     "name": "Tactical Display",
     "credits": 300,
@@ -198,7 +198,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 17,
+    "id": "a30927d2-f812-5320-8922-8a3f399b6e20",
     "tier": 1,
     "name": "Tatooine Hunting Rifle",
     "credits": 250,
@@ -210,7 +210,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 18,
+    "id": "126e6d5d-42ae-50db-8036-c99604f0094f",
     "tier": 1,
     "name": "Under-Barrel HH-4",
     "credits": 300,
@@ -222,7 +222,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 19,
+    "id": "5ac6f270-a0d6-5e24-97be-667cfbcf2c98",
     "tier": 1,
     "name": "Vibroblade",
     "credits": 300,
@@ -233,7 +233,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 20,
+    "id": "0fe0c558-2d93-52f1-a4d8-3884af1453b0",
     "tier": 1,
     "name": "Vibroknife",
     "credits": 150,
@@ -244,7 +244,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 21,
+    "id": "9acf090b-c0d1-5aac-8f8b-ef68e81032e7",
     "tier": 1,
     "name": "Vibrosword",
     "credits": 350,
@@ -255,7 +255,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 22,
+    "id": "6ce4ddf3-424d-505b-affe-11b2a70dea28",
     "tier": 2,
     "name": "434 \"Deathhammer\"",
     "credits": 600,
@@ -267,7 +267,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 23,
+    "id": "34319654-84fa-50a0-bac4-2f5b9e48def5",
     "tier": 2,
     "name": "A280",
     "credits": 600,
@@ -279,7 +279,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 24,
+    "id": "10390f55-23b2-59ef-925a-e0cb81cebdf8",
     "tier": 2,
     "name": "BD-1 Vibro-Ax",
     "credits": 600,
@@ -291,7 +291,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 25,
+    "id": "bc7df1ec-6a81-53dc-b9ed-bc4440fc8283",
     "tier": 2,
     "name": "Bolt Upgrade",
     "credits": 250,
@@ -303,7 +303,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 26,
+    "id": "25b31eb6-258e-54b7-b7b7-12be7f45d12f",
     "tier": 2,
     "name": "Combat Coat",
     "credits": 500,
@@ -315,7 +315,7 @@
     "type": "Armor"
   },
   {
-    "id": 27,
+    "id": "81af48ea-0814-532c-bb35-d31827dc40f9",
     "tier": 2,
     "name": "Cybernetic Arm",
     "credits": 350,
@@ -327,7 +327,7 @@
     "type": "Equipment"
   },
   {
-    "id": 28,
+    "id": "ce219a67-41d6-5185-934f-06d1231df760",
     "tier": 2,
     "name": "DT-12 Heavy Blaster Pistol",
     "credits": 600,
@@ -339,7 +339,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 29,
+    "id": "812b2efe-cec2-5061-83cf-eeb47839b8a8",
     "tier": 2,
     "name": "Double Vibrosword",
     "credits": 650,
@@ -350,7 +350,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 30,
+    "id": "4ed8b4a9-4751-5565-8036-66c21a320833",
     "tier": 2,
     "name": "EE-3 Carbine",
     "credits": 550,
@@ -362,7 +362,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 31,
+    "id": "5a2701cb-3a1b-5d65-bc4a-a8afa3448943",
     "tier": 2,
     "name": "Energized Hilt",
     "credits": 250,
@@ -374,7 +374,7 @@
     "type": "Melee Weapon Modification"
   },
   {
-    "id": 32,
+    "id": "7c8a5bc3-2616-5710-a00a-7364e4bf2c8f",
     "tier": 2,
     "name": "Environmental Hazard Suit",
     "credits": 600,
@@ -385,7 +385,7 @@
     "type": "Armor"
   },
   {
-    "id": 33,
+    "id": "c0ce8db5-002a-5ffc-a859-8cd4fc2be048",
     "tier": 2,
     "name": "Extra Ammunition",
     "credits": 300,
@@ -396,7 +396,7 @@
     "type": "Equipment"
   },
   {
-    "id": 34,
+    "id": "9486e190-14ed-5d2c-a8f8-c4f88fcaf42a",
     "tier": 2,
     "name": "High-Impact Guard",
     "credits": 500,
@@ -408,7 +408,7 @@
     "type": "Melee Weapon Modification"
   },
   {
-    "id": 35,
+    "id": "b47b8972-f5e1-50f1-877a-1b7fa0a63e8a",
     "tier": 2,
     "name": "Laminate Armor",
     "credits": 700,
@@ -420,7 +420,7 @@
     "type": "Armor"
   },
   {
-    "id": 36,
+    "id": "d3a50382-20f6-56fa-9c67-7113872e3a22",
     "tier": 2,
     "name": "Overcharger",
     "credits": 300,
@@ -432,7 +432,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 37,
+    "id": "fbbba6b8-7343-556f-b77f-5d82b347f5a6",
     "tier": 2,
     "name": "Plasma Cell",
     "credits": 450,
@@ -444,7 +444,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 38,
+    "id": "966a8ebc-5cc1-5f20-bd93-569321b5cf08",
     "tier": 2,
     "name": "R5 Astromech",
     "credits": 250,
@@ -455,7 +455,7 @@
     "type": "Equipment"
   },
   {
-    "id": 39,
+    "id": "2fd92b70-f0dd-5264-825c-f5769a7c6929",
     "tier": 2,
     "name": "Slicing Tools",
     "credits": 250,
@@ -466,7 +466,7 @@
     "type": "Equipment"
   },
   {
-    "id": 40,
+    "id": "27028441-da65-5220-a26e-9a8e838e0610",
     "tier": 2,
     "name": "Spread Barrel",
     "credits": 300,
@@ -478,7 +478,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 41,
+    "id": "6d7e1967-61a8-55cb-bcf8-387f97ef87d4",
     "tier": 2,
     "name": "Stun Baton",
     "credits": 500,
@@ -489,7 +489,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 42,
+    "id": "71033f1e-d906-5de9-b1c5-a37258078952",
     "tier": 2,
     "name": "T-21",
     "credits": 900,
@@ -501,7 +501,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 43,
+    "id": "7fdc2ba4-bcb8-5986-bf7f-debf9eb74264",
     "tier": 2,
     "name": "Vibro Knucklers",
     "credits": 400,
@@ -513,7 +513,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 44,
+    "id": "89d32edf-60fd-5633-b07a-5b0094b1a0c7",
     "tier": 2,
     "name": "Weighted Head",
     "credits": 400,
@@ -525,7 +525,7 @@
     "type": "Melee Weapon Modification"
   },
   {
-    "id": 45,
+    "id": "e0856a06-5833-5517-a326-adc6a8e6d75b",
     "tier": 3,
     "name": "Admiral's Uniform",
     "credits": 350,
@@ -536,7 +536,7 @@
     "type": "Armor"
   },
   {
-    "id": 46,
+    "id": "da73d0aa-d2ee-5ae1-aefb-79e81975000b",
     "tier": 3,
     "name": "Ancient Lightsaber",
     "credits": 1000,
@@ -548,7 +548,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 47,
+    "id": "2106c887-8780-59a1-93aa-5ff6fcc9210d",
     "tier": 3,
     "name": "Combat Knife",
     "credits": 500,
@@ -559,7 +559,7 @@
     "type": "Equipment"
   },
   {
-    "id": 48,
+    "id": "630a35a3-e0b3-5cc1-898a-2f4e26d7ffc6",
     "tier": 3,
     "name": "Combat Visor",
     "credits": 350,
@@ -570,7 +570,7 @@
     "type": "Equipment"
   },
   {
-    "id": 49,
+    "id": "f2b34a0a-0821-5bd4-b06f-e55008a5b54c",
     "tier": 3,
     "name": "Concussion Grenades",
     "credits": 400,
@@ -582,7 +582,7 @@
     "type": "Equipment"
   },
   {
-    "id": 50,
+    "id": "88fd8af3-67f7-5502-8d4f-cc8cb7d04a3a",
     "tier": 3,
     "name": "DLT-19",
     "credits": 950,
@@ -594,7 +594,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 51,
+    "id": "f8b3f045-0b8d-5ea7-a547-4cf029881610",
     "tier": 3,
     "name": "DXR-6",
     "credits": 1000,
@@ -606,7 +606,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 52,
+    "id": "103827a8-307c-5e9e-b424-0d3b77a5ccea",
     "tier": 3,
     "name": "Disruption Cell",
     "credits": 600,
@@ -618,7 +618,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 53,
+    "id": "ea89b3e2-b2da-5004-adb6-e8d095f2ac24",
     "tier": 3,
     "name": "Disruptor Pistol",
     "credits": 700,
@@ -630,7 +630,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 54,
+    "id": "45c864eb-a1be-5c23-969d-176d1e68c447",
     "tier": 3,
     "name": "Electrostaff",
     "credits": 1250,
@@ -642,7 +642,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 55,
+    "id": "eb168681-0001-5d0d-a7b3-c58fd775b7ef",
     "tier": 3,
     "name": "Force Pike",
     "credits": 1100,
@@ -653,7 +653,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 56,
+    "id": "e5419264-db2a-5550-bca5-3efea767313d",
     "tier": 3,
     "name": "Hidden Blade",
     "credits": 300,
@@ -664,7 +664,7 @@
     "type": "Equipment"
   },
   {
-    "id": 57,
+    "id": "afc5d0da-9cf4-55be-8ed3-943ac20710cb",
     "tier": 3,
     "name": "Laminate Armor",
     "credits": 700,
@@ -676,7 +676,7 @@
     "type": "Armor"
   },
   {
-    "id": 58,
+    "id": "c836168e-90a7-56b0-9fd1-036b11e3bacf",
     "tier": 3,
     "name": "Modified Energy Cannon",
     "credits": 1000,
@@ -688,7 +688,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 59,
+    "id": "222d858a-550d-5be4-af1d-89bf691cbe39",
     "tier": 3,
     "name": "Personal Shields",
     "credits": 550,
@@ -699,7 +699,7 @@
     "type": "Equipment"
   },
   {
-    "id": 60,
+    "id": "03616f69-4aba-5ab2-8d80-eca135155651",
     "tier": 3,
     "name": "Pulse Cannon",
     "credits": 1200,
@@ -711,7 +711,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 61,
+    "id": "029f87d0-1698-5995-b5c3-3269a90479f2",
     "tier": 3,
     "name": "Reinforced Helmet",
     "credits": 300,
@@ -722,7 +722,7 @@
     "type": "Equipment"
   },
   {
-    "id": 62,
+    "id": "7a952786-b1eb-5d47-aba3-9dc83e46babd",
     "tier": 3,
     "name": "Ryyk Blades",
     "credits": 950,
@@ -733,7 +733,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 63,
+    "id": "fc80b11f-70f7-54eb-90ac-e1e7683eb733",
     "tier": 3,
     "name": "Shock Emitter",
     "credits": 500,
@@ -745,7 +745,7 @@
     "type": "Melee Weapon Modification"
   },
   {
-    "id": 64,
+    "id": "0ebaf6da-0836-57b7-ad37-df6e2012cca5",
     "tier": 3,
     "name": "Sniper Scope",
     "credits": 250,
@@ -757,7 +757,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 65,
+    "id": "4de4ffe8-b739-554c-b39b-4bae640e87d6",
     "tier": 3,
     "name": "Sporting Blaster",
     "credits": 900,
@@ -769,7 +769,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 66,
+    "id": "be4e2ddd-54e3-5689-acbf-c53ac98dd5a8",
     "tier": 3,
     "name": "Telescoping Sights",
     "credits": 400,
@@ -781,7 +781,7 @@
     "type": "Ranged Weapon Modification"
   },
   {
-    "id": 67,
+    "id": "18577fff-f608-5d64-bd56-b44fbf2deb0c",
     "tier": 3,
     "name": "Valken-38 Carbine",
     "credits": 1250,
@@ -793,7 +793,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 68,
+    "id": "65128e00-ec61-5174-b2a4-e11e1ea0c5bd",
     "tier": 3,
     "name": "Vibrogenerator",
     "credits": 350,
@@ -808,7 +808,7 @@
     "tier": 1,
     "name": "Charge Pistol",
     "credits": 350,
-    "id": 70,
+    "id": "7399072c-a6c4-5cb3-85d2-8fd6ca131b7b",
     "image": "upgrade-cards/charge-pistol.png",
     "traits": [
       "Blaster",
@@ -820,7 +820,7 @@
     "tier": 1,
     "name": "Charged Ammo Pack",
     "credits": 100,
-    "id": 69,
+    "id": "6c999f19-2df5-5ed4-977a-0299f8b7235c",
     "image": "upgrade-cards/charged-ammo-pack.png",
     "traits": [
       "Modification",
@@ -832,7 +832,7 @@
     "tier": 1,
     "name": "Responsive Armor",
     "credits": 250,
-    "id": 72,
+    "id": "3f976778-b802-520a-aeff-d368ca4d821c",
     "image": "upgrade-cards/responsive-armor.png",
     "traits": [
       "Armor"
@@ -843,7 +843,7 @@
     "tier": 2,
     "name": "Focusing Beam",
     "credits": 250,
-    "id": 71,
+    "id": "1bbca7fa-3449-5ac6-bfc7-006184e30ebe",
     "image": "upgrade-cards/focusing-beam.png",
     "traits": [
       "Modification",
@@ -855,7 +855,7 @@
     "tier": 2,
     "name": "Hunter's Rifle",
     "credits": 600,
-    "id": 73,
+    "id": "6adfd532-f13f-5bf9-ab86-27bf1981b5dc",
     "image": "upgrade-cards/hunters-rifle.png",
     "traits": [
       "Blaster",
@@ -867,7 +867,7 @@
     "tier": 2,
     "name": "Polearm",
     "credits": 650,
-    "id": 75,
+    "id": "14ec2d45-73ef-5161-be7a-45d0d5a97053",
     "image": "upgrade-cards/polearm.png",
     "traits": [
       "Blade",
@@ -879,7 +879,7 @@
     "tier": 3,
     "name": "A-12 Sniper Rifle",
     "credits": 1150,
-    "id": 74,
+    "id": "96ceecb4-de33-55c9-910d-bedd87842377",
     "image": "upgrade-cards/a-12-sniper-rifle.png",
     "traits": [
       "Blaster",
@@ -891,7 +891,7 @@
     "tier": 3,
     "name": "Power Charger",
     "credits": 400,
-    "id": 76,
+    "id": "eaf66c54-7bed-5dfb-97bf-4ceb055dc529",
     "image": "upgrade-cards/power-charger.png",
     "traits": [
       "Accessory"
@@ -902,7 +902,7 @@
     "tier": 3,
     "name": "Supply Pack",
     "credits": 200,
-    "id": 77,
+    "id": "ec15f41c-e482-54b9-bdf1-3efb48897d4f",
     "image": "upgrade-cards/supply-pack.png",
     "traits": [
       "Accessory"
@@ -910,7 +910,7 @@
     "type": "Equipment"
   },
   {
-    "id": 78,
+    "id": "17773bb1-b64d-5ff3-a858-8a192c502206",
     "tier": 1,
     "name": "Combat Vambrace",
     "credits": 200,
@@ -921,7 +921,7 @@
     "type": "Equipment"
   },
   {
-    "id": 79,
+    "id": "689c9dbb-491a-5024-9ca1-0e735f4e92ee",
     "tier": 1,
     "name": "Punch Dagger",
     "credits": 400,
@@ -933,7 +933,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 80,
+    "id": "453af4f4-3fd5-5b62-86bc-d20915a21157",
     "tier": 2,
     "name": "E-11D",
     "credits": 700,
@@ -945,7 +945,7 @@
     "type": "Ranged Weapon"
   },
   {
-    "id": 81,
+    "id": "b76f10e4-b239-5cc4-a467-7a8cd048defc",
     "tier": 2,
     "name": "Mandalorian Helmet",
     "credits": 250,
@@ -956,7 +956,7 @@
     "type": "Equipment"
   },
   {
-    "id": 82,
+    "id": "f6b7e97f-9fdc-57ff-9222-b3eed750011f",
     "tier": 3,
     "name": "Bo-Rifle",
     "credits": 750,
@@ -968,7 +968,7 @@
     "type": "Melee Weapon"
   },
   {
-    "id": 83,
+    "id": "c84feb69-b543-5609-bade-5a6cdfaa31f4",
     "tier": 3,
     "name": "Plastoid Armor",
     "credits": 350,

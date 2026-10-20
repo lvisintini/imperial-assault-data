@@ -1,126 +1,126 @@
 [
   {
-    "id": 4,
+    "id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "name": "Biv Bodhrik",
     "healthy": "heroes/biv-bodhrik-healthy.png",
     "wounded": "heroes/biv-bodhrik-wounded.png"
   },
   {
-    "id": 11,
+    "id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "name": "Davith Elso",
     "healthy": "heroes/davith-elso-healthy.png",
     "wounded": "heroes/davith-elso-wounded.png"
   },
   {
-    "id": 0,
+    "id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "name": "Diala Passil",
     "healthy": "heroes/diala-passil-healthy.png",
     "wounded": "heroes/diala-passil-wounded.png"
   },
   {
-    "id": 1,
+    "id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "name": "Fenn Signis",
     "healthy": "heroes/fenn-signis-healthy.png",
     "wounded": "heroes/fenn-signis-wounded.png"
   },
   {
-    "id": 2,
+    "id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "name": "Gaarkhan",
     "healthy": "heroes/gaarkhan-healthy.png",
     "wounded": "heroes/gaarkhan-wounded.png"
   },
   {
-    "id": 3,
+    "id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "name": "Gideon Argus",
     "healthy": "heroes/gideon-argus-healthy.png",
     "wounded": "heroes/gideon-argus-wounded.png"
   },
   {
-    "id": 6,
+    "id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "name": "Jyn Odan",
     "healthy": "heroes/jyn-odan-healthy.png",
     "wounded": "heroes/jyn-odan-wounded.png"
   },
   {
-    "id": 8,
+    "id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "name": "Loku Kanoloa",
     "healthy": "heroes/loku-kanoloa-healthy.png",
     "wounded": "heroes/loku-kanoloa-wounded.png"
   },
   {
-    "id": 9,
+    "id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "name": "MHD-19",
     "healthy": "heroes/mhd-19-healthy.png",
     "wounded": "heroes/mhd-19-wounded.png"
   },
   {
-    "id": 7,
+    "id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "name": "Mak Eshka'rey",
     "healthy": "heroes/mak-eshkarey-healthy.png",
     "wounded": "heroes/mak-eshkarey-wounded.png"
   },
   {
-    "id": 12,
+    "id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "name": "Murne Rin",
     "healthy": "heroes/murne-rin-healthy.png",
     "wounded": "heroes/murne-rin-wounded.png"
   },
   {
-    "id": 13,
+    "id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "name": "Onar Koma",
     "healthy": "heroes/onar-koma-healthy.png",
     "wounded": "heroes/onar-koma-wounded.png"
   },
   {
-    "id": 5,
+    "id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "name": "Saska Teft",
     "healthy": "heroes/saska-teft-healthy.png",
     "wounded": "heroes/saska-teft-wounded.png"
   },
   {
-    "id": 14,
+    "id": "40041806-33ed-5af6-8cb8-24d305062048",
     "name": "Shyla Varad",
     "healthy": "heroes/shyla-varad-healthy.png",
     "wounded": "heroes/shyla-varad-wounded.png"
   },
   {
-    "id": 10,
+    "id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "name": "Verena Talos",
     "healthy": "heroes/verena-talos-healthy.png",
     "wounded": "heroes/verena-talos-wounded.png"
   },
   {
-    "id": 15,
+    "id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "name": "Vinto Hreeda",
     "healthy": "heroes/vinto-hreeda-healthy.png",
     "wounded": "heroes/vinto-hreeda-wounded.png"
   },
   {
-    "id": 16,
+    "id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "name": "Drokkatta",
     "healthy": "heroes/drokkatta-healthy.png",
     "wounded": "heroes/drokkatta-wounded.png"
   },
   {
-    "id": 17,
+    "id": "181967a3-9d17-5192-964a-60417f8d1205",
     "name": "Jarrod Kelvin",
     "healthy": "heroes/jarrod-kelvin-healthy.png",
     "wounded": "heroes/jarrod-kelvin-wounded.png"
   },
   {
-    "id": 18,
+    "id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "name": "Ko-Tun Feralo",
     "healthy": "heroes/ko-tun-feralo-healthy.png",
     "wounded": "heroes/ko-tun-feralo-wounded.png"
   },
   {
-    "id": 19,
+    "id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "name": "CT-1701",
     "healthy": "heroes/ct-1701-healthy.png",
     "wounded": "heroes/ct-1701-wounded.png"
   },
   {
-    "id": 20,
+    "id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "name": "Tress Hacnua",
     "healthy": "heroes/tress-hacnua-healthy.png",
     "wounded": "heroes/tress-hacnua-wounded.png"

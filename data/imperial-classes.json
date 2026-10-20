@@ -1,50 +1,50 @@
 [
   {
-    "id": 0,
+    "id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Military Might"
   },
   {
-    "id": 1,
+    "id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Inspiring Leadership"
   },
   {
-    "id": 2,
+    "id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Armored Onslaught"
   },
   {
-    "id": 3,
+    "id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Precision Training"
   },
   {
-    "id": 4,
+    "id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Imperial Black Ops"
   },
   {
-    "id": 5,
+    "id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Hutt Mercenaries"
   },
   {
-    "id": 6,
+    "id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Nemeses"
   },
   {
-    "id": 7,
+    "id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Subversive Tactics"
   },
   {
-    "id": 8,
+    "id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Technological Superiority"
   },
   {
-    "id": 9,
+    "id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Power of the Dark Side"
   },
   {
-    "id": 10,
+    "id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Reactive Defenses"
   },
   {
-    "id": 11,
+    "id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Overwhelming Oppression"
   }
 ]

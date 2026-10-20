@@ -66,7 +66,7 @@ function fieldFacet(type, field, refs) {
 
 function productFacets(refs, db) {
   const found = new Map(refs.map(ref => [ref, products(ref, db)]));
-  const sources = [...new Set([...found.values()].flat())].sort((a, b) => a.key - b.key);
+  const sources = [...new Set([...found.values()].flat())].sort((a, b) => a.index - b.index);
   if (!sources.length) return [];
   const waveKey = source => source.record.wave == null ? 'none' : String(source.record.wave);
   const waves = [...new Set(sources.map(waveKey))].sort(compareKeys);

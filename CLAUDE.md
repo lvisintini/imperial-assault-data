@@ -12,7 +12,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
   - `sources.json` = products (core game, expansions, ally/villain packs).
   - `source-contents.json` = join table `{source_id, content_type, content_id}` mapping products to their contents.
   - Child → parent FKs: `agenda-cards.agenda_id → agenda-decks`, `hero-class-cards.hero_id → heroes`, `imperial-class-cards.class_id → imperial-classes`.
-  - `card-backs.json` keys on `content_type` (+ `variant`), not an id.
+  - `card-backs.json` is matched to cards by `content_type` (+ `variant`); its `id` isn't referenced yet (#52).
 - `schemas/<content-type>.json` — Draft-04 JSON Schema per data file; shared enums (affiliations, traits, buff types, image path pattern) live in `schemas/definitions.json` and are pulled in via `$ref`. Schemas set `additionalProperties: false` and list all fields as `required` (nullable fields use `oneOf [..., null]`).
 - `images/large/` and `images/small/` — mirror trees (`<content-type>/<slug>.png`); data `image`/`healthy`/`wounded` fields are paths relative to these roots. Do not open image files when evaluating data; they are ~500MB of binaries.
 - `docs/data-model.md` — Mermaid ER diagrams of the relationships above, plus the card-back `variant` matching rules (which field `variant` matches per content type). Keep it in sync when relationships change.
@@ -26,7 +26,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 ## Invariants enforced by tests
 
 - Every record validates against its schema (`tests/test_schemas.py`).
-- Ids are exactly `0..len-1`, contiguous, with no duplicates (for types not in `CONTENT_TYPES.without_ids`). New records get the next id; never renumber.
+- Ids are UUIDs (`definitions.json#/definitions/uuid`), unique across the dataset; only `source-contents` has none. 1.x records have uuid5 ids derived from their old numeric ids, and new records get a uuid4 (`docs/data-model.md` → Ids). Ids never change; files keep their order.
 - `source-contents` FKs and the child→parent FKs above must resolve.
 - Deployment rules: skirmish upgrades have no health/speed/group/reinforce cost and are Skirmish-only; unique ⇒ group 1, no reinforce cost; group > 1 ⇔ reinforce cost.
 - `iaspec` values are unique across deployment, command and companion cards, and follow the rule in `TestCanonicalNames`: `elite` (elite, non-unique cards only) + name, adding mode, then affiliation, then description only while another card would get the same value.

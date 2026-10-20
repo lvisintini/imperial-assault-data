@@ -1,16 +1,16 @@
 [
   {
-    "id": 0,
+    "id": "804d06a0-f6c4-5077-b593-73a26d343fc3",
     "name": "Streetrat",
     "image": "form-cards/clawdite-shapeshifter-streetrat.png"
   },
   {
-    "id": 1,
+    "id": "23b3259f-1471-59df-a77d-4a2c5c616de3",
     "name": "Senator",
     "image": "form-cards/clawdite-shapeshifter-senator.png"
   },
   {
-    "id": 2,
+    "id": "d4002aa2-fc90-515d-9267-57479ae9ad3b",
     "name": "Scout",
     "image": "form-cards/clawdite-shapeshifter-scout.png"
   }

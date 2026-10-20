@@ -1,360 +1,360 @@
 [
   {
-    "id": 0,
+    "id": "7fd909d1-3c8f-5acc-8a5f-9792ed50275e",
     "name": "Hunted Down",
     "color": "Green",
     "image": "side-mission-cards/hunted-down.png"
   },
   {
-    "id": 1,
+    "id": "daa07dd7-1b27-5596-9ded-de7c48cd0e0f",
     "name": "Canyon Run",
     "color": "Grey",
     "image": "side-mission-cards/canyon-run.png"
   },
   {
-    "id": 2,
+    "id": "52da081e-525b-5f4d-9f60-4a8f4453b4c0",
     "name": "Past Life Enemies",
     "color": "Red",
     "image": "side-mission-cards/past-life-enemies.png"
   },
   {
-    "id": 3,
+    "id": "be3b644f-8f22-5743-b8ae-616228927225",
     "name": "Shady Dealings",
     "color": "Red",
     "image": "side-mission-cards/shady-dealings.png"
   },
   {
-    "id": 4,
+    "id": "350dbdcb-efe5-53de-be1f-f4b14cb432e5",
     "name": "Constant Vigilance",
     "color": "Red",
     "image": "side-mission-cards/constant-vigilance.png"
   },
   {
-    "id": 5,
+    "id": "91f62f69-da99-542a-b43c-bbbe99263288",
     "name": "Know Your Enemy",
     "color": "Red",
     "image": "side-mission-cards/know-your-enemy.png"
   },
   {
-    "id": 6,
+    "id": "74aac00f-4ff3-578c-a684-25c97aa4d4f9",
     "name": "Preventative Measures",
     "color": "Red",
     "image": "side-mission-cards/preventative-measures.png"
   },
   {
-    "id": 7,
+    "id": "8e295903-c4ad-5d19-aacd-a90aa9db67df",
     "name": "Homecoming",
     "color": "Green",
     "image": "side-mission-cards/homecoming.png"
   },
   {
-    "id": 8,
+    "id": "1cd8ae76-c421-5b9b-92f2-85b48aed6617",
     "name": "Sorry About the Mess",
     "color": "Green",
     "image": "side-mission-cards/sorry-about-the-mess.png"
   },
   {
-    "id": 9,
+    "id": "c67e3bb7-3de1-5e39-9109-544c8052ec8c",
     "name": "A Simple Task",
     "color": "Grey",
     "image": "side-mission-cards/a-simple-task.png"
   },
   {
-    "id": 10,
+    "id": "262278b2-b047-5e59-b6a0-42ee56a1d763",
     "name": "Target of Opportunity",
     "color": "Green",
     "image": "side-mission-cards/target-of-opportunity.png"
   },
   {
-    "id": 11,
+    "id": "552cc30a-a597-59f5-bbf1-f94fbdfa9a39",
     "name": "Generous Donations",
     "color": "Grey",
     "image": "side-mission-cards/generous-donations.png"
   },
   {
-    "id": 12,
+    "id": "4fc24915-1735-5557-b55c-2a7b0b1ec341",
     "name": "The Spice Job",
     "color": "Green",
     "image": "side-mission-cards/the-spice-job.png"
   },
   {
-    "id": 13,
+    "id": "5838bfab-9c6c-594d-af8e-83409f899c61",
     "name": "Brushfire",
     "color": "Red",
     "image": "side-mission-cards/brushfire.png"
   },
   {
-    "id": 14,
+    "id": "4f5b7161-d467-5e06-9480-de07a1763d6e",
     "name": "Luxury Cruise",
     "color": "Grey",
     "image": "side-mission-cards/luxury-cruise.png"
   },
   {
-    "id": 15,
+    "id": "af7e4575-e0ea-5e80-ad85-d3d2b1f67038",
     "name": "Friends of Old",
     "color": "Red",
     "image": "side-mission-cards/friends-of-old.png"
   },
   {
-    "id": 16,
+    "id": "75a08b34-3887-55ea-955d-0ac3469cad81",
     "name": "Sympathy for the Rebellion",
     "color": "Grey",
     "image": "side-mission-cards/sympathy-for-the-rebellion.png"
   },
   {
-    "id": 17,
+    "id": "a255c6cf-d742-5697-9d7c-1d70b8a01ef1",
     "name": "High Moon",
     "color": "Red",
     "image": "side-mission-cards/high-moon.png"
   },
   {
-    "id": 18,
+    "id": "352e4f51-3f07-53bb-99a7-4da37c834f6b",
     "name": "Vipers Den",
     "color": "Grey",
     "image": "side-mission-cards/vipers-den.png"
   },
   {
-    "id": 19,
+    "id": "c8222a4b-3e88-5046-a8a1-68a57fc7c436",
     "name": "Indebted",
     "color": "Red",
     "image": "side-mission-cards/indebted.png"
   },
   {
-    "id": 20,
+    "id": "dbd72355-1c8e-5165-95db-4528de470956",
     "name": "Loose Cannon",
     "color": "Red",
     "image": "side-mission-cards/loose-cannon.png"
   },
   {
-    "id": 21,
+    "id": "8648f06d-2466-566f-9cea-a9f88eabaa39",
     "name": "Temptation",
     "color": "Red",
     "image": "side-mission-cards/temptation.png"
   },
   {
-    "id": 22,
+    "id": "2801f938-3045-5f38-a928-b098bb473f44",
     "name": "Reclamation",
     "color": "Green",
     "image": "side-mission-cards/reclamation.png"
   },
   {
-    "id": 23,
+    "id": "484690b3-cd69-54b0-92fa-fd5537f7a0de",
     "name": "Cloud Citys Secret",
     "color": "Grey",
     "image": "side-mission-cards/cloud-citys-secret.png"
   },
   {
-    "id": 24,
+    "id": "0309f344-9aa0-52ac-a7fa-0340fd70e61d",
     "name": "Freedom Fighters",
     "color": "Grey",
     "image": "side-mission-cards/freedom-fighters.png"
   },
   {
-    "id": 25,
+    "id": "1a287eed-f809-51e3-b0e0-a5a4626d8cbb",
     "name": "Panic in the Streets",
     "color": "Red",
     "image": "side-mission-cards/panic-in-the-streets.png"
   },
   {
-    "id": 26,
+    "id": "d7505130-5266-5969-bae6-1636f7c06664",
     "name": "Hostile Takeover",
     "color": "Grey",
     "image": "side-mission-cards/hostile-takeover.png"
   },
   {
-    "id": 27,
+    "id": "1953f5ec-34b4-5e43-9cd0-47273f7f6a6c",
     "name": "Reclassified",
     "color": "Red",
     "image": "side-mission-cards/reclassified.png"
   },
   {
-    "id": 28,
+    "id": "771f18ae-4814-5557-a603-2de10dc4ecc7",
     "name": "Perilous Hunt",
     "color": "Grey",
     "image": "side-mission-cards/perilous-hunt.png"
   },
   {
-    "id": 29,
+    "id": "3dd0a3da-27b5-5c66-a845-f37119ea8318",
     "name": "A Heros Welcome",
     "color": "Red",
     "image": "side-mission-cards/a-heros-welcome.png"
   },
   {
-    "id": 30,
+    "id": "fd39549e-6962-5f05-a2e8-a067a7e74c82",
     "name": "Born from Death",
     "color": "Red",
     "image": "side-mission-cards/born-from-death.png"
   },
   {
-    "id": 31,
+    "id": "39c7c5ed-4615-5a48-9875-11393d42fbec",
     "name": "Extortion",
     "color": "Red",
     "image": "side-mission-cards/extortion.png"
   },
   {
-    "id": 32,
+    "id": "ce392f3f-3007-5091-8a03-1fda3eeed6bb",
     "name": "Civil Unrest",
     "color": "Grey",
     "image": "side-mission-cards/civil-unrest.png"
   },
   {
-    "id": 33,
+    "id": "f5ef311b-5f4b-5836-a182-5befe986155b",
     "name": "Extraction",
     "color": "Red",
     "image": "side-mission-cards/extraction.png"
   },
   {
-    "id": 34,
+    "id": "39b93d27-b5d7-5cc1-829c-028df5a3f804",
     "name": "Test of Metal",
     "color": "Red",
     "image": "side-mission-cards/test-of-metal.png"
   },
   {
-    "id": 35,
+    "id": "b97211ea-464c-5bd0-9eff-57c369a7846f",
     "name": "Unfninished Business",
     "color": "Red",
     "image": "side-mission-cards/unfninished-business.png"
   },
   {
-    "id": 36,
+    "id": "1fa08add-1271-5f3f-9e18-0f21a1be597f",
     "name": "Race on Ryloth",
     "color": "Green",
     "image": "side-mission-cards/race-on-ryloth.png"
   },
   {
-    "id": 37,
+    "id": "b37c4013-dfc8-51ed-bc81-eb45f25885f2",
     "name": "Siege on Geonosis",
     "color": "Green",
     "image": "side-mission-cards/siege-on-geonosis.png"
   },
   {
-    "id": 38,
+    "id": "0522ba28-84e3-5953-9059-9bc0e14605ed",
     "name": "Call to Action",
     "color": "Grey",
     "image": "side-mission-cards/call-to-action.png"
   },
   {
-    "id": 39,
+    "id": "69e47788-a66e-5e50-9514-de150d3a339d",
     "name": "The Final Order",
     "color": "Grey",
     "image": "side-mission-cards/the-final-order.png"
   },
   {
-    "id": 40,
+    "id": "c2cd2614-a584-5a4e-b5d1-f524d193f1d3",
     "name": "Duel on Devaron",
     "color": "Red",
     "image": "side-mission-cards/duel-on-devaron.png"
   },
   {
-    "id": 41,
+    "id": "12665646-7358-579b-bf80-3a55f350e934",
     "name": "Sands of Seelos",
     "color": "Red",
     "image": "side-mission-cards/sands-of-seelos.png"
   },
   {
-    "id": 42,
+    "id": "9de83d9d-0fc9-54fd-8f26-fc9bea16f657",
     "name": "Executive Overreach",
     "color": "Green",
     "image": "side-mission-cards/executive-overreach.png"
   },
   {
-    "id": 43,
+    "id": "361818b7-d8a5-5359-8fc1-d07f36a06f2c",
     "name": "Intimidation Factor",
     "color": "Green",
     "image": "side-mission-cards/intimidation-factor.png"
   },
   {
-    "id": 44,
+    "id": "03f4e042-9cd9-54a0-b7b1-1ced8189b2f8",
     "name": "Celebration",
     "color": "Grey",
     "image": "side-mission-cards/celebration.png"
   },
   {
-    "id": 45,
+    "id": "63813379-f900-5a2c-a9c7-974c9d8b0c3c",
     "name": "Imperial Entanglements",
     "color": "Grey",
     "image": "side-mission-cards/imperial-entanglements.png"
   },
   {
-    "id": 46,
+    "id": "77e3b415-91c1-5739-8915-13c7d35e63f1",
     "name": "Armed and Operational",
     "color": "Green",
     "image": "side-mission-cards/armed-and-operational.png"
   },
   {
-    "id": 47,
+    "id": "cd39e514-f8bd-50b4-a5f9-2ec62e2f2f36",
     "name": "Brace For Impact",
     "color": "Green",
     "image": "side-mission-cards/brace-for-impact.png"
   },
   {
-    "id": 48,
+    "id": "38a87199-4afd-5aed-af9c-0b44a6c65350",
     "name": "Open to Interpretation",
     "color": "Green",
     "image": "side-mission-cards/open-to-interpretation.png"
   },
   {
-    "id": 49,
+    "id": "12088b51-5e2c-5a79-a684-ee767207d285",
     "name": "Brute Force",
     "color": "Green",
     "image": "side-mission-cards/brute-force.png"
   },
   {
-    "id": 50,
+    "id": "6fbd1306-5424-5188-b927-d32171a3968c",
     "name": "Precious Cargo",
     "color": "Green",
     "image": "side-mission-cards/precious-cargo.png"
   },
   {
-    "id": 51,
+    "id": "0cad7dd5-1794-5590-a924-7ef7849bac4c",
     "name": "Snowcrash",
     "color": "Green",
     "image": "side-mission-cards/snowcrash.png"
   },
   {
-    "id": 52,
+    "id": "a4c3e6aa-cc5b-5fd8-a9c9-a349b7e00aff",
     "name": "Communication Breakdown",
     "color": "Green",
     "image": "side-mission-cards/communication-breakdown.png"
   },
   {
-    "id": 53,
+    "id": "4ec0a911-ee5a-52a8-9ef2-7072d1460848",
     "name": "Into the Unknown",
     "color": "Grey",
     "image": "side-mission-cards/into-the-unknown.png"
   },
   {
-    "id": 54,
+    "id": "96c41011-61b3-58ed-bbd3-193c0973f6cf",
     "name": "Paying Debts",
     "color": "Grey",
     "image": "side-mission-cards/paying-debts.png"
   },
   {
-    "id": 55,
+    "id": "4eba8c92-149c-5a6c-9ff9-d4c050ae8a2a",
     "name": "Deadly Transmission",
     "color": "Green",
     "image": "side-mission-cards/deadly-transmission.png"
   },
   {
-    "id": 56,
+    "id": "a19a16b9-7049-5e75-8faa-00a22d82916d",
     "name": "Strike Force Xesh",
     "color": "Green",
     "image": "side-mission-cards/strike-force-xesh.png"
   },
   {
-    "id": 57,
+    "id": "299cc509-e046-5fc6-9aa8-42b0c5333ab7",
     "name": "A Light in the Darkness",
     "color": "Green",
     "image": "side-mission-cards/a-light-in-the-darkness.png"
   },
   {
-    "id": 58,
+    "id": "4d2082b6-6325-5d67-b7ca-0f4326344b3e",
     "name": "Phantom Extraction",
     "color": "Green",
     "image": "side-mission-cards/phantom-extraction.png"
   },
   {
-    "id": 59,
+    "id": "d8c05b3b-0dc4-5e6e-aad3-c733da068c6a",
     "name": "Home Invasion",
     "color": "Green",
     "image": "side-mission-cards/home-invasion.png"

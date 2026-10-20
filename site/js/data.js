@@ -16,14 +16,14 @@ function push(map, key, value) {
   else map.set(key, [value]);
 }
 
-// Records are wrapped in refs, {type, key, record}, where key is the record's id, or its array index in files
-// without ids (card-backs, source-contents). Files aren't sorted by id, so the two differ.
+// Records are wrapped in refs, {type, key, index, record}: key is the record's id (a UUID), or its array index in
+// source-contents, which has no ids; index is its position in the file, used to keep a stable order.
 class Db {
   constructor(tables) {
     this.refs = {};
     this.keyed = {};
     for (const [type, records] of Object.entries(tables)) {
-      this.refs[type] = records.map((record, i) => ({type, key: record.id ?? i, record}));
+      this.refs[type] = records.map((record, i) => ({type, key: record.id ?? i, index: i, record}));
       this.keyed[type] = new Map(this.refs[type].map(ref => [ref.key, ref]));
     }
     this.foundIn = new Map();   // content ref → source refs

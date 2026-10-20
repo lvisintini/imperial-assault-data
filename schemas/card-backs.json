@@ -5,6 +5,10 @@
   "type": "object",
   "definitions": {},
   "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
     "deck": {
       "type": "string",
       "description": "Deck name",
@@ -32,6 +36,7 @@
     }
   },
   "required": [
+    "id",
     "deck",
     "variant",
     "image"

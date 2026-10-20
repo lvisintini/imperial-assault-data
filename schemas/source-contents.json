@@ -6,18 +6,16 @@
   "definitions": {},
   "properties": {
     "source_id": {
-      "type": "integer",
       "description": "Foreign key to a source in the data/sources.json.",
-      "minimum": 0
+      "$ref": "definitions.json#/definitions/uuid"
     },
     "content_type": {
       "description": "Content type for the component contained in the source.",
       "$ref": "definitions.json#/definitions/content_type"
     },
     "content_id": {
-      "type": "integer",
       "description": "Unique id for the component contained in the source.",
-      "minimum": 0
+      "$ref": "definitions.json#/definitions/uuid"
     }
   },
   "required": [

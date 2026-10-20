@@ -3,6 +3,11 @@
   "id": "definitions.json#",
   "title": "Schema for common fields in data files",
   "definitions": {
+    "uuid": {
+      "type": "string",
+      "description": "A record id: a lowercase UUID. Records from 1.x have uuid5 ids derived from their old numeric ids (docs/data-model.md).",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
     "content_type": {
       "type": "string",
       "description": "Content type in imperial-assault-data dataset.",
