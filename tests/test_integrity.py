@@ -60,6 +60,26 @@ class TestSourcesIntegrity:
     def test_release_date_is_not_before_announced_date(self, entry):
         assert entry['release_date'] >= entry['announced_date']
 
+    @pytest.mark.parametrize("entry", [
+        s for s in get_data(CONTENT_TYPES.SOURCE) if s['included_in'] is not None
+    ], ids=lambda s: s['name'])
+    def test_included_in_is_another_standalone_source(self, entry):
+        sources = {s['id']: s for s in get_data(CONTENT_TYPES.SOURCE)}
+        container = sources.get(entry['included_in'])
+        assert container is not None and container['id'] != entry['id']
+        assert container['included_in'] is None  # one level: a pack inside a box, not inside another pack
+
+    def test_included_products_dont_repeat_their_containers_contents(self):
+        """A pack's contents are listed once, on the pack; the box that includes it gets them through included_in."""
+        rows = get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+        contents = {}
+        for row in rows:
+            contents.setdefault(row['source_id'], set()).add((row['content_type'], row['content_id']))
+        for source in get_data(CONTENT_TYPES.SOURCE):
+            if source['included_in'] is not None:
+                shared = contents.get(source['id'], set()) & contents.get(source['included_in'], set())
+                assert not shared, (source['name'], shared)
+
 
 class TestDeploymentsIntegrity:
     @pytest.mark.parametrize("entry", [

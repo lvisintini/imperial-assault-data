@@ -25,12 +25,18 @@ maps each product to the records it contains. It is polymorphic: `content_type` 
 `content_id` is the `id` of the record in it. A record can appear in more than one product (e.g. a deployment card
 reprinted in a later pack).
 
+Some products ship inside another: the Luke Skywalker Ally Pack and the Darth Vader Villain Pack come in the Core Set.
+They are sources of their own with `included_in` set to the Core Set, and their contents are listed on the pack, not
+repeated on the Core Set. Everything in the Core Set box is the Core Set's contents plus those of the sources it
+includes.
+
 Hero class cards, imperial class cards and agenda cards aren't linked to sources directly. They belong to a parent
 record (a hero, an imperial class or an agenda deck) and come with whichever product contains that parent.
 
 ```mermaid
 erDiagram
     sources ||--|{ source-contents : "source_id"
+    sources |o--o{ sources : "included_in"
 
     source-contents }|--|| agenda-decks : "content_id"
     source-contents }|--|| command-cards : "content_id"
@@ -57,6 +63,7 @@ erDiagram
         string name
         string type "Core Game, Expansion, Ally Pack, Villain Pack"
         string product_code "SWI##, unique"
+        uuid included_in FK "the source it ships inside"
     }
     source-contents {
         uuid source_id FK

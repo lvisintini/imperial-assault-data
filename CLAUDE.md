@@ -11,7 +11,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 - `data/<content-type>.json` — one JSON array per content type. Structure mimics a relational DB:
   - `sources.json` = products (core game, expansions, ally/villain packs).
   - `source-contents.json` = join table `{source_id, content_type, content_id}` mapping products to their contents.
-  - Child → parent FKs: `agenda-cards.agenda_id → agenda-decks`, `hero-class-cards.hero_id → heroes`, `imperial-class-cards.class_id → imperial-classes`.
+  - Child → parent FKs: `agenda-cards.agenda_id → agenda-decks`, `hero-class-cards.hero_id → heroes`, `imperial-class-cards.class_id → imperial-classes`, and `sources.included_in → sources` (packs that ship inside the Core Set).
   - `card-backs.json` is matched to cards by `content_type` (+ `variant`); its `id` isn't referenced yet (#52).
 - `schemas/<content-type>.json` — Draft-04 JSON Schema per data file; shared enums (affiliations, traits, buff types, image path pattern) live in `schemas/definitions.json` and are pulled in via `$ref`. Schemas set `additionalProperties: false` and list all fields as `required` (nullable fields use `oneOf [..., null]`).
 - `images/large/` and `images/small/` — mirror trees (`<content-type>/<slug>.png`); data `image`/`healthy`/`wounded` fields are paths relative to these roots. Do not open image files when evaluating data; they are ~500MB of binaries.

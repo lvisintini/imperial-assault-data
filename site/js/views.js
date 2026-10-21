@@ -30,7 +30,7 @@ const imageUrl = (size, path) => `images/${size}/${encodeURI(path)}`;
 function subtitle(ref, db) {
   const {record} = ref;
   const parent = db.parent.get(ref);
-  if (parent) return title(parent.ref);
+  if (parent && ref.type !== 'sources') return title(parent.ref);  // a pack in the Core Set is still a pack
   switch (ref.type) {
     case 'sources': return record.wave != null ? `${record.type} · Wave ${record.wave}` : record.type;
     // Enough to tell apart same-named cards: elite/regular pairs and campaign/skirmish versions.
@@ -408,9 +408,9 @@ export function detail(db, ref) {
   const sources = db.sources(ref);
   if (sources.length) related.push(section('Found in', sources.length, grid(sources, db)));
   const parent = db.parent.get(ref);
-  if (parent) related.push(section(TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
+  if (parent) related.push(section(parent.rel.label ?? TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
   for (const {rel, refs} of db.children.get(ref) ?? []) {
-    related.push(section(TYPE[rel.child].label, refs.length, grid(refs, db)));
+    related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
   }
   const back = db.back.get(ref);
   if (back) {
