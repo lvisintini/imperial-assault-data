@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "skirmish-maps.json#",
-  "title": "Schema for the skirmish maps data file",
+  "id": "maps.json#",
+  "title": "Schema for the maps data file: every mission's map (skirmish, four-player, raid)",
   "type": "object",
   "definitions": {},
   "properties": {

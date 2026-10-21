@@ -11,7 +11,7 @@ if (sys.version_info[0], sys.version_info[1]) < (3, 6):
 
 SOURCES = [
     'sources',
-    'skirmish-maps',
+    'maps',
     'agenda-cards',
     'agenda-decks',
     'command-cards',
