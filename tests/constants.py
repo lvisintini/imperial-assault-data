@@ -2,7 +2,7 @@ class CONTENT_TYPES:
     FORM_CARDS = 'form-cards'
     SOURCE = 'sources'
     SOURCE_CONTENTS = 'source-contents'
-    SKIRMISH_MAP = 'skirmish-maps'
+    MAP = 'maps'
     AGENDA = 'agenda-cards'
     AGENDA_DECKS = 'agenda-decks'
     COMMAND = 'command-cards'
@@ -24,7 +24,7 @@ class CONTENT_TYPES:
     as_list = [
         SOURCE,
         SOURCE_CONTENTS,
-        SKIRMISH_MAP,
+        MAP,
         AGENDA,
         AGENDA_DECKS,
         COMMAND,

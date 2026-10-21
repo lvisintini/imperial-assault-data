@@ -43,7 +43,7 @@ class ImageTestHelper:
 
     definitions = [
         ImageDefinition('large', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
-        ImageDefinition('large', CONTENT_TYPES.SKIRMISH_MAP, 'image', dims=ANY),
+        ImageDefinition('large', CONTENT_TYPES.MAP, 'image', dims=ANY),
         ImageDefinition('large', CONTENT_TYPES.AGENDA, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.COMMAND, 'image', dims=LARGE_MINI),
         ImageDefinition('large', CONTENT_TYPES.CONDITION, 'image', dims=LARGE_MINI),
@@ -77,7 +77,7 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI_FLIPPED, content_type=CONTENT_TYPES.FORM_CARDS),
 
         ImageDefinition('small', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
-        ImageDefinition('small', CONTENT_TYPES.SKIRMISH_MAP, 'image', dims=ANY),
+        ImageDefinition('small', CONTENT_TYPES.MAP, 'image', dims=ANY),
         ImageDefinition('small', CONTENT_TYPES.AGENDA, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.COMMAND, 'image', dims=SMALL_MINI),
         ImageDefinition('small', CONTENT_TYPES.CONDITION, 'image', dims=SMALL_MINI),

@@ -30,6 +30,12 @@ They are sources of their own with `included_in` set to the Core Set, and their 
 repeated on the Core Set. Everything in the Core Set box is the Core Set's contents plus those of the sources it
 includes.
 
+`maps` holds every mission's map: the two-player skirmish maps, the four-player ones (Hoth Battlefield, Nal Hutta
+Borderlands, Temple Gardens) and the raid maps. Raids are played with FFG's *Legends of the Alliance* app, which is a
+source of type `App`. Map images come from the
+[Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res files are
+the ones boardwars serves.
+
 Hero class cards, imperial class cards and agenda cards aren't linked to sources directly. They belong to a parent
 record (a hero, an imperial class or an agenda deck) and come with whichever product contains that parent.
 
@@ -48,7 +54,7 @@ erDiagram
     source-contents }|--|| imperial-classes : "content_id"
     source-contents }|--|| reward-cards : "content_id"
     source-contents }|--|| side-mission-cards : "content_id"
-    source-contents }|--|| skirmish-maps : "content_id"
+    source-contents }|--|| maps : "content_id"
     source-contents }|--|| story-mission-cards : "content_id"
     source-contents }|--|| supply-cards : "content_id"
     source-contents }|--|| threat-mission-cards : "content_id"
@@ -61,7 +67,7 @@ erDiagram
     sources {
         uuid id PK
         string name
-        string type "Core Game, Expansion, Ally Pack, Villain Pack"
+        string type "Core Game, Expansion, Ally Pack, Villain Pack, App"
         string product_code "SWI##, unique"
         uuid included_in FK "the source it ships inside"
     }
@@ -120,7 +126,7 @@ erDiagram
         uuid id PK
         string name
     }
-    skirmish-maps {
+    maps {
         uuid id PK
         string name
     }
@@ -213,4 +219,4 @@ erDiagram
     }
 ```
 
-`sources` and `skirmish-maps` have no card back.
+`sources` and `maps` have no card back.

@@ -537,5 +537,16 @@
     "release_date": "2014-12-15",
     "included_in": "be340262-93bf-5bee-ad8a-82b87571806e",
     "image": "sources/darth-vader.png"
+  },
+  {
+    "id": "87ecc443-b29f-410f-b67f-ed25f73305ba",
+    "name": "Legends of the Alliance",
+    "type": "App",
+    "wave": null,
+    "product_code": null,
+    "announced_date": null,
+    "release_date": "2017-11-20",
+    "included_in": null,
+    "image": "sources/legends-of-the-alliance.png"
   }
 ]

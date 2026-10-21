@@ -13,7 +13,7 @@
       "description": "Content type in imperial-assault-data dataset.",
       "enum": [
         "sources",
-        "skirmish-maps",
+        "maps",
         "agenda-cards",
         "agenda-decks",
         "command-cards",
