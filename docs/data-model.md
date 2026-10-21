@@ -1,12 +1,12 @@
 # Data model
 
 The dataset is laid out like a relational database: each file in `data/` is a table (a JSON array of records), and
-records point at each other through id fields. This page shows how the 21 files relate. Only key fields are listed;
+records point at each other through id fields. This page shows how the 25 files relate. Only key fields are listed;
 see `schemas/` for every field.
 
 ## Ids
 
-Every record has an `id` (all files but `source-contents`), and every foreign key holds one. Ids are lowercase
+Every record has an `id` (all files but `source-contents` and `mission-rewards`), and every foreign key holds one. Ids are lowercase
 UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
 - Records that existed in 1.x have `uuid5(NAMESPACE, "<content type>:<old numeric id>")`, where `NAMESPACE` is
   `uuid5(NAMESPACE_URL, "https://github.com/lvisintini/imperial-assault-data")`. So 1.x ids can be translated: in
@@ -37,7 +37,9 @@ source of type `App`. Map images come from the
 the ones boardwars serves.
 
 Hero class cards, imperial class cards and agenda cards aren't linked to sources directly. They belong to a parent
-record (a hero, an imperial class or an agenda deck) and come with whichever product contains that parent.
+record (a hero, an imperial class or an agenda deck) and come with whichever product contains that parent. Missions
+are linked through the missions index (see [Missions](#missions)): `source-contents` rows with `content_type`
+`missions` point at index rows.
 
 ```mermaid
 erDiagram
@@ -53,11 +55,9 @@ erDiagram
     source-contents }|--|| heroes : "content_id"
     source-contents }|--|| imperial-classes : "content_id"
     source-contents }|--|| reward-cards : "content_id"
-    source-contents }|--|| side-mission-cards : "content_id"
     source-contents }|--|| maps : "content_id"
-    source-contents }|--|| story-mission-cards : "content_id"
+    source-contents }|--|| missions : "content_id"
     source-contents }|--|| supply-cards : "content_id"
-    source-contents }|--|| threat-mission-cards : "content_id"
     source-contents }|--|| upgrade-cards : "content_id"
 
     agenda-decks ||--|{ agenda-cards : "agenda_id"
@@ -122,23 +122,15 @@ erDiagram
         uuid id PK
         string name
     }
-    side-mission-cards {
-        uuid id PK
-        string name
-    }
     maps {
         uuid id PK
         string name
     }
-    story-mission-cards {
+    missions {
         uuid id PK
-        string name
+        string content_type "the mission card's file"
     }
     supply-cards {
-        uuid id PK
-        string name
-    }
-    threat-mission-cards {
         uuid id PK
         string name
     }
@@ -165,6 +157,64 @@ Condition cards come in several products: each expansion or pack that uses a con
 cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned in
 [#3](https://github.com/lvisintini/imperial-assault-data/issues/3).
 
+## Missions
+
+Every mission has a card in one of six collections:
+- `campaign-story-mission-cards`, `campaign-threat-mission-cards`;
+- the side missions, by color: `campaign-hero-side-mission-cards` (red; `hero_id` is the hero the mission is for),
+  `campaign-ally-side-mission-cards` (green) and `campaign-regular-side-mission-cards` (grey);
+- `agenda-cards` with `mission: true` (the Imperial player's agenda missions).
+
+`missions` indexes them all, one row per mission card (`content_type` + `content_id`). Whether a mission is a story,
+threat, side or agenda mission follows from `content_type`. The index row is what the rest of the dataset links to:
+- **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
+  mission's row lists its deck's products.
+- **Map:** `map_id` is the map it's played on, or null while the dataset has no image of it (every campaign map, for
+  now).
+- **Rewards:** `mission-rewards` lists what winning gives, one row per reward, polymorphic like `source-contents`:
+  `content_type` + `content_id` name a reward or deployment card, or both are null and `credits` is true. Rows with
+  `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
+  ally that comes as a group (Rebel Saboteurs) is its regular card; by the rules, earning the same ally again gives the
+  elite card. Rewards for the Imperial player (agenda missions, `imperial_reward` on some side missions, threat
+  missions' second reward) are rows like any other; the reward card says who it's for. Story mission rewards aren't
+  loaded yet.
+
+The rewards come from each mission's wiki page (imperial-assault-tools' `ia wiki --missions`).
+
+```mermaid
+erDiagram
+    missions ||--|| campaign-story-mission-cards : "content_id"
+    missions ||--|| campaign-threat-mission-cards : "content_id"
+    missions ||--|| campaign-hero-side-mission-cards : "content_id"
+    missions ||--|| campaign-ally-side-mission-cards : "content_id"
+    missions ||--|| campaign-regular-side-mission-cards : "content_id"
+    missions ||--|| agenda-cards : "content_id (mission: true)"
+    maps |o--o{ missions : "map_id"
+    heroes ||--o{ campaign-hero-side-mission-cards : "hero_id"
+    missions ||--o{ mission-rewards : "mission_id"
+    mission-rewards }o--o| reward-cards : "content_id"
+    mission-rewards }o--o| deployment-cards : "content_id"
+
+    missions {
+        uuid id PK
+        string content_type "the mission card's file"
+        uuid content_id FK "id in that file"
+        uuid map_id FK "null when no map image"
+    }
+    campaign-hero-side-mission-cards {
+        uuid id PK
+        string name
+        uuid hero_id FK
+    }
+    mission-rewards {
+        uuid mission_id FK
+        string content_type "null for credits"
+        uuid content_id FK "null for credits"
+        bool credits
+        bool choice "pick one of these"
+    }
+```
+
 ## Card backs
 
 Each `card-backs` record is the back of one deck and points at a content type through `content_type`. It has an
@@ -179,8 +229,8 @@ field in each content type:
 | `imperial-classes`     | set       | `name` = `variant`                                                       |
 | `condition-cards`      | set       | `name` = `variant`                                                       |
 | `upgrade-cards`        | set       | `"Tier " + tier` = `variant`                                             |
-| `story-mission-cards`  | set       | the record is in the source whose `name` = `variant` (via source-contents) |
-| `threat-mission-cards` | set       | the record is in the source whose `name` = `variant` (via source-contents) |
+| `campaign-story-mission-cards`  | set | the mission is in the source whose `name` = `variant` (via its missions row) |
+| `campaign-threat-mission-cards` | set | the mission is in the source whose `name` = `variant` (via its missions row) |
 | `form-cards`           | `Clawdite`| every record (all form cards share one back)                              |
 | any other type         | `null`    | every record of that type                                                |
 
@@ -195,14 +245,16 @@ erDiagram
     card-backs ||--|{ imperial-classes : "variant = name"
     card-backs ||--|{ condition-cards : "variant = name"
     card-backs ||--|{ upgrade-cards : "variant = Tier + tier"
-    card-backs ||--|{ story-mission-cards : "variant = source name"
-    card-backs ||--|{ threat-mission-cards : "variant = source name"
+    card-backs ||--|{ campaign-story-mission-cards : "variant = source name"
+    card-backs ||--|{ campaign-threat-mission-cards : "variant = source name"
     card-backs ||--|{ form-cards : "one back"
     card-backs ||--|{ agenda-decks : "one back"
     card-backs ||--|{ command-cards : "one back"
     card-backs ||--|{ companion-cards : "one back"
     card-backs ||--|{ reward-cards : "one back"
-    card-backs ||--|{ side-mission-cards : "one back"
+    card-backs ||--|{ campaign-hero-side-mission-cards : "one back"
+    card-backs ||--|{ campaign-ally-side-mission-cards : "one back"
+    card-backs ||--|{ campaign-regular-side-mission-cards : "one back"
     card-backs ||--|{ supply-cards : "one back"
 
     card-backs {
@@ -219,4 +271,5 @@ erDiagram
     }
 ```
 
-`sources` and `maps` have no card back.
+`sources` and `maps` have no card back. The three side mission collections share one back image, listed once per
+collection (until #52 makes card backs a catalog). `missions` and `mission-rewards` are indexes, not cards.

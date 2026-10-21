@@ -287,31 +287,45 @@
     "image": "card-backs/reward.png"
   },
   {
+    "id": "d989988d-782f-4a09-9dfa-8f1e23ced2f6",
+    "deck": "Side Mission",
+    "variant": null,
+    "content_type": "campaign-hero-side-mission-cards",
+    "image": "card-backs/side-mission.png"
+  },
+  {
+    "id": "ef34b286-0041-4474-8cae-1cd3d48159e1",
+    "deck": "Side Mission",
+    "variant": null,
+    "content_type": "campaign-ally-side-mission-cards",
+    "image": "card-backs/side-mission.png"
+  },
+  {
     "id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "deck": "Side Mission",
     "variant": null,
-    "content_type": "side-mission-cards",
+    "content_type": "campaign-regular-side-mission-cards",
     "image": "card-backs/side-mission.png"
   },
   {
     "id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
     "deck": "Story Mission",
     "variant": "Imperial Assault",
-    "content_type": "story-mission-cards",
+    "content_type": "campaign-story-mission-cards",
     "image": "card-backs/story-mission-imperial-assault.png"
   },
   {
     "id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
     "deck": "Story Mission",
     "variant": "Jabba's Realm",
-    "content_type": "story-mission-cards",
+    "content_type": "campaign-story-mission-cards",
     "image": "card-backs/story-mission-jabbas-realm.png"
   },
   {
     "id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
     "deck": "Story Mission",
     "variant": "Return to Hoth",
-    "content_type": "story-mission-cards",
+    "content_type": "campaign-story-mission-cards",
     "image": "card-backs/story-mission-return-to-hoth.png"
   },
   {
@@ -325,7 +339,7 @@
     "id": "980170a9-a10d-5d59-860c-a3dc6d33a273",
     "deck": "Threat Mission",
     "variant": "Return to Hoth",
-    "content_type": "threat-mission-cards",
+    "content_type": "campaign-threat-mission-cards",
     "image": "card-backs/threat-mission-return-to-hoth.png"
   },
   {
@@ -374,7 +388,7 @@
     "id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
     "deck": "Story Mission",
     "variant": "Heart of the Empire",
-    "content_type": "story-mission-cards",
+    "content_type": "campaign-story-mission-cards",
     "image": "card-backs/story-mission-heart-of-the-empire.png"
   },
   {

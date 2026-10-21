@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "campaign-threat-mission-cards.json#",
+  "title": "Schema for the campaign threat mission cards data file",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Threat mission name",
+      "minLength": 1
+    },
+    "image": {
+      "description": "The file path for this threat mission's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "image"
+  ],
+  "additionalProperties": false
+}

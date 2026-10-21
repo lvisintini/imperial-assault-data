@@ -38,12 +38,12 @@
   },
   {
     "id": "5c5d58e8-2708-5253-aa65-1fff44bdc7cb",
-    "name": "Adrenalin Implant",
+    "name": "Adrenal Implant",
     "type": "Equipment",
     "traits": [
       "Accessory"
     ],
-    "image": "reward-cards/adrenalin-implant.png"
+    "image": "reward-cards/adrenal-implant.png"
   },
   {
     "id": "18f91426-e778-5114-b4e4-c51f9e4abc1a",

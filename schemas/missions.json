@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "missions.json#",
+  "title": "Schema for the missions data file: an index of every mission, whichever collection its card is in",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "content_type": {
+      "description": "The collection the mission's card is in (agenda-cards: an agenda card that is a mission).",
+      "enum": [
+        "campaign-story-mission-cards",
+        "campaign-threat-mission-cards",
+        "campaign-hero-side-mission-cards",
+        "campaign-ally-side-mission-cards",
+        "campaign-regular-side-mission-cards",
+        "agenda-cards"
+      ]
+    },
+    "content_id": {
+      "description": "The mission card's id in that collection.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "map_id": {
+      "description": "Foreign key to the map in data/maps.json the mission is played on, or null when the dataset has no image of it (campaign maps, for now).",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/uuid"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "content_type",
+    "content_id",
+    "map_id"
+  ],
+  "additionalProperties": false
+}

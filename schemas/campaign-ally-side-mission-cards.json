@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "threat-mission-cards.json#",
-  "title": "Schema for the threat mission cards data file",
+  "id": "campaign-ally-side-mission-cards.json#",
+  "title": "Schema for the campaign ally side mission cards data file (green side missions; the allies they give are in mission-rewards)",
   "type": "object",
   "definitions": {},
   "properties": {
@@ -11,11 +11,11 @@
     },
     "name": {
       "type": "string",
-      "description": "Threat mission name",
+      "description": "Ally side mission name",
       "minLength": 1
     },
     "image": {
-      "description": "The file path for this threat mission's image.",
+      "description": "The file path for this ally side mission's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
     }
   },

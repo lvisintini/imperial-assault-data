@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "side-mission-cards.json#",
-  "title": "Schema for the side mission cards data file",
+  "id": "campaign-hero-side-mission-cards.json#",
+  "title": "Schema for the campaign hero side mission cards data file (red side missions)",
   "type": "object",
   "definitions": {},
   "properties": {
@@ -11,26 +11,22 @@
     },
     "name": {
       "type": "string",
-      "description": "Side mission name",
+      "description": "Hero side mission name",
       "minLength": 1
     },
-    "image": {
-      "description": "The file path for this side mission's image.",
-      "$ref": "definitions.json#/definitions/image-file-path"
+    "hero_id": {
+      "description": "Foreign key to the hero in data/heroes.json the mission is for.",
+      "$ref": "definitions.json#/definitions/uuid"
     },
-    "color": {
-      "description": "The file path for this story mission's image.",
-      "enum": [
-        "Red",
-        "Grey",
-        "Green"
-      ]
+    "image": {
+      "description": "The file path for this hero side mission's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
     }
   },
   "required": [
     "id",
     "name",
-    "color",
+    "hero_id",
     "image"
   ],
   "additionalProperties": false

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "story-mission-cards.json#",
-  "title": "Schema for the story mission cards data file",
+  "id": "campaign-regular-side-mission-cards.json#",
+  "title": "Schema for the campaign regular side mission cards data file (grey side missions)",
   "type": "object",
   "definitions": {},
   "properties": {
@@ -11,11 +11,11 @@
     },
     "name": {
       "type": "string",
-      "description": "Story mission name",
+      "description": "Regular side mission name",
       "minLength": 1
     },
     "image": {
-      "description": "The file path for this story mission's image.",
+      "description": "The file path for this regular side mission's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
     }
   },

@@ -44,7 +44,7 @@ function products(ref, db) {
 function fieldFacet(type, field, refs) {
   const values = refs.map(ref => ref.record[field]).filter(v => v != null);
   if (!values.length) return null;
-  const label = fieldLabel(field);
+  const label = TYPE[type].labels?.[field] ?? fieldLabel(field);
   const order = TYPE[type].order?.[field] ?? [];
   const sortKeys = keys => [...order.filter(k => keys.includes(k)),
     ...keys.filter(k => !order.includes(k)).sort(compareKeys)];
@@ -62,7 +62,8 @@ function fieldFacet(type, field, refs) {
   if (values.every(v => typeof v === 'string')) {
     const keys = [...new Set(values)];
     if (keys.length > MAX_CHOICES) return null;
-    return choice(field, label, ({record}) => (record[field] == null ? [] : [record[field]]), sortKeys(keys));
+    const labels = field === 'content_type' ? Object.fromEntries(keys.map(k => [k, TYPE[k]?.label ?? k])) : {};
+    return choice(field, label, ({record}) => (record[field] == null ? [] : [record[field]]), sortKeys(keys), labels);
   }
   return null;
 }

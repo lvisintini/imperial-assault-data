@@ -22,14 +22,18 @@ SOURCES = [
     'imperial-classes',
     'imperial-class-cards',
     'supply-cards',
-    'story-mission-cards',
-    'side-mission-cards',
+    'campaign-story-mission-cards',
+    'campaign-hero-side-mission-cards',
+    'campaign-ally-side-mission-cards',
+    'campaign-regular-side-mission-cards',
     'reward-cards',
     'companion-cards',
     'upgrade-cards',
     'card-backs',
-    'threat-mission-cards',
-    'form-cards'
+    'campaign-threat-mission-cards',
+    'form-cards',
+    'missions',
+    'mission-rewards',
 ]
 
 
@@ -63,6 +67,10 @@ for source_data in all_data['sources']:
 
             # Get data for content source content using the content_type and content_id attributes
             m = next(iter([m for m in all_data[content_type] if m["id"] == i['content_id']]), None)
+
+            # A missions row stands for a mission card in another file: print the card.
+            if content_type == 'missions':
+                m = next(c for c in all_data[m['content_type']] if c['id'] == m['content_id'])
 
             print(f'\t\t- {m["name"]}')
 

@@ -20,6 +20,8 @@ agenda-decks     1──* agenda-cards          (agenda_id)
 heroes           1──* hero-class-cards      (hero_id)
 imperial-classes 1──* imperial-class-cards  (class_id)
 card-backs       1──* <content type>        (content_type + variant)
+missions         1──1 <mission card>        (content_type + content_id; products and rewards attach here)
+missions         1──* mission-rewards       (mission_id; content_type + content_id, or credits)
 ```
 
 You can find an example on how to do this in the `./examples` folder, along with other examples.
@@ -122,40 +124,44 @@ What follows is a list of all the image types and their sizes for large and smal
 
 The table bellow shows you the expected sizes for all the different images included in this data set.
 
-|                                        | Source  | Standard | Mini    | Mini (Flipped) | Hero Sheet | Any |
-|----------------------------------------|---------|----------|---------|----------------|------------|-----|
-| sources.image                          | ✔       |          |         |                |            |     |
-| maps.image                             |         |          |         |                |            | ✔   |
-| agenda-cards.image                     |         | ✔        |         |                |            |     |
-| command-cards.image                    |         |          | ✔       |                |            |     |
-| condition-cards.image                  |         |          | ✔       |                |            |     |
-| deployment-cards.image                 |         | ✔        |         |                |            |     |
-| heroes.healthy                         |         |          |         |                | ✔          |     |
-| heroes.wounded                         |         |          |         |                | ✔          |     |
-| hero-class-cards.image                 |         |          | ✔       |                |            |     |
-| imperial-class-cards.image             |         |          | ✔       |                |            |     |
-| supply-cards.image                     |         |          | ✔       |                |            |     |
-| story-mission-cards.image              |         | ✔        |         |                |            |     |
-| side-mission-cards.image               |         | ✔        |         |                |            |     |
-| reward-cards.image                     |         |          | ✔       |                |            |     |
-| companion-cards.image                  |         | ✔        |         |                |            |     |
-| upgrade-cards.image                    |         |          | ✔       |                |            |     |
-| threat-mission-cards.image             |         | ✔        |         |                |            |     |
-| form-cards.image                       |         |          |         | ✔              |            |     |
-| card-backs.image(agenda-decks)         |         | ✔        |         |                |            |     |
-| card-backs.image(command-cards)        |         |          | ✔       |                |            |     |
-| card-backs.image(companion-cards)      |         | ✔        |         |                |            |     |
-| card-backs.image(condition-cards)      |         |          | ✔       |                |            |     |
-| card-backs.image(deployment-cards)     |         | ✔        |         |                |            |     |
-| card-backs.image(imperial-classes)     |         |          | ✔       |                |            |     |
-| card-backs.image(heroes)               |         |          | ✔       |                |            |     |
-| card-backs.image(upgrade-cards)        |         |          | ✔       |                |            |     |
-| card-backs.image(reward-cards)         |         |          | ✔       |                |            |     |
-| card-backs.image(supply-cards)         |         |          | ✔       |                |            |     |
-| card-backs.image(side-mission-cards)   |         | ✔        |         |                |            |     |
-| card-backs.image(story-mission-cards)  |         | ✔        |         |                |            |     |
-| card-backs.image(threat-mission-cards) |         | ✔        |         |                |            |     |
-| card-backs.image(form-cards)           |         |          |         | ✔              |            |     |
+|                                                       | Source  | Standard | Mini    | Mini (Flipped) | Hero Sheet | Any |
+|-------------------------------------------------------|---------|----------|---------|----------------|------------|-----|
+| sources.image                                         | ✔       |          |         |                |            |     |
+| maps.image                                            |         |          |         |                |            | ✔   |
+| agenda-cards.image                                    |         | ✔        |         |                |            |     |
+| command-cards.image                                   |         |          | ✔       |                |            |     |
+| condition-cards.image                                 |         |          | ✔       |                |            |     |
+| deployment-cards.image                                |         | ✔        |         |                |            |     |
+| heroes.healthy                                        |         |          |         |                | ✔          |     |
+| heroes.wounded                                        |         |          |         |                | ✔          |     |
+| hero-class-cards.image                                |         |          | ✔       |                |            |     |
+| imperial-class-cards.image                            |         |          | ✔       |                |            |     |
+| supply-cards.image                                    |         |          | ✔       |                |            |     |
+| campaign-story-mission-cards.image                    |         | ✔        |         |                |            |     |
+| campaign-hero-side-mission-cards.image                |         | ✔        |         |                |            |     |
+| campaign-ally-side-mission-cards.image                |         | ✔        |         |                |            |     |
+| campaign-regular-side-mission-cards.image             |         | ✔        |         |                |            |     |
+| reward-cards.image                                    |         |          | ✔       |                |            |     |
+| companion-cards.image                                 |         | ✔        |         |                |            |     |
+| upgrade-cards.image                                   |         |          | ✔       |                |            |     |
+| campaign-threat-mission-cards.image                   |         | ✔        |         |                |            |     |
+| form-cards.image                                      |         |          |         | ✔              |            |     |
+| card-backs.image(agenda-decks)                        |         | ✔        |         |                |            |     |
+| card-backs.image(command-cards)                       |         |          | ✔       |                |            |     |
+| card-backs.image(companion-cards)                     |         | ✔        |         |                |            |     |
+| card-backs.image(condition-cards)                     |         |          | ✔       |                |            |     |
+| card-backs.image(deployment-cards)                    |         | ✔        |         |                |            |     |
+| card-backs.image(imperial-classes)                    |         |          | ✔       |                |            |     |
+| card-backs.image(heroes)                              |         |          | ✔       |                |            |     |
+| card-backs.image(upgrade-cards)                       |         |          | ✔       |                |            |     |
+| card-backs.image(reward-cards)                        |         |          | ✔       |                |            |     |
+| card-backs.image(supply-cards)                        |         |          | ✔       |                |            |     |
+| card-backs.image(campaign-hero-side-mission-cards)    |         | ✔        |         |                |            |     |
+| card-backs.image(campaign-ally-side-mission-cards)    |         | ✔        |         |                |            |     |
+| card-backs.image(campaign-regular-side-mission-cards) |         | ✔        |         |                |            |     |
+| card-backs.image(campaign-story-mission-cards)        |         | ✔        |         |                |            |     |
+| card-backs.image(campaign-threat-mission-cards)       |         | ✔        |         |                |            |     |
+| card-backs.image(form-cards)                          |         |          |         | ✔              |            |     |
 
 
 ## Disclaimer

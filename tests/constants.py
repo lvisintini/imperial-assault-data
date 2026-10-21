@@ -13,13 +13,17 @@ class CONTENT_TYPES:
     IMPERIAL_CLASSES = 'imperial-classes'
     IMPERIAL_CLASS_CARD = 'imperial-class-cards'
     SUPPLY = 'supply-cards'
-    STORY_MISSION = 'story-mission-cards'
-    SIDE_MISSION = 'side-mission-cards'
+    STORY_MISSION = 'campaign-story-mission-cards'
+    HERO_SIDE_MISSION = 'campaign-hero-side-mission-cards'
+    ALLY_SIDE_MISSION = 'campaign-ally-side-mission-cards'
+    REGULAR_SIDE_MISSION = 'campaign-regular-side-mission-cards'
     REWARD = 'reward-cards'
     COMPANION = 'companion-cards'
     UPGRADE = 'upgrade-cards'
     CARD = 'card-backs'
-    THREAT_MISSION = 'threat-mission-cards'
+    THREAT_MISSION = 'campaign-threat-mission-cards'
+    MISSIONS = 'missions'
+    MISSION_REWARDS = 'mission-rewards'
 
     as_list = [
         SOURCE,
@@ -36,17 +40,32 @@ class CONTENT_TYPES:
         IMPERIAL_CLASS_CARD,
         SUPPLY,
         STORY_MISSION,
-        SIDE_MISSION,
+        HERO_SIDE_MISSION,
+        ALLY_SIDE_MISSION,
+        REGULAR_SIDE_MISSION,
         REWARD,
         COMPANION,
         UPGRADE,
         CARD,
         THREAT_MISSION,
         FORM_CARDS,
+        MISSIONS,
+        MISSION_REWARDS,
+    ]
+
+    # The collections missions.json indexes (agenda cards only where `mission` is true).
+    mission_types = [
+        STORY_MISSION,
+        THREAT_MISSION,
+        HERO_SIDE_MISSION,
+        ALLY_SIDE_MISSION,
+        REGULAR_SIDE_MISSION,
+        AGENDA,
     ]
 
     without_ids = [
         SOURCE_CONTENTS,
+        MISSION_REWARDS,
     ]
 
 
