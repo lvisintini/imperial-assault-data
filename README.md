@@ -125,7 +125,7 @@ The table bellow shows you the expected sizes for all the different images inclu
 |                                        | Source  | Standard | Mini    | Mini (Flipped) | Hero Sheet | Any |
 |----------------------------------------|---------|----------|---------|----------------|------------|-----|
 | sources.image                          | ✔       |          |         |                |            |     |
-| skirmish-maps.image                    |         |          |         |                |            | ✔   |
+| maps.image                             |         |          |         |                |            | ✔   |
 | agenda-cards.image                     |         | ✔        |         |                |            |     |
 | command-cards.image                    |         |          | ✔       |                |            |     |
 | condition-cards.image                  |         |          | ✔       |                |            |     |

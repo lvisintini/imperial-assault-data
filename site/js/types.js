@@ -13,7 +13,7 @@ export const TYPES = [
     facets: [
       'type', 'wave',
     ],
-    order: {type: ['Core Game', 'Expansion', 'Ally Pack', 'Villain Pack']},
+    order: {type: ['Core Game', 'Expansion', 'Ally Pack', 'Villain Pack', 'App']},
   },
   {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded'], thumb: 'back'},
   {file: 'hero-class-cards', label: 'Hero class cards', singular: 'Hero class card', images: ['image']},
@@ -43,7 +43,7 @@ export const TYPES = [
   {file: 'supply-cards', label: 'Supply cards', singular: 'Supply card', images: ['image']},
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},
   {file: 'condition-cards', label: 'Condition cards', singular: 'Condition card', images: ['image']},
-  {file: 'skirmish-maps', label: 'Skirmish maps', singular: 'Skirmish map', images: ['image']},
+  {file: 'maps', label: 'Maps', singular: 'Map', images: ['image']},
   {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image'], sort: ['deck', 'variant']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
 ];

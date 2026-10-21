@@ -2,241 +2,271 @@
   {
     "id": "4d6856ae-7d78-53bb-9def-9e4d846d9134",
     "name": "Geonosis Foundry",
-    "image": "skirmish-maps/geonosis-foundry.png"
+    "image": "maps/geonosis-foundry.png"
   },
   {
     "id": "17929f4e-9fc5-524b-b413-defe83e9dcd6",
     "name": "Coruscant Landfill",
-    "image": "skirmish-maps/coruscant-landfill.png"
+    "image": "maps/coruscant-landfill.png"
   },
   {
     "id": "e977bead-dee1-563b-a38c-a765d88c1a56",
     "name": "Bespin Tibanna Facility",
-    "image": "skirmish-maps/bespin-tibanna-facility.png"
+    "image": "maps/bespin-tibanna-facility.png"
   },
   {
     "id": "32ad408f-d798-5cf4-8f94-433e93a202fe",
     "name": "Endor Wilderness",
-    "image": "skirmish-maps/endor-wilderness.png"
+    "image": "maps/endor-wilderness.png"
   },
   {
     "id": "3c4eb36b-4fef-50a2-9e0f-46737d84abfb",
     "name": "Corellian Underground",
-    "image": "skirmish-maps/corellian-underground.png"
+    "image": "maps/corellian-underground.png"
   },
   {
     "id": "1785254a-c8ca-5e72-a570-138ef8777998",
     "name": "Anchorhead Bar",
-    "image": "skirmish-maps/anchorhead-bar.png"
+    "image": "maps/anchorhead-bar.png"
   },
   {
     "id": "572c740e-0812-5c87-8094-29f35cc332f1",
     "name": "Climate Research Camp",
-    "image": "skirmish-maps/climate-research-camp.png"
+    "image": "maps/climate-research-camp.png"
   },
   {
     "id": "3b1bcab1-1a06-5ce6-bf54-b96cffc217bc",
     "name": "Chopper Base Atollon",
-    "image": "skirmish-maps/chopper-base-atollon.png"
+    "image": "maps/chopper-base-atollon.png"
   },
   {
     "id": "f582e43f-8e05-5bdf-be35-881774271901",
     "name": "Echo Base",
-    "image": "skirmish-maps/echo-base.png"
+    "image": "maps/echo-base.png"
   },
   {
     "id": "bd46d2d2-9f7f-5ea7-a89e-bfb59836d73a",
     "name": "Development Facility",
-    "image": "skirmish-maps/development-facility.png"
+    "image": "maps/development-facility.png"
   },
   {
     "id": "f4c57528-e592-5772-a0e3-577a13b9f309",
     "name": "Imperial Command Hub",
-    "image": "skirmish-maps/imperial-command-hub.png"
+    "image": "maps/imperial-command-hub.png"
   },
   {
     "id": "b219fdbd-4335-55b4-9194-e81f0d009d33",
     "name": "Jabba's Palace",
-    "image": "skirmish-maps/jabbas-palace.png"
+    "image": "maps/jabbas-palace.png"
   },
   {
     "id": "82ba90a2-390b-5b58-929b-4232d972045e",
     "name": "ISB Training Grounds",
-    "image": "skirmish-maps/isb-training-grounds.png"
+    "image": "maps/isb-training-grounds.png"
   },
   {
     "id": "d3eabbdf-2977-523e-b0eb-fff07702b9cc",
     "name": "Imperial Labour Camp",
-    "image": "skirmish-maps/imperial-labour-camp.png"
+    "image": "maps/imperial-labour-camp.png"
   },
   {
     "id": "8e9b9765-bf1b-5ce6-acb6-7f59c18a4307",
     "name": "Kuat Space Station",
-    "image": "skirmish-maps/kuat-space-station.png"
+    "image": "maps/kuat-space-station.png"
   },
   {
     "id": "b2f2b850-9ca4-5d2e-82bd-ae50a2379167",
     "name": "Lothal Safehouse",
-    "image": "skirmish-maps/lothal-safehouse.png"
+    "image": "maps/lothal-safehouse.png"
   },
   {
     "id": "fc50a47c-b977-50cd-b712-665b2cd1650d",
     "name": "ISB Headquarters",
-    "image": "skirmish-maps/isb-headquarters.png"
+    "image": "maps/isb-headquarters.png"
   },
   {
     "id": "4b5fac55-5735-58c1-aba8-93250313e142",
     "name": "Hoth Battle Station",
-    "image": "skirmish-maps/hoth-battle-station.png"
+    "image": "maps/hoth-battle-station.png"
   },
   {
     "id": "bc5c185e-2556-522b-a39b-2e505cae3cd3",
     "name": "Hangar Bay",
-    "image": "skirmish-maps/hangar-bay.png"
+    "image": "maps/hangar-bay.png"
   },
   {
     "id": "a8a59b91-684c-5e6a-9766-68af64ebe30a",
     "name": "Hoth Weather Shelter",
-    "image": "skirmish-maps/hoth-weather-shelter.png"
+    "image": "maps/hoth-weather-shelter.png"
   },
   {
     "id": "98881009-7165-5c91-b397-f6da01c45054",
     "name": "Kashyyyk Station",
-    "image": "skirmish-maps/kashyyyk-station.png"
+    "image": "maps/kashyyyk-station.png"
   },
   {
     "id": "461acb8e-adeb-5c0b-b60e-7e46e9add7ae",
     "name": "Imperial Research Lab",
-    "image": "skirmish-maps/imperial-research-lab.png"
+    "image": "maps/imperial-research-lab.png"
   },
   {
     "id": "598876df-ffe7-5df5-85b9-9997e8debba0",
     "name": "Imperial Space Station",
-    "image": "skirmish-maps/imperial-space-station.png"
+    "image": "maps/imperial-space-station.png"
   },
   {
     "id": "88b5af50-b0e1-5be5-bccb-620f38d3e8d3",
     "name": "Sewers Of Nar Shaddaa",
-    "image": "skirmish-maps/sewers-of-nar-shaddaa.png"
+    "image": "maps/sewers-of-nar-shaddaa.png"
   },
   {
     "id": "805382a5-cb6b-5821-adb0-6c1c495c62cb",
     "name": "Moisture Farm",
-    "image": "skirmish-maps/moisture-farm.png"
+    "image": "maps/moisture-farm.png"
   },
   {
     "id": "030b2c83-5c01-583a-ac43-1b046a0e7b66",
     "name": "Ord Mantell Junkyard",
-    "image": "skirmish-maps/ord-mantell-junkyard.png"
+    "image": "maps/ord-mantell-junkyard.png"
   },
   {
     "id": "58c86223-f444-56a1-bfc4-75dbd2d7c568",
     "name": "Mos Eisley Outskirts",
-    "image": "skirmish-maps/mos-eisley-outskirts.png"
+    "image": "maps/mos-eisley-outskirts.png"
   },
   {
     "id": "ef0c005e-7c4f-5bf4-b97e-1fd8f06944cf",
     "name": "Massassi Ruins",
-    "image": "skirmish-maps/massassi-ruins.png"
+    "image": "maps/massassi-ruins.png"
   },
   {
     "id": "5c31ff0d-45db-5bc6-ae62-17ef4bbb4c27",
     "name": "Nelvaanian Warzone",
-    "image": "skirmish-maps/nelvaanian-warzone.png"
+    "image": "maps/nelvaanian-warzone.png"
   },
   {
     "id": "d17014d1-c45d-5054-b250-11209a0ebd54",
     "name": "Mos Eisley Cantina",
-    "image": "skirmish-maps/mos-eisley-cantina.png"
+    "image": "maps/mos-eisley-cantina.png"
   },
   {
     "id": "59b729e8-f40b-5849-a8ae-82d4d58ed1a1",
     "name": "Tarkin Initiative Labs",
-    "image": "skirmish-maps/tarkin-initiative-labs.png"
+    "image": "maps/tarkin-initiative-labs.png"
   },
   {
     "id": "c1fdab2b-f0aa-5f08-aad5-7c61dc593476",
     "name": "Training Ground",
-    "image": "skirmish-maps/training-ground.png"
+    "image": "maps/training-ground.png"
   },
   {
     "id": "c591361e-dcc8-5138-9765-a19169148c22",
     "name": "Wasteland Outpost",
-    "image": "skirmish-maps/wasteland-outpost.png"
+    "image": "maps/wasteland-outpost.png"
   },
   {
     "id": "873233ea-bc45-5aab-ae46-01fc4c09bccc",
     "name": "Tython Meditation Field",
-    "image": "skirmish-maps/tython-meditation-field.png"
+    "image": "maps/tython-meditation-field.png"
   },
   {
     "id": "5d7004a9-d1fe-5f91-bc40-09373daa4785",
     "name": "Wasskah Hunting Ground",
-    "image": "skirmish-maps/wasskah-hunting-ground.png"
+    "image": "maps/wasskah-hunting-ground.png"
   },
   {
     "id": "9b0094cd-3a50-5662-9cc0-86f924c96655",
     "name": "Mos Eisley Back Alleys",
-    "image": "skirmish-maps/mos-eisley-back-alleys.png"
+    "image": "maps/mos-eisley-back-alleys.png"
   },
   {
     "id": "c026c33a-f7c0-51d7-942b-4b6b044daaa9",
     "name": "The Pit of Carkoon",
-    "image": "skirmish-maps/the-pit-of-carkoon.png"
+    "image": "maps/the-pit-of-carkoon.png"
   },
   {
     "id": "9c7684db-9937-5a48-88f2-6fbe889a2685",
     "name": "Nal Hutta Swamps",
-    "image": "skirmish-maps/nal-hutta-swamps.png"
+    "image": "maps/nal-hutta-swamps.png"
   },
   {
     "id": "ebe42a31-0ec9-55ad-96da-224cad3273f3",
     "name": "Endor Defense Station",
-    "image": "skirmish-maps/endor-defense-station.png"
+    "image": "maps/endor-defense-station.png"
   },
   {
     "id": "73ab3e75-0d5e-583c-840f-10586f97a843",
     "name": "Uscru Entertainment District",
-    "image": "skirmish-maps/uscru-entertainment-district.png"
+    "image": "maps/uscru-entertainment-district.png"
   },
   {
     "id": "71af538a-525a-52b0-b74a-47846064d3db",
     "name": "Coruscant Senate Office",
-    "image": "skirmish-maps/coruscant-senate-office.png"
+    "image": "maps/coruscant-senate-office.png"
   },
   {
     "id": "a9c25bfb-e7b4-57ea-8db7-08f3ad50921e",
     "name": "Devaron Garrison",
-    "image": "skirmish-maps/devaron-garrison.png"
+    "image": "maps/devaron-garrison.png"
   },
   {
     "id": "57291ff1-ca42-5348-aec0-daba30cb518e",
     "name": "Coruscant Back Alleys",
-    "image": "skirmish-maps/coruscant-back-alleys.png"
+    "image": "maps/coruscant-back-alleys.png"
   },
   {
     "id": "0f7abae1-7d9e-53c1-9399-3d8d44d6f5cd",
     "name": "Lothal Battlefront",
-    "image": "skirmish-maps/lothal-battlefront.png"
+    "image": "maps/lothal-battlefront.png"
   },
   {
     "id": "8762b12d-580a-5b26-a40c-429f3b985c53",
     "name": "Lothal Wastes",
-    "image": "skirmish-maps/lothal-wastes.png"
+    "image": "maps/lothal-wastes.png"
   },
   {
     "id": "0bf0f5de-c6a1-5411-9866-731cc3a5c769",
     "name": "30th Floor Plaza",
-    "image": "skirmish-maps/30th-floor-plaza.png"
+    "image": "maps/30th-floor-plaza.png"
   },
   {
     "id": "318adfeb-da27-581d-81f9-6c3405353509",
     "name": "Lothal Spaceport",
-    "image": "skirmish-maps/lothal-spaceport.png"
+    "image": "maps/lothal-spaceport.png"
   },
   {
     "id": "d02f7e0b-2999-5528-b810-2edc78559ad1",
     "name": "Imperial Tower",
-    "image": "skirmish-maps/imperial-tower.png"
+    "image": "maps/imperial-tower.png"
+  },
+  {
+    "id": "ac273ebb-ec31-4c0e-ac8a-330f6ecb8c54",
+    "name": "The Dune Sea",
+    "image": "maps/the-dune-sea.png"
+  },
+  {
+    "id": "9ef04ffd-7416-441d-96f3-b39f8fe20197",
+    "name": "Hoth Battlefield",
+    "image": "maps/hoth-battlefield.png"
+  },
+  {
+    "id": "49ae1add-a65b-493a-9235-acc633878ad1",
+    "name": "Nal Hutta Borderlands",
+    "image": "maps/nal-hutta-borderlands.png"
+  },
+  {
+    "id": "da5e839a-0fca-4f69-ad82-8818c27df6f6",
+    "name": "Temple Gardens",
+    "image": "maps/temple-gardens.png"
+  },
+  {
+    "id": "ce07d83f-b6e5-4167-9ccd-4d50d4bc1b81",
+    "name": "The Malastarian Outpost",
+    "image": "maps/the-malastarian-outpost.png"
+  },
+  {
+    "id": "9095d489-db62-4ed4-a403-b664f3b179b8",
+    "name": "The Gray Cap Cantina",
+    "image": "maps/the-gray-cap-cantina.png"
   }
 ]
