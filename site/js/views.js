@@ -1,5 +1,5 @@
 import {html} from './html.js';
-import {FKS, RELATIONS} from './relations.js';
+import {BACK, FKS, RELATIONS} from './relations.js';
 import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, writeFilters} from './facets.js';
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, title} from './types.js';
@@ -54,7 +54,7 @@ function subtitle(ref, db) {
     case 'upgrade-cards': return `Tier ${record.tier}`;
     case 'skirmish-mission-cards': return [mapOf(ref, db) && title(mapOf(ref, db)), record.scenario,
       record.format !== 'Standard' && record.format].filter(Boolean).join(' · ');
-    case 'card-backs': return TYPE[record.content_type]?.label;
+    case 'card-backs': return [...new Set((db.backOf.get(ref) ?? []).map(card => TYPE[card.type].label))].join(', ');
   }
 }
 
@@ -193,7 +193,7 @@ export function landing(db) {
       <div class="grid">${tiles}</div>
       <section class="related">
         <h2>Data model</h2>
-        <p>How the data files relate. The full write-up, including how card backs are matched, is in
+        <p>How the data files relate. The full write-up is in
           <a href="${DATA_MODEL_URL}">docs/data-model.md</a>.</p>
         <div id="diagrams"><p class="status">Loading diagrams…</p></div>
       </section>`,
@@ -384,13 +384,10 @@ export function index(db, type, params) {
 }
 
 function fieldValue(ref, field, value, db) {
-  const fk = FKS.find(rel => rel.child === ref.type && rel.field === field);
+  const fk = field === BACK.field ? BACK : FKS.find(rel => rel.child === ref.type && rel.field === field);
   if (fk) {
     const parent = db.get(fk.parent, value);
     if (parent) return html`<a href="${href(parent)}">${title(parent)}</a>`;
-  }
-  if (ref.type === 'card-backs' && field === 'content_type' && TYPE[value]) {
-    return html`<a href="#/${value}">${TYPE[value].label}</a>`;
   }
   if (TYPE[ref.type].images.includes(field) && value) {
     return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;
@@ -451,7 +448,7 @@ export function detail(db, ref) {
   if (rewardOf) related.push(section('Reward from', rewardOf.length, grouped(rewardOf, db)));
   const back = db.back.get(ref);
   if (back) {
-    const via = back.via ? ` (same as its ${TYPE[back.via.type].singular.toLowerCase()})` : '';
+    const via = back.via ? ` (on its ${TYPE[back.via.type].label.toLowerCase()})` : '';
     related.push(section(`Card back${via}`, null, grid([back.ref], db)));
   }
   const backOf = db.backOf.get(ref);

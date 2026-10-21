@@ -6,6 +6,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/bounty.png"
   },
   {
@@ -15,6 +16,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/counterparts.png"
   },
   {
@@ -24,6 +26,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/hunt-them-down.png"
   },
   {
@@ -33,6 +36,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/surveillance-operatives.png"
   },
   {
@@ -44,6 +48,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/tech-goggles.png"
   },
   {
@@ -55,6 +60,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/adrenal-implant.png"
   },
   {
@@ -64,6 +70,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/allied-operations.png"
   },
   {
@@ -73,6 +80,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/fearless-leader.png"
   },
   {
@@ -82,6 +90,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/imperial-industry.png"
   },
   {
@@ -91,6 +100,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/life-debt.png"
   },
   {
@@ -100,6 +110,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/old-wounds.png"
   },
   {
@@ -109,6 +120,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/peacemaker.png"
   },
   {
@@ -118,6 +130,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/rebel-recon.png"
   },
   {
@@ -130,6 +143,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/shadow-suit.png"
   },
   {
@@ -142,6 +156,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/shu-yens-lightsaber.png"
   },
   {
@@ -151,6 +166,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/special-operations.png"
   },
   {
@@ -160,6 +176,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/supply-deficit.png"
   },
   {
@@ -169,6 +186,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/the-ways-of-the-force.png"
   },
   {
@@ -178,6 +196,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/veteran-prowess.png"
   },
   {
@@ -187,6 +206,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/battle-vision.png"
   },
   {
@@ -196,6 +216,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/iron-hand.png"
   },
   {
@@ -207,6 +228,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/systems-upgrade.png"
   },
   {
@@ -218,6 +240,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/cam-droid.png"
   },
   {
@@ -227,6 +250,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/lobots-favor.png"
   },
   {
@@ -238,6 +262,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/radiant-holocron.png"
   },
   {
@@ -247,6 +272,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/relief-effort.png"
   },
   {
@@ -256,6 +282,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/under-the-radar.png"
   },
   {
@@ -265,6 +292,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/bred-for-war.png"
   },
   {
@@ -274,6 +302,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/desperado.png"
   },
   {
@@ -283,6 +312,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/haymaker.png"
   },
   {
@@ -292,6 +322,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/mandalorian-heritage.png"
   },
   {
@@ -301,6 +332,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/mercenary-ties.png"
   },
   {
@@ -310,6 +342,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/501st-training.png"
   },
   {
@@ -319,6 +352,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/tusken-weaponry.png"
   },
   {
@@ -328,6 +362,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/cautious-approach.png"
   },
   {
@@ -337,6 +372,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/tactical-advance.png"
   },
   {
@@ -346,6 +382,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/lady-luck.png"
   },
   {
@@ -355,6 +392,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/mechanical-salvage.png"
   },
   {
@@ -364,6 +402,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/intimidation.png"
   },
   {
@@ -375,6 +414,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/quickdraw-holster.png"
   },
   {
@@ -384,6 +424,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/alliance-efficiency.png"
   },
   {
@@ -395,6 +436,7 @@
     ],
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/bardottan-shard.png"
   },
   {
@@ -404,6 +446,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/explosives-clearance.png"
   },
   {
@@ -413,6 +456,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/inside-source.png"
   },
   {
@@ -422,6 +466,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/intercepted-plans.png"
   },
   {
@@ -431,6 +476,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/lessons-of-history.png"
   },
   {
@@ -440,6 +486,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/mercenary-aid.png"
   },
   {
@@ -449,6 +496,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/populist-support.png"
   },
   {
@@ -458,6 +506,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/power-of-the-shard.png"
   },
   {
@@ -467,6 +516,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/scouted-enemies.png"
   },
   {
@@ -476,6 +526,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/tracked-movements.png"
   },
   {
@@ -485,6 +536,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/vaders-legion.png"
   },
   {
@@ -494,6 +546,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/wookiee-roar.png"
   },
   {
@@ -503,6 +556,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/x-8-upgrade.png"
   },
   {
@@ -512,6 +566,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/bullseye.png"
   },
   {
@@ -521,6 +576,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/hondos-treasure.png"
   },
   {
@@ -530,6 +586,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/nova-cell-leader.png"
   },
   {
@@ -539,6 +596,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/rough-rider.png"
   },
   {
@@ -548,6 +606,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/tech-specialist.png"
   },
   {
@@ -557,6 +616,7 @@
     "traits": null,
     "class": "Regular",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/wholeness.png"
   },
   {
@@ -566,6 +626,7 @@
     "traits": null,
     "class": "Bane",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/supply-disruption.png"
   },
   {
@@ -575,6 +636,7 @@
     "traits": null,
     "class": "Boon",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/networks-restored.png"
   },
   {
@@ -584,6 +646,7 @@
     "traits": null,
     "class": "Bane",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/constant-advantage.png"
   },
   {
@@ -593,6 +656,7 @@
     "traits": null,
     "class": "Boon",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/resurgence.png"
   },
   {
@@ -602,6 +666,7 @@
     "traits": null,
     "class": "Bane",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/weary-from-toil.png"
   },
   {
@@ -611,6 +676,7 @@
     "traits": null,
     "class": "Boon",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/invigorated-by-success.png"
   },
   {
@@ -620,6 +686,7 @@
     "traits": null,
     "class": "Bane",
     "for": "Imperial player",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/distractions.png"
   },
   {
@@ -629,6 +696,7 @@
     "traits": null,
     "class": "Boon",
     "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/strategy-executed.png"
   }
 ]

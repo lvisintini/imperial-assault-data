@@ -2,21 +2,25 @@
   {
     "id": "4fd9b597-812c-5ca3-9cf1-7da10dde873a",
     "name": "Escape from Cloud City",
+    "back_id": "980170a9-a10d-5d59-860c-a3dc6d33a273",
     "image": "campaign-threat-mission-cards/escape-from-cloud-city.png"
   },
   {
     "id": "c6faf287-3f47-58ba-878a-e2778a9d8222",
     "name": "Scouring of the Homestead",
+    "back_id": "980170a9-a10d-5d59-860c-a3dc6d33a273",
     "image": "campaign-threat-mission-cards/scouring-of-the-homestead.png"
   },
   {
     "id": "9ed8be42-c8be-5214-87b1-68388e52a592",
     "name": "Survival of the Fittest",
+    "back_id": "980170a9-a10d-5d59-860c-a3dc6d33a273",
     "image": "campaign-threat-mission-cards/survival-of-the-fittest.png"
   },
   {
     "id": "54dad23c-4409-51c2-bfac-e12dd38457e8",
     "name": "The Hard Way",
+    "back_id": "980170a9-a10d-5d59-860c-a3dc6d33a273",
     "image": "campaign-threat-mission-cards/the-hard-way.png"
   }
 ]

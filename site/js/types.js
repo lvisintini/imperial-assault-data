@@ -86,7 +86,7 @@ export const TYPES = [
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},
   {file: 'condition-cards', label: 'Condition cards', singular: 'Condition card', images: ['image']},
   {file: 'maps', label: 'Maps', singular: 'Map', images: ['image']},
-  {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image'], sort: ['deck', 'variant']},
+  {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
   {file: 'mission-rewards', label: 'Mission rewards', singular: 'Mission reward', images: [], hidden: true},
   {file: 'requirements', label: 'Requirements', singular: 'Requirement', images: [], hidden: true},
@@ -95,9 +95,8 @@ export const TYPES = [
 export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));
 
 export function title(ref) {
-  const {type, record} = ref;
+  const {record} = ref;
   if (ref.card) return title(ref.card);  // a missions row is named by its mission card
-  if (type === 'card-backs') return record.variant ? `${record.deck}: ${record.variant}` : record.deck;
   return record.name ?? '';
 }
 

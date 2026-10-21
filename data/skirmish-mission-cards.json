@@ -4,6 +4,7 @@
     "name": "Get to the Ship",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/get-to-the-ship.png"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Smuggled Goods",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/smuggled-goods.png"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Close to Home",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/close-to-home.png"
   },
   {
@@ -25,6 +28,7 @@
     "name": "Raiding Party",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/raiding-party.png"
   },
   {
@@ -32,6 +36,7 @@
     "name": "Lost Knowledge",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/lost-knowledge.png"
   },
   {
@@ -39,6 +44,7 @@
     "name": "Leave No Evidence",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/leave-no-evidence.png"
   },
   {
@@ -46,6 +52,7 @@
     "name": "Prison Break",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/prison-break.png"
   },
   {
@@ -53,6 +60,7 @@
     "name": "Infiltration",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/infiltration.png"
   },
   {
@@ -60,6 +68,7 @@
     "name": "Local Trouble",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/local-trouble.png"
   },
   {
@@ -67,6 +76,7 @@
     "name": "Sabacc Standoff",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/sabacc-standoff.png"
   },
   {
@@ -74,6 +84,7 @@
     "name": "Hazardous Materials",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/hazardous-materials.png"
   },
   {
@@ -81,6 +92,7 @@
     "name": "Breakthrough",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/breakthrough.png"
   },
   {
@@ -88,6 +100,7 @@
     "name": "Shadow War",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/shadow-war.png"
   },
   {
@@ -95,6 +108,7 @@
     "name": "Weapons Project",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/weapons-project.png"
   },
   {
@@ -102,6 +116,7 @@
     "name": "Stolen Schematics",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/stolen-schematics.png"
   },
   {
@@ -109,6 +124,7 @@
     "name": "Stranded",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/stranded.png"
   },
   {
@@ -116,6 +132,7 @@
     "name": "Data Heist",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/data-heist.png"
   },
   {
@@ -123,6 +140,7 @@
     "name": "Incoming Transmission",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/incoming-transmission.png"
   },
   {
@@ -130,6 +148,7 @@
     "name": "Mind of its Own",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/mind-of-its-own.png"
   },
   {
@@ -137,6 +156,7 @@
     "name": "Most Dangerous Game",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/most-dangerous-game.png"
   },
   {
@@ -144,6 +164,7 @@
     "name": "Drinks and Dealings",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/drinks-and-dealings.png"
   },
   {
@@ -151,6 +172,7 @@
     "name": "Battlefield Engineering",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/battlefield-engineering.png"
   },
   {
@@ -158,6 +180,7 @@
     "name": "Ancient Knowledge",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/ancient-knowledge.png"
   },
   {
@@ -165,6 +188,7 @@
     "name": "Volatile Materials",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/volatile-materials.png"
   },
   {
@@ -172,6 +196,7 @@
     "name": "Balance of the Force (Skirmish Mission)",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/balance-of-the-force-skirmish-mission.png"
   },
   {
@@ -179,6 +204,7 @@
     "name": "Chosen of the Force",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/chosen-of-the-force.png"
   },
   {
@@ -186,6 +212,7 @@
     "name": "Data Run",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/data-run.png"
   },
   {
@@ -193,6 +220,7 @@
     "name": "Targeting Computers",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/targeting-computers.png"
   },
   {
@@ -200,6 +228,7 @@
     "name": "The Art of Robotics",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/the-art-of-robotics.png"
   },
   {
@@ -207,6 +236,7 @@
     "name": "Experimental Weapons",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/experimental-weapons.png"
   },
   {
@@ -214,6 +244,7 @@
     "name": "Reprogrammed",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/reprogrammed.png"
   },
   {
@@ -221,6 +252,7 @@
     "name": "Deception Game",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/deception-game.png"
   },
   {
@@ -228,6 +260,7 @@
     "name": "Unknown Treasures",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/unknown-treasures.png"
   },
   {
@@ -235,6 +268,7 @@
     "name": "Something in the Air",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/something-in-the-air.png"
   },
   {
@@ -242,6 +276,7 @@
     "name": "Uplink",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/uplink.png"
   },
   {
@@ -249,6 +284,7 @@
     "name": "Delivery System",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/delivery-system.png"
   },
   {
@@ -256,6 +292,7 @@
     "name": "Lair of the Dianoga",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/lair-of-the-dianoga.png"
   },
   {
@@ -263,6 +300,7 @@
     "name": "One Man\u2019s Trash",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/one-man-s-trash.png"
   },
   {
@@ -270,6 +308,7 @@
     "name": "Safe and Sound",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/safe-and-sound.png"
   },
   {
@@ -277,6 +316,7 @@
     "name": "Rapid Adaptation",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/rapid-adaptation.png"
   },
   {
@@ -284,6 +324,7 @@
     "name": "Blood on the Snow",
     "format": "Four Player Free-For-All",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/blood-on-the-snow.png"
   },
   {
@@ -291,6 +332,7 @@
     "name": "A Battle for Hoth",
     "format": "Four Player Team Battle",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/a-battle-for-hoth.png"
   },
   {
@@ -298,6 +340,7 @@
     "name": "Fallout",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/fallout.png"
   },
   {
@@ -305,6 +348,7 @@
     "name": "Constant Motion",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/constant-motion.png"
   },
   {
@@ -312,6 +356,7 @@
     "name": "Payload",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/payload.png"
   },
   {
@@ -319,6 +364,7 @@
     "name": "Vital Supplies",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/vital-supplies.png"
   },
   {
@@ -326,6 +372,7 @@
     "name": "Fire-Fight",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/fire-fight.png"
   },
   {
@@ -333,6 +380,7 @@
     "name": "Holding Ground",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/holding-ground.png"
   },
   {
@@ -340,6 +388,7 @@
     "name": "Inside Job",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/inside-job.png"
   },
   {
@@ -347,6 +396,7 @@
     "name": "Bomb Drop",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/bomb-drop.png"
   },
   {
@@ -354,6 +404,7 @@
     "name": "Man in Carbonite",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/man-in-carbonite.png"
   },
   {
@@ -361,6 +412,7 @@
     "name": "Strategic Reserves",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/strategic-reserves.png"
   },
   {
@@ -368,6 +420,7 @@
     "name": "\"Priceless\" Relics",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/priceless-relics.png"
   },
   {
@@ -375,6 +428,7 @@
     "name": "Illicit Reserves",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/illicit-reserves.png"
   },
   {
@@ -382,6 +436,7 @@
     "name": "To Your Stations!",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/to-your-stations.png"
   },
   {
@@ -389,6 +444,7 @@
     "name": "Reconnaissance",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/reconnaissance.png"
   },
   {
@@ -396,6 +452,7 @@
     "name": "Counter-Slice",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/counter-slice.png"
   },
   {
@@ -403,6 +460,7 @@
     "name": "Infiltration Games",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/infiltration-games.png"
   },
   {
@@ -410,6 +468,7 @@
     "name": "Scavengers",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/scavengers.png"
   },
   {
@@ -417,6 +476,7 @@
     "name": "Watch Your Step",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/watch-your-step.png"
   },
   {
@@ -424,6 +484,7 @@
     "name": "Gaining Favor",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/gaining-favor.png"
   },
   {
@@ -431,6 +492,7 @@
     "name": "Line of Fire",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/line-of-fire.png"
   },
   {
@@ -438,6 +500,7 @@
     "name": "True Data",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/true-data.png"
   },
   {
@@ -445,6 +508,7 @@
     "name": "Heavy Firepower (Skirmish Mission)",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/heavy-firepower-skirmish-mission.png"
   },
   {
@@ -452,6 +516,7 @@
     "name": "The Hunted",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/the-hunted.png"
   },
   {
@@ -459,6 +524,7 @@
     "name": "Fortifications",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/fortifications.png"
   },
   {
@@ -466,6 +532,7 @@
     "name": "Enemy of my Enemy",
     "format": "Four Player Team Battle",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/enemy-of-my-enemy.png"
   },
   {
@@ -473,6 +540,7 @@
     "name": "Border Dispute",
     "format": "Four Player Free-For-All",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/border-dispute.png"
   },
   {
@@ -480,6 +548,7 @@
     "name": "Desert Dangers",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/desert-dangers.png"
   },
   {
@@ -487,6 +556,7 @@
     "name": "Battle for the Khetanna",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/battle-for-the-khetanna.png"
   },
   {
@@ -494,6 +564,7 @@
     "name": "Power Surge",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/power-surge.png"
   },
   {
@@ -501,6 +572,7 @@
     "name": "Supply Raid",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/supply-raid.png"
   },
   {
@@ -508,6 +580,7 @@
     "name": "Shielded (Skirmish Mission)",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/shielded-skirmish-mission.png"
   },
   {
@@ -515,6 +588,7 @@
     "name": "Raining Freight",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/raining-freight.png"
   },
   {
@@ -522,6 +596,7 @@
     "name": "Renovation",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/renovation.png"
   },
   {
@@ -529,6 +604,7 @@
     "name": "Claim the Ruins",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/claim-the-ruins.png"
   },
   {
@@ -536,6 +612,7 @@
     "name": "Spoils of Crime",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/spoils-of-crime.png"
   },
   {
@@ -543,6 +620,7 @@
     "name": "New Ownership",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/new-ownership.png"
   },
   {
@@ -550,6 +628,7 @@
     "name": "Rogue AI",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/rogue-ai.png"
   },
   {
@@ -557,6 +636,7 @@
     "name": "Abandoned Research",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/abandoned-research.png"
   },
   {
@@ -564,6 +644,7 @@
     "name": "Stashed Away",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/stashed-away.png"
   },
   {
@@ -571,6 +652,7 @@
     "name": "Concealed Treasures",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/concealed-treasures.png"
   },
   {
@@ -578,6 +660,7 @@
     "name": "Krykna Infestation",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/krykna-infestation.png"
   },
   {
@@ -585,6 +668,7 @@
     "name": "Powered Perimeter",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/powered-perimeter.png"
   },
   {
@@ -592,6 +676,7 @@
     "name": "On Our Way",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/on-our-way.png"
   },
   {
@@ -599,6 +684,7 @@
     "name": "Overwatch (Skirmish Mission)",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/overwatch-skirmish-mission.png"
   },
   {
@@ -606,6 +692,7 @@
     "name": "Temple Onslaught",
     "format": "Four Player Free-For-All",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/temple-onslaught.png"
   },
   {
@@ -613,6 +700,7 @@
     "name": "Garden Standoff",
     "format": "Four Player Team Battle",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/garden-standoff.png"
   },
   {
@@ -620,6 +708,7 @@
     "name": "Priority Message",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/priority-message.png"
   },
   {
@@ -627,6 +716,7 @@
     "name": "Lost and Found",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/lost-and-found.png"
   },
   {
@@ -634,6 +724,7 @@
     "name": "Battle at Dawn",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/battle-at-dawn.png"
   },
   {
@@ -641,6 +732,7 @@
     "name": "Priority Extraction",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/priority-extraction.png"
   },
   {
@@ -648,6 +740,7 @@
     "name": "Propaganda War",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/propaganda-war.png"
   },
   {
@@ -655,6 +748,7 @@
     "name": "The Triple Cross",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/the-triple-cross.png"
   },
   {
@@ -662,6 +756,7 @@
     "name": "Blitz (Skirmish Mission)",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/blitz-skirmish-mission.png"
   },
   {
@@ -669,6 +764,7 @@
     "name": "Fluctuations",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/fluctuations.png"
   },
   {
@@ -676,6 +772,7 @@
     "name": "Power Play",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/power-play.png"
   },
   {
@@ -683,6 +780,7 @@
     "name": "Rise Up",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/rise-up.png"
   },
   {
@@ -690,6 +788,7 @@
     "name": "Arms Salvage",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/arms-salvage.png"
   },
   {
@@ -697,6 +796,7 @@
     "name": "Secure Munitions",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/secure-munitions.png"
   },
   {
@@ -704,6 +804,7 @@
     "name": "Intruder Alert",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/intruder-alert.png"
   },
   {
@@ -711,6 +812,7 @@
     "name": "Close Contact",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/close-contact.png"
   },
   {
@@ -718,6 +820,7 @@
     "name": "Market Sabotage",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/market-sabotage.png"
   },
   {
@@ -725,6 +828,7 @@
     "name": "Mortar Fire",
     "format": "Standard",
     "scenario": null,
+    "back_id": "e938bd34-60e7-4dc3-8cdb-52187f115723",
     "image": "skirmish-mission-cards/mortar-fire.png"
   }
 ]

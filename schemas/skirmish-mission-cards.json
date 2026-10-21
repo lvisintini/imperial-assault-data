@@ -36,6 +36,10 @@
         }
       ]
     },
+    "back_id": {
+      "description": "Foreign key to this card's back in data/card-backs.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
     "image": {
       "description": "The file path for this skirmish mission's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -46,6 +50,7 @@
     "name",
     "format",
     "scenario",
+    "back_id",
     "image"
   ],
   "additionalProperties": false

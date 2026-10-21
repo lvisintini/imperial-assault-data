@@ -4,6 +4,7 @@
     "name": "Plasteel Staff",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": null,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-plasteel-staff.png",
     "type": "Melee Weapon",
     "traits": [
@@ -15,6 +16,7 @@
     "name": "Force Throw",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 1,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-force-throw.png",
     "type": "Feat",
     "traits": null
@@ -24,6 +26,7 @@
     "name": "Infantry Rifle",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": null,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-infantry-rifle.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -36,6 +39,7 @@
     "name": "Force Adept",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 1,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-force-adept.png",
     "type": "Feat",
     "traits": null
@@ -45,6 +49,7 @@
     "name": "Tactical Movement",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 1,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-tactical-movement.png",
     "type": "Feat",
     "traits": null
@@ -54,6 +59,7 @@
     "name": "Battle Meditation",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 2,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-battle-meditation.png",
     "type": "Feat",
     "traits": null
@@ -63,6 +69,7 @@
     "name": "Take Cover",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 1,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-take-cover.png",
     "type": "Feat",
     "traits": null
@@ -72,6 +79,7 @@
     "name": "Defensive Stance",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 2,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-defensive-stance.png",
     "type": "Feat",
     "traits": null
@@ -81,6 +89,7 @@
     "name": "Adrenaline Rush",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 2,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-adrenaline-rush.png",
     "type": "Feat",
     "traits": null
@@ -90,6 +99,7 @@
     "name": "Art of Movement",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 3,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-art-of-movement.png",
     "type": "Feat",
     "traits": null
@@ -99,6 +109,7 @@
     "name": "Weapon Expert",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 2,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-weapon-expert.png",
     "type": "Feat",
     "traits": null
@@ -108,6 +119,7 @@
     "name": "Snap Kick",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 3,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-snap-kick.png",
     "type": "Feat",
     "traits": null
@@ -117,6 +129,7 @@
     "name": "Suppressive Fire",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 3,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-suppressive-fire.png",
     "type": "Feat",
     "traits": null
@@ -126,6 +139,7 @@
     "name": "Way of the Sarlacc",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 4,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-way-of-the-sarlacc.png",
     "type": "Feat",
     "traits": null
@@ -135,6 +149,7 @@
     "name": "Trench Fighter",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 3,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-trench-fighter.png",
     "type": "Feat",
     "traits": null
@@ -144,6 +159,7 @@
     "name": "Dancing Weapon",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "xp": 4,
+    "back_id": "8071fd4e-cfcc-54f3-84bf-9e6df05ece51",
     "image": "hero-class-cards/diala-passil-dancing-weapon.png",
     "type": "Feat",
     "traits": null
@@ -153,6 +169,7 @@
     "name": "Rebel Elite",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 4,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-rebel-elite.png",
     "type": "Feat",
     "traits": null
@@ -162,6 +179,7 @@
     "name": "Vibro-Ax",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": null,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-vibro-ax.png",
     "type": "Melee Weapon",
     "traits": [
@@ -173,6 +191,7 @@
     "name": "Superior Positioning",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "xp": 4,
+    "back_id": "e74f34fe-c3c3-5b40-abda-82ffae8a4a7f",
     "image": "hero-class-cards/fenn-signis-superior-positioning.png",
     "type": "Feat",
     "traits": null
@@ -182,6 +201,7 @@
     "name": "Wookiee Fortitude",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 1,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-wookiee-fortitude.png",
     "type": "Feat",
     "traits": null
@@ -191,6 +211,7 @@
     "name": "Wookiee Loyalty",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 1,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-wookiee-loyalty.png",
     "type": "Feat",
     "traits": null
@@ -200,6 +221,7 @@
     "name": "Ferocity",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 2,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-ferocity.png",
     "type": "Feat",
     "traits": null
@@ -209,6 +231,7 @@
     "name": "Staggering Blow",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 2,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-staggering-blow.png",
     "type": "Feat",
     "traits": null
@@ -218,6 +241,7 @@
     "name": "Rampage",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 3,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-rampage.png",
     "type": "Feat",
     "traits": null
@@ -227,6 +251,7 @@
     "name": "Vicious Strike",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 3,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-vicious-strike.png",
     "type": "Feat",
     "traits": null
@@ -236,6 +261,7 @@
     "name": "Brutal Cleave",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 4,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-brutal-cleave.png",
     "type": "Feat",
     "traits": null
@@ -245,6 +271,7 @@
     "name": "Unstoppable",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "xp": 4,
+    "back_id": "498f1195-54db-5557-90fa-32f9519db76a",
     "image": "hero-class-cards/gaarkhan-unstoppable.png",
     "type": "Feat",
     "traits": null
@@ -254,6 +281,7 @@
     "name": "Holdout Blaster",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": null,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-holdout-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -266,6 +294,7 @@
     "name": "Called Shot",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 1,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-called-shot.png",
     "type": "Feat",
     "traits": null
@@ -275,6 +304,7 @@
     "name": "Military Efficiency",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 1,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-military-efficiency.png",
     "type": "Feat",
     "traits": null
@@ -284,6 +314,7 @@
     "name": "Air of Command",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 2,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-air-of-command.png",
     "type": "Feat",
     "traits": null
@@ -293,6 +324,7 @@
     "name": "Mobile Tactician",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 2,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-mobile-tactician.png",
     "type": "Feat",
     "traits": null
@@ -302,6 +334,7 @@
     "name": "For the Cause",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 3,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-for-the-cause.png",
     "type": "Feat",
     "traits": null
@@ -311,6 +344,7 @@
     "name": "Rallying Shout",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 3,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-rallying-shout.png",
     "type": "Feat",
     "traits": null
@@ -320,6 +354,7 @@
     "name": "Hammer and Anvil",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 4,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-hammer-and-anvil.png",
     "type": "Feat",
     "traits": null
@@ -329,6 +364,7 @@
     "name": "Masterstroke",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "xp": 4,
+    "back_id": "b277ccc2-24eb-5e0f-aa4c-287bdc5fc059",
     "image": "hero-class-cards/gideon-argus-masterstroke.png",
     "type": "Feat",
     "traits": null
@@ -338,6 +374,7 @@
     "name": "Repeating Blaster",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": null,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-repeating-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -350,6 +387,7 @@
     "name": "Advance",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 1,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-advance.png",
     "type": "Feat",
     "traits": null
@@ -359,6 +397,7 @@
     "name": "Shake It Off",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 1,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-shake-it-off.png",
     "type": "Feat",
     "traits": null
@@ -368,6 +407,7 @@
     "name": "Crushing Blow",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 2,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-crushing-blow.png",
     "type": "Feat",
     "traits": null
@@ -377,6 +417,7 @@
     "name": "Into The Fray",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 2,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-into-the-fray.png",
     "type": "Feat",
     "traits": null
@@ -386,6 +427,7 @@
     "name": "Trophy Armor",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 3,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-trophy-armor.png",
     "type": "Armor",
     "traits": [
@@ -398,6 +440,7 @@
     "name": "Vibrobayonet",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 3,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-vibrobayonet.png",
     "type": "Ranged Weapon Modification",
     "traits": [
@@ -410,6 +453,7 @@
     "name": "Stay Down",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 4,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-stay-down.png",
     "type": "Feat",
     "traits": null
@@ -419,6 +463,7 @@
     "name": "Modified Blaster",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": null,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-modified-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -431,6 +476,7 @@
     "name": "Final Stand",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "xp": 4,
+    "back_id": "5924b591-dc22-5d91-94ab-75278118b2bf",
     "image": "hero-class-cards/biv-bodhrik-final-stand.png",
     "type": "Feat",
     "traits": null
@@ -440,6 +486,7 @@
     "name": "Unstable Device",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 1,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-unstable-device.png",
     "type": "Feat",
     "traits": null
@@ -449,6 +496,7 @@
     "name": "Tool Kit",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 1,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-tool-kit.png",
     "type": "Feat",
     "traits": null
@@ -458,6 +506,7 @@
     "name": "Structural Weakness",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 2,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-structural-weakness.png",
     "type": "Feat",
     "traits": null
@@ -467,6 +516,7 @@
     "name": "Energy Shield",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 2,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-energy-shield.png",
     "type": "Feat",
     "traits": null
@@ -476,6 +526,7 @@
     "name": "Gadgeteer",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 3,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-gadgeteer.png",
     "type": "Feat",
     "traits": null
@@ -485,6 +536,7 @@
     "name": "Power Converter",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 3,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-power-converter.png",
     "type": "Feat",
     "traits": null
@@ -494,6 +546,7 @@
     "name": "Adrenaline Injector",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 4,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-adrenaline-injector.png",
     "type": "Feat",
     "traits": null
@@ -503,6 +556,7 @@
     "name": "Remote Distribution",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "xp": 4,
+    "back_id": "db85a919-45fe-5ea4-ba0d-9cba4acb13c3",
     "image": "hero-class-cards/saska-teft-remote-distribution.png",
     "type": "Feat",
     "traits": null
@@ -512,6 +566,7 @@
     "name": "Vintage Blaster",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": null,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-vintage-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -524,6 +579,7 @@
     "name": "Quick As A Whip",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 1,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-quick-as-a-whip.png",
     "type": "Feat",
     "traits": null
@@ -533,6 +589,7 @@
     "name": "Longblaster",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": null,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-longblaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -545,6 +602,7 @@
     "name": "Smugglers Luck",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 1,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-smugglers-luck.png",
     "type": "Feat",
     "traits": null
@@ -554,6 +612,7 @@
     "name": "Disengage",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 1,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-disengage.png",
     "type": "Feat",
     "traits": null
@@ -563,6 +622,7 @@
     "name": "Cheap Shot",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 2,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-cheap-shot.png",
     "type": "Feat",
     "traits": null
@@ -572,6 +632,7 @@
     "name": "Supply Network",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 1,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-supply-network.png",
     "type": "Feat",
     "traits": null
@@ -581,6 +642,7 @@
     "name": "Roll With It",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 2,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-roll-with-it.png",
     "type": "Feat",
     "traits": null
@@ -590,6 +652,7 @@
     "name": "Target Acquired",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 2,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-target-acquired.png",
     "type": "Feat",
     "traits": null
@@ -599,6 +662,7 @@
     "name": "Get Cocky",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 3,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-get-cocky.png",
     "type": "Feat",
     "traits": null
@@ -608,6 +672,7 @@
     "name": "Jeswandi Training",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 2,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-jeswandi-training.png",
     "type": "Feat",
     "traits": null
@@ -617,6 +682,7 @@
     "name": "Gunslinger",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 3,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-gunslinger.png",
     "type": "Feat",
     "traits": null
@@ -626,6 +692,7 @@
     "name": "Execute",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 3,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-execute.png",
     "type": "Feat",
     "traits": null
@@ -635,6 +702,7 @@
     "name": "Trick Shot",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 4,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-trick-shot.png",
     "type": "Feat",
     "traits": null
@@ -644,6 +712,7 @@
     "name": "Expertise",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 3,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-expertise.png",
     "type": "Feat",
     "traits": null
@@ -653,6 +722,7 @@
     "name": "Sidewinder",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "xp": 4,
+    "back_id": "280b0e9c-aa6f-5cae-96b7-8fb9576ea39e",
     "image": "hero-class-cards/jyn-odan-sidewinder.png",
     "type": "Feat",
     "traits": null
@@ -662,6 +732,7 @@
     "name": "No Escape",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 4,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-no-escape.png",
     "type": "Feat",
     "traits": null
@@ -671,6 +742,7 @@
     "name": "Decoy",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "xp": 4,
+    "back_id": "851aa166-e609-55f0-8505-5c2fa68cd245",
     "image": "hero-class-cards/mak-eshkarey-decoy.png",
     "type": "Feat",
     "traits": null
@@ -680,6 +752,7 @@
     "name": "All-Weather Rifle",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": null,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-all-weather-rifle.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -692,6 +765,7 @@
     "name": "Combat Spotter",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 1,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-combat-spotter.png",
     "type": "Feat",
     "traits": null
@@ -701,6 +775,7 @@
     "name": "Scouting Report",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 1,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-scouting-report.png",
     "type": "Feat",
     "traits": null
@@ -710,6 +785,7 @@
     "name": "Overwatch",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 2,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-overwatch.png",
     "type": "Feat",
     "traits": null
@@ -719,6 +795,7 @@
     "name": "Spectrum Scanner",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 2,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-spectrum-scanner.png",
     "type": "Equipment",
     "traits": [
@@ -730,6 +807,7 @@
     "name": "Scouts Guidance",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 3,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-scouts-guidance.png",
     "type": "Feat",
     "traits": null
@@ -739,6 +817,7 @@
     "name": "Study of Enemies",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 3,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-study-of-enemies.png",
     "type": "Feat",
     "traits": null
@@ -748,6 +827,7 @@
     "name": "Coordinated Attack",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 4,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-coordinated-attack.png",
     "type": "Feat",
     "traits": null
@@ -757,6 +837,7 @@
     "name": "Sidearm Blaster",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": null,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-sidearm-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -769,6 +850,7 @@
     "name": "Mon Cala Special Forces",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "xp": 4,
+    "back_id": "b49b5a8c-c1ea-5e28-8f0e-4a249ffd7335",
     "image": "hero-class-cards/loku-kanoloa-mon-cala-special-forces.png",
     "type": "Feat",
     "traits": null
@@ -778,6 +860,7 @@
     "name": "Bacta Injector",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 1,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-bacta-injector.png",
     "type": "Feat",
     "traits": null
@@ -787,6 +870,7 @@
     "name": "Fighting Knife",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": null,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-fighting-knife.png",
     "type": "Melee Weapon",
     "traits": [
@@ -798,6 +882,7 @@
     "name": "Improper Procedure",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 1,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-improper-procedure.png",
     "type": "Feat",
     "traits": null
@@ -807,6 +892,7 @@
     "name": "Military Blaster",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": null,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-military-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -819,6 +905,7 @@
     "name": "Field Surgeon",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 2,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-field-surgeon.png",
     "type": "Feat",
     "traits": null
@@ -828,6 +915,7 @@
     "name": "Combat Momentum",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 1,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-combat-momentum.png",
     "type": "Feat",
     "traits": null
@@ -837,6 +925,7 @@
     "name": "Fuel Injection",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 2,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-fuel-injection.png",
     "type": "Feat",
     "traits": null
@@ -846,6 +935,7 @@
     "name": "Create Opening",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 1,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-create-opening.png",
     "type": "Feat",
     "traits": null
@@ -855,6 +945,7 @@
     "name": "Adrenal Vapor",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 3,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-adrenal-vapor.png",
     "type": "Feat",
     "traits": null
@@ -864,6 +955,7 @@
     "name": "Ktara Maneuver",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 2,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-ktara-maneuver.png",
     "type": "Feat",
     "traits": null
@@ -873,6 +965,7 @@
     "name": "Miracle Worker",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 3,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-miracle-worker.png",
     "type": "Feat",
     "traits": null
@@ -882,6 +975,7 @@
     "name": "Student of Battle",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 2,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-student-of-battle.png",
     "type": "Feat",
     "traits": null
@@ -891,6 +985,7 @@
     "name": "Bacta Radiator",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 4,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-bacta-radiator.png",
     "type": "Feat",
     "traits": null
@@ -900,6 +995,7 @@
     "name": "Improvised Cover",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 3,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-improvised-cover.png",
     "type": "Feat",
     "traits": null
@@ -909,6 +1005,7 @@
     "name": "Combat Override",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "xp": 4,
+    "back_id": "2e63faba-058f-5b5e-8e84-911202d17dd2",
     "image": "hero-class-cards/mhd-19-combat-override.png",
     "type": "Feat",
     "traits": null
@@ -918,6 +1015,7 @@
     "name": "Point Blank Shot",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 3,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-point-blank-shot.png",
     "type": "Feat",
     "traits": null
@@ -927,6 +1025,7 @@
     "name": "Combat Mastery",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 4,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-combat-mastery.png",
     "type": "Feat",
     "traits": null
@@ -936,6 +1035,7 @@
     "name": "Master Operative",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "xp": 4,
+    "back_id": "0c7a7aba-422d-5c50-9e7c-5715b2a43c7a",
     "image": "hero-class-cards/verena-talos-master-operative.png",
     "type": "Feat",
     "traits": null
@@ -945,6 +1045,7 @@
     "name": "Heirloom Dagger",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": null,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-heirloom-dagger.png",
     "type": "Melee Weapon",
     "traits": [
@@ -956,6 +1057,7 @@
     "name": "Covert Operative",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 1,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-covert-operative.png",
     "type": "Feat",
     "traits": null
@@ -965,6 +1067,7 @@
     "name": "Elusive Agent",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 1,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-elusive-agent.png",
     "type": "Feat",
     "traits": null
@@ -974,6 +1077,7 @@
     "name": "Blindside",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 2,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-blindside.png",
     "type": "Feat",
     "traits": null
@@ -983,6 +1087,7 @@
     "name": "Falling Leaf",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 2,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-falling-leaf.png",
     "type": "Feat",
     "traits": null
@@ -992,6 +1097,7 @@
     "name": "Force Illusion",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 3,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-force-illusion.png",
     "type": "Feat",
     "traits": null
@@ -1001,6 +1107,7 @@
     "name": "Shrouded Lightsaber",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 3,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-shrouded-lightsaber.png",
     "type": "Melee Weapon",
     "traits": [
@@ -1013,6 +1120,7 @@
     "name": "Fell Swoop",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 4,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-fell-swoop.png",
     "type": "Feat",
     "traits": null
@@ -1022,6 +1130,7 @@
     "name": "Diplomats Blaster",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": null,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-diplomats-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1034,6 +1143,7 @@
     "name": "Embody the Force",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "xp": 4,
+    "back_id": "76de0af6-5c57-5459-881c-149441dbdcad",
     "image": "hero-class-cards/davith-elso-embody-the-force.png",
     "type": "Feat",
     "traits": null
@@ -1043,6 +1153,7 @@
     "name": "Company of Heroes",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 1,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-company-of-heroes.png",
     "type": "Feat",
     "traits": null
@@ -1052,6 +1163,7 @@
     "name": "Sonic Bellow",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 1,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-sonic-bellow.png",
     "type": "Feat",
     "traits": null
@@ -1061,6 +1173,7 @@
     "name": "Rebel Propaganda",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 2,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-rebel-propaganda.png",
     "type": "Feat",
     "traits": null
@@ -1070,6 +1183,7 @@
     "name": "Professional Aide",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 2,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-professional-aide.png",
     "type": "Feat",
     "traits": null
@@ -1079,6 +1193,7 @@
     "name": "Solidarity",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 3,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-solidarity.png",
     "type": "Feat",
     "traits": null
@@ -1088,6 +1203,7 @@
     "name": "Double Agent",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 3,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-double-agent.png",
     "type": "Feat",
     "traits": null
@@ -1097,6 +1213,7 @@
     "name": "Waylay",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 4,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-waylay.png",
     "type": "Feat",
     "traits": null
@@ -1106,6 +1223,7 @@
     "name": "Lead from the Front",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "xp": 4,
+    "back_id": "ad2ccadc-8511-553e-a3f3-510a5323da03",
     "image": "hero-class-cards/murne-rin-lead-from-the-front.png",
     "type": "Feat",
     "traits": null
@@ -1115,6 +1233,7 @@
     "name": "Bodyguard Rifle",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": null,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-bodyguard-rifle.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1127,6 +1246,7 @@
     "name": "Get Down",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 1,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-get-down.png",
     "type": "Feat",
     "traits": null
@@ -1136,6 +1256,7 @@
     "name": "Keep Up",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 1,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-keep-up.png",
     "type": "Feat",
     "traits": null
@@ -1145,6 +1266,7 @@
     "name": "Mutual Destruction",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 2,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-mutual-destruction.png",
     "type": "Feat",
     "traits": null
@@ -1154,6 +1276,7 @@
     "name": "Stay Behind Me",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 2,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-stay-behind-me.png",
     "type": "Feat",
     "traits": null
@@ -1163,6 +1286,7 @@
     "name": "Brute Strength",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 3,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-brute-strength.png",
     "type": "Feat",
     "traits": null
@@ -1172,6 +1296,7 @@
     "name": "Hold Still",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 3,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-hold-still.png",
     "type": "Feat",
     "traits": null
@@ -1181,6 +1306,7 @@
     "name": "Black Sun Armor",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 4,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-black-sun-armor.png",
     "type": "Armor",
     "traits": [
@@ -1192,6 +1318,7 @@
     "name": "Duelists Blade",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": null,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-duelists-blade.png",
     "type": "Melee Weapon",
     "traits": [
@@ -1203,6 +1330,7 @@
     "name": "Dont Make Me Hurt You",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "xp": 4,
+    "back_id": "15df6ef9-25ae-5ac1-a986-b6ba43646095",
     "image": "hero-class-cards/onar-koma-dont-make-me-hurt-you.png",
     "type": "Feat",
     "traits": null
@@ -1212,6 +1340,7 @@
     "name": "All-Out Attack",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 1,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-all-out-attack.png",
     "type": "Feat",
     "traits": null
@@ -1221,6 +1350,7 @@
     "name": "Hair-Trigger Pistol",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": null,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-hair-trigger-pistol.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1233,6 +1363,7 @@
     "name": "Responsiveness",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 1,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-responsiveness.png",
     "type": "Feat",
     "traits": null
@@ -1242,6 +1373,7 @@
     "name": "Pinpoint Shot",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 1,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-pinpoint-shot.png",
     "type": "Feat",
     "traits": null
@@ -1251,6 +1383,7 @@
     "name": "Proximity Strike",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 2,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-proximity-strike.png",
     "type": "Feat",
     "traits": null
@@ -1260,6 +1393,7 @@
     "name": "Shot on the Run",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 1,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-shot-on-the-run.png",
     "type": "Feat",
     "traits": null
@@ -1269,6 +1403,7 @@
     "name": "Smoke Bombs",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 2,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-smoke-bombs.png",
     "type": "Equipment",
     "traits": [
@@ -1280,6 +1415,7 @@
     "name": "Battlefield Experience",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 2,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-battlefield-experience.png",
     "type": "Feat",
     "traits": null
@@ -1289,6 +1425,7 @@
     "name": "Remote Detonator",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 3,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-remote-detonator.png",
     "type": "Equipment",
     "traits": [
@@ -1300,6 +1437,7 @@
     "name": "Sharpshooter",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 2,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-sharpshooter.png",
     "type": "Feat",
     "traits": null
@@ -1309,6 +1447,7 @@
     "name": "Swords Dance",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 3,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-swords-dance.png",
     "type": "Feat",
     "traits": null
@@ -1318,6 +1457,7 @@
     "name": "Dead On",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 3,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-dead-on.png",
     "type": "Feat",
     "traits": null
@@ -1327,6 +1467,7 @@
     "name": "Full Sweep",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 4,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-full-sweep.png",
     "type": "Feat",
     "traits": null
@@ -1336,6 +1477,7 @@
     "name": "Off-Hand Blaster",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 3,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-off-hand-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1348,6 +1490,7 @@
     "name": "Deadly Grace",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "xp": 4,
+    "back_id": "5c017229-79c9-593d-a496-9400f83bf3e7",
     "image": "hero-class-cards/shyla-varad-deadly-grace.png",
     "type": "Feat",
     "traits": null
@@ -1357,6 +1500,7 @@
     "name": "Merciless",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 4,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-merciless.png",
     "type": "Feat",
     "traits": null
@@ -1366,6 +1510,7 @@
     "name": "Rapid Fire",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "xp": 4,
+    "back_id": "dd86a688-50e8-5a9b-b776-5a768a912e9c",
     "image": "hero-class-cards/vinto-hreeda-rapid-fire.png",
     "type": "Feat",
     "traits": null
@@ -1375,6 +1520,7 @@
     "name": "MGL-9 Boomer",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": null,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-mgl-9-boomer.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1387,6 +1533,7 @@
     "name": "Charging Up",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 1,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-charging-up.png",
     "type": "Feat",
     "traits": null
@@ -1396,6 +1543,7 @@
     "name": "Leave No One Behind",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 1,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-leave-no-one-behind.png",
     "type": "Feat",
     "traits": null
@@ -1405,6 +1553,7 @@
     "name": "Bank Shot",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 2,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-bank-shot.png",
     "type": "Feat",
     "traits": null
@@ -1414,6 +1563,7 @@
     "name": "Shrapnel Rounds",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 2,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-shrapnel-rounds.png",
     "type": "Ranged Weapon Modification",
     "traits": [
@@ -1425,6 +1575,7 @@
     "name": "Repeater Cannon",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 3,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-repeater-cannon.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1437,6 +1588,7 @@
     "name": "Structural Exploitation",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 3,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-structural-exploitation.png",
     "type": "Feat",
     "traits": null
@@ -1446,6 +1598,7 @@
     "name": "Thermal Explosives",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 4,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-thermal-explosives.png",
     "type": "Feat",
     "traits": null
@@ -1455,6 +1608,7 @@
     "name": "Vibro-Claws",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": null,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-vibro-claws.png",
     "type": "Melee Weapon",
     "traits": [
@@ -1467,6 +1621,7 @@
     "name": "Wookiee Wrath",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "xp": 4,
+    "back_id": "f522787e-de1b-5a3b-a9bc-bbc4cda4b1fc",
     "image": "hero-class-cards/drokkatta-wookiee-wrath.png",
     "type": "Feat",
     "traits": null
@@ -1476,6 +1631,7 @@
     "name": "Balanced Approach",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 1,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-balanced-approach.png",
     "type": "Feat",
     "traits": null
@@ -1485,6 +1641,7 @@
     "name": "Service Rifle",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": null,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-service-rifle.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1497,6 +1654,7 @@
     "name": "Forward Momentum",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 1,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-forward-momentum.png",
     "type": "Feat",
     "traits": null
@@ -1506,6 +1664,7 @@
     "name": "Auxiliary Training",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 1,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-auxiliary-training.png",
     "type": "Feat",
     "traits": null
@@ -1515,6 +1674,7 @@
     "name": "Scouts Loadout",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 2,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-scouts-loadout.png",
     "type": "Feat",
     "traits": null
@@ -1524,6 +1684,7 @@
     "name": "Inch By Inch",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 1,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-inch-by-inch.png",
     "type": "Feat",
     "traits": null
@@ -1533,6 +1694,7 @@
     "name": "Slicers Upgrades",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 2,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-slicers-upgrades.png",
     "type": "Feat",
     "traits": null
@@ -1542,6 +1704,7 @@
     "name": "Combat Logistics",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 2,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-combat-logistics.png",
     "type": "Feat",
     "traits": null
@@ -1551,6 +1714,7 @@
     "name": "Explosive Reflexes",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 3,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-explosive-reflexes.png",
     "type": "Feat",
     "traits": null
@@ -1560,6 +1724,7 @@
     "name": "Dig In",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 2,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-dig-in.png",
     "type": "Feat",
     "traits": null
@@ -1569,6 +1734,7 @@
     "name": "Mutual Progression",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 3,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-mutual-progression.png",
     "type": "Feat",
     "traits": null
@@ -1578,6 +1744,7 @@
     "name": "Fire Support Specialist",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 3,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-fire-support-specialist.png",
     "type": "Feat",
     "traits": null
@@ -1587,6 +1754,7 @@
     "name": "Leaping Slash",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 4,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-leaping-slash.png",
     "type": "Feat",
     "traits": null
@@ -1596,6 +1764,7 @@
     "name": "Opportunist",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 3,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-opportunist.png",
     "type": "Feat",
     "traits": null
@@ -1605,6 +1774,7 @@
     "name": "Mechanical Master",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "xp": 4,
+    "back_id": "11625e4e-b999-5a5a-b721-fa2764575630",
     "image": "hero-class-cards/jarrod-kelvin-mechanical-master.png",
     "type": "Feat",
     "traits": null
@@ -1614,6 +1784,7 @@
     "name": "Self-sufficient",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 4,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-self-sufficient.png",
     "type": "Feat",
     "traits": null
@@ -1623,6 +1794,7 @@
     "name": "Squad Cohesion",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "xp": 4,
+    "back_id": "204a421b-37be-551a-8df2-d63314fbaa03",
     "image": "hero-class-cards/ko-tun-feralo-squad-cohesion.png",
     "type": "Feat",
     "traits": null
@@ -1632,6 +1804,7 @@
     "name": "DC-15S Blaster",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": null,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-dc-15s-blaster.png",
     "type": "Ranged Weapon",
     "traits": [
@@ -1643,6 +1816,7 @@
     "name": "Covering Fire",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 1,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-covering-fire.png",
     "type": "Feat",
     "traits": null
@@ -1652,6 +1826,7 @@
     "name": "Reload",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 1,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-reload.png",
     "type": "Feat",
     "traits": null
@@ -1661,6 +1836,7 @@
     "name": "Pin Them Down",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 2,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-pin-them-down.png",
     "type": "Feat",
     "traits": null
@@ -1670,6 +1846,7 @@
     "name": "Strafing Run",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 2,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-strafing-run.png",
     "type": "Feat",
     "traits": null
@@ -1679,6 +1856,7 @@
     "name": "Squad Tactics",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 3,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-squad-tactics.png",
     "type": "Feat",
     "traits": null
@@ -1688,6 +1866,7 @@
     "name": "Weakness Identified",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 3,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-weakness-identified.png",
     "type": "Feat",
     "traits": null
@@ -1697,6 +1876,7 @@
     "name": "Wild Fire",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 4,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-wild-fire.png",
     "type": "Feat",
     "traits": null
@@ -1706,6 +1886,7 @@
     "name": "Concentrated Fire",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "xp": 4,
+    "back_id": "90e24686-f665-50bb-9656-201739a42f5e",
     "image": "hero-class-cards/ct-1701-concentrated-fire.png",
     "type": "Feat",
     "traits": null
@@ -1715,6 +1896,7 @@
     "name": "Reinforced Cyberarm",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": null,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-reinforced-cyberarm.png",
     "type": "Melee Weapon",
     "traits": [
@@ -1726,6 +1908,7 @@
     "name": "Aryx Variation",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 1,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-aryx-variation.png",
     "type": "Feat",
     "traits": null
@@ -1735,6 +1918,7 @@
     "name": "Mynock Strike",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 1,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-mynock-strike.png",
     "type": "Feat",
     "traits": null
@@ -1744,6 +1928,7 @@
     "name": "Dianoga Sweep",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 2,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-dianoga-sweep.png",
     "type": "Feat",
     "traits": null
@@ -1753,6 +1938,7 @@
     "name": "Gundark Throw",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 2,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-gundark-throw.png",
     "type": "Feat",
     "traits": null
@@ -1762,6 +1948,7 @@
     "name": "Dragonsnake Variation",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 3,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-dragonsnake-variation.png",
     "type": "Feat",
     "traits": null
@@ -1771,6 +1958,7 @@
     "name": "Acklay Counter",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 3,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-acklay-counter.png",
     "type": "Feat",
     "traits": null
@@ -1780,6 +1968,7 @@
     "name": "Krayt Dragon Fury",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 4,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-krayt-dragon-fury.png",
     "type": "Feat",
     "traits": null
@@ -1789,6 +1978,7 @@
     "name": "Fluidity",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "xp": 4,
+    "back_id": "a6b8555f-5395-526d-ab41-5ec3d297a5d1",
     "image": "hero-class-cards/tress-hacnua-fluidity.png",
     "type": "Feat",
     "traits": null

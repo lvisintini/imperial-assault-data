@@ -11,7 +11,7 @@ key holds one. Ids are lowercase UUIDs (`definitions.json#/definitions/uuid`), u
 - Records that existed in 1.x have `uuid5(NAMESPACE, "<content type>:<old numeric id>")`, where `NAMESPACE` is
   `uuid5(NAMESPACE_URL, "https://github.com/lvisintini/imperial-assault-data")`. So 1.x ids can be translated: in
   Python, `uuid.uuid5(NAMESPACE, "deployment-cards:114")` is the 1.x Stormtrooper (114). Card backs had no id; theirs
-  is `uuid5(NAMESPACE, "card-backs:<content type>:<variant, or empty>")`.
+  is `uuid5(NAMESPACE, "card-backs:<1.x content type>:<1.x variant, or empty>")`.
 - Records added from 2.0.0 on get a random `uuid4`.
 - Ids never change once published. Records are kept in file order, not sorted by id.
 
@@ -257,7 +257,7 @@ erDiagram
 `epilogue-cards` are the cards a campaign mission can end on, two per mission: the Wave 11 packs each have one mission
 (an agenda or ally side mission) whose outcome picks one of its two epilogues. `mission_id` is that mission's
 `missions` row, so an epilogue reaches its product through its mission and has no `source-contents` rows. Each
-mission's epilogues have their own back, matched on the mission's name (see Card backs).
+mission's epilogues have their own back ("Executive Overreach Epilogues").
 
 Boardwars has none of them: their images come from the Tabletop Simulator save linked on #15, and the pairing of names
 to missions from the wiki's pack pages.
@@ -275,61 +275,48 @@ erDiagram
 
 ## Card backs
 
-Each `card-backs` record is the back of one deck and points at a content type through `content_type`. It has an
-`id`, though nothing references it yet (#52 will replace the matching rules below with a `back_id` on each card).
-When a content type has several backs, `variant` says which records a back belongs to, and it matches a different
-field in each content type:
+`card-backs` is a catalog of the backs printed on the cards: `name` and `image`. Every card points at its back
+through `back_id`, so finding a card's back takes no rules. A back's `name` is its deck, and which of the deck's backs
+it is when there are several: "Deployment: Rebel", "Rebel Hero: Biv Bodhrik", "Story Mission: Return to Hoth". A
+back's image has the size of the cards that use it.
 
-| `content_type`         | `variant` | Back belongs to the records where                                        |
-|------------------------|-----------|--------------------------------------------------------------------------|
-| `deployment-cards`     | set       | `affiliation` = `variant`                                                |
-| `heroes`               | set       | `name` = `variant`                                                       |
-| `imperial-classes`     | set       | `name` = `variant`                                                       |
-| `condition-cards`      | set       | `name` = `variant`                                                       |
-| `upgrade-cards`        | set       | `"Tier " + tier` = `variant`                                             |
-| `campaign-story-mission-cards`  | set | the mission is in the source whose `name` = `variant` (via its missions row) |
-| `campaign-threat-mission-cards` | set | the mission is in the source whose `name` = `variant` (via its missions row) |
-| `epilogue-cards`       | set       | the mission card (via `mission_id`) has `name` = `variant`               |
-| `form-cards`           | `Clawdite`| every record (all form cards share one back)                              |
-| any other type         | `null`    | every record of that type                                                |
+Some backs belong to a deck rather than to one card, and are printed on all of its cards: each hero's back (on its
+class cards), each Imperial class's back (on its class cards) and the agenda back (on the agenda cards). The cards
+carry `back_id`; heroes, `imperial-classes` and `agenda-decks` don't, and a parent's cards all share one back. One
+back can serve several content types: "Side Mission" is the back of all three side mission collections.
 
-Some backs are keyed on a parent record but are printed on its child cards: the `heroes` backs (deck "Rebel Hero")
-are on each hero's class cards, the `imperial-classes` backs on that class's cards, and the `agenda-decks` back on
-the agenda cards. To find a child card's back, go through its parent.
+`sources`, `maps` and `heroes` (hero sheets are two-sided) have no back, and `missions`, `mission-rewards`,
+`source-contents` and `requirements` are indexes and join tables, not cards. The skirmish mission back is a scan by
+the maintainer; the others come from boardwars, except the epilogue backs (with their cards, from the Tabletop
+Simulator save).
 
 ```mermaid
 erDiagram
-    card-backs ||--|{ deployment-cards : "variant = affiliation"
-    card-backs ||--|{ heroes : "variant = name"
-    card-backs ||--|{ imperial-classes : "variant = name"
-    card-backs ||--|{ condition-cards : "variant = name"
-    card-backs ||--|{ upgrade-cards : "variant = Tier + tier"
-    card-backs ||--|{ campaign-story-mission-cards : "variant = source name"
-    card-backs ||--|{ campaign-threat-mission-cards : "variant = source name"
-    card-backs ||--|{ epilogue-cards : "variant = mission name"
-    card-backs ||--|{ form-cards : "one back"
-    card-backs ||--|{ agenda-decks : "one back"
-    card-backs ||--|{ command-cards : "one back"
-    card-backs ||--|{ companion-cards : "one back"
-    card-backs ||--|{ reward-cards : "one back"
-    card-backs ||--|{ campaign-hero-side-mission-cards : "one back"
-    card-backs ||--|{ campaign-ally-side-mission-cards : "one back"
-    card-backs ||--|{ campaign-regular-side-mission-cards : "one back"
-    card-backs ||--|{ supply-cards : "one back"
+    card-backs ||--|{ agenda-cards : "back_id"
+    card-backs ||--|{ command-cards : "back_id"
+    card-backs ||--|{ companion-cards : "back_id"
+    card-backs ||--|{ condition-cards : "back_id"
+    card-backs ||--|{ deployment-cards : "back_id"
+    card-backs ||--|{ epilogue-cards : "back_id"
+    card-backs ||--|{ form-cards : "back_id"
+    card-backs ||--|{ hero-class-cards : "back_id"
+    card-backs ||--|{ imperial-class-cards : "back_id"
+    card-backs ||--|{ reward-cards : "back_id"
+    card-backs ||--|{ supply-cards : "back_id"
+    card-backs ||--|{ upgrade-cards : "back_id"
+    card-backs ||--|{ campaign-story-mission-cards : "back_id"
+    card-backs ||--|{ campaign-threat-mission-cards : "back_id"
+    card-backs ||--|{ campaign-hero-side-mission-cards : "back_id"
+    card-backs ||--|{ campaign-ally-side-mission-cards : "back_id"
+    card-backs ||--|{ campaign-regular-side-mission-cards : "back_id"
+    card-backs ||--|{ skirmish-mission-cards : "back_id"
 
     card-backs {
         uuid id PK
-        string deck "deck name shown on the back"
-        string content_type "target file"
-        string variant "null when the type has one back"
-    }
-    deployment-cards {
-        string affiliation "Imperial, Mercenary, Neutral, Rebel"
-    }
-    upgrade-cards {
-        int tier "1, 2, 3"
+        string name "deck, and which back of it"
     }
 ```
 
-`sources`, `maps` and `skirmish-mission-cards` have no card back (the dataset has no skirmish mission back yet). The three side mission collections share one back image, listed once per
-collection (until #52 makes card backs a catalog). `missions` and `mission-rewards` are indexes, not cards.
+Until 2.0.0, backs were matched to cards by `content_type` and a `variant` that matched a different field per type
+(an affiliation, a name, a tier, a product's name). `migrations/2.0.0/09_card_backs.py` applied those rules once to
+fill in `back_id`.

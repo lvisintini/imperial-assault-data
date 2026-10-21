@@ -29,9 +29,14 @@ class TestSite:
         assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
 
     def test_foreign_keys_cover_every_id_field(self):
-        """Every uuid field is an FK in FKS, or a link of MISSIONS, REWARDS or REQUIREMENTS (relations.js)."""
+        """Every uuid field is an FK in FKS, the card back (BACK), or a link of MISSIONS, REWARDS or REQUIREMENTS
+        (relations.js)."""
         relations = get_site_js('relations.js')
         site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*\}", relations))
+        back = dict(re.findall(r"(\w+): '([^']+)'", re.search(r"export const BACK = \{([^}]*)\}", relations)[1]))
+        assert back['parent'] == CONTENT_TYPES.CARD
+        site_fks |= {(content_type, back['field']) for content_type in CONTENT_TYPES.as_list
+                     if back['field'] in get_schema(content_type)['properties']}
         for name in ('MISSIONS', 'REWARDS', 'REQUIREMENTS'):
             block = re.search(rf"export const {name} = \{{([^}}]*)\}}", relations)[1]
             spec = dict(re.findall(r"(\w+): '([^']+)'", block))
@@ -50,14 +55,12 @@ class TestSite:
         }
         assert site_fks == schema_fks
 
-    def test_card_back_rules_cover_types_with_several_backs(self):
-        block = re.search(r"CARD_BACK_MATCH = \{(.*?)\};", get_site_js('relations.js'), re.S).group(1)
-        rules = set(re.findall(r"'([a-z-]+)':", block))
-        backs_per_type = {}
-        for back in get_data(CONTENT_TYPES.CARD):
-            backs_per_type[back['content_type']] = backs_per_type.get(back['content_type'], 0) + 1
-        assert {content_type for content_type, n in backs_per_type.items() if n > 1} <= rules
-        assert rules <= set(backs_per_type)
+    def test_back_parents_are_the_tests_parents(self):
+        """FKS entries with back: 'children' are the parents whose cards share a back (TestCardBacksIntegrity)."""
+        from tests.test_integrity import TestCardBacksIntegrity
+        children = re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*back: 'children'[^}]*\}",
+                              get_site_js('relations.js'))
+        assert dict(children) == TestCardBacksIntegrity.PARENTS
 
     def test_default_sorts_use_schema_fields(self):
         for content_type, entry in site_types().items():
@@ -107,8 +110,10 @@ class TestSite:
         assert strings(order) == CONTENT_TYPES.mission_types
 
     def test_back_thumbnails_have_card_backs(self):
-        """Types whose tiles show the card back (thumb: 'back') have one."""
-        backed = {back['content_type'] for back in get_data(CONTENT_TYPES.CARD)}
+        """Types whose tiles show the card back (thumb: 'back') have a back_id, or cards that share one (back:
+        'children' in FKS)."""
+        relations = get_site_js('relations.js')
         for content_type, entry in site_types().items():
             if "thumb: 'back'" in entry:
-                assert content_type in backed, content_type
+                assert 'back_id' in get_schema(content_type)['properties'] or re.search(
+                    rf"parent: '{content_type}'[^}}]*back: 'children'", relations), content_type

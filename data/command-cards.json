@@ -4,6 +4,7 @@
     "name": "A Powerful Influence",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/a-powerful-influence.png",
     "iaspec": "apowerfulinfluence"
   },
@@ -12,6 +13,7 @@
     "name": "Adrenaline",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/adrenaline.png",
     "iaspec": "adrenaline"
   },
@@ -20,6 +22,7 @@
     "name": "Advance Warning",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/advance-warning.png",
     "iaspec": "advancewarning"
   },
@@ -28,6 +31,7 @@
     "name": "Against the Odds",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/against-the-odds.png",
     "iaspec": "againsttheodds"
   },
@@ -36,6 +40,7 @@
     "name": "Assassinate",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/assassinate.png",
     "iaspec": "assassinate"
   },
@@ -44,6 +49,7 @@
     "name": "Ballistics Matrix",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/ballistics-matrix.png",
     "iaspec": "ballisticsmatrix"
   },
@@ -52,6 +58,7 @@
     "name": "Battlefield Awareness",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/battlefield-awareness.png",
     "iaspec": "battlefieldawareness"
   },
@@ -60,6 +67,7 @@
     "name": "Behind Enemy Lines",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/behind-enemy-lines.png",
     "iaspec": "behindenemylines"
   },
@@ -68,6 +76,7 @@
     "name": "Black Market Prices",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/black-market-prices.png",
     "iaspec": "blackmarketprices"
   },
@@ -76,6 +85,7 @@
     "name": "Bladestorm",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/bladestorm.png",
     "iaspec": "bladestorm"
   },
@@ -84,6 +94,7 @@
     "name": "Blaze of Glory",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/blaze-of-glory.png",
     "iaspec": "blazeofglory"
   },
@@ -92,6 +103,7 @@
     "name": "Blitz",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/blitz.png",
     "iaspec": "blitz"
   },
@@ -100,6 +112,7 @@
     "name": "Blood Feud",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/blood-feud.png",
     "iaspec": "bloodfeud"
   },
@@ -108,6 +121,7 @@
     "name": "Bodyguard",
     "cost": 1,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/bodyguard.png",
     "iaspec": "bodyguard"
   },
@@ -116,6 +130,7 @@
     "name": "Brace Yourself",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/brace-yourself.png",
     "iaspec": "braceyourself"
   },
@@ -124,6 +139,7 @@
     "name": "Brace for Impact",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/brace-for-impact.png",
     "iaspec": "braceforimpact"
   },
@@ -132,6 +148,7 @@
     "name": "Burst Fire",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/burst-fire.png",
     "iaspec": "burstfire"
   },
@@ -140,6 +157,7 @@
     "name": "Call the Vanguard",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/call-the-vanguard.png",
     "iaspec": "callthevanguard"
   },
@@ -148,6 +166,7 @@
     "name": "Camouflage",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/camouflage.png",
     "iaspec": "camouflage"
   },
@@ -156,6 +175,7 @@
     "name": "Capture The Weary",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/capture-the-weary.png",
     "iaspec": "capturetheweary"
   },
@@ -164,6 +184,7 @@
     "name": "Cavalry Charge",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/cavalry-charge.png",
     "iaspec": "cavalrycharge"
   },
@@ -172,6 +193,7 @@
     "name": "Celebration",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/celebration.png",
     "iaspec": "celebration"
   },
@@ -180,6 +202,7 @@
     "name": "Change of Plans",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/change-of-plans.png",
     "iaspec": "changeofplans"
   },
@@ -188,6 +211,7 @@
     "name": "Cheat to Win",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/cheat-to-win.png",
     "iaspec": "cheattowin"
   },
@@ -196,6 +220,7 @@
     "name": "Close the Gap",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/close-the-gap.png",
     "iaspec": "closethegap"
   },
@@ -204,6 +229,7 @@
     "name": "Collect Intel",
     "cost": 1,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/collect-intel.png",
     "iaspec": "collectintel"
   },
@@ -212,6 +238,7 @@
     "name": "Comm Disruption",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/comm-disruption.png",
     "iaspec": "commdisruption"
   },
@@ -220,6 +247,7 @@
     "name": "Coordinated Attack",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/coordinated-attack.png",
     "iaspec": "coordinatedattack"
   },
@@ -228,6 +256,7 @@
     "name": "Counter Attack",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/counter-attack.png",
     "iaspec": "counterattack"
   },
@@ -236,6 +265,7 @@
     "name": "Covering Fire",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/covering-fire.png",
     "iaspec": "coveringfire"
   },
@@ -244,6 +274,7 @@
     "name": "Cripple",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/cripple.png",
     "iaspec": "cripple"
   },
@@ -252,6 +283,7 @@
     "name": "Cruel Strike",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/cruel-strike.png",
     "iaspec": "cruelstrike"
   },
@@ -260,6 +292,7 @@
     "name": "Crush",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/crush.png",
     "iaspec": "crush"
   },
@@ -268,6 +301,7 @@
     "name": "Cut Lines",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/cut-lines.png",
     "iaspec": "cutlines"
   },
@@ -276,6 +310,7 @@
     "name": "Dangerous Bargains",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/dangerous-bargains.png",
     "iaspec": "dangerousbargains"
   },
@@ -284,6 +319,7 @@
     "name": "Data Theft",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/data-theft.png",
     "iaspec": "datatheft"
   },
@@ -292,6 +328,7 @@
     "name": "Deadeye",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/deadeye.png",
     "iaspec": "deadeye"
   },
@@ -300,6 +337,7 @@
     "name": "Deadly Precision",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/deadly-precision.png",
     "iaspec": "deadlyprecision"
   },
@@ -308,6 +346,7 @@
     "name": "Debts Repaid",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/debts-repaid.png",
     "iaspec": "debtsrepaid"
   },
@@ -316,6 +355,7 @@
     "name": "Deflection",
     "cost": 1,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/deflection.png",
     "iaspec": "deflection"
   },
@@ -324,6 +364,7 @@
     "name": "Devotion",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/devotion.png",
     "iaspec": "devotion"
   },
@@ -332,6 +373,7 @@
     "name": "Dirty Trick",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/dirty-trick.png",
     "iaspec": "dirtytrick"
   },
@@ -340,6 +382,7 @@
     "name": "Disable",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/disable.png",
     "iaspec": "disable"
   },
@@ -348,6 +391,7 @@
     "name": "Disorient",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/disorient.png",
     "iaspec": "disorient"
   },
@@ -356,6 +400,7 @@
     "name": "Draw",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/draw.png",
     "iaspec": "draw"
   },
@@ -364,6 +409,7 @@
     "name": "Eerie Visage",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/eerie-visage.png",
     "iaspec": "eerievisage"
   },
@@ -372,6 +418,7 @@
     "name": "Efficient Travel",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/efficient-travel.png",
     "iaspec": "efficienttravel"
   },
@@ -380,6 +427,7 @@
     "name": "Element of Surprise",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/element-of-surprise.png",
     "iaspec": "elementofsurprise"
   },
@@ -388,6 +436,7 @@
     "name": "Emergency Aid",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/emergency-aid.png",
     "iaspec": "emergencyaid"
   },
@@ -396,6 +445,7 @@
     "name": "Endless Reserves",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/endless-reserves.png",
     "iaspec": "endlessreserves"
   },
@@ -404,6 +454,7 @@
     "name": "Espionage Mastery",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/espionage-mastery.png",
     "iaspec": "espionagemastery"
   },
@@ -412,6 +463,7 @@
     "name": "Etiquette and Protocol",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/etiquette-and-protocol.png",
     "iaspec": "etiquetteandprotocol"
   },
@@ -420,6 +472,7 @@
     "name": "Evacuate",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/evacuate.png",
     "iaspec": "evacuate"
   },
@@ -428,6 +481,7 @@
     "name": "Explosive Weaponry",
     "cost": 1,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/explosive-weaponry.png",
     "iaspec": "explosiveweaponry"
   },
@@ -436,6 +490,7 @@
     "name": "Expose Weakness",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/expose-weakness.png",
     "iaspec": "exposeweakness"
   },
@@ -444,6 +499,7 @@
     "name": "Extra Protection",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/extra-protection.png",
     "iaspec": "extraprotection"
   },
@@ -452,6 +508,7 @@
     "name": "Fatal Deception",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/fatal-deception.png",
     "iaspec": "fataldeception"
   },
@@ -460,6 +517,7 @@
     "name": "Feral Swipes",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/feral-swipes.png",
     "iaspec": "feralswipes"
   },
@@ -468,6 +526,7 @@
     "name": "Ferocity",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/ferocity.png",
     "iaspec": "ferocity"
   },
@@ -476,6 +535,7 @@
     "name": "Field Tactician",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/field-tactician.png",
     "iaspec": "fieldtactician"
   },
@@ -484,6 +544,7 @@
     "name": "Fleet Footed",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/fleet-footed.png",
     "iaspec": "fleetfooted"
   },
@@ -492,6 +553,7 @@
     "name": "Flurry of Blades",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/flurry-of-blades.png",
     "iaspec": "flurryofblades"
   },
@@ -500,6 +562,7 @@
     "name": "Focus",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/focus.png",
     "iaspec": "focus"
   },
@@ -508,6 +571,7 @@
     "name": "Force Illusion",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/force-illusion.png",
     "iaspec": "forceillusion"
   },
@@ -516,6 +580,7 @@
     "name": "Force Lightning",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/force-lightning.png",
     "iaspec": "forcelightning"
   },
@@ -524,6 +589,7 @@
     "name": "Force Rush",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/force-rush.png",
     "iaspec": "forcerush"
   },
@@ -532,6 +598,7 @@
     "name": "Force Surge",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/force-surge.png",
     "iaspec": "forcesurge"
   },
@@ -540,6 +607,7 @@
     "name": "Fuel Upgrade",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/fuel-upgrade.png",
     "iaspec": "fuelupgrade"
   },
@@ -548,6 +616,7 @@
     "name": "Furious Charge",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/furious-charge.png",
     "iaspec": "furiouscharge"
   },
@@ -556,6 +625,7 @@
     "name": "Glory of the Kill",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/glory-of-the-kill.png",
     "iaspec": "gloryofthekill"
   },
@@ -564,6 +634,7 @@
     "name": "Grenadier",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/grenadier.png",
     "iaspec": "grenadier"
   },
@@ -572,6 +643,7 @@
     "name": "Grisly Contest",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/grisly-contest.png",
     "iaspec": "grislycontest"
   },
@@ -580,6 +652,7 @@
     "name": "Guardian Stance",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/guardian-stance.png",
     "iaspec": "guardianstance"
   },
@@ -588,6 +661,7 @@
     "name": "Hard to Hit",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hard-to-hit.png",
     "iaspec": "hardtohit"
   },
@@ -596,6 +670,7 @@
     "name": "Harsh Environment",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/harsh-environment.png",
     "iaspec": "harshenvironment"
   },
@@ -604,6 +679,7 @@
     "name": "Heart of Freedom",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/heart-of-freedom.png",
     "iaspec": "heartoffreedom"
   },
@@ -612,6 +688,7 @@
     "name": "Heavy Armor",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/heavy-armor.png",
     "iaspec": "heavyarmor"
   },
@@ -620,6 +697,7 @@
     "name": "Heightened Reflexes",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/heightened-reflexes.png",
     "iaspec": "heightenedreflexes"
   },
@@ -628,6 +706,7 @@
     "name": "Hidden Trap",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hidden-trap.png",
     "iaspec": "hiddentrap"
   },
@@ -636,6 +715,7 @@
     "name": "Hide in Plain Sight",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hide-in-plain-sight.png",
     "iaspec": "hideinplainsight"
   },
@@ -644,6 +724,7 @@
     "name": "Hit and Run",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hit-and-run.png",
     "iaspec": "hitandrun"
   },
@@ -652,6 +733,7 @@
     "name": "Hold Ground",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hold-ground.png",
     "iaspec": "holdground"
   },
@@ -660,6 +742,7 @@
     "name": "Hunt Them Down",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hunt-them-down.png",
     "iaspec": "huntthemdown"
   },
@@ -668,6 +751,7 @@
     "name": "Hunter Protocol",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hunter-protocol.png",
     "iaspec": "hunterprotocol"
   },
@@ -676,6 +760,7 @@
     "name": "I Can Feel It",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/i-can-feel-it.png",
     "iaspec": "icanfeelit"
   },
@@ -684,6 +769,7 @@
     "name": "I Must Go Alone",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/i-must-go-alone.png",
     "iaspec": "imustgoalone"
   },
@@ -692,6 +778,7 @@
     "name": "I make my own Luck",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/i-make-my-own-luck.png",
     "iaspec": "imakemyownluck"
   },
@@ -700,6 +787,7 @@
     "name": "Improvised Weapons",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/improvised-weapons.png",
     "iaspec": "improvisedweapons"
   },
@@ -708,6 +796,7 @@
     "name": "In the Shadows",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/in-the-shadows.png",
     "iaspec": "intheshadows"
   },
@@ -716,6 +805,7 @@
     "name": "Inspiring Speech",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/inspiring-speech.png",
     "iaspec": "inspiringspeech"
   },
@@ -724,6 +814,7 @@
     "name": "Intelligence Leak",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/intelligence-leak.png",
     "iaspec": "intelligenceleak"
   },
@@ -732,6 +823,7 @@
     "name": "Jump Jets",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/jump-jets.png",
     "iaspec": "jumpjets"
   },
@@ -740,6 +832,7 @@
     "name": "Jundland Terror",
     "cost": 2,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/jundland-terror.png",
     "iaspec": "jundlandterror"
   },
@@ -748,6 +841,7 @@
     "name": "Knowledge and Defense",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/knowledge-and-defense.png",
     "iaspec": "knowledgeanddefense"
   },
@@ -756,6 +850,7 @@
     "name": "Lock On",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/lock-on.png",
     "iaspec": "lockon"
   },
@@ -764,6 +859,7 @@
     "name": "Lord of the Sith",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/lord-of-the-sith.png",
     "iaspec": "lordofthesith"
   },
@@ -772,6 +868,7 @@
     "name": "Lure of the Dark Side",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/lure-of-the-dark-side.png",
     "iaspec": "lureofthedarkside"
   },
@@ -780,6 +877,7 @@
     "name": "Mandalorian Tactics",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/mandalorian-tactics.png",
     "iaspec": "mandaloriantactics"
   },
@@ -788,6 +886,7 @@
     "name": "Marksman",
     "cost": 1,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/marksman.png",
     "iaspec": "marksman"
   },
@@ -796,6 +895,7 @@
     "name": "Master Operative",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/master-operative.png",
     "iaspec": "masteroperative"
   },
@@ -804,6 +904,7 @@
     "name": "Maximum Firepower",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/maximum-firepower.png",
     "iaspec": "maximumfirepower"
   },
@@ -812,6 +913,7 @@
     "name": "Meditation",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/meditation.png",
     "iaspec": "meditation"
   },
@@ -820,6 +922,7 @@
     "name": "Merciless",
     "cost": 1,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/merciless.png",
     "iaspec": "merciless"
   },
@@ -828,6 +931,7 @@
     "name": "Miracle Worker",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/miracle-worker.png",
     "iaspec": "miracleworker"
   },
@@ -836,6 +940,7 @@
     "name": "Mitigate",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/mitigate.png",
     "iaspec": "mitigate"
   },
@@ -844,6 +949,7 @@
     "name": "Navigation Upgrade",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/navigation-upgrade.png",
     "iaspec": "navigationupgrade"
   },
@@ -852,6 +958,7 @@
     "name": "Negation",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/negation.png",
     "iaspec": "negation"
   },
@@ -860,6 +967,7 @@
     "name": "New Orders",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/new-orders.png",
     "iaspec": "neworders"
   },
@@ -868,6 +976,7 @@
     "name": "Of No Importance",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/of-no-importance.png",
     "iaspec": "ofnoimportance"
   },
@@ -876,6 +985,7 @@
     "name": "On a Mission",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/on-a-mission.png",
     "iaspec": "onamission"
   },
@@ -884,6 +994,7 @@
     "name": "On the Lam",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/on-the-lam.png",
     "iaspec": "onthelam"
   },
@@ -892,6 +1003,7 @@
     "name": "Opportunistic",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/opportunistic.png",
     "iaspec": "opportunistic"
   },
@@ -900,6 +1012,7 @@
     "name": "Optimal Bombardment",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/optimal-bombardment.png",
     "iaspec": "optimalbombardment"
   },
@@ -908,6 +1021,7 @@
     "name": "Overcharged Weapons",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/overcharged-weapons.png",
     "iaspec": "overchargedweapons"
   },
@@ -916,6 +1030,7 @@
     "name": "Overdrive",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/overdrive.png",
     "iaspec": "overdrive"
   },
@@ -924,6 +1039,7 @@
     "name": "Overrun",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/overrun.png",
     "iaspec": "overrun"
   },
@@ -932,6 +1048,7 @@
     "name": "Parry",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/parry.png",
     "iaspec": "parry"
   },
@@ -940,6 +1057,7 @@
     "name": "Parting Blow",
     "cost": 2,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/parting-blow.png",
     "iaspec": "partingblow"
   },
@@ -948,6 +1066,7 @@
     "name": "Payback",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/payback.png",
     "iaspec": "payback"
   },
@@ -956,6 +1075,7 @@
     "name": "Pickpocket",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/pickpocket.png",
     "iaspec": "pickpocket"
   },
@@ -964,6 +1084,7 @@
     "name": "Positioning Advantage",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/positioning-advantage.png",
     "iaspec": "positioningadvantage"
   },
@@ -972,6 +1093,7 @@
     "name": "Primary Target",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/primary-target.png",
     "iaspec": "primarytarget"
   },
@@ -980,6 +1102,7 @@
     "name": "Provoke",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/provoke.png",
     "iaspec": "provoke"
   },
@@ -988,6 +1111,7 @@
     "name": "Rally The Troops",
     "cost": 3,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/rally-the-troops.png",
     "iaspec": "rallythetroops"
   },
@@ -996,6 +1120,7 @@
     "name": "Rank and File",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/rank-and-file.png",
     "iaspec": "rankandfile"
   },
@@ -1004,6 +1129,7 @@
     "name": "Reinforcements",
     "cost": 2,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/reinforcements.png",
     "iaspec": "reinforcements"
   },
@@ -1012,6 +1138,7 @@
     "name": "Repair",
     "cost": 2,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/repair.png",
     "iaspec": "repair"
   },
@@ -1020,6 +1147,7 @@
     "name": "Reposition",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/reposition.png",
     "iaspec": "reposition"
   },
@@ -1028,6 +1156,7 @@
     "name": "Roar",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/roar.png",
     "iaspec": "roar"
   },
@@ -1036,6 +1165,7 @@
     "name": "Run for Cover",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/run-for-cover.png",
     "iaspec": "runforcover"
   },
@@ -1044,6 +1174,7 @@
     "name": "Self Defense",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/self-defense.png",
     "iaspec": "selfdefense"
   },
@@ -1052,6 +1183,7 @@
     "name": "Set For Stun",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/set-for-stun.png",
     "iaspec": "setforstun"
   },
@@ -1060,6 +1192,7 @@
     "name": "Set a Trap",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/set-a-trap.png",
     "iaspec": "setatrap"
   },
@@ -1068,6 +1201,7 @@
     "name": "Shared Experience",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/shared-experience.png",
     "iaspec": "sharedexperience"
   },
@@ -1076,6 +1210,7 @@
     "name": "Shoot the Messenger",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/shoot-the-messenger.png",
     "iaspec": "shootthemessenger"
   },
@@ -1084,6 +1219,7 @@
     "name": "Single Purpose",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/single-purpose.png",
     "iaspec": "singlepurpose"
   },
@@ -1092,6 +1228,7 @@
     "name": "Size Advantage",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/size-advantage.png",
     "iaspec": "sizeadvantage"
   },
@@ -1100,6 +1237,7 @@
     "name": "Slippery Target",
     "cost": 2,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/slippery-target.png",
     "iaspec": "slipperytarget"
   },
@@ -1108,6 +1246,7 @@
     "name": "Smuggled Supplies",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/smuggled-supplies.png",
     "iaspec": "smuggledsupplies"
   },
@@ -1116,6 +1255,7 @@
     "name": "Smugglers Tricks",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/smugglers-tricks.png",
     "iaspec": "smugglerstricks"
   },
@@ -1124,6 +1264,7 @@
     "name": "Squad Swarm",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/squad-swarm.png",
     "iaspec": "squadswarm"
   },
@@ -1132,6 +1273,7 @@
     "name": "Stall for Time",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/stall-for-time.png",
     "iaspec": "stallfortime"
   },
@@ -1140,6 +1282,7 @@
     "name": "Stay Down",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/stay-down.png",
     "iaspec": "staydown"
   },
@@ -1148,6 +1291,7 @@
     "name": "Stealth Tactics",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/stealth-tactics.png",
     "iaspec": "stealthtactics"
   },
@@ -1156,6 +1300,7 @@
     "name": "Stimulants",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/stimulants.png",
     "iaspec": "stimulants"
   },
@@ -1164,6 +1309,7 @@
     "name": "Strategic Shift",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/strategic-shift.png",
     "iaspec": "strategicshift"
   },
@@ -1172,6 +1318,7 @@
     "name": "Strength in Numbers",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/strength-in-numbers.png",
     "iaspec": "strengthinnumbers"
   },
@@ -1180,6 +1327,7 @@
     "name": "Stroke of Brilliance",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/stroke-of-brilliance.png",
     "iaspec": "strokeofbrilliance"
   },
@@ -1188,6 +1336,7 @@
     "name": "Survival Instincts",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/survival-instincts.png",
     "iaspec": "survivalinstincts"
   },
@@ -1196,6 +1345,7 @@
     "name": "Take Position",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/take-position.png",
     "iaspec": "takeposition"
   },
@@ -1204,6 +1354,7 @@
     "name": "Targeting Network",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/targeting-network.png",
     "iaspec": "targetingnetwork"
   },
@@ -1212,6 +1363,7 @@
     "name": "Terminal Network",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/terminal-network.png",
     "iaspec": "terminalnetwork"
   },
@@ -1220,6 +1372,7 @@
     "name": "Terminal Protocol",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/terminal-protocol.png",
     "iaspec": "terminalprotocol"
   },
@@ -1228,6 +1381,7 @@
     "name": "There is Another",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/there-is-another.png",
     "iaspec": "thereisanother"
   },
@@ -1236,6 +1390,7 @@
     "name": "Tools for the Job",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/tools-for-the-job.png",
     "iaspec": "toolsforthejob"
   },
@@ -1244,6 +1399,7 @@
     "name": "Tough Luck",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/tough-luck.png",
     "iaspec": "toughluck"
   },
@@ -1252,6 +1408,7 @@
     "name": "Toxic Dart",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/toxic-dart.png",
     "iaspec": "toxicdart"
   },
@@ -1260,6 +1417,7 @@
     "name": "Trandoshan Terror",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/trandoshan-terror.png",
     "iaspec": "trandoshanterror"
   },
@@ -1268,6 +1426,7 @@
     "name": "Triangulate",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/triangulate.png",
     "iaspec": "triangulate"
   },
@@ -1276,6 +1435,7 @@
     "name": "Utinni",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/utinni.png",
     "iaspec": "utinni"
   },
@@ -1284,6 +1444,7 @@
     "name": "Vanish",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/vanish.png",
     "iaspec": "vanish"
   },
@@ -1292,6 +1453,7 @@
     "name": "Wild Attack",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/wild-attack.png",
     "iaspec": "wildattack"
   },
@@ -1300,6 +1462,7 @@
     "name": "Wild Fury",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/wild-fury.png",
     "iaspec": "wildfury"
   },
@@ -1308,6 +1471,7 @@
     "name": "Wookiee Rage",
     "cost": 2,
     "limit": 2,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/wookiee-rage.png",
     "iaspec": "wookieerage"
   },
@@ -1316,6 +1480,7 @@
     "cost": 1,
     "limit": 1,
     "id": "72a62b51-fee6-5129-a928-aacf3f30995a",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/arcing-shot.png",
     "iaspec": "arcingshot"
   },
@@ -1324,6 +1489,7 @@
     "cost": 1,
     "limit": 1,
     "id": "e366159a-6603-598d-90a0-5acb8aa8fff3",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/armed-escort.png",
     "iaspec": "armedescort"
   },
@@ -1332,6 +1498,7 @@
     "cost": 2,
     "limit": 1,
     "id": "d94f44b1-0ba3-52ff-abff-150489e55441",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/balancing-force.png",
     "iaspec": "balancingforce"
   },
@@ -1340,6 +1507,7 @@
     "cost": 0,
     "limit": 1,
     "id": "41dbf3b3-5c0b-5a84-b86f-132952d1c9fb",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/battle-scars.png",
     "iaspec": "battlescars"
   },
@@ -1348,6 +1516,7 @@
     "cost": 2,
     "limit": 1,
     "id": "0d37c0eb-78bd-5062-8f0c-cd40b9068c6f",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/chaotic-force.png",
     "iaspec": "chaoticforce"
   },
@@ -1356,6 +1525,7 @@
     "cost": 1,
     "limit": 1,
     "id": "f7f72b0b-3450-5901-b108-86fe3d1830bc",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/collateral-damage.png",
     "iaspec": "collateraldamage"
   },
@@ -1364,6 +1534,7 @@
     "cost": 1,
     "limit": 1,
     "id": "17d1f6a1-6b4e-56d7-a9dc-372a104c1212",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/concentrated-fire.png",
     "iaspec": "concentratedfire"
   },
@@ -1372,6 +1543,7 @@
     "cost": 2,
     "limit": 1,
     "id": "b4505bad-f605-56f4-a316-9953397644dc",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/corrupting-force.png",
     "iaspec": "corruptingforce"
   },
@@ -1380,6 +1552,7 @@
     "cost": 1,
     "limit": 1,
     "id": "207d4065-9c4d-515d-94f1-4947adcd3c94",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/dark-energy.png",
     "iaspec": "darkenergy"
   },
@@ -1388,6 +1561,7 @@
     "cost": 1,
     "limit": 1,
     "id": "f6640bb9-8e9e-55eb-a3bd-e43be68588e3",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/deathblow.png",
     "iaspec": "deathblow"
   },
@@ -1396,6 +1570,7 @@
     "cost": 0,
     "limit": 1,
     "id": "017ee815-e425-5c2c-8543-f71ff890ac4c",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/droid-mastery.png",
     "iaspec": "droidmastery"
   },
@@ -1404,6 +1579,7 @@
     "cost": 1,
     "limit": 1,
     "id": "a20cea7a-c4df-51c7-b4a8-c44ffb9f9077",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/face-to-face.png",
     "iaspec": "facetoface"
   },
@@ -1412,6 +1588,7 @@
     "cost": 1,
     "limit": 1,
     "id": "6803f9dc-27aa-5229-91a1-dab8030308f5",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/field-supply.png",
     "iaspec": "fieldsupply"
   },
@@ -1420,6 +1597,7 @@
     "cost": 0,
     "limit": 1,
     "id": "11289781-ad78-5a43-aa1e-26086754a268",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/fool-me-once.png",
     "iaspec": "foolmeonce"
   },
@@ -1428,6 +1606,7 @@
     "cost": 1,
     "limit": 1,
     "id": "cea3d9f2-8bab-58ab-b3fd-601d5ad3b881",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/force-jump.png",
     "iaspec": "forcejump"
   },
@@ -1436,6 +1615,7 @@
     "cost": 1,
     "limit": 1,
     "id": "5829f914-18b2-54de-8cbb-3861880b89cd",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/force-push.png",
     "iaspec": "forcepush"
   },
@@ -1444,6 +1624,7 @@
     "cost": 1,
     "limit": 1,
     "id": "6014d508-5050-5d71-be78-9dd6e1684a6d",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/forward-march.png",
     "iaspec": "forwardmarch"
   },
@@ -1452,6 +1633,7 @@
     "cost": 0,
     "limit": 1,
     "id": "b7b9230d-2259-584d-94b4-48e482cc6fd4",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/heavy-ordnance.png",
     "iaspec": "heavyordnance"
   },
@@ -1460,6 +1642,7 @@
     "cost": 0,
     "limit": 1,
     "id": "8b65dda2-3e38-58b5-b052-f66fae6a3ca2",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/looking-for-a-fight.png",
     "iaspec": "lookingforafight"
   },
@@ -1468,6 +1651,7 @@
     "cost": 0,
     "limit": 1,
     "id": "5bd6c417-a679-5b1c-82bb-c9a06f22871b",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/officers-training.png",
     "iaspec": "officerstraining"
   },
@@ -1476,6 +1660,7 @@
     "cost": 2,
     "limit": 1,
     "id": "10590dd6-10b3-510e-b3c9-325c34a5b0e3",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/prepared-for-battle.png",
     "iaspec": "preparedforbattle"
   },
@@ -1484,6 +1669,7 @@
     "cost": 0,
     "limit": 1,
     "id": "90321b65-2322-5e61-a9fb-7dfbcaf1ef73",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/ready-weapons.png",
     "iaspec": "readyweapons"
   },
@@ -1492,6 +1678,7 @@
     "cost": 1,
     "limit": 1,
     "id": "8bf86170-971b-5ac1-9200-28cf608138c6",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/right-back-at-ya.png",
     "iaspec": "rightbackatya"
   },
@@ -1500,6 +1687,7 @@
     "cost": 2,
     "limit": 1,
     "id": "847263a9-7fd0-57b7-8600-19d7b52d63a7",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/unlimited-power.png",
     "iaspec": "unlimitedpower"
   },
@@ -1508,6 +1696,7 @@
     "cost": 1,
     "limit": 1,
     "id": "163ca708-9b5f-5bd5-9dde-5b55c8a07f95",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/wreak-vengeance.png",
     "iaspec": "wreakvengeance"
   },
@@ -1516,6 +1705,7 @@
     "cost": 2,
     "limit": 1,
     "id": "489eeb4a-54dd-54e9-b268-b1e69776c1e1",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/one-in-a-million.png",
     "iaspec": "oneinamillion"
   },
@@ -1524,6 +1714,7 @@
     "cost": 0,
     "limit": 1,
     "id": "b1589ad7-e505-5d6e-9fd0-b0e5ad235b04",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/planning.png",
     "iaspec": "planning"
   },
@@ -1532,6 +1723,7 @@
     "cost": 1,
     "limit": 1,
     "id": "bd4da1d0-fef3-5221-bf55-74c46b1cd0c9",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/price-on-their-heads.png",
     "iaspec": "priceontheirheads"
   },
@@ -1540,6 +1732,7 @@
     "cost": 1,
     "limit": 2,
     "id": "d0c73637-96e0-5f82-9d3e-587e669ec2ad",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/pummel.png",
     "iaspec": "pummel"
   },
@@ -1548,6 +1741,7 @@
     "cost": 0,
     "limit": 1,
     "id": "10be4a0a-4d87-5383-b209-9b5797d2b92d",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/rally.png",
     "iaspec": "rally"
   },
@@ -1556,6 +1750,7 @@
     "cost": 0,
     "limit": 1,
     "id": "d76f6672-c11d-5104-94a1-21116afb3a52",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/recovery.png",
     "iaspec": "recovery"
   },
@@ -1564,6 +1759,7 @@
     "cost": 1,
     "limit": 2,
     "id": "a1027cc2-1011-5021-898b-e6c85cc6956c",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/regroup.png",
     "iaspec": "regroup"
   },
@@ -1572,6 +1768,7 @@
     "cost": 2,
     "limit": 1,
     "id": "1b925785-42f7-5389-bfde-3be6eef8ad8d",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/sarlacc-sweep.png",
     "iaspec": "sarlaccsweep"
   },
@@ -1580,6 +1777,7 @@
     "cost": 3,
     "limit": 1,
     "id": "7389ffa5-a7bf-5fc7-9157-2c9e210259e8",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/shadow-ops.png",
     "iaspec": "shadowops"
   },
@@ -1588,6 +1786,7 @@
     "cost": 0,
     "limit": 1,
     "id": "240f2d12-d82a-5a1c-89e2-047dc7d60968",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/sit-tight.png",
     "iaspec": "sittight"
   },
@@ -1596,6 +1795,7 @@
     "cost": 3,
     "limit": 1,
     "id": "b2701e23-b546-5a0f-869e-1f97aa872fc4",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/son-of-skywalker.png",
     "iaspec": "sonofskywalker"
   },
@@ -1604,6 +1804,7 @@
     "cost": 0,
     "limit": 1,
     "id": "f16c0db6-52c4-5747-87d0-9d8be122577e",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/take-cover.png",
     "iaspec": "takecover"
   },
@@ -1612,6 +1813,7 @@
     "cost": 0,
     "limit": 1,
     "id": "f5bea603-31cb-5f33-8ff6-6d7592bb0cb2",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/take-initiative.png",
     "iaspec": "takeinitiative"
   },
@@ -1620,6 +1822,7 @@
     "cost": 3,
     "limit": 1,
     "id": "526e0eea-f00d-554b-b1f8-ad89701f6267",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/take-it-down.png",
     "iaspec": "takeitdown"
   },
@@ -1628,6 +1831,7 @@
     "cost": 1,
     "limit": 1,
     "id": "d37ae4db-7c53-5d48-8795-7110ccf45d16",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/telekinetic-throw.png",
     "iaspec": "telekineticthrow"
   },
@@ -1636,6 +1840,7 @@
     "cost": 0,
     "limit": 1,
     "id": "647a841c-d74f-52ce-b0a3-15ebfd4dd1b4",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/to-the-limit.png",
     "iaspec": "tothelimit"
   },
@@ -1644,6 +1849,7 @@
     "cost": 0,
     "limit": 1,
     "id": "b29e2a38-01a0-50bf-aa99-eee4550c4d99",
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/urgency.png",
     "iaspec": "urgency"
   },
@@ -1652,6 +1858,7 @@
     "name": "Marked Territory",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/marked-territory.png",
     "iaspec": "markedterritory"
   },
@@ -1660,6 +1867,7 @@
     "name": "Pack Alpha",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/pack-alpha.png",
     "iaspec": "packalpha"
   },
@@ -1668,6 +1876,7 @@
     "name": "Signal Jammer",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/signal-jammer.png",
     "iaspec": "signaljammer"
   },
@@ -1676,6 +1885,7 @@
     "name": "Spinning Kick",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/spinning-kick.png",
     "iaspec": "spinningkick"
   },
@@ -1684,6 +1894,7 @@
     "name": "Wild Fire",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/wild-fire.png",
     "iaspec": "wildfire"
   },
@@ -1692,6 +1903,7 @@
     "name": "Dying Lunge",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/dying-lunge.png",
     "iaspec": "dyinglunge"
   },
@@ -1700,6 +1912,7 @@
     "name": "Hour of Need",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hour-of-need.png",
     "iaspec": "hourofneed"
   },
@@ -1708,6 +1921,7 @@
     "name": "Learn by Example",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/learn-by-example.png",
     "iaspec": "learnbyexample"
   },
@@ -1716,6 +1930,7 @@
     "name": "Protect the Old Ways",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/protect-the-old-ways.png",
     "iaspec": "protecttheoldways"
   },
@@ -1724,6 +1939,7 @@
     "name": "Second Chance",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/second-chance.png",
     "iaspec": "secondchance"
   },
@@ -1732,6 +1948,7 @@
     "name": "Hostile Negotiation",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/hostile-negotiation.png",
     "iaspec": "hostilenegotiation"
   },
@@ -1740,6 +1957,7 @@
     "name": "Let's Make a Deal",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/lets-make-a-deal.png",
     "iaspec": "letsmakeadeal"
   },
@@ -1748,6 +1966,7 @@
     "name": "Out of Time",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/out-of-time.png",
     "iaspec": "outoftime"
   },
@@ -1756,6 +1975,7 @@
     "name": "Worth Every Credit",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/worth-every-credit.png",
     "iaspec": "wortheverycredit"
   },
@@ -1764,6 +1984,7 @@
     "name": "Escalating Hostility",
     "cost": 1,
     "limit": 3,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/escalating-hostility.png",
     "iaspec": "escalatinghostility"
   },
@@ -1772,6 +1993,7 @@
     "name": "Karabast!",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/karabast.png",
     "iaspec": "karabast"
   },
@@ -1780,6 +2002,7 @@
     "name": "Rebel Graffiti",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/rebel-graffiti.png",
     "iaspec": "rebelgraffiti"
   },
@@ -1788,6 +2011,7 @@
     "name": "Veteran Instincts",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/veteran-instincts.png",
     "iaspec": "veteraninstincts"
   },
@@ -1796,6 +2020,7 @@
     "name": "Combat Resupply",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/combat-resupply.png",
     "iaspec": "combatresupply"
   },
@@ -1804,6 +2029,7 @@
     "name": "Foresee",
     "cost": 0,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/foresee.png",
     "iaspec": "foresee"
   },
@@ -1812,6 +2038,7 @@
     "name": "Induce Rage",
     "cost": 1,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/induce-rage.png",
     "iaspec": "inducerage"
   },
@@ -1820,6 +2047,7 @@
     "name": "Price of Glory",
     "cost": 2,
     "limit": 1,
+    "back_id": "dea57ea3-757b-56d6-b817-9d5211f44550",
     "image": "command-cards/price-of-glory.png",
     "iaspec": "priceofglory"
   }

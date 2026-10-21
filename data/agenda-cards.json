@@ -5,6 +5,7 @@
     "agenda_id": "03703a2b-8690-5245-8575-ef7e1be52323",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/agents-of-the-empire-imperial-informants.png"
   },
   {
@@ -13,6 +14,7 @@
     "agenda_id": "03703a2b-8690-5245-8575-ef7e1be52323",
     "influence": 4,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/agents-of-the-empire-impounded.png"
   },
   {
@@ -21,6 +23,7 @@
     "agenda_id": "03703a2b-8690-5245-8575-ef7e1be52323",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/agents-of-the-empire-tracking-beacon.png"
   },
   {
@@ -29,6 +32,7 @@
     "agenda_id": "2733e25f-0fbe-52de-8dc9-7fb729195888",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/for-the-right-price-high-value-target.png"
   },
   {
@@ -37,6 +41,7 @@
     "agenda_id": "2733e25f-0fbe-52de-8dc9-7fb729195888",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/for-the-right-price-hired-help.png"
   },
   {
@@ -45,6 +50,7 @@
     "agenda_id": "2733e25f-0fbe-52de-8dc9-7fb729195888",
     "influence": 4,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/for-the-right-price-wanted.png"
   },
   {
@@ -53,6 +59,7 @@
     "agenda_id": "e0744683-124a-5b9a-abc1-6a41685cb612",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-discipline-fire-at-will.png"
   },
   {
@@ -61,6 +68,7 @@
     "agenda_id": "e0744683-124a-5b9a-abc1-6a41685cb612",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-discipline-impending-doom.png"
   },
   {
@@ -69,6 +77,7 @@
     "agenda_id": "e0744683-124a-5b9a-abc1-6a41685cb612",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-discipline-tactical-maneuvering.png"
   },
   {
@@ -77,6 +86,7 @@
     "agenda_id": "ade45f3d-4517-597f-ba6c-b1e04cffc2e6",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-industry-interrogation-protocol.png"
   },
   {
@@ -85,6 +95,7 @@
     "agenda_id": "ade45f3d-4517-597f-ba6c-b1e04cffc2e6",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-industry-means-of-production.png"
   },
   {
@@ -93,6 +104,7 @@
     "agenda_id": "ade45f3d-4517-597f-ba6c-b1e04cffc2e6",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-industry-restorative-supplies.png"
   },
   {
@@ -101,6 +113,7 @@
     "agenda_id": "91dce242-6c4d-5e18-939c-00e0794ed86f",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-security-bureau-isb-enforcers.png"
   },
   {
@@ -109,6 +122,7 @@
     "agenda_id": "91dce242-6c4d-5e18-939c-00e0794ed86f",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-security-bureau-imperial-operative.png"
   },
   {
@@ -117,6 +131,7 @@
     "agenda_id": "91dce242-6c4d-5e18-939c-00e0794ed86f",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-security-bureau-internal-affairs.png"
   },
   {
@@ -125,6 +140,7 @@
     "agenda_id": "09c32c88-3808-5774-97c9-3cd082b60ff2",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/lord-vaders-command-a-dark-power.png"
   },
   {
@@ -133,6 +149,7 @@
     "agenda_id": "09c32c88-3808-5774-97c9-3cd082b60ff2",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/lord-vaders-command-as-you-wish.png"
   },
   {
@@ -141,6 +158,7 @@
     "agenda_id": "09c32c88-3808-5774-97c9-3cd082b60ff2",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/lord-vaders-command-dark-obsession.png"
   },
   {
@@ -149,6 +167,7 @@
     "agenda_id": "2c8251ab-fea5-5b92-806e-41df38051ea4",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/retaliation-breaking-point.png"
   },
   {
@@ -157,6 +176,7 @@
     "agenda_id": "2c8251ab-fea5-5b92-806e-41df38051ea4",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/retaliation-tactical-explosives.png"
   },
   {
@@ -165,6 +185,7 @@
     "agenda_id": "2c8251ab-fea5-5b92-806e-41df38051ea4",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/retaliation-weakness-revealed.png"
   },
   {
@@ -173,6 +194,7 @@
     "agenda_id": "e8897411-6574-5516-8925-9c0c722e5129",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/pursuit-of-the-enemy-death-mark.png"
   },
   {
@@ -181,6 +203,7 @@
     "agenda_id": "e8897411-6574-5516-8925-9c0c722e5129",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/pursuit-of-the-enemy-fire-in-the-sky.png"
   },
   {
@@ -189,6 +212,7 @@
     "agenda_id": "e8897411-6574-5516-8925-9c0c722e5129",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/pursuit-of-the-enemy-strike-and-subdue.png"
   },
   {
@@ -197,6 +221,7 @@
     "agenda_id": "42866b3b-eced-55d2-96c8-3dd2e2254803",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-empires-reach-advanced-prototypes.png"
   },
   {
@@ -205,6 +230,7 @@
     "agenda_id": "42866b3b-eced-55d2-96c8-3dd2e2254803",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-empires-reach-data-security.png"
   },
   {
@@ -213,6 +239,7 @@
     "agenda_id": "42866b3b-eced-55d2-96c8-3dd2e2254803",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-empires-reach-infiltrated.png"
   },
   {
@@ -221,6 +248,7 @@
     "agenda_id": "40b26911-4729-51cb-8822-5873d5e68fd9",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/defensive-tactics-counter-strike.png"
   },
   {
@@ -229,6 +257,7 @@
     "agenda_id": "40b26911-4729-51cb-8822-5873d5e68fd9",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/defensive-tactics-enhanced-armor.png"
   },
   {
@@ -237,6 +266,7 @@
     "agenda_id": "40b26911-4729-51cb-8822-5873d5e68fd9",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/defensive-tactics-personal-shield-generators.png"
   },
   {
@@ -245,6 +275,7 @@
     "agenda_id": "f2d613e0-5ff4-5cf1-aab9-2b4a2a963561",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/natural-warfare-bestial-fury.png"
   },
   {
@@ -253,6 +284,7 @@
     "agenda_id": "f2d613e0-5ff4-5cf1-aab9-2b4a2a963561",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/natural-warfare-exposed-to-the-elements.png"
   },
   {
@@ -261,6 +293,7 @@
     "agenda_id": "f2d613e0-5ff4-5cf1-aab9-2b4a2a963561",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/natural-warfare-unchained.png"
   },
   {
@@ -269,6 +302,7 @@
     "agenda_id": "bbc040a7-6c19-5c08-8ead-bf8e245daacc",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/enhanced-interrogation-blackmail.png"
   },
   {
@@ -277,6 +311,7 @@
     "agenda_id": "bbc040a7-6c19-5c08-8ead-bf8e245daacc",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/enhanced-interrogation-learn-their-weaknesses.png"
   },
   {
@@ -285,6 +320,7 @@
     "agenda_id": "bbc040a7-6c19-5c08-8ead-bf8e245daacc",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/enhanced-interrogation-weak-links.png"
   },
   {
@@ -293,6 +329,7 @@
     "agenda_id": "88e4bded-1f96-508b-a15a-bbb03993cbbb",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/evasive-maneuvers-contingency-plan.png"
   },
   {
@@ -301,6 +338,7 @@
     "agenda_id": "88e4bded-1f96-508b-a15a-bbb03993cbbb",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/evasive-maneuvers-feigned-retreat.png"
   },
   {
@@ -309,6 +347,7 @@
     "agenda_id": "88e4bded-1f96-508b-a15a-bbb03993cbbb",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/evasive-maneuvers-hasty-ambush.png"
   },
   {
@@ -317,6 +356,7 @@
     "agenda_id": "bb910ec4-85fa-5597-a73e-9c186a89e89a",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/guild-hunters-abandoned-contract.png"
   },
   {
@@ -325,6 +365,7 @@
     "agenda_id": "bb910ec4-85fa-5597-a73e-9c186a89e89a",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/guild-hunters-call-your-shot.png"
   },
   {
@@ -333,6 +374,7 @@
     "agenda_id": "bb910ec4-85fa-5597-a73e-9c186a89e89a",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/guild-hunters-shoot-first.png"
   },
   {
@@ -341,6 +383,7 @@
     "agenda_id": "47a684d4-a959-559f-a2e0-b74c905c4eea",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/persistence-jetpacks.png"
   },
   {
@@ -349,6 +392,7 @@
     "agenda_id": "47a684d4-a959-559f-a2e0-b74c905c4eea",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/persistence-no-rest-for-the-weary.png"
   },
   {
@@ -357,6 +401,7 @@
     "agenda_id": "47a684d4-a959-559f-a2e0-b74c905c4eea",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/persistence-snap-fire.png"
   },
   {
@@ -365,6 +410,7 @@
     "agenda_id": "91882bf0-a7c3-5128-b647-7dc6d3481aae",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/droid-uprising-binary-revolution.png"
   },
   {
@@ -373,6 +419,7 @@
     "agenda_id": "91882bf0-a7c3-5128-b647-7dc6d3481aae",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/droid-uprising-firepower-upgrade.png"
   },
   {
@@ -381,6 +428,7 @@
     "agenda_id": "91882bf0-a7c3-5128-b647-7dc6d3481aae",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/droid-uprising-sabotaged-plans.png"
   },
   {
@@ -389,6 +437,7 @@
     "agenda_id": "f614bd12-4fcf-59d6-88b0-7609ff8a4e44",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/crimson-empire-best-of-the-best.png"
   },
   {
@@ -397,6 +446,7 @@
     "agenda_id": "f614bd12-4fcf-59d6-88b0-7609ff8a4e44",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/crimson-empire-infection.png"
   },
   {
@@ -405,6 +455,7 @@
     "agenda_id": "f614bd12-4fcf-59d6-88b0-7609ff8a4e44",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/crimson-empire-pulling-the-strings.png"
   },
   {
@@ -413,6 +464,7 @@
     "agenda_id": "d1e195b8-5a7b-5567-9511-6e302d1996bb",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/soldiers-for-hire-by-any-means-necessary.png"
   },
   {
@@ -421,6 +473,7 @@
     "agenda_id": "d1e195b8-5a7b-5567-9511-6e302d1996bb",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/soldiers-for-hire-no-disintegrations.png"
   },
   {
@@ -429,6 +482,7 @@
     "agenda_id": "d1e195b8-5a7b-5567-9511-6e302d1996bb",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/soldiers-for-hire-predator-and-prey.png"
   },
   {
@@ -437,6 +491,7 @@
     "agenda_id": "334a0ba7-9945-56c6-821a-b0909578ca1a",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/stormtrooper-support-military-presence.png"
   },
   {
@@ -445,6 +500,7 @@
     "agenda_id": "334a0ba7-9945-56c6-821a-b0909578ca1a",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/stormtrooper-support-perpetual-reinforcements.png"
   },
   {
@@ -453,6 +509,7 @@
     "agenda_id": "334a0ba7-9945-56c6-821a-b0909578ca1a",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/stormtrooper-support-strength-of-command.png"
   },
   {
@@ -461,6 +518,7 @@
     "agenda_id": "bd987e90-30d8-548c-a858-c2039effdddc",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/nefarious-dealings-back-room-bargains.png"
   },
   {
@@ -469,6 +527,7 @@
     "agenda_id": "bd987e90-30d8-548c-a858-c2039effdddc",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/nefarious-dealings-final-blast.png"
   },
   {
@@ -477,6 +536,7 @@
     "agenda_id": "bd987e90-30d8-548c-a858-c2039effdddc",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/nefarious-dealings-trade-routes-disrupted.png"
   },
   {
@@ -485,6 +545,7 @@
     "agenda_id": "dd386966-d430-55b8-8c71-6e5c535c6b49",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/vaders-fist-bunker-buster.png"
   },
   {
@@ -493,6 +554,7 @@
     "agenda_id": "dd386966-d430-55b8-8c71-6e5c535c6b49",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/vaders-fist-set-for-stun.png"
   },
   {
@@ -501,6 +563,7 @@
     "agenda_id": "dd386966-d430-55b8-8c71-6e5c535c6b49",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/vaders-fist-to-the-last-man.png"
   },
   {
@@ -509,6 +572,7 @@
     "agenda_id": "30b280d2-cc04-5273-a33e-ef31003399c8",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/tusken-treachery-grievous-wound.png"
   },
   {
@@ -517,6 +581,7 @@
     "agenda_id": "30b280d2-cc04-5273-a33e-ef31003399c8",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/tusken-treachery-into-the-wastes.png"
   },
   {
@@ -525,6 +590,7 @@
     "agenda_id": "30b280d2-cc04-5273-a33e-ef31003399c8",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/tusken-treachery-relocated.png"
   },
   {
@@ -533,6 +599,7 @@
     "agenda_id": "46bbe30b-ee5d-5726-8c5a-aa79c151b92f",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/punishing-tactics-a-bounty-protected.png"
   },
   {
@@ -541,6 +608,7 @@
     "agenda_id": "46bbe30b-ee5d-5726-8c5a-aa79c151b92f",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/punishing-tactics-beaten-down.png"
   },
   {
@@ -549,6 +617,7 @@
     "agenda_id": "46bbe30b-ee5d-5726-8c5a-aa79c151b92f",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/punishing-tactics-targeted-cruelty.png"
   },
   {
@@ -557,6 +626,7 @@
     "agenda_id": "7f9b1501-0916-5316-9fa9-11c20b996ae4",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/bombardment-armored-division.png"
   },
   {
@@ -565,6 +635,7 @@
     "agenda_id": "7f9b1501-0916-5316-9fa9-11c20b996ae4",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/bombardment-explosive-shrapnel.png"
   },
   {
@@ -573,6 +644,7 @@
     "agenda_id": "7f9b1501-0916-5316-9fa9-11c20b996ae4",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/bombardment-fully-charged.png"
   },
   {
@@ -581,6 +653,7 @@
     "agenda_id": "eb756336-cfe5-571f-979e-fa4a53163901",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-intelligence-classified-techniques.png"
   },
   {
@@ -589,6 +662,7 @@
     "agenda_id": "eb756336-cfe5-571f-979e-fa4a53163901",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-intelligence-security-breach.png"
   },
   {
@@ -597,6 +671,7 @@
     "agenda_id": "eb756336-cfe5-571f-979e-fa4a53163901",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/imperial-intelligence-under-surveillance.png"
   },
   {
@@ -605,6 +680,7 @@
     "agenda_id": "12af9cee-a541-5ea3-ac29-c76afffafd6a",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/base-instincts-furious-retaliation.png"
   },
   {
@@ -613,6 +689,7 @@
     "agenda_id": "12af9cee-a541-5ea3-ac29-c76afffafd6a",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/base-instincts-gunrunner.png"
   },
   {
@@ -621,6 +698,7 @@
     "agenda_id": "12af9cee-a541-5ea3-ac29-c76afffafd6a",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/base-instincts-on-the-hunt.png"
   },
   {
@@ -629,6 +707,7 @@
     "agenda_id": "fc2002b6-2a69-5b26-966a-145d4ebb2358",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/infiltration-misdirection.png"
   },
   {
@@ -637,6 +716,7 @@
     "agenda_id": "fc2002b6-2a69-5b26-966a-145d4ebb2358",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/infiltration-quiet-entry.png"
   },
   {
@@ -645,6 +725,7 @@
     "agenda_id": "fc2002b6-2a69-5b26-966a-145d4ebb2358",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/infiltration-trip-mine.png"
   },
   {
@@ -653,6 +734,7 @@
     "agenda_id": "8a8789d2-4aff-569b-9e89-7a9a27f71fe0",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/contract-gunmen-hunter-for-a-fee.png"
   },
   {
@@ -661,6 +743,7 @@
     "agenda_id": "8a8789d2-4aff-569b-9e89-7a9a27f71fe0",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/contract-gunmen-stealth-squad.png"
   },
   {
@@ -669,6 +752,7 @@
     "agenda_id": "8a8789d2-4aff-569b-9e89-7a9a27f71fe0",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/contract-gunmen-top-target.png"
   },
   {
@@ -677,6 +761,7 @@
     "agenda_id": "a8d7a1e8-cea6-50db-bc1e-f388dcfce6ba",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/inquisition-cornered.png"
   },
   {
@@ -685,6 +770,7 @@
     "agenda_id": "a8d7a1e8-cea6-50db-bc1e-f388dcfce6ba",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/inquisition-targeted-by-the-empire.png"
   },
   {
@@ -693,6 +779,7 @@
     "agenda_id": "a8d7a1e8-cea6-50db-bc1e-f388dcfce6ba",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/inquisition-when-they-least-expect-it.png"
   },
   {
@@ -701,6 +788,7 @@
     "agenda_id": "e0f97d8e-f5ed-558e-b660-c185322061bb",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/wasteland-patrol-anchorhead-affair.png"
   },
   {
@@ -709,6 +797,7 @@
     "agenda_id": "e0f97d8e-f5ed-558e-b660-c185322061bb",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/wasteland-patrol-dewback-patrol.png"
   },
   {
@@ -717,6 +806,7 @@
     "agenda_id": "e0f97d8e-f5ed-558e-b660-c185322061bb",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/wasteland-patrol-flamethrower.png"
   },
   {
@@ -725,6 +815,7 @@
     "agenda_id": "a896fb92-90f2-52bc-ad09-4ad1b0a4ea9c",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/jabbas-empire-head-hunting.png"
   },
   {
@@ -733,6 +824,7 @@
     "agenda_id": "a896fb92-90f2-52bc-ad09-4ad1b0a4ea9c",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/jabbas-empire-on-jabbas-orders.png"
   },
   {
@@ -741,6 +833,7 @@
     "agenda_id": "a896fb92-90f2-52bc-ad09-4ad1b0a4ea9c",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/jabbas-empire-one-fat-slug.png"
   },
   {
@@ -749,6 +842,7 @@
     "agenda_id": "bf063bdb-b1c0-5a4a-837b-38b5e69a1fca",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/devious-droids-etiquette-and-torture.png"
   },
   {
@@ -757,6 +851,7 @@
     "agenda_id": "bf063bdb-b1c0-5a4a-837b-38b5e69a1fca",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/devious-droids-invasive-procedure.png"
   },
   {
@@ -765,6 +860,7 @@
     "agenda_id": "bf063bdb-b1c0-5a4a-837b-38b5e69a1fca",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/devious-droids-missile-salvo.png"
   },
   {
@@ -773,6 +869,7 @@
     "agenda_id": "e352e0be-16a0-50ae-b399-b76f7c28fdd3",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/desert-scavengers-ion-blasters.png"
   },
   {
@@ -781,6 +878,7 @@
     "agenda_id": "e352e0be-16a0-50ae-b399-b76f7c28fdd3",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/desert-scavengers-jawa-raid.png"
   },
   {
@@ -789,6 +887,7 @@
     "agenda_id": "e352e0be-16a0-50ae-b399-b76f7c28fdd3",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/desert-scavengers-salvage-operatives.png"
   },
   {
@@ -797,6 +896,7 @@
     "agenda_id": "44d9c7b5-ece3-576f-a953-8835fd93b79b",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-generals-scheme-forest-ambush.png"
   },
   {
@@ -805,6 +905,7 @@
     "agenda_id": "44d9c7b5-ece3-576f-a953-8835fd93b79b",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-generals-scheme-inspiring-command.png"
   },
   {
@@ -813,6 +914,7 @@
     "agenda_id": "44d9c7b5-ece3-576f-a953-8835fd93b79b",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-generals-scheme-special-modifications.png"
   },
   {
@@ -821,6 +923,7 @@
     "agenda_id": "6142030b-fb0f-545f-85e5-35da985b9c2a",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/field-commander-assault-coordination.png"
   },
   {
@@ -829,6 +932,7 @@
     "agenda_id": "6142030b-fb0f-545f-85e5-35da985b9c2a",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/field-commander-reinforcements-en-route.png"
   },
   {
@@ -837,6 +941,7 @@
     "agenda_id": "6142030b-fb0f-545f-85e5-35da985b9c2a",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/field-commander-unyieldng-dedication.png"
   },
   {
@@ -845,6 +950,7 @@
     "agenda_id": "84b71b35-65d3-5654-af1f-79db4597d496",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/security-protocols-heavy-riot-gear.png"
   },
   {
@@ -853,6 +959,7 @@
     "agenda_id": "84b71b35-65d3-5654-af1f-79db4597d496",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/security-protocols-shields-online.png"
   },
   {
@@ -861,6 +968,7 @@
     "agenda_id": "84b71b35-65d3-5654-af1f-79db4597d496",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/security-protocols-surveillance-cams.png"
   },
   {
@@ -869,6 +977,7 @@
     "agenda_id": "c0b10d40-7952-5384-adb8-4de837bc6142",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-emperors-plots-for-the-emperor.png"
   },
   {
@@ -877,6 +986,7 @@
     "agenda_id": "c0b10d40-7952-5384-adb8-4de837bc6142",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-emperors-plots-insidious.png"
   },
   {
@@ -885,6 +995,7 @@
     "agenda_id": "c0b10d40-7952-5384-adb8-4de837bc6142",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-emperors-plots-isolation.png"
   },
   {
@@ -893,6 +1004,7 @@
     "agenda_id": "8933f356-91a7-524e-ad5d-b2b94a8720a5",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/a-former-sith-critical-strikes.png"
   },
   {
@@ -901,6 +1013,7 @@
     "agenda_id": "8933f356-91a7-524e-ad5d-b2b94a8720a5",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/a-former-sith-dubious-disposition.png"
   },
   {
@@ -909,6 +1022,7 @@
     "agenda_id": "8933f356-91a7-524e-ad5d-b2b94a8720a5",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/a-former-sith-imminent-reprisal.png"
   },
   {
@@ -917,6 +1031,7 @@
     "agenda_id": "a762f2a2-fa7c-5fa6-95c5-b0c3de5b259c",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/war-of-attrition-acceptable-margins.png"
   },
   {
@@ -925,6 +1040,7 @@
     "agenda_id": "a762f2a2-fa7c-5fa6-95c5-b0c3de5b259c",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/war-of-attrition-costly-victory.png"
   },
   {
@@ -933,6 +1049,7 @@
     "agenda_id": "a762f2a2-fa7c-5fa6-95c5-b0c3de5b259c",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/war-of-attrition-selfless-devotion.png"
   },
   {
@@ -941,6 +1058,7 @@
     "agenda_id": "4e2d7f79-46b0-552c-92c7-c80f2122d4cb",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/weapons-division-gas-canisters.png"
   },
   {
@@ -949,6 +1067,7 @@
     "agenda_id": "4e2d7f79-46b0-552c-92c7-c80f2122d4cb",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/weapons-division-ongoing-research.png"
   },
   {
@@ -957,6 +1076,7 @@
     "agenda_id": "4e2d7f79-46b0-552c-92c7-c80f2122d4cb",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/weapons-division-prototypes.png"
   },
   {
@@ -965,6 +1085,7 @@
     "agenda_id": "7ef78ad6-b29d-5f3f-8a5d-653aee2d798c",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/ohnaka-gang-final-offer.png"
   },
   {
@@ -973,6 +1094,7 @@
     "agenda_id": "7ef78ad6-b29d-5f3f-8a5d-653aee2d798c",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/ohnaka-gang-missing-treasure.png"
   },
   {
@@ -981,6 +1103,7 @@
     "agenda_id": "7ef78ad6-b29d-5f3f-8a5d-653aee2d798c",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/ohnaka-gang-the-pirates-ploy.png"
   },
   {
@@ -989,6 +1112,7 @@
     "agenda_id": "3072c03a-e101-566c-a863-4a2e8af18b34",
     "influence": 1,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-art-of-war-piece-by-piece.png"
   },
   {
@@ -997,6 +1121,7 @@
     "agenda_id": "3072c03a-e101-566c-a863-4a2e8af18b34",
     "influence": 3,
     "mission": true,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-art-of-war-the-admirals-grip.png"
   },
   {
@@ -1005,6 +1130,7 @@
     "agenda_id": "3072c03a-e101-566c-a863-4a2e8af18b34",
     "influence": 2,
     "mission": false,
+    "back_id": "f814d46f-d9c1-5e28-be4d-5a0927e831c1",
     "image": "agenda-cards/the-art-of-war-three-steps-ahead.png"
   }
 ]

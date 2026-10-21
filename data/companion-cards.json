@@ -2,6 +2,7 @@
   {
     "id": "5d883b8b-ea0e-581d-98c4-c4ccadd7558f",
     "name": "Cam Droid",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/cam-droid.png",
     "traits": [
       "Droid"
@@ -13,6 +14,7 @@
   {
     "id": "3292445b-6a2e-5e7c-be18-ceee868d17bf",
     "name": "Junk Droid",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/junk-droid.png",
     "traits": [
       "Droid"
@@ -24,6 +26,7 @@
   {
     "id": "8b8ee864-1614-5f13-961e-f0c5188c4e10",
     "name": "R5 Astromech",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/r5-astromech.png",
     "traits": [
       "Droid"
@@ -35,6 +38,7 @@
   {
     "id": "da4e58ff-ee29-5b77-8396-7f0e66adfe41",
     "name": "Pit Droid",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/pit-droid.png",
     "traits": [
       "Droid"
@@ -46,6 +50,7 @@
   {
     "id": "4a8d861a-cf73-57da-b713-ff6ab1e350d3",
     "name": "Salacious B. Crumb",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/salacious-b-crumb.png",
     "traits": [
       "Brawler"
@@ -57,6 +62,7 @@
   {
     "id": "02506600-fc27-51bc-9b1e-9c6217aa18cb",
     "name": "88-Z",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/88-z.png",
     "traits": [
       "Droid"
@@ -68,6 +74,7 @@
   {
     "id": "76900d88-dd01-5354-a3da-92907c671a73",
     "name": "J4X-7",
+    "back_id": "092b531f-0b3a-5a06-8d68-80217ea29f5d",
     "image": "companion-cards/j4x-7.png",
     "traits": [
       "Droid"

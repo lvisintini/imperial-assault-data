@@ -28,6 +28,10 @@
       "description": "Determines if the agenda card is a mission or not",
       "type": "boolean"
     },
+    "back_id": {
+      "description": "Foreign key to this card's back in data/card-backs.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
     "image": {
       "description": "The file path for this command card's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -39,6 +43,7 @@
     "influence",
     "agenda_id",
     "mission",
+    "back_id",
     "image"
   ],
   "additionalProperties": false
