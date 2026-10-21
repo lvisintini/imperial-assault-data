@@ -133,13 +133,13 @@ class TestMissionsIntegrity:
                 for r in get_data(CONTENT_TYPES.MISSION_REWARDS)]
         assert len(rows) == len(set(rows))
 
-    def test_skirmish_missions_have_a_map(self):
+    def test_skirmish_and_raid_missions_have_a_map(self):
         assert all(m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS)
-                   if m['content_type'] == CONTENT_TYPES.SKIRMISH_MISSION)
+                   if m['content_type'] in (CONTENT_TYPES.SKIRMISH_MISSION, CONTENT_TYPES.RAID_MISSION))
 
     def test_maps_reach_products_through_their_missions(self):
-        """A map used by a mission is in its missions' products, so it has no source-contents rows of its own; a map
-        no mission uses yet (raid maps until raid missions exist) keeps them. Every map is in some product."""
+        """A map used by a mission is in its missions' products, so it has no source-contents rows of its own (only a
+        map no mission uses would have them). Every map is in some product."""
         used = {m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS) if m['map_id']}
         direct = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
                   if r['content_type'] == CONTENT_TYPES.MAP}

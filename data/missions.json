@@ -1420,5 +1420,17 @@
     "content_type": "skirmish-mission-cards",
     "content_id": "8868574e-915b-4f87-a058-0e2b25d79fa2",
     "map_id": "318adfeb-da27-581d-81f9-6c3405353509"
+  },
+  {
+    "id": "ad1831cb-f9a3-4f33-8a55-340400c607cb",
+    "content_type": "raid-missions",
+    "content_id": "89db6ab4-3c06-4179-8472-668034730608",
+    "map_id": "ce07d83f-b6e5-4167-9ccd-4d50d4bc1b81"
+  },
+  {
+    "id": "0f996a60-9d5b-4c8d-a0c8-0f56f9bd27d8",
+    "content_type": "raid-missions",
+    "content_id": "e3393352-f2e6-423a-8449-0f9c5a0b26e4",
+    "map_id": "9095d489-db62-4ed4-a403-b664f3b179b8"
   }
 ]
