@@ -17,7 +17,8 @@
         "campaign-hero-side-mission-cards",
         "campaign-ally-side-mission-cards",
         "campaign-regular-side-mission-cards",
-        "agenda-cards"
+        "agenda-cards",
+        "skirmish-mission-cards"
       ]
     },
     "content_id": {
@@ -25,7 +26,7 @@
       "$ref": "definitions.json#/definitions/uuid"
     },
     "map_id": {
-      "description": "Foreign key to the map in data/maps.json the mission is played on, or null when the dataset has no image of it (campaign maps, for now).",
+      "description": "Foreign key to the map in data/maps.json the mission is played on; null only when the dataset has no image of it (campaign maps, for now).",
       "oneOf": [
         {
           "$ref": "definitions.json#/definitions/uuid"

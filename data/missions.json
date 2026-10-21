@@ -796,5 +796,629 @@
     "content_type": "agenda-cards",
     "content_id": "e6e28e2f-f04b-51f8-9eae-f54b18a3a7ef",
     "map_id": null
+  },
+  {
+    "id": "ec29d31f-fb2e-4766-9519-cd017ef8f567",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "65b5dbe6-37bc-460f-a10f-bea762c1c9ff",
+    "map_id": "58c86223-f444-56a1-bfc4-75dbd2d7c568"
+  },
+  {
+    "id": "712e9702-b730-41a4-b9a9-a4ea88a18dd4",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "580c30c8-dbff-4e5d-b278-f02b766bbf17",
+    "map_id": "58c86223-f444-56a1-bfc4-75dbd2d7c568"
+  },
+  {
+    "id": "025dc6cd-693f-47bd-881d-07c4132a81e7",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d9434345-b1c1-42a8-9589-74b280795564",
+    "map_id": "805382a5-cb6b-5821-adb0-6c1c495c62cb"
+  },
+  {
+    "id": "4d5afaf8-492a-4ba4-9dae-b9c88a78ae50",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "a1e3724f-01c0-4318-9646-8f731b49d873",
+    "map_id": "805382a5-cb6b-5821-adb0-6c1c495c62cb"
+  },
+  {
+    "id": "b8b1e807-b681-4d4b-a3bd-52cd76bcf0f3",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d6a2b0b5-e3e5-46af-a28e-2bc82251d0ce",
+    "map_id": "ef0c005e-7c4f-5bf4-b97e-1fd8f06944cf"
+  },
+  {
+    "id": "d0dd490c-7daf-49a0-8e25-c7ccabca22ec",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "3f839a21-39e0-4f91-8556-06d7f80892e2",
+    "map_id": "ef0c005e-7c4f-5bf4-b97e-1fd8f06944cf"
+  },
+  {
+    "id": "9b354f37-bdc3-4cae-a26d-e96ece9c1bff",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "580452b1-a628-4c17-9462-1c485e333e02",
+    "map_id": "d3eabbdf-2977-523e-b0eb-fff07702b9cc"
+  },
+  {
+    "id": "7423de38-cca6-4563-aa32-1141dbece155",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "aa19125f-282a-4233-b7d1-5ce49e15df9b",
+    "map_id": "d3eabbdf-2977-523e-b0eb-fff07702b9cc"
+  },
+  {
+    "id": "a9995f82-8bb3-48d3-ad8b-6ba30351866e",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "62958d26-caaa-4129-9f26-c2a2cb3b9990",
+    "map_id": "3c4eb36b-4fef-50a2-9e0f-46737d84abfb"
+  },
+  {
+    "id": "a677137d-2180-428f-98c4-70ca4c1f96cd",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "6afc3910-c3bb-4aca-9ef7-31aad1d9f8d4",
+    "map_id": "3c4eb36b-4fef-50a2-9e0f-46737d84abfb"
+  },
+  {
+    "id": "36a91b52-ca2e-44f8-9f6b-ea85e8dbd04b",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "2c509d92-e693-460b-b9fd-58ffada5b03e",
+    "map_id": "32ad408f-d798-5cf4-8f94-433e93a202fe"
+  },
+  {
+    "id": "5aa1ad53-b8cb-4636-a132-2b1a246b5fd7",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "831340f8-ffe6-4785-8a64-24b06bf8cee1",
+    "map_id": "32ad408f-d798-5cf4-8f94-433e93a202fe"
+  },
+  {
+    "id": "0f45e8de-247b-4954-8552-226d9ca240e1",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "6dd90bfa-607a-4a3e-beb3-0af66747a62b",
+    "map_id": "4d6856ae-7d78-53bb-9def-9e4d846d9134"
+  },
+  {
+    "id": "8891b14e-b4c8-4c75-a473-41b4afe5f648",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "dfc7f1fa-7b0a-4e4c-9d1e-f9537a0286ba",
+    "map_id": "4d6856ae-7d78-53bb-9def-9e4d846d9134"
+  },
+  {
+    "id": "bc941671-a74a-4ed8-95aa-ad9d881f5169",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "dceb55b6-b241-4320-805f-69df336d4e46",
+    "map_id": "461acb8e-adeb-5c0b-b60e-7e46e9add7ae"
+  },
+  {
+    "id": "9354512b-7338-4766-b37f-02f2e28b0b03",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "1272e42e-4d4f-4776-aebe-c0a6d6b5e61a",
+    "map_id": "461acb8e-adeb-5c0b-b60e-7e46e9add7ae"
+  },
+  {
+    "id": "35c1ddd8-8ee7-4a3d-bec1-2656676d747e",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "4141846f-a963-4a1b-8fa1-69e1aa9e00f1",
+    "map_id": "8e9b9765-bf1b-5ce6-acb6-7f59c18a4307"
+  },
+  {
+    "id": "bd6431c8-a661-4c7e-a59b-5ee9cee0eb2a",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "874c35e6-7230-4691-8386-3f26d53e8399",
+    "map_id": "8e9b9765-bf1b-5ce6-acb6-7f59c18a4307"
+  },
+  {
+    "id": "5df0f979-4fd0-428a-ba4e-76ffd37124fb",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "9be39bfd-8bb8-4a90-ae16-32e02d59262a",
+    "map_id": "030b2c83-5c01-583a-ac43-1b046a0e7b66"
+  },
+  {
+    "id": "79fbbd3f-a02f-4451-9c75-41fc609ea694",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "3aef210c-5bf9-48e5-83dc-c730f08534fa",
+    "map_id": "030b2c83-5c01-583a-ac43-1b046a0e7b66"
+  },
+  {
+    "id": "e357380d-9d2b-4434-bb50-d11a1fe2bb9d",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "0471b990-fdef-46a2-a553-ecfcd0391aa2",
+    "map_id": "d17014d1-c45d-5054-b250-11209a0ebd54"
+  },
+  {
+    "id": "04749194-7e32-4856-95f1-2e1194009123",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d50072fc-d53a-4e90-a598-4a2842b70a61",
+    "map_id": "d17014d1-c45d-5054-b250-11209a0ebd54"
+  },
+  {
+    "id": "c6d27f43-1b90-4f19-934d-1a36213f5614",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "0a2301da-6b3b-4122-a392-d1455c73df68",
+    "map_id": "c591361e-dcc8-5138-9765-a19169148c22"
+  },
+  {
+    "id": "64998d07-7f27-4741-8497-15a1f13fbe50",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "19604de8-5b37-4d27-ac68-ab4b71aa0192",
+    "map_id": "c591361e-dcc8-5138-9765-a19169148c22"
+  },
+  {
+    "id": "4ad0526d-79ae-4761-8ec1-41bba4e3b7c0",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "28b3ffd2-73bd-45ba-8db0-5e5240a9598b",
+    "map_id": "873233ea-bc45-5aab-ae46-01fc4c09bccc"
+  },
+  {
+    "id": "b39d4ff4-fad4-47b8-9a35-ba57a2a06878",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "c9244a24-7d76-456e-9f6b-841118af0141",
+    "map_id": "873233ea-bc45-5aab-ae46-01fc4c09bccc"
+  },
+  {
+    "id": "50f8d2e4-2d22-46ff-a7ed-07de18db4228",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "7e2d93da-130c-4f01-8e5c-678e5e17205d",
+    "map_id": "598876df-ffe7-5df5-85b9-9997e8debba0"
+  },
+  {
+    "id": "e1ea9906-4807-4a1c-b1e5-e5bc6fd3f14e",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "9e4c5a4e-3560-4849-bc94-53a97d13a474",
+    "map_id": "598876df-ffe7-5df5-85b9-9997e8debba0"
+  },
+  {
+    "id": "0ae39536-7a59-4b77-8228-455ad35c9141",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "4cc02712-0b1e-44db-b30c-0d92933fe51c",
+    "map_id": "bd46d2d2-9f7f-5ea7-a89e-bfb59836d73a"
+  },
+  {
+    "id": "a8c0f8ef-9c07-471a-80c4-3432f5b0ebb3",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "817a1b61-e737-411f-8d6a-3b4708047aed",
+    "map_id": "bd46d2d2-9f7f-5ea7-a89e-bfb59836d73a"
+  },
+  {
+    "id": "98c8448f-b405-4753-9577-76315c50ee01",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "119ea61a-b832-42ea-905b-204678232b1b",
+    "map_id": "c1fdab2b-f0aa-5f08-aad5-7c61dc593476"
+  },
+  {
+    "id": "6678d6ee-268e-455e-8b9e-67a08935a258",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "11acf20f-22b5-4e32-9a3c-b36399632566",
+    "map_id": "c1fdab2b-f0aa-5f08-aad5-7c61dc593476"
+  },
+  {
+    "id": "19ff0d33-9188-4cd1-92da-d706c6fe8722",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "a9caf810-4451-4f3e-92ed-c9421c2bb7eb",
+    "map_id": "88b5af50-b0e1-5be5-bccb-620f38d3e8d3"
+  },
+  {
+    "id": "620d1319-1b7d-4271-9dc1-5b0d1807e1e5",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "832c466f-2d31-48c1-bd20-5c03b0ff4994",
+    "map_id": "88b5af50-b0e1-5be5-bccb-620f38d3e8d3"
+  },
+  {
+    "id": "b26fa82f-1317-4361-b3f1-e4f24b79475b",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "cedae60a-8765-45cd-8692-84db8a2b11d1",
+    "map_id": "f4c57528-e592-5772-a0e3-577a13b9f309"
+  },
+  {
+    "id": "3bac3ede-00a6-4447-b16e-d5cbce916871",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "683c988d-5bff-4c1e-8e6a-eab8893b702e",
+    "map_id": "f4c57528-e592-5772-a0e3-577a13b9f309"
+  },
+  {
+    "id": "30605279-1ec0-4926-86a7-f745eff9c5df",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "c1be6689-bd3c-41f1-9357-fefc1b6a23af",
+    "map_id": "17929f4e-9fc5-524b-b413-defe83e9dcd6"
+  },
+  {
+    "id": "904d757d-aa07-43c6-b2a0-32435913a0f2",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "1698e0db-feca-4497-8f31-0014a93e6285",
+    "map_id": "17929f4e-9fc5-524b-b413-defe83e9dcd6"
+  },
+  {
+    "id": "e1cd6a1d-bd2d-4eb2-a407-87edcc66ec03",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d79d752d-58e0-4b3c-82b2-773ee5278815",
+    "map_id": "f582e43f-8e05-5bdf-be35-881774271901"
+  },
+  {
+    "id": "3d3b3dd3-32f9-4528-8454-e1ca3cb067be",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "cff42d39-2f69-4322-a707-6b31f7ed4260",
+    "map_id": "f582e43f-8e05-5bdf-be35-881774271901"
+  },
+  {
+    "id": "21d205d8-00ad-4a2f-a67c-496b4d7adae3",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "59f9f427-86ab-4385-b152-8ba608b46ecd",
+    "map_id": "9ef04ffd-7416-441d-96f3-b39f8fe20197"
+  },
+  {
+    "id": "bb94508e-17e4-4ee1-b276-794b3fbea2da",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "6834231f-cae6-41e9-8d1f-2c6e790f394b",
+    "map_id": "9ef04ffd-7416-441d-96f3-b39f8fe20197"
+  },
+  {
+    "id": "1f6699b7-a72a-4fb8-8bad-70a69b0fbc7c",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "4987eeca-c889-41d3-b359-3d66c7190a32",
+    "map_id": "5c31ff0d-45db-5bc6-ae62-17ef4bbb4c27"
+  },
+  {
+    "id": "27f22265-3b23-4477-a516-c3e78254bb6e",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "0ef17918-4c5f-4140-bff4-8b49337762b2",
+    "map_id": "5c31ff0d-45db-5bc6-ae62-17ef4bbb4c27"
+  },
+  {
+    "id": "2494f4c4-ef91-4d06-9036-393da80ee23e",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "c540ccb7-0676-45eb-ab4f-479eae732f0f",
+    "map_id": "a8a59b91-684c-5e6a-9766-68af64ebe30a"
+  },
+  {
+    "id": "49897474-ad0f-4c4f-86d9-c862f4c6ac5f",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "b0cf7198-5e7e-4b12-a97e-11ef24ff9435",
+    "map_id": "a8a59b91-684c-5e6a-9766-68af64ebe30a"
+  },
+  {
+    "id": "f5016638-7953-4d12-b87a-91598ddec8ef",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "6a7d4fe0-1806-4d2d-82ca-22e13edc08ba",
+    "map_id": "572c740e-0812-5c87-8094-29f35cc332f1"
+  },
+  {
+    "id": "cb2fb5d8-4356-416e-8402-d85c187a3b8d",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "cb4d9a1c-fca1-4ad0-a7bb-72b54bde25af",
+    "map_id": "572c740e-0812-5c87-8094-29f35cc332f1"
+  },
+  {
+    "id": "90af19d4-5c31-44f3-92d2-397849f5dd9a",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "49742e82-570c-4e99-96da-d464584fa568",
+    "map_id": "4b5fac55-5735-58c1-aba8-93250313e142"
+  },
+  {
+    "id": "c998ec11-559d-4918-bc04-5c93af423eb1",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "efec8b34-0201-4523-8fa2-c73dd6501004",
+    "map_id": "4b5fac55-5735-58c1-aba8-93250313e142"
+  },
+  {
+    "id": "b396685f-7db8-4be1-8c77-54f33ed27614",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "52789c37-41df-4f9f-883c-6f8c153db5ac",
+    "map_id": "e977bead-dee1-563b-a38c-a765d88c1a56"
+  },
+  {
+    "id": "9ddef8a1-8a55-4543-8db8-e55956b23909",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "4cfdcc5f-f971-4ab1-88fe-2b8c74ba3309",
+    "map_id": "e977bead-dee1-563b-a38c-a765d88c1a56"
+  },
+  {
+    "id": "f4933138-2d3a-4858-a7cd-41b887b2ebcf",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "fda26353-d87e-42b2-8764-c1d6f2c1f31f",
+    "map_id": "b2f2b850-9ca4-5d2e-82bd-ae50a2379167"
+  },
+  {
+    "id": "1b58dfd9-03e7-4061-993d-25b3497b4820",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "3a590d29-a4b2-4094-92d5-56b1dc3ee173",
+    "map_id": "b2f2b850-9ca4-5d2e-82bd-ae50a2379167"
+  },
+  {
+    "id": "cd7af57c-75cd-4a6f-ab2c-9c1f0f5e8156",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "2903b634-8e6c-4f36-9581-f1eb37de782f",
+    "map_id": "fc50a47c-b977-50cd-b712-665b2cd1650d"
+  },
+  {
+    "id": "9966638d-fbff-4925-9640-423202fedd90",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "cf44561d-35de-48c3-b4a0-9c802f138556",
+    "map_id": "fc50a47c-b977-50cd-b712-665b2cd1650d"
+  },
+  {
+    "id": "4a33a962-50c8-4689-b3b6-8715e5564750",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "3e32d7fe-0360-478a-9a14-8276a1b5e2a0",
+    "map_id": "82ba90a2-390b-5b58-929b-4232d972045e"
+  },
+  {
+    "id": "ef745f74-b5bb-4cbb-9334-4b7f3983662a",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "14b71b2f-2212-48b1-a6df-cf72f1b39f06",
+    "map_id": "82ba90a2-390b-5b58-929b-4232d972045e"
+  },
+  {
+    "id": "0fc7f3c7-b9ee-4a1b-ba52-98e600bb79b9",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "cfc6cb3d-2f4f-4112-97e3-c0b116b4829e",
+    "map_id": "5d7004a9-d1fe-5f91-bc40-09373daa4785"
+  },
+  {
+    "id": "da0fdeb4-3638-4a56-abf1-b038a6fa196d",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d25fb7ae-a8ea-4179-b57d-5e643d4c6675",
+    "map_id": "5d7004a9-d1fe-5f91-bc40-09373daa4785"
+  },
+  {
+    "id": "f2c688c5-5771-44aa-bd2c-2234a411e202",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "a01ba89d-b1c4-4e89-b8c8-50559c7af8dc",
+    "map_id": "1785254a-c8ca-5e72-a570-138ef8777998"
+  },
+  {
+    "id": "4ce0363c-1bdc-47fd-be27-c62059f7664c",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "de609553-c737-49b8-bf49-911b05140dbf",
+    "map_id": "1785254a-c8ca-5e72-a570-138ef8777998"
+  },
+  {
+    "id": "b0c8f6ec-97d1-4332-a697-ea7eac086039",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "fca287f9-c1e6-40c7-9817-fd4a016a9663",
+    "map_id": "98881009-7165-5c91-b397-f6da01c45054"
+  },
+  {
+    "id": "d641ee3a-40ed-4e2d-8d5e-5d8e851faa14",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "2e5a6ff5-be3a-4b7b-9174-5b5489f66d90",
+    "map_id": "98881009-7165-5c91-b397-f6da01c45054"
+  },
+  {
+    "id": "6ffaba40-f7c9-46d7-a5be-e15b280d9150",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "690d0bf7-9b9e-4f97-b3c2-d260aaf71bd2",
+    "map_id": "bc5c185e-2556-522b-a39b-2e505cae3cd3"
+  },
+  {
+    "id": "0e13d769-bda7-45a0-ae7d-391988a93b8c",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "b9b1a079-87b0-458b-a73d-f2b4aa30fe8b",
+    "map_id": "bc5c185e-2556-522b-a39b-2e505cae3cd3"
+  },
+  {
+    "id": "ea968554-ddf9-4ba1-be8b-fbb6cc764184",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "f90777fd-34a6-4a24-86db-a115e00c628f",
+    "map_id": "49ae1add-a65b-493a-9235-acc633878ad1"
+  },
+  {
+    "id": "513b696e-7efe-455a-9fd4-f3096538da32",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "9707d8b4-c62c-43cf-9e8b-3707912bfca5",
+    "map_id": "49ae1add-a65b-493a-9235-acc633878ad1"
+  },
+  {
+    "id": "2addbec9-ac19-4c7b-a843-095c7cb07475",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "896016d0-af12-4777-8961-27c0cc6a4427",
+    "map_id": "c026c33a-f7c0-51d7-942b-4b6b044daaa9"
+  },
+  {
+    "id": "3660f202-5d7b-44de-a88c-31c32d521c8a",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "c493eec5-5463-4019-a885-17a83d0660d2",
+    "map_id": "c026c33a-f7c0-51d7-942b-4b6b044daaa9"
+  },
+  {
+    "id": "9fcc79d4-f548-4759-952e-79533f22fb19",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "f8a665b0-4077-4ab3-9095-e1cb48af772a",
+    "map_id": "ac273ebb-ec31-4c0e-ac8a-330f6ecb8c54"
+  },
+  {
+    "id": "4cbc0133-fa4c-42c4-af94-bff83a3778d9",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "ce4cbd5b-4e8e-431f-881e-9dd133c70a93",
+    "map_id": "ac273ebb-ec31-4c0e-ac8a-330f6ecb8c54"
+  },
+  {
+    "id": "bd88ec75-909e-4d48-9dad-9a0c1d7f4325",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "6db34bae-9b29-44c4-9763-ef0dbb3c31af",
+    "map_id": "9c7684db-9937-5a48-88f2-6fbe889a2685"
+  },
+  {
+    "id": "57d645e7-aa8f-4071-87cd-892ccc08f8c8",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "1fc433c3-2704-4287-b95d-93b67a09e892",
+    "map_id": "9c7684db-9937-5a48-88f2-6fbe889a2685"
+  },
+  {
+    "id": "db9a74d5-87c0-46a0-92e3-aeca29c5653a",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "39d8f23a-4f9d-4a7c-9df2-0d310342166f",
+    "map_id": "ebe42a31-0ec9-55ad-96da-224cad3273f3"
+  },
+  {
+    "id": "2e4f0b19-43a6-4d4c-9960-d3920cada244",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d651bea3-dac0-4db9-a93c-c6bc77db78bb",
+    "map_id": "ebe42a31-0ec9-55ad-96da-224cad3273f3"
+  },
+  {
+    "id": "9078dafa-a9f2-46ee-9234-849e331f6a47",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "93900e4d-db64-4c24-b145-555b18311ba6",
+    "map_id": "b219fdbd-4335-55b4-9194-e81f0d009d33"
+  },
+  {
+    "id": "f4a3f66d-ef1f-4008-aad5-8d73c2cc7f7c",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "77d660a2-c3fb-409e-8b64-fe95b4d45251",
+    "map_id": "b219fdbd-4335-55b4-9194-e81f0d009d33"
+  },
+  {
+    "id": "8366da38-7f41-466b-8748-56999e7ca518",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "66ee1908-3f51-4b90-bede-eeebc1b1c07b",
+    "map_id": "59b729e8-f40b-5849-a8ae-82d4d58ed1a1"
+  },
+  {
+    "id": "cf9fe44c-cf81-4611-9674-ea0945ac0698",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "a8f72460-6f70-4b60-91c8-ab66782787c5",
+    "map_id": "59b729e8-f40b-5849-a8ae-82d4d58ed1a1"
+  },
+  {
+    "id": "e2065a6c-eca0-46fc-886e-da1a2355e16e",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "222055f2-c3ae-46fb-9d99-87e73dea3a31",
+    "map_id": "9b0094cd-3a50-5662-9cc0-86f924c96655"
+  },
+  {
+    "id": "d9c126a1-b359-49cd-ad62-4decec11d9e3",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "57bdb3df-0c79-4285-9610-70cab6038e1b",
+    "map_id": "9b0094cd-3a50-5662-9cc0-86f924c96655"
+  },
+  {
+    "id": "b78d72ea-42ee-47d5-b017-20c4bc398201",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "9762abd9-e6da-453c-ba8f-836262026bf8",
+    "map_id": "3b1bcab1-1a06-5ce6-bf54-b96cffc217bc"
+  },
+  {
+    "id": "019d470a-e0d7-4b11-9e7f-d3347f42b17a",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "35af1cd5-6649-4531-b35d-450841198142",
+    "map_id": "3b1bcab1-1a06-5ce6-bf54-b96cffc217bc"
+  },
+  {
+    "id": "0c857489-d41a-4e0f-902f-f38f21af4b29",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "92a28914-6091-4351-91c0-6f7efd4f27f2",
+    "map_id": "0bf0f5de-c6a1-5411-9866-731cc3a5c769"
+  },
+  {
+    "id": "5fd35e15-0ff8-42b5-937d-976da7b77be8",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "feca14e2-a8b2-4374-bf5e-b493489303fb",
+    "map_id": "0bf0f5de-c6a1-5411-9866-731cc3a5c769"
+  },
+  {
+    "id": "001deac1-e458-44d9-9549-d6bd189b611b",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "4e7f84c3-0c30-46de-bad6-83321b91e869",
+    "map_id": "da5e839a-0fca-4f69-ad82-8818c27df6f6"
+  },
+  {
+    "id": "9f89fe23-f218-48b8-b3f0-058a3df65a20",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "da1b4c71-685c-4074-845b-f8b5b1e1b1c7",
+    "map_id": "da5e839a-0fca-4f69-ad82-8818c27df6f6"
+  },
+  {
+    "id": "97e9264f-9271-46ed-a7d1-77791f6e0c34",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "cfbabad4-006c-4158-af7a-673c51c0442f",
+    "map_id": "73ab3e75-0d5e-583c-840f-10586f97a843"
+  },
+  {
+    "id": "8e1bbf0b-c197-4616-9a54-cb56e90fa31f",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "8ed9e061-652f-400d-8690-5056a313c1ce",
+    "map_id": "73ab3e75-0d5e-583c-840f-10586f97a843"
+  },
+  {
+    "id": "9bd43b72-6e59-4b7a-862f-97dcc7f3912b",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "3d040a16-7ed2-4791-acc5-cc6d14ea3e1f",
+    "map_id": "71af538a-525a-52b0-b74a-47846064d3db"
+  },
+  {
+    "id": "959ad503-9ba4-42e7-b864-20f8f2f90534",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "747e4118-5caf-4cc8-9006-89291e9b0151",
+    "map_id": "71af538a-525a-52b0-b74a-47846064d3db"
+  },
+  {
+    "id": "40903132-b403-4404-a20a-cefcdd12181c",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "15bc2727-e428-496c-9b0a-bc53757e59bc",
+    "map_id": "57291ff1-ca42-5348-aec0-daba30cb518e"
+  },
+  {
+    "id": "b286352c-07b6-4205-b386-97f69ed34723",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "efe21570-f136-4647-a08d-d5d22d854050",
+    "map_id": "57291ff1-ca42-5348-aec0-daba30cb518e"
+  },
+  {
+    "id": "3433ff65-4e3d-4f27-b180-37e208ff9989",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "b8268195-687d-4ed4-b392-be0b2e5cbb97",
+    "map_id": "8762b12d-580a-5b26-a40c-429f3b985c53"
+  },
+  {
+    "id": "60d971f1-18a2-43e5-b088-6b559c9d30fd",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "c4b0d205-6f0f-4fb8-adec-ff90ef3d268d",
+    "map_id": "8762b12d-580a-5b26-a40c-429f3b985c53"
+  },
+  {
+    "id": "0bd84ff2-6c4f-4322-ad13-a5eb7388f6c1",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "66df3c94-5b00-44dc-9ad1-5921275960a2",
+    "map_id": "0f7abae1-7d9e-53c1-9399-3d8d44d6f5cd"
+  },
+  {
+    "id": "877659b6-4bbc-466f-9934-90f7ffca18ec",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "179bc03a-60be-468f-8657-335686b18363",
+    "map_id": "0f7abae1-7d9e-53c1-9399-3d8d44d6f5cd"
+  },
+  {
+    "id": "8c27171e-ff7a-4fa5-93b3-fa673a8e120c",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "d01cc648-0ca3-4add-9f09-ead3d9ef2cf2",
+    "map_id": "a9c25bfb-e7b4-57ea-8db7-08f3ad50921e"
+  },
+  {
+    "id": "53fd9fe9-20a6-45e5-936d-11bdb2f5efe7",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "a7ccfdf6-1961-401c-86a4-4c5d219da85f",
+    "map_id": "a9c25bfb-e7b4-57ea-8db7-08f3ad50921e"
+  },
+  {
+    "id": "0d751683-b5a4-4ed4-af28-790f044a8ccd",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "14f1f23a-32f0-45eb-9e83-088fd77ebc45",
+    "map_id": "d02f7e0b-2999-5528-b810-2edc78559ad1"
+  },
+  {
+    "id": "ac1d8bcc-5579-4f55-90d1-2a5921c5cbda",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "381b9d24-24af-439c-b774-47c30d379ac3",
+    "map_id": "d02f7e0b-2999-5528-b810-2edc78559ad1"
+  },
+  {
+    "id": "ba3b4c99-90a0-4c2a-9912-4a6b8bd41a23",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "70e810c8-0a84-4b17-9bae-60ce3d3d8e59",
+    "map_id": "318adfeb-da27-581d-81f9-6c3405353509"
+  },
+  {
+    "id": "dd7ec467-eab8-4b34-8d52-445722395e72",
+    "content_type": "skirmish-mission-cards",
+    "content_id": "8868574e-915b-4f87-a058-0e2b25d79fa2",
+    "map_id": "318adfeb-da27-581d-81f9-6c3405353509"
   }
 ]

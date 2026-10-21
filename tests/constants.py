@@ -22,6 +22,7 @@ class CONTENT_TYPES:
     UPGRADE = 'upgrade-cards'
     CARD = 'card-backs'
     THREAT_MISSION = 'campaign-threat-mission-cards'
+    SKIRMISH_MISSION = 'skirmish-mission-cards'
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
 
@@ -49,6 +50,7 @@ class CONTENT_TYPES:
         CARD,
         THREAT_MISSION,
         FORM_CARDS,
+        SKIRMISH_MISSION,
         MISSIONS,
         MISSION_REWARDS,
     ]
@@ -61,6 +63,7 @@ class CONTENT_TYPES:
         ALLY_SIDE_MISSION,
         REGULAR_SIDE_MISSION,
         AGENDA,
+        SKIRMISH_MISSION,
     ]
 
     without_ids = [

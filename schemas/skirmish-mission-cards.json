@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "skirmish-mission-cards.json#",
+  "title": "Schema for the skirmish mission cards data file (their maps are on their missions rows)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Skirmish mission name",
+      "minLength": 1
+    },
+    "format": {
+      "description": "How many players, and how they play: two players, or four in teams or each on their own.",
+      "enum": [
+        "Standard",
+        "Four Player Team Battle",
+        "Four Player Free-For-All"
+      ]
+    },
+    "scenario": {
+      "description": "Which of its map's two missions this is, as printed on the card (null until entered).",
+      "oneOf": [
+        {
+          "enum": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "image": {
+      "description": "The file path for this skirmish mission's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "format",
+    "scenario",
+    "image"
+  ],
+  "additionalProperties": false
+}

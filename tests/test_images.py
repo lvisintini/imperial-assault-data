@@ -33,11 +33,13 @@ class ImageTestHelper:
     LARGE_STANDARD = (476, 740)
     LARGE_MINI = (424, 657)
     LARGE_MINI_FLIPPED = (657, 424)
+    LARGE_STANDARD_FLIPPED = (740, 476)
 
     SMALL_HERO = (650, 515)
     SMALL_STANDARD = (301, 470)
     SMALL_MINI = (293, 454)
     SMALL_MINI_FLIPPED = (454, 293)
+    SMALL_STANDARD_FLIPPED = (470, 301)
 
     ANY = None
 
@@ -61,6 +63,7 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.COMPANION, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.UPGRADE, 'image', dims=LARGE_MINI),
         ImageDefinition('large', CONTENT_TYPES.THREAT_MISSION, 'image', dims=LARGE_STANDARD),
+        ImageDefinition('large', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=LARGE_STANDARD_FLIPPED),
         ImageDefinition('large', CONTENT_TYPES.FORM_CARDS, 'image', dims=LARGE_MINI_FLIPPED),
 
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.AGENDA_DECKS),
@@ -99,6 +102,7 @@ class ImageTestHelper:
         ImageDefinition('small', CONTENT_TYPES.COMPANION, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.UPGRADE, 'image', dims=SMALL_MINI),
         ImageDefinition('small', CONTENT_TYPES.THREAT_MISSION, 'image', dims=SMALL_STANDARD),
+        ImageDefinition('small', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=SMALL_STANDARD_FLIPPED),
         ImageDefinition('small', CONTENT_TYPES.FORM_CARDS, 'image', dims=SMALL_MINI_FLIPPED),
 
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.AGENDA_DECKS),

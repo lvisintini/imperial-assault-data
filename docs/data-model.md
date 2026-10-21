@@ -1,7 +1,7 @@
 # Data model
 
 The dataset is laid out like a relational database: each file in `data/` is a table (a JSON array of records), and
-records point at each other through id fields. This page shows how the 25 files relate. Only key fields are listed;
+records point at each other through id fields. This page shows how the 26 files relate. Only key fields are listed;
 see `schemas/` for every field.
 
 ## Ids
@@ -32,7 +32,8 @@ includes.
 
 `maps` holds every mission's map: the two-player skirmish maps, the four-player ones (Hoth Battlefield, Nal Hutta
 Borderlands, Temple Gardens) and the raid maps. Raids are played with FFG's *Legends of the Alliance* app, which is a
-source of type `App`. Map images come from the
+source of type `App`. A map is in the products its missions are in (see [Missions](#missions)); only maps no
+mission uses yet (the raid maps, for now) have `source-contents` rows of their own. Map images come from the
 [Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res files are
 the ones boardwars serves.
 
@@ -163,14 +164,17 @@ Every mission has a card in one of six collections:
 - `campaign-story-mission-cards`, `campaign-threat-mission-cards`;
 - the side missions, by color: `campaign-hero-side-mission-cards` (red; `hero_id` is the hero the mission is for),
   `campaign-ally-side-mission-cards` (green) and `campaign-regular-side-mission-cards` (grey);
-- `agenda-cards` with `mission: true` (the Imperial player's agenda missions).
+- `agenda-cards` with `mission: true` (the Imperial player's agenda missions);
+- `skirmish-mission-cards`: two per skirmish map, with `format` (`Standard`, `Four Player Team Battle`,
+  `Four Player Free-For-All`) and `scenario` (`A` or `B`, as printed; null until entered). Their images are the
+  wiki's, the one image source besides boardwars for cards, at the standard size turned sideways.
 
 `missions` indexes them all, one row per mission card (`content_type` + `content_id`). Whether a mission is a story,
 threat, side or agenda mission follows from `content_type`. The index row is what the rest of the dataset links to:
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
 - **Map:** `map_id` is the map it's played on, or null while the dataset has no image of it (every campaign map, for
-  now).
+  now). Every skirmish mission has one, and a map's products are its missions' products.
 - **Rewards:** `mission-rewards` lists what winning gives, one row per reward, polymorphic like `source-contents`:
   `content_type` + `content_id` name a reward or deployment card, or both are null and `credits` is true. Rows with
   `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
@@ -189,6 +193,7 @@ erDiagram
     missions ||--|| campaign-ally-side-mission-cards : "content_id"
     missions ||--|| campaign-regular-side-mission-cards : "content_id"
     missions ||--|| agenda-cards : "content_id (mission: true)"
+    missions ||--|| skirmish-mission-cards : "content_id"
     maps |o--o{ missions : "map_id"
     heroes ||--o{ campaign-hero-side-mission-cards : "hero_id"
     missions ||--o{ mission-rewards : "mission_id"
@@ -205,6 +210,12 @@ erDiagram
         uuid id PK
         string name
         uuid hero_id FK
+    }
+    skirmish-mission-cards {
+        uuid id PK
+        string name
+        string format "Standard, Four Player Team Battle, Four Player Free-For-All"
+        string scenario "A, B (null until entered)"
     }
     mission-rewards {
         uuid mission_id FK
@@ -271,5 +282,5 @@ erDiagram
     }
 ```
 
-`sources` and `maps` have no card back. The three side mission collections share one back image, listed once per
+`sources`, `maps` and `skirmish-mission-cards` have no card back (the dataset has no skirmish mission back yet). The three side mission collections share one back image, listed once per
 collection (until #52 makes card backs a catalog). `missions` and `mission-rewards` are indexes, not cards.

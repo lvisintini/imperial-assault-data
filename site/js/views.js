@@ -29,6 +29,9 @@ const peekPath = (ref, db) => ownImage(ref.card ?? ref) ?? backImage(ref.card ??
 
 const imageUrl = (size, path) => `images/${size}/${encodeURI(path)}`;
 
+// A mission card's map, through its missions row.
+const mapOf = (ref, db) => db.parent.get(db.mission.get(ref))?.ref;
+
 function subtitle(ref, db) {
   if (ref.card) return TYPE[ref.card.type].singular;
   const {record} = ref;
@@ -44,6 +47,8 @@ function subtitle(ref, db) {
       record.modes.length === 1 && `${record.modes[0]} only`,
     ].filter(Boolean).join(' · ');
     case 'upgrade-cards': return `Tier ${record.tier}`;
+    case 'skirmish-mission-cards': return [mapOf(ref, db) && title(mapOf(ref, db)), record.scenario,
+      record.format !== 'Standard' && record.format].filter(Boolean).join(' · ');
     case 'card-backs': return TYPE[record.content_type]?.label;
   }
 }
@@ -425,6 +430,8 @@ export function detail(db, ref) {
   for (const {rel, refs} of db.children.get(ref) ?? []) {
     related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
   }
+  const map = mapOf(ref, db);
+  if (map) related.push(section('Map', null, grid([map], db)));
   const rewards = db.rewards.get(ref);
   if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
   const rewardOf = db.rewardOf.get(ref);
