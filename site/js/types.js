@@ -5,7 +5,8 @@
 // List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
 // ('source', 'wave'; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
 // facet with its own labels; `groups` is the default grouping (facet ids); `order` fixes the order of a field's
-// values, in facets, groups and sorting.
+// values, in facets, groups and sorting; `labels` renames a field's facet. A content_type field's values are shown as
+// the types' labels.
 export const TYPES = [
   {
     file: 'sources', label: 'Sources', singular: 'Source', images: ['image'],
@@ -36,9 +37,33 @@ export const TYPES = [
   {file: 'form-cards', label: 'Form cards', singular: 'Form card', images: ['image']},
   {file: 'agenda-decks', label: 'Agenda decks', singular: 'Agenda deck', images: []},
   {file: 'agenda-cards', label: 'Agenda cards', singular: 'Agenda card', images: ['image']},
-  {file: 'story-mission-cards', label: 'Story missions', singular: 'Story mission', images: ['image']},
-  {file: 'side-mission-cards', label: 'Side missions', singular: 'Side mission', images: ['image']},
-  {file: 'threat-mission-cards', label: 'Threat missions', singular: 'Threat mission', images: ['image']},
+  {
+    file: 'missions', label: 'Missions', singular: 'Mission', images: [],
+    sort: ['content_type'],
+    facets: [
+      'content_type', 'source', 'wave',
+    ],
+    groups: ['content_type'],
+    labels: {content_type: 'Kind'},
+    order: {content_type: [
+      'campaign-story-mission-cards', 'campaign-threat-mission-cards', 'campaign-hero-side-mission-cards',
+      'campaign-ally-side-mission-cards', 'campaign-regular-side-mission-cards', 'agenda-cards',
+    ]},
+  },
+  {file: 'campaign-story-mission-cards', label: 'Story missions', singular: 'Story mission', images: ['image']},
+  {file: 'campaign-threat-mission-cards', label: 'Threat missions', singular: 'Threat mission', images: ['image']},
+  {
+    file: 'campaign-hero-side-mission-cards', label: 'Hero side missions', singular: 'Hero side mission',
+    images: ['image'],
+  },
+  {
+    file: 'campaign-ally-side-mission-cards', label: 'Ally side missions', singular: 'Ally side mission',
+    images: ['image'],
+  },
+  {
+    file: 'campaign-regular-side-mission-cards', label: 'Regular side missions', singular: 'Regular side mission',
+    images: ['image'],
+  },
   {file: 'reward-cards', label: 'Reward cards', singular: 'Reward card', images: ['image']},
   {file: 'supply-cards', label: 'Supply cards', singular: 'Supply card', images: ['image']},
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},
@@ -46,11 +71,14 @@ export const TYPES = [
   {file: 'maps', label: 'Maps', singular: 'Map', images: ['image']},
   {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image'], sort: ['deck', 'variant']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
+  {file: 'mission-rewards', label: 'Mission rewards', singular: 'Mission reward', images: [], hidden: true},
 ];
 
 export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));
 
-export function title({type, record}) {
+export function title(ref) {
+  const {type, record} = ref;
+  if (ref.card) return title(ref.card);  // a missions row is named by its mission card
   if (type === 'card-backs') return record.variant ? `${record.deck}: ${record.variant}` : record.deck;
   return record.name ?? '';
 }

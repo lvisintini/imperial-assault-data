@@ -1,4 +1,4 @@
-import {CARD_BACK_MATCH, FKS, JOIN} from './relations.js';
+import {CARD_BACK_MATCH, FKS, JOIN, MISSIONS, REWARDS} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -17,7 +17,8 @@ function push(map, key, value) {
 }
 
 // Records are wrapped in refs, {type, key, index, record}: key is the record's id (a UUID), or its array index in
-// source-contents, which has no ids; index is its position in the file, used to keep a stable order.
+// source-contents and mission-rewards, which have no ids; index is its position in the file, used to keep a stable
+// order. A missions row's ref also has `card`, the mission card it stands for.
 class Db {
   constructor(tables) {
     this.refs = {};
@@ -32,7 +33,11 @@ class Db {
     this.children = new Map();  // parent ref → [{rel, refs}]
     this.back = new Map();      // ref → {ref: card-back ref, via: parent ref when inherited}
     this.backOf = new Map();    // card-back ref → refs
+    this.mission = new Map();   // mission card ref → its missions row
+    this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
+    this.rewardOf = new Map();  // reward ref → mission card refs
     this.#linkSources();
+    this.#linkMissions();
     this.#linkParents();
     this.#linkBacks();
   }
@@ -41,8 +46,9 @@ class Db {
     return this.keyed[type]?.get(key);
   }
 
+  // A mission card's products are its missions row's.
   sources(ref) {
-    return this.foundIn.get(ref) ?? [];
+    return this.foundIn.get(this.mission.get(ref) ?? ref) ?? [];
   }
 
   #linkSources() {
@@ -56,6 +62,28 @@ class Db {
       push(this.foundIn, content, source);
       if (!this.contents.has(source)) this.contents.set(source, new Map());
       push(this.contents.get(source), content.type, content);
+    }
+  }
+
+  #linkMissions() {
+    for (const row of this.refs[MISSIONS.table]) {
+      const card = this.get(row.record[MISSIONS.type], row.record[MISSIONS.id]);
+      if (!card) {
+        console.warn('Unresolved missions row', row.record);
+        continue;
+      }
+      row.card = card;
+      this.mission.set(card, row);
+    }
+    for (const {record} of this.refs[REWARDS.table]) {
+      const card = this.get(MISSIONS.table, record[REWARDS.mission])?.card;
+      const reward = record.credits ? null : this.get(record[REWARDS.type], record[REWARDS.id]);
+      if (!card || (!record.credits && !reward)) {
+        console.warn('Unresolved mission-rewards row', record);
+        continue;
+      }
+      push(this.rewards, card, {ref: reward, credits: record.credits, choice: record.choice});
+      if (reward) push(this.rewardOf, reward, card);
     }
   }
 
@@ -89,7 +117,7 @@ class Db {
     }
     for (const [child, {ref: parent}] of this.parent) {
       const back = this.back.get(parent);
-      if (back) this.#setBack(child, back.ref, parent);
+      if (back && !this.back.has(child)) this.#setBack(child, back.ref, parent);
     }
   }
 

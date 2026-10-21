@@ -81,6 +81,64 @@ class TestSourcesIntegrity:
                 assert not shared, (source['name'], shared)
 
 
+class TestMissionsIntegrity:
+    """missions.json indexes every mission; products and rewards attach to its rows (docs/data-model.md)."""
+
+    @staticmethod
+    def mission_records():
+        return [(content_type, record) for content_type in CONTENT_TYPES.mission_types
+                for record in get_data(content_type)
+                if content_type != CONTENT_TYPES.AGENDA or record['mission']]
+
+    def test_every_mission_is_indexed_once(self):
+        indexed = Counter((m['content_type'], m['content_id']) for m in get_data(CONTENT_TYPES.MISSIONS))
+        assert indexed == Counter((content_type, r['id']) for content_type, r in self.mission_records())
+
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MISSIONS), ids=lambda m: m['id'])
+    def test_index_rows_resolve(self, entry, all_data):
+        record = TestIntegrity.fetch_fk_data(all_data[entry['content_type']], entry['content_id'])
+        assert record is not None
+        assert entry['content_type'] != CONTENT_TYPES.AGENDA or record['mission']
+        assert entry['map_id'] is None or TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP], entry['map_id'])
+
+    def test_missions_reach_products_only_through_the_index(self):
+        linked = {r['content_type'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)}
+        assert not linked & set(CONTENT_TYPES.mission_types)
+
+    def test_agenda_missions_have_their_decks_products(self):
+        products = {}
+        for row in get_data(CONTENT_TYPES.SOURCE_CONTENTS):
+            products.setdefault(row['content_id'], set()).add(row['source_id'])
+        cards = {c['id']: c for c in get_data(CONTENT_TYPES.AGENDA)}
+        for mission in get_data(CONTENT_TYPES.MISSIONS):
+            if mission['content_type'] == CONTENT_TYPES.AGENDA:
+                deck = cards[mission['content_id']]['agenda_id']
+                assert products.get(mission['id']) == products.get(deck), cards[mission['content_id']]['name']
+
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.HERO_SIDE_MISSION), ids=lambda m: m['name'])
+    def test_hero_side_missions_heroes_resolve(self, entry, heroes):
+        assert TestIntegrity.fetch_fk_data(heroes, entry['hero_id']) is not None
+
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MISSION_REWARDS))
+    def test_mission_rewards_resolve(self, entry, all_data):
+        assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MISSIONS], entry['mission_id']) is not None
+        if entry['credits']:
+            assert entry['content_type'] is None and entry['content_id'] is None
+        else:
+            assert entry['content_type'] not in (None, CONTENT_TYPES.MISSIONS, CONTENT_TYPES.MISSION_REWARDS)
+            assert TestIntegrity.fetch_fk_data(all_data[entry['content_type']], entry['content_id']) is not None
+
+    def test_mission_rewards_dont_repeat(self):
+        rows = [(r['mission_id'], r['content_type'], r['content_id'], r['credits'])
+                for r in get_data(CONTENT_TYPES.MISSION_REWARDS)]
+        assert len(rows) == len(set(rows))
+
+    def test_a_choice_has_alternatives(self):
+        """Rows with choice: true are a pick-one group, so a mission has none or at least two."""
+        choices = Counter(r['mission_id'] for r in get_data(CONTENT_TYPES.MISSION_REWARDS) if r['choice'])
+        assert all(count >= 2 for count in choices.values())
+
+
 class TestDeploymentsIntegrity:
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']

@@ -24,14 +24,18 @@
         "imperial-classes",
         "imperial-class-cards",
         "supply-cards",
-        "story-mission-cards",
-        "side-mission-cards",
+        "campaign-story-mission-cards",
+        "campaign-hero-side-mission-cards",
+        "campaign-ally-side-mission-cards",
+        "campaign-regular-side-mission-cards",
         "reward-cards",
         "companion-cards",
         "upgrade-cards",
         "card-backs",
-        "threat-mission-cards",
-        "form-cards"
+        "campaign-threat-mission-cards",
+        "form-cards",
+        "missions",
+        "mission-rewards"
       ]
     },
     "affiliation": {

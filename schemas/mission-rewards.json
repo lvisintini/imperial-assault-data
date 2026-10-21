@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "mission-rewards.json#",
+  "title": "Schema for the mission rewards data file: what each mission gives (cards or credits)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "mission_id": {
+      "description": "Foreign key to the mission in data/missions.json (the index).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "content_type": {
+      "description": "The reward's collection, or null when the reward is credits.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/content_type"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "content_id": {
+      "description": "The reward's id in that collection, or null when the reward is credits.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/uuid"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "credits": {
+      "type": "boolean",
+      "description": "Whether the reward is credits (no card)."
+    },
+    "choice": {
+      "type": "boolean",
+      "description": "Whether the reward is one of the mission's alternatives: of its rows with choice true, the player picks one. Rows with choice false are all received."
+    }
+  },
+  "required": [
+    "mission_id",
+    "content_type",
+    "content_id",
+    "credits",
+    "choice"
+  ],
+  "additionalProperties": false
+}

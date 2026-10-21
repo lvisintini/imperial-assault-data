@@ -8,7 +8,8 @@ const MERMAID_URL = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.es
 const DATA_MODEL_URL = 'https://github.com/lvisintini/imperial-assault-data/blob/master/docs/data-model.md';
 const VISIBLE = TYPES.filter(t => !t.hidden);
 
-export const href = ref => `#/${ref.type}/${ref.key}`;
+// A missions row links to, and looks like, its mission card.
+export const href = ref => `#/${(ref.card ?? ref).type}/${(ref.card ?? ref).key}`;
 
 // In the given order, or the type's default one (lists of a single type).
 const sorted = (refs, keys) => refs.length ? sortRefs(refs, keys ?? defaultSort(refs[0].type)) : refs;
@@ -19,15 +20,17 @@ const backImage = (ref, db) => db.back.get(ref)?.ref.record.image;
 // Tiles show a record's own image, or its card back when it has none (agenda decks, imperial classes) or its type
 // asks for it (`thumb: 'back'`: heroes). The peek prefers the record's own image.
 function thumbPath(ref, db) {
+  ref = ref.card ?? ref;
   return TYPE[ref.type].thumb === 'back'
     ? backImage(ref, db) ?? ownImage(ref) : ownImage(ref) ?? backImage(ref, db);
 }
 
-const peekPath = (ref, db) => ownImage(ref) ?? backImage(ref, db);
+const peekPath = (ref, db) => ownImage(ref.card ?? ref) ?? backImage(ref.card ?? ref, db);
 
 const imageUrl = (size, path) => `images/${size}/${encodeURI(path)}`;
 
 function subtitle(ref, db) {
+  if (ref.card) return TYPE[ref.card.type].singular;
   const {record} = ref;
   const parent = db.parent.get(ref);
   if (parent && ref.type !== 'sources') return title(parent.ref);  // a pack in the Core Set is still a pack
@@ -388,6 +391,16 @@ function fieldValue(ref, field, value, db) {
   return String(value);
 }
 
+// A mission's rewards: those it always gives, then its alternatives ("Choose 1"). Credits have no record to show.
+function rewardList(rewards, db) {
+  const block = rows => html`${rows.some(r => r.credits) ? html`<p>Credits</p>` : ''}${
+    rows.some(r => r.ref) ? html`<div class="grid">${rows.filter(r => r.ref).map(r => tile(r.ref, db))}</div>` : ''}`;
+  const always = rewards.filter(r => !r.choice);
+  const choice = rewards.filter(r => r.choice);
+  return html`${always.length ? block(always) : ''}${choice.length
+    ? html`<h3>Choose 1 <span class="count">${choice.length}</span></h3>${block(choice)}` : ''}`;
+}
+
 export function detail(db, ref) {
   const t = TYPE[ref.type];
   const name = title(ref);
@@ -412,6 +425,10 @@ export function detail(db, ref) {
   for (const {rel, refs} of db.children.get(ref) ?? []) {
     related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
   }
+  const rewards = db.rewards.get(ref);
+  if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
+  const rewardOf = db.rewardOf.get(ref);
+  if (rewardOf) related.push(section('Reward from', rewardOf.length, grouped(rewardOf, db)));
   const back = db.back.get(ref);
   if (back) {
     const via = back.via ? ` (same as its ${TYPE[back.via.type].singular.toLowerCase()})` : '';
@@ -437,7 +454,9 @@ export function detail(db, ref) {
 
 export function search(db, query) {
   const q = query.trim().toLowerCase();
-  const matches = q ? VISIBLE.flatMap(t => db.refs[t.file].filter(ref => title(ref).toLowerCase().includes(q))) : [];
+  // missions rows are named after their cards, which are found already.
+  const matches = q ? VISIBLE.filter(t => t.file !== 'missions')
+    .flatMap(t => db.refs[t.file].filter(ref => title(ref).toLowerCase().includes(q))) : [];
   return {
     title: q ? `Search: ${query}` : 'Search',
     body: html`

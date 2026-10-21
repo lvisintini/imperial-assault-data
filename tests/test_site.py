@@ -29,8 +29,13 @@ class TestSite:
         assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
 
     def test_foreign_keys_cover_every_id_field(self):
-        site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*\}",
-                                  get_site_js('relations.js')))
+        """Every uuid field is an FK in FKS, or a link of the missions index (MISSIONS) or mission-rewards (REWARDS)."""
+        relations = get_site_js('relations.js')
+        site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*\}", relations))
+        for name in ('MISSIONS', 'REWARDS'):
+            block = re.search(rf"export const {name} = \{{([^}}]*)\}}", relations)[1]
+            spec = dict(re.findall(r"(\w+): '([^']+)'", block))
+            site_fks |= {(spec['table'], field) for key, field in spec.items() if key in ('id', 'mission')}
         uuid = get_schema('definitions')['definitions']['uuid']['pattern']
 
         def references(prop):  # a uuid, or a nullable one
@@ -94,6 +99,12 @@ class TestSite:
         entry = site_types()[CONTENT_TYPES.SOURCE]
         order = re.search(r"type: \[([^\]]*)\]", entry).group(1)
         assert strings(order) == get_schema(CONTENT_TYPES.SOURCE)['properties']['type']['enum']
+
+    def test_mission_kind_order_is_the_schema_enum(self):
+        entry = site_types()[CONTENT_TYPES.MISSIONS]
+        order = re.search(r"content_type: \[([^\]]*)\]", entry).group(1)
+        assert strings(order) == get_schema(CONTENT_TYPES.MISSIONS)['properties']['content_type']['enum']
+        assert strings(order) == CONTENT_TYPES.mission_types
 
     def test_back_thumbnails_have_card_backs(self):
         """Types whose tiles show the card back (thumb: 'back') have one."""

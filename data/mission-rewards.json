@@ -1,0 +1,842 @@
+[
+  {
+    "mission_id": "e6ffec7f-5d9f-41b3-926b-fc6c0d9280b1",
+    "content_type": "reward-cards",
+    "content_id": "41ba0e27-0367-513c-87af-dff958baf256",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e6ffec7f-5d9f-41b3-926b-fc6c0d9280b1",
+    "content_type": "reward-cards",
+    "content_id": "adc59f43-077f-5396-b1fb-68a9f1379d4d",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "c05c7f99-efcf-4a05-91ae-4749533bbe1a",
+    "content_type": "reward-cards",
+    "content_id": "ed04b492-4f22-565b-8217-c782878ea7e5",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "c05c7f99-efcf-4a05-91ae-4749533bbe1a",
+    "content_type": "reward-cards",
+    "content_id": "5c3d1cc1-1d65-5b63-9aba-3b4abdadca41",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "b3c65b93-13fd-4418-834d-a18205368769",
+    "content_type": "reward-cards",
+    "content_id": "4faba9d9-2a0b-5989-931b-5802778685cf",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "b3c65b93-13fd-4418-834d-a18205368769",
+    "content_type": "reward-cards",
+    "content_id": "f132b8e0-9a1e-5b9d-bd1c-8949fa51b6f0",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d0a46825-1b65-4379-aaa4-f3b3ab02aa92",
+    "content_type": "reward-cards",
+    "content_id": "f10ebe3e-16d9-531d-b965-79104f3d1a25",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d0a46825-1b65-4379-aaa4-f3b3ab02aa92",
+    "content_type": "reward-cards",
+    "content_id": "5472de3f-23e0-599f-8f55-2090f887c881",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "6a487f3a-8abd-4fc2-8bfa-360d9cc60f33",
+    "content_type": "reward-cards",
+    "content_id": "441368fb-d277-5004-b542-d4c69860a6e9",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "c573e018-0278-454b-84be-8b07c56d3a83",
+    "content_type": "reward-cards",
+    "content_id": "f0e5b86e-4dfc-5c05-99e6-bd4b33a86294",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "77602a5d-099c-4ba6-b4ee-08b35223498b",
+    "content_type": "reward-cards",
+    "content_id": "2842cc42-6870-5b86-97c2-fd7a7d550a38",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "11210c18-47c7-425e-8de2-3551489c0d27",
+    "content_type": "reward-cards",
+    "content_id": "d722bb31-6e1e-593f-8182-f5cd9c10bd20",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e68da0d6-6377-41d7-aef3-28031a306b58",
+    "content_type": "reward-cards",
+    "content_id": "8c328237-1092-53fc-bb88-cc845b617aa1",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "5f0833ec-6eec-4ba5-a794-d55e8517c45b",
+    "content_type": "reward-cards",
+    "content_id": "58110173-948c-5cac-b843-df2d0f4d966f",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "61e6c8d8-3ce3-4d9e-85f1-c33b9cd97df3",
+    "content_type": "reward-cards",
+    "content_id": "9a0bb796-7c83-560b-8cfb-a41849584b80",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "1ff09905-39bc-454d-a966-c3fec80bc5f2",
+    "content_type": "reward-cards",
+    "content_id": "9a155cac-9b4c-56d4-8028-5b8aeab2e574",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "8ce5a2d1-ff74-453b-9c06-8115da81eada",
+    "content_type": "reward-cards",
+    "content_id": "212de08e-f967-5a3c-88da-b3a4d32091b2",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d9953a40-80ff-4256-bad0-222997530e14",
+    "content_type": "reward-cards",
+    "content_id": "90cea9c1-f830-586e-abf4-b34f7af1e1b2",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "8b91bf70-fa95-46fb-9ea9-951c6bc39519",
+    "content_type": "reward-cards",
+    "content_id": "65f456d4-6a14-5fe0-af66-8962e667d691",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "6e4d0b85-98f2-409e-b164-1e64bf61373e",
+    "content_type": "reward-cards",
+    "content_id": "daa8f12c-b023-5ed1-b360-00b30c122760",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "453d67c4-a239-4356-8830-640fb4f00721",
+    "content_type": "reward-cards",
+    "content_id": "7220527b-563e-54ed-90ee-e6f1c2259511",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "70ca4a52-616c-4d9c-8bf4-54a9ed90d09d",
+    "content_type": "reward-cards",
+    "content_id": "b6ecc9cb-5e4e-5fa6-85fd-2f81ba919e06",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e9abba49-b738-4285-8ffa-50b565c89373",
+    "content_type": "reward-cards",
+    "content_id": "fbf79395-cc1a-541e-890b-4afce0771eb8",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e5278f83-a178-46d9-8580-a552a4e94616",
+    "content_type": "reward-cards",
+    "content_id": "2c26b9fe-0294-5546-b9ec-60504d417841",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "4d75834a-c7b3-419a-b825-b942d694fbc9",
+    "content_type": "reward-cards",
+    "content_id": "646896f8-92bc-5937-beb9-c98452442460",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d3e52ef2-9623-465e-80ab-d41d8e079284",
+    "content_type": "reward-cards",
+    "content_id": "a7e8a228-26cc-53e2-8798-80668f4d7703",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "c107808b-c5fa-49f0-ba5f-aa0a47b8cf2f",
+    "content_type": "reward-cards",
+    "content_id": "de63a870-8cb9-56ce-a522-27d283ff588d",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "0ca37b11-9e06-4553-a21d-bf0d97b0bcff",
+    "content_type": "reward-cards",
+    "content_id": "bd9b0b82-0760-58f1-baf7-3ae9a30a435b",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "1b7f0f11-83f6-40df-bfa1-c80112e03b43",
+    "content_type": "reward-cards",
+    "content_id": "0db0bb2c-9d3c-5e40-93e7-cd21c378eb87",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "ef9f483a-f0b2-4344-8612-aac12cdbd7ba",
+    "content_type": "deployment-cards",
+    "content_id": "c1b43496-afea-5548-975a-f77963a761ef",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d0c7914c-0afb-444c-a581-a4ad66499188",
+    "content_type": "deployment-cards",
+    "content_id": "ae9ce593-c113-5001-829d-c912baa7ac07",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "0ec54688-e050-47f4-be56-08fbfa942f7c",
+    "content_type": "deployment-cards",
+    "content_id": "c1b43496-afea-5548-975a-f77963a761ef",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "f574a9bf-1bcf-45e7-9d32-b5b81bea0d05",
+    "content_type": "deployment-cards",
+    "content_id": "ccdbb3f0-f0c2-5311-9eb1-276875574410",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "8fb8c376-b06f-421f-8575-6fdce9c901cb",
+    "content_type": "deployment-cards",
+    "content_id": "fe4c1348-e1d3-5459-8a40-5025298311e8",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e8af024f-4e4b-4a0b-a22c-fff0441c70ff",
+    "content_type": "deployment-cards",
+    "content_id": "73ec1673-9207-5bec-a3d2-b46ebecc7d1f",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "deployment-cards",
+    "content_id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "deployment-cards",
+    "content_id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "deployment-cards",
+    "content_id": "4e2fe0d0-5aa4-540d-9b38-7e9b30f5535b",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "deployment-cards",
+    "content_id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "deployment-cards",
+    "content_id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "deployment-cards",
+    "content_id": "0959b4d4-d924-55bb-9897-bc974403fa00",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "cbe86c2b-adf7-4744-b6f8-f6e8e80583a8",
+    "content_type": "reward-cards",
+    "content_id": "2b8bbc83-31f3-59a1-8aa6-b677a8248cd7",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "deployment-cards",
+    "content_id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "deployment-cards",
+    "content_id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "deployment-cards",
+    "content_id": "4e2fe0d0-5aa4-540d-9b38-7e9b30f5535b",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "deployment-cards",
+    "content_id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "deployment-cards",
+    "content_id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "deployment-cards",
+    "content_id": "0959b4d4-d924-55bb-9897-bc974403fa00",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "db6d3b98-2ddf-4e73-b9e1-d05c15884d47",
+    "content_type": "reward-cards",
+    "content_id": "4c2308c6-ea30-5752-818e-1f31d90b2ad0",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "content_type": "deployment-cards",
+    "content_id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "content_type": "deployment-cards",
+    "content_id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "content_type": "deployment-cards",
+    "content_id": "4e2fe0d0-5aa4-540d-9b38-7e9b30f5535b",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "content_type": "deployment-cards",
+    "content_id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "content_type": "deployment-cards",
+    "content_id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "content_type": "deployment-cards",
+    "content_id": "0959b4d4-d924-55bb-9897-bc974403fa00",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "content_type": "deployment-cards",
+    "content_id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "content_type": "deployment-cards",
+    "content_id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "content_type": "deployment-cards",
+    "content_id": "4e2fe0d0-5aa4-540d-9b38-7e9b30f5535b",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "content_type": "deployment-cards",
+    "content_id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "content_type": "deployment-cards",
+    "content_id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "content_type": "deployment-cards",
+    "content_id": "0959b4d4-d924-55bb-9897-bc974403fa00",
+    "credits": false,
+    "choice": true
+  },
+  {
+    "mission_id": "52a18594-b622-46f1-8a61-016590e39b62",
+    "content_type": "deployment-cards",
+    "content_id": "ccdbb3f0-f0c2-5311-9eb1-276875574410",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "8580b75e-20fd-4c78-89fe-118cc8c2fcf6",
+    "content_type": "deployment-cards",
+    "content_id": "79a638ad-5b9d-5a31-bdc6-c0384c86f264",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "02f1bd98-5e26-4b14-96c6-b83ff5becc82",
+    "content_type": "deployment-cards",
+    "content_id": "2c3a8c91-97fd-5e56-b82b-63a73157a4f5",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "171d91a6-a1de-4b59-b3fa-506efe205de0",
+    "content_type": "deployment-cards",
+    "content_id": "6389283c-5e67-55b6-bfae-bbbde0d245ce",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "1c1ed15f-9d9c-43cc-88ab-89570f393ac4",
+    "content_type": "deployment-cards",
+    "content_id": "790c1993-8488-5f22-a23e-f1a21534bdb0",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "0544df68-941c-4f58-ba5a-530094170de1",
+    "content_type": "deployment-cards",
+    "content_id": "1d41b532-8626-5e3a-9238-373a8223fe9a",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "db9d6a2f-5d19-40e8-9031-cb24da6031e0",
+    "content_type": "deployment-cards",
+    "content_id": "cdf9297b-8918-5421-9c7c-e50c3ff440dd",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "5d8cd2fa-f4ff-41e4-a5c2-2f54b049f053",
+    "content_type": "deployment-cards",
+    "content_id": "d9549f76-910f-5a58-89de-6d5dea176bb4",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "8e36b268-4133-4a20-9d4b-1bf78b1e82ed",
+    "content_type": "deployment-cards",
+    "content_id": "691da5f4-f11f-5725-9161-9df8ef358cbe",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "b1164148-ee3f-4397-8bef-f68a07feed75",
+    "content_type": "deployment-cards",
+    "content_id": "0e7a2a60-9311-5b31-ba94-c0f9d6c44173",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "42912d2b-121f-4ff0-8749-23910b772746",
+    "content_type": "deployment-cards",
+    "content_id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "7f3f3f66-dab2-4752-b42c-22e7b9714a2c",
+    "content_type": "deployment-cards",
+    "content_id": "1e44fe14-5e25-51c9-aead-1b0937e7496b",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "34c55f53-5764-453c-9db7-313c99221087",
+    "content_type": "reward-cards",
+    "content_id": "a5f9e580-e452-53ae-9bf7-bcf9ec59e578",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "bb53ba2b-35fe-4431-b41b-7282343aed0e",
+    "content_type": "reward-cards",
+    "content_id": "5c5d58e8-2708-5253-aa65-1fff44bdc7cb",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "580757c3-e982-4d5e-923f-17ee1cce0313",
+    "content_type": null,
+    "content_id": null,
+    "credits": true,
+    "choice": false
+  },
+  {
+    "mission_id": "ac1d2c55-58b3-4b45-b4f6-fb40193094dd",
+    "content_type": "reward-cards",
+    "content_id": "18f91426-e778-5114-b4e4-c51f9e4abc1a",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "0633949a-fcb7-4586-81cc-5369973375b1",
+    "content_type": "reward-cards",
+    "content_id": "6d300aae-5787-5516-aaa6-21efbff53494",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "f1eee9d1-bc0e-4d73-a388-77b3736ec9da",
+    "content_type": "reward-cards",
+    "content_id": "32c18c87-41fc-5650-9b87-4797f42c6433",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "43bdfe6c-3347-4229-a837-2df7fce98554",
+    "content_type": "reward-cards",
+    "content_id": "44f560b4-7cfc-5631-bbb5-b653b3a2fb21",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "ed237db1-f1d9-4f3b-9b29-e2ef5f960cae",
+    "content_type": "reward-cards",
+    "content_id": "0889f073-7b07-5148-8f28-be40eb3690dd",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "08275d3d-070c-43c1-ac5a-90099cc524c7",
+    "content_type": "reward-cards",
+    "content_id": "335d6b4b-0bed-58bc-95d2-179eec025952",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "24ace0e1-96e3-40de-a9ce-4c2be249b844",
+    "content_type": "reward-cards",
+    "content_id": "a3b3190a-a554-522a-b553-e01a48a6cf5d",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "b4ff27ee-ab99-455e-9c51-21bdbfc61702",
+    "content_type": "reward-cards",
+    "content_id": "b4c3ec9e-272b-5114-9cd2-60154082c82d",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "4e485e04-d01f-455a-a24d-5312671d6ded",
+    "content_type": "reward-cards",
+    "content_id": "3fa1492a-647f-5720-a12e-6ac5cfd5e5c1",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "4459be39-d9e5-49dd-a7be-8ae07ffd4702",
+    "content_type": null,
+    "content_id": null,
+    "credits": true,
+    "choice": false
+  },
+  {
+    "mission_id": "9f54f8fc-a0d4-4cfb-9c39-8395d397d180",
+    "content_type": "reward-cards",
+    "content_id": "551e4a0c-8ed1-59c4-84fe-65da6c1b0482",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d24a12c7-83b8-4e9c-b901-fb01cce45477",
+    "content_type": "reward-cards",
+    "content_id": "f6b32578-15b2-5847-8e19-cabf0fb7b532",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "10360e32-9bad-47d7-8b44-57eed0ad24e0",
+    "content_type": "reward-cards",
+    "content_id": "28c9f2ab-72e9-5003-8bca-509af3a0b5ef",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "10360e32-9bad-47d7-8b44-57eed0ad24e0",
+    "content_type": "reward-cards",
+    "content_id": "fd332dd1-2256-56fd-9532-2b5f0b6aead9",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "0d78524f-4c6d-49ef-9c27-20b50e9e2337",
+    "content_type": "reward-cards",
+    "content_id": "eccc79f6-1637-5e13-96ed-dcdafb455fbd",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "970ef1b8-f3e2-437c-a809-f777dbe1fac0",
+    "content_type": "reward-cards",
+    "content_id": "decc9a6f-fc5d-5589-9b9e-0150dfaafdbe",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "db470ac3-2e13-41ec-8b45-434bfb48759c",
+    "content_type": "reward-cards",
+    "content_id": "97c171b8-5f88-5e7b-b14e-662f8a6cc19b",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e086dd18-e342-42df-aae0-af8847eafec2",
+    "content_type": "reward-cards",
+    "content_id": "526b88de-90da-51f4-8bfa-ff37d191e2a7",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "79d04c80-bc78-4399-9e2c-cbda2b122159",
+    "content_type": "deployment-cards",
+    "content_id": "487c2d05-aed5-508b-af2a-9132f846eedc",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "e5369103-ed5e-4f16-99d2-ac90c04f5b3c",
+    "content_type": "reward-cards",
+    "content_id": "c83c635b-54c6-5491-a163-1940cdc4b399",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "4c233e29-e3ff-4e44-933a-f88944306683",
+    "content_type": "reward-cards",
+    "content_id": "4f4353d0-e0be-54a9-aa7b-fb902f7c387d",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "0b6687d7-7d97-412a-b2cc-31bd21de73c0",
+    "content_type": "reward-cards",
+    "content_id": "697085bd-631f-5ead-aac2-54b0700b5f26",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "b9fa3b6d-d990-4cd4-b692-7a580121c3ba",
+    "content_type": "deployment-cards",
+    "content_id": "fbc2b270-b325-524a-b6bc-2d5e92ec2222",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "3fb82052-5455-409d-b031-7fcbba9ddf58",
+    "content_type": "deployment-cards",
+    "content_id": "06498bf6-c2f7-568e-b008-e2a79523b4e3",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "1adba432-9e4f-4427-9a0e-c886a6e71ac3",
+    "content_type": "deployment-cards",
+    "content_id": "eea0a2fc-f761-5475-a8d7-6e830ce7212b",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "f58b5a5a-7b14-427c-9bcb-fc2b0d437dcf",
+    "content_type": "deployment-cards",
+    "content_id": "2499bb95-68c0-5a40-9cae-45f54452c6e4",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "3ca5ba88-f9ea-4ef0-8020-8911bb545de2",
+    "content_type": "reward-cards",
+    "content_id": "dcc44e61-93af-5286-b987-b3683224ab04",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "b252b10c-2412-42c4-8f6b-b7f72fc50299",
+    "content_type": "reward-cards",
+    "content_id": "5867cc39-2f50-555f-9ce2-58144292b0cb",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "29f9c918-bb4c-4e0c-a0cc-72f375b3edb0",
+    "content_type": "reward-cards",
+    "content_id": "e2e5af2b-61da-5f73-8d12-7db339e81a62",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "4fa805c9-d798-416a-ba2a-6ad422afc3db",
+    "content_type": "deployment-cards",
+    "content_id": "59e0f986-0922-51a1-8835-8db17142a6ab",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "ea061c09-0fcd-40ea-8ca5-63f83a856317",
+    "content_type": "deployment-cards",
+    "content_id": "21b545dd-0fdf-59a4-b623-eb5aa1fc4656",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "c654ada6-fac2-4beb-a716-e39063a848c7",
+    "content_type": "deployment-cards",
+    "content_id": "65cf43a8-3eed-5975-b35b-00d8b8fea518",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "4d28dd1c-a5d8-49c7-8557-1863de05c8c2",
+    "content_type": "deployment-cards",
+    "content_id": "367a3295-e168-544f-adc5-a533b763b2c9",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "a22efe8e-a6c3-4abc-b045-25f44633a018",
+    "content_type": "deployment-cards",
+    "content_id": "843b0a7d-74f5-5d72-b73f-b490ffdf392d",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "64274808-4a15-4981-b973-df313cb500b9",
+    "content_type": "deployment-cards",
+    "content_id": "24365c13-2f11-5691-9e5d-2eed4fbf90d1",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "d5cf8a5a-3da4-47e1-9f5b-4ebf76d7e013",
+    "content_type": "deployment-cards",
+    "content_id": "2d696dfc-532f-57b2-ac33-7f625d1f3f78",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "48c8da25-fad8-49e2-a18b-41afbf8d83d0",
+    "content_type": "deployment-cards",
+    "content_id": "9f37ca09-2b9a-5621-9ef0-750097654701",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "c60f5ee6-1f7a-4ab6-90be-53d166a7324e",
+    "content_type": "deployment-cards",
+    "content_id": "758ca3ec-5b5d-5cbd-8ef4-49dd3416a9ce",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "9aaddca4-827e-423b-9cee-d45747036745",
+    "content_type": "reward-cards",
+    "content_id": "7b86cc6b-13c2-5f59-8419-799e710ee992",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "cfc37172-c612-4f2e-8a46-e3455d9ed9ce",
+    "content_type": "deployment-cards",
+    "content_id": "439490d4-98da-536a-90e6-a399faa70aaf",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "a0c5fa08-cb50-4735-a9c9-809229fa0456",
+    "content_type": "deployment-cards",
+    "content_id": "bee96d07-07ec-54df-83fd-83bbcdf73a96",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "31622599-10aa-4c4e-8d0d-d5d5286214e8",
+    "content_type": "deployment-cards",
+    "content_id": "87ccccd8-ea06-5347-9a68-1cd6facdb4eb",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "f0a58df5-b7e1-4668-94e6-54dda489dee8",
+    "content_type": "deployment-cards",
+    "content_id": "29eca1d6-7229-57a5-ae14-31c37a17b7b4",
+    "credits": false,
+    "choice": false
+  },
+  {
+    "mission_id": "389deb25-eded-4082-b353-d711d4d61f0b",
+    "content_type": "deployment-cards",
+    "content_id": "e300aba5-537a-5def-a45b-0e11eeada754",
+    "credits": false,
+    "choice": false
+  }
+]
