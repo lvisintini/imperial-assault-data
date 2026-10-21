@@ -33,6 +33,7 @@ SOURCES = [
     'campaign-threat-mission-cards',
     'form-cards',
     'skirmish-mission-cards',
+    'raid-missions',
     'missions',
     'mission-rewards',
 ]

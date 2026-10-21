@@ -18,19 +18,24 @@ const ownImage = ref => ref.record[TYPE[ref.type].images.find(f => ref.record[f]
 const backImage = (ref, db) => db.back.get(ref)?.ref.record.image;
 
 // Tiles show a record's own image, or its card back when it has none (agenda decks, imperial classes) or its type
-// asks for it (`thumb: 'back'`: heroes). The peek prefers the record's own image.
+// asks for it (`thumb: 'back'`: heroes), or, for a mission with neither (raids), its map. The peek prefers the
+// record's own image.
 function thumbPath(ref, db) {
   ref = ref.card ?? ref;
-  return TYPE[ref.type].thumb === 'back'
-    ? backImage(ref, db) ?? ownImage(ref) : ownImage(ref) ?? backImage(ref, db);
+  return (TYPE[ref.type].thumb === 'back'
+    ? backImage(ref, db) ?? ownImage(ref) : ownImage(ref) ?? backImage(ref, db)) ?? mapImage(ref, db);
 }
 
-const peekPath = (ref, db) => ownImage(ref.card ?? ref) ?? backImage(ref.card ?? ref, db);
+const peekPath = (ref, db) => {
+  ref = ref.card ?? ref;
+  return ownImage(ref) ?? backImage(ref, db) ?? mapImage(ref, db);
+};
 
 const imageUrl = (size, path) => `images/${size}/${encodeURI(path)}`;
 
 // A mission card's map, through its missions row.
 const mapOf = (ref, db) => db.parent.get(db.mission.get(ref))?.ref;
+const mapImage = (ref, db) => mapOf(ref, db)?.record.image;
 
 function subtitle(ref, db) {
   if (ref.card) return TYPE[ref.card.type].singular;

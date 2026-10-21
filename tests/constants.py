@@ -23,6 +23,7 @@ class CONTENT_TYPES:
     CARD = 'card-backs'
     THREAT_MISSION = 'campaign-threat-mission-cards'
     SKIRMISH_MISSION = 'skirmish-mission-cards'
+    RAID_MISSION = 'raid-missions'
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
 
@@ -51,6 +52,7 @@ class CONTENT_TYPES:
         THREAT_MISSION,
         FORM_CARDS,
         SKIRMISH_MISSION,
+        RAID_MISSION,
         MISSIONS,
         MISSION_REWARDS,
     ]
@@ -64,6 +66,7 @@ class CONTENT_TYPES:
         REGULAR_SIDE_MISSION,
         AGENDA,
         SKIRMISH_MISSION,
+        RAID_MISSION,
     ]
 
     without_ids = [

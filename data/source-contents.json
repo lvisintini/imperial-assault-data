@@ -4360,16 +4360,6 @@
     "content_id": "47d9361e-aaa7-58f8-9b2a-3dedb592d663"
   },
   {
-    "source_id": "87ecc443-b29f-410f-b67f-ed25f73305ba",
-    "content_type": "maps",
-    "content_id": "ce07d83f-b6e5-4167-9ccd-4d50d4bc1b81"
-  },
-  {
-    "source_id": "87ecc443-b29f-410f-b67f-ed25f73305ba",
-    "content_type": "maps",
-    "content_id": "9095d489-db62-4ed4-a403-b664f3b179b8"
-  },
-  {
     "source_id": "be340262-93bf-5bee-ad8a-82b87571806e",
     "content_type": "missions",
     "content_id": "ec29d31f-fb2e-4766-9519-cd017ef8f567"
@@ -4888,5 +4878,15 @@
     "source_id": "a4912fbc-09dd-5cab-a069-c1cfb904c03c",
     "content_type": "missions",
     "content_id": "dd7ec467-eab8-4b34-8d52-445722395e72"
+  },
+  {
+    "source_id": "87ecc443-b29f-410f-b67f-ed25f73305ba",
+    "content_type": "missions",
+    "content_id": "ad1831cb-f9a3-4f33-8a55-340400c607cb"
+  },
+  {
+    "source_id": "87ecc443-b29f-410f-b67f-ed25f73305ba",
+    "content_type": "missions",
+    "content_id": "0f996a60-9d5b-4c8d-a0c8-0f56f9bd27d8"
   }
 ]

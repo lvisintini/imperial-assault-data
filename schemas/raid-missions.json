@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "raid-missions.json#",
+  "title": "Schema for the raid missions data file: the Legends of the Alliance app's raids (app content: no card or image; their maps are on their missions rows)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Raid name",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ],
+  "additionalProperties": false
+}

@@ -18,7 +18,8 @@
         "campaign-ally-side-mission-cards",
         "campaign-regular-side-mission-cards",
         "agenda-cards",
-        "skirmish-mission-cards"
+        "skirmish-mission-cards",
+        "raid-missions"
       ]
     },
     "content_id": {
