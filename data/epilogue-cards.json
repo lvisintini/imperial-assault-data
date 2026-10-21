@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bbae304c-64bb-4c07-9c2d-581a14cf0a07",
+    "name": "Sparks",
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "image": "epilogue-cards/sparks.png"
+  },
+  {
+    "id": "01c7efa7-87ee-47d2-a7f8-808e0a96218f",
+    "name": "Comeuppance",
+    "mission_id": "98f6ad21-f683-4e2b-a8a9-d32aaca71440",
+    "image": "epilogue-cards/comeuppance.png"
+  },
+  {
+    "id": "bd43628c-7a8c-480b-b3f2-ccb230205ad7",
+    "name": "Loose Ends",
+    "mission_id": "f0a58df5-b7e1-4668-94e6-54dda489dee8",
+    "image": "epilogue-cards/loose-ends.png"
+  },
+  {
+    "id": "d8d95e7a-5812-4f2f-8d7f-094e299ab704",
+    "name": "Score Settled",
+    "mission_id": "f0a58df5-b7e1-4668-94e6-54dda489dee8",
+    "image": "epilogue-cards/score-settled.png"
+  },
+  {
+    "id": "53a2c58d-d77e-4134-bca6-66c19426b42a",
+    "name": "Blinded",
+    "mission_id": "389deb25-eded-4082-b353-d711d4d61f0b",
+    "image": "epilogue-cards/blinded.png"
+  },
+  {
+    "id": "9d874562-8140-4caa-b48c-057510db2903",
+    "name": "Scramble",
+    "mission_id": "389deb25-eded-4082-b353-d711d4d61f0b",
+    "image": "epilogue-cards/scramble.png"
+  },
+  {
+    "id": "7c7dbdcb-ac7c-42d8-b1c4-bdcdd9859241",
+    "name": "Lay Low",
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "image": "epilogue-cards/lay-low.png"
+  },
+  {
+    "id": "2e0688ed-f52b-4380-847a-6886058e1fbf",
+    "name": "Liberators",
+    "mission_id": "009a3795-b9a6-4a6c-8a9e-da1ddc3176bb",
+    "image": "epilogue-cards/liberators.png"
+  }
+]

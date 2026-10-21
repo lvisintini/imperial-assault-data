@@ -64,6 +64,7 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.UPGRADE, 'image', dims=LARGE_MINI),
         ImageDefinition('large', CONTENT_TYPES.THREAT_MISSION, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=LARGE_STANDARD_FLIPPED),
+        ImageDefinition('large', CONTENT_TYPES.EPILOGUE, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.FORM_CARDS, 'image', dims=LARGE_MINI_FLIPPED),
 
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.AGENDA_DECKS),
@@ -82,6 +83,7 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.STORY_MISSION),
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.THREAT_MISSION),
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI_FLIPPED, content_type=CONTENT_TYPES.FORM_CARDS),
+        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.EPILOGUE),
 
         ImageDefinition('small', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
         ImageDefinition('small', CONTENT_TYPES.MAP, 'image', dims=ANY),
@@ -103,6 +105,7 @@ class ImageTestHelper:
         ImageDefinition('small', CONTENT_TYPES.UPGRADE, 'image', dims=SMALL_MINI),
         ImageDefinition('small', CONTENT_TYPES.THREAT_MISSION, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=SMALL_STANDARD_FLIPPED),
+        ImageDefinition('small', CONTENT_TYPES.EPILOGUE, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.FORM_CARDS, 'image', dims=SMALL_MINI_FLIPPED),
 
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.AGENDA_DECKS),
@@ -121,6 +124,7 @@ class ImageTestHelper:
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.STORY_MISSION),
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.THREAT_MISSION),
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI_FLIPPED, content_type=CONTENT_TYPES.FORM_CARDS),
+        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.EPILOGUE),
     ]
 
     @classmethod

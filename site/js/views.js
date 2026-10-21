@@ -432,7 +432,8 @@ export function detail(db, ref) {
   if (sources.length) related.push(section('Found in', sources.length, grid(sources, db)));
   const parent = db.parent.get(ref);
   if (parent) related.push(section(parent.rel.label ?? TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
-  for (const {rel, refs} of db.children.get(ref) ?? []) {
+  // A mission card's own children, and its missions row's (its epilogues).
+  for (const {rel, refs} of [...db.children.get(ref) ?? [], ...db.children.get(db.mission.get(ref)) ?? []]) {
     related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
   }
   // Requires / Expands on a record, Required by / Expanded by on a source, a section per relation.

@@ -11,7 +11,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 - `data/<content-type>.json` — one JSON array per content type. Structure mimics a relational DB:
   - `sources.json` = products (core game, expansions, ally/villain packs).
   - `source-contents.json` = join table `{source_id, content_type, content_id}` mapping products to their contents.
-  - Child → parent FKs: `agenda-cards.agenda_id → agenda-decks`, `hero-class-cards.hero_id → heroes`, `imperial-class-cards.class_id → imperial-classes`, `campaign-hero-side-mission-cards.hero_id → heroes`, `missions.map_id → maps` (nullable), and `mission-rewards.mission_id → missions`. A product that ships inside another (the Luke and Vader packs, in the Core Set) is a `source-contents` row with `content_type: "sources"`.
+  - Child → parent FKs: `agenda-cards.agenda_id → agenda-decks`, `hero-class-cards.hero_id → heroes`, `imperial-class-cards.class_id → imperial-classes`, `campaign-hero-side-mission-cards.hero_id → heroes`, `missions.map_id → maps` (nullable), `mission-rewards.mission_id → missions` and `epilogue-cards.mission_id → missions`. A product that ships inside another (the Luke and Vader packs, in the Core Set) is a `source-contents` row with `content_type: "sources"`.
   - `requirements.json` (no ids, empty for now): a record (`content_type` + `content_id`) that `requires` or `expands` a source (`source_id`).
   - `missions.json` indexes every mission card (the five `campaign-*-mission-cards` files, `skirmish-mission-cards`, `raid-missions`, and `agenda-cards` with `mission: true`) through `content_type` + `content_id`. Missions reach products only through their index row (`source-contents` rows with `content_type: "missions"`); `mission-rewards.json` (no ids) lists each mission's rewards: a card through `content_type` + `content_id`, or `credits: true`; `choice: true` rows are pick-one alternatives.
   - `card-backs.json` is matched to cards by `content_type` (+ `variant`); its `id` isn't referenced yet (#52).
@@ -42,11 +42,11 @@ Touch all of: `data/`, `schemas/`, `schemas/definitions.json` (`content_type` en
 
 New content is added with `ia_tools` in [imperial-assault-tools](https://github.com/lvisintini/imperial-assault-tools), checked out next to this repo at `../imperial-assault-tools` (this project's `.claude/settings.local.json` adds it as a working directory). It finds this repo through `IA_DATA_ROOT` (default `../imperial-assault-data`). The workflow:
 
-1. `uv run --project ../imperial-assault-tools ia scrape <boardwars album url>` stages the product in the tools repo's `staging/` (or `ia audit` to look for gaps across all of boardwars).
+1. `uv run --project ../imperial-assault-tools ia scrape <boardwars album url>` stages the product in the tools repo's `staging/` (or `ia audit` to look for gaps across all of boardwars). For images boardwars doesn't have, `ia stage <slug> --type <content type> [files] [--tts <save>]` stages files or a Tabletop Simulator save the same way.
 2. The user runs `ia enter` and goes through the cards in the browser. Card text and visual checks are theirs; never open image files, only inspect them programmatically (size, format, hash).
 3. `ia import <product> --check`, then `ia import <product>`, writes records, `source-contents` rows and images here. Then run `uv run pytest`, and open a PR that names the tools commit used.
 
-Images come from cards.boardwars.eu only, so the dataset stays consistent.
+Images come from cards.boardwars.eu, so the dataset stays consistent. The exceptions, for content boardwars lacks, are listed in `docs/data-model.md`: skirmish mission cards (the wiki), maps (the Skirmish Map Project) and epilogue cards (a Tabletop Simulator save).
 
 ## Commands
 

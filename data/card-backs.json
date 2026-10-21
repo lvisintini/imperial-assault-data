@@ -411,5 +411,33 @@
     "variant": "Tress Hacnua",
     "content_type": "heroes",
     "image": "card-backs/rebel-hero-tress-hacnua.png"
+  },
+  {
+    "id": "455fa36e-a2f9-420d-a7f0-d2a2540a23c6",
+    "deck": "Executive Overreach Epilogues",
+    "variant": "Executive Overreach",
+    "content_type": "epilogue-cards",
+    "image": "card-backs/executive-overreach-epilogues-executive-overreach.png"
+  },
+  {
+    "id": "5a94e36f-52bc-471f-a161-bc298127cb38",
+    "deck": "The Pirate's Ploy Epilogues",
+    "variant": "The Pirate's Ploy",
+    "content_type": "epilogue-cards",
+    "image": "card-backs/the-pirates-ploy-epilogues-the-pirates-ploy.png"
+  },
+  {
+    "id": "dd9c9ff9-04d3-4413-a8a1-d5f82d1c6e81",
+    "deck": "The Admiral's Grip Epilogues",
+    "variant": "The Admiral's Grip",
+    "content_type": "epilogue-cards",
+    "image": "card-backs/the-admirals-grip-epilogues-the-admirals-grip.png"
+  },
+  {
+    "id": "b5717817-51f5-4f58-b481-b5a8a097c4e6",
+    "deck": "Intimidation Factor Epilogues",
+    "variant": "Intimidation Factor",
+    "content_type": "epilogue-cards",
+    "image": "card-backs/intimidation-factor-epilogues-intimidation-factor.png"
   }
 ]
