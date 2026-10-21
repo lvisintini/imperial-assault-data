@@ -73,6 +73,7 @@ export const TYPES = [
     order: {format: ['Standard', 'Four Player Team Battle', 'Four Player Free-For-All']},
   },
   {file: 'raid-missions', label: 'Raid missions', singular: 'Raid mission', images: []},
+  {file: 'epilogue-cards', label: 'Epilogue cards', singular: 'Epilogue card', images: ['image']},
   {file: 'reward-cards', label: 'Reward cards', singular: 'Reward card', images: ['image']},
   {file: 'supply-cards', label: 'Supply cards', singular: 'Supply card', images: ['image']},
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},

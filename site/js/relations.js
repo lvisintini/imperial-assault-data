@@ -29,6 +29,7 @@ export const FKS = [
   {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes'},
   {child: 'campaign-hero-side-mission-cards', field: 'hero_id', parent: 'heroes', label: 'For hero'},
   {child: 'missions', field: 'map_id', parent: 'maps', label: 'Map', products: 'children'},
+  {child: 'epilogue-cards', field: 'mission_id', parent: 'missions', label: 'Mission', childrenLabel: 'Epilogues'},
 ];
 
 // card-backs point at a content type; when it has several backs, `variant` matches a different field per type.
@@ -45,4 +46,6 @@ export const CARD_BACK_MATCH = {
   'upgrade-cards': ({record}, variant) => `Tier ${record.tier}` === variant,
   'campaign-story-mission-cards': bySourceName,
   'campaign-threat-mission-cards': bySourceName,
+  // An epilogue's back names the mission it ends.
+  'epilogue-cards': (ref, variant, db) => db.parent.get(ref)?.ref.card?.record.name === variant,
 };

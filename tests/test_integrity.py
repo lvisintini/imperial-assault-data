@@ -148,6 +148,10 @@ class TestMissionsIntegrity:
                 for r in get_data(CONTENT_TYPES.MISSION_REWARDS)]
         assert len(rows) == len(set(rows))
 
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.EPILOGUE), ids=lambda e: e['name'])
+    def test_epilogues_missions_resolve(self, entry, all_data):
+        assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MISSIONS], entry['mission_id']) is not None
+
     def test_skirmish_and_raid_missions_have_a_map(self):
         assert all(m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS)
                    if m['content_type'] in (CONTENT_TYPES.SKIRMISH_MISSION, CONTENT_TYPES.RAID_MISSION))

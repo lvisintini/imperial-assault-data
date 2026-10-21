@@ -24,6 +24,7 @@ missions         1──1 <mission card>        (content_type + content_id; prod
 maps             1──* missions              (map_id; a map is in its missions' products)
 requirements     <any record> requires / expands a source   (content_type + content_id, relation, source_id)
 missions         1──* mission-rewards       (mission_id; content_type + content_id, or credits)
+missions         1──* epilogue-cards        (mission_id)
 ```
 
 You can find an example on how to do this in the `./examples` folder, along with other examples.
@@ -150,6 +151,7 @@ The table bellow shows you the expected sizes for all the different images inclu
 | campaign-threat-mission-cards.image                   |         | ✔        |                    |         |                |            |     |
 | form-cards.image                                      |         |          |                    |         | ✔              |            |     |
 | skirmish-mission-cards.image                          |         |          | ✔                  |         |                |            |     |
+| epilogue-cards.image                                  |         | ✔        |                    |         |                |            |     |
 | card-backs.image(agenda-decks)                        |         | ✔        |                    |         |                |            |     |
 | card-backs.image(command-cards)                       |         |          |                    | ✔       |                |            |     |
 | card-backs.image(companion-cards)                     |         | ✔        |                    |         |                |            |     |
@@ -166,6 +168,7 @@ The table bellow shows you the expected sizes for all the different images inclu
 | card-backs.image(campaign-story-mission-cards)        |         | ✔        |                    |         |                |            |     |
 | card-backs.image(campaign-threat-mission-cards)       |         | ✔        |                    |         |                |            |     |
 | card-backs.image(form-cards)                          |         |          |                    |         | ✔              |            |     |
+| card-backs.image(epilogue-cards)                      |         | ✔        |                    |         |                |            |     |
 
 
 ## Disclaimer

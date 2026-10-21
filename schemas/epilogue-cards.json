@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "epilogue-cards.json#",
+  "title": "Schema for the epilogue cards data file: how a mission ends, one card per outcome",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Epilogue name (without the \"Epilogue:\" prefix)",
+      "minLength": 1
+    },
+    "mission_id": {
+      "description": "Foreign key to the mission in data/missions.json (the index) the epilogue ends.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "image": {
+      "description": "The file path for this epilogue card's image.",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "mission_id",
+    "image"
+  ],
+  "additionalProperties": false
+}

@@ -1,7 +1,7 @@
 # Data model
 
 The dataset is laid out like a relational database: each file in `data/` is a table (a JSON array of records), and
-records point at each other through id fields. This page shows how the 28 files relate. Only key fields are listed;
+records point at each other through id fields. This page shows how the 29 files relate. Only key fields are listed;
 see `schemas/` for every field.
 
 ## Ids
@@ -187,7 +187,7 @@ Every mission has a card in one of six collections:
 - `agenda-cards` with `mission: true` (the Imperial player's agenda missions);
 - `skirmish-mission-cards`: two per skirmish map, with `format` (`Standard`, `Four Player Team Battle`,
   `Four Player Free-For-All`) and `scenario` (`A` or `B`, as printed; null until entered). Their images are the
-  wiki's, the one image source besides boardwars for cards, at the standard size turned sideways;
+  wiki's (boardwars has none), at the standard size turned sideways;
 - `raid-missions`: the raids of FFG's *Legends of the Alliance* app (The Malastarian Outpost, The Gray Cap Cantina),
   played on the raid maps. They're app content, with no card or image; their product is the app.
 
@@ -249,6 +249,27 @@ erDiagram
     }
 ```
 
+## Epilogues
+
+`epilogue-cards` are the cards a campaign mission can end on, two per mission: the Wave 11 packs each have one mission
+(an agenda or ally side mission) whose outcome picks one of its two epilogues. `mission_id` is that mission's
+`missions` row, so an epilogue reaches its product through its mission and has no `source-contents` rows. Each
+mission's epilogues have their own back, matched on the mission's name (see Card backs).
+
+Boardwars has none of them: their images come from the Tabletop Simulator save linked on #15, and the pairing of names
+to missions from the wiki's pack pages.
+
+```mermaid
+erDiagram
+    missions ||--o{ epilogue-cards : "mission_id"
+
+    epilogue-cards {
+        uuid id PK
+        string name "without the Epilogue: prefix"
+        uuid mission_id FK
+    }
+```
+
 ## Card backs
 
 Each `card-backs` record is the back of one deck and points at a content type through `content_type`. It has an
@@ -265,6 +286,7 @@ field in each content type:
 | `upgrade-cards`        | set       | `"Tier " + tier` = `variant`                                             |
 | `campaign-story-mission-cards`  | set | the mission is in the source whose `name` = `variant` (via its missions row) |
 | `campaign-threat-mission-cards` | set | the mission is in the source whose `name` = `variant` (via its missions row) |
+| `epilogue-cards`       | set       | the mission card (via `mission_id`) has `name` = `variant`               |
 | `form-cards`           | `Clawdite`| every record (all form cards share one back)                              |
 | any other type         | `null`    | every record of that type                                                |
 
@@ -281,6 +303,7 @@ erDiagram
     card-backs ||--|{ upgrade-cards : "variant = Tier + tier"
     card-backs ||--|{ campaign-story-mission-cards : "variant = source name"
     card-backs ||--|{ campaign-threat-mission-cards : "variant = source name"
+    card-backs ||--|{ epilogue-cards : "variant = mission name"
     card-backs ||--|{ form-cards : "one back"
     card-backs ||--|{ agenda-decks : "one back"
     card-backs ||--|{ command-cards : "one back"

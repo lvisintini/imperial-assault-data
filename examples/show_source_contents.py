@@ -34,6 +34,7 @@ SOURCES = [
     'form-cards',
     'skirmish-mission-cards',
     'raid-missions',
+    'epilogue-cards',
     'missions',
     'mission-rewards',
 ]

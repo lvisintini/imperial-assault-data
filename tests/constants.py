@@ -24,6 +24,7 @@ class CONTENT_TYPES:
     THREAT_MISSION = 'campaign-threat-mission-cards'
     SKIRMISH_MISSION = 'skirmish-mission-cards'
     RAID_MISSION = 'raid-missions'
+    EPILOGUE = 'epilogue-cards'
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
     REQUIREMENTS = 'requirements'
@@ -54,6 +55,7 @@ class CONTENT_TYPES:
         FORM_CARDS,
         SKIRMISH_MISSION,
         RAID_MISSION,
+        EPILOGUE,
         MISSIONS,
         MISSION_REWARDS,
         REQUIREMENTS,
