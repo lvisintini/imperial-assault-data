@@ -37,7 +37,8 @@
         "skirmish-mission-cards",
         "raid-missions",
         "missions",
-        "mission-rewards"
+        "mission-rewards",
+        "requirements"
       ]
     },
     "affiliation": {

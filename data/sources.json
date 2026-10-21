@@ -7,7 +7,6 @@
     "product_code": "SWI01",
     "announced_date": "2014-08-15",
     "release_date": "2014-12-15",
-    "included_in": null,
     "image": "sources/imperial-assault.png"
   },
   {
@@ -18,7 +17,6 @@
     "product_code": "SWI10",
     "announced_date": "2015-03-18",
     "release_date": "2015-08-20",
-    "included_in": null,
     "image": "sources/twin-shadows.png"
   },
   {
@@ -29,7 +27,6 @@
     "product_code": "SWI19",
     "announced_date": "2015-08-01",
     "release_date": "2015-12-23",
-    "included_in": null,
     "image": "sources/return-to-hoth.png"
   },
   {
@@ -40,7 +37,6 @@
     "product_code": "SWI24",
     "announced_date": "2016-03-04",
     "release_date": "2016-06-02",
-    "included_in": null,
     "image": "sources/the-bespin-gambit.png"
   },
   {
@@ -51,7 +47,6 @@
     "product_code": "SWI32",
     "announced_date": "2016-08-05",
     "release_date": "2016-12-29",
-    "included_in": null,
     "image": "sources/jabbas-realm.png"
   },
   {
@@ -62,7 +57,6 @@
     "product_code": "SWI05",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/ig-88.png"
   },
   {
@@ -73,7 +67,6 @@
     "product_code": "SWI09",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/rebel-saboteurs.png"
   },
   {
@@ -84,7 +77,6 @@
     "product_code": "SWI08",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/rebel-troopers.png"
   },
   {
@@ -95,7 +87,6 @@
     "product_code": "SWI04",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/royal-guard-champion.png"
   },
   {
@@ -106,7 +97,6 @@
     "product_code": "SWI11",
     "announced_date": "2015-03-18",
     "release_date": "2015-08-20",
-    "included_in": null,
     "image": "sources/boba-fett.png"
   },
   {
@@ -117,7 +107,6 @@
     "product_code": "SWI13",
     "announced_date": "2015-03-18",
     "release_date": "2015-08-20",
-    "included_in": null,
     "image": "sources/kayn-somos.png"
   },
   {
@@ -128,7 +117,6 @@
     "product_code": "SWI12",
     "announced_date": "2015-03-18",
     "release_date": "2015-08-20",
-    "included_in": null,
     "image": "sources/r2-d2-and-c-3po.png"
   },
   {
@@ -139,7 +127,6 @@
     "product_code": "SWI16",
     "announced_date": "2015-04-21",
     "release_date": "2015-10-08",
-    "included_in": null,
     "image": "sources/hired-guns.png"
   },
   {
@@ -150,7 +137,6 @@
     "product_code": "SWI14",
     "announced_date": "2015-04-21",
     "release_date": "2015-10-08",
-    "included_in": null,
     "image": "sources/stormtroopers.png"
   },
   {
@@ -161,7 +147,6 @@
     "product_code": "SWI15",
     "announced_date": "2015-04-21",
     "release_date": "2015-10-08",
-    "included_in": null,
     "image": "sources/wookiee-warriors.png"
   },
   {
@@ -172,7 +157,6 @@
     "product_code": "SWI17",
     "announced_date": "2015-07-08",
     "release_date": "2016-02-18",
-    "included_in": null,
     "image": "sources/alliance-smuggler.png"
   },
   {
@@ -183,7 +167,6 @@
     "product_code": "SWI18",
     "announced_date": "2015-07-08",
     "release_date": "2016-02-18",
-    "included_in": null,
     "image": "sources/bantha-rider.png"
   },
   {
@@ -194,7 +177,6 @@
     "product_code": "SWI21",
     "announced_date": "2015-08-01",
     "release_date": "2015-12-23",
-    "included_in": null,
     "image": "sources/dengar.png"
   },
   {
@@ -205,7 +187,6 @@
     "product_code": "SWI23",
     "announced_date": "2015-08-01",
     "release_date": "2015-12-23",
-    "included_in": null,
     "image": "sources/echo-base-troopers.png"
   },
   {
@@ -216,7 +197,6 @@
     "product_code": "SWI20",
     "announced_date": "2015-08-01",
     "release_date": "2015-12-23",
-    "included_in": null,
     "image": "sources/general-sorin.png"
   },
   {
@@ -227,7 +207,6 @@
     "product_code": "SWI22",
     "announced_date": "2015-08-01",
     "release_date": "2015-12-23",
-    "included_in": null,
     "image": "sources/leia-organa.png"
   },
   {
@@ -238,7 +217,6 @@
     "product_code": "SWI26",
     "announced_date": "2016-03-04",
     "release_date": "2016-06-02",
-    "included_in": null,
     "image": "sources/agent-blaise.png"
   },
   {
@@ -249,7 +227,6 @@
     "product_code": "SWI25",
     "announced_date": "2016-03-04",
     "release_date": "2016-06-02",
-    "included_in": null,
     "image": "sources/bossk.png"
   },
   {
@@ -260,7 +237,6 @@
     "product_code": "SWI28",
     "announced_date": "2016-03-04",
     "release_date": "2016-06-02",
-    "included_in": null,
     "image": "sources/isb-infiltrators.png"
   },
   {
@@ -271,7 +247,6 @@
     "product_code": "SWI27",
     "announced_date": "2016-03-04",
     "release_date": "2016-06-02",
-    "included_in": null,
     "image": "sources/lando-calrissian.png"
   },
   {
@@ -282,7 +257,6 @@
     "product_code": "SWI31",
     "announced_date": "2016-05-11",
     "release_date": "2016-07-14",
-    "included_in": null,
     "image": "sources/greedo.png"
   },
   {
@@ -293,7 +267,6 @@
     "product_code": "SWI29",
     "announced_date": "2016-05-11",
     "release_date": "2016-07-14",
-    "included_in": null,
     "image": "sources/obi-wan-kenobi.png"
   },
   {
@@ -304,7 +277,6 @@
     "product_code": "SWI30",
     "announced_date": "2016-05-11",
     "release_date": "2016-07-14",
-    "included_in": null,
     "image": "sources/the-grand-inquisitor.png"
   },
   {
@@ -315,7 +287,6 @@
     "product_code": "SWI34",
     "announced_date": "2016-08-05",
     "release_date": "2016-12-29",
-    "included_in": null,
     "image": "sources/alliance-rangers.png"
   },
   {
@@ -326,7 +297,6 @@
     "product_code": "SWI35",
     "announced_date": "2016-08-05",
     "release_date": "2016-12-29",
-    "included_in": null,
     "image": "sources/captain-terro.png"
   },
   {
@@ -337,7 +307,6 @@
     "product_code": "SWI36",
     "announced_date": "2016-08-05",
     "release_date": "2016-12-29",
-    "included_in": null,
     "image": "sources/jabba-the-hutt.png"
   },
   {
@@ -348,7 +317,6 @@
     "product_code": "SWI33",
     "announced_date": "2016-08-05",
     "release_date": "2016-12-29",
-    "included_in": null,
     "image": "sources/luke-skywalker-jedi-knight.png"
   },
   {
@@ -359,7 +327,6 @@
     "product_code": "SWI41",
     "announced_date": "2017-01-13",
     "release_date": "2017-05-11",
-    "included_in": null,
     "image": "sources/bt-1-and-0-0-0.png"
   },
   {
@@ -370,7 +337,6 @@
     "product_code": "SWI43",
     "announced_date": "2017-01-13",
     "release_date": "2017-05-11",
-    "included_in": null,
     "image": "sources/hera-syndulla-and-c1-10p.png"
   },
   {
@@ -381,7 +347,6 @@
     "product_code": "SWI42",
     "announced_date": "2017-01-13",
     "release_date": "2017-05-11",
-    "included_in": null,
     "image": "sources/jawa-scavenger.png"
   },
   {
@@ -392,7 +357,6 @@
     "product_code": "SWI07",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/chewbacca.png"
   },
   {
@@ -403,7 +367,6 @@
     "product_code": "SWI03",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/general-weiss.png"
   },
   {
@@ -414,7 +377,6 @@
     "product_code": "SWI06",
     "announced_date": "2014-10-13",
     "release_date": "2015-03-20",
-    "included_in": null,
     "image": "sources/han-solo.png"
   },
   {
@@ -425,7 +387,6 @@
     "product_code": "SWI46",
     "announced_date": "2017-05-04",
     "release_date": "2017-10-12",
-    "included_in": null,
     "image": "sources/heart-of-the-empire.png"
   },
   {
@@ -436,7 +397,6 @@
     "product_code": "SWI49",
     "announced_date": "2017-05-04",
     "release_date": "2017-10-12",
-    "included_in": null,
     "image": "sources/ahsoka-tano.png"
   },
   {
@@ -447,7 +407,6 @@
     "product_code": "SWI48",
     "announced_date": "2017-05-04",
     "release_date": "2017-10-12",
-    "included_in": null,
     "image": "sources/emperor-palpatine.png"
   },
   {
@@ -458,7 +417,6 @@
     "product_code": "SWI47",
     "announced_date": "2017-05-04",
     "release_date": "2017-10-12",
-    "included_in": null,
     "image": "sources/maul.png"
   },
   {
@@ -469,7 +427,6 @@
     "product_code": "SWI54",
     "announced_date": "2018-04-13",
     "release_date": "2018-08-23",
-    "included_in": null,
     "image": "sources/tyrants-of-lothal.png"
   },
   {
@@ -480,7 +437,6 @@
     "product_code": "SWI55",
     "announced_date": "2018-04-13",
     "release_date": "2018-08-23",
-    "included_in": null,
     "image": "sources/ezra-bridger-and-kanan-jarrus.png"
   },
   {
@@ -491,7 +447,6 @@
     "product_code": "SWI58",
     "announced_date": "2018-04-13",
     "release_date": "2018-08-23",
-    "included_in": null,
     "image": "sources/hondo-ohnaka.png"
   },
   {
@@ -502,7 +457,6 @@
     "product_code": "SWI56",
     "announced_date": "2018-04-13",
     "release_date": "2018-08-23",
-    "included_in": null,
     "image": "sources/sabine-wren-and-zeb-orrelios.png"
   },
   {
@@ -513,7 +467,6 @@
     "product_code": "SWI57",
     "announced_date": "2018-04-13",
     "release_date": "2018-08-23",
-    "included_in": null,
     "image": "sources/thrawn.png"
   },
   {
@@ -524,7 +477,6 @@
     "product_code": null,
     "announced_date": "2014-08-15",
     "release_date": "2014-12-15",
-    "included_in": "be340262-93bf-5bee-ad8a-82b87571806e",
     "image": "sources/luke-skywalker.png"
   },
   {
@@ -535,7 +487,6 @@
     "product_code": null,
     "announced_date": "2014-08-15",
     "release_date": "2014-12-15",
-    "included_in": "be340262-93bf-5bee-ad8a-82b87571806e",
     "image": "sources/darth-vader.png"
   },
   {
@@ -546,7 +497,6 @@
     "product_code": null,
     "announced_date": null,
     "release_date": "2017-11-20",
-    "included_in": null,
     "image": "sources/legends-of-the-alliance.png"
   }
 ]

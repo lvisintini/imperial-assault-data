@@ -26,6 +26,7 @@ class CONTENT_TYPES:
     RAID_MISSION = 'raid-missions'
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
+    REQUIREMENTS = 'requirements'
 
     as_list = [
         SOURCE,
@@ -55,6 +56,7 @@ class CONTENT_TYPES:
         RAID_MISSION,
         MISSIONS,
         MISSION_REWARDS,
+        REQUIREMENTS,
     ]
 
     # The collections missions.json indexes (agenda cards only where `mission` is true).
@@ -72,6 +74,7 @@ class CONTENT_TYPES:
     without_ids = [
         SOURCE_CONTENTS,
         MISSION_REWARDS,
+        REQUIREMENTS,
     ]
 
 

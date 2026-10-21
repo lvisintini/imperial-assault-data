@@ -1,5 +1,5 @@
 import {html} from './html.js';
-import {FKS} from './relations.js';
+import {FKS, RELATIONS} from './relations.js';
 import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, writeFilters} from './facets.js';
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, title} from './types.js';
@@ -41,7 +41,7 @@ function subtitle(ref, db) {
   if (ref.card) return TYPE[ref.card.type].singular;
   const {record} = ref;
   const parent = db.parent.get(ref);
-  if (parent && ref.type !== 'sources') return title(parent.ref);  // a pack in the Core Set is still a pack
+  if (parent) return title(parent.ref);
   switch (ref.type) {
     case 'sources': return record.wave != null ? `${record.type} · Wave ${record.wave}` : record.type;
     // Enough to tell apart same-named cards: elite/regular pairs and campaign/skirmish versions.
@@ -434,6 +434,13 @@ export function detail(db, ref) {
   if (parent) related.push(section(parent.rel.label ?? TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
   for (const {rel, refs} of db.children.get(ref) ?? []) {
     related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
+  }
+  // Requires / Expands on a record, Required by / Expanded by on a source, a section per relation.
+  for (const [links, key] of [[db.requires.get(ref), 'label'], [db.requiredBy.get(ref), 'reverse']]) {
+    for (const [relation, names] of Object.entries(RELATIONS)) {
+      const refs = (links ?? []).filter(link => link.relation === relation).map(link => link.ref);
+      if (refs.length) related.push(section(names[key], refs.length, grouped(refs, db)));
+    }
   }
   const map = mapOf(ref, db);
   if (map) related.push(section('Map', null, grid([map], db)));
