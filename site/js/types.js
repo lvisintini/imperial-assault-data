@@ -48,6 +48,7 @@ export const TYPES = [
     order: {content_type: [
       'campaign-story-mission-cards', 'campaign-threat-mission-cards', 'campaign-hero-side-mission-cards',
       'campaign-ally-side-mission-cards', 'campaign-regular-side-mission-cards', 'agenda-cards',
+      'skirmish-mission-cards',
     ]},
   },
   {file: 'campaign-story-mission-cards', label: 'Story missions', singular: 'Story mission', images: ['image']},
@@ -63,6 +64,13 @@ export const TYPES = [
   {
     file: 'campaign-regular-side-mission-cards', label: 'Regular side missions', singular: 'Regular side mission',
     images: ['image'],
+  },
+  {
+    file: 'skirmish-mission-cards', label: 'Skirmish missions', singular: 'Skirmish mission', images: ['image'],
+    facets: [
+      'format', 'scenario', 'source', 'wave',
+    ],
+    order: {format: ['Standard', 'Four Player Team Battle', 'Four Player Free-For-All']},
   },
   {file: 'reward-cards', label: 'Reward cards', singular: 'Reward card', images: ['image']},
   {file: 'supply-cards', label: 'Supply cards', singular: 'Supply card', images: ['image']},

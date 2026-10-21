@@ -39,6 +39,7 @@ class Db {
     this.#linkSources();
     this.#linkMissions();
     this.#linkParents();
+    this.#linkChildProducts();
     this.#linkBacks();
   }
 
@@ -98,6 +99,24 @@ class Db {
         const group = groups.find(g => g.rel === rel);
         if (group) group.refs.push(child);
         else groups.push({rel, refs: [child]});
+      }
+    }
+  }
+
+  // Parents whose products are their children's (maps, through their missions), listed in those products' contents.
+  #linkChildProducts() {
+    for (const [parent, groups] of this.children) {
+      const sources = new Set(this.foundIn.get(parent));
+      for (const {rel, refs} of groups) {
+        if (rel.products !== 'children') continue;
+        for (const child of refs) for (const source of this.sources(child)) sources.add(source);
+      }
+      const added = [...sources].filter(source => !this.foundIn.get(parent)?.includes(source));
+      if (!added.length) continue;
+      this.foundIn.set(parent, [...sources].sort((a, b) => a.index - b.index));
+      for (const source of added) {
+        if (!this.contents.has(source)) this.contents.set(source, new Map());
+        push(this.contents.get(source), parent.type, parent);
       }
     }
   }

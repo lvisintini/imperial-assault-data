@@ -133,6 +133,19 @@ class TestMissionsIntegrity:
                 for r in get_data(CONTENT_TYPES.MISSION_REWARDS)]
         assert len(rows) == len(set(rows))
 
+    def test_skirmish_missions_have_a_map(self):
+        assert all(m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS)
+                   if m['content_type'] == CONTENT_TYPES.SKIRMISH_MISSION)
+
+    def test_maps_reach_products_through_their_missions(self):
+        """A map used by a mission is in its missions' products, so it has no source-contents rows of its own; a map
+        no mission uses yet (raid maps until raid missions exist) keeps them. Every map is in some product."""
+        used = {m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS) if m['map_id']}
+        direct = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+                  if r['content_type'] == CONTENT_TYPES.MAP}
+        assert not used & direct
+        assert {m['id'] for m in get_data(CONTENT_TYPES.MAP)} == used | direct
+
     def test_a_choice_has_alternatives(self):
         """Rows with choice: true are a pick-one group, so a mission has none or at least two."""
         choices = Counter(r['mission_id'] for r in get_data(CONTENT_TYPES.MISSION_REWARDS) if r['choice'])
