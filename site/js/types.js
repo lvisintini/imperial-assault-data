@@ -74,7 +74,14 @@ export const TYPES = [
   },
   {file: 'raid-missions', label: 'Raid missions', singular: 'Raid mission', images: []},
   {file: 'epilogue-cards', label: 'Epilogue cards', singular: 'Epilogue card', images: ['image']},
-  {file: 'reward-cards', label: 'Reward cards', singular: 'Reward card', images: ['image']},
+  {
+    file: 'reward-cards', label: 'Reward cards', singular: 'Reward card', images: ['image'],
+    facets: [
+      'for', 'class', 'type', 'traits', 'source', 'wave',
+    ],
+    groups: ['for'],
+    order: {for: ['Rebel players', 'Imperial player'], class: ['Regular', 'Boon', 'Bane']},
+  },
   {file: 'supply-cards', label: 'Supply cards', singular: 'Supply card', images: ['image']},
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},
   {file: 'condition-cards', label: 'Condition cards', singular: 'Condition card', images: ['image']},

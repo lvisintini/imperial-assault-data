@@ -38,6 +38,21 @@
     "type": {
       "description": "Reward type",
       "$ref": "definitions.json#/definitions/buff-type"
+    },
+    "class": {
+      "description": "Boon or Bane for Return to Hoth's threat mission rewards (a Boon goes to the Rebel players, a Bane to the Imperial player); Regular for every other reward.",
+      "enum": [
+        "Regular",
+        "Boon",
+        "Bane"
+      ]
+    },
+    "for": {
+      "description": "Who receives this reward card.",
+      "enum": [
+        "Imperial player",
+        "Rebel players"
+      ]
     }
   },
   "required": [
@@ -45,7 +60,9 @@
     "name",
     "image",
     "traits",
-    "type"
+    "type",
+    "class",
+    "for"
   ],
   "additionalProperties": false
 }

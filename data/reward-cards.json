@@ -4,6 +4,8 @@
     "name": "Bounty",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/bounty.png"
   },
   {
@@ -11,6 +13,8 @@
     "name": "Counterparts",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/counterparts.png"
   },
   {
@@ -18,6 +22,8 @@
     "name": "Hunt Them Down",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/hunt-them-down.png"
   },
   {
@@ -25,6 +31,8 @@
     "name": "Surveillance Operatives",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/surveillance-operatives.png"
   },
   {
@@ -34,6 +42,8 @@
     "traits": [
       "Accessory"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/tech-goggles.png"
   },
   {
@@ -43,6 +53,8 @@
     "traits": [
       "Accessory"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/adrenal-implant.png"
   },
   {
@@ -50,6 +62,8 @@
     "name": "Allied Operations",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/allied-operations.png"
   },
   {
@@ -57,6 +71,8 @@
     "name": "Fearless Leader",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/fearless-leader.png"
   },
   {
@@ -64,6 +80,8 @@
     "name": "Imperial Industry",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/imperial-industry.png"
   },
   {
@@ -71,6 +89,8 @@
     "name": "Life Debt",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/life-debt.png"
   },
   {
@@ -78,6 +98,8 @@
     "name": "Old Wounds",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/old-wounds.png"
   },
   {
@@ -85,6 +107,8 @@
     "name": "Peacemaker",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/peacemaker.png"
   },
   {
@@ -92,6 +116,8 @@
     "name": "Rebel Recon",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/rebel-recon.png"
   },
   {
@@ -102,6 +128,8 @@
       "Armor",
       "Light"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/shadow-suit.png"
   },
   {
@@ -112,6 +140,8 @@
       "Lightsaber",
       "Blade"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/shu-yens-lightsaber.png"
   },
   {
@@ -119,6 +149,8 @@
     "name": "Special Operations",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/special-operations.png"
   },
   {
@@ -126,6 +158,8 @@
     "name": "Supply Deficit",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/supply-deficit.png"
   },
   {
@@ -133,6 +167,8 @@
     "name": "The Ways of the Force",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/the-ways-of-the-force.png"
   },
   {
@@ -140,6 +176,8 @@
     "name": "Veteran Prowess",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/veteran-prowess.png"
   },
   {
@@ -147,6 +185,8 @@
     "name": "Battle Vision",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/battle-vision.png"
   },
   {
@@ -154,6 +194,8 @@
     "name": "Iron Hand",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/iron-hand.png"
   },
   {
@@ -163,6 +205,8 @@
     "traits": [
       "Enhancement"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/systems-upgrade.png"
   },
   {
@@ -172,6 +216,8 @@
     "traits": [
       "Accessory"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/cam-droid.png"
   },
   {
@@ -179,6 +225,8 @@
     "name": "Lobots Favor",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/lobots-favor.png"
   },
   {
@@ -188,6 +236,8 @@
     "traits": [
       "Accessory"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/radiant-holocron.png"
   },
   {
@@ -195,6 +245,8 @@
     "name": "Relief Effort",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/relief-effort.png"
   },
   {
@@ -202,6 +254,8 @@
     "name": "Under the Radar",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/under-the-radar.png"
   },
   {
@@ -209,6 +263,8 @@
     "name": "Bred for War",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/bred-for-war.png"
   },
   {
@@ -216,6 +272,8 @@
     "name": "Desperado",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/desperado.png"
   },
   {
@@ -223,6 +281,8 @@
     "name": "Haymaker",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/haymaker.png"
   },
   {
@@ -230,6 +290,8 @@
     "name": "Mandalorian Heritage",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/mandalorian-heritage.png"
   },
   {
@@ -237,6 +299,8 @@
     "name": "Mercenary Ties",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/mercenary-ties.png"
   },
   {
@@ -244,6 +308,8 @@
     "name": "501st Training",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/501st-training.png"
   },
   {
@@ -251,6 +317,8 @@
     "name": "Tusken Weaponry",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/tusken-weaponry.png"
   },
   {
@@ -258,6 +326,8 @@
     "name": "Cautious Approach",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/cautious-approach.png"
   },
   {
@@ -265,6 +335,8 @@
     "name": "Tactical Advance",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/tactical-advance.png"
   },
   {
@@ -272,6 +344,8 @@
     "name": "Lady Luck",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/lady-luck.png"
   },
   {
@@ -279,6 +353,8 @@
     "name": "Mechanical Salvage",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/mechanical-salvage.png"
   },
   {
@@ -286,6 +362,8 @@
     "name": "Intimidation",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/intimidation.png"
   },
   {
@@ -295,6 +373,8 @@
     "traits": [
       "Accessory"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/quickdraw-holster.png"
   },
   {
@@ -302,6 +382,8 @@
     "name": "Alliance Efficiency",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/alliance-efficiency.png"
   },
   {
@@ -311,6 +393,8 @@
     "traits": [
       "Accessory"
     ],
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/bardottan-shard.png"
   },
   {
@@ -318,6 +402,8 @@
     "name": "Explosives Clearance",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/explosives-clearance.png"
   },
   {
@@ -325,6 +411,8 @@
     "name": "Inside Source",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/inside-source.png"
   },
   {
@@ -332,6 +420,8 @@
     "name": "Intercepted Plans",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/intercepted-plans.png"
   },
   {
@@ -339,6 +429,8 @@
     "name": "Lessons of History",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/lessons-of-history.png"
   },
   {
@@ -346,6 +438,8 @@
     "name": "Mercenary Aid",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/mercenary-aid.png"
   },
   {
@@ -353,6 +447,8 @@
     "name": "Populist Support",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/populist-support.png"
   },
   {
@@ -360,6 +456,8 @@
     "name": "Power of the Shard",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/power-of-the-shard.png"
   },
   {
@@ -367,6 +465,8 @@
     "name": "Scouted Enemies",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/scouted-enemies.png"
   },
   {
@@ -374,6 +474,8 @@
     "name": "Tracked Movements",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/tracked-movements.png"
   },
   {
@@ -381,6 +483,8 @@
     "name": "Vaders Legion",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Imperial player",
     "image": "reward-cards/vaders-legion.png"
   },
   {
@@ -388,6 +492,8 @@
     "name": "Wookiee Roar",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/wookiee-roar.png"
   },
   {
@@ -395,6 +501,8 @@
     "name": "X-8 Upgrade",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/x-8-upgrade.png"
   },
   {
@@ -402,6 +510,8 @@
     "name": "Bullseye!",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/bullseye.png"
   },
   {
@@ -409,6 +519,8 @@
     "name": "Hondo's Treasure",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/hondos-treasure.png"
   },
   {
@@ -416,6 +528,8 @@
     "name": "Nova Cell Leader",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/nova-cell-leader.png"
   },
   {
@@ -423,6 +537,8 @@
     "name": "Rough Rider",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/rough-rider.png"
   },
   {
@@ -430,6 +546,8 @@
     "name": "Tech Specialist",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/tech-specialist.png"
   },
   {
@@ -437,6 +555,8 @@
     "name": "Wholeness",
     "type": "Feat",
     "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
     "image": "reward-cards/wholeness.png"
   },
   {
@@ -444,6 +564,8 @@
     "name": "Supply Disruption",
     "type": "Feat",
     "traits": null,
+    "class": "Bane",
+    "for": "Imperial player",
     "image": "reward-cards/supply-disruption.png"
   },
   {
@@ -451,6 +573,8 @@
     "name": "Networks Restored",
     "type": "Feat",
     "traits": null,
+    "class": "Boon",
+    "for": "Rebel players",
     "image": "reward-cards/networks-restored.png"
   },
   {
@@ -458,6 +582,8 @@
     "name": "Constant Advantage",
     "type": "Feat",
     "traits": null,
+    "class": "Bane",
+    "for": "Imperial player",
     "image": "reward-cards/constant-advantage.png"
   },
   {
@@ -465,6 +591,8 @@
     "name": "Resurgence",
     "type": "Feat",
     "traits": null,
+    "class": "Boon",
+    "for": "Rebel players",
     "image": "reward-cards/resurgence.png"
   },
   {
@@ -472,6 +600,8 @@
     "name": "Weary from Toil",
     "type": "Feat",
     "traits": null,
+    "class": "Bane",
+    "for": "Imperial player",
     "image": "reward-cards/weary-from-toil.png"
   },
   {
@@ -479,6 +609,8 @@
     "name": "Invigorated by Success",
     "type": "Feat",
     "traits": null,
+    "class": "Boon",
+    "for": "Rebel players",
     "image": "reward-cards/invigorated-by-success.png"
   },
   {
@@ -486,6 +618,8 @@
     "name": "Distractions",
     "type": "Feat",
     "traits": null,
+    "class": "Bane",
+    "for": "Imperial player",
     "image": "reward-cards/distractions.png"
   },
   {
@@ -493,6 +627,8 @@
     "name": "Strategy Executed",
     "type": "Feat",
     "traits": null,
+    "class": "Boon",
+    "for": "Rebel players",
     "image": "reward-cards/strategy-executed.png"
   }
 ]
