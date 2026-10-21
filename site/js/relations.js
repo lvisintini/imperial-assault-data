@@ -3,11 +3,13 @@
 // sources 1─* source-contents *─1 <any content type>, polymorphic through content_type + content_id.
 export const JOIN = {parent: 'sources', via: 'source-contents', fk: 'source_id', type: 'content_type', id: 'content_id'};
 
-// Child → parent foreign keys.
+// Child → parent foreign keys. `label`/`childrenLabel` name the relation on the child's and the parent's pages, when
+// the types' own labels don't read well (a source "Included in" another).
 export const FKS = [
   {child: 'agenda-cards', field: 'agenda_id', parent: 'agenda-decks'},
   {child: 'hero-class-cards', field: 'hero_id', parent: 'heroes'},
   {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes'},
+  {child: 'sources', field: 'included_in', parent: 'sources', label: 'Included in', childrenLabel: 'Includes'},
 ];
 
 // card-backs point at a content type; when it has several backs, `variant` matches a different field per type.
