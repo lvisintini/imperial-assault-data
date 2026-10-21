@@ -14,7 +14,7 @@ export const TYPES = [
     facets: [
       'type', 'wave',
     ],
-    order: {type: ['Core Game', 'Expansion', 'Ally Pack', 'Villain Pack', 'App']},
+    order: {type: ['Core Game', 'Expansion', 'Ally Pack', 'Villain Pack', 'App', 'Skirmish Map Mat', 'Raid Map Mat']},
   },
   {file: 'heroes', label: 'Heroes', singular: 'Hero', images: ['healthy', 'wounded'], thumb: 'back'},
   {file: 'hero-class-cards', label: 'Hero class cards', singular: 'Hero class card', images: ['image']},
@@ -81,6 +81,7 @@ export const TYPES = [
   {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image'], sort: ['deck', 'variant']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
   {file: 'mission-rewards', label: 'Mission rewards', singular: 'Mission reward', images: [], hidden: true},
+  {file: 'requirements', label: 'Requirements', singular: 'Requirement', images: [], hidden: true},
 ];
 
 export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));

@@ -1,13 +1,13 @@
 # Data model
 
 The dataset is laid out like a relational database: each file in `data/` is a table (a JSON array of records), and
-records point at each other through id fields. This page shows how the 27 files relate. Only key fields are listed;
+records point at each other through id fields. This page shows how the 28 files relate. Only key fields are listed;
 see `schemas/` for every field.
 
 ## Ids
 
-Every record has an `id` (all files but `source-contents` and `mission-rewards`), and every foreign key holds one. Ids are lowercase
-UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
+Every record has an `id` (all files but `source-contents`, `mission-rewards` and `requirements`), and every foreign
+key holds one. Ids are lowercase UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
 - Records that existed in 1.x have `uuid5(NAMESPACE, "<content type>:<old numeric id>")`, where `NAMESPACE` is
   `uuid5(NAMESPACE_URL, "https://github.com/lvisintini/imperial-assault-data")`. So 1.x ids can be translated: in
   Python, `uuid.uuid5(NAMESPACE, "deployment-cards:114")` is the 1.x Stormtrooper (114). Card backs had no id; theirs
@@ -26,9 +26,10 @@ maps each product to the records it contains. It is polymorphic: `content_type` 
 reprinted in a later pack).
 
 Some products ship inside another: the Luke Skywalker Ally Pack and the Darth Vader Villain Pack come in the Core Set.
-They are sources of their own with `included_in` set to the Core Set, and their contents are listed on the pack, not
-repeated on the Core Set. Everything in the Core Set box is the Core Set's contents plus those of the sources it
-includes.
+They are sources of their own, and a `source-contents` row with `content_type: "sources"` lists each one in the Core
+Set. Their contents are listed on the pack, not repeated on the Core Set: everything in the Core Set box is the Core
+Set's contents plus those of the packs it contains. A pack is inside one product at most, and never inside another
+pack.
 
 `maps` holds every mission's map: the two-player skirmish maps, the four-player ones (Hoth Battlefield, Nal Hutta
 Borderlands, Temple Gardens) and the raid maps. Raids are played with FFG's *Legends of the Alliance* app, which is a
@@ -45,7 +46,7 @@ are linked through the missions index (see [Missions](#missions)): `source-conte
 ```mermaid
 erDiagram
     sources ||--|{ source-contents : "source_id"
-    sources |o--o{ sources : "included_in"
+    source-contents }o--o| sources : "content_id (a pack in a box)"
 
     source-contents }|--|| agenda-decks : "content_id"
     source-contents }|--|| command-cards : "content_id"
@@ -68,9 +69,8 @@ erDiagram
     sources {
         uuid id PK
         string name
-        string type "Core Game, Expansion, Ally Pack, Villain Pack, App"
+        string type "Core Game, Expansion, Ally Pack, Villain Pack, App, Skirmish Map Mat, Raid Map Mat"
         string product_code "SWI##, unique"
-        uuid included_in FK "the source it ships inside"
     }
     source-contents {
         uuid source_id FK
@@ -157,6 +157,26 @@ has only one), then the affiliation, then the description.
 Condition cards come in several products: each expansion or pack that uses a condition includes its own cards. Form
 cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned in
 [#3](https://github.com/lvisintini/imperial-assault-data/issues/3).
+
+## Requirements
+
+`requirements` says what a record needs or adds to: `content_type` + `content_id` name the record (a product, a
+mission, any record), `source_id` the product, and `relation` is `requires` (the record can only be played with the
+product: a raid needs the expansions its map is built from) or `expands` (the record adds to the product: an expansion
+to the Core Set). Like `source-contents` it has no ids, and a row never repeats. It's empty for now.
+
+```mermaid
+erDiagram
+    sources ||--o{ requirements : "source_id"
+    requirements }o--|| any-record : "content_type + content_id"
+
+    requirements {
+        string content_type "the record's file"
+        uuid content_id FK "id in that file"
+        string relation "requires, expands"
+        uuid source_id FK
+    }
+```
 
 ## Missions
 

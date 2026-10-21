@@ -22,6 +22,7 @@ imperial-classes 1──* imperial-class-cards  (class_id)
 card-backs       1──* <content type>        (content_type + variant)
 missions         1──1 <mission card>        (content_type + content_id; products and rewards attach here)
 maps             1──* missions              (map_id; a map is in its missions' products)
+requirements     <any record> requires / expands a source   (content_type + content_id, relation, source_id)
 missions         1──* mission-rewards       (mission_id; content_type + content_id, or credits)
 ```
 

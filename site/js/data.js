@@ -1,4 +1,4 @@
-import {CARD_BACK_MATCH, FKS, JOIN, MISSIONS, REWARDS} from './relations.js';
+import {CARD_BACK_MATCH, FKS, JOIN, MISSIONS, REQUIREMENTS, REWARDS} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -36,8 +36,11 @@ class Db {
     this.mission = new Map();   // mission card ref → its missions row
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
     this.rewardOf = new Map();  // reward ref → mission card refs
+    this.requires = new Map();  // ref → [{relation, ref: source ref}]
+    this.requiredBy = new Map();  // source ref → [{relation, ref}]
     this.#linkSources();
     this.#linkMissions();
+    this.#linkRequirements();
     this.#linkParents();
     this.#linkChildProducts();
     this.#linkBacks();
@@ -85,6 +88,19 @@ class Db {
       }
       push(this.rewards, card, {ref: reward, credits: record.credits, choice: record.choice});
       if (reward) push(this.rewardOf, reward, card);
+    }
+  }
+
+  #linkRequirements() {
+    for (const {record} of this.refs[REQUIREMENTS.table]) {
+      const ref = this.get(record[REQUIREMENTS.type], record[REQUIREMENTS.id]);
+      const source = this.get(JOIN.parent, record[REQUIREMENTS.source]);
+      if (!ref || !source) {
+        console.warn('Unresolved requirements row', record);
+        continue;
+      }
+      push(this.requires, ref, {relation: record.relation, ref: source});
+      push(this.requiredBy, source, {relation: record.relation, ref});
     }
   }
 

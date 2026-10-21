@@ -30,7 +30,7 @@ class TestIntegrity:
         fk_content_type_data = all_data.get(source_contents_entry["content_type"])
 
         assert fk_content_type_data is not None
-        assert source_contents_entry["content_type"] != CONTENT_TYPES.SOURCE
+        assert source_contents_entry["content_id"] != source_contents_entry["source_id"]  # a product isn't in itself
         assert self.fetch_fk_data(fk_content_type_data, source_contents_entry["content_id"]) is not None
         assert self.fetch_fk_data(all_data[CONTENT_TYPES.SOURCE], source_contents_entry["source_id"]) is not None
 
@@ -60,25 +60,40 @@ class TestSourcesIntegrity:
     def test_release_date_is_not_before_announced_date(self, entry):
         assert entry['release_date'] >= entry['announced_date']
 
-    @pytest.mark.parametrize("entry", [
-        s for s in get_data(CONTENT_TYPES.SOURCE) if s['included_in'] is not None
-    ], ids=lambda s: s['name'])
-    def test_included_in_is_another_standalone_source(self, entry):
-        sources = {s['id']: s for s in get_data(CONTENT_TYPES.SOURCE)}
-        container = sources.get(entry['included_in'])
-        assert container is not None and container['id'] != entry['id']
-        assert container['included_in'] is None  # one level: a pack inside a box, not inside another pack
+    @staticmethod
+    def inside():
+        """(container id, product id) for every product that ships inside another (a source-contents row to a source)."""
+        return [(r['source_id'], r['content_id']) for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+                if r['content_type'] == CONTENT_TYPES.SOURCE]
+
+    def test_products_inside_products_are_one_level_deep(self):
+        """A pack ships inside a box, not inside another pack, and in one box only."""
+        inside = self.inside()
+        packs = [pack for _, pack in inside]
+        assert len(packs) == len(set(packs))
+        assert not {container for container, _ in inside} & set(packs)
 
     def test_included_products_dont_repeat_their_containers_contents(self):
-        """A pack's contents are listed once, on the pack; the box that includes it gets them through included_in."""
-        rows = get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+        """A pack's contents are listed once, on the pack; the box that includes it gets them through the pack."""
         contents = {}
-        for row in rows:
+        for row in get_data(CONTENT_TYPES.SOURCE_CONTENTS):
             contents.setdefault(row['source_id'], set()).add((row['content_type'], row['content_id']))
-        for source in get_data(CONTENT_TYPES.SOURCE):
-            if source['included_in'] is not None:
-                shared = contents.get(source['id'], set()) & contents.get(source['included_in'], set())
-                assert not shared, (source['name'], shared)
+        for container, pack in self.inside():
+            shared = contents.get(pack, set()) & contents.get(container, set())
+            assert not shared, (pack, shared)
+
+
+class TestRequirementsIntegrity:
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.REQUIREMENTS))
+    def test_requirements_resolve(self, entry, all_data):
+        assert entry['content_type'] not in CONTENT_TYPES.without_ids
+        assert TestIntegrity.fetch_fk_data(all_data[entry['content_type']], entry['content_id']) is not None
+        assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.SOURCE], entry['source_id']) is not None
+        assert entry['content_id'] != entry['source_id']  # nothing requires or expands itself
+
+    def test_requirements_dont_repeat(self):
+        rows = [tuple(r.values()) for r in get_data(CONTENT_TYPES.REQUIREMENTS)]
+        assert len(rows) == len(set(rows))
 
 
 class TestMissionsIntegrity:
