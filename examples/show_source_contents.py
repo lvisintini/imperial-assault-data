@@ -75,7 +75,7 @@ for source_data in all_data['sources']:
             if content_type == 'missions':
                 m = next(c for c in all_data[m['content_type']] if c['id'] == m['content_id'])
 
-            print(f'\t\t- {m["name"]}')
+            print(f'\t\t- {m["name"]}' + (f' (x{i["quantity"]})' if i['quantity'] > 1 else ''))
 
             # This content types have additional related components
             # We use the appropriate foreign key to fetch the additional data and print it.

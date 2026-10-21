@@ -222,6 +222,7 @@ main {
 .no-image { color: var(--muted); font-size: 0.8rem; }
 .tile-title { font-weight: 600; font-size: 0.9rem; overflow-wrap: anywhere; }
 .tile-sub { color: var(--muted); font-size: 0.8rem; }
+.copies { color: var(--muted); font-weight: normal; white-space: nowrap; }
 
 .crumbs { margin: 0 0 4px; font-size: 0.9rem; }
 

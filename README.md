@@ -15,7 +15,7 @@ For example, with the `.data/source-contents.json` file you can determine the co
 The [data model](docs/data-model.md) page has an Entity-Relationship diagram of how the files relate. In short:
 
 ```
-sources 1──* source-contents *──1 <any content type>   (content_type + content_id)
+sources 1──* source-contents *──1 <any content type>   (content_type + content_id; quantity = copies)
 agenda-decks     1──* agenda-cards          (agenda_id)
 heroes           1──* hero-class-cards      (hero_id)
 imperial-classes 1──* imperial-class-cards  (class_id)

@@ -85,6 +85,24 @@ class TestCardBacksIntegrity:
 
 
 class TestSourcesIntegrity:
+    # Copies per content type in the Core Set's own rows, as FFG's component list counts them (Learn to Play, p. 3),
+    # less what the dataset keeps elsewhere: the Luke Skywalker and Darth Vader deployment cards are on their packs
+    # (FFG counts 39), and the Heroic (x3) and Legendary (x2) reward cards aren't in the dataset (18).
+    CORE_SET_COPIES = {
+        CONTENT_TYPES.DEPLOYMENT: 37, CONTENT_TYPES.COMMAND: 42, CONTENT_TYPES.REWARD: 13, CONTENT_TYPES.UPGRADE: 36,
+        CONTENT_TYPES.SUPPLY: 12, CONTENT_TYPES.CONDITION: 12, 'side missions': 14,
+    }
+
+    def test_core_set_copies_match_ffgs_component_list(self):
+        core = next(s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['name'] == 'Imperial Assault')
+        missions = {m['id']: m['content_type'] for m in get_data(CONTENT_TYPES.MISSIONS)}
+        copies = Counter()
+        for row in get_data(CONTENT_TYPES.SOURCE_CONTENTS):
+            if row['source_id'] == core:
+                content_type = missions.get(row['content_id'], row['content_type'])
+                copies['side missions' if 'side-mission' in content_type else content_type] += row['quantity']
+        assert {key: copies[key] for key in self.CORE_SET_COPIES} == self.CORE_SET_COPIES
+
     def test_no_duplicate_product_codes(self):
         codes = [s['product_code'] for s in get_data(CONTENT_TYPES.SOURCE) if s['product_code'] is not None]
         duplicates = [code for code, count in Counter(codes).items() if count > 1]
