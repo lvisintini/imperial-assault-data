@@ -255,6 +255,17 @@ class TestRewardIntegrity:
     def test_feat_has_no_traits(self, entry):
         assert entry['traits'] is None
 
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.REWARD), ids=lambda r: r['name'])
+    def test_boons_are_for_the_rebels_and_banes_for_the_imperial_player(self, entry):
+        assert entry['for'] == {'Boon': 'Rebel players', 'Bane': 'Imperial player'}.get(entry['class'], entry['for'])
+
+    def test_agenda_missions_reward_the_imperial_player(self):
+        agenda = {m['id'] for m in get_data(CONTENT_TYPES.MISSIONS) if m['content_type'] == CONTENT_TYPES.AGENDA}
+        rewards = {r['id']: r for r in get_data(CONTENT_TYPES.REWARD)}
+        given = {r['content_id'] for r in get_data(CONTENT_TYPES.MISSION_REWARDS)
+                 if r['mission_id'] in agenda and r['content_type'] == CONTENT_TYPES.REWARD}
+        assert given and all(rewards[i]['for'] == 'Imperial player' for i in given)
+
 
 class TestCanonicalNames:
     def test_no_duplicate_iaspec_names(self):

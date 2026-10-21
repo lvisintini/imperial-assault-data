@@ -122,6 +122,8 @@ erDiagram
     reward-cards {
         uuid id PK
         string name
+        string class "Regular, Boon, Bane"
+        string for "Imperial player, Rebel players"
     }
     maps {
         uuid id PK
@@ -202,8 +204,9 @@ threat, side or agenda mission follows from `content_type`. The index row is wha
   `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
   ally that comes as a group (Rebel Saboteurs) is its regular card; by the rules, earning the same ally again gives the
   elite card. Rewards for the Imperial player (agenda missions, `imperial_reward` on some side missions, threat
-  missions' second reward) are rows like any other; the reward card says who it's for. Story mission rewards aren't
-  loaded yet.
+  missions' second reward) are rows like any other; the reward card's `for` says who it's for (`Imperial player`
+  or `Rebel players`), and its `class` whether it's one of Return to Hoth's Boons or Banes. Story mission rewards
+  aren't loaded yet.
 
 The rewards come from each mission's wiki page (imperial-assault-tools' `ia wiki --missions`).
 
