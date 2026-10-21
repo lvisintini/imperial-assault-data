@@ -18,6 +18,10 @@
       "description": "Foreign key to the mission in data/missions.json (the index) the epilogue ends.",
       "$ref": "definitions.json#/definitions/uuid"
     },
+    "back_id": {
+      "description": "Foreign key to this card's back in data/card-backs.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
     "image": {
       "description": "The file path for this epilogue card's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -27,6 +31,7 @@
     "id",
     "name",
     "mission_id",
+    "back_id",
     "image"
   ],
   "additionalProperties": false

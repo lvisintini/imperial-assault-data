@@ -2,111 +2,133 @@
   {
     "id": "7fd909d1-3c8f-5acc-8a5f-9792ed50275e",
     "name": "Hunted Down",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/hunted-down.png"
   },
   {
     "id": "8e295903-c4ad-5d19-aacd-a90aa9db67df",
     "name": "Homecoming",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/homecoming.png"
   },
   {
     "id": "1cd8ae76-c421-5b9b-92f2-85b48aed6617",
     "name": "Sorry About the Mess",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/sorry-about-the-mess.png"
   },
   {
     "id": "262278b2-b047-5e59-b6a0-42ee56a1d763",
     "name": "Target of Opportunity",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/target-of-opportunity.png"
   },
   {
     "id": "4fc24915-1735-5557-b55c-2a7b0b1ec341",
     "name": "The Spice Job",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/the-spice-job.png"
   },
   {
     "id": "2801f938-3045-5f38-a928-b098bb473f44",
     "name": "Reclamation",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/reclamation.png"
   },
   {
     "id": "1fa08add-1271-5f3f-9e18-0f21a1be597f",
     "name": "Race on Ryloth",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/race-on-ryloth.png"
   },
   {
     "id": "b37c4013-dfc8-51ed-bc81-eb45f25885f2",
     "name": "Siege on Geonosis",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/siege-on-geonosis.png"
   },
   {
     "id": "9de83d9d-0fc9-54fd-8f26-fc9bea16f657",
     "name": "Executive Overreach",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/executive-overreach.png"
   },
   {
     "id": "361818b7-d8a5-5359-8fc1-d07f36a06f2c",
     "name": "Intimidation Factor",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/intimidation-factor.png"
   },
   {
     "id": "77e3b415-91c1-5739-8915-13c7d35e63f1",
     "name": "Armed and Operational",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/armed-and-operational.png"
   },
   {
     "id": "cd39e514-f8bd-50b4-a5f9-2ec62e2f2f36",
     "name": "Brace for Impact",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/brace-for-impact.png"
   },
   {
     "id": "38a87199-4afd-5aed-af9c-0b44a6c65350",
     "name": "Open to Interpretation",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/open-to-interpretation.png"
   },
   {
     "id": "12088b51-5e2c-5a79-a684-ee767207d285",
     "name": "Brute Force",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/brute-force.png"
   },
   {
     "id": "6fbd1306-5424-5188-b927-d32171a3968c",
     "name": "Precious Cargo",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/precious-cargo.png"
   },
   {
     "id": "0cad7dd5-1794-5590-a924-7ef7849bac4c",
     "name": "Snowcrash",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/snowcrash.png"
   },
   {
     "id": "a4c3e6aa-cc5b-5fd8-a9c9-a349b7e00aff",
     "name": "Communication Breakdown",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/communication-breakdown.png"
   },
   {
     "id": "4eba8c92-149c-5a6c-9ff9-d4c050ae8a2a",
     "name": "Deadly Transmission",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/deadly-transmission.png"
   },
   {
     "id": "a19a16b9-7049-5e75-8faa-00a22d82916d",
     "name": "Strike Force Xesh",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/strike-force-xesh.png"
   },
   {
     "id": "299cc509-e046-5fc6-9aa8-42b0c5333ab7",
     "name": "A Light in the Darkness",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/a-light-in-the-darkness.png"
   },
   {
     "id": "4d2082b6-6325-5d67-b7ca-0f4326344b3e",
     "name": "Phantom Extraction",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/phantom-extraction.png"
   },
   {
     "id": "d8c05b3b-0dc4-5e6e-aad3-c733da068c6a",
     "name": "Home Invasion",
+    "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
     "image": "campaign-ally-side-mission-cards/home-invasion.png"
   }
 ]

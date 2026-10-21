@@ -18,6 +18,10 @@
       "description": "Foreign key to the hero in data/heroes.json the mission is for.",
       "$ref": "definitions.json#/definitions/uuid"
     },
+    "back_id": {
+      "description": "Foreign key to this card's back in data/card-backs.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
     "image": {
       "description": "The file path for this hero side mission's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -27,6 +31,7 @@
     "id",
     "name",
     "hero_id",
+    "back_id",
     "image"
   ],
   "additionalProperties": false

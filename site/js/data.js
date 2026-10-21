@@ -1,4 +1,4 @@
-import {CARD_BACK_MATCH, FKS, JOIN, MISSIONS, REQUIREMENTS, REWARDS} from './relations.js';
+import {BACK, FKS, JOIN, MISSIONS, REQUIREMENTS, REWARDS} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -31,7 +31,7 @@ class Db {
     this.contents = new Map();  // source ref → Map(type → content refs)
     this.parent = new Map();    // child ref → {rel, ref}
     this.children = new Map();  // parent ref → [{rel, refs}]
-    this.back = new Map();      // ref → {ref: card-back ref, via: parent ref when inherited}
+    this.back = new Map();      // ref → {ref: card-back ref, via: a child ref when it's its cards' back}
     this.backOf = new Map();    // card-back ref → refs
     this.mission = new Map();   // mission card ref → its missions row
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
@@ -138,21 +138,18 @@ class Db {
   }
 
   #linkBacks() {
-    const backsByType = new Map();
-    for (const back of this.refs['card-backs']) push(backsByType, back.record.content_type, back);
-
-    for (const [type, backs] of backsByType) {
-      const match = CARD_BACK_MATCH[type];
-      if (!match && backs.length > 1) console.warn(`${type} has ${backs.length} card backs but no match rule`);
-      for (const ref of this.refs[type]) {
-        const back = match ? backs.find(b => match(ref, b.record.variant, this)) : backs[0];
+    for (const refs of Object.values(this.refs)) {
+      for (const ref of refs) {
+        const id = ref.record[BACK.field];
+        if (id == null) continue;
+        const back = this.get(BACK.parent, id);
         if (back) this.#setBack(ref, back);
-        else console.warn(`No card back for ${type}/${ref.key}`);
+        else console.warn(`No card back ${id} for ${ref.type}/${ref.key}`);
       }
     }
-    for (const [child, {ref: parent}] of this.parent) {
-      const back = this.back.get(parent);
-      if (back && !this.back.has(child)) this.#setBack(child, back.ref, parent);
+    for (const [parent, groups] of this.children) {
+      const child = groups.find(({rel}) => rel.back === 'children')?.refs.find(ref => this.back.has(ref));
+      if (child && !this.back.has(parent)) this.#setBack(parent, this.back.get(child).ref, child);
     }
   }
 

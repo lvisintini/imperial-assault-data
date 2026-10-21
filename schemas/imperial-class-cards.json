@@ -18,6 +18,10 @@
       "description": "Imperial class card name",
       "minLength": 1
     },
+    "back_id": {
+      "description": "Foreign key to this card's back in data/card-backs.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
     "image": {
       "description": "The file path for this imperial class card's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -39,6 +43,7 @@
   "required": [
     "id",
     "name",
+    "back_id",
     "image",
     "class_id",
     "xp"

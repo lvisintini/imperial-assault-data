@@ -6,39 +6,22 @@
   "definitions": {},
   "properties": {
     "id": {
-      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "description": "Id for entry: a UUID (see docs/data-model.md). Cards point at their back through back_id.",
       "$ref": "definitions.json#/definitions/uuid"
     },
-    "deck": {
+    "name": {
       "type": "string",
-      "description": "Deck name",
+      "description": "The back's name: its deck, and which of the deck's backs it is when there are several (\"Deployment: Rebel\").",
       "minLength": 1
     },
-    "variant": {
-      "description": "Variation or sub-type of the deck",
-      "oneOf": [
-        {
-          "type": "string",
-          "minLength": 1
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "content_type": {
-      "description": "Content type for the component referenced on this entry.",
-      "$ref": "definitions.json#/definitions/content_type"
-    },
     "image": {
-      "description": "The file path for this deck back's image.",
+      "description": "The file path for this card back's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
     }
   },
   "required": [
     "id",
-    "deck",
-    "variant",
+    "name",
     "image"
   ],
   "additionalProperties": false

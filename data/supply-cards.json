@@ -6,6 +6,7 @@
       "Consumable",
       "Medical"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/adrenal-stim.png"
   },
   {
@@ -15,6 +16,7 @@
       "Consumable",
       "Medical"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/artificial-stimulants.png"
   },
   {
@@ -24,6 +26,7 @@
       "Consumable",
       "Medical"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/bacta-infusion.png"
   },
   {
@@ -33,6 +36,7 @@
       "Consumable",
       "Tool"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/c1-comlink.png"
   },
   {
@@ -42,6 +46,7 @@
       "Consumable",
       "Explosive"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/c22-frag-grenade.png"
   },
   {
@@ -50,6 +55,7 @@
     "traits": [
       "Valuable"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/chance-cubes.png"
   },
   {
@@ -59,6 +65,7 @@
       "Consumable",
       "Medical"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/emergency-medpac.png"
   },
   {
@@ -68,6 +75,7 @@
       "Consumable",
       "Explosive"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/flash-bomb.png"
   },
   {
@@ -77,6 +85,7 @@
       "Consumable",
       "Energy"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/flash-emitter.png"
   },
   {
@@ -85,6 +94,7 @@
     "traits": [
       "Tool"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/grappling-hook.png"
   },
   {
@@ -93,6 +103,7 @@
     "traits": [
       "Tool"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/macrobinoculars.png"
   },
   {
@@ -101,6 +112,7 @@
     "traits": [
       "Medical"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/painkillers.png"
   },
   {
@@ -109,6 +121,7 @@
     "traits": [
       "Droid"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/pit-droid.png"
   },
   {
@@ -118,6 +131,7 @@
       "Consumable",
       "Energy"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/power-generator.png"
   },
   {
@@ -127,6 +141,7 @@
       "Consumable",
       "Explosive"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/shock-grenade.png"
   },
   {
@@ -135,6 +150,7 @@
     "traits": [
       "Intel"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/troop-data.png"
   },
   {
@@ -143,6 +159,7 @@
     "traits": [
       "Energy"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/turbocharger.png"
   },
   {
@@ -151,6 +168,7 @@
     "traits": [
       "Valuable"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/valuable-goods.png"
   },
   {
@@ -159,6 +177,7 @@
     "traits": [
       "Tool"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/weapons-cache.png"
   },
   {
@@ -167,6 +186,7 @@
     "traits": [
       "Tool"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/grappler-arm.png"
   },
   {
@@ -176,6 +196,7 @@
       "Consumable",
       "Tool"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/shield-pack.png"
   },
   {
@@ -184,6 +205,7 @@
     "traits": [
       "Valuable"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/supply-chest.png"
   },
   {
@@ -192,6 +214,7 @@
     "traits": [
       "Valuable"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/locked-chest.png"
   },
   {
@@ -200,6 +223,7 @@
     "traits": [
       "Valuable"
     ],
+    "back_id": "f5a2e149-c3b5-5026-b95d-ed52a896b28a",
     "image": "supply-cards/missing-key.png"
   }
 ]

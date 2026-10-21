@@ -4,7 +4,7 @@ import unicodedata
 import pytest
 
 from tests.constants import CONTENT_TYPES, DEPLOYMENT_TRAITS, GAME_MODES, BUFF_TYPES
-from tests.utils import get_data, get_data_for, flatten_list
+from tests.utils import get_data, get_data_for, get_schema, flatten_list
 from collections import Counter
 
 
@@ -45,6 +45,43 @@ class TestIntegrity:
     @pytest.mark.parametrize("imperial_class_card_entry", get_data(CONTENT_TYPES.IMPERIAL_CLASS_CARD))
     def test_imperial_class_cards_foreign_keys(self, imperial_class_card_entry, imperial_classes):
         assert self.fetch_fk_data(imperial_classes, imperial_class_card_entry["class_id"]) is not None
+
+
+class TestCardBacksIntegrity:
+    """Every card points at its back (card-backs) through back_id (docs/data-model.md → Card backs)."""
+
+    # Records with an image but no back: products, maps, the backs themselves, and heroes (their backs are on their
+    # class cards).
+    NO_BACK = [CONTENT_TYPES.SOURCE, CONTENT_TYPES.MAP, CONTENT_TYPES.CARD, CONTENT_TYPES.HERO]
+    # A child type's cards share their parent's back.
+    PARENTS = {CONTENT_TYPES.HERO_CLASS: 'hero_id', CONTENT_TYPES.IMPERIAL_CLASS_CARD: 'class_id',
+               CONTENT_TYPES.AGENDA: 'agenda_id'}
+
+    @staticmethod
+    def card_types():
+        return [t for t in CONTENT_TYPES.as_list if 'back_id' in get_schema(t)['properties']]
+
+    def test_every_type_with_images_has_backs_but_the_exceptions(self):
+        imaged = [t for t in CONTENT_TYPES.as_list
+                  if set(get_schema(t)['properties']) & {'image', 'healthy'} and t not in self.NO_BACK]
+        assert sorted(imaged) == sorted(self.card_types())
+
+    def test_back_ids_resolve_and_every_back_is_used(self):
+        backs = {b['id'] for b in get_data(CONTENT_TYPES.CARD)}
+        used = {r['back_id'] for t in self.card_types() for r in get_data(t)}
+        assert used - backs == set()
+        assert backs - used == set()
+
+    @pytest.mark.parametrize("content_type", list(PARENTS))
+    def test_a_parents_cards_share_a_back(self, content_type):
+        backs = {}
+        for card in get_data(content_type):
+            backs.setdefault(card[self.PARENTS[content_type]], set()).add(card['back_id'])
+        assert {parent: ids for parent, ids in backs.items() if len(ids) > 1} == {}
+
+    def test_back_names_are_unique(self):
+        names = [b['name'] for b in get_data(CONTENT_TYPES.CARD)]
+        assert len(names) == len(set(names))
 
 
 class TestSourcesIntegrity:

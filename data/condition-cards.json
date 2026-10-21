@@ -2,26 +2,31 @@
   {
     "id": "4def469d-0db7-5306-92be-eff4307f757d",
     "name": "Bleeding",
+    "back_id": "47c5d0a3-0dc7-5a61-b536-31b15ce3ecf0",
     "image": "condition-cards/bleeding.png"
   },
   {
     "id": "bbeb6a4c-4767-52d0-a0ac-01423dd6b20e",
     "name": "Focused",
+    "back_id": "6721ed65-fdd8-5304-8659-1e4813502107",
     "image": "condition-cards/focused.png"
   },
   {
     "id": "2d38bd5d-67a0-5b00-962a-c1e9b507fe68",
     "name": "Stunned",
+    "back_id": "45e57cfd-e8f7-552d-8a01-e113991992bf",
     "image": "condition-cards/stunned.png"
   },
   {
     "id": "47d9361e-aaa7-58f8-9b2a-3dedb592d663",
     "name": "Weakened",
+    "back_id": "f7a6153b-2dea-5405-95b1-e866977d1b08",
     "image": "condition-cards/weakened.png"
   },
   {
     "id": "e64e5a82-3604-5aae-9868-3195ce17391e",
     "name": "Hidden",
+    "back_id": "eb2532e7-bca4-562d-9514-927a736412b6",
     "image": "condition-cards/hidden.png"
   }
 ]

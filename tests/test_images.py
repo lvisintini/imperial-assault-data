@@ -42,6 +42,7 @@ class ImageTestHelper:
     SMALL_STANDARD_FLIPPED = (470, 301)
 
     ANY = None
+    CARDS_USING_IT = 'the size of the cards whose back_id is this back'
 
     definitions = [
         ImageDefinition('large', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
@@ -67,23 +68,7 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.EPILOGUE, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.FORM_CARDS, 'image', dims=LARGE_MINI_FLIPPED),
 
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.AGENDA_DECKS),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.COMMAND),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.COMPANION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.CONDITION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.DEPLOYMENT),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.IMPERIAL_CLASSES),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.HERO),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.UPGRADE),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.REWARD),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI, content_type=CONTENT_TYPES.SUPPLY),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.HERO_SIDE_MISSION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.ALLY_SIDE_MISSION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.REGULAR_SIDE_MISSION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.STORY_MISSION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.THREAT_MISSION),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_MINI_FLIPPED, content_type=CONTENT_TYPES.FORM_CARDS),
-        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=LARGE_STANDARD, content_type=CONTENT_TYPES.EPILOGUE),
+        ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=CARDS_USING_IT),
 
         ImageDefinition('small', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
         ImageDefinition('small', CONTENT_TYPES.MAP, 'image', dims=ANY),
@@ -108,33 +93,31 @@ class ImageTestHelper:
         ImageDefinition('small', CONTENT_TYPES.EPILOGUE, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.FORM_CARDS, 'image', dims=SMALL_MINI_FLIPPED),
 
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.AGENDA_DECKS),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.COMMAND),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.COMPANION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.CONDITION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.DEPLOYMENT),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.IMPERIAL_CLASSES),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.HERO),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.UPGRADE),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.REWARD),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI, content_type=CONTENT_TYPES.SUPPLY),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.HERO_SIDE_MISSION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.ALLY_SIDE_MISSION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.REGULAR_SIDE_MISSION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.STORY_MISSION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.THREAT_MISSION),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_MINI_FLIPPED, content_type=CONTENT_TYPES.FORM_CARDS),
-        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=SMALL_STANDARD, content_type=CONTENT_TYPES.EPILOGUE),
+        ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=CARDS_USING_IT),
     ]
+
+    @classmethod
+    def back_sizes(cls, data, image_subdir):
+        """{card-back id: the sizes of the cards that use it}."""
+        sizes = {}
+        for image_def in cls.definitions:
+            if image_def.image_subdir != image_subdir or image_def.attr != 'image':
+                continue
+            for entry in data.get(image_def.content_type, []):
+                if 'back_id' in entry:
+                    sizes.setdefault(entry['back_id'], set()).add(image_def.dims)
+        return sizes
 
     @classmethod
     def get_paths_and_expected_sizes(cls, data):
         for content_type, models in data.items():
             for image_def in [image_def for image_def in cls.definitions if content_type == image_def.content_type]:
+                back_sizes = cls.back_sizes(data, image_def.image_subdir) if image_def.dims is cls.CARDS_USING_IT else {}
                 for entry in models:
                     if not image_def.filter(content_type, entry) or image_def.dims is cls.ANY:
                         continue
-                    yield (image_def.get_image_path_from_entry(entry), image_def.dims)
+                    for dims in back_sizes.get(entry['id'], {None}) if back_sizes else [image_def.dims]:
+                        yield (image_def.get_image_path_from_entry(entry), dims)
 
     @classmethod
     def get_paths(cls, data):
@@ -168,6 +151,11 @@ class TestImages:
                 files_found.add(os.path.join(dir_path, f))
 
         assert helper_images == files_found
+
+    @pytest.mark.parametrize("image_subdir", ['large', 'small'])
+    def test_each_back_is_used_by_cards_of_one_size(self, image_subdir):
+        sizes = ImageTestHelper.back_sizes(get_data_for(*CONTENT_TYPES.as_list), image_subdir)
+        assert {back_id: dims for back_id, dims in sizes.items() if len(dims) > 1} == {}
 
     @pytest.mark.parametrize("image_path", list(ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list))))
     def test_image_paths(self, image_path):

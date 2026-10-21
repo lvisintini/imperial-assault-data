@@ -4,6 +4,7 @@
     "tier": 1,
     "name": "Armored Gauntlets",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/armored-gauntlets.png",
     "traits": [
       "Fist"
@@ -15,6 +16,7 @@
     "tier": 1,
     "name": "Bacta Pump",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/bacta-pump.png",
     "traits": [
       "Accessory"
@@ -26,6 +28,7 @@
     "tier": 1,
     "name": "Balanced Hilt",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/balanced-hilt.png",
     "traits": [
       "Modification",
@@ -38,6 +41,7 @@
     "tier": 1,
     "name": "Combat Coat",
     "credits": 500,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/combat-coat.png",
     "traits": [
       "Armor",
@@ -50,6 +54,7 @@
     "tier": 1,
     "name": "DDC Defender",
     "credits": 550,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/ddc-defender.png",
     "traits": [
       "Blaster",
@@ -62,6 +67,7 @@
     "tier": 1,
     "name": "DH-17",
     "credits": 200,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/dh-17.png",
     "traits": [
       "Blaster",
@@ -74,6 +80,7 @@
     "tier": 1,
     "name": "DL-44",
     "credits": 500,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/dl-44.png",
     "traits": [
       "Blaster",
@@ -86,6 +93,7 @@
     "tier": 1,
     "name": "E-11",
     "credits": 400,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/e-11.png",
     "traits": [
       "Blaster",
@@ -98,6 +106,7 @@
     "tier": 1,
     "name": "Emergency Injector",
     "credits": 150,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/emergency-injector.png",
     "traits": [
       "Accessory"
@@ -109,6 +118,7 @@
     "tier": 1,
     "name": "Extended Haft",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/extended-haft.png",
     "traits": [
       "Modification",
@@ -121,6 +131,7 @@
     "tier": 1,
     "name": "Gaffi Stick",
     "credits": 200,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/gaffi-stick.png",
     "traits": [
       "Club"
@@ -132,6 +143,7 @@
     "tier": 1,
     "name": "Hand Cannon",
     "credits": 400,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/hand-cannon.png",
     "traits": [
       "Blaster",
@@ -144,6 +156,7 @@
     "tier": 1,
     "name": "Marksman Barrel",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/marksman-barrel.png",
     "traits": [
       "Modification",
@@ -156,6 +169,7 @@
     "tier": 1,
     "name": "Portable Medkit",
     "credits": 450,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/portable-medkit.png",
     "traits": [
       "Accessory"
@@ -167,6 +181,7 @@
     "tier": 1,
     "name": "Shadowsilk Cloak",
     "credits": 350,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/shadowsilk-cloak.png",
     "traits": [
       "Armor",
@@ -179,6 +194,7 @@
     "tier": 1,
     "name": "Survival Gear",
     "credits": 250,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/survival-gear.png",
     "traits": [
       "Accessory"
@@ -190,6 +206,7 @@
     "tier": 1,
     "name": "Tactical Display",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/tactical-display.png",
     "traits": [
       "Modification",
@@ -202,6 +219,7 @@
     "tier": 1,
     "name": "Tatooine Hunting Rifle",
     "credits": 250,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/tatooine-hunting-rifle.png",
     "traits": [
       "Projectile",
@@ -214,6 +232,7 @@
     "tier": 1,
     "name": "Under-Barrel HH-4",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/under-barrel-hh-4.png",
     "traits": [
       "Modification",
@@ -226,6 +245,7 @@
     "tier": 1,
     "name": "Vibroblade",
     "credits": 300,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/vibroblade.png",
     "traits": [
       "Blade"
@@ -237,6 +257,7 @@
     "tier": 1,
     "name": "Vibroknife",
     "credits": 150,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/vibroknife.png",
     "traits": [
       "Blade"
@@ -248,6 +269,7 @@
     "tier": 1,
     "name": "Vibrosword",
     "credits": 350,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/vibrosword.png",
     "traits": [
       "Blade"
@@ -259,6 +281,7 @@
     "tier": 2,
     "name": "434 \"Deathhammer\"",
     "credits": 600,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/434-deathhammer.png",
     "traits": [
       "Blaster",
@@ -271,6 +294,7 @@
     "tier": 2,
     "name": "A280",
     "credits": 600,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/a280.png",
     "traits": [
       "Blaster",
@@ -283,6 +307,7 @@
     "tier": 2,
     "name": "BD-1 Vibro-Ax",
     "credits": 600,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/bd-1-vibro-ax.png",
     "traits": [
       "Blade",
@@ -295,6 +320,7 @@
     "tier": 2,
     "name": "Bolt Upgrade",
     "credits": 250,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/bolt-upgrade.png",
     "traits": [
       "Modification",
@@ -307,6 +333,7 @@
     "tier": 2,
     "name": "Combat Coat",
     "credits": 500,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/combat-coat.png",
     "traits": [
       "Armor",
@@ -319,6 +346,7 @@
     "tier": 2,
     "name": "Cybernetic Arm",
     "credits": 350,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/cybernetic-arm.png",
     "traits": [
       "Medical",
@@ -331,6 +359,7 @@
     "tier": 2,
     "name": "DT-12 Heavy Blaster Pistol",
     "credits": 600,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/dt-12-heavy-blaster-pistol.png",
     "traits": [
       "Blaster",
@@ -343,6 +372,7 @@
     "tier": 2,
     "name": "Double Vibrosword",
     "credits": 650,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/double-vibrosword.png",
     "traits": [
       "Blade"
@@ -354,6 +384,7 @@
     "tier": 2,
     "name": "EE-3 Carbine",
     "credits": 550,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/ee-3-carbine.png",
     "traits": [
       "Blaster",
@@ -366,6 +397,7 @@
     "tier": 2,
     "name": "Energized Hilt",
     "credits": 250,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/energized-hilt.png",
     "traits": [
       "Modification",
@@ -378,6 +410,7 @@
     "tier": 2,
     "name": "Environmental Hazard Suit",
     "credits": 600,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/environmental-hazard-suit.png",
     "traits": [
       "Armor"
@@ -389,6 +422,7 @@
     "tier": 2,
     "name": "Extra Ammunition",
     "credits": 300,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/extra-ammunition.png",
     "traits": [
       "Accessory"
@@ -400,6 +434,7 @@
     "tier": 2,
     "name": "High-Impact Guard",
     "credits": 500,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/high-impact-guard.png",
     "traits": [
       "Modification",
@@ -412,6 +447,7 @@
     "tier": 2,
     "name": "Laminate Armor",
     "credits": 700,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/laminate-armor.png",
     "traits": [
       "Armor",
@@ -424,6 +460,7 @@
     "tier": 2,
     "name": "Overcharger",
     "credits": 300,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/overcharger.png",
     "traits": [
       "Modification",
@@ -436,6 +473,7 @@
     "tier": 2,
     "name": "Plasma Cell",
     "credits": 450,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/plasma-cell.png",
     "traits": [
       "Modification",
@@ -448,6 +486,7 @@
     "tier": 2,
     "name": "R5 Astromech",
     "credits": 250,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/r5-astromech.png",
     "traits": [
       "Accessory"
@@ -459,6 +498,7 @@
     "tier": 2,
     "name": "Slicing Tools",
     "credits": 250,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/slicing-tools.png",
     "traits": [
       "Accessory"
@@ -470,6 +510,7 @@
     "tier": 2,
     "name": "Spread Barrel",
     "credits": 300,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/spread-barrel.png",
     "traits": [
       "Modification",
@@ -482,6 +523,7 @@
     "tier": 2,
     "name": "Stun Baton",
     "credits": 500,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/stun-baton.png",
     "traits": [
       "Staff"
@@ -493,6 +535,7 @@
     "tier": 2,
     "name": "T-21",
     "credits": 900,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/t-21.png",
     "traits": [
       "Blaster",
@@ -505,6 +548,7 @@
     "tier": 2,
     "name": "Vibro Knucklers",
     "credits": 400,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/vibro-knucklers.png",
     "traits": [
       "Fist",
@@ -517,6 +561,7 @@
     "tier": 2,
     "name": "Weighted Head",
     "credits": 400,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/weighted-head.png",
     "traits": [
       "Modification",
@@ -529,6 +574,7 @@
     "tier": 3,
     "name": "Admiral's Uniform",
     "credits": 350,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/admirals-uniform.png",
     "traits": [
       "Armor"
@@ -540,6 +586,7 @@
     "tier": 3,
     "name": "Ancient Lightsaber",
     "credits": 1000,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/ancient-lightsaber.png",
     "traits": [
       "Blade",
@@ -552,6 +599,7 @@
     "tier": 3,
     "name": "Combat Knife",
     "credits": 500,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/combat-knife.png",
     "traits": [
       "Accessory"
@@ -563,6 +611,7 @@
     "tier": 3,
     "name": "Combat Visor",
     "credits": 350,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/combat-visor.png",
     "traits": [
       "Accessory"
@@ -574,6 +623,7 @@
     "tier": 3,
     "name": "Concussion Grenades",
     "credits": 400,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/concussion-grenades.png",
     "traits": [
       "Consumable",
@@ -586,6 +636,7 @@
     "tier": 3,
     "name": "DLT-19",
     "credits": 950,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/dlt-19.png",
     "traits": [
       "Blaster",
@@ -598,6 +649,7 @@
     "tier": 3,
     "name": "DXR-6",
     "credits": 1000,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/dxr-6.png",
     "traits": [
       "Disruptor",
@@ -610,6 +662,7 @@
     "tier": 3,
     "name": "Disruption Cell",
     "credits": 600,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/disruption-cell.png",
     "traits": [
       "Modification",
@@ -622,6 +675,7 @@
     "tier": 3,
     "name": "Disruptor Pistol",
     "credits": 700,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/disruptor-pistol.png",
     "traits": [
       "Blaster",
@@ -634,6 +688,7 @@
     "tier": 3,
     "name": "Electrostaff",
     "credits": 1250,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/electrostaff.png",
     "traits": [
       "Staff",
@@ -646,6 +701,7 @@
     "tier": 3,
     "name": "Force Pike",
     "credits": 1100,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/force-pike.png",
     "traits": [
       "Staff"
@@ -657,6 +713,7 @@
     "tier": 3,
     "name": "Hidden Blade",
     "credits": 300,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/hidden-blade.png",
     "traits": [
       "Accessory"
@@ -668,6 +725,7 @@
     "tier": 3,
     "name": "Laminate Armor",
     "credits": 700,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/laminate-armor.png",
     "traits": [
       "Armor",
@@ -680,6 +738,7 @@
     "tier": 3,
     "name": "Modified Energy Cannon",
     "credits": 1000,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/modified-energy-cannon.png",
     "traits": [
       "Blaster",
@@ -692,6 +751,7 @@
     "tier": 3,
     "name": "Personal Shields",
     "credits": 550,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/personal-shields.png",
     "traits": [
       "Accessory"
@@ -703,6 +763,7 @@
     "tier": 3,
     "name": "Pulse Cannon",
     "credits": 1200,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/pulse-cannon.png",
     "traits": [
       "Blaster",
@@ -715,6 +776,7 @@
     "tier": 3,
     "name": "Reinforced Helmet",
     "credits": 300,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/reinforced-helmet.png",
     "traits": [
       "Helmet"
@@ -726,6 +788,7 @@
     "tier": 3,
     "name": "Ryyk Blades",
     "credits": 950,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/ryyk-blades.png",
     "traits": [
       "Blade"
@@ -737,6 +800,7 @@
     "tier": 3,
     "name": "Shock Emitter",
     "credits": 500,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/shock-emitter.png",
     "traits": [
       "Modification",
@@ -749,6 +813,7 @@
     "tier": 3,
     "name": "Sniper Scope",
     "credits": 250,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/sniper-scope.png",
     "traits": [
       "Modification",
@@ -761,6 +826,7 @@
     "tier": 3,
     "name": "Sporting Blaster",
     "credits": 900,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/sporting-blaster.png",
     "traits": [
       "Blaster",
@@ -773,6 +839,7 @@
     "tier": 3,
     "name": "Telescoping Sights",
     "credits": 400,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/telescoping-sights.png",
     "traits": [
       "Modification",
@@ -785,6 +852,7 @@
     "tier": 3,
     "name": "Valken-38 Carbine",
     "credits": 1250,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/valken-38-carbine.png",
     "traits": [
       "Blaster",
@@ -797,6 +865,7 @@
     "tier": 3,
     "name": "Vibrogenerator",
     "credits": 350,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/vibrogenerator.png",
     "traits": [
       "Modification",
@@ -809,6 +878,7 @@
     "name": "Charge Pistol",
     "credits": 350,
     "id": "7399072c-a6c4-5cb3-85d2-8fd6ca131b7b",
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/charge-pistol.png",
     "traits": [
       "Blaster",
@@ -821,6 +891,7 @@
     "name": "Charged Ammo Pack",
     "credits": 100,
     "id": "6c999f19-2df5-5ed4-977a-0299f8b7235c",
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/charged-ammo-pack.png",
     "traits": [
       "Modification",
@@ -833,6 +904,7 @@
     "name": "Responsive Armor",
     "credits": 250,
     "id": "3f976778-b802-520a-aeff-d368ca4d821c",
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/responsive-armor.png",
     "traits": [
       "Armor"
@@ -844,6 +916,7 @@
     "name": "Focusing Beam",
     "credits": 250,
     "id": "1bbca7fa-3449-5ac6-bfc7-006184e30ebe",
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/focusing-beam.png",
     "traits": [
       "Modification",
@@ -856,6 +929,7 @@
     "name": "Hunter's Rifle",
     "credits": 600,
     "id": "6adfd532-f13f-5bf9-ab86-27bf1981b5dc",
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/hunters-rifle.png",
     "traits": [
       "Blaster",
@@ -868,6 +942,7 @@
     "name": "Polearm",
     "credits": 650,
     "id": "14ec2d45-73ef-5161-be7a-45d0d5a97053",
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/polearm.png",
     "traits": [
       "Blade",
@@ -880,6 +955,7 @@
     "name": "A-12 Sniper Rifle",
     "credits": 1150,
     "id": "96ceecb4-de33-55c9-910d-bedd87842377",
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/a-12-sniper-rifle.png",
     "traits": [
       "Blaster",
@@ -892,6 +968,7 @@
     "name": "Power Charger",
     "credits": 400,
     "id": "eaf66c54-7bed-5dfb-97bf-4ceb055dc529",
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/power-charger.png",
     "traits": [
       "Accessory"
@@ -903,6 +980,7 @@
     "name": "Supply Pack",
     "credits": 200,
     "id": "ec15f41c-e482-54b9-bdf1-3efb48897d4f",
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/supply-pack.png",
     "traits": [
       "Accessory"
@@ -914,6 +992,7 @@
     "tier": 1,
     "name": "Combat Vambrace",
     "credits": 200,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/combat-vambrace.png",
     "traits": [
       "Accessory"
@@ -925,6 +1004,7 @@
     "tier": 1,
     "name": "Punch Dagger",
     "credits": 400,
+    "back_id": "44d55a28-f1d4-5f06-a567-87d21b963a21",
     "image": "upgrade-cards/punch-dagger.png",
     "traits": [
       "Blade",
@@ -937,6 +1017,7 @@
     "tier": 2,
     "name": "E-11D",
     "credits": 700,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/e-11d.png",
     "traits": [
       "Blaster",
@@ -949,6 +1030,7 @@
     "tier": 2,
     "name": "Mandalorian Helmet",
     "credits": 250,
+    "back_id": "31c241c7-4839-5077-a2b7-ed16e4dd9199",
     "image": "upgrade-cards/mandalorian-helmet.png",
     "traits": [
       "Helmet"
@@ -960,6 +1042,7 @@
     "tier": 3,
     "name": "Bo-Rifle",
     "credits": 750,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/bo-rifle.png",
     "traits": [
       "Rifle",
@@ -972,6 +1055,7 @@
     "tier": 3,
     "name": "Plastoid Armor",
     "credits": 350,
+    "back_id": "1cae0ac7-fab4-5942-a6d9-529809ce6b81",
     "image": "upgrade-cards/plastoid-armor.png",
     "traits": [
       "Armor",

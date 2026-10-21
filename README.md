@@ -19,7 +19,7 @@ sources 1──* source-contents *──1 <any content type>   (content_type + c
 agenda-decks     1──* agenda-cards          (agenda_id)
 heroes           1──* hero-class-cards      (hero_id)
 imperial-classes 1──* imperial-class-cards  (class_id)
-card-backs       1──* <content type>        (content_type + variant)
+card-backs       1──* <any card>            (back_id)
 missions         1──1 <mission card>        (content_type + content_id; products and rewards attach here)
 maps             1──* missions              (map_id; a map is in its missions' products)
 requirements     <any record> requires / expands a source   (content_type + content_id, relation, source_id)
@@ -126,7 +126,7 @@ What follows is a list of all the image types and their sizes for large and smal
 | **Mini (Flipped)**     | 657x424   | 454x293 |
 | **Hero Sheet**         | 1490x1186 | 650x515 |
 
-The table bellow shows you the expected sizes for all the different images included in this data set.
+The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is.
 
 |                                                       | Source  | Standard | Standard (Flipped) | Mini    | Mini (Flipped) | Hero Sheet | Any |
 |-------------------------------------------------------|---------|----------|--------------------|---------|----------------|------------|-----|
@@ -152,13 +152,13 @@ The table bellow shows you the expected sizes for all the different images inclu
 | form-cards.image                                      |         |          |                    |         | ✔              |            |     |
 | skirmish-mission-cards.image                          |         |          | ✔                  |         |                |            |     |
 | epilogue-cards.image                                  |         | ✔        |                    |         |                |            |     |
-| card-backs.image(agenda-decks)                        |         | ✔        |                    |         |                |            |     |
+| card-backs.image(agenda-cards)                        |         | ✔        |                    |         |                |            |     |
 | card-backs.image(command-cards)                       |         |          |                    | ✔       |                |            |     |
 | card-backs.image(companion-cards)                     |         | ✔        |                    |         |                |            |     |
 | card-backs.image(condition-cards)                     |         |          |                    | ✔       |                |            |     |
 | card-backs.image(deployment-cards)                    |         | ✔        |                    |         |                |            |     |
-| card-backs.image(imperial-classes)                    |         |          |                    | ✔       |                |            |     |
-| card-backs.image(heroes)                              |         |          |                    | ✔       |                |            |     |
+| card-backs.image(imperial-class-cards)                |         |          |                    | ✔       |                |            |     |
+| card-backs.image(hero-class-cards)                    |         |          |                    | ✔       |                |            |     |
 | card-backs.image(upgrade-cards)                       |         |          |                    | ✔       |                |            |     |
 | card-backs.image(reward-cards)                        |         |          |                    | ✔       |                |            |     |
 | card-backs.image(supply-cards)                        |         |          |                    | ✔       |                |            |     |
@@ -168,6 +168,7 @@ The table bellow shows you the expected sizes for all the different images inclu
 | card-backs.image(campaign-story-mission-cards)        |         | ✔        |                    |         |                |            |     |
 | card-backs.image(campaign-threat-mission-cards)       |         | ✔        |                    |         |                |            |     |
 | card-backs.image(form-cards)                          |         |          |                    |         | ✔              |            |     |
+| card-backs.image(skirmish-mission-cards)              |         |          | ✔                  |         |                |            |     |
 | card-backs.image(epilogue-cards)                      |         | ✔        |                    |         |                |            |     |
 
 
