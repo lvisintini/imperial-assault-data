@@ -1,5 +1,5 @@
 import {html} from './html.js';
-import {BACK, FKS, RELATIONS} from './relations.js';
+import {BACK, FKS, LINK_RELATIONS} from './relations.js';
 import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, writeFilters} from './facets.js';
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, title} from './types.js';
@@ -54,6 +54,7 @@ function subtitle(ref, db) {
     case 'upgrade-cards': return `Tier ${record.tier}`;
     case 'skirmish-mission-cards': return [mapOf(ref, db) && title(mapOf(ref, db)), record.scenario,
       record.format !== 'Standard' && record.format].filter(Boolean).join(' · ');
+    case 'miniatures': return record.description;
     case 'card-backs': return [...new Set((db.backOf.get(ref) ?? []).map(card => TYPE[card.type].label))].join(', ');
   }
 }
@@ -440,12 +441,11 @@ export function detail(db, ref) {
   for (const {rel, refs} of [...db.children.get(ref) ?? [], ...db.children.get(db.mission.get(ref)) ?? []]) {
     related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
   }
-  // Requires / Expands on a record, Required by / Expanded by on a source, a section per relation.
-  for (const [links, key] of [[db.requires.get(ref), 'label'], [db.requiredBy.get(ref), 'reverse']]) {
-    for (const [relation, names] of Object.entries(RELATIONS)) {
-      const refs = (links ?? []).filter(link => link.relation === relation).map(link => link.ref);
-      if (refs.length) related.push(section(names[key], refs.length, grouped(refs, db)));
-    }
+  // Record links, a section per relation as read from this end: "Figure of" on a miniature, "Miniatures" on what it
+  // stands for, "Required by" on a product.
+  for (const [relation, heading] of Object.entries(LINK_RELATIONS)) {
+    const refs = (db.links.get(ref) ?? []).filter(link => link.relation === relation).map(link => link.ref);
+    if (refs.length) related.push(section(heading, refs.length, grouped(refs, db)));
   }
   const map = mapOf(ref, db);
   if (map) related.push(section('Map', null, grid([map], db)));

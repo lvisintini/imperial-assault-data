@@ -22,9 +22,11 @@ imperial-classes 1──* imperial-class-cards  (class_id)
 card-backs       1──* <any card>            (back_id)
 missions         1──1 <mission card>        (content_type + content_id; products and rewards attach here)
 maps             1──* missions              (map_id; a map is in its missions' products)
-requirements     <any record> requires / expands a source   (content_type + content_id, relation, source_id)
 missions         1──* mission-rewards       (mission_id; content_type + content_id, or credits)
 missions         1──* epilogue-cards        (mission_id)
+sources          *──* miniatures            (source-contents; quantity = figures in the product)
+record-links     <any record> ──relation──> <any record>   (from_type + from_id, to_type + to_id; relation and
+                 reverse_relation: figure-of / has-figure, requires / required-by, expands / expanded-by)
 ```
 
 You can find an example on how to do this in the `./examples` folder, along with other examples.

@@ -75,6 +75,14 @@ export const TYPES = [
   {file: 'raid-missions', label: 'Raid missions', singular: 'Raid mission', images: []},
   {file: 'epilogue-cards', label: 'Epilogue cards', singular: 'Epilogue card', images: ['image']},
   {
+    file: 'miniatures', label: 'Miniatures', singular: 'Miniature', images: [],
+    facets: [
+      'affiliation', 'squares', 'source', 'wave',
+    ],
+    groups: ['affiliation'],
+    order: {affiliation: ['Rebel', 'Imperial', 'Mercenary', 'Neutral']},
+  },
+  {
     file: 'reward-cards', label: 'Reward cards', singular: 'Reward card', images: ['image'],
     facets: [
       'for', 'class', 'type', 'traits', 'source', 'wave',
@@ -89,7 +97,7 @@ export const TYPES = [
   {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
   {file: 'mission-rewards', label: 'Mission rewards', singular: 'Mission reward', images: [], hidden: true},
-  {file: 'requirements', label: 'Requirements', singular: 'Requirement', images: [], hidden: true},
+  {file: 'record-links', label: 'Record links', singular: 'Record link', images: [], hidden: true},
 ];
 
 export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));
