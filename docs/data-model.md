@@ -199,6 +199,38 @@ erDiagram
     }
 ```
 
+## Documents
+
+`documents` are FFG's documents for the game: `name`, `category` (Rulebook, Learn to Play, Rules Reference, Skirmish
+Guide, Campaign Guide, Campaign Log, FAQ, Tournament Regulations, Organized Play, Player Sheet), `version` (as the
+document prints it: the FAQ's 4, the tournament regulations' 3.4; null when it prints none) and `file`, the PDF in
+the repository's `documents/` folder. The PDFs are in the release zips but not on the explorer's site (GitHub Pages
+has a size limit), which links to the repository's copy.
+
+A document reaches products in one of two ways, or neither:
+- **In the box:** the books a product ships with are its contents, `source-contents` rows like any other (the Core
+  Set's Learn to Play, Rules Reference Guide and Skirmish Guide, each expansion's rulebook).
+- **Published for it:** a document FFG published for a product, but not in its box, is `document-for` it (in
+  [Record links](#record-links)): the campaign logs, the Legends of the Alliance rulebook (the app has no box), and the
+  FAQ and the player sheets (squad, score and sign-up sheets), for the Core Set.
+- Organized-play documents (tournament regulations, floor rules, the Fundamental Event Document, the prize tracker)
+  belong to no product.
+
+```mermaid
+erDiagram
+    source-contents }o--|| documents : "content_id (in the box)"
+    documents ||--o{ record-links : "from_id (document-for)"
+    record-links }o--|| sources : "to_id"
+
+    documents {
+        uuid id PK
+        string name
+        string category
+        string version "null when it prints none"
+        string file "PDF in documents/"
+    }
+```
+
 ## Record links
 
 `record-links` relates two records of any types, polymorphic at both ends: `from_type` + `from_id`, `to_type` +
@@ -209,6 +241,7 @@ to its reverse and to the types it links:
 | `relation`  | `reverse_relation` | from         | to                           | Meaning                                         |
 |-------------|--------------------|--------------|------------------------------|-------------------------------------------------|
 | `figure-of` | `has-figure`       | `miniatures` | `deployment-cards`, `heroes` | the miniature stands for the card or hero       |
+| `document-for` | `has-document`  | `documents`  | `sources`                    | the document was published for the product, not in its box |
 | `requires`  | `required-by`      | any record   | `sources`                    | the record can only be played with the product (a raid needs the expansions its map is built from) |
 | `expands`   | `expanded-by`      | any record   | `sources`                    | the record adds to the product (an expansion to the Core Set) |
 
@@ -224,8 +257,8 @@ erDiagram
         uuid from_id FK
         string to_type "the to record's file"
         uuid to_id FK
-        string relation "figure-of, requires, expands"
-        string reverse_relation "has-figure, required-by, expanded-by"
+        string relation "figure-of, document-for, requires, expands"
+        string reverse_relation "has-figure, has-document, required-by, expanded-by"
     }
 ```
 

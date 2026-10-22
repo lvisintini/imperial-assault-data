@@ -26,12 +26,15 @@ missions         1──* mission-rewards       (mission_id; content_type + cont
 missions         1──* epilogue-cards        (mission_id)
 sources          *──* miniatures            (source-contents; quantity = figures in the product)
 record-links     <any record> ──relation──> <any record>   (from_type + from_id, to_type + to_id; relation and
-                 reverse_relation: figure-of / has-figure, requires / required-by, expands / expanded-by)
+                 reverse_relation: figure-of / has-figure, document-for / has-document, requires / required-by,
+                 expands / expanded-by)
 ```
 
 You can find an example on how to do this in the `./examples` folder, along with other examples.
 
-All entries have an associated image (or 2) that you can find inside the `./images/large` (for high resolution images) and the `./images/small` folder (for low resolution images).
+Most entries have an associated image (or 2) that you can find inside the `./images/large` (for high resolution images) and the `./images/small` folder (for low resolution images).
+
+FFG's documents for the game (rulebooks, campaign logs, the FAQ, player sheets and tournament documents) are PDFs in `./documents`, listed in `data/documents.json`. Both release zips include them; the [data explorer](https://lvisintini.github.io/imperial-assault-data/) links to the copies here on GitHub.
 
 The images rotated and aligned so that they are not askew, and they all have consistent sizes (check the [Image Sizes](#image-sizes) section for more on this).
 

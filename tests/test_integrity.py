@@ -1,5 +1,7 @@
+import os
 import re
 import unicodedata
+from os import path
 
 import pytest
 
@@ -146,6 +148,20 @@ class TestSourcesIntegrity:
         for container, pack in self.inside():
             shared = contents.get(pack, set()) & contents.get(container, set())
             assert not shared, (pack, shared)
+
+
+class TestDocumentsIntegrity:
+    """Every document's PDF is in documents/, and every PDF there is a document's."""
+
+    def test_files_exist_and_none_is_orphaned(self):
+        folder = path.join(path.dirname(__file__), '../documents')
+        files = [d['file'] for d in get_data(CONTENT_TYPES.DOCUMENTS)]
+        assert len(files) == len(set(files))
+        assert set(files) == set(os.listdir(folder))
+
+    def test_names_are_unique(self):
+        names = [d['name'] for d in get_data(CONTENT_TYPES.DOCUMENTS)]
+        assert len(names) == len(set(names))
 
 
 class TestRecordLinksIntegrity:

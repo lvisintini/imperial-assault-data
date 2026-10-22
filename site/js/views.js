@@ -6,6 +6,8 @@ import {TYPE, TYPES, fieldLabel, title} from './types.js';
 
 const MERMAID_URL = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
 const DATA_MODEL_URL = 'https://github.com/lvisintini/imperial-assault-data/blob/master/docs/data-model.md';
+// Documents' PDFs stay off GitHub Pages: link to the repository's copy, which GitHub shows in its PDF viewer.
+const DOCUMENTS_URL = 'https://github.com/lvisintini/imperial-assault-data/blob/master/documents';
 const VISIBLE = TYPES.filter(t => !t.hidden);
 
 // A missions row links to, and looks like, its mission card.
@@ -55,6 +57,7 @@ function subtitle(ref, db) {
     case 'skirmish-mission-cards': return [mapOf(ref, db) && title(mapOf(ref, db)), record.scenario,
       record.format !== 'Standard' && record.format].filter(Boolean).join(' · ');
     case 'miniatures': return record.description;
+    case 'documents': return [record.category, record.version && `Version ${record.version}`].filter(Boolean).join(' · ');
     case 'card-backs': return [...new Set((db.backOf.get(ref) ?? []).map(card => TYPE[card.type].label))].join(', ');
   }
 }
@@ -392,6 +395,9 @@ function fieldValue(ref, field, value, db) {
   if (fk) {
     const parent = db.get(fk.parent, value);
     if (parent) return html`<a href="${href(parent)}">${title(parent)}</a>`;
+  }
+  if (ref.type === 'documents' && field === 'file') {
+    return html`<a href="${DOCUMENTS_URL}/${value}"><code>${value}</code></a>`;
   }
   if (TYPE[ref.type].images.includes(field) && value) {
     return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;

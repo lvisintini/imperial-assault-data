@@ -18,6 +18,8 @@ export const LINKS = {table: 'record-links', fromType: 'from_type', from: 'from_
 export const LINK_RELATIONS = {
   'figure-of': 'Figure of',
   'has-figure': 'Miniatures',
+  'document-for': 'Document for',
+  'has-document': 'Documents',
   'requires': 'Requires',
   'required-by': 'Required by',
   'expands': 'Expands',
