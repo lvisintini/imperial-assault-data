@@ -48,7 +48,7 @@ New content is added with `ia_tools` in [imperial-assault-tools](https://github.
 2. The user runs `ia enter` and goes through the cards in the browser. Card text and visual checks are theirs; never open image files, only inspect them programmatically (size, format, hash).
 3. `ia import <product> --check`, then `ia import <product>`, writes records, `source-contents` rows and images here. Then run `uv run pytest`, and open a PR that names the tools commit used.
 
-Images come from cards.boardwars.eu, so the dataset stays consistent. The exceptions, for content boardwars lacks, are listed in `docs/data-model.md`: skirmish mission cards (the wiki), maps (the Skirmish Map Project) and epilogue cards (a Tabletop Simulator save).
+Images come from cards.boardwars.eu, so the dataset stays consistent. The exceptions, for content boardwars lacks, are listed in `docs/data-model.md`: skirmish mission cards (the wiki), maps (the Skirmish Map Project), epilogue cards (a Tabletop Simulator save), and the Heroic and Legendary reward cards and the skirmish mission back (the maintainer's scans).
 
 ## Commands
 

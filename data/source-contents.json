@@ -5878,5 +5878,17 @@
     "content_type": "sources",
     "content_id": "60c4d0d8-74ba-4f04-b055-1ed76f5169a3",
     "quantity": 1
+  },
+  {
+    "source_id": "be340262-93bf-5bee-ad8a-82b87571806e",
+    "content_type": "reward-cards",
+    "content_id": "81270ded-f2c3-43f3-805c-9e36753189eb",
+    "quantity": 3
+  },
+  {
+    "source_id": "be340262-93bf-5bee-ad8a-82b87571806e",
+    "content_type": "reward-cards",
+    "content_id": "e6aa751e-2272-482a-9e09-0c3579c3cc2c",
+    "quantity": 2
   }
 ]

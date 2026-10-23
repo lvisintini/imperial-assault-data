@@ -24,8 +24,10 @@ Bossk; the Bossk pack now lists the one (Mercenary) Bossk, card 16.
 maps each product to the records it contains. It is polymorphic: `content_type` names the target file and
 `content_id` is the `id` of the record in it. A record can appear in more than one product (e.g. a deployment card
 reprinted in a later pack). `quantity` is how many copies of it the product has: the Core Set has two of 15 command
-cards, Bantha Rider two Parting Blow, each Weakened set four cards. The copies come from the "(xN)" markers on the
-wiki's product pages, and the Core Set's add up to FFG's component list (a test checks it).
+cards, Bantha Rider two Parting Blow, each Weakened set four cards. The Core Set also has three Heroic and two
+Legendary reward cards: with three heroes, each gets Heroic; with two, each gets Legendary (boardwars has neither, so
+their images are the maintainer's scans). The copies come from the "(xN)" markers on the wiki's product pages, and the
+Core Set's add up to FFG's component list (a test checks it).
 
 Some products ship inside another: the Luke Skywalker Ally Pack and the Darth Vader Villain Pack come in the Core Set.
 They are sources of their own, and a `source-contents` row with `content_type: "sources"` lists each one in the Core

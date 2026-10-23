@@ -87,9 +87,9 @@ class TestCardBacksIntegrity:
 class TestSourcesIntegrity:
     # Copies per content type in the Core Set's own rows, as FFG's component list counts them (Learn to Play, p. 3),
     # less what the dataset keeps elsewhere: the Luke Skywalker and Darth Vader deployment cards are on their packs
-    # (FFG counts 39), and the Heroic (x3) and Legendary (x2) reward cards aren't in the dataset (18).
+    # (FFG counts 39).
     CORE_SET_COPIES = {
-        CONTENT_TYPES.DEPLOYMENT: 37, CONTENT_TYPES.COMMAND: 42, CONTENT_TYPES.REWARD: 13, CONTENT_TYPES.UPGRADE: 36,
+        CONTENT_TYPES.DEPLOYMENT: 37, CONTENT_TYPES.COMMAND: 42, CONTENT_TYPES.REWARD: 18, CONTENT_TYPES.UPGRADE: 36,
         CONTENT_TYPES.SUPPLY: 12, CONTENT_TYPES.CONDITION: 12, 'side missions': 14,
     }
 

@@ -698,5 +698,25 @@
     "for": "Rebel players",
     "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
     "image": "reward-cards/strategy-executed.png"
+  },
+  {
+    "id": "81270ded-f2c3-43f3-805c-9e36753189eb",
+    "name": "Heroic",
+    "type": "Feat",
+    "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
+    "image": "reward-cards/heroic.png"
+  },
+  {
+    "id": "e6aa751e-2272-482a-9e09-0c3579c3cc2c",
+    "name": "Legendary",
+    "type": "Feat",
+    "traits": null,
+    "class": "Regular",
+    "for": "Rebel players",
+    "back_id": "8cf9204d-be29-5aad-819b-10ba29d30dde",
+    "image": "reward-cards/legendary.png"
   }
 ]

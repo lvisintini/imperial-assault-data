@@ -4,7 +4,7 @@ Every row gets quantity 1, except the rows below: the "(xN)" markers on the wiki
 `ia wiki` cache, staging/wiki/products.json), matched to rows by product, type and name, and for deployment cards by
 elite and mode (a bare name with xN is the regular card; its elite is listed apart). Deflection and Regroup, which the
 wiki lists on the Core Set and on the Luke Skywalker and Darth Vader packs, are the packs' (#29). Heroic (x3) and
-Legendary (x2), Core Set reward cards, aren't in the dataset.
+Legendary (x2), Core Set reward cards the dataset didn't have yet, were imported after it with their copies.
 
 Run from the repo root: uv run python migrations/2.0.0/10_quantities.py. Running it again changes nothing.
 """
