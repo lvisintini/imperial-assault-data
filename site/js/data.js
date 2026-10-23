@@ -29,6 +29,7 @@ class Db {
     }
     this.foundIn = new Map();   // content ref → source refs
     this.contents = new Map();  // source ref → Map(type → content refs)
+    this.copies = new Map();    // source ref → Map(content ref → quantity), when more than 1
     this.parent = new Map();    // child ref → {rel, ref}
     this.children = new Map();  // parent ref → [{rel, refs}]
     this.back = new Map();      // ref → {ref: card-back ref, via: a child ref when it's its cards' back}
@@ -66,6 +67,10 @@ class Db {
       push(this.foundIn, content, source);
       if (!this.contents.has(source)) this.contents.set(source, new Map());
       push(this.contents.get(source), content.type, content);
+      if (row[JOIN.quantity] > 1) {
+        if (!this.copies.has(source)) this.copies.set(source, new Map());
+        this.copies.get(source).set(content, row[JOIN.quantity]);
+      }
     }
   }
 

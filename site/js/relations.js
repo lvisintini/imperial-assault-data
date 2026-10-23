@@ -1,8 +1,10 @@
 // How the data files relate. Mirrors docs/data-model.md; keep the two in sync (tests/test_site.py checks coverage).
 
-// sources 1─* source-contents *─1 <any content type>, polymorphic through content_type + content_id. The content can be
-// a source: a product that ships inside another (the Luke Skywalker and Darth Vader packs, in the Core Set).
-export const JOIN = {parent: 'sources', via: 'source-contents', fk: 'source_id', type: 'content_type', id: 'content_id'};
+// sources 1─* source-contents *─1 <any content type>, polymorphic through content_type + content_id, with how many
+// copies the product has (quantity). The content can be a source: a product that ships inside another (the Luke
+// Skywalker and Darth Vader packs, in the Core Set).
+export const JOIN = {parent: 'sources', via: 'source-contents', fk: 'source_id', type: 'content_type', id: 'content_id',
+  quantity: 'quantity'};
 
 // missions indexes every mission, whichever collection its card is in: a row per card, through content_type +
 // content_id. Missions reach their products through their row (source-contents points at it), and it holds their map.

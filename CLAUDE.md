@@ -10,7 +10,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 
 - `data/<content-type>.json` — one JSON array per content type. Structure mimics a relational DB:
   - `sources.json` = products (core game, expansions, ally/villain packs).
-  - `source-contents.json` = join table `{source_id, content_type, content_id}` mapping products to their contents.
+  - `source-contents.json` = join table `{source_id, content_type, content_id, quantity}` mapping products to their contents, with how many copies each has (from the wiki's "(xN)" markers).
   - Child → parent FKs: `agenda-cards.agenda_id → agenda-decks`, `hero-class-cards.hero_id → heroes`, `imperial-class-cards.class_id → imperial-classes`, `campaign-hero-side-mission-cards.hero_id → heroes`, `missions.map_id → maps` (nullable), `mission-rewards.mission_id → missions` and `epilogue-cards.mission_id → missions`. A product that ships inside another (the Luke and Vader packs, in the Core Set) is a `source-contents` row with `content_type: "sources"`.
   - `requirements.json` (no ids, empty for now): a record (`content_type` + `content_id`) that `requires` or `expands` a source (`source_id`).
   - `missions.json` indexes every mission card (the five `campaign-*-mission-cards` files, `skirmish-mission-cards`, `raid-missions`, and `agenda-cards` with `mission: true`) through `content_type` + `content_id`. Missions reach products only through their index row (`source-contents` rows with `content_type: "missions"`); `mission-rewards.json` (no ids) lists each mission's rewards: a card through `content_type` + `content_id`, or `credits: true`; `choice: true` rows are pick-one alternatives.
@@ -29,7 +29,7 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 
 - Every record validates against its schema (`tests/test_schemas.py`).
 - Ids are UUIDs (`definitions.json#/definitions/uuid`), unique across the dataset; only `source-contents`, `mission-rewards` and `requirements` have none. 1.x records have uuid5 ids derived from their old numeric ids, and new records get a uuid4 (`docs/data-model.md` → Ids). Ids never change; files keep their order.
-- `source-contents` FKs and the child→parent FKs above must resolve. Every mission card has exactly one `missions` row, no `source-contents` row points at a mission card directly, agenda missions' rows have their deck's products, skirmish and raid missions have a map, a map used by a mission has no `source-contents` rows of its own (it's in its missions' products), and `mission-rewards` rows resolve (credits ⇔ no record; a `choice` group has ≥ 2 rows).
+- `source-contents` FKs and the child→parent FKs above must resolve. The Core Set's copies per content type match FFG's component list (`CORE_SET_COPIES`). Every mission card has exactly one `missions` row, no `source-contents` row points at a mission card directly, agenda missions' rows have their deck's products, skirmish and raid missions have a map, a map used by a mission has no `source-contents` rows of its own (it's in its missions' products), and `mission-rewards` rows resolve (credits ⇔ no record; a `choice` group has ≥ 2 rows).
 - Card backs: every card's `back_id` resolves, every back is used by cards of one size, back names are unique, a hero's, Imperial class's or agenda deck's cards share one back, and every type with images has `back_id` except `sources`, `maps` and `heroes` (`tests/test_integrity.py` `TestCardBacksIntegrity`).
 - Reward cards: a Boon is for the Rebel players and a Bane for the Imperial player; agenda missions' reward cards are for the Imperial player.
 - Deployment rules: skirmish upgrades have no health/speed/group/reinforce cost and are Skirmish-only; unique ⇒ group 1, no reinforce cost; group > 1 ⇔ reinforce cost.
@@ -48,7 +48,7 @@ New content is added with `ia_tools` in [imperial-assault-tools](https://github.
 2. The user runs `ia enter` and goes through the cards in the browser. Card text and visual checks are theirs; never open image files, only inspect them programmatically (size, format, hash).
 3. `ia import <product> --check`, then `ia import <product>`, writes records, `source-contents` rows and images here. Then run `uv run pytest`, and open a PR that names the tools commit used.
 
-Images come from cards.boardwars.eu, so the dataset stays consistent. The exceptions, for content boardwars lacks, are listed in `docs/data-model.md`: skirmish mission cards (the wiki), maps (the Skirmish Map Project) and epilogue cards (a Tabletop Simulator save).
+Images come from cards.boardwars.eu, so the dataset stays consistent. The exceptions, for content boardwars lacks, are listed in `docs/data-model.md`: skirmish mission cards (the wiki), maps (the Skirmish Map Project), epilogue cards (a Tabletop Simulator save), and the Heroic and Legendary reward cards and the skirmish mission back (the maintainer's scans).
 
 ## Commands
 

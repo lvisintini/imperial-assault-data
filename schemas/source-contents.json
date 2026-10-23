@@ -16,12 +16,18 @@
     "content_id": {
       "description": "Unique id for the component contained in the source.",
       "$ref": "definitions.json#/definitions/uuid"
+    },
+    "quantity": {
+      "description": "How many copies of the component the source has.",
+      "type": "integer",
+      "minimum": 1
     }
   },
   "required": [
     "source_id",
     "content_type",
-    "content_id"
+    "content_id",
+    "quantity"
   ],
   "additionalProperties": false
 }

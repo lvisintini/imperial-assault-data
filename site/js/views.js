@@ -58,7 +58,8 @@ function subtitle(ref, db) {
   }
 }
 
-function tile(ref, db) {
+// copies: how many of it the product shown has (product contents, "Found in"), when more than one.
+function tile(ref, db, copies) {
   const path = thumbPath(ref, db);
   const peek = peekPath(ref, db);
   const name = title(ref);
@@ -66,12 +67,14 @@ function tile(ref, db) {
     <span class="thumb">${path
       ? html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">`
       : html`<span class="no-image">No image</span>`}</span>
-    <span class="tile-title">${name}</span>
+    <span class="tile-title">${name}${copies > 1 ? html` <span class="copies">×${copies}</span>` : ''}</span>
     <span class="tile-sub">${subtitle(ref, db)}</span>
   </a>`;
 }
 
-const grid = (refs, db, keys) => html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db))}</div>`;
+// copiesOf: ref → how many copies to show on its tile (see tile).
+const grid = (refs, db, keys, copiesOf = () => null) =>
+  html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db, copiesOf(ref)))}</div>`;
 
 // Nested sections by facet (facets.js): <h2> for the first level, <h3> below it. Records with several values (traits,
 // products) appear under each of them; records with none come last.
@@ -162,11 +165,11 @@ function rerender(container, markup) {
 }
 
 // Refs of mixed types, one sub-heading per type, in navigation order.
-function grouped(refs, db) {
+function grouped(refs, db, copiesOf) {
   const byType = Map.groupBy(refs, ref => ref.type);
   return TYPES.filter(t => byType.has(t.file)).map(t => html`
     <h3><a href="#/${t.file}">${t.label}</a> <span class="count">${byType.get(t.file).length}</span></h3>
-    ${grid(byType.get(t.file), db)}`);
+    ${grid(byType.get(t.file), db, undefined, copiesOf)}`);
 }
 
 const section = (heading, count, body) => html`
@@ -423,10 +426,14 @@ export function detail(db, ref) {
   const contents = db.contents.get(ref);
   if (contents) {
     const refs = [...contents.values()].flat();
-    related.push(section('Contents', refs.length, grouped(refs, db)));
+    const copies = db.copies.get(ref);
+    related.push(section('Contents', refs.length, grouped(refs, db, content => copies?.get(content))));
   }
   const sources = db.sources(ref);
-  if (sources.length) related.push(section('Found in', sources.length, grid(sources, db)));
+  if (sources.length) {
+    const content = db.mission.get(ref) ?? ref;  // a mission card's products are its missions row's
+    related.push(section('Found in', sources.length, grid(sources, db, undefined, source => db.copies.get(source)?.get(content))));
+  }
   const parent = db.parent.get(ref);
   if (parent) related.push(section(parent.rel.label ?? TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
   // A mission card's own children, and its missions row's (its epilogues).
