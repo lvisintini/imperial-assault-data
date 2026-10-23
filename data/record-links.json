@@ -1,0 +1,1322 @@
+[
+  {
+    "from_type": "miniatures",
+    "from_id": "5be6424d-042a-415d-a3eb-25937cbb0157",
+    "to_type": "deployment-cards",
+    "to_id": "f0fc2da5-6a0f-5073-b9bb-01f49eb93349",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5be6424d-042a-415d-a3eb-25937cbb0157",
+    "to_type": "heroes",
+    "to_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "b4f678ba-d85a-41b9-a854-b55a5d2ab23c",
+    "to_type": "deployment-cards",
+    "to_id": "db5b3478-512a-5e56-9726-b0c17f428cc5",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "b4f678ba-d85a-41b9-a854-b55a5d2ab23c",
+    "to_type": "heroes",
+    "to_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f32eaa9b-c0e2-40eb-b527-383219b3fa22",
+    "to_type": "deployment-cards",
+    "to_id": "9ab864e6-2ab4-5a39-8937-f60ab01f75c3",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f32eaa9b-c0e2-40eb-b527-383219b3fa22",
+    "to_type": "heroes",
+    "to_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "4762a29b-5622-4054-a5f6-03030003eaa0",
+    "to_type": "deployment-cards",
+    "to_id": "d6c87c9e-1c69-509d-a651-3dd359e5824d",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "4762a29b-5622-4054-a5f6-03030003eaa0",
+    "to_type": "heroes",
+    "to_id": "703db9b7-9fac-5e46-98c1-402024692a92",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ddd966d9-ed1e-47a4-9d48-1346eaf91365",
+    "to_type": "deployment-cards",
+    "to_id": "3e818577-c542-5d2d-a1ff-f5335a365c9c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ddd966d9-ed1e-47a4-9d48-1346eaf91365",
+    "to_type": "heroes",
+    "to_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c33f8e75-3f47-4505-80cf-cfbde08efceb",
+    "to_type": "deployment-cards",
+    "to_id": "cfe4e96a-d1eb-5384-83ba-327fcfca1417",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c33f8e75-3f47-4505-80cf-cfbde08efceb",
+    "to_type": "heroes",
+    "to_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ff462496-8666-43db-a447-9b5354d6d347",
+    "to_type": "deployment-cards",
+    "to_id": "ae9ce593-c113-5001-829d-c912baa7ac07",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "eeb68e22-6fbd-41e7-9786-058d54687f67",
+    "to_type": "deployment-cards",
+    "to_id": "8ab9c881-2ea6-5e88-99df-40caac828a75",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "eeb68e22-6fbd-41e7-9786-058d54687f67",
+    "to_type": "deployment-cards",
+    "to_id": "901168b6-f1ae-564b-81d0-ad253f5e2e52",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "46b9b44c-3b08-4d2d-9aa2-9dd474394b0b",
+    "to_type": "deployment-cards",
+    "to_id": "9901e4e1-f2bf-556a-bc4d-6719be9f9055",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "46b9b44c-3b08-4d2d-9aa2-9dd474394b0b",
+    "to_type": "deployment-cards",
+    "to_id": "185b2837-1fe5-56b8-9e63-bbb99f22b211",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "02fa8d58-19a2-4ee2-af89-ae85c789ba73",
+    "to_type": "deployment-cards",
+    "to_id": "8694fbd4-0165-527e-aea4-a9dc48e46d87",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "02fa8d58-19a2-4ee2-af89-ae85c789ba73",
+    "to_type": "deployment-cards",
+    "to_id": "6caab715-26a5-532e-88ec-9ac22e9da08b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "56eb8936-03fb-482e-a793-d141bc586996",
+    "to_type": "deployment-cards",
+    "to_id": "91139b33-3d62-5d51-bd87-f4d92b454bb0",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "56eb8936-03fb-482e-a793-d141bc586996",
+    "to_type": "deployment-cards",
+    "to_id": "30ab9d0c-12a2-5cfd-8039-b2ab168ab74c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e4957520-5546-41c6-94be-c43273397ee1",
+    "to_type": "deployment-cards",
+    "to_id": "9188010f-9a86-549f-97b7-4d357d4687f4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e4957520-5546-41c6-94be-c43273397ee1",
+    "to_type": "deployment-cards",
+    "to_id": "7217415c-c215-537c-9c98-23e120ed94b8",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5ed665e5-b093-460b-98ff-bdca40dd8f0d",
+    "to_type": "deployment-cards",
+    "to_id": "f2a1c20b-ce85-5f1a-bb2b-c9b964b11d18",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e701eb5b-f904-4630-bc9c-231b6bd94faa",
+    "to_type": "deployment-cards",
+    "to_id": "487c2d05-aed5-508b-af2a-9132f846eedc",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "223c338b-8c06-4788-b3ed-fa0c55358dc7",
+    "to_type": "deployment-cards",
+    "to_id": "f7913b45-0a0f-5c01-8be1-711618f85cf2",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "223c338b-8c06-4788-b3ed-fa0c55358dc7",
+    "to_type": "deployment-cards",
+    "to_id": "6c654997-bff4-5b72-ab3e-51532b19dbb9",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "209189d3-e148-450c-a788-6884e9d6572a",
+    "to_type": "deployment-cards",
+    "to_id": "f4536050-3b54-5e93-8a93-6aa1bf460519",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "209189d3-e148-450c-a788-6884e9d6572a",
+    "to_type": "deployment-cards",
+    "to_id": "0ea2e2a5-0f1c-5ae3-b316-b1628832858c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e1c769ac-6b4e-497a-9652-cc2d71ef139d",
+    "to_type": "deployment-cards",
+    "to_id": "fe4c1348-e1d3-5459-8a40-5025298311e8",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f4615b81-d923-40a1-b99a-662927da8d5f",
+    "to_type": "deployment-cards",
+    "to_id": "c1b43496-afea-5548-975a-f77963a761ef",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e58e43a0-6f69-4f3c-b9d8-18cca794b448",
+    "to_type": "deployment-cards",
+    "to_id": "79a638ad-5b9d-5a31-bdc6-c0384c86f264",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e58e43a0-6f69-4f3c-b9d8-18cca794b448",
+    "to_type": "deployment-cards",
+    "to_id": "5c084571-957a-5245-8940-2c473798db90",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "b97b4294-577d-4c9e-aef6-dcf848c8920e",
+    "to_type": "deployment-cards",
+    "to_id": "ccdbb3f0-f0c2-5311-9eb1-276875574410",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "b97b4294-577d-4c9e-aef6-dcf848c8920e",
+    "to_type": "deployment-cards",
+    "to_id": "c7c2ce4f-ce5f-5cd0-b0ae-8cbfe8ff9c03",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "84bb56c3-a4ca-4ef3-9d46-a5a2ae19f367",
+    "to_type": "deployment-cards",
+    "to_id": "06498bf6-c2f7-568e-b008-e2a79523b4e3",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "8f11b160-69b3-4c30-a514-f3e7ee9330b5",
+    "to_type": "deployment-cards",
+    "to_id": "439490d4-98da-536a-90e6-a399faa70aaf",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "8f11b160-69b3-4c30-a514-f3e7ee9330b5",
+    "to_type": "deployment-cards",
+    "to_id": "f2a1c20b-ce85-5f1a-bb2b-c9b964b11d18",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "d21736a3-69a1-4ef9-8a70-0df9e9a23331",
+    "to_type": "deployment-cards",
+    "to_id": "fbc2b270-b325-524a-b6bc-2d5e92ec2222",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "9f577d77-0ca6-47bc-a1e7-98267c51d2c6",
+    "to_type": "deployment-cards",
+    "to_id": "c1ec5eeb-e148-5f99-a6a5-88fe3ef6280c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "9f577d77-0ca6-47bc-a1e7-98267c51d2c6",
+    "to_type": "heroes",
+    "to_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "135c6777-bcb1-4575-9e01-921dcc3d3390",
+    "to_type": "deployment-cards",
+    "to_id": "3368aa5b-2880-5e10-b2f1-84d730954584",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "135c6777-bcb1-4575-9e01-921dcc3d3390",
+    "to_type": "heroes",
+    "to_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5a310a98-38c8-4365-9c4f-d37b9874ee9f",
+    "to_type": "deployment-cards",
+    "to_id": "c7ddf67d-b868-5b1e-9b15-3d6f8c686d1e",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5a310a98-38c8-4365-9c4f-d37b9874ee9f",
+    "to_type": "deployment-cards",
+    "to_id": "e68d84c2-ce05-5534-b2c2-fad4a965716c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f015004c-0eb1-45f9-b5e3-c3ffdee26917",
+    "to_type": "deployment-cards",
+    "to_id": "eaf3a1bc-0162-5551-a57e-69072d17033f",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f015004c-0eb1-45f9-b5e3-c3ffdee26917",
+    "to_type": "deployment-cards",
+    "to_id": "8ff70ca5-b259-5dcc-a301-e7b963f28713",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "1f43f249-2f67-44b3-98ce-4e8d7694e9cb",
+    "to_type": "deployment-cards",
+    "to_id": "77f5417b-fa50-52bc-b44f-87f47fdd01a4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "897b7e05-cb3f-4195-922c-6d98bcb17210",
+    "to_type": "deployment-cards",
+    "to_id": "2c3a8c91-97fd-5e56-b82b-63a73157a4f5",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "897b7e05-cb3f-4195-922c-6d98bcb17210",
+    "to_type": "deployment-cards",
+    "to_id": "fe22e57b-bfdb-50ae-9c11-3f000308efb6",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "be014eae-6d9c-4e8b-bd18-bbcf5d2e2d99",
+    "to_type": "deployment-cards",
+    "to_id": "2499bb95-68c0-5a40-9cae-45f54452c6e4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "655e90cb-27b4-4154-bbd3-fc63e56d0187",
+    "to_type": "deployment-cards",
+    "to_id": "eea0a2fc-f761-5475-a8d7-6e830ce7212b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "60fb4fa7-e3cc-41d3-8df7-ad9bd0da7eee",
+    "to_type": "deployment-cards",
+    "to_id": "6389283c-5e67-55b6-bfae-bbbde0d245ce",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "60fb4fa7-e3cc-41d3-8df7-ad9bd0da7eee",
+    "to_type": "deployment-cards",
+    "to_id": "053f1556-9a15-5ed3-88bd-ab482aa749b3",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "89c028f2-f409-4374-8fba-21fbe45dcee2",
+    "to_type": "deployment-cards",
+    "to_id": "8ab9c881-2ea6-5e88-99df-40caac828a75",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "89c028f2-f409-4374-8fba-21fbe45dcee2",
+    "to_type": "deployment-cards",
+    "to_id": "901168b6-f1ae-564b-81d0-ad253f5e2e52",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "647e895b-bc16-4bad-b948-0d3f6c6938f0",
+    "to_type": "deployment-cards",
+    "to_id": "0ba4bfc1-9757-578d-a7a6-dc926826ada5",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "647e895b-bc16-4bad-b948-0d3f6c6938f0",
+    "to_type": "deployment-cards",
+    "to_id": "65139c98-8ee9-5c63-be88-79d69e24e251",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "3b2140c2-a820-42c2-8d61-bfcdf5ccc181",
+    "to_type": "deployment-cards",
+    "to_id": "790c1993-8488-5f22-a23e-f1a21534bdb0",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "3b2140c2-a820-42c2-8d61-bfcdf5ccc181",
+    "to_type": "deployment-cards",
+    "to_id": "08cac016-0d84-5624-a07b-21f242bb2682",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "9f106e07-d3bd-4b12-a965-42d608f32949",
+    "to_type": "deployment-cards",
+    "to_id": "26c67b31-7ec7-54ef-9a54-f3c2f68f740a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c35067cd-617d-4a23-91e7-1fa072b7e36f",
+    "to_type": "deployment-cards",
+    "to_id": "f619747a-eb75-5a8a-ba79-92923d33bc20",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c35067cd-617d-4a23-91e7-1fa072b7e36f",
+    "to_type": "heroes",
+    "to_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "440604cb-f9fc-4e59-a38f-5cce1152df8c",
+    "to_type": "deployment-cards",
+    "to_id": "6f8dac27-bb0e-59f7-af72-8213ed39fd74",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "440604cb-f9fc-4e59-a38f-5cce1152df8c",
+    "to_type": "heroes",
+    "to_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ddb19d7b-e696-4ead-a650-1730d4b23551",
+    "to_type": "deployment-cards",
+    "to_id": "c401dff8-1079-5bac-900b-217aca0f4fb7",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ddb19d7b-e696-4ead-a650-1730d4b23551",
+    "to_type": "heroes",
+    "to_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c528b593-1ed7-447e-956b-361ef8891d02",
+    "to_type": "deployment-cards",
+    "to_id": "f9f661a7-21bd-5306-9e64-b5f5a091edc2",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c528b593-1ed7-447e-956b-361ef8891d02",
+    "to_type": "deployment-cards",
+    "to_id": "374ae56a-fd40-59ea-9278-5cadbb943696",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "729f5b0a-e692-4998-9990-8a2427d95386",
+    "to_type": "deployment-cards",
+    "to_id": "7b6bda51-10b4-5936-82ac-e1a7a4ce349a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "7802e18c-ac8b-454d-9ad1-167abad00584",
+    "to_type": "deployment-cards",
+    "to_id": "92887ea5-0475-5595-a10c-92e47cefc029",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "7802e18c-ac8b-454d-9ad1-167abad00584",
+    "to_type": "deployment-cards",
+    "to_id": "039848e3-c1a5-55b0-8e4f-f8e94fa17e5b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "dc752caf-1ad6-44dc-8ead-608ebcf9ba87",
+    "to_type": "deployment-cards",
+    "to_id": "4fff22e9-9dcc-5d5c-8523-c9024a0b4f5b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "dc752caf-1ad6-44dc-8ead-608ebcf9ba87",
+    "to_type": "deployment-cards",
+    "to_id": "46987d54-3d48-5840-907d-7ada0413df8e",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "615334ef-8c84-4427-8512-34041e89a732",
+    "to_type": "deployment-cards",
+    "to_id": "cdf9297b-8918-5421-9c7c-e50c3ff440dd",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "615334ef-8c84-4427-8512-34041e89a732",
+    "to_type": "deployment-cards",
+    "to_id": "59e37fde-c6ac-53c5-abcf-23d3abe213d4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5c73d646-4b85-4d7f-9b25-37f161d88e62",
+    "to_type": "deployment-cards",
+    "to_id": "1d41b532-8626-5e3a-9238-373a8223fe9a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5c73d646-4b85-4d7f-9b25-37f161d88e62",
+    "to_type": "deployment-cards",
+    "to_id": "e6aa9a84-6c98-553d-b190-0cf9fd269131",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "fc1fda48-00f2-46c6-a706-ff9692690190",
+    "to_type": "deployment-cards",
+    "to_id": "21b545dd-0fdf-59a4-b623-eb5aa1fc4656",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "3fcdec56-1d84-4735-b95c-98f0329259e3",
+    "to_type": "deployment-cards",
+    "to_id": "59e0f986-0922-51a1-8835-8db17142a6ab",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "0c542aab-75cc-4903-b272-fc7116f0656e",
+    "to_type": "deployment-cards",
+    "to_id": "6c52c1ae-d37e-51e1-ba26-7fe5db38bf90",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "0c542aab-75cc-4903-b272-fc7116f0656e",
+    "to_type": "heroes",
+    "to_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5deb0b59-c1ea-4728-97d5-436bb12cf2a6",
+    "to_type": "deployment-cards",
+    "to_id": "f9969e77-8af5-5451-bbdd-8dc5a2fe27db",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5deb0b59-c1ea-4728-97d5-436bb12cf2a6",
+    "to_type": "heroes",
+    "to_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "3d7d3fb4-045a-4dca-991e-8c32d3f864d9",
+    "to_type": "deployment-cards",
+    "to_id": "d2c7de25-5a95-5ed8-a73e-4c99317287cf",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "3d7d3fb4-045a-4dca-991e-8c32d3f864d9",
+    "to_type": "deployment-cards",
+    "to_id": "1fe73f47-e3d6-5f94-ba19-f220582f54f3",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "bf976737-2107-41c5-a012-094e226c085d",
+    "to_type": "deployment-cards",
+    "to_id": "dc2920b8-b976-5f28-8ad0-2a7166991d74",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "bf976737-2107-41c5-a012-094e226c085d",
+    "to_type": "deployment-cards",
+    "to_id": "9af148aa-f5db-5e7e-b911-7ba062439714",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "33e92211-610c-4d95-8dd3-4236ffa2443b",
+    "to_type": "deployment-cards",
+    "to_id": "73ec1673-9207-5bec-a3d2-b46ebecc7d1f",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "88b872ca-d483-4550-aedd-ffe97f210f7f",
+    "to_type": "deployment-cards",
+    "to_id": "1df31845-9106-54e3-9f37-e7a0aff8438a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "88b872ca-d483-4550-aedd-ffe97f210f7f",
+    "to_type": "deployment-cards",
+    "to_id": "d47338ff-3603-5bb0-9667-01be8ca0c2fd",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "44d65c7f-1a63-4c4f-a782-b91a7342e114",
+    "to_type": "deployment-cards",
+    "to_id": "65cf43a8-3eed-5975-b35b-00d8b8fea518",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "44d65c7f-1a63-4c4f-a782-b91a7342e114",
+    "to_type": "deployment-cards",
+    "to_id": "9b8816ae-d1aa-5705-ab1f-5b84c88e3d4b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "aaa1bb92-bc95-48e5-94aa-0508cb720718",
+    "to_type": "deployment-cards",
+    "to_id": "367a3295-e168-544f-adc5-a533b763b2c9",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "1590fa24-6513-4ecb-9338-dd071b509630",
+    "to_type": "deployment-cards",
+    "to_id": "ebb4df5e-ef8e-550a-8de2-6eb0b3ec072c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "1590fa24-6513-4ecb-9338-dd071b509630",
+    "to_type": "deployment-cards",
+    "to_id": "d9549f76-910f-5a58-89de-6d5dea176bb4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "2b7de092-75dc-48a4-8fba-74f7a5c5eabd",
+    "to_type": "deployment-cards",
+    "to_id": "24365c13-2f11-5691-9e5d-2eed4fbf90d1",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "60326638-930c-4c96-bb02-cd5f5b5a2743",
+    "to_type": "deployment-cards",
+    "to_id": "843b0a7d-74f5-5d72-b73f-b490ffdf392d",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e740e257-806a-4e64-a9de-ae398cbb898c",
+    "to_type": "deployment-cards",
+    "to_id": "6a6b072f-2d16-5a55-8b44-59550b219027",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e740e257-806a-4e64-a9de-ae398cbb898c",
+    "to_type": "heroes",
+    "to_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "7cfb9f40-2d7a-4a65-9fa4-4432ef36f7b5",
+    "to_type": "deployment-cards",
+    "to_id": "f09e903c-7c97-55ea-ba0f-8bdb89d63f13",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "7cfb9f40-2d7a-4a65-9fa4-4432ef36f7b5",
+    "to_type": "heroes",
+    "to_id": "40041806-33ed-5af6-8cb8-24d305062048",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "2ca7d1e1-a601-4b43-bd50-51edfe6f4c96",
+    "to_type": "deployment-cards",
+    "to_id": "95ea10f3-13c0-51f8-b8a9-e4c90524bbca",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "2ca7d1e1-a601-4b43-bd50-51edfe6f4c96",
+    "to_type": "heroes",
+    "to_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "109095b3-f998-424d-b552-71881239e078",
+    "to_type": "deployment-cards",
+    "to_id": "73375e4c-8405-58e1-827b-4a71e84cebde",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "109095b3-f998-424d-b552-71881239e078",
+    "to_type": "deployment-cards",
+    "to_id": "07390987-ab34-55bc-b4cc-7770f6a3a271",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f39c0e3a-0fdc-4014-8b23-0e5fed3a2181",
+    "to_type": "deployment-cards",
+    "to_id": "ff1500f4-cbd6-5015-b7d6-2b6a0e0820ec",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f39c0e3a-0fdc-4014-8b23-0e5fed3a2181",
+    "to_type": "deployment-cards",
+    "to_id": "a75a386b-7b0d-5b95-b50d-733dcfde59e1",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "089e5b46-fe48-4e0a-b877-44059e93282f",
+    "to_type": "deployment-cards",
+    "to_id": "643073cc-0fa1-574b-b0b1-6b6c2edf7201",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "089e5b46-fe48-4e0a-b877-44059e93282f",
+    "to_type": "deployment-cards",
+    "to_id": "ee8c8649-699f-56fc-a9e6-664ba9656bf8",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "a9ef243f-172a-42b7-84eb-d2afb06f3f60",
+    "to_type": "deployment-cards",
+    "to_id": "01a90474-fb91-59ce-80d8-6e33f402e073",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "a9ef243f-172a-42b7-84eb-d2afb06f3f60",
+    "to_type": "deployment-cards",
+    "to_id": "b928a15b-034b-57dd-9f0e-025a17b7d02a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f791831a-5ba1-407e-981a-a84bad0abdc5",
+    "to_type": "deployment-cards",
+    "to_id": "0e7a2a60-9311-5b31-ba94-c0f9d6c44173",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "1870bc49-3ead-4fd5-8fd5-8de76911f746",
+    "to_type": "deployment-cards",
+    "to_id": "691da5f4-f11f-5725-9161-9df8ef358cbe",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "1870bc49-3ead-4fd5-8fd5-8de76911f746",
+    "to_type": "deployment-cards",
+    "to_id": "65cd1970-7b7e-5eff-8ef4-6fd52a918191",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ace261fd-83a5-44b1-b6ae-253da3a61d2c",
+    "to_type": "deployment-cards",
+    "to_id": "2d696dfc-532f-57b2-ac33-7f625d1f3f78",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ace261fd-83a5-44b1-b6ae-253da3a61d2c",
+    "to_type": "deployment-cards",
+    "to_id": "3cca6575-e1d4-5667-8cfa-2019e00fb2c9",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "bc8e3309-99b0-4f59-8f54-5d46cc74a471",
+    "to_type": "deployment-cards",
+    "to_id": "9f37ca09-2b9a-5621-9ef0-750097654701",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "bc8e3309-99b0-4f59-8f54-5d46cc74a471",
+    "to_type": "deployment-cards",
+    "to_id": "8d6bdf20-183f-50bd-bd97-dfc07accd2e1",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "4c3d6b94-0b77-493b-aa6f-96eb1049b9a0",
+    "to_type": "deployment-cards",
+    "to_id": "758ca3ec-5b5d-5cbd-8ef4-49dd3416a9ce",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e3fe1966-1c67-4f94-b91e-e10b29cdfd07",
+    "to_type": "deployment-cards",
+    "to_id": "0387f7e5-d0e5-5595-94aa-494e11aba101",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "d686e6cf-9f3e-44b3-ba1e-e86e658a9fe1",
+    "to_type": "deployment-cards",
+    "to_id": "6834ce0a-1bae-518b-b33a-ea903c61f1df",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "d686e6cf-9f3e-44b3-ba1e-e86e658a9fe1",
+    "to_type": "deployment-cards",
+    "to_id": "21c55f2e-f8e8-58f9-adde-963741ffa7ce",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "d686e6cf-9f3e-44b3-ba1e-e86e658a9fe1",
+    "to_type": "deployment-cards",
+    "to_id": "80c02e76-9c20-5d07-995f-5c98653bed66",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "b3f25804-7209-4d6e-b630-babcd96a9e9f",
+    "to_type": "deployment-cards",
+    "to_id": "4e2fe0d0-5aa4-540d-9b38-7e9b30f5535b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "197b84af-e4b0-4333-ab81-51be930ddf6a",
+    "to_type": "deployment-cards",
+    "to_id": "b23b2b57-0c7c-5e8a-9af4-c74792c89e15",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "0b9f0f08-2edd-439a-80b7-446e98d443bf",
+    "to_type": "deployment-cards",
+    "to_id": "310931f2-c1da-5ba5-b71b-a38a3a754978",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "0b9f0f08-2edd-439a-80b7-446e98d443bf",
+    "to_type": "heroes",
+    "to_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "94b85615-a2b2-407c-be46-c8ce33fdbe21",
+    "to_type": "deployment-cards",
+    "to_id": "0ea3a1c5-73d5-59be-aea7-a8568009a470",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "94b85615-a2b2-407c-be46-c8ce33fdbe21",
+    "to_type": "heroes",
+    "to_id": "181967a3-9d17-5192-964a-60417f8d1205",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c1259886-a669-43bc-9c18-093e166f9295",
+    "to_type": "deployment-cards",
+    "to_id": "4ee3ffb7-cf4e-5f11-8f2b-a787bf4dde59",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "c1259886-a669-43bc-9c18-093e166f9295",
+    "to_type": "heroes",
+    "to_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "263852e8-dde4-4690-b7dd-7b926a56e79f",
+    "to_type": "deployment-cards",
+    "to_id": "f2137455-7401-51fd-ae3d-f9f8c32e11b3",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "581c2149-365a-4e65-8c1a-868945d7685a",
+    "to_type": "deployment-cards",
+    "to_id": "216123cf-61c8-524e-8d8d-63bf44831dcd",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "581c2149-365a-4e65-8c1a-868945d7685a",
+    "to_type": "deployment-cards",
+    "to_id": "aedbe382-a938-5b33-882c-61abcb82b53f",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "581c2149-365a-4e65-8c1a-868945d7685a",
+    "to_type": "deployment-cards",
+    "to_id": "242a2e1d-36fc-5479-9c8a-ed920b4a4da5",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "581c2149-365a-4e65-8c1a-868945d7685a",
+    "to_type": "deployment-cards",
+    "to_id": "54d2a283-3930-58f3-8b3f-1a6df968fbfa",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "02ae9f2d-87a3-49e9-89de-996f28fcbb71",
+    "to_type": "deployment-cards",
+    "to_id": "2c5e972c-9e3e-5bfe-9a78-5517a97b1cb6",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "02ae9f2d-87a3-49e9-89de-996f28fcbb71",
+    "to_type": "deployment-cards",
+    "to_id": "bb166036-95db-5181-9592-9253ef89a451",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "8e7f5996-3f2e-40b2-9986-50670d65d85e",
+    "to_type": "deployment-cards",
+    "to_id": "b082689e-633b-51c7-ab34-c93fc3d04159",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "8e7f5996-3f2e-40b2-9986-50670d65d85e",
+    "to_type": "deployment-cards",
+    "to_id": "d3c12791-5103-5be5-9669-c08367abb8a2",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "eaaedbcb-d208-402c-bb23-c32b7b972d42",
+    "to_type": "deployment-cards",
+    "to_id": "1e44fe14-5e25-51c9-aead-1b0937e7496b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "edb0d641-c564-4f55-b86a-7901efec9e46",
+    "to_type": "deployment-cards",
+    "to_id": "bee96d07-07ec-54df-83fd-83bbcdf73a96",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "7ffe13d0-d450-47f1-af0f-604d0ee2ab63",
+    "to_type": "deployment-cards",
+    "to_id": "87ccccd8-ea06-5347-9a68-1cd6facdb4eb",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "bd60b7ae-9fe5-43c4-857b-029631ede0c0",
+    "to_type": "deployment-cards",
+    "to_id": "60f4e9fd-7e8d-5cc1-b056-13450d469bc0",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "bd60b7ae-9fe5-43c4-857b-029631ede0c0",
+    "to_type": "heroes",
+    "to_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "42a31ed5-4315-4710-a769-e73521dc8afe",
+    "to_type": "deployment-cards",
+    "to_id": "ade8fc28-3c9b-54e0-9323-e49e8b0376cd",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "42a31ed5-4315-4710-a769-e73521dc8afe",
+    "to_type": "heroes",
+    "to_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "af65d37e-9137-4483-afad-d1cd1398c1ac",
+    "to_type": "deployment-cards",
+    "to_id": "eb51c24b-d9a5-5f0e-a7e7-42db1f7b5036",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "af65d37e-9137-4483-afad-d1cd1398c1ac",
+    "to_type": "deployment-cards",
+    "to_id": "5f98d5e5-3fde-5d1b-b3d4-f581c8f560ab",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "af65d37e-9137-4483-afad-d1cd1398c1ac",
+    "to_type": "deployment-cards",
+    "to_id": "375509e2-4789-5f2c-a57d-c0017ce28124",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "af65d37e-9137-4483-afad-d1cd1398c1ac",
+    "to_type": "deployment-cards",
+    "to_id": "afc3ddab-a84d-53e4-b618-28cc5c7281e6",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f20a27b2-0d50-4d33-a7f5-bf028b6d9c45",
+    "to_type": "deployment-cards",
+    "to_id": "1b3b6f6c-306d-536d-a7aa-ac560139d43a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "f20a27b2-0d50-4d33-a7f5-bf028b6d9c45",
+    "to_type": "deployment-cards",
+    "to_id": "79a95a65-4901-58b1-84a1-579053f339e8",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5669d470-c6c3-4d0d-86e4-2a55fc241e36",
+    "to_type": "deployment-cards",
+    "to_id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "5669d470-c6c3-4d0d-86e4-2a55fc241e36",
+    "to_type": "deployment-cards",
+    "to_id": "4e24aa9f-aee8-5291-afe3-b8c7b9562046",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "994506c3-8569-4989-ba8e-1224eb2540a6",
+    "to_type": "deployment-cards",
+    "to_id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "994506c3-8569-4989-ba8e-1224eb2540a6",
+    "to_type": "deployment-cards",
+    "to_id": "506dbdde-f631-5110-ab2f-babb2042cfa2",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "17802d10-db20-4f8e-992e-94fcee927500",
+    "to_type": "deployment-cards",
+    "to_id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "17802d10-db20-4f8e-992e-94fcee927500",
+    "to_type": "deployment-cards",
+    "to_id": "e9636aee-1434-5477-9dab-937cabae927b",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "d862fd3f-091b-4b43-9a92-a2a79885d0ce",
+    "to_type": "deployment-cards",
+    "to_id": "0959b4d4-d924-55bb-9897-bc974403fa00",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e19d2c9b-144e-4147-a433-d5d6c18a6584",
+    "to_type": "deployment-cards",
+    "to_id": "a1b90237-b396-5ead-a33c-96ab39debba8",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "e19d2c9b-144e-4147-a433-d5d6c18a6584",
+    "to_type": "deployment-cards",
+    "to_id": "e300aba5-537a-5def-a45b-0e11eeada754",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ade8eaf7-b136-44ef-97db-6979daba7c4a",
+    "to_type": "deployment-cards",
+    "to_id": "29eca1d6-7229-57a5-ae14-31c37a17b7b4",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  },
+  {
+    "from_type": "miniatures",
+    "from_id": "ade8eaf7-b136-44ef-97db-6979daba7c4a",
+    "to_type": "deployment-cards",
+    "to_id": "55f57317-1839-5ecf-9bb9-297aebfee172",
+    "relation": "figure-of",
+    "reverse_relation": "has-figure"
+  }
+]

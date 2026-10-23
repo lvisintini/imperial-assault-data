@@ -1,0 +1,660 @@
+[
+  {
+    "id": "5be6424d-042a-415d-a3eb-25937cbb0157",
+    "name": "Diala Passil",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "b4f678ba-d85a-41b9-a854-b55a5d2ab23c",
+    "name": "Fenn Signis",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "f32eaa9b-c0e2-40eb-b527-383219b3fa22",
+    "name": "Gaarkhan",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "4762a29b-5622-4054-a5f6-03030003eaa0",
+    "name": "Gideon Argus",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "ddd966d9-ed1e-47a4-9d48-1346eaf91365",
+    "name": "Jyn Odan",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "c33f8e75-3f47-4505-80cf-cfbde08efceb",
+    "name": "Mak Eshka'rey",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "ff462496-8666-43db-a447-9b5354d6d347",
+    "name": "Luke Skywalker",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "eeb68e22-6fbd-41e7-9786-058d54687f67",
+    "name": "Stormtroopers",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "46b9b44c-3b08-4d2d-9aa2-9dd474394b0b",
+    "name": "Imperial Officer",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "02fa8d58-19a2-4ee2-af89-ae85c789ba73",
+    "name": "Royal Guard",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "56eb8936-03fb-482e-a793-d141bc586996",
+    "name": "Probe Droid",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "e4957520-5546-41c6-94be-c43273397ee1",
+    "name": "E-Web Engineer",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 2
+  },
+  {
+    "id": "5ed665e5-b093-460b-98ff-bdca40dd8f0d",
+    "name": "AT-ST",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 6
+  },
+  {
+    "id": "e701eb5b-f904-4630-bc9c-231b6bd94faa",
+    "name": "Darth Vader",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "223c338b-8c06-4788-b3ed-fa0c55358dc7",
+    "name": "Nexu",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 4
+  },
+  {
+    "id": "209189d3-e148-450c-a788-6884e9d6572a",
+    "name": "Trandoshan Hunter",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "e1c769ac-6b4e-497a-9652-cc2d71ef139d",
+    "name": "Chewbacca",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "f4615b81-d923-40a1-b99a-662927da8d5f",
+    "name": "Han Solo",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "e58e43a0-6f69-4f3c-b9d8-18cca794b448",
+    "name": "Rebel Trooper",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "b97b4294-577d-4c9e-aef6-dcf848c8920e",
+    "name": "Rebel Saboteur",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "84bb56c3-a4ca-4ef3-9d46-a5a2ae19f367",
+    "name": "Royal Guard Champion",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "8f11b160-69b3-4c30-a514-f3e7ee9330b5",
+    "name": "General Weiss",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 6
+  },
+  {
+    "id": "d21736a3-69a1-4ef9-8a70-0df9e9a23331",
+    "name": "IG-88",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "9f577d77-0ca6-47bc-a1e7-98267c51d2c6",
+    "name": "Biv Bodhrik",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "135c6777-bcb1-4575-9e01-921dcc3d3390",
+    "name": "Saska Teft",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "5a310a98-38c8-4365-9c4f-d37b9874ee9f",
+    "name": "Heavy Stormtrooper",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "f015004c-0eb1-45f9-b5e3-c3ffdee26917",
+    "name": "Tusken Raider",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "1f43f249-2f67-44b3-98ce-4e8d7694e9cb",
+    "name": "C-3PO",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "897b7e05-cb3f-4195-922c-6d98bcb17210",
+    "name": "R2-D2",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "be014eae-6d9c-4e8b-bd18-bbcf5d2e2d99",
+    "name": "Kayn Somos",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "655e90cb-27b4-4154-bbd3-fc63e56d0187",
+    "name": "Boba Fett",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "60fb4fa7-e3cc-41d3-8df7-ad9bd0da7eee",
+    "name": "Wookiee Warrior",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "89c028f2-f409-4374-8fba-21fbe45dcee2",
+    "name": "Stormtroopers",
+    "description": "2nd pose",
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "647e895b-bc16-4bad-b948-0d3f6c6938f0",
+    "name": "Hired Gun",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "3b2140c2-a820-42c2-8d61-bfcdf5ccc181",
+    "name": "Alliance Smuggler",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "9f106e07-d3bd-4b12-a965-42d608f32949",
+    "name": "Bantha Rider",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 6
+  },
+  {
+    "id": "c35067cd-617d-4a23-91e7-1fa072b7e36f",
+    "name": "Loku Kanoloa",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "440604cb-f9fc-4e59-a38f-5cce1152df8c",
+    "name": "MHD-19",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "ddb19d7b-e696-4ead-a650-1730d4b23551",
+    "name": "Verena Talos",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "c528b593-1ed7-447e-956b-361ef8891d02",
+    "name": "Snowtrooper",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "729f5b0a-e692-4998-9990-8a2427d95386",
+    "name": "SC2-M Repulsor Tank",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 6
+  },
+  {
+    "id": "7802e18c-ac8b-454d-9ad1-167abad00584",
+    "name": "HK Assassin Droid",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "dc752caf-1ad6-44dc-8ead-608ebcf9ba87",
+    "name": "Wampa",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 2
+  },
+  {
+    "id": "615334ef-8c84-4427-8512-34041e89a732",
+    "name": "Leia Organa",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "5c73d646-4b85-4d7f-9b25-37f161d88e62",
+    "name": "Echo Base Trooper",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "fc1fda48-00f2-46c6-a706-ff9692690190",
+    "name": "General Sorin",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "3fcdec56-1d84-4735-b95c-98f0329259e3",
+    "name": "Dengar",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "0c542aab-75cc-4903-b272-fc7116f0656e",
+    "name": "Davith Elso",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "5deb0b59-c1ea-4728-97d5-436bb12cf2a6",
+    "name": "Murne Rin",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "3d7d3fb4-045a-4dca-991e-8c32d3f864d9",
+    "name": "Ugnaught Tinkerer",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "bf976737-2107-41c5-a012-094e226c085d",
+    "name": "Wing Guard",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "33e92211-610c-4d95-8dd3-4236ffa2443b",
+    "name": "Lando Calrissian",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "88b872ca-d483-4550-aedd-ffe97f210f7f",
+    "name": "ISB Infiltrator",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "44d65c7f-1a63-4c4f-a782-b91a7342e114",
+    "name": "Agent Blaise",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "aaa1bb92-bc95-48e5-94aa-0508cb720718",
+    "name": "Bossk",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "1590fa24-6513-4ecb-9338-dd071b509630",
+    "name": "Obi-Wan Kenobi",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "2b7de092-75dc-48a4-8fba-74f7a5c5eabd",
+    "name": "The Grand Inquisitor",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "60326638-930c-4c96-bb02-cd5f5b5a2743",
+    "name": "Greedo",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "e740e257-806a-4e64-a9de-ae398cbb898c",
+    "name": "Onar Koma",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "7cfb9f40-2d7a-4a65-9fa4-4432ef36f7b5",
+    "name": "Shyla Varad",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "2ca7d1e1-a601-4b43-bd50-51edfe6f4c96",
+    "name": "Vinto Hreeda",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "109095b3-f998-424d-b552-71881239e078",
+    "name": "Jet Trooper",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "f39c0e3a-0fdc-4014-8b23-0e5fed3a2181",
+    "name": "Weequay Pirate",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "089e5b46-fe48-4e0a-b877-44059e93282f",
+    "name": "Gamorrean Guard",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "a9ef243f-172a-42b7-84eb-d2afb06f3f60",
+    "name": "Rancor",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 6
+  },
+  {
+    "id": "f791831a-5ba1-407e-981a-a84bad0abdc5",
+    "name": "Luke Skywalker, Jedi Knight",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "1870bc49-3ead-4fd5-8fd5-8de76911f746",
+    "name": "Alliance Ranger",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "ace261fd-83a5-44b1-b6ae-253da3a61d2c",
+    "name": "Captain Terro",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 2
+  },
+  {
+    "id": "bc8e3309-99b0-4f59-8f54-5d46cc74a471",
+    "name": "Jabba the Hutt",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 4
+  },
+  {
+    "id": "4c3d6b94-0b77-493b-aa6f-96eb1049b9a0",
+    "name": "BT-1",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "e3fe1966-1c67-4f94-b91e-e10b29cdfd07",
+    "name": "0-0-0",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "d686e6cf-9f3e-44b3-ba1e-e86e658a9fe1",
+    "name": "Jawa Scavenger",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "b3f25804-7209-4d6e-b630-babcd96a9e9f",
+    "name": "Hera Syndulla",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "197b84af-e4b0-4333-ab81-51be930ddf6a",
+    "name": "C1-10P",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "0b9f0f08-2edd-439a-80b7-446e98d443bf",
+    "name": "Drokkatta",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "94b85615-a2b2-407c-be46-c8ce33fdbe21",
+    "name": "Jarrod Kelvin",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "c1259886-a669-43bc-9c18-093e166f9295",
+    "name": "Ko-Tun Feralo",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "263852e8-dde4-4690-b7dd-7b926a56e79f",
+    "name": "AT-DP",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 6
+  },
+  {
+    "id": "581c2149-365a-4e65-8c1a-868945d7685a",
+    "name": "Riot Trooper",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "02ae9f2d-87a3-49e9-89de-996f28fcbb71",
+    "name": "Sentry Droid",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "8e7f5996-3f2e-40b2-9986-50670d65d85e",
+    "name": "Clawdite Shapeshifter",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "eaaedbcb-d208-402c-bb23-c32b7b972d42",
+    "name": "Ahsoka Tano",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "edb0d641-c564-4f55-b86a-7901efec9e46",
+    "name": "Emperor Palpatine",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "7ffe13d0-d450-47f1-af0f-604d0ee2ab63",
+    "name": "Maul",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "bd60b7ae-9fe5-43c4-857b-029631ede0c0",
+    "name": "CT-1701",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "42a31ed5-4315-4710-a769-e73521dc8afe",
+    "name": "Tress Hacnua",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "af65d37e-9137-4483-afad-d1cd1398c1ac",
+    "name": "Death Trooper",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "f20a27b2-0d50-4d33-a7f5-bf028b6d9c45",
+    "name": "Loth-cat",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  },
+  {
+    "id": "5669d470-c6c3-4d0d-86e4-2a55fc241e36",
+    "name": "Ezra Bridger",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "994506c3-8569-4989-ba8e-1224eb2540a6",
+    "name": "Kanan Jarrus",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "17802d10-db20-4f8e-992e-94fcee927500",
+    "name": "Sabine Wren",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "d862fd3f-091b-4b43-9a92-a2a79885d0ce",
+    "name": "Zeb Orrelios",
+    "description": null,
+    "affiliation": "Rebel",
+    "squares": 1
+  },
+  {
+    "id": "e19d2c9b-144e-4147-a433-d5d6c18a6584",
+    "name": "Thrawn",
+    "description": null,
+    "affiliation": "Imperial",
+    "squares": 1
+  },
+  {
+    "id": "ade8eaf7-b136-44ef-97db-6979daba7c4a",
+    "name": "Hondo Ohnaka",
+    "description": null,
+    "affiliation": "Mercenary",
+    "squares": 1
+  }
+]

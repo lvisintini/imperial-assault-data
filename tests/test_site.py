@@ -29,7 +29,7 @@ class TestSite:
         assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
 
     def test_foreign_keys_cover_every_id_field(self):
-        """Every uuid field is an FK in FKS, the card back (BACK), or a link of MISSIONS, REWARDS or REQUIREMENTS
+        """Every uuid field is an FK in FKS, the card back (BACK), or a link of MISSIONS, REWARDS or LINKS
         (relations.js)."""
         relations = get_site_js('relations.js')
         site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*\}", relations))
@@ -37,10 +37,11 @@ class TestSite:
         assert back['parent'] == CONTENT_TYPES.CARD
         site_fks |= {(content_type, back['field']) for content_type in CONTENT_TYPES.as_list
                      if back['field'] in get_schema(content_type)['properties']}
-        for name in ('MISSIONS', 'REWARDS', 'REQUIREMENTS'):
+        for name in ('MISSIONS', 'REWARDS', 'LINKS'):
             block = re.search(rf"export const {name} = \{{([^}}]*)\}}", relations)[1]
             spec = dict(re.findall(r"(\w+): '([^']+)'", block))
-            site_fks |= {(spec['table'], field) for key, field in spec.items() if key in ('id', 'mission', 'source')}
+            site_fks |= {(spec['table'], field) for key, field in spec.items()
+                         if key in ('id', 'mission', 'source', 'from', 'to')}
         uuid = get_schema('definitions')['definitions']['uuid']['pattern']
 
         def references(prop):  # a uuid, or a nullable one
@@ -61,6 +62,13 @@ class TestSite:
         children = re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*back: 'children'[^}]*\}",
                               get_site_js('relations.js'))
         assert dict(children) == TestCardBacksIntegrity.PARENTS
+
+    def test_link_relations_are_the_schemas(self):
+        """LINK_RELATIONS heads a section for every relation and reverse relation the schema has."""
+        block = re.search(r"export const LINK_RELATIONS = \{(.*?)\n\};", get_site_js('relations.js'), re.S)[1]
+        properties = get_schema(CONTENT_TYPES.RECORD_LINKS)['properties']
+        assert set(re.findall(r"^  '([a-z-]+)':", block, re.M)) == \
+            set(properties['relation']['enum'] + properties['reverse_relation']['enum'])
 
     def test_default_sorts_use_schema_fields(self):
         for content_type, entry in site_types().items():

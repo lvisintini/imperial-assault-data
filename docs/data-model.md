@@ -1,12 +1,12 @@
 # Data model
 
 The dataset is laid out like a relational database: each file in `data/` is a table (a JSON array of records), and
-records point at each other through id fields. This page shows how the 29 files relate. Only key fields are listed;
+records point at each other through id fields. This page shows how the 31 files relate. Only key fields are listed;
 see `schemas/` for every field.
 
 ## Ids
 
-Every record has an `id` (all files but `source-contents`, `mission-rewards` and `requirements`), and every foreign
+Every record has an `id` (all files but `source-contents`, `mission-rewards` and `record-links`), and every foreign
 key holds one. Ids are lowercase UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
 - Records that existed in 1.x have `uuid5(NAMESPACE, "<content type>:<old numeric id>")`, where `NAMESPACE` is
   `uuid5(NAMESPACE_URL, "https://github.com/lvisintini/imperial-assault-data")`. So 1.x ids can be translated: in
@@ -165,23 +165,67 @@ Condition cards come in several products: each expansion or pack that uses a con
 cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned in
 [#3](https://github.com/lvisintini/imperial-assault-data/issues/3).
 
-## Requirements
+## Miniatures
 
-`requirements` says what a record needs or adds to: `content_type` + `content_id` name the record (a product, a
-mission, any record), `source_id` the product, and `relation` is `requires` (the record can only be played with the
-product: a raid needs the expansions its map is built from) or `expands` (the record adds to the product: an expansion
-to the Core Set). Like `source-contents` it has no ids, and a row never repeats. It's empty for now.
+`miniatures` lists every miniature sculpt: its `affiliation` and `squares`, the footprint on the map (1; 2 for 1x2,
+like the E-Web Engineer; 4 for 2x2, like the Nexu; 6 for 2x3, like the AT-ST). `description` tells apart sculpts that
+share a name: both Stormtrooper sculpts are "Stormtroopers", and the Stormtroopers pack's, which strike different
+poses from the Core Set's, are the "2nd pose". It's null otherwise, and for the first sculpt. A file named after a
+miniature (none has one yet) would combine the two into its slug: `stormtroopers`, `stormtroopers-2nd-pose`. Products list their miniatures like any other content, through `source-contents`, and `quantity` is how
+many figures of it the product has (the Core Set has 9 Stormtroopers). The Core Set's Luke Skywalker and Darth Vader
+are listed on their packs, which ship inside it. Miniatures have no images.
+
+A miniature is `figure-of` (in [Record links](#record-links)) every record it stands for: the deployment cards with its
+name (regular and elite, campaign and skirmish; not skirmish upgrades, which have no figure) and, for a hero, the
+hero. Some miniatures stand for more than one card: General Weiss's can be set up as an AT-ST, and Captain Terro's as
+a Dewback Rider. Every hero and every deployment card but the skirmish upgrades has a miniature.
+
+The list comes from the maintainer's `migrations/2.0.0/miniatures.csv`.
 
 ```mermaid
 erDiagram
-    sources ||--o{ requirements : "source_id"
-    requirements }o--|| any-record : "content_type + content_id"
+    sources ||--o{ source-contents : "source_id"
+    source-contents }o--|| miniatures : "content_id (quantity = figures)"
+    miniatures ||--o{ record-links : "from_id (figure-of)"
+    record-links }o--|| deployment-cards : "to_id"
+    record-links }o--o| heroes : "to_id"
 
-    requirements {
-        string content_type "the record's file"
-        uuid content_id FK "id in that file"
-        string relation "requires, expands"
-        uuid source_id FK
+    miniatures {
+        uuid id PK
+        string name
+        string description "2nd pose; null for the first sculpt"
+        string affiliation "Rebel, Imperial, Mercenary"
+        int squares "1, 2, 4, 6"
+    }
+```
+
+## Record links
+
+`record-links` relates two records of any types, polymorphic at both ends: `from_type` + `from_id`, `to_type` +
+`to_id`. `relation` is how the link reads from the from record, and `reverse_relation` how it reads from the to
+record, so either end can show it ("Requires" on a raid, "Required by" on the product). The schema ties each relation
+to its reverse and to the types it links:
+
+| `relation`  | `reverse_relation` | from         | to                           | Meaning                                         |
+|-------------|--------------------|--------------|------------------------------|-------------------------------------------------|
+| `figure-of` | `has-figure`       | `miniatures` | `deployment-cards`, `heroes` | the miniature stands for the card or hero       |
+| `requires`  | `required-by`      | any record   | `sources`                    | the record can only be played with the product (a raid needs the expansions its map is built from) |
+| `expands`   | `expanded-by`      | any record   | `sources`                    | the record adds to the product (an expansion to the Core Set) |
+
+Like `source-contents`, it has no ids, and a link is listed once. There are no `requires` or `expands` links yet.
+
+```mermaid
+erDiagram
+    any-record ||--o{ record-links : "from_type + from_id"
+    record-links }o--|| any-record : "to_type + to_id"
+
+    record-links {
+        string from_type "the from record's file"
+        uuid from_id FK
+        string to_type "the to record's file"
+        uuid to_id FK
+        string relation "figure-of, requires, expands"
+        string reverse_relation "has-figure, required-by, expanded-by"
     }
 ```
 
@@ -291,7 +335,7 @@ carry `back_id`; heroes, `imperial-classes` and `agenda-decks` don't, and a pare
 back can serve several content types: "Side Mission" is the back of all three side mission collections.
 
 `sources`, `maps` and `heroes` (hero sheets are two-sided) have no back, and `missions`, `mission-rewards`,
-`source-contents` and `requirements` are indexes and join tables, not cards. The skirmish mission back is a scan by
+`source-contents` and `record-links` are indexes and join tables, not cards. The skirmish mission back is a scan by
 the maintainer; the others come from boardwars, except the epilogue backs (with their cards, from the Tabletop
 Simulator save).
 

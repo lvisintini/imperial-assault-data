@@ -25,9 +25,10 @@ class CONTENT_TYPES:
     SKIRMISH_MISSION = 'skirmish-mission-cards'
     RAID_MISSION = 'raid-missions'
     EPILOGUE = 'epilogue-cards'
+    MINIATURES = 'miniatures'
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
-    REQUIREMENTS = 'requirements'
+    RECORD_LINKS = 'record-links'
 
     as_list = [
         SOURCE,
@@ -56,9 +57,10 @@ class CONTENT_TYPES:
         SKIRMISH_MISSION,
         RAID_MISSION,
         EPILOGUE,
+        MINIATURES,
         MISSIONS,
         MISSION_REWARDS,
-        REQUIREMENTS,
+        RECORD_LINKS,
     ]
 
     # The collections missions.json indexes (agenda cards only where `mission` is true).
@@ -76,7 +78,7 @@ class CONTENT_TYPES:
     without_ids = [
         SOURCE_CONTENTS,
         MISSION_REWARDS,
-        REQUIREMENTS,
+        RECORD_LINKS,
     ]
 
 

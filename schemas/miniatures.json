@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "miniatures.json#",
+  "title": "Schema for the miniatures data file: every miniature sculpt (products list how many they have, in source-contents)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Miniature name",
+      "minLength": 1
+    },
+    "description": {
+      "description": "Tells apart sculpts that share a name (\"2nd pose\" for the Stormtroopers pack's Stormtroopers); null otherwise, and for the first sculpt. A file named after a miniature would combine name and description.",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "affiliation": {
+      "$ref": "definitions.json#/definitions/affiliation"
+    },
+    "squares": {
+      "description": "The figure's footprint on the map, in squares: 1, 2 (1x2), 4 (2x2) or 6 (2x3).",
+      "enum": [
+        1,
+        2,
+        4,
+        6
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "affiliation",
+    "squares"
+  ],
+  "additionalProperties": false
+}

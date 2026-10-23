@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "record-links.json#",
+  "title": "Schema for the record links data file: how two records of any types relate, read both ways (see docs/data-model.md)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "from_type": {
+      "description": "The collection of the record the link is from.",
+      "$ref": "definitions.json#/definitions/content_type"
+    },
+    "from_id": {
+      "description": "The record's id in that collection.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "to_type": {
+      "description": "The collection of the record the link is to.",
+      "$ref": "definitions.json#/definitions/content_type"
+    },
+    "to_id": {
+      "description": "The record's id in that collection.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "relation": {
+      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. requires: the record can only be played with the source. expands: the record adds to the source.",
+      "enum": [
+        "figure-of",
+        "requires",
+        "expands"
+      ]
+    },
+    "reverse_relation": {
+      "description": "The same link read from the to record: has-figure, required-by, expanded-by.",
+      "enum": [
+        "has-figure",
+        "required-by",
+        "expanded-by"
+      ]
+    }
+  },
+  "required": [
+    "from_type",
+    "from_id",
+    "to_type",
+    "to_id",
+    "relation",
+    "reverse_relation"
+  ],
+  "oneOf": [
+    {
+      "description": "A miniature and the deployment cards and hero it stands for.",
+      "properties": {
+        "relation": {"enum": ["figure-of"]},
+        "reverse_relation": {"enum": ["has-figure"]},
+        "from_type": {"enum": ["miniatures"]},
+        "to_type": {"enum": ["deployment-cards", "heroes"]}
+      }
+    },
+    {
+      "description": "A record (a product, a mission, ...) that can only be played with a source.",
+      "properties": {
+        "relation": {"enum": ["requires"]},
+        "reverse_relation": {"enum": ["required-by"]},
+        "to_type": {"enum": ["sources"]}
+      }
+    },
+    {
+      "description": "A record that adds to a source.",
+      "properties": {
+        "relation": {"enum": ["expands"]},
+        "reverse_relation": {"enum": ["expanded-by"]},
+        "to_type": {"enum": ["sources"]}
+      }
+    }
+  ],
+  "additionalProperties": false
+}

@@ -10,12 +10,18 @@ export const JOIN = {parent: 'sources', via: 'source-contents', fk: 'source_id',
 // content_id. Missions reach their products through their row (source-contents points at it), and it holds their map.
 export const MISSIONS = {table: 'missions', type: 'content_type', id: 'content_id'};
 
-// requirements: a record of any type (content_type + content_id) that requires or expands a source (`relation`).
-export const REQUIREMENTS = {table: 'requirements', type: 'content_type', id: 'content_id', source: 'source_id'};
-// How each relation reads on the record's page, and on the source's.
-export const RELATIONS = {
-  requires: {label: 'Requires', reverse: 'Required by'},
-  expands: {label: 'Expands', reverse: 'Expanded by'},
+// record-links: a record of any type linked to another (from → to), with how the link reads from each end: `relation`
+// on the from record's page, `reverse` (reverse_relation) on the to record's. LINK_RELATIONS names each one's section,
+// in page order.
+export const LINKS = {table: 'record-links', fromType: 'from_type', from: 'from_id', toType: 'to_type', to: 'to_id',
+  relation: 'relation', reverse: 'reverse_relation'};
+export const LINK_RELATIONS = {
+  'figure-of': 'Figure of',
+  'has-figure': 'Miniatures',
+  'requires': 'Requires',
+  'required-by': 'Required by',
+  'expands': 'Expands',
+  'expanded-by': 'Expanded by',
 };
 
 // mission-rewards: what a mission (its index row) gives, a record of any type through content_type + content_id, or

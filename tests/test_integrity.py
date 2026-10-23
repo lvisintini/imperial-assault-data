@@ -93,6 +93,16 @@ class TestSourcesIntegrity:
         CONTENT_TYPES.SUPPLY: 12, CONTENT_TYPES.CONDITION: 12, 'side missions': 14,
     }
 
+    def test_miniatures_are_told_apart(self):
+        """Sculpts that share a name have different descriptions."""
+        names = Counter((m['name'], m['description']) for m in get_data(CONTENT_TYPES.MINIATURES))
+        assert [name for name, count in names.items() if count > 1] == []
+
+    def test_every_miniature_is_in_a_product(self):
+        listed = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+                  if r['content_type'] == CONTENT_TYPES.MINIATURES}
+        assert {m['name'] for m in get_data(CONTENT_TYPES.MINIATURES) if m['id'] not in listed} == set()
+
     def test_core_set_copies_match_ffgs_component_list(self):
         core = next(s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['name'] == 'Imperial Assault')
         missions = {m['id']: m['content_type'] for m in get_data(CONTENT_TYPES.MISSIONS)}
@@ -138,17 +148,39 @@ class TestSourcesIntegrity:
             assert not shared, (pack, shared)
 
 
-class TestRequirementsIntegrity:
-    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.REQUIREMENTS))
-    def test_requirements_resolve(self, entry, all_data):
-        assert entry['content_type'] not in CONTENT_TYPES.without_ids
-        assert TestIntegrity.fetch_fk_data(all_data[entry['content_type']], entry['content_id']) is not None
-        assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.SOURCE], entry['source_id']) is not None
-        assert entry['content_id'] != entry['source_id']  # nothing requires or expands itself
+class TestRecordLinksIntegrity:
+    """record-links (docs/data-model.md → Record links). The schema ties each relation to its reverse and the types
+    it links; these check the records."""
 
-    def test_requirements_dont_repeat(self):
-        rows = [tuple(r.values()) for r in get_data(CONTENT_TYPES.REQUIREMENTS)]
-        assert len(rows) == len(set(rows))
+    @pytest.mark.parametrize("link", get_data(CONTENT_TYPES.RECORD_LINKS))
+    def test_links_resolve(self, link, all_data):
+        assert link['from_id'] != link['to_id']  # nothing links to itself
+        assert TestIntegrity.fetch_fk_data(all_data[link['from_type']], link['from_id']) is not None
+        assert TestIntegrity.fetch_fk_data(all_data[link['to_type']], link['to_id']) is not None
+
+    def test_links_dont_repeat(self):
+        links = [(link['from_id'], link['to_id'], link['relation']) for link in get_data(CONTENT_TYPES.RECORD_LINKS)]
+        assert len(links) == len(set(links))
+
+    def test_the_schema_rejects_improper_pairs(self):
+        from jsonschema import Draft4Validator
+        validator = Draft4Validator(get_schema(CONTENT_TYPES.RECORD_LINKS))
+        link = {'from_type': CONTENT_TYPES.MINIATURES, 'from_id': '00000000-0000-4000-8000-000000000000',
+                'to_type': CONTENT_TYPES.HERO, 'to_id': '00000000-0000-4000-8000-000000000001',
+                'relation': 'figure-of', 'reverse_relation': 'has-figure'}
+        assert validator.is_valid(link)
+        assert not validator.is_valid(link | {'reverse_relation': 'required-by'})  # another relation's reverse
+        assert not validator.is_valid(link | {'from_type': CONTENT_TYPES.SOURCE})   # a type figure-of doesn't link
+        assert not validator.is_valid(link | {'relation': 'requires', 'reverse_relation': 'required-by'})  # to a hero
+
+    def test_every_figure_has_a_miniature(self):
+        """Every hero, and every deployment card but skirmish upgrades, has a miniature; every miniature stands for
+        something."""
+        figures = [link for link in get_data(CONTENT_TYPES.RECORD_LINKS) if link['relation'] == 'figure-of']
+        linked = {link['to_id'] for link in figures}
+        cards = [c for c in get_data(CONTENT_TYPES.DEPLOYMENT) if 'Skirmish Upgrade' not in (c['traits'] or [])]
+        assert [r['name'] for r in cards + get_data(CONTENT_TYPES.HERO) if r['id'] not in linked] == []
+        assert {m['id'] for m in get_data(CONTENT_TYPES.MINIATURES)} == {link['from_id'] for link in figures}
 
 
 class TestMissionsIntegrity:

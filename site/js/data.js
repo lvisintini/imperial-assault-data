@@ -1,4 +1,4 @@
-import {BACK, FKS, JOIN, MISSIONS, REQUIREMENTS, REWARDS} from './relations.js';
+import {BACK, FKS, JOIN, LINKS, MISSIONS, REWARDS} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -37,11 +37,10 @@ class Db {
     this.mission = new Map();   // mission card ref → its missions row
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
     this.rewardOf = new Map();  // reward ref → mission card refs
-    this.requires = new Map();  // ref → [{relation, ref: source ref}]
-    this.requiredBy = new Map();  // source ref → [{relation, ref}]
+    this.links = new Map();     // ref → [{relation, ref}]: its record-links, read from its end
     this.#linkSources();
     this.#linkMissions();
-    this.#linkRequirements();
+    this.#linkRecords();
     this.#linkParents();
     this.#linkChildProducts();
     this.#linkBacks();
@@ -96,16 +95,16 @@ class Db {
     }
   }
 
-  #linkRequirements() {
-    for (const {record} of this.refs[REQUIREMENTS.table]) {
-      const ref = this.get(record[REQUIREMENTS.type], record[REQUIREMENTS.id]);
-      const source = this.get(JOIN.parent, record[REQUIREMENTS.source]);
-      if (!ref || !source) {
-        console.warn('Unresolved requirements row', record);
+  #linkRecords() {
+    for (const {record} of this.refs[LINKS.table]) {
+      const from = this.get(record[LINKS.fromType], record[LINKS.from]);
+      const to = this.get(record[LINKS.toType], record[LINKS.to]);
+      if (!from || !to) {
+        console.warn('Unresolved record-links row', record);
         continue;
       }
-      push(this.requires, ref, {relation: record.relation, ref: source});
-      push(this.requiredBy, source, {relation: record.relation, ref});
+      push(this.links, from, {relation: record[LINKS.relation], ref: to});
+      push(this.links, to, {relation: record[LINKS.reverse], ref: from});
     }
   }
 
