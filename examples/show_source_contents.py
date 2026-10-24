@@ -36,6 +36,7 @@ SOURCES = [
     'raid-missions',
     'epilogue-cards',
     'miniatures',
+    'documents',
     'missions',
     'mission-rewards',
 ]

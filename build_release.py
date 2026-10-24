@@ -13,6 +13,7 @@ RELEASES = [
         "filename_pattern": "imperial-assault-data-v{version}-high-res.zip",
         "paths": [
             ('images/large', 'images'),
+            ('documents', 'documents'),
             ('data', 'data'),
             ('schemas', 'schemas'),
             ('LICENSE', 'LICENSE'),
@@ -24,6 +25,7 @@ RELEASES = [
         "filename_pattern": "imperial-assault-data-v{version}-low-res.zip",
         "paths": [
             ('images/small', 'images'),
+            ('documents', 'documents'),
             ('data', 'data'),
             ('schemas', 'schemas'),
             ('LICENSE', 'LICENSE'),

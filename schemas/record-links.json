@@ -22,17 +22,19 @@
       "$ref": "definitions.json#/definitions/uuid"
     },
     "relation": {
-      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. requires: the record can only be played with the source. expands: the record adds to the source.",
+      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. document-for: the document was published for the source (not in its box). requires: the record can only be played with the source. expands: the record adds to the source.",
       "enum": [
         "figure-of",
+        "document-for",
         "requires",
         "expands"
       ]
     },
     "reverse_relation": {
-      "description": "The same link read from the to record: has-figure, required-by, expanded-by.",
+      "description": "The same link read from the to record: has-figure, has-document, required-by, expanded-by.",
       "enum": [
         "has-figure",
+        "has-document",
         "required-by",
         "expanded-by"
       ]
@@ -54,6 +56,15 @@
         "reverse_relation": {"enum": ["has-figure"]},
         "from_type": {"enum": ["miniatures"]},
         "to_type": {"enum": ["deployment-cards", "heroes"]}
+      }
+    },
+    {
+      "description": "A document published for a source, but not in its box.",
+      "properties": {
+        "relation": {"enum": ["document-for"]},
+        "reverse_relation": {"enum": ["has-document"]},
+        "from_type": {"enum": ["documents"]},
+        "to_type": {"enum": ["sources"]}
       }
     },
     {

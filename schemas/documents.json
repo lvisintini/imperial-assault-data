@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "documents.json#",
+  "title": "Schema for the documents data file: FFG's rulebooks, campaign logs, FAQ, player sheets and organized-play documents (PDFs in documents/)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Document name",
+      "minLength": 1
+    },
+    "category": {
+      "description": "What kind of document it is.",
+      "enum": [
+        "Rulebook",
+        "Learn to Play",
+        "Rules Reference",
+        "Skirmish Guide",
+        "Campaign Guide",
+        "Campaign Log",
+        "FAQ",
+        "Tournament Regulations",
+        "Organized Play",
+        "Player Sheet"
+      ]
+    },
+    "version": {
+      "description": "The version the document prints (\"4\", \"3.4\"); null when it prints none.",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "file": {
+      "description": "The PDF's path in the documents folder: the file name FFG published it with.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*\\.pdf$"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "version",
+    "file"
+  ],
+  "additionalProperties": false
+}

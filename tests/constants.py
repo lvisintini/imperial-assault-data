@@ -26,6 +26,7 @@ class CONTENT_TYPES:
     RAID_MISSION = 'raid-missions'
     EPILOGUE = 'epilogue-cards'
     MINIATURES = 'miniatures'
+    DOCUMENTS = 'documents'
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
     RECORD_LINKS = 'record-links'
@@ -58,6 +59,7 @@ class CONTENT_TYPES:
         RAID_MISSION,
         EPILOGUE,
         MINIATURES,
+        DOCUMENTS,
         MISSIONS,
         MISSION_REWARDS,
         RECORD_LINKS,

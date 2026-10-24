@@ -75,6 +75,13 @@ export const TYPES = [
   {file: 'raid-missions', label: 'Raid missions', singular: 'Raid mission', images: []},
   {file: 'epilogue-cards', label: 'Epilogue cards', singular: 'Epilogue card', images: ['image']},
   {
+    file: 'documents', label: 'Documents', singular: 'Document', images: [],
+    facets: [
+      'category', 'source', 'wave',
+    ],
+    groups: ['category'],
+  },
+  {
     file: 'miniatures', label: 'Miniatures', singular: 'Miniature', images: [],
     facets: [
       'affiliation', 'squares', 'source', 'wave',
