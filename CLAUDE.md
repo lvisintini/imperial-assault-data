@@ -37,7 +37,8 @@ A data-only dataset (no library/package) for FFG's *Star Wars: Imperial Assault*
 - Card backs: every card's `back_id` resolves, every back is used by cards of one size, back names are unique, a hero's, Imperial class's or agenda deck's cards share one back, and every type with images has `back_id` except `sources`, `maps` and `heroes` (`tests/test_integrity.py` `TestCardBacksIntegrity`).
 - Reward cards: a Boon is for the Rebel players and a Bane for the Imperial player; agenda missions' reward cards are for the Imperial player.
 - Deployment rules: skirmish upgrades have no health/speed/group/reinforce cost and are Skirmish-only; unique ⇒ group 1, no reinforce cost; group > 1 ⇔ reinforce cost.
-- `iaspec` values are unique across deployment, command and companion cards, and follow the rule in `TestCanonicalNames`: `elite` (elite, non-unique cards only) + name, adding mode, then affiliation, then description only while another card would get the same value.
+- `iaspec` values are unique across deployment, command and companion cards, every IA Skirmish Specification key (`tests/fixtures/iaspec-spec.json`) is one of them, and they follow the rule in `TestCanonicalNames` (`docs/data-model.md`): name, with `elite` only when a regular card of the same name exists; then, only while another card would get the same value, `campaign` (a Campaign-only card; its Skirmish twin keeps the bare value), then affiliation, then description; six spec spellings (`SPEC_SPELLINGS`) are kept as they are.
+- No deployment, command, companion or form card has Elite, Regular, Skirmish or Campaign in its name or description.
 - Images (`tests/test_images.py`): every referenced file exists in both `large` and `small`, every file on disk is referenced (no orphans), and pixel sizes match the table in README (`ImageTestHelper` holds the expected dims).
 
 ## Adding a new content type

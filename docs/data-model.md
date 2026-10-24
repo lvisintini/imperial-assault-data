@@ -156,10 +156,21 @@ erDiagram
     }
 ```
 
-`iaspec` is unique across deployment, command and companion cards together, not just within each file.
-It's built from the card: `elite` for elite, non-unique cards, then the name, lowercased with spaces and punctuation
-removed (`elitecrosstraining`). Only when two cards would get the same value does it add the game mode (when the card
-has only one), then the affiliation, then the description.
+`iaspec` is unique across deployment, command and companion cards together, not just within each file. It's the key
+of the [IA Skirmish Specification](https://github.com/kingargyle/iaskirmish-data) (MIT), the list format Tabletop
+Admiral exchanged skirmish lists with, and which IACP Skirmish Async still uses. Every one of the spec's 340 keys
+(`tests/fixtures/iaspec-spec.json`, from its `deployments.json` and `commandcards.json`) is a card's `iaspec`, and
+the cards the spec lacks (Wave 11, a few later command cards, the companions, campaign-only cards) follow its practice:
+- the name, lowercased, with spaces and punctuation removed (`drivenbyhatred`);
+- `elite` in front for an elite, non-unique card, but only when a regular card of the same name exists
+  (`elitestormtrooper`, but `atst` and `crosstraining`);
+- only while two cards would still get the same value: the game mode, which only a Campaign-only card adds, so its
+  Skirmish twin keeps the spec's bare value (`agentblaise`, `agentblaisecampaign`); then the affiliation; then the
+  description.
+
+Six cards keep the spec's own spellings instead, as a key must to interoperate: `furyofkashyyk`, `sarlacsweep`,
+`temporaryallianceempire`, `tempoaryalliancescum`, `lukeskywalker` and `lukeskywalkerjedi` (`TestCanonicalNames`
+lists them).
 
 Condition cards come in several products: each expansion or pack that uses a condition includes its own cards. Form
 cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned in
