@@ -35,6 +35,8 @@ jobs:
         run: |
           mv site _site
           mv data images docs _site/
+          # Maps' small images are their large ones; the explorer reads them from images/small (site/js/views.js).
+          rm -r _site/images/large/maps
           du -sh _site
 
       - uses: actions/configure-pages@v5
