@@ -1,7 +1,9 @@
+import json
 import os
 import re
 import unicodedata
 from os import path
+from pathlib import Path
 
 import pytest
 
@@ -388,27 +390,46 @@ class TestCanonicalNames:
         if duplicates:
             pytest.fail(f"The following canonical names are duplicated: {', '.join(duplicates)}")
 
-    # How iaspec values are built: elite + name, then, only while another card would get the same value, name plus
-    # one of mode, affiliation or description. imperial-assault-tools suggests them with the same rule.
+    # How iaspec values are built (docs/data-model.md, iaspec): elite + name, then, only while another card would get
+    # the same value, name plus one of mode, affiliation or description. `elite` only when a regular card of the same
+    # name exists, and of a Campaign and a Skirmish twin only the Campaign card adds its mode: the IA Skirmish
+    # Specification's practice. imperial-assault-tools suggests them with the same rule.
     IASPEC_STRATEGIES = [('elite', 'name'), ('elite', 'name', 'modes'), ('elite', 'name', 'affiliation'),
                          ('elite', 'name', 'description')]
     IASPEC_RECORDS = flatten_list(get_data_for(
         CONTENT_TYPES.DEPLOYMENT, CONTENT_TYPES.COMMAND, CONTENT_TYPES.COMPANION
     ).values())
+    # The spec's own spellings of cards the rule would spell otherwise: a key keeps them to interoperate.
+    SPEC_SPELLINGS = {
+        'furyofkashyyyk': 'furyofkashyyk',
+        'sarlaccsweep': 'sarlacsweep',
+        'temporaryallianceimperial': 'temporaryallianceempire',
+        'temporaryalliancemercenary': 'tempoaryalliancescum',
+        'lukeskywalkerherooftherebellion': 'lukeskywalker',
+        'lukeskywalkerjediknight': 'lukeskywalkerjedi',
+    }
+    SPEC = json.loads((Path(__file__).parent / 'fixtures' / 'iaspec-spec.json').read_text(encoding='utf-8'))
 
     @staticmethod
-    def iaspec_part(record, attr):
+    def normalise(text):
+        text = unicodedata.normalize('NFKD', text)
+        return re.sub(r'[\W_]+', '', text.encode('ascii', 'ignore').decode()).lower()
+
+    REGULAR_NAMES = set(map(normalise, (r['name'] for r in IASPEC_RECORDS if not r.get('elite'))))
+
+    @classmethod
+    def iaspec_part(cls, record, attr):
         value = record.get(attr)
         if attr == 'elite':
-            return 'elite' if value and not record.get('unique') else ''
+            regular = cls.normalise(record['name']) in cls.REGULAR_NAMES
+            return 'elite' if value and not record.get('unique') and regular else ''
         if attr == 'modes':
-            return value[0] if value and len(value) == 1 else ''
+            return 'campaign' if value == ['Campaign'] else ''
         return value or ''
 
     @classmethod
     def iaspec_key(cls, record, strategy):
-        text = unicodedata.normalize('NFKD', ''.join(cls.iaspec_part(record, attr) for attr in strategy))
-        return re.sub(r'[\W_]+', '', text.encode('ascii', 'ignore').decode()).lower()
+        return cls.normalise(''.join(cls.iaspec_part(record, attr) for attr in strategy))
 
     @pytest.mark.parametrize('record', IASPEC_RECORDS, ids=lambda r: r['iaspec'])
     def test_iaspec_follows_the_rule(self, record):
@@ -417,4 +438,21 @@ class TestCanonicalNames:
             clashing = [r for r in clashing if self.iaspec_key(r, strategy) == self.iaspec_key(record, strategy)]
             if not clashing:
                 break
-        assert record['iaspec'] == self.iaspec_key(record, strategy)
+        key = self.iaspec_key(record, strategy)
+        assert record['iaspec'] == self.SPEC_SPELLINGS.get(key, key)
+
+    @pytest.mark.parametrize('key', sorted(set(SPEC['deployments'] + SPEC['command_cards'])))
+    def test_every_spec_key_is_a_cards_iaspec(self, key):
+        assert key in {r['iaspec'] for r in self.IASPEC_RECORDS}
+
+    def test_spec_spellings_are_the_specs(self):
+        assert set(self.SPEC_SPELLINGS.values()) <= set(self.SPEC['deployments'] + self.SPEC['command_cards'])
+
+    # Elite and mode belong in `elite` and `modes`: ia enter pre-fills names from file names like "Elite Death
+    # Troopers campaign".
+    MODE_WORDS = re.compile(r'\b(elite|regular|skirmish|campaign)\b', re.IGNORECASE)
+
+    @pytest.mark.parametrize('record', IASPEC_RECORDS + get_data(CONTENT_TYPES.FORM_CARDS), ids=lambda r: r['name'])
+    def test_names_have_no_elite_or_mode_words(self, record):
+        assert not self.MODE_WORDS.search(record['name'])
+        assert not self.MODE_WORDS.search(record.get('description') or '')

@@ -42,7 +42,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/at-st-elite.png",
-    "iaspec": "eliteatst",
+    "iaspec": "atst",
     "health": 15,
     "speed": 4
   },
@@ -110,7 +110,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/agent-blaise-isb-interrogator-skirmish.png",
-    "iaspec": "agentblaiseskirmish",
+    "iaspec": "agentblaise",
     "health": 8,
     "speed": 4
   },
@@ -275,7 +275,7 @@
     "deployment_group": 1,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/bantha-rider-elite.png",
-    "iaspec": "elitebantharider",
+    "iaspec": "bantharider",
     "health": 21,
     "speed": 5
   },
@@ -551,7 +551,7 @@
     "deployment_group": null,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/cross-training-elite-skirmish.png",
-    "iaspec": "elitecrosstraining",
+    "iaspec": "crosstraining",
     "health": null,
     "speed": null
   },
@@ -668,7 +668,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/dewback-rider-elite.png",
-    "iaspec": "elitedewbackrider",
+    "iaspec": "dewbackrider",
     "health": 9,
     "speed": 4
   },
@@ -829,7 +829,7 @@
     "deployment_group": null,
     "back_id": "3ba335c2-dcea-5d6d-bf58-003b8e02db14",
     "image": "deployment-cards/feeding-frenzy-elite-skirmish.png",
-    "iaspec": "elitefeedingfrenzy",
+    "iaspec": "feedingfrenzy",
     "health": null,
     "speed": null
   },
@@ -918,7 +918,7 @@
     "deployment_group": null,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/fury-of-kashyyyk-skirmish.png",
-    "iaspec": "furyofkashyyyk",
+    "iaspec": "furyofkashyyk",
     "health": null,
     "speed": null
   },
@@ -1504,7 +1504,7 @@
     "deployment_group": 1,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/jabba-the-hutt-vile-gangster-skirmish.png",
-    "iaspec": "jabbathehuttskirmish",
+    "iaspec": "jabbathehutt",
     "health": 10,
     "speed": 2
   },
@@ -1573,7 +1573,7 @@
     "deployment_group": 1,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/jawa-scavenger-elite-skirmish.png",
-    "iaspec": "elitejawascavengerskirmish",
+    "iaspec": "elitejawascavenger",
     "health": 5,
     "speed": 4
   },
@@ -1759,7 +1759,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/leia-organa-rebel-commander-skirmish.png",
-    "iaspec": "leiaorganaskirmish",
+    "iaspec": "leiaorgana",
     "health": 8,
     "speed": 5
   },
@@ -1804,7 +1804,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/luke-skywalker-hero-of-the-rebellion.png",
-    "iaspec": "lukeskywalkerherooftherebellion",
+    "iaspec": "lukeskywalker",
     "health": 10,
     "speed": 5
   },
@@ -1829,7 +1829,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/luke-skywalker-jedi-knight.png",
-    "iaspec": "lukeskywalkerjediknight",
+    "iaspec": "lukeskywalkerjedi",
     "health": 16,
     "speed": 4
   },
@@ -1988,7 +1988,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/obi-wan-kenobi-jedi-knight-skirmish.png",
-    "iaspec": "obiwankenobiskirmish",
+    "iaspec": "obiwankenobi",
     "health": 12,
     "speed": 4
   },
@@ -2189,7 +2189,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/r2-d2-loyal-astromech-skirmish.png",
-    "iaspec": "r2d2skirmish",
+    "iaspec": "r2d2",
     "health": 6,
     "speed": 3
   },
@@ -2212,7 +2212,7 @@
     "deployment_group": 1,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/rancor-elite-campaign.png",
-    "iaspec": "eliterancorcampaign",
+    "iaspec": "rancorcampaign",
     "health": 15,
     "speed": 4
   },
@@ -2235,7 +2235,7 @@
     "deployment_group": 1,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/rancor-elite-skirmish.png",
-    "iaspec": "eliterancorskirmish",
+    "iaspec": "rancor",
     "health": 15,
     "speed": 4
   },
@@ -2468,7 +2468,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/sc2-m-repulsor-tank-elite.png",
-    "iaspec": "elitesc2mrepulsortank",
+    "iaspec": "sc2mrepulsortank",
     "health": 10,
     "speed": 4
   },
@@ -2716,7 +2716,7 @@
     "deployment_group": null,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/temporary-alliance-a-common-enemy-skirmish.png",
-    "iaspec": "temporaryalliancemercenary",
+    "iaspec": "tempoaryalliancescum",
     "health": null,
     "speed": null
   },
@@ -2738,7 +2738,7 @@
     "deployment_group": null,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/temporary-alliance-hired-guns-skirmish.png",
-    "iaspec": "temporaryallianceimperial",
+    "iaspec": "temporaryallianceempire",
     "health": null,
     "speed": null
   },
@@ -3296,7 +3296,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/at-dp-elite.png",
-    "iaspec": "eliteatdp",
+    "iaspec": "atdp",
     "health": 16,
     "speed": 3
   },
@@ -3557,7 +3557,7 @@
     "deployment_group": 2,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/riot-trooper-skirmish.png",
-    "iaspec": "riottrooperskirmish",
+    "iaspec": "riottrooper",
     "health": 5,
     "speed": 4
   },
@@ -3605,7 +3605,7 @@
     "deployment_group": 2,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/riot-trooper-elite-skirmish.png",
-    "iaspec": "eliteriottrooperskirmish",
+    "iaspec": "eliteriottrooper",
     "health": 7,
     "speed": 4
   },
@@ -3721,7 +3721,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/thrawn-grand-admiral-skirmish.png",
-    "iaspec": "thrawnskirmish",
+    "iaspec": "thrawn",
     "health": 9,
     "speed": 4
   },
@@ -3789,7 +3789,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/death-trooper-skirmish.png",
-    "iaspec": "deathtrooperskirmish",
+    "iaspec": "deathtrooper",
     "health": 5,
     "speed": 4
   },
@@ -3835,7 +3835,7 @@
     "deployment_group": 1,
     "back_id": "7d4881d3-3e7e-5bd2-966c-b56899f341bd",
     "image": "deployment-cards/death-trooper-elite-skirmish.png",
-    "iaspec": "elitedeathtrooperskirmish",
+    "iaspec": "elitedeathtrooper",
     "health": 7,
     "speed": 4
   },
@@ -3904,7 +3904,7 @@
     "deployment_group": 1,
     "back_id": "5a4c43f3-bf97-51ec-a585-abbfff008818",
     "image": "deployment-cards/hondo-ohnaka-friend-for-hire-skirmish.png",
-    "iaspec": "hondoohnakaskirmish",
+    "iaspec": "hondoohnaka",
     "health": 9,
     "speed": 5
   },
@@ -3996,7 +3996,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/ezra-bridger-spectre-6-skirmish.png",
-    "iaspec": "ezrabridgerskirmish",
+    "iaspec": "ezrabridger",
     "health": 10,
     "speed": 4
   },
@@ -4042,7 +4042,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/kanan-jarrus-spectre-1-skirmish.png",
-    "iaspec": "kananjarrusskirmish",
+    "iaspec": "kananjarrus",
     "health": 14,
     "speed": 4
   },
@@ -4087,7 +4087,7 @@
     "deployment_group": 1,
     "back_id": "b6ad19ad-747e-59b8-ac3b-7f8d9d94982c",
     "image": "deployment-cards/sabine-wren-spectre-5-skirmish.png",
-    "iaspec": "sabinewrenskirmish",
+    "iaspec": "sabinewren",
     "health": 11,
     "speed": 4
   },
@@ -4221,7 +4221,7 @@
     "deployment_group": null,
     "back_id": "3ba335c2-dcea-5d6d-bf58-003b8e02db14",
     "image": "deployment-cards/extra-armor-elite-skirmish.png",
-    "iaspec": "eliteextraarmor",
+    "iaspec": "extraarmor",
     "health": null,
     "speed": null
   },
