@@ -1,7 +1,7 @@
 """2.0.0 migration 13 (#32): iaspec values match the IA Skirmish Specification's keys.
 
-iaspec is the key the IA Skirmish Specification (github.com/kingargyle/iaskirmish-data, Tabletop Admiral's list format;
-IACP Skirmish Async uses the same keys today) exchanges skirmish lists with. Its keys are in tests/fixtures/
+iaspec is the key the IA Skirmish Specification (github.com/kingargyle/iaskirmish-data, the list format Tabletop Admiral
+implemented) exchanges skirmish lists with. Its keys are in tests/fixtures/
 iaspec-spec.json, and the rule our values follow, for the cards the spec has and the ones it lacks, is in
 docs/data-model.md (iaspec):
 - `elite` only when a regular card of the same name exists (atst, not eliteatst; crosstraining, not elitecrosstraining);

@@ -1,5 +1,5 @@
 {
-  "source": "https://github.com/kingargyle/iaskirmish-data at 8ffe8b99c0a51257ef33e25dddb898c25827d1b1: the iaspecName of every record in deployments.json and commandcards.json (the same deployment keys as IACP Skirmish Async, scripts/deployments-iaspec.json, 2026)",
+  "source": "https://github.com/kingargyle/iaskirmish-data at 8ffe8b99c0a51257ef33e25dddb898c25827d1b1: the iaspecName of every record in deployments.json and commandcards.json",
   "license": [
     "MIT License",
     "",

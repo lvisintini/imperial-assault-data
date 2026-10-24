@@ -156,9 +156,14 @@ erDiagram
     }
 ```
 
-`iaspec` is unique across deployment, command and companion cards together, not just within each file. It's the key
-of the [IA Skirmish Specification](https://github.com/kingargyle/iaskirmish-data) (MIT), the list format Tabletop
-Admiral exchanged skirmish lists with, and which IACP Skirmish Async still uses. Every one of the spec's 340 keys
+`iaspec` is unique across deployment, command and companion cards together, not just within each file. It's the card
+key of the [IA Skirmish Specification](https://github.com/kingargyle/iaskirmish-data) (MIT), the format for
+exchanging skirmish lists between tools that [Tabletop Admiral](http://tabletopadmiral.com/imperialassault)
+implemented (Tabletop Admiral no longer hosts Imperial Assault: the address now opens its Legion and Shatterpoint
+builder). [IACP Skirmish Async](https://github.com/Mastermind1232/IACP-Skirmish-Async), a fan-made tool that plays
+skirmish games with the [Imperial Assault Continuity Project](https://ia-continuityproject.com/)'s cards, keeps a copy
+of the spec's `deployments.json`, but matches cards by name, not by key; the Continuity Project's own
+[list builder](https://github.com/SushiCatNZ/iacp-list-builder) doesn't use the spec. Every one of the spec's 340 keys
 (`tests/fixtures/iaspec-spec.json`, from its `deployments.json` and `commandcards.json`) is a card's `iaspec`, and
 the cards the spec lacks (Wave 11, a few later command cards, the companions, campaign-only cards) follow its practice:
 - the name, lowercased, with spaces and punctuation removed (`drivenbyhatred`);
