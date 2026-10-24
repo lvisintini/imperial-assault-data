@@ -157,6 +157,15 @@ class TestImages:
         sizes = ImageTestHelper.back_sizes(get_data_for(*CONTENT_TYPES.as_list), image_subdir)
         assert {back_id: dims for back_id, dims in sizes.items() if len(dims) > 1} == {}
 
+    def test_maps_small_images_are_their_large_ones(self):
+        # GitHub Pages only publishes images/small/maps (.github/workflows/pages.yml), and the explorer reads both
+        # sizes of a map from there.
+        root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../images'))
+        for entry in get_data_for(CONTENT_TYPES.MAP)[CONTENT_TYPES.MAP]:
+            with open(os.path.join(root, 'large', entry['image']), 'rb') as large, \
+                    open(os.path.join(root, 'small', entry['image']), 'rb') as small:
+                assert large.read() == small.read(), entry['image']
+
     @pytest.mark.parametrize("image_path", list(ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list))))
     def test_image_paths(self, image_path):
         assert os.path.exists(image_path)

@@ -33,7 +33,8 @@ const peekPath = (ref, db) => {
   return ownImage(ref) ?? backImage(ref, db) ?? mapImage(ref, db);
 };
 
-const imageUrl = (size, path) => `images/${size}/${encodeURI(path)}`;
+// A map's small image is its large one (same file), so the site only publishes images/small/maps (pages.yml).
+const imageUrl = (size, path) => `images/${path.startsWith('maps/') ? 'small' : size}/${encodeURI(path)}`;
 
 // A mission card's map, through its missions row.
 const mapOf = (ref, db) => db.parent.get(db.mission.get(ref))?.ref;
