@@ -42,9 +42,9 @@
       ]
     },
     "file": {
-      "description": "The PDF's path in the documents folder.",
+      "description": "The PDF's path in the documents folder: the file name FFG published it with.",
       "type": "string",
-      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.pdf$"
+      "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*\\.pdf$"
     }
   },
   "required": [

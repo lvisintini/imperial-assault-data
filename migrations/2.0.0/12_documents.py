@@ -2,8 +2,9 @@
 
 documents.json lists FFG's documents for the game: {id, name, category, version, file}. file is the PDF's path in
 documents/ (in the repository and the release zips; the explorer links to the repository's copy, so the PDFs stay off
-GitHub Pages). version is the version the document prints (the FAQ's 4, the tournament regulations' 3.4), null when it
-prints none.
+GitHub Pages), under the name FFG published it with. version is the document's version, from what it prints (the FAQ's
+4, the tournament regulations' 3.4) or from its file name (Learn to Play's 17, the Skirmish Guide's 6, the Fundamental
+Event Document's 2.1), null when it has none.
 
 A document reaches products in one of two ways, or neither:
 - the books in a product's box are its contents: source-contents rows (the Core Set's Learn to Play, Rules Reference
@@ -13,7 +14,7 @@ A document reaches products in one of two ways, or neither:
 - organized-play documents (tournament regulations, floor rules, the Fundamental Event Document, the prize tracker)
   belong to no product.
 
-The PDFs are the maintainer's (imperial-assault-tools' documents/ folder), copied here under the names below:
+The PDFs are the maintainer's (imperial-assault-tools' documents/ folder), copied here as they are:
     uv run python migrations/2.0.0/12_documents.py --from ../imperial-assault-tools/documents
 Running it again changes nothing.
 """
@@ -25,56 +26,42 @@ from pathlib import Path
 
 DATA = Path('data')
 DOCUMENTS = Path('documents')
-# (original file, name, category, version, file, how it reaches a product: ('contents' | 'document-for', source) or None)
+# (file, name, category, version, how it reaches a product: ('contents' | 'document-for', source) or None)
 LIST = [
-    ('swi01_learn_to_play_v17.pdf', 'Learn to Play', 'Learn to Play', None, 'learn-to-play.pdf',
-     ('contents', 'Imperial Assault')),
-    ('swi01_rules_reference.pdf', 'Rules Reference Guide', 'Rules Reference', None, 'rules-reference-guide.pdf',
-     ('contents', 'Imperial Assault')),
-    ('swi01_skirmish_guide_v6.pdf', 'Skirmish Guide', 'Skirmish Guide', None, 'skirmish-guide.pdf',
-     ('contents', 'Imperial Assault')),
-    ('campaignlog.pdf', 'Core Set Campaign Log', 'Campaign Log', None, 'core-set-campaign-log.pdf',
-     ('document-for', 'Imperial Assault')),
-    ('swi_faq_v4.pdf', 'Official FAQ', 'FAQ', '4', 'official-faq.pdf', ('document-for', 'Imperial Assault')),
-    ('imperial-assault-squadsheet.pdf', 'Squad Sheet', 'Player Sheet', None, 'squad-sheet.pdf',
-     ('document-for', 'Imperial Assault')),
-    ('swi01-scoresheet.pdf', 'Score Sheet', 'Player Sheet', None, 'score-sheet.pdf',
-     ('document-for', 'Imperial Assault')),
-    ('swi_signup.pdf', 'Skirmish Sign-Up Sheet', 'Player Sheet', None, 'skirmish-sign-up-sheet.pdf',
-     ('document-for', 'Imperial Assault')),
+    ('swi01_learn_to_play_v17.pdf', 'Learn to Play', 'Learn to Play', '17', ('contents', 'Imperial Assault')),
+    ('swi01_rules_reference.pdf', 'Rules Reference Guide', 'Rules Reference', None, ('contents', 'Imperial Assault')),
+    ('swi01_skirmish_guide_v6.pdf', 'Skirmish Guide', 'Skirmish Guide', '6', ('contents', 'Imperial Assault')),
+    ('campaignlog.pdf', 'Core Set Campaign Log', 'Campaign Log', None, ('document-for', 'Imperial Assault')),
+    ('swi_faq_v4.pdf', 'Official FAQ', 'FAQ', '4', ('document-for', 'Imperial Assault')),
+    ('imperial-assault-squadsheet.pdf', 'Squad Sheet', 'Player Sheet', None, ('document-for', 'Imperial Assault')),
+    ('swi01-scoresheet.pdf', 'Score Sheet', 'Player Sheet', None, ('document-for', 'Imperial Assault')),
+    ('swi_signup.pdf', 'Skirmish Sign-Up Sheet', 'Player Sheet', None, ('document-for', 'Imperial Assault')),
     ('imperial_assault_twin_shadows_rulebook.pdf', 'Twin Shadows Rulebook', 'Rulebook', None,
-     'twin-shadows-rulebook.pdf', ('contents', 'Twin Shadows')),
+     ('contents', 'Twin Shadows')),
     ('imperial_assault_twin_shadows_campaign_log.pdf', 'Twin Shadows Campaign Log', 'Campaign Log', None,
-     'twin-shadows-campaign-log.pdf', ('document-for', 'Twin Shadows')),
-    ('return_to_hoth_rules.pdf', 'Return to Hoth Rulebook', 'Rulebook', None, 'return-to-hoth-rulebook.pdf',
-     ('contents', 'Return to Hoth')),
+     ('document-for', 'Twin Shadows')),
+    ('return_to_hoth_rules.pdf', 'Return to Hoth Rulebook', 'Rulebook', None, ('contents', 'Return to Hoth')),
     ('return-to-hoth-campaignlog.pdf', 'Return to Hoth Campaign Log', 'Campaign Log', None,
-     'return-to-hoth-campaign-log.pdf', ('document-for', 'Return to Hoth')),
-    ('swi24_rulebook.pdf', 'The Bespin Gambit Rulebook', 'Rulebook', None, 'the-bespin-gambit-rulebook.pdf',
-     ('contents', 'The Bespin Gambit')),
+     ('document-for', 'Return to Hoth')),
+    ('swi24_rulebook.pdf', 'The Bespin Gambit Rulebook', 'Rulebook', None, ('contents', 'The Bespin Gambit')),
     ('swi24_campaignlog.pdf', 'The Bespin Gambit Campaign Log', 'Campaign Log', None,
-     'the-bespin-gambit-campaign-log.pdf', ('document-for', 'The Bespin Gambit')),
-    ('jabbas_realm_rulebook.pdf', "Jabba's Realm Rulebook", 'Rulebook', None, 'jabbas-realm-rulebook.pdf',
-     ('contents', "Jabba's Realm")),
-    ('swi32_campaignlog.pdf', "Jabba's Realm Campaign Log", 'Campaign Log', None, 'jabbas-realm-campaign-log.pdf',
-     ('document-for', "Jabba's Realm")),
+     ('document-for', 'The Bespin Gambit')),
+    ('jabbas_realm_rulebook.pdf', "Jabba's Realm Rulebook", 'Rulebook', None, ('contents', "Jabba's Realm")),
+    ('swi32_campaignlog.pdf', "Jabba's Realm Campaign Log", 'Campaign Log', None, ('document-for', "Jabba's Realm")),
     ('swi46_rulebook_nomissions.pdf', 'Heart of the Empire Rulebook', 'Rulebook', None,
-     'heart-of-the-empire-rulebook.pdf', ('contents', 'Heart of the Empire')),
+     ('contents', 'Heart of the Empire')),
     ('swi46_campaignguide.pdf', 'Heart of the Empire Campaign Log', 'Campaign Log', None,
-     'heart-of-the-empire-campaign-log.pdf', ('document-for', 'Heart of the Empire')),
+     ('document-for', 'Heart of the Empire')),
     ('swi54_rulebook_webcompressed.pdf', 'Tyrants of Lothal Rulebook', 'Rulebook', None,
-     'tyrants-of-lothal-rulebook.pdf', ('contents', 'Tyrants of Lothal')),
+     ('contents', 'Tyrants of Lothal')),
     ('legends_of_the_alliance_rulebook_8-23-18.pdf', 'Legends of the Alliance Rulebook', 'Rulebook', None,
-     'legends-of-the-alliance-rulebook.pdf', ('document-for', 'Legends of the Alliance')),
-    ('swi_tournament_regulations_v34.pdf', 'Skirmish Tournament Regulations', 'Tournament Regulations', '3.4',
-     'skirmish-tournament-regulations.pdf', None),
+     ('document-for', 'Legends of the Alliance')),
+    ('swi_tournament_regulations_v34.pdf', 'Skirmish Tournament Regulations', 'Tournament Regulations', '3.4', None),
     ('swi_tournament_regulations_v34_text_version.pdf', 'Skirmish Tournament Regulations (Text Version)',
-     'Tournament Regulations', '3.4', 'skirmish-tournament-regulations-text-version.pdf', None),
-    ('fantasy_flight_floor_rules.pdf', 'Fantasy Flight Games Floor Rules', 'Organized Play', None,
-     'fantasy-flight-games-floor-rules.pdf', None),
-    ('fundamental-event-document_21_final.pdf', 'Fundamental Event Document', 'Organized Play', None,
-     'fundamental-event-document.pdf', None),
-    ('g19ix_prizetracker_ffg.pdf', 'Prize Tracker', 'Organized Play', None, 'prize-tracker.pdf', None),
+     'Tournament Regulations', '3.4', None),
+    ('fantasy_flight_floor_rules.pdf', 'Fantasy Flight Games Floor Rules', 'Organized Play', None, None),
+    ('fundamental-event-document_21_final.pdf', 'Fundamental Event Document', 'Organized Play', '2.1', None),
+    ('g19ix_prizetracker_ffg.pdf', 'Prize Tracker', 'Organized Play', None, None),
 ]
 
 
@@ -95,8 +82,8 @@ def main(originals):
     sources = {s['name']: s['id'] for s in load('sources')}
     DOCUMENTS.mkdir(exist_ok=True)
     documents, rows, links = [], [], []
-    for original, name, category, version, file, reaches in LIST:
-        shutil.copyfile(originals / original, DOCUMENTS / file)
+    for file, name, category, version, reaches in LIST:
+        shutil.copyfile(originals / file, DOCUMENTS / file)
         document = {'id': str(uuid.uuid4()), 'name': name, 'category': category, 'version': version, 'file': file}
         documents.append(document)
         if reaches and reaches[0] == 'contents':

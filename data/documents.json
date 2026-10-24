@@ -3,175 +3,175 @@
     "id": "db30cf1f-d2cd-4ba5-b1b4-3fbed1c5b153",
     "name": "Learn to Play",
     "category": "Learn to Play",
-    "version": null,
-    "file": "learn-to-play.pdf"
+    "version": "17",
+    "file": "swi01_learn_to_play_v17.pdf"
   },
   {
     "id": "6d404983-f146-4e79-9429-1a3478e3bf27",
     "name": "Rules Reference Guide",
     "category": "Rules Reference",
     "version": null,
-    "file": "rules-reference-guide.pdf"
+    "file": "swi01_rules_reference.pdf"
   },
   {
     "id": "eed59394-35bc-4864-bebc-fc725f4c75a0",
     "name": "Skirmish Guide",
     "category": "Skirmish Guide",
-    "version": null,
-    "file": "skirmish-guide.pdf"
+    "version": "6",
+    "file": "swi01_skirmish_guide_v6.pdf"
   },
   {
     "id": "fcc1d972-ead0-4d40-8392-33813bcec099",
     "name": "Core Set Campaign Log",
     "category": "Campaign Log",
     "version": null,
-    "file": "core-set-campaign-log.pdf"
+    "file": "campaignlog.pdf"
   },
   {
     "id": "5bac1598-94cb-4d9d-adfd-571377f26d06",
     "name": "Official FAQ",
     "category": "FAQ",
     "version": "4",
-    "file": "official-faq.pdf"
+    "file": "swi_faq_v4.pdf"
   },
   {
     "id": "8a8f6173-52e6-4c8a-b080-db9332d1a82f",
     "name": "Squad Sheet",
     "category": "Player Sheet",
     "version": null,
-    "file": "squad-sheet.pdf"
+    "file": "imperial-assault-squadsheet.pdf"
   },
   {
     "id": "7291d9de-f02a-4328-8d19-e0bd2662fa11",
     "name": "Score Sheet",
     "category": "Player Sheet",
     "version": null,
-    "file": "score-sheet.pdf"
+    "file": "swi01-scoresheet.pdf"
   },
   {
     "id": "87854ea0-e50f-4250-8b5b-0ef92a8d9739",
     "name": "Skirmish Sign-Up Sheet",
     "category": "Player Sheet",
     "version": null,
-    "file": "skirmish-sign-up-sheet.pdf"
+    "file": "swi_signup.pdf"
   },
   {
     "id": "7030b863-be29-435b-9e63-6339b904dd1a",
     "name": "Twin Shadows Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "twin-shadows-rulebook.pdf"
+    "file": "imperial_assault_twin_shadows_rulebook.pdf"
   },
   {
     "id": "1ab2b881-92b4-4628-b947-bd88ea3ae229",
     "name": "Twin Shadows Campaign Log",
     "category": "Campaign Log",
     "version": null,
-    "file": "twin-shadows-campaign-log.pdf"
+    "file": "imperial_assault_twin_shadows_campaign_log.pdf"
   },
   {
     "id": "d21ee594-4b69-47f4-837c-4015e220d75f",
     "name": "Return to Hoth Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "return-to-hoth-rulebook.pdf"
+    "file": "return_to_hoth_rules.pdf"
   },
   {
     "id": "e86293c3-151d-4e5b-a5d4-0feeddbb9788",
     "name": "Return to Hoth Campaign Log",
     "category": "Campaign Log",
     "version": null,
-    "file": "return-to-hoth-campaign-log.pdf"
+    "file": "return-to-hoth-campaignlog.pdf"
   },
   {
     "id": "0f5739f2-31eb-4c03-8a3b-3e9436f2a24a",
     "name": "The Bespin Gambit Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "the-bespin-gambit-rulebook.pdf"
+    "file": "swi24_rulebook.pdf"
   },
   {
     "id": "4d7edb2d-9ad3-4670-b63b-6e2e233b348f",
     "name": "The Bespin Gambit Campaign Log",
     "category": "Campaign Log",
     "version": null,
-    "file": "the-bespin-gambit-campaign-log.pdf"
+    "file": "swi24_campaignlog.pdf"
   },
   {
     "id": "31134c71-7557-4437-bfbd-d8d1d0c34934",
     "name": "Jabba's Realm Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "jabbas-realm-rulebook.pdf"
+    "file": "jabbas_realm_rulebook.pdf"
   },
   {
     "id": "b1148a75-c9ed-4204-88c9-47838f6c2201",
     "name": "Jabba's Realm Campaign Log",
     "category": "Campaign Log",
     "version": null,
-    "file": "jabbas-realm-campaign-log.pdf"
+    "file": "swi32_campaignlog.pdf"
   },
   {
     "id": "ab988ca2-2603-4a14-b074-e6a7a29a0bc4",
     "name": "Heart of the Empire Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "heart-of-the-empire-rulebook.pdf"
+    "file": "swi46_rulebook_nomissions.pdf"
   },
   {
     "id": "84f000d0-5c3f-44c1-971d-ffd3b85085ae",
     "name": "Heart of the Empire Campaign Log",
     "category": "Campaign Log",
     "version": null,
-    "file": "heart-of-the-empire-campaign-log.pdf"
+    "file": "swi46_campaignguide.pdf"
   },
   {
     "id": "c8aaa825-4d6e-48a8-a45b-7dd36182edb3",
     "name": "Tyrants of Lothal Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "tyrants-of-lothal-rulebook.pdf"
+    "file": "swi54_rulebook_webcompressed.pdf"
   },
   {
     "id": "7abed6b2-6fd6-49ce-b219-dbaf03f9a7cf",
     "name": "Legends of the Alliance Rulebook",
     "category": "Rulebook",
     "version": null,
-    "file": "legends-of-the-alliance-rulebook.pdf"
+    "file": "legends_of_the_alliance_rulebook_8-23-18.pdf"
   },
   {
     "id": "485ec359-0b81-4000-8fa8-04ae014564af",
     "name": "Skirmish Tournament Regulations",
     "category": "Tournament Regulations",
     "version": "3.4",
-    "file": "skirmish-tournament-regulations.pdf"
+    "file": "swi_tournament_regulations_v34.pdf"
   },
   {
     "id": "75f91890-32a1-4e9c-b5fd-b8767461a9b2",
     "name": "Skirmish Tournament Regulations (Text Version)",
     "category": "Tournament Regulations",
     "version": "3.4",
-    "file": "skirmish-tournament-regulations-text-version.pdf"
+    "file": "swi_tournament_regulations_v34_text_version.pdf"
   },
   {
     "id": "f11fbf25-9371-482a-983a-a03a895636c1",
     "name": "Fantasy Flight Games Floor Rules",
     "category": "Organized Play",
     "version": null,
-    "file": "fantasy-flight-games-floor-rules.pdf"
+    "file": "fantasy_flight_floor_rules.pdf"
   },
   {
     "id": "5ff4e280-b658-4ff6-abe8-7e17f6e2d2c1",
     "name": "Fundamental Event Document",
     "category": "Organized Play",
-    "version": null,
-    "file": "fundamental-event-document.pdf"
+    "version": "2.1",
+    "file": "fundamental-event-document_21_final.pdf"
   },
   {
     "id": "08b79c31-2055-425c-ad43-040880164533",
     "name": "Prize Tracker",
     "category": "Organized Play",
     "version": null,
-    "file": "prize-tracker.pdf"
+    "file": "g19ix_prizetracker_ffg.pdf"
   }
 ]
