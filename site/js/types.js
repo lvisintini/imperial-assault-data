@@ -101,10 +101,19 @@ export const TYPES = [
   {file: 'upgrade-cards', label: 'Upgrade cards', singular: 'Upgrade card', images: ['image']},
   {file: 'condition-cards', label: 'Condition cards', singular: 'Condition card', images: ['image']},
   {file: 'maps', label: 'Maps', singular: 'Map', images: ['image']},
+  {
+    file: 'map-tiles', label: 'Map tiles', singular: 'Map tile', images: ['side_a', 'side_b'],
+    sort: ['name'],
+    facets: [
+      'source', 'wave',
+    ],
+    groups: ['source'],
+  },
   {file: 'card-backs', label: 'Card backs', singular: 'Card back', images: ['image']},
   {file: 'source-contents', label: 'Source contents', singular: 'Source content', images: [], hidden: true},
   {file: 'mission-rewards', label: 'Mission rewards', singular: 'Mission reward', images: [], hidden: true},
   {file: 'record-links', label: 'Record links', singular: 'Record link', images: [], hidden: true},
+  {file: 'map-layouts', label: 'Map layouts', singular: 'Map layout', images: [], hidden: true},
 ];
 
 export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));

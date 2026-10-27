@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "map-layouts.json#",
+  "title": "Schema for the map layouts data file: the tile sides each map is built from",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "map_id": {
+      "description": "Foreign key to the map in data/maps.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "tile_id": {
+      "description": "Foreign key to the tile in data/map-tiles.json.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "side": {
+      "description": "The side of the tile the map uses.",
+      "enum": [
+        "A",
+        "B"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "description": "How many times the map places this side. A map built from sections that replace each other during its mission can place a side more often than a box has copies.",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "map_id",
+    "tile_id",
+    "side",
+    "count"
+  ],
+  "additionalProperties": false
+}

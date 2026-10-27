@@ -33,8 +33,11 @@ const peekPath = (ref, db) => {
   return ownImage(ref) ?? backImage(ref, db) ?? mapImage(ref, db);
 };
 
-// A map's small image is its large one (same file), so the site only publishes images/small/maps (pages.yml).
-const imageUrl = (size, path) => `images/${path.startsWith('maps/') ? 'small' : size}/${encodeURI(path)}`;
+// A map's or a tile's small image is its large one (same file), so the site only publishes images/small/maps and
+// images/small/map-tiles (pages.yml).
+const SMALL_ONLY = ['maps/', 'map-tiles/'];
+const imageUrl = (size, path) =>
+  `images/${SMALL_ONLY.some(folder => path.startsWith(folder)) ? 'small' : size}/${encodeURI(path)}`;
 
 // A mission card's map, through its missions row.
 const mapOf = (ref, db) => db.parent.get(db.mission.get(ref))?.ref;
@@ -409,6 +412,18 @@ function fieldValue(ref, field, value, db) {
   return String(value);
 }
 
+// A map's tile sides, each with how many times the map places it.
+function layoutList(rows, db) {
+  return html`<div class="grid">${rows.map(({ref, side, count}) => {
+    const path = ref.record[side === 'A' ? 'side_a' : 'side_b'];
+    return html`<a class="tile" href="${href(ref)}" data-peek="${imageUrl('large', path)}">
+      <span class="thumb"><img loading="lazy" src="${imageUrl('small', path)}" alt=""></span>
+      <span class="tile-title">${title(ref)}${side}${count > 1 ? html` <span class="copies">×${count}</span>` : ''}</span>
+      <span class="tile-sub">Side ${side}</span>
+    </a>`;
+  })}</div>`;
+}
+
 // A mission's rewards: those it always gives, then its alternatives ("Choose 1"). Credits have no record to show.
 function rewardList(rewards, db) {
   const block = rows => html`${rows.some(r => r.credits) ? html`<p>Credits</p>` : ''}${
@@ -456,6 +471,10 @@ export function detail(db, ref) {
   }
   const map = mapOf(ref, db);
   if (map) related.push(section('Map', null, grid([map], db)));
+  const layout = db.layout.get(ref);
+  if (layout) related.push(section('Tiles', layout.length, layoutList(layout, db)));
+  const usedIn = db.usedIn.get(ref);
+  if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
   const rewards = db.rewards.get(ref);
   if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
   const rewardOf = db.rewardOf.get(ref);

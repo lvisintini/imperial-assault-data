@@ -318,8 +318,8 @@ Every mission has a card in one of six collections:
 threat, side or agenda mission follows from `content_type`. The index row is what the rest of the dataset links to:
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
-- **Map:** `map_id` is the map it's played on, or null while the dataset has no image of it (every campaign map, for
-  now). Every skirmish and raid mission has one, and a map's products are its missions' products.
+- **Map:** `map_id` is the map it's played on. Every mission has one, and a map's products are its missions' products.
+  A campaign mission's map is named after it, and has no image yet (see [Maps and map tiles](#maps-and-map-tiles)).
 - **Rewards:** `mission-rewards` lists what winning gives, one row per reward, polymorphic like `source-contents`:
   `content_type` + `content_id` name a reward or deployment card, or both are null and `credits` is true. Rows with
   `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
@@ -341,7 +341,7 @@ erDiagram
     missions ||--|| agenda-cards : "content_id (mission: true)"
     missions ||--|| skirmish-mission-cards : "content_id"
     missions ||--|| raid-missions : "content_id"
-    maps |o--o{ missions : "map_id"
+    maps ||--o{ missions : "map_id"
     heroes ||--o{ campaign-hero-side-mission-cards : "hero_id"
     missions ||--o{ mission-rewards : "mission_id"
     mission-rewards }o--o| reward-cards : "content_id"
@@ -351,7 +351,7 @@ erDiagram
         uuid id PK
         string content_type "the mission card's file"
         uuid content_id FK "id in that file"
-        uuid map_id FK "null when no map image"
+        uuid map_id FK
     }
     campaign-hero-side-mission-cards {
         uuid id PK
@@ -370,6 +370,57 @@ erDiagram
         uuid content_id FK "null for credits"
         bool credits
         bool choice "pick one of these"
+    }
+```
+
+## Maps and map tiles
+
+`maps` holds every mission's map. Skirmish, four-player and raid maps have an image (from the Skirmish Map Project).
+Campaign maps, one per campaign mission and named after it, have none yet (`image` null). Five campaign missions
+have no card, so no `missions` row: each campaign's introduction or finale (Aftermath, Captured, Dark Recon, The
+Battle of Hoth, Trespass). Their maps are in their products directly, through `source-contents`.
+
+Maps are built from double-sided tiles:
+- `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
+  per side (`side_a`, `side_b`). Tiles reach their products through `source-contents`, with `quantity` = how many of
+  that tile the box has.
+- `map-layouts` (no ids): the tile sides a map uses, `{map_id, tile_id, side, count}`, `count` being how many times
+  the map places that side. Some campaign maps are built from sections that replace each other during the mission
+  (Heart of the Empire's Into a Corner), so a count can be more than a box's copies.
+
+So every mission reaches its tiles the same way: mission → map → map layouts → map tiles → products.
+
+A tile's images are cut on its outline: the connector tabs are kept and the notches are transparent, so tiles placed
+side by side fit as on the table. They're 64 px per square, plus 32 px on each axis that has tabs, and the small
+image is the same file as the large one. They come from the Vassal *Imperial Assault Campaign Module* (1.14). The
+campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuff/ImperialCommander2), summed over
+each mission's map sections. Skirmish and raid maps' layouts aren't loaded yet.
+
+```mermaid
+erDiagram
+    missions }o--|| maps : "map_id"
+    maps ||--o{ map-layouts : "map_id"
+    map-layouts }o--|| map-tiles : "tile_id"
+    sources ||--o{ source-contents : "source_id"
+    source-contents }o--|| map-tiles : "content_id (quantity = copies)"
+
+    maps {
+        uuid id PK
+        string name
+        string image "null for campaign maps, for now"
+    }
+    map-tiles {
+        uuid id PK
+        string name "Core Set 01"
+        int number
+        string side_a "image"
+        string side_b "image"
+    }
+    map-layouts {
+        uuid map_id FK
+        uuid tile_id FK
+        string side "A, B"
+        int count "times the map places it"
     }
 ```
 

@@ -268,5 +268,695 @@
     "id": "9095d489-db62-4ed4-a403-b664f3b179b8",
     "name": "The Gray Cap Cantina",
     "image": "maps/the-gray-cap-cantina.png"
+  },
+  {
+    "id": "40dee05a-3c2b-4886-a27b-6635cfac6312",
+    "name": "Disaster",
+    "image": null
+  },
+  {
+    "id": "841fd5aa-2e33-4904-955d-e8674b17a4c5",
+    "name": "Home Front",
+    "image": null
+  },
+  {
+    "id": "b75a3b77-148a-4441-a334-d41eda394bab",
+    "name": "One Step Behind",
+    "image": null
+  },
+  {
+    "id": "e7bc912a-951b-40a6-9350-01b6fa699c96",
+    "name": "Our Last Hope",
+    "image": null
+  },
+  {
+    "id": "e8d2509d-d2e4-4a5e-9a8d-96e6bfb53900",
+    "name": "Rescue Ops",
+    "image": null
+  },
+  {
+    "id": "c4d19482-b2c2-4e6a-9c46-caaa42ff322b",
+    "name": "Return to Echo Base",
+    "image": null
+  },
+  {
+    "id": "4a8e68e6-2e7a-4ead-87c1-46c7e3ca00c7",
+    "name": "The Last Line",
+    "image": null
+  },
+  {
+    "id": "97b47bb8-d43a-4fe4-a95d-df35f1dfd8a6",
+    "name": "White Noise",
+    "image": null
+  },
+  {
+    "id": "8739713d-861b-4cbf-a78e-10d993f387cf",
+    "name": "A New Threat",
+    "image": null
+  },
+  {
+    "id": "684f146f-64b7-411b-b959-68905782a881",
+    "name": "Chain of Command",
+    "image": null
+  },
+  {
+    "id": "6366f083-b629-4636-90a9-97351870809d",
+    "name": "Desperate Hour",
+    "image": null
+  },
+  {
+    "id": "bd8a09a2-8823-4c25-91d3-48e38f494e83",
+    "name": "Drawn In",
+    "image": null
+  },
+  {
+    "id": "c467297d-8278-4ed3-80a7-2b90546192a1",
+    "name": "Fly Solo",
+    "image": null
+  },
+  {
+    "id": "0a2d559b-a6a8-42b1-a420-0cf5eedf8190",
+    "name": "Imperial Hospitality",
+    "image": null
+  },
+  {
+    "id": "f0f5c02a-aee3-4dc1-a5a7-0510ba53e3fc",
+    "name": "Incoming",
+    "image": null
+  },
+  {
+    "id": "faa6df80-a2a2-43c7-ad13-020a46e7298d",
+    "name": "Last Stand",
+    "image": null
+  },
+  {
+    "id": "3ab7c9aa-dd44-4efc-b3d8-f9bde3b2e98a",
+    "name": "The Source",
+    "image": null
+  },
+  {
+    "id": "da84f054-96a6-4b8f-baa9-7d1944204b38",
+    "name": "Under Siege",
+    "image": null
+  },
+  {
+    "id": "815a5b52-4724-426d-9d64-6fd1bde09889",
+    "name": "Almost Home",
+    "image": null
+  },
+  {
+    "id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
+    "name": "Dangerous Allies",
+    "image": null
+  },
+  {
+    "id": "4590cf90-8ab9-4b1c-8cc8-b2c75ca189d6",
+    "name": "Execute the Plan",
+    "image": null
+  },
+  {
+    "id": "4547c323-41c8-4efb-adae-b99905d1a277",
+    "name": "From All Sides",
+    "image": null
+  },
+  {
+    "id": "09d65c57-68b0-4bc4-934d-9ce700a32aa9",
+    "name": "Hostile Negotiations",
+    "image": null
+  },
+  {
+    "id": "7dbc7258-643a-453c-b3b8-b94fb3c9c44a",
+    "name": "Moment of Fate",
+    "image": null
+  },
+  {
+    "id": "91582d9c-f7dc-4496-a45f-d431c5ebf120",
+    "name": "Mutiny",
+    "image": null
+  },
+  {
+    "id": "f6329d4e-b54d-42d7-bc88-0a8f45ea098f",
+    "name": "Overcharged",
+    "image": null
+  },
+  {
+    "id": "93b70be3-aea8-46ee-9b19-172f1678d27f",
+    "name": "Storming the Palace",
+    "image": null
+  },
+  {
+    "id": "20e1dabe-2f49-4d95-b9a9-cee2b8163485",
+    "name": "Trophy Hunting",
+    "image": null
+  },
+  {
+    "id": "d2c85af9-d109-44b3-b0d3-68b544c1ecf6",
+    "name": "Turf War",
+    "image": null
+  },
+  {
+    "id": "8b008240-ffbc-4a5a-a458-a0d1f0d7d384",
+    "name": "Capital Escape",
+    "image": null
+  },
+  {
+    "id": "9efaa998-2bef-4487-942a-f1aba4c7aa49",
+    "name": "Disruption",
+    "image": null
+  },
+  {
+    "id": "36776bb5-a83f-4d20-beb8-eb03010cd466",
+    "name": "Double Agent",
+    "image": null
+  },
+  {
+    "id": "df4225cf-feaf-4f89-98a4-89fd6e8abdee",
+    "name": "Enemies Closer",
+    "image": null
+  },
+  {
+    "id": "19c4576a-005c-403e-b55c-9c70d860e50f",
+    "name": "From Dark Clutches",
+    "image": null
+  },
+  {
+    "id": "621df554-2bd3-4d0e-95a7-fe5a5af5ab74",
+    "name": "History Repeats",
+    "image": null
+  },
+  {
+    "id": "ea8cfd4a-b6b4-428d-a310-6b11f3eb1604",
+    "name": "Inside Man",
+    "image": null
+  },
+  {
+    "id": "b8942f10-c2fd-4576-95a4-6445f824e194",
+    "name": "Into a Corner",
+    "image": null
+  },
+  {
+    "id": "0892e871-3ff4-40af-b76a-2e804a23d7b7",
+    "name": "On the Run",
+    "image": null
+  },
+  {
+    "id": "2ffc159a-4259-451b-aee3-69c9d4bd8595",
+    "name": "On the Trail",
+    "image": null
+  },
+  {
+    "id": "a7670de6-7845-4772-892d-fc78cba4a4b8",
+    "name": "The Realm of the Dark Side",
+    "image": null
+  },
+  {
+    "id": "3503c3a7-d0c9-400a-a263-fd4df26f39c3",
+    "name": "Escape from Cloud City",
+    "image": null
+  },
+  {
+    "id": "2783d11a-e4ae-4675-942d-4f388c7aacc4",
+    "name": "Scouring of the Homestead",
+    "image": null
+  },
+  {
+    "id": "a8d9af2c-6e04-445d-a1c5-504497db98c5",
+    "name": "Survival of the Fittest",
+    "image": null
+  },
+  {
+    "id": "04d6e23e-b295-4342-ac6c-164115a85470",
+    "name": "The Hard Way",
+    "image": null
+  },
+  {
+    "id": "aaed3481-a095-406a-a73b-9de0cd7e5dbc",
+    "name": "Past Life Enemies",
+    "image": null
+  },
+  {
+    "id": "fc3d2157-1e06-4da0-9fb1-dfc3109bbc42",
+    "name": "Shady Dealings",
+    "image": null
+  },
+  {
+    "id": "d0cb554f-c728-47b2-be78-ec2f3f44b2ff",
+    "name": "Constant Vigilance",
+    "image": null
+  },
+  {
+    "id": "bfbda56d-915f-46b9-bcc4-27eec100d93d",
+    "name": "Know Your Enemy",
+    "image": null
+  },
+  {
+    "id": "5a633b8d-3081-4f14-8c81-1666f7a83048",
+    "name": "Preventative Measures",
+    "image": null
+  },
+  {
+    "id": "58fb1620-e975-4a38-acc2-6d4fb5f9ff01",
+    "name": "Brushfire",
+    "image": null
+  },
+  {
+    "id": "2139a28d-9696-455e-a383-20fa9a090511",
+    "name": "Friends of Old",
+    "image": null
+  },
+  {
+    "id": "ae873faf-2061-43cf-afbb-9269bbe8b785",
+    "name": "High Moon",
+    "image": null
+  },
+  {
+    "id": "d5ba92f3-0de8-4808-a42b-f46468c52e09",
+    "name": "Indebted",
+    "image": null
+  },
+  {
+    "id": "d1680ae8-7454-420b-9a33-7765f3b4b648",
+    "name": "Loose Cannon",
+    "image": null
+  },
+  {
+    "id": "bf8c23a9-fb9e-4d97-b067-e9e87b2b49c1",
+    "name": "Temptation",
+    "image": null
+  },
+  {
+    "id": "0872ec99-4826-4a78-a375-1af5354a71b8",
+    "name": "Panic in the Streets",
+    "image": null
+  },
+  {
+    "id": "138d9183-0fc9-43a0-a5b0-9d86f04c70bb",
+    "name": "Reclassified",
+    "image": null
+  },
+  {
+    "id": "fb9c6497-0e96-496f-9f0a-14b3c01a9c11",
+    "name": "A Hero's Welcome",
+    "image": null
+  },
+  {
+    "id": "62c9dd4f-5a40-4674-af61-33d5df9a6ad3",
+    "name": "Born from Death",
+    "image": null
+  },
+  {
+    "id": "a442ed22-a9d2-461b-abf8-c9bd0d212112",
+    "name": "Extortion",
+    "image": null
+  },
+  {
+    "id": "82ce7b58-ac44-4429-9e7a-908d1154e267",
+    "name": "Extraction",
+    "image": null
+  },
+  {
+    "id": "14ab0181-aa87-4f4f-8dab-38ca53ca5922",
+    "name": "Test of Metal",
+    "image": null
+  },
+  {
+    "id": "ca77b824-2bec-496a-9d45-043279f3801a",
+    "name": "Unfinished Business",
+    "image": null
+  },
+  {
+    "id": "40354a2a-eeda-4360-8ae5-1e88fd1907db",
+    "name": "Duel on Devaron",
+    "image": null
+  },
+  {
+    "id": "c006854d-9b70-46d5-8d0f-4445ec9cffe6",
+    "name": "Sands of Seelos",
+    "image": null
+  },
+  {
+    "id": "33c9d0db-ed4b-4e4b-8b84-e57c7046a823",
+    "name": "Hunted Down",
+    "image": null
+  },
+  {
+    "id": "f17698d4-835b-4c9d-910c-f0be03db23dc",
+    "name": "Homecoming",
+    "image": null
+  },
+  {
+    "id": "e5828807-696e-418c-ba4f-96d795a4ab70",
+    "name": "Sorry About the Mess",
+    "image": null
+  },
+  {
+    "id": "001122f1-7444-477f-b743-3056910d78d7",
+    "name": "Target of Opportunity",
+    "image": null
+  },
+  {
+    "id": "77648708-640b-43dd-96d5-d1e468a8280e",
+    "name": "The Spice Job",
+    "image": null
+  },
+  {
+    "id": "002100f3-87aa-4ab9-9355-7a29f189a5ca",
+    "name": "Reclamation",
+    "image": null
+  },
+  {
+    "id": "f1311f61-10d4-40b6-a309-1d664937cc17",
+    "name": "Race on Ryloth",
+    "image": null
+  },
+  {
+    "id": "248ccf2d-a57e-47cc-b6d6-65e51fed710a",
+    "name": "Siege on Geonosis",
+    "image": null
+  },
+  {
+    "id": "5efe0f7a-39a8-4ba1-bed0-c29d38e272c8",
+    "name": "Executive Overreach",
+    "image": null
+  },
+  {
+    "id": "8195a4aa-a226-44a5-ba51-6c8d63df2470",
+    "name": "Intimidation Factor",
+    "image": null
+  },
+  {
+    "id": "72a80769-9c17-4e0c-9964-e3be6e6c3d33",
+    "name": "Armed and Operational",
+    "image": null
+  },
+  {
+    "id": "534a05fb-da72-4c9c-b8a8-47862c7644b6",
+    "name": "Brace for Impact",
+    "image": null
+  },
+  {
+    "id": "dd8862df-9cc3-4266-b89d-45d95d1454aa",
+    "name": "Open to Interpretation",
+    "image": null
+  },
+  {
+    "id": "75cda8f9-b2b5-467e-ab86-4a89f4f750b8",
+    "name": "Brute Force",
+    "image": null
+  },
+  {
+    "id": "c86bcc4e-2f45-44c1-8cb8-4be3dab21402",
+    "name": "Precious Cargo",
+    "image": null
+  },
+  {
+    "id": "45b8e240-daa5-4a92-89d6-0a19d51ecc90",
+    "name": "Snowcrash",
+    "image": null
+  },
+  {
+    "id": "4ca9e275-1ad5-479c-8636-9bff53bbcb7c",
+    "name": "Communication Breakdown",
+    "image": null
+  },
+  {
+    "id": "e9366db1-06d5-436e-bf43-1f27dfdccffb",
+    "name": "Deadly Transmission",
+    "image": null
+  },
+  {
+    "id": "416b9e80-0b61-48db-9077-82d08cd3a02b",
+    "name": "Strike Force Xesh",
+    "image": null
+  },
+  {
+    "id": "d020a24c-f1e4-43fd-b31e-83b0125372c8",
+    "name": "A Light in the Darkness",
+    "image": null
+  },
+  {
+    "id": "0f7e63b9-bdc3-4330-a4aa-fc82814c05c3",
+    "name": "Phantom Extraction",
+    "image": null
+  },
+  {
+    "id": "757f261e-7ab0-46cb-b5a9-b3fb7d165ee0",
+    "name": "Home Invasion",
+    "image": null
+  },
+  {
+    "id": "38cb0d84-b778-4c9f-aa08-9f51d30f2663",
+    "name": "Canyon Run",
+    "image": null
+  },
+  {
+    "id": "49db63dc-401d-4692-b076-436186740b71",
+    "name": "A Simple Task",
+    "image": null
+  },
+  {
+    "id": "97588e4b-5d37-461a-a4b3-c30f4b225abe",
+    "name": "Generous Donations",
+    "image": null
+  },
+  {
+    "id": "db986871-94fb-4f4b-87b3-39bd6110f61d",
+    "name": "Luxury Cruise",
+    "image": null
+  },
+  {
+    "id": "e6869918-c3d8-4004-8dd0-38e30fef8a38",
+    "name": "Sympathy for the Rebellion",
+    "image": null
+  },
+  {
+    "id": "f0032636-cad8-484e-b537-9824bf46b281",
+    "name": "Viper's Den",
+    "image": null
+  },
+  {
+    "id": "8f4b3f60-c08b-4e74-bfa4-15e5f18ce5a9",
+    "name": "Cloud City's Secret",
+    "image": null
+  },
+  {
+    "id": "c55301c6-322b-444d-b9ce-eac6e1b0a572",
+    "name": "Freedom Fighters",
+    "image": null
+  },
+  {
+    "id": "91d5a06b-5aec-4927-9af3-0abe3e50e920",
+    "name": "Hostile Takeover",
+    "image": null
+  },
+  {
+    "id": "21aa212f-8c9c-49bb-9dfa-435cf60313ec",
+    "name": "Perilous Hunt",
+    "image": null
+  },
+  {
+    "id": "013f6abd-d60c-4dae-b9c3-4739045dfd49",
+    "name": "Civil Unrest",
+    "image": null
+  },
+  {
+    "id": "84061ce9-cd5b-4593-b0ad-dae49bd2ff74",
+    "name": "Call to Action",
+    "image": null
+  },
+  {
+    "id": "f59d5c21-ccd4-4a4e-a807-a98984c11bac",
+    "name": "The Final Order",
+    "image": null
+  },
+  {
+    "id": "1b8b789b-7be8-488b-ae88-237c4fa2b26e",
+    "name": "Celebration",
+    "image": null
+  },
+  {
+    "id": "27fc887c-a297-4f2e-9195-76b3b74c98a1",
+    "name": "Imperial Entanglements",
+    "image": null
+  },
+  {
+    "id": "92b668d6-3978-4891-8cd6-8ad7127ba65a",
+    "name": "Into the Unknown",
+    "image": null
+  },
+  {
+    "id": "ba6330bc-ae41-48ff-b5b7-cd6a36895d98",
+    "name": "Paying Debts",
+    "image": null
+  },
+  {
+    "id": "6742f17f-2799-4fee-93a6-2a7ee7ab244e",
+    "name": "Impounded",
+    "image": null
+  },
+  {
+    "id": "d7325a6e-5b62-4d50-9f79-768cb4f661db",
+    "name": "Wanted",
+    "image": null
+  },
+  {
+    "id": "9b8dbe20-0439-4981-9c77-85599ea80542",
+    "name": "Means of Production",
+    "image": null
+  },
+  {
+    "id": "21b51ae9-fb9d-4ab6-95f3-7354694f0652",
+    "name": "Dark Obsession",
+    "image": null
+  },
+  {
+    "id": "7c6f4d60-f5a4-4954-b14b-071a3ca1e0dc",
+    "name": "Breaking Point",
+    "image": null
+  },
+  {
+    "id": "3b375bd2-ba70-4ad3-b7f6-aa8a4cb21692",
+    "name": "Fire in the Sky",
+    "image": null
+  },
+  {
+    "id": "6bc2b2c1-ffb4-4097-a4dc-92c8a3ba1488",
+    "name": "Infiltrated",
+    "image": null
+  },
+  {
+    "id": "dfe3238d-2f77-4044-9069-4adbe63ad754",
+    "name": "Binary Revolution",
+    "image": null
+  },
+  {
+    "id": "6b503faf-3c51-4b5e-aa1f-f6dc53405b76",
+    "name": "Infection",
+    "image": null
+  },
+  {
+    "id": "2f023c26-f7a1-487e-a73e-5e36099a1054",
+    "name": "Predator and Prey",
+    "image": null
+  },
+  {
+    "id": "d2a99047-eb2f-46f3-bc0c-4cc87ff243aa",
+    "name": "Strength of Command",
+    "image": null
+  },
+  {
+    "id": "deaba397-3594-43fe-9458-a195cee1b199",
+    "name": "Back-Room Bargains",
+    "image": null
+  },
+  {
+    "id": "2177a948-78d3-4ff2-8b16-7f666c48e3fc",
+    "name": "Bunker Buster",
+    "image": null
+  },
+  {
+    "id": "99733380-418a-4b7f-aaff-9caf9535dc82",
+    "name": "Into the Wastes",
+    "image": null
+  },
+  {
+    "id": "6d2d69fc-070a-4de4-9393-e478fa32d98f",
+    "name": "A Bounty Protected",
+    "image": null
+  },
+  {
+    "id": "7c8efdff-5cfc-4786-946a-6e93e6f2e68b",
+    "name": "Fully Charged",
+    "image": null
+  },
+  {
+    "id": "867a523e-4ec7-46ff-8895-66cc4ecce28a",
+    "name": "Security Breach",
+    "image": null
+  },
+  {
+    "id": "53f1a4cc-5089-4499-8230-6cc2842682ca",
+    "name": "Gunrunner",
+    "image": null
+  },
+  {
+    "id": "87aa85e8-637b-4758-b431-14cbb27bdb0a",
+    "name": "Top Target",
+    "image": null
+  },
+  {
+    "id": "245a9592-b247-497f-a491-eb481af1db50",
+    "name": "Cornered",
+    "image": null
+  },
+  {
+    "id": "0281053a-b518-44bd-89dc-8b4f8239ee9e",
+    "name": "The Anchorhead Affair",
+    "image": null
+  },
+  {
+    "id": "adc54e64-f0dc-4bf3-9f3f-7a3581807306",
+    "name": "One Fat Slug",
+    "image": null
+  },
+  {
+    "id": "abd6e258-9d46-4346-b72d-130f610244dc",
+    "name": "Etiquette and Torture",
+    "image": null
+  },
+  {
+    "id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",
+    "name": "Salvage Operatives",
+    "image": null
+  },
+  {
+    "id": "565ce107-6b2a-4b13-bf97-52cd7f863263",
+    "name": "Forest Ambush",
+    "image": null
+  },
+  {
+    "id": "5e23e2bd-f097-433d-8727-d58d03315d8f",
+    "name": "Insidious",
+    "image": null
+  },
+  {
+    "id": "820636d3-48a5-4667-8b00-df3010ed8af8",
+    "name": "Dubious Disposition",
+    "image": null
+  },
+  {
+    "id": "e07cc334-3282-441f-ad11-fe76a4100f72",
+    "name": "The Pirate's Ploy",
+    "image": null
+  },
+  {
+    "id": "3a0a9b91-5af1-4a90-9f63-9420a559874d",
+    "name": "The Admiral's Grip",
+    "image": null
+  },
+  {
+    "id": "c59cd05c-c519-41ae-b52b-4cbe0e6f955f",
+    "name": "Aftermath",
+    "image": null
+  },
+  {
+    "id": "95a83849-5a18-4615-a725-321d087ba6d2",
+    "name": "Captured",
+    "image": null
+  },
+  {
+    "id": "d4e7ae39-55c4-4e4e-b7b6-22248ac471aa",
+    "name": "Dark Recon",
+    "image": null
+  },
+  {
+    "id": "f9570ee5-468a-4001-a5a8-3ed25ddd5c82",
+    "name": "The Battle of Hoth",
+    "image": null
+  },
+  {
+    "id": "04778e88-dd82-4c9a-b77f-ad26a8ca6fd1",
+    "name": "Trespass",
+    "image": null
   }
 ]

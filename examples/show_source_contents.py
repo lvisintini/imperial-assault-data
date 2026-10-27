@@ -39,6 +39,8 @@ SOURCES = [
     'documents',
     'missions',
     'mission-rewards',
+    'map-tiles',
+    'map-layouts',
 ]
 
 

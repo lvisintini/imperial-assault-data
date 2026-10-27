@@ -30,6 +30,8 @@ class CONTENT_TYPES:
     MISSIONS = 'missions'
     MISSION_REWARDS = 'mission-rewards'
     RECORD_LINKS = 'record-links'
+    MAP_TILES = 'map-tiles'
+    MAP_LAYOUTS = 'map-layouts'
 
     as_list = [
         SOURCE,
@@ -63,6 +65,8 @@ class CONTENT_TYPES:
         MISSIONS,
         MISSION_REWARDS,
         RECORD_LINKS,
+        MAP_TILES,
+        MAP_LAYOUTS,
     ]
 
     # The collections missions.json indexes (agenda cards only where `mission` is true).
@@ -81,6 +85,7 @@ class CONTENT_TYPES:
         SOURCE_CONTENTS,
         MISSION_REWARDS,
         RECORD_LINKS,
+        MAP_LAYOUTS,
     ]
 
 

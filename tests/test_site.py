@@ -29,7 +29,7 @@ class TestSite:
         assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
 
     def test_foreign_keys_cover_every_id_field(self):
-        """Every uuid field is an FK in FKS, the card back (BACK), or a link of MISSIONS, REWARDS or LINKS
+        """Every uuid field is an FK in FKS, the card back (BACK), or a link of MISSIONS, REWARDS, LINKS or LAYOUTS
         (relations.js)."""
         relations = get_site_js('relations.js')
         site_fks = set(re.findall(r"\{child: '([a-z-]+)', field: '(\w+)', parent: '[a-z-]+'[^}]*\}", relations))
@@ -37,11 +37,11 @@ class TestSite:
         assert back['parent'] == CONTENT_TYPES.CARD
         site_fks |= {(content_type, back['field']) for content_type in CONTENT_TYPES.as_list
                      if back['field'] in get_schema(content_type)['properties']}
-        for name in ('MISSIONS', 'REWARDS', 'LINKS'):
+        for name in ('MISSIONS', 'REWARDS', 'LINKS', 'LAYOUTS'):
             block = re.search(rf"export const {name} = \{{([^}}]*)\}}", relations)[1]
             spec = dict(re.findall(r"(\w+): '([^']+)'", block))
             site_fks |= {(spec['table'], field) for key, field in spec.items()
-                         if key in ('id', 'mission', 'source', 'from', 'to')}
+                         if key in ('id', 'mission', 'source', 'from', 'to', 'map', 'tile')}
         uuid = get_schema('definitions')['definitions']['uuid']['pattern']
 
         def references(prop):  # a uuid, or a nullable one

@@ -1,4 +1,4 @@
-import {BACK, FKS, JOIN, LINKS, MISSIONS, REWARDS} from './relations.js';
+import {BACK, FKS, JOIN, LAYOUTS, LINKS, MISSIONS, REWARDS} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -38,9 +38,12 @@ class Db {
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
     this.rewardOf = new Map();  // reward ref → mission card refs
     this.links = new Map();     // ref → [{relation, ref}]: its record-links, read from its end
+    this.layout = new Map();    // map ref → [{ref: tile ref, side, count}]
+    this.usedIn = new Map();    // tile ref → the map refs that use it
     this.#linkSources();
     this.#linkMissions();
     this.#linkRecords();
+    this.#linkLayouts();
     this.#linkParents();
     this.#linkChildProducts();
     this.#linkBacks();
@@ -105,6 +108,19 @@ class Db {
       }
       push(this.links, from, {relation: record[LINKS.relation], ref: to});
       push(this.links, to, {relation: record[LINKS.reverse], ref: from});
+    }
+  }
+
+  #linkLayouts() {
+    for (const {record} of this.refs[LAYOUTS.table]) {
+      const map = this.get('maps', record[LAYOUTS.map]);
+      const tile = this.get('map-tiles', record[LAYOUTS.tile]);
+      if (!map || !tile) {
+        console.warn('Unresolved map-layouts row', record);
+        continue;
+      }
+      push(this.layout, map, {ref: tile, side: record[LAYOUTS.side], count: record[LAYOUTS.count]});
+      if (!this.usedIn.get(tile)?.includes(map)) push(this.usedIn, tile, map);
     }
   }
 

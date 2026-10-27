@@ -36,6 +36,11 @@ export const LINK_RELATIONS = {
 // credits (no record). Rows with `choice` are alternatives: the player picks one.
 export const REWARDS = {table: 'mission-rewards', mission: 'mission_id', type: 'content_type', id: 'content_id'};
 
+// map-layouts: the tile sides a map is built from (map_id → maps, tile_id → map-tiles), with how many times the map
+// places each (count). A map built from sections that replace each other during its mission can place a side more
+// often than a box has copies.
+export const LAYOUTS = {table: 'map-layouts', map: 'map_id', tile: 'tile_id', side: 'side', count: 'count'};
+
 // Child → parent foreign keys. `label`/`childrenLabel` name the relation on the child's and the parent's pages, when
 // the types' own labels don't read well (a hero side mission's "For hero"). `products: 'children'` gives the parent its
 // children's products (a map is in the products its missions are in); `back: 'children'` gives it their card back.

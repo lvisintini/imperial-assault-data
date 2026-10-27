@@ -41,7 +41,9 @@
         "documents",
         "missions",
         "mission-rewards",
-        "record-links"
+        "record-links",
+        "map-tiles",
+        "map-layouts"
       ]
     },
     "affiliation": {
