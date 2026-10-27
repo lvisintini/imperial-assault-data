@@ -234,15 +234,18 @@ erDiagram
 ## Documents
 
 `documents` are FFG's documents for the game: `name`, `category` (Rulebook, Learn to Play, Rules Reference, Skirmish
-Guide, Campaign Guide, Campaign Log, FAQ, Tournament Regulations, Organized Play, Player Sheet), `version` (as the
+Guide, Campaign Guide, Campaign Log, FAQ, Tournament Regulations, Organized Play, Player Sheet, Rules Sheet), `version` (as the
 document prints it, the FAQ's 4 and the tournament regulations' 3.4, or as its file name gives it, Learn to Play's 17,
 the Skirmish Guide's 6 and the Fundamental Event Document's 2.1; null when it has none) and `file`, the PDF in the
-repository's `documents/` folder, under the file name FFG published it with. The PDFs are in the release zips but not on the explorer's site (GitHub Pages
+repository's `documents/` folder, under the file name FFG published it with. FFG never published the rules sheets: they are the
+maintainer's scans, as 200 DPI PDFs named after the document (`han-solo-rules-sheet.pdf`); the Ahsoka Tano and Thrawn
+packs' aren't scanned yet. The PDFs are in the release zips but not on the explorer's site (GitHub Pages
 has a size limit), which links to the repository's copy.
 
 A document reaches products in one of two ways, or neither:
-- **In the box:** the books a product ships with are its contents, `source-contents` rows like any other (the Core
-  Set's Learn to Play, Rules Reference Guide and Skirmish Guide, each expansion's rulebook).
+- **In the box:** the books and sheets a product ships with are its contents, `source-contents` rows like any other
+  (the Core Set's Learn to Play, Rules Reference Guide and Skirmish Guide, each expansion's rulebook, and the rules
+  sheets: each ally and villain pack's, and each expansion's skirmish sheet).
 - **Published for it:** a document FFG published for a product, but not in its box, is `document-for` it (in
   [Record links](#record-links)): the campaign logs, the Legends of the Alliance rulebook (the app has no box), and the
   FAQ and the player sheets (squad, score and sign-up sheets), for the Core Set.

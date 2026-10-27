@@ -35,7 +35,7 @@ You can find an example on how to do this in the `./examples` folder, along with
 
 Most entries have an associated image (or 2) that you can find inside the `./images/large` (for high resolution images) and the `./images/small` folder (for low resolution images).
 
-FFG's documents for the game (rulebooks, campaign logs, the FAQ, player sheets and tournament documents) are PDFs in `./documents`, listed in `data/documents.json`. Both release zips include them; the [data explorer](https://lvisintini.github.io/imperial-assault-data/) links to the copies here on GitHub.
+FFG's documents for the game (rulebooks, campaign logs, the FAQ, player sheets, tournament documents, and scans of the packs' and expansions' rules sheets) are PDFs in `./documents`, listed in `data/documents.json`. Both release zips include them; the [data explorer](https://lvisintini.github.io/imperial-assault-data/) links to the copies here on GitHub.
 
 The images rotated and aligned so that they are not askew, and they all have consistent sizes (check the [Image Sizes](#image-sizes) section for more on this).
 
