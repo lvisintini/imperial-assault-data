@@ -22,18 +22,24 @@
       "$ref": "definitions.json#/definitions/uuid"
     },
     "relation": {
-      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. document-for: the document was published for the source (not in its box). requires: the record can only be played with the source. expands: the record adds to the source.",
+      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. form-of: the form card is a form of the deployment card. elite-of: the elite deployment card is the elite version of the regular one. campaign-of: the Campaign-only deployment card is the campaign version of the Skirmish-only one. document-for: the document was published for the source (not in its box). requires: the record can only be played with the source. expands: the record adds to the source.",
       "enum": [
         "figure-of",
+        "form-of",
+        "elite-of",
+        "campaign-of",
         "document-for",
         "requires",
         "expands"
       ]
     },
     "reverse_relation": {
-      "description": "The same link read from the to record: has-figure, has-document, required-by, expanded-by.",
+      "description": "The same link read from the to record: has-figure, has-form, regular-of, skirmish-of, has-document, required-by, expanded-by.",
       "enum": [
         "has-figure",
+        "has-form",
+        "regular-of",
+        "skirmish-of",
         "has-document",
         "required-by",
         "expanded-by"
@@ -56,6 +62,33 @@
         "reverse_relation": {"enum": ["has-figure"]},
         "from_type": {"enum": ["miniatures"]},
         "to_type": {"enum": ["deployment-cards", "heroes"]}
+      }
+    },
+    {
+      "description": "A form card and the deployment cards it's a form of.",
+      "properties": {
+        "relation": {"enum": ["form-of"]},
+        "reverse_relation": {"enum": ["has-form"]},
+        "from_type": {"enum": ["form-cards"]},
+        "to_type": {"enum": ["deployment-cards"]}
+      }
+    },
+    {
+      "description": "An elite deployment card and the regular card of the same name.",
+      "properties": {
+        "relation": {"enum": ["elite-of"]},
+        "reverse_relation": {"enum": ["regular-of"]},
+        "from_type": {"enum": ["deployment-cards"]},
+        "to_type": {"enum": ["deployment-cards"]}
+      }
+    },
+    {
+      "description": "A Campaign-only deployment card and its Skirmish-only twin.",
+      "properties": {
+        "relation": {"enum": ["campaign-of"]},
+        "reverse_relation": {"enum": ["skirmish-of"]},
+        "from_type": {"enum": ["deployment-cards"]},
+        "to_type": {"enum": ["deployment-cards"]}
       }
     },
     {

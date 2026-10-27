@@ -1406,5 +1406,453 @@
     "to_id": "87ecc443-b29f-410f-b67f-ed25f73305ba",
     "relation": "document-for",
     "reverse_relation": "has-document"
+  },
+  {
+    "from_type": "form-cards",
+    "from_id": "804d06a0-f6c4-5077-b593-73a26d343fc3",
+    "to_type": "deployment-cards",
+    "to_id": "b082689e-633b-51c7-ab34-c93fc3d04159",
+    "relation": "form-of",
+    "reverse_relation": "has-form"
+  },
+  {
+    "from_type": "form-cards",
+    "from_id": "804d06a0-f6c4-5077-b593-73a26d343fc3",
+    "to_type": "deployment-cards",
+    "to_id": "d3c12791-5103-5be5-9669-c08367abb8a2",
+    "relation": "form-of",
+    "reverse_relation": "has-form"
+  },
+  {
+    "from_type": "form-cards",
+    "from_id": "23b3259f-1471-59df-a77d-4a2c5c616de3",
+    "to_type": "deployment-cards",
+    "to_id": "b082689e-633b-51c7-ab34-c93fc3d04159",
+    "relation": "form-of",
+    "reverse_relation": "has-form"
+  },
+  {
+    "from_type": "form-cards",
+    "from_id": "23b3259f-1471-59df-a77d-4a2c5c616de3",
+    "to_type": "deployment-cards",
+    "to_id": "d3c12791-5103-5be5-9669-c08367abb8a2",
+    "relation": "form-of",
+    "reverse_relation": "has-form"
+  },
+  {
+    "from_type": "form-cards",
+    "from_id": "d4002aa2-fc90-515d-9267-57479ae9ad3b",
+    "to_type": "deployment-cards",
+    "to_id": "b082689e-633b-51c7-ab34-c93fc3d04159",
+    "relation": "form-of",
+    "reverse_relation": "has-form"
+  },
+  {
+    "from_type": "form-cards",
+    "from_id": "d4002aa2-fc90-515d-9267-57479ae9ad3b",
+    "to_type": "deployment-cards",
+    "to_id": "d3c12791-5103-5be5-9669-c08367abb8a2",
+    "relation": "form-of",
+    "reverse_relation": "has-form"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "65cd1970-7b7e-5eff-8ef4-6fd52a918191",
+    "to_type": "deployment-cards",
+    "to_id": "691da5f4-f11f-5725-9161-9df8ef358cbe",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "08cac016-0d84-5624-a07b-21f242bb2682",
+    "to_type": "deployment-cards",
+    "to_id": "790c1993-8488-5f22-a23e-f1a21534bdb0",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "7217415c-c215-537c-9c98-23e120ed94b8",
+    "to_type": "deployment-cards",
+    "to_id": "9188010f-9a86-549f-97b7-4d357d4687f4",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "e6aa9a84-6c98-553d-b190-0cf9fd269131",
+    "to_type": "deployment-cards",
+    "to_id": "1d41b532-8626-5e3a-9238-373a8223fe9a",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "ee8c8649-699f-56fc-a9e6-664ba9656bf8",
+    "to_type": "deployment-cards",
+    "to_id": "643073cc-0fa1-574b-b0b1-6b6c2edf7201",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "039848e3-c1a5-55b0-8e4f-f8e94fa17e5b",
+    "to_type": "deployment-cards",
+    "to_id": "92887ea5-0475-5595-a10c-92e47cefc029",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "e68d84c2-ce05-5534-b2c2-fad4a965716c",
+    "to_type": "deployment-cards",
+    "to_id": "c7ddf67d-b868-5b1e-9b15-3d6f8c686d1e",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "65139c98-8ee9-5c63-be88-79d69e24e251",
+    "to_type": "deployment-cards",
+    "to_id": "0ba4bfc1-9757-578d-a7a6-dc926826ada5",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "d47338ff-3603-5bb0-9667-01be8ca0c2fd",
+    "to_type": "deployment-cards",
+    "to_id": "1df31845-9106-54e3-9f37-e7a0aff8438a",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "185b2837-1fe5-56b8-9e63-bbb99f22b211",
+    "to_type": "deployment-cards",
+    "to_id": "9901e4e1-f2bf-556a-bc4d-6719be9f9055",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "21c55f2e-f8e8-58f9-adde-963741ffa7ce",
+    "to_type": "deployment-cards",
+    "to_id": "6834ce0a-1bae-518b-b33a-ea903c61f1df",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "80c02e76-9c20-5d07-995f-5c98653bed66",
+    "to_type": "deployment-cards",
+    "to_id": "6834ce0a-1bae-518b-b33a-ea903c61f1df",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "07390987-ab34-55bc-b4cc-7770f6a3a271",
+    "to_type": "deployment-cards",
+    "to_id": "73375e4c-8405-58e1-827b-4a71e84cebde",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "6c654997-bff4-5b72-ab3e-51532b19dbb9",
+    "to_type": "deployment-cards",
+    "to_id": "f7913b45-0a0f-5c01-8be1-711618f85cf2",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "30ab9d0c-12a2-5cfd-8039-b2ab168ab74c",
+    "to_type": "deployment-cards",
+    "to_id": "91139b33-3d62-5d51-bd87-f4d92b454bb0",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "c7c2ce4f-ce5f-5cd0-b0ae-8cbfe8ff9c03",
+    "to_type": "deployment-cards",
+    "to_id": "ccdbb3f0-f0c2-5311-9eb1-276875574410",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "5c084571-957a-5245-8940-2c473798db90",
+    "to_type": "deployment-cards",
+    "to_id": "79a638ad-5b9d-5a31-bdc6-c0384c86f264",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "6caab715-26a5-532e-88ec-9ac22e9da08b",
+    "to_type": "deployment-cards",
+    "to_id": "8694fbd4-0165-527e-aea4-a9dc48e46d87",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "374ae56a-fd40-59ea-9278-5cadbb943696",
+    "to_type": "deployment-cards",
+    "to_id": "f9f661a7-21bd-5306-9e64-b5f5a091edc2",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "901168b6-f1ae-564b-81d0-ad253f5e2e52",
+    "to_type": "deployment-cards",
+    "to_id": "8ab9c881-2ea6-5e88-99df-40caac828a75",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "0ea2e2a5-0f1c-5ae3-b316-b1628832858c",
+    "to_type": "deployment-cards",
+    "to_id": "f4536050-3b54-5e93-8a93-6aa1bf460519",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "8ff70ca5-b259-5dcc-a301-e7b963f28713",
+    "to_type": "deployment-cards",
+    "to_id": "eaf3a1bc-0162-5551-a57e-69072d17033f",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "1fe73f47-e3d6-5f94-ba19-f220582f54f3",
+    "to_type": "deployment-cards",
+    "to_id": "d2c7de25-5a95-5ed8-a73e-4c99317287cf",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "46987d54-3d48-5840-907d-7ada0413df8e",
+    "to_type": "deployment-cards",
+    "to_id": "4fff22e9-9dcc-5d5c-8523-c9024a0b4f5b",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "a75a386b-7b0d-5b95-b50d-733dcfde59e1",
+    "to_type": "deployment-cards",
+    "to_id": "ff1500f4-cbd6-5015-b7d6-2b6a0e0820ec",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "9af148aa-f5db-5e7e-b911-7ba062439714",
+    "to_type": "deployment-cards",
+    "to_id": "dc2920b8-b976-5f28-8ad0-2a7166991d74",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "053f1556-9a15-5ed3-88bd-ab482aa749b3",
+    "to_type": "deployment-cards",
+    "to_id": "6389283c-5e67-55b6-bfae-bbbde0d245ce",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "d3c12791-5103-5be5-9669-c08367abb8a2",
+    "to_type": "deployment-cards",
+    "to_id": "b082689e-633b-51c7-ab34-c93fc3d04159",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "242a2e1d-36fc-5479-9c8a-ed920b4a4da5",
+    "to_type": "deployment-cards",
+    "to_id": "216123cf-61c8-524e-8d8d-63bf44831dcd",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "54d2a283-3930-58f3-8b3f-1a6df968fbfa",
+    "to_type": "deployment-cards",
+    "to_id": "aedbe382-a938-5b33-882c-61abcb82b53f",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "bb166036-95db-5181-9592-9253ef89a451",
+    "to_type": "deployment-cards",
+    "to_id": "2c5e972c-9e3e-5bfe-9a78-5517a97b1cb6",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "375509e2-4789-5f2c-a57d-c0017ce28124",
+    "to_type": "deployment-cards",
+    "to_id": "eb51c24b-d9a5-5f0e-a7e7-42db1f7b5036",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "afc3ddab-a84d-53e4-b618-28cc5c7281e6",
+    "to_type": "deployment-cards",
+    "to_id": "5f98d5e5-3fde-5d1b-b3d4-f581c8f560ab",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "1b3b6f6c-306d-536d-a7aa-ac560139d43a",
+    "to_type": "deployment-cards",
+    "to_id": "79a95a65-4901-58b1-84a1-579053f339e8",
+    "relation": "elite-of",
+    "reverse_relation": "regular-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "65cf43a8-3eed-5975-b35b-00d8b8fea518",
+    "to_type": "deployment-cards",
+    "to_id": "9b8816ae-d1aa-5705-ab1f-5b84c88e3d4b",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "9f37ca09-2b9a-5621-9ef0-750097654701",
+    "to_type": "deployment-cards",
+    "to_id": "8d6bdf20-183f-50bd-bd97-dfc07accd2e1",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "21c55f2e-f8e8-58f9-adde-963741ffa7ce",
+    "to_type": "deployment-cards",
+    "to_id": "80c02e76-9c20-5d07-995f-5c98653bed66",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "cdf9297b-8918-5421-9c7c-e50c3ff440dd",
+    "to_type": "deployment-cards",
+    "to_id": "59e37fde-c6ac-53c5-abcf-23d3abe213d4",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "d9549f76-910f-5a58-89de-6d5dea176bb4",
+    "to_type": "deployment-cards",
+    "to_id": "ebb4df5e-ef8e-550a-8de2-6eb0b3ec072c",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "2c3a8c91-97fd-5e56-b82b-63a73157a4f5",
+    "to_type": "deployment-cards",
+    "to_id": "fe22e57b-bfdb-50ae-9c11-3f000308efb6",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "01a90474-fb91-59ce-80d8-6e33f402e073",
+    "to_type": "deployment-cards",
+    "to_id": "b928a15b-034b-57dd-9f0e-025a17b7d02a",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "216123cf-61c8-524e-8d8d-63bf44831dcd",
+    "to_type": "deployment-cards",
+    "to_id": "aedbe382-a938-5b33-882c-61abcb82b53f",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "242a2e1d-36fc-5479-9c8a-ed920b4a4da5",
+    "to_type": "deployment-cards",
+    "to_id": "54d2a283-3930-58f3-8b3f-1a6df968fbfa",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "e300aba5-537a-5def-a45b-0e11eeada754",
+    "to_type": "deployment-cards",
+    "to_id": "a1b90237-b396-5ead-a33c-96ab39debba8",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "eb51c24b-d9a5-5f0e-a7e7-42db1f7b5036",
+    "to_type": "deployment-cards",
+    "to_id": "5f98d5e5-3fde-5d1b-b3d4-f581c8f560ab",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "375509e2-4789-5f2c-a57d-c0017ce28124",
+    "to_type": "deployment-cards",
+    "to_id": "afc3ddab-a84d-53e4-b618-28cc5c7281e6",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "29eca1d6-7229-57a5-ae14-31c37a17b7b4",
+    "to_type": "deployment-cards",
+    "to_id": "55f57317-1839-5ecf-9bb9-297aebfee172",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "711cdb33-3a5d-5198-8b7a-3406c9bbf2cd",
+    "to_type": "deployment-cards",
+    "to_id": "4e24aa9f-aee8-5291-afe3-b8c7b9562046",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "f0f30c83-f5cd-5c9e-b58a-09f9d720ef0a",
+    "to_type": "deployment-cards",
+    "to_id": "506dbdde-f631-5110-ab2f-babb2042cfa2",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "deployment-cards",
+    "from_id": "18d58ccf-14e1-516a-86f6-a38987bdc820",
+    "to_type": "deployment-cards",
+    "to_id": "e9636aee-1434-5477-9dab-937cabae927b",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
   }
 ]

@@ -190,6 +190,44 @@ class TestRecordLinksIntegrity:
         assert not validator.is_valid(link | {'reverse_relation': 'required-by'})  # another relation's reverse
         assert not validator.is_valid(link | {'from_type': CONTENT_TYPES.SOURCE})   # a type figure-of doesn't link
         assert not validator.is_valid(link | {'relation': 'requires', 'reverse_relation': 'required-by'})  # to a hero
+        assert not validator.is_valid(link | {'relation': 'elite-of', 'reverse_relation': 'regular-of'})  # a miniature
+
+    @staticmethod
+    def linked(relation):
+        return {(link['from_id'], link['to_id']) for link in get_data(CONTENT_TYPES.RECORD_LINKS)
+                if link['relation'] == relation}
+
+    @staticmethod
+    def same_card(a, b):
+        return (a['name'], a['description'], a['affiliation']) == (b['name'], b['description'], b['affiliation'])
+
+    def test_forms_are_of_the_cards_their_images_name(self):
+        """A form card is a form of every deployment card its image is named after (form-cards/<card>-<form>.png)."""
+        cards = get_data(CONTENT_TYPES.DEPLOYMENT)
+        slug = lambda *parts: re.sub(r'[^a-z0-9]+', '-', ' '.join(parts).lower()).strip('-')
+        expected = {(form['id'], card['id']) for form in get_data(CONTENT_TYPES.FORM_CARDS) for card in cards
+                    if form['image'] == f"{CONTENT_TYPES.FORM_CARDS}/{slug(card['name'], form['name'])}.png"}
+        assert {form for form, _ in expected} == {form['id'] for form in get_data(CONTENT_TYPES.FORM_CARDS)}
+        assert self.linked('form-of') == expected
+
+    def test_elite_cards_are_of_their_regular_cards(self):
+        """elite-of links an elite card to each regular card of the same name, description and affiliation whose
+        modes overlap its own."""
+        cards = get_data(CONTENT_TYPES.DEPLOYMENT)
+        assert self.linked('elite-of') == {
+            (elite['id'], regular['id']) for elite in cards if elite['elite'] for regular in cards
+            if not regular['elite'] and self.same_card(elite, regular) and set(elite['modes']) & set(regular['modes'])}
+
+    def test_campaign_cards_are_of_their_skirmish_twins(self):
+        """campaign-of links every Campaign-only card to its one Skirmish-only twin (same name, description,
+        affiliation and elite)."""
+        cards = get_data(CONTENT_TYPES.DEPLOYMENT)
+        expected = {(campaign['id'], skirmish['id']) for campaign in cards if campaign['modes'] == ['Campaign']
+                    for skirmish in cards if skirmish['modes'] == ['Skirmish'] and self.same_card(campaign, skirmish)
+                    and campaign['elite'] == skirmish['elite']}
+        assert self.linked('campaign-of') == expected
+        assert sorted(campaign for campaign, _ in expected) == sorted(
+            c['id'] for c in cards if c['modes'] == ['Campaign'])
 
     def test_every_figure_has_a_miniature(self):
         """Every hero, and every deployment card but skirmish upgrades, has a miniature; every miniature stands for
