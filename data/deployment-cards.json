@@ -902,7 +902,7 @@
   },
   {
     "id": "0d0ca1bb-af26-519b-b0b5-797bcb482c04",
-    "name": "Fury Of Kashyyyk",
+    "name": "Fury of Kashyyyk",
     "description": null,
     "elite": false,
     "unique": false,
@@ -3865,7 +3865,7 @@
   {
     "id": "29eca1d6-7229-57a5-ae14-31c37a17b7b4",
     "name": "Hondo Ohnaka",
-    "description": "Friend for hire",
+    "description": "Friend for Hire",
     "elite": true,
     "unique": true,
     "affiliation": "Mercenary",
@@ -3888,7 +3888,7 @@
   {
     "id": "55f57317-1839-5ecf-9bb9-297aebfee172",
     "name": "Hondo Ohnaka",
-    "description": "Friend for hire",
+    "description": "Friend for Hire",
     "elite": true,
     "unique": true,
     "affiliation": "Mercenary",
