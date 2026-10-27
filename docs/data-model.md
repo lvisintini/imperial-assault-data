@@ -178,8 +178,24 @@ Six cards keep the spec's own spellings instead, as a key must to interoperate: 
 lists them).
 
 Condition cards come in several products: each expansion or pack that uses a condition includes its own cards. Form
-cards are the Clawdite Shapeshifter's alternative forms. A link from them to their deployment card is planned in
-[#3](https://github.com/lvisintini/imperial-assault-data/issues/3).
+cards are the Clawdite Shapeshifter's alternative forms: each is `form-of` (in [Record links](#record-links)) both
+Clawdite Shapeshifter cards, regular and elite, and its image is named after them
+(`form-cards/clawdite-shapeshifter-scout.png`).
+
+A deployment card's other versions are record links too:
+- `elite-of` links an elite card to the regular card of the same name, description and affiliation whose modes overlap
+  its own (Elite Stormtroopers → Stormtroopers). The Jawa Scavengers' regular card, for Campaign and Skirmish, is the
+  regular of both their elite cards, one for each mode.
+- `campaign-of` links a Campaign-only card to its Skirmish-only twin: same name, description, affiliation and elite
+  (Agent Blaise's Campaign card → his Skirmish card). Every Campaign-only card has one. The Riot Troopers and Death
+  Troopers are a square: regular and elite, each with a Campaign and a Skirmish card.
+
+```mermaid
+erDiagram
+    form-cards ||--o{ record-links : "from_id (form-of)"
+    deployment-cards ||--o{ record-links : "from_id (elite-of, campaign-of)"
+    record-links }o--|| deployment-cards : "to_id"
+```
 
 ## Miniatures
 
@@ -258,6 +274,9 @@ to its reverse and to the types it links:
 | `relation`  | `reverse_relation` | from         | to                           | Meaning                                         |
 |-------------|--------------------|--------------|------------------------------|-------------------------------------------------|
 | `figure-of` | `has-figure`       | `miniatures` | `deployment-cards`, `heroes` | the miniature stands for the card or hero       |
+| `form-of`   | `has-form`         | `form-cards` | `deployment-cards`           | the form card is a form of the deployment card  |
+| `elite-of`  | `regular-of`       | `deployment-cards` | `deployment-cards`     | the elite card's regular version (shown as "Regular version" / "Elite version") |
+| `campaign-of` | `skirmish-of`    | `deployment-cards` | `deployment-cards`     | the Campaign-only card's Skirmish-only twin ("Skirmish version" / "Campaign version") |
 | `document-for` | `has-document`  | `documents`  | `sources`                    | the document was published for the product, not in its box |
 | `requires`  | `required-by`      | any record   | `sources`                    | the record can only be played with the product (a raid needs the expansions its map is built from) |
 | `expands`   | `expanded-by`      | any record   | `sources`                    | the record adds to the product (an expansion to the Core Set) |
@@ -274,8 +293,8 @@ erDiagram
         uuid from_id FK
         string to_type "the to record's file"
         uuid to_id FK
-        string relation "figure-of, document-for, requires, expands"
-        string reverse_relation "has-figure, has-document, required-by, expanded-by"
+        string relation "figure-of, form-of, elite-of, campaign-of, document-for, requires, expands"
+        string reverse_relation "has-figure, has-form, regular-of, skirmish-of, has-document, required-by, expanded-by"
     }
 ```
 
