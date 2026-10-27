@@ -244,7 +244,7 @@
   },
   {
     "id": "6a0881b3-35c0-5f6c-90ef-712a6651a204",
-    "name": "Counter Strike",
+    "name": "Counter-Strike",
     "agenda_id": "40b26911-4729-51cb-8822-5873d5e68fd9",
     "influence": 1,
     "mission": false,
@@ -550,7 +550,7 @@
   },
   {
     "id": "61756765-58b9-5055-9e0f-a4d34ccfaeca",
-    "name": "Set For Stun",
+    "name": "Set for Stun",
     "agenda_id": "dd386966-d430-55b8-8c71-6e5c535c6b49",
     "influence": 1,
     "mission": false,
@@ -559,7 +559,7 @@
   },
   {
     "id": "685dd193-c1b6-5db8-8ecb-a3a36d624389",
-    "name": "To The Last Man",
+    "name": "To the Last Man",
     "agenda_id": "dd386966-d430-55b8-8c71-6e5c535c6b49",
     "influence": 2,
     "mission": false,
@@ -820,7 +820,7 @@
   },
   {
     "id": "b9344f1f-1a41-5684-8e33-854f0661d2a3",
-    "name": "On Jabbas Orders",
+    "name": "On Jabba's Orders",
     "agenda_id": "a896fb92-90f2-52bc-ad09-4ad1b0a4ea9c",
     "influence": 1,
     "mission": false,
