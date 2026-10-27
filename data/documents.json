@@ -173,5 +173,327 @@
     "category": "Organized Play",
     "version": null,
     "file": "g19ix_prizetracker_ffg.pdf"
+  },
+  {
+    "id": "9c3bc53c-c6ad-4e3a-b331-d86d25b77cd5",
+    "name": "Agent Blaise Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "agent-blaise-rules-sheet.pdf"
+  },
+  {
+    "id": "fe4e6952-cdaa-4172-a487-d2ff597faf95",
+    "name": "Alliance Rangers Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "alliance-rangers-rules-sheet.pdf"
+  },
+  {
+    "id": "68550cfa-fe34-475b-84f1-aeb0a684f0df",
+    "name": "Alliance Smuggler Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "alliance-smuggler-rules-sheet.pdf"
+  },
+  {
+    "id": "dcb52012-a618-4f79-b7a7-0d73626021fe",
+    "name": "BT-1 and 0-0-0 Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "bt-1-and-0-0-0-rules-sheet.pdf"
+  },
+  {
+    "id": "5c04af99-e01e-486f-b343-0a8b94dc3ca0",
+    "name": "Bantha Rider Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "bantha-rider-rules-sheet.pdf"
+  },
+  {
+    "id": "e356e650-192c-49d6-9c62-4db5009f6160",
+    "name": "Boba Fett Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "boba-fett-rules-sheet.pdf"
+  },
+  {
+    "id": "a6a8d422-8915-421b-9094-488580fb7f56",
+    "name": "Bossk Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "bossk-rules-sheet.pdf"
+  },
+  {
+    "id": "c99a1952-ebbf-4395-a6cb-995be093d334",
+    "name": "Captain Terro Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "captain-terro-rules-sheet.pdf"
+  },
+  {
+    "id": "97df110c-5290-4d60-8569-f8d83779e55f",
+    "name": "Chewbacca Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "chewbacca-rules-sheet.pdf"
+  },
+  {
+    "id": "f048e42d-696e-4df3-908a-f6728b1c17e1",
+    "name": "Darth Vader Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "darth-vader-rules-sheet.pdf"
+  },
+  {
+    "id": "d587570d-c537-41e2-8a72-27b15b81d88b",
+    "name": "Dengar Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "dengar-rules-sheet.pdf"
+  },
+  {
+    "id": "9513ce00-fd58-4f6a-ad0a-490c83eb98a7",
+    "name": "Echo Base Troopers Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "echo-base-troopers-rules-sheet.pdf"
+  },
+  {
+    "id": "7d77a5af-ad53-427a-94e5-0fcc76c84cf5",
+    "name": "Emperor Palpatine Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "emperor-palpatine-rules-sheet.pdf"
+  },
+  {
+    "id": "7535f749-b35d-402a-a3d2-88949e7b538a",
+    "name": "Ezra Bridger and Kanan Jarrus Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "ezra-bridger-and-kanan-jarrus-rules-sheet.pdf"
+  },
+  {
+    "id": "6484d1c4-51bb-448e-9fd5-2b58704994b6",
+    "name": "General Sorin Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "general-sorin-rules-sheet.pdf"
+  },
+  {
+    "id": "962972e0-f769-440e-9356-58e2c9e75fcb",
+    "name": "General Weiss Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "general-weiss-rules-sheet.pdf"
+  },
+  {
+    "id": "849e6fab-c0bc-4dbb-8ef6-06acb5cbffb2",
+    "name": "Greedo Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "greedo-rules-sheet.pdf"
+  },
+  {
+    "id": "04254f6e-a287-4362-8ee3-70d3b1b09570",
+    "name": "Han Solo Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "han-solo-rules-sheet.pdf"
+  },
+  {
+    "id": "327b4d3b-9725-47b9-8a07-367513757e64",
+    "name": "Heart of the Empire Skirmish Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "heart-of-the-empire-skirmish-rules-sheet.pdf"
+  },
+  {
+    "id": "2ea5fb44-42d6-4ec2-b789-29022e01a3a0",
+    "name": "Hera Syndulla and C1-10P Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "hera-syndulla-and-c1-10p-rules-sheet.pdf"
+  },
+  {
+    "id": "68c9f987-d462-4044-8993-47246456db81",
+    "name": "Hired Guns Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "hired-guns-rules-sheet.pdf"
+  },
+  {
+    "id": "b5d1b732-e8b2-491e-b5f5-b66a7fbd56cc",
+    "name": "Hondo Ohnaka Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "hondo-ohnaka-rules-sheet.pdf"
+  },
+  {
+    "id": "4a2281f8-10fa-4f61-92ab-21d027b8dfa2",
+    "name": "IG-88 Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "ig-88-rules-sheet.pdf"
+  },
+  {
+    "id": "77994625-ffb8-4fd5-b7e8-01a5ea4fcc33",
+    "name": "ISB Infiltrators Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "isb-infiltrators-rules-sheet.pdf"
+  },
+  {
+    "id": "f14db83f-93a3-41c4-8bc2-883a3b818886",
+    "name": "Jabba the Hutt Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "jabba-the-hutt-rules-sheet.pdf"
+  },
+  {
+    "id": "b6cba5e8-6f59-4158-80a1-6b58fd0157c7",
+    "name": "Jabba's Realm Skirmish Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "jabbas-realm-skirmish-rules-sheet.pdf"
+  },
+  {
+    "id": "18e69325-6ca6-457d-9f10-1edd07f61680",
+    "name": "Jawa Scavenger Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "jawa-scavenger-rules-sheet.pdf"
+  },
+  {
+    "id": "d90ad6ae-0d02-47a1-98b7-fd5ef167ec6c",
+    "name": "Kayn Somos Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "kayn-somos-rules-sheet.pdf"
+  },
+  {
+    "id": "721e25b0-cdab-4ea7-b7d9-6674f9147931",
+    "name": "Lando Calrissian Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "lando-calrissian-rules-sheet.pdf"
+  },
+  {
+    "id": "284a3c4b-eec4-4fb1-be4d-572492483203",
+    "name": "Leia Organa Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "leia-organa-rules-sheet.pdf"
+  },
+  {
+    "id": "b5d048df-dd91-4f92-9ad8-7e71fbfa5bb3",
+    "name": "Luke Skywalker Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "luke-skywalker-rules-sheet.pdf"
+  },
+  {
+    "id": "38e8385f-b977-440b-bedf-00b60cec2e21",
+    "name": "Luke Skywalker, Jedi Knight Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "luke-skywalker-jedi-knight-rules-sheet.pdf"
+  },
+  {
+    "id": "d3cda9c9-89e5-434d-a901-025d27549db5",
+    "name": "Maul Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "maul-rules-sheet.pdf"
+  },
+  {
+    "id": "1fb476de-806b-4e78-a90d-bb4b5d3ea7c6",
+    "name": "Obi-Wan Kenobi Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "obi-wan-kenobi-rules-sheet.pdf"
+  },
+  {
+    "id": "27302013-3a76-4f48-8cfb-61bfa9412656",
+    "name": "R2-D2 and C-3PO Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "r2-d2-and-c-3po-rules-sheet.pdf"
+  },
+  {
+    "id": "b1bc2ee2-1779-431e-a4b6-6561af2aad3d",
+    "name": "Rebel Saboteurs Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "rebel-saboteurs-rules-sheet.pdf"
+  },
+  {
+    "id": "f0be825a-9f3f-4cc8-a393-eae94e53930b",
+    "name": "Rebel Troopers Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "rebel-troopers-rules-sheet.pdf"
+  },
+  {
+    "id": "0b6803fc-312c-42e3-9e37-02c65e339a3a",
+    "name": "Return to Hoth Skirmish Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "return-to-hoth-skirmish-rules-sheet.pdf"
+  },
+  {
+    "id": "e5b89b5b-d51a-4d3a-a5dc-0ca799961012",
+    "name": "Royal Guard Champion Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "royal-guard-champion-rules-sheet.pdf"
+  },
+  {
+    "id": "cc8f6570-e95c-4d61-91f3-24fdf444a4ae",
+    "name": "Sabine Wren and Zeb Orrelios Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "sabine-wren-and-zeb-orrelios-rules-sheet.pdf"
+  },
+  {
+    "id": "925bd500-4c1e-46d1-8f64-cc95809c8827",
+    "name": "Stormtroopers Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "stormtroopers-rules-sheet.pdf"
+  },
+  {
+    "id": "d6e93309-dfbc-4941-ad07-00ef2a04312f",
+    "name": "The Bespin Gambit Skirmish Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "the-bespin-gambit-skirmish-rules-sheet.pdf"
+  },
+  {
+    "id": "80c3174b-ff53-4986-a7c4-4072b7911a37",
+    "name": "The Grand Inquisitor Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "the-grand-inquisitor-rules-sheet.pdf"
+  },
+  {
+    "id": "21bebfac-ce48-486a-a91c-a83fddd15290",
+    "name": "Twin Shadows Skirmish Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "twin-shadows-skirmish-rules-sheet.pdf"
+  },
+  {
+    "id": "a3d4bcc5-3990-42b5-99d7-bf2a8dbee9a9",
+    "name": "Tyrants of Lothal Skirmish Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "tyrants-of-lothal-skirmish-rules-sheet.pdf"
+  },
+  {
+    "id": "a065ca25-03f7-48ac-aae4-4d7cad22aa3d",
+    "name": "Wookiee Warriors Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "wookiee-warriors-rules-sheet.pdf"
   }
 ]

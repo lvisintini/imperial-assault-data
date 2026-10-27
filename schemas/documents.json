@@ -26,7 +26,8 @@
         "FAQ",
         "Tournament Regulations",
         "Organized Play",
-        "Player Sheet"
+        "Player Sheet",
+        "Rules Sheet"
       ]
     },
     "version": {
@@ -42,7 +43,7 @@
       ]
     },
     "file": {
-      "description": "The PDF's path in the documents folder: the file name FFG published it with.",
+      "description": "The PDF's path in the documents folder: the file name FFG published it with (the maintainer's scans: <name>.pdf, slugged).",
       "type": "string",
       "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*\\.pdf$"
     }
