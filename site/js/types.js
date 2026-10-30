@@ -7,7 +7,7 @@
 // `icon` stands in for a missing image: 'pdf', or 'affiliation' (the record's affiliation's emblem).
 // List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
 // ('source', 'wave'; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
-// facet with its own labels; `groups` is the default grouping (facet ids); `order` fixes the order of a field's
+// facet with its own labels, or a field of the record's children (a map's missions' kinds); `groups` is the default grouping (facet ids); `order` fixes the order of a field's
 // values, in facets, groups and sorting; `labels` renames a field's facet. A content_type field's values are shown as
 // the types' labels.
 export const TYPES = [
@@ -129,7 +129,14 @@ export const TYPES = [
     file: 'condition-cards', label: 'Condition cards', singular: 'Condition card', images: ['image'],
     menu: 'sources',
   },
-  {file: 'maps', label: 'Maps', singular: 'Map', images: ['image']},
+  {
+    file: 'maps', label: 'Maps', singular: 'Map', images: ['image'],
+    facets: [
+      {id: 'mission-type', label: 'Mission type', children: 'missions', field: 'content_type', none: 'No mission card'},
+      'source', 'wave',
+    ],
+    groups: ['mission-type'],
+  },
   {
     file: 'map-tiles', label: 'Map tiles', singular: 'Map tile', images: ['side_a', 'side_b'], menu: 'maps',
     sort: ['name'],
