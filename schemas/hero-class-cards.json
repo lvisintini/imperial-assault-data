@@ -40,8 +40,11 @@
       ]
     },
     "type": {
-      "description": "Hero class card type",
-      "$ref": "definitions.json#/definitions/buff-type"
+      "description": "Hero class card type: an item, or Feat.",
+      "allOf": [
+        {"$ref": "definitions.json#/definitions/buff-type"},
+        {"enum": ["Armor", "Equipment", "Melee Weapon", "Melee Weapon Modification", "Ranged Weapon", "Ranged Weapon Modification", "Feat"]}
+      ]
     },
     "traits": {
       "description": "Traits that apply to this hero class card.",

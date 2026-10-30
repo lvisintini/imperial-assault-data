@@ -86,7 +86,7 @@
   {
     "id": "526b88de-90da-51f4-8bfa-ff37d191e2a7",
     "name": "Imperial Industry",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
@@ -162,7 +162,7 @@
   {
     "id": "decc9a6f-fc5d-5589-9b9e-0150dfaafdbe",
     "name": "Special Operations",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
@@ -338,7 +338,7 @@
   {
     "id": "5867cc39-2f50-555f-9ce2-58144292b0cb",
     "name": "501st Training",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
@@ -348,7 +348,7 @@
   {
     "id": "e2e5af2b-61da-5f73-8d12-7db339e81a62",
     "name": "Tusken Weaponry",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
@@ -368,7 +368,7 @@
   {
     "id": "fd332dd1-2256-56fd-9532-2b5f0b6aead9",
     "name": "Tactical Advance",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
@@ -388,7 +388,7 @@
   {
     "id": "7b86cc6b-13c2-5f59-8419-799e710ee992",
     "name": "Mechanical Salvage",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",
@@ -442,7 +442,7 @@
   {
     "id": "6d6ea7a9-8c87-5779-b7ac-7394573918ee",
     "name": "Explosives Clearance",
-    "type": "Feat",
+    "type": "Group Attachment",
     "traits": null,
     "class": "Regular",
     "for": "Imperial player",

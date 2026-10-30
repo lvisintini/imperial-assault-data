@@ -155,6 +155,7 @@ class BUFF_TYPES:
     MELEE_MOD = 'Melee Weapon Modification'
     RANGED_MOD = 'Ranged Weapon Modification'
     FEAT = 'Feat'
+    GROUP_ATTACHMENT = 'Group Attachment'
 
 
 class GAME_MODES:
