@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "maps.json#",
-  "title": "Schema for the maps data file: every mission's map (skirmish, four-player, raid)",
+  "title": "Schema for the maps data file: every mission's map (campaign, skirmish, four-player, raid)",
   "type": "object",
   "definitions": {},
   "properties": {
@@ -11,12 +11,19 @@
     },
     "name": {
       "type": "string",
-      "description": "Skirmish map name",
+      "description": "Map name (a campaign map is named after its mission)",
       "minLength": 1
     },
     "image": {
-      "description": "The file path for this skirmish maps's image.",
-      "$ref": "definitions.json#/definitions/image-file-path"
+      "description": "The file path for this map's image, or null while there is none (the campaign maps, for now).",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/image-file-path"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [

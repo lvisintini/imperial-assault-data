@@ -20,7 +20,8 @@ class ImageDefinition:
         )
 
     def filter(self, content_type, entry):
-        return all(
+        # A null image is a record with none yet (a campaign map).
+        return entry.get(self.attr) is not None and all(
             [self.content_type == content_type] + [entry[k] == v for k, v in self.additional_filters.items()]
         )
 
@@ -43,6 +44,9 @@ class ImageTestHelper:
 
     ANY = None
     CARDS_USING_IT = 'the size of the cards whose back_id is this back'
+    # A tile's side: 64 px per square, plus 32 px on each axis that has tabs (cut on its outline).
+    TILE_SQUARE, TILE_TABS = 64, (0, 32)
+    TILE = 'a multiple of 64 px on each axis, plus 0 or 32 for the tabs'
 
     definitions = [
         ImageDefinition('large', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
@@ -67,6 +71,8 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=LARGE_STANDARD_FLIPPED),
         ImageDefinition('large', CONTENT_TYPES.EPILOGUE, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.FORM_CARDS, 'image', dims=LARGE_MINI_FLIPPED),
+        ImageDefinition('large', CONTENT_TYPES.MAP_TILES, 'side_a', dims=TILE),
+        ImageDefinition('large', CONTENT_TYPES.MAP_TILES, 'side_b', dims=TILE),
 
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=CARDS_USING_IT),
 
@@ -92,6 +98,8 @@ class ImageTestHelper:
         ImageDefinition('small', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=SMALL_STANDARD_FLIPPED),
         ImageDefinition('small', CONTENT_TYPES.EPILOGUE, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.FORM_CARDS, 'image', dims=SMALL_MINI_FLIPPED),
+        ImageDefinition('small', CONTENT_TYPES.MAP_TILES, 'side_a', dims=TILE),
+        ImageDefinition('small', CONTENT_TYPES.MAP_TILES, 'side_b', dims=TILE),
 
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=CARDS_USING_IT),
     ]
@@ -157,14 +165,17 @@ class TestImages:
         sizes = ImageTestHelper.back_sizes(get_data_for(*CONTENT_TYPES.as_list), image_subdir)
         assert {back_id: dims for back_id, dims in sizes.items() if len(dims) > 1} == {}
 
-    def test_maps_small_images_are_their_large_ones(self):
-        # GitHub Pages only publishes images/small/maps (.github/workflows/pages.yml), and the explorer reads both
-        # sizes of a map from there.
+    @pytest.mark.parametrize("content_type,fields", [(CONTENT_TYPES.MAP, ['image']),
+                                                     (CONTENT_TYPES.MAP_TILES, ['side_a', 'side_b'])])
+    def test_maps_and_tiles_small_images_are_their_large_ones(self, content_type, fields):
+        # GitHub Pages only publishes images/small/maps and images/small/map-tiles (.github/workflows/pages.yml), and
+        # the explorer reads both sizes of a map or a tile from there.
         root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../images'))
-        for entry in get_data_for(CONTENT_TYPES.MAP)[CONTENT_TYPES.MAP]:
-            with open(os.path.join(root, 'large', entry['image']), 'rb') as large, \
-                    open(os.path.join(root, 'small', entry['image']), 'rb') as small:
-                assert large.read() == small.read(), entry['image']
+        for entry in get_data_for(content_type)[content_type]:
+            for path in filter(None, (entry[field] for field in fields)):
+                with open(os.path.join(root, 'large', path), 'rb') as large, \
+                        open(os.path.join(root, 'small', path), 'rb') as small:
+                    assert large.read() == small.read(), path
 
     @pytest.mark.parametrize("image_path", list(ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list))))
     def test_image_paths(self, image_path):
@@ -176,4 +187,9 @@ class TestImages:
         list(ImageTestHelper.get_paths_and_expected_sizes(get_data_for(*CONTENT_TYPES.as_list)))
     )
     def test_image_sizes(self, image_path, expected_size):
-        assert self.get_image_size(image_path) == expected_size
+        size = self.get_image_size(image_path)
+        if expected_size == ImageTestHelper.TILE:
+            assert all(axis % ImageTestHelper.TILE_SQUARE in ImageTestHelper.TILE_TABS
+                       and axis > ImageTestHelper.TILE_SQUARE for axis in size), size
+        else:
+            assert size == expected_size

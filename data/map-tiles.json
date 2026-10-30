@@ -1,0 +1,968 @@
+[
+  {
+    "id": "ed923def-b487-426b-8d93-f22f9ac6e2e3",
+    "name": "Core Set 01",
+    "number": 1,
+    "side_a": "map-tiles/core-set-01-a.png",
+    "side_b": "map-tiles/core-set-01-b.png"
+  },
+  {
+    "id": "a52c1618-7b6a-40a6-b665-ead02b9ac018",
+    "name": "Core Set 02",
+    "number": 2,
+    "side_a": "map-tiles/core-set-02-a.png",
+    "side_b": "map-tiles/core-set-02-b.png"
+  },
+  {
+    "id": "a944ef4c-c04d-4a59-96cb-e79aef1cb344",
+    "name": "Core Set 03",
+    "number": 3,
+    "side_a": "map-tiles/core-set-03-a.png",
+    "side_b": "map-tiles/core-set-03-b.png"
+  },
+  {
+    "id": "323ea6f1-51d8-4c1e-86c1-3f1d28eae71e",
+    "name": "Core Set 04",
+    "number": 4,
+    "side_a": "map-tiles/core-set-04-a.png",
+    "side_b": "map-tiles/core-set-04-b.png"
+  },
+  {
+    "id": "139c7b3f-6928-4558-8e31-6dce7d1fc0ed",
+    "name": "Core Set 05",
+    "number": 5,
+    "side_a": "map-tiles/core-set-05-a.png",
+    "side_b": "map-tiles/core-set-05-b.png"
+  },
+  {
+    "id": "6ba79f94-909a-458f-ac62-88d46829b428",
+    "name": "Core Set 06",
+    "number": 6,
+    "side_a": "map-tiles/core-set-06-a.png",
+    "side_b": "map-tiles/core-set-06-b.png"
+  },
+  {
+    "id": "098c49e7-25ec-4ddc-ab6b-d2b39498a365",
+    "name": "Core Set 07",
+    "number": 7,
+    "side_a": "map-tiles/core-set-07-a.png",
+    "side_b": "map-tiles/core-set-07-b.png"
+  },
+  {
+    "id": "99502083-5daa-4e4e-acc6-aba1072106f2",
+    "name": "Core Set 08",
+    "number": 8,
+    "side_a": "map-tiles/core-set-08-a.png",
+    "side_b": "map-tiles/core-set-08-b.png"
+  },
+  {
+    "id": "7f5e7144-c0d6-488b-bf7a-58c574da0eae",
+    "name": "Core Set 09",
+    "number": 9,
+    "side_a": "map-tiles/core-set-09-a.png",
+    "side_b": "map-tiles/core-set-09-b.png"
+  },
+  {
+    "id": "13234ec3-e7f3-49e3-ac54-63662c813b3f",
+    "name": "Core Set 10",
+    "number": 10,
+    "side_a": "map-tiles/core-set-10-a.png",
+    "side_b": "map-tiles/core-set-10-b.png"
+  },
+  {
+    "id": "b696f297-33cc-402f-a9d9-810a64f9e263",
+    "name": "Core Set 11",
+    "number": 11,
+    "side_a": "map-tiles/core-set-11-a.png",
+    "side_b": "map-tiles/core-set-11-b.png"
+  },
+  {
+    "id": "4f7f3652-0a52-4667-9ca2-ffd9f1040001",
+    "name": "Core Set 12",
+    "number": 12,
+    "side_a": "map-tiles/core-set-12-a.png",
+    "side_b": "map-tiles/core-set-12-b.png"
+  },
+  {
+    "id": "3861c46e-5922-49d4-a61f-06710871df30",
+    "name": "Core Set 13",
+    "number": 13,
+    "side_a": "map-tiles/core-set-13-a.png",
+    "side_b": "map-tiles/core-set-13-b.png"
+  },
+  {
+    "id": "68e8b019-7436-478c-be4e-607fb11527cd",
+    "name": "Core Set 14",
+    "number": 14,
+    "side_a": "map-tiles/core-set-14-a.png",
+    "side_b": "map-tiles/core-set-14-b.png"
+  },
+  {
+    "id": "8278f62b-b448-4987-ab4e-b2379e8cf86b",
+    "name": "Core Set 15",
+    "number": 15,
+    "side_a": "map-tiles/core-set-15-a.png",
+    "side_b": "map-tiles/core-set-15-b.png"
+  },
+  {
+    "id": "4af356e5-9be6-4879-8954-1ba4580e87c7",
+    "name": "Core Set 16",
+    "number": 16,
+    "side_a": "map-tiles/core-set-16-a.png",
+    "side_b": "map-tiles/core-set-16-b.png"
+  },
+  {
+    "id": "76d4c482-b323-4ab9-9ce4-224607a28d1f",
+    "name": "Core Set 17",
+    "number": 17,
+    "side_a": "map-tiles/core-set-17-a.png",
+    "side_b": "map-tiles/core-set-17-b.png"
+  },
+  {
+    "id": "58152319-7388-47ee-aa0b-1ab261a5ea6c",
+    "name": "Core Set 18",
+    "number": 18,
+    "side_a": "map-tiles/core-set-18-a.png",
+    "side_b": "map-tiles/core-set-18-b.png"
+  },
+  {
+    "id": "887c355a-b97d-46b1-8714-b30c454b979a",
+    "name": "Core Set 19",
+    "number": 19,
+    "side_a": "map-tiles/core-set-19-a.png",
+    "side_b": "map-tiles/core-set-19-b.png"
+  },
+  {
+    "id": "8d309b55-d62e-4d95-9c1e-7da345005e89",
+    "name": "Core Set 20",
+    "number": 20,
+    "side_a": "map-tiles/core-set-20-a.png",
+    "side_b": "map-tiles/core-set-20-b.png"
+  },
+  {
+    "id": "bab5cbef-785b-45c2-b54f-8031eaed99d4",
+    "name": "Core Set 21",
+    "number": 21,
+    "side_a": "map-tiles/core-set-21-a.png",
+    "side_b": "map-tiles/core-set-21-b.png"
+  },
+  {
+    "id": "65a15c4e-378e-41e6-805a-5c2738254cf3",
+    "name": "Core Set 22",
+    "number": 22,
+    "side_a": "map-tiles/core-set-22-a.png",
+    "side_b": "map-tiles/core-set-22-b.png"
+  },
+  {
+    "id": "82e8b296-c11e-4f34-ac98-28378b586a83",
+    "name": "Core Set 23",
+    "number": 23,
+    "side_a": "map-tiles/core-set-23-a.png",
+    "side_b": "map-tiles/core-set-23-b.png"
+  },
+  {
+    "id": "eb800ec4-99ee-4f1a-8388-ceea9ed6c70c",
+    "name": "Core Set 24",
+    "number": 24,
+    "side_a": "map-tiles/core-set-24-a.png",
+    "side_b": "map-tiles/core-set-24-b.png"
+  },
+  {
+    "id": "5abac59d-9d1c-46d3-a9ba-6d29df68ec6b",
+    "name": "Core Set 25",
+    "number": 25,
+    "side_a": "map-tiles/core-set-25-a.png",
+    "side_b": "map-tiles/core-set-25-b.png"
+  },
+  {
+    "id": "f639ee25-6476-4ee8-af07-2fe9543282bc",
+    "name": "Core Set 26",
+    "number": 26,
+    "side_a": "map-tiles/core-set-26-a.png",
+    "side_b": "map-tiles/core-set-26-b.png"
+  },
+  {
+    "id": "efcbd26b-a81e-4f8c-9e68-d992fd1c1bec",
+    "name": "Core Set 27",
+    "number": 27,
+    "side_a": "map-tiles/core-set-27-a.png",
+    "side_b": "map-tiles/core-set-27-b.png"
+  },
+  {
+    "id": "be5f8edf-eaf8-45ef-9c7f-53a1c95bcf64",
+    "name": "Core Set 28",
+    "number": 28,
+    "side_a": "map-tiles/core-set-28-a.png",
+    "side_b": "map-tiles/core-set-28-b.png"
+  },
+  {
+    "id": "e2a809f5-bad9-4fa3-92c5-9e264af2ed9b",
+    "name": "Core Set 29",
+    "number": 29,
+    "side_a": "map-tiles/core-set-29-a.png",
+    "side_b": "map-tiles/core-set-29-b.png"
+  },
+  {
+    "id": "061d6a1a-a15f-4dd1-ad3b-3fa6d83114a1",
+    "name": "Core Set 30",
+    "number": 30,
+    "side_a": "map-tiles/core-set-30-a.png",
+    "side_b": "map-tiles/core-set-30-b.png"
+  },
+  {
+    "id": "d5a04a02-2aa8-4ac7-9a4d-6c79e9f74b3e",
+    "name": "Core Set 31",
+    "number": 31,
+    "side_a": "map-tiles/core-set-31-a.png",
+    "side_b": "map-tiles/core-set-31-b.png"
+  },
+  {
+    "id": "6b19495e-e0bd-4ce3-9048-d45b4771db2b",
+    "name": "Core Set 32",
+    "number": 32,
+    "side_a": "map-tiles/core-set-32-a.png",
+    "side_b": "map-tiles/core-set-32-b.png"
+  },
+  {
+    "id": "b22328e9-59f3-4063-a741-8009aed5a57f",
+    "name": "Core Set 33",
+    "number": 33,
+    "side_a": "map-tiles/core-set-33-a.png",
+    "side_b": "map-tiles/core-set-33-b.png"
+  },
+  {
+    "id": "629f199b-a9dc-4317-aad9-68ea21dd9ba7",
+    "name": "Core Set 34",
+    "number": 34,
+    "side_a": "map-tiles/core-set-34-a.png",
+    "side_b": "map-tiles/core-set-34-b.png"
+  },
+  {
+    "id": "dbc60d7c-8bd2-4294-81dc-7ea51c61663a",
+    "name": "Core Set 35",
+    "number": 35,
+    "side_a": "map-tiles/core-set-35-a.png",
+    "side_b": "map-tiles/core-set-35-b.png"
+  },
+  {
+    "id": "e2ff406c-389f-4790-b4ed-47c1bb561169",
+    "name": "Core Set 36",
+    "number": 36,
+    "side_a": "map-tiles/core-set-36-a.png",
+    "side_b": "map-tiles/core-set-36-b.png"
+  },
+  {
+    "id": "de2f8b61-19bd-4ec9-a90d-86f0ac98ea3f",
+    "name": "Core Set 37",
+    "number": 37,
+    "side_a": "map-tiles/core-set-37-a.png",
+    "side_b": "map-tiles/core-set-37-b.png"
+  },
+  {
+    "id": "c2deee54-68c7-499d-bed2-91bc82c39da6",
+    "name": "Core Set 38",
+    "number": 38,
+    "side_a": "map-tiles/core-set-38-a.png",
+    "side_b": "map-tiles/core-set-38-b.png"
+  },
+  {
+    "id": "d4aa1428-50ff-47ed-ad46-fb062080d154",
+    "name": "Core Set 39",
+    "number": 39,
+    "side_a": "map-tiles/core-set-39-a.png",
+    "side_b": "map-tiles/core-set-39-b.png"
+  },
+  {
+    "id": "46957916-1b86-4efd-a0a9-cc5f194b0c1d",
+    "name": "Twin Shadows 01",
+    "number": 1,
+    "side_a": "map-tiles/twin-shadows-01-a.png",
+    "side_b": "map-tiles/twin-shadows-01-b.png"
+  },
+  {
+    "id": "c4587e2a-cb4a-42fd-a8fc-d601a38e498b",
+    "name": "Twin Shadows 02",
+    "number": 2,
+    "side_a": "map-tiles/twin-shadows-02-a.png",
+    "side_b": "map-tiles/twin-shadows-02-b.png"
+  },
+  {
+    "id": "a21494be-8b58-42f8-8a8e-512bc5f1d453",
+    "name": "Twin Shadows 03",
+    "number": 3,
+    "side_a": "map-tiles/twin-shadows-03-a.png",
+    "side_b": "map-tiles/twin-shadows-03-b.png"
+  },
+  {
+    "id": "8a9ad3e3-51a5-4b4e-b763-d2d3d18d07e1",
+    "name": "Twin Shadows 04",
+    "number": 4,
+    "side_a": "map-tiles/twin-shadows-04-a.png",
+    "side_b": "map-tiles/twin-shadows-04-b.png"
+  },
+  {
+    "id": "2dfc8a44-6e42-47c4-993b-9457da63b04b",
+    "name": "Twin Shadows 05",
+    "number": 5,
+    "side_a": "map-tiles/twin-shadows-05-a.png",
+    "side_b": "map-tiles/twin-shadows-05-b.png"
+  },
+  {
+    "id": "e6c646c7-32f3-410c-bba5-5a48582b5539",
+    "name": "Twin Shadows 06",
+    "number": 6,
+    "side_a": "map-tiles/twin-shadows-06-a.png",
+    "side_b": "map-tiles/twin-shadows-06-b.png"
+  },
+  {
+    "id": "df6796e2-fb74-464b-8dc7-da822de21cab",
+    "name": "Twin Shadows 07",
+    "number": 7,
+    "side_a": "map-tiles/twin-shadows-07-a.png",
+    "side_b": "map-tiles/twin-shadows-07-b.png"
+  },
+  {
+    "id": "a90dfd9c-a230-4322-82e0-f38c3825b5a7",
+    "name": "Twin Shadows 08",
+    "number": 8,
+    "side_a": "map-tiles/twin-shadows-08-a.png",
+    "side_b": "map-tiles/twin-shadows-08-b.png"
+  },
+  {
+    "id": "a9fec593-cbad-41f5-80ff-3d682bf9cf2b",
+    "name": "Twin Shadows 09",
+    "number": 9,
+    "side_a": "map-tiles/twin-shadows-09-a.png",
+    "side_b": "map-tiles/twin-shadows-09-b.png"
+  },
+  {
+    "id": "d7528d38-9ca6-4c10-aefa-5b8d86a5d809",
+    "name": "Twin Shadows 10",
+    "number": 10,
+    "side_a": "map-tiles/twin-shadows-10-a.png",
+    "side_b": "map-tiles/twin-shadows-10-b.png"
+  },
+  {
+    "id": "d63bcd4d-d438-4d00-866e-57b5fdc615cf",
+    "name": "Twin Shadows 11",
+    "number": 11,
+    "side_a": "map-tiles/twin-shadows-11-a.png",
+    "side_b": "map-tiles/twin-shadows-11-b.png"
+  },
+  {
+    "id": "95e7705c-8f0b-4dd2-a5a9-a7e3a88353c8",
+    "name": "Twin Shadows 12",
+    "number": 12,
+    "side_a": "map-tiles/twin-shadows-12-a.png",
+    "side_b": "map-tiles/twin-shadows-12-b.png"
+  },
+  {
+    "id": "ea2eeac2-7e22-4e86-b869-4cac8cb805a8",
+    "name": "Return to Hoth 01",
+    "number": 1,
+    "side_a": "map-tiles/return-to-hoth-01-a.png",
+    "side_b": "map-tiles/return-to-hoth-01-b.png"
+  },
+  {
+    "id": "2e2efe10-6835-4011-8254-9de8840b777e",
+    "name": "Return to Hoth 02",
+    "number": 2,
+    "side_a": "map-tiles/return-to-hoth-02-a.png",
+    "side_b": "map-tiles/return-to-hoth-02-b.png"
+  },
+  {
+    "id": "4b7ea20b-29d0-4730-b0b2-d36a82ee2baa",
+    "name": "Return to Hoth 03",
+    "number": 3,
+    "side_a": "map-tiles/return-to-hoth-03-a.png",
+    "side_b": "map-tiles/return-to-hoth-03-b.png"
+  },
+  {
+    "id": "a22e27a6-80ad-446d-bddd-e86c8e634bdf",
+    "name": "Return to Hoth 04",
+    "number": 4,
+    "side_a": "map-tiles/return-to-hoth-04-a.png",
+    "side_b": "map-tiles/return-to-hoth-04-b.png"
+  },
+  {
+    "id": "cb13037b-5946-4b88-be4c-7bf09957eac2",
+    "name": "Return to Hoth 05",
+    "number": 5,
+    "side_a": "map-tiles/return-to-hoth-05-a.png",
+    "side_b": "map-tiles/return-to-hoth-05-b.png"
+  },
+  {
+    "id": "6c67b0fa-2200-46ca-8536-dec76e971f32",
+    "name": "Return to Hoth 06",
+    "number": 6,
+    "side_a": "map-tiles/return-to-hoth-06-a.png",
+    "side_b": "map-tiles/return-to-hoth-06-b.png"
+  },
+  {
+    "id": "fec8f421-88de-46bd-93af-fa579fc5adf6",
+    "name": "Return to Hoth 07",
+    "number": 7,
+    "side_a": "map-tiles/return-to-hoth-07-a.png",
+    "side_b": "map-tiles/return-to-hoth-07-b.png"
+  },
+  {
+    "id": "e274ce61-e198-4428-becf-74f0a6ad4821",
+    "name": "Return to Hoth 08",
+    "number": 8,
+    "side_a": "map-tiles/return-to-hoth-08-a.png",
+    "side_b": "map-tiles/return-to-hoth-08-b.png"
+  },
+  {
+    "id": "76213a07-40e3-4f5d-a834-1c9006dc1fac",
+    "name": "Return to Hoth 09",
+    "number": 9,
+    "side_a": "map-tiles/return-to-hoth-09-a.png",
+    "side_b": "map-tiles/return-to-hoth-09-b.png"
+  },
+  {
+    "id": "85917978-876e-407c-8712-b1c711cc1cb6",
+    "name": "Return to Hoth 10",
+    "number": 10,
+    "side_a": "map-tiles/return-to-hoth-10-a.png",
+    "side_b": "map-tiles/return-to-hoth-10-b.png"
+  },
+  {
+    "id": "c5b0aa0d-1925-46dc-a52b-6da20820d509",
+    "name": "Return to Hoth 11",
+    "number": 11,
+    "side_a": "map-tiles/return-to-hoth-11-a.png",
+    "side_b": "map-tiles/return-to-hoth-11-b.png"
+  },
+  {
+    "id": "5a09408d-8008-414b-ae1d-e3d9d43e8efa",
+    "name": "Return to Hoth 12",
+    "number": 12,
+    "side_a": "map-tiles/return-to-hoth-12-a.png",
+    "side_b": "map-tiles/return-to-hoth-12-b.png"
+  },
+  {
+    "id": "dad45a0c-803a-4e59-b500-4c21d1d5205c",
+    "name": "Return to Hoth 13",
+    "number": 13,
+    "side_a": "map-tiles/return-to-hoth-13-a.png",
+    "side_b": "map-tiles/return-to-hoth-13-b.png"
+  },
+  {
+    "id": "1a290e63-5a47-4f3a-a713-7d0b7aae31ff",
+    "name": "Return to Hoth 14",
+    "number": 14,
+    "side_a": "map-tiles/return-to-hoth-14-a.png",
+    "side_b": "map-tiles/return-to-hoth-14-b.png"
+  },
+  {
+    "id": "d7e0efdd-5d62-4ba0-a6ca-f97b1007ba17",
+    "name": "Return to Hoth 15",
+    "number": 15,
+    "side_a": "map-tiles/return-to-hoth-15-a.png",
+    "side_b": "map-tiles/return-to-hoth-15-b.png"
+  },
+  {
+    "id": "ef68e8e0-fbe5-4945-983f-c335746a6212",
+    "name": "Return to Hoth 16",
+    "number": 16,
+    "side_a": "map-tiles/return-to-hoth-16-a.png",
+    "side_b": "map-tiles/return-to-hoth-16-b.png"
+  },
+  {
+    "id": "d3f9acd0-ff27-4424-a6fe-f00422747d09",
+    "name": "Return to Hoth 17",
+    "number": 17,
+    "side_a": "map-tiles/return-to-hoth-17-a.png",
+    "side_b": "map-tiles/return-to-hoth-17-b.png"
+  },
+  {
+    "id": "24e94c0f-c800-4473-bd50-671ca78809e1",
+    "name": "Return to Hoth 18",
+    "number": 18,
+    "side_a": "map-tiles/return-to-hoth-18-a.png",
+    "side_b": "map-tiles/return-to-hoth-18-b.png"
+  },
+  {
+    "id": "8ba72b89-05be-42e7-bae2-3e260f32bf5a",
+    "name": "Return to Hoth 19",
+    "number": 19,
+    "side_a": "map-tiles/return-to-hoth-19-a.png",
+    "side_b": "map-tiles/return-to-hoth-19-b.png"
+  },
+  {
+    "id": "7fd5f38a-aa02-4a15-9260-7bf67f68dcc6",
+    "name": "Return to Hoth 20",
+    "number": 20,
+    "side_a": "map-tiles/return-to-hoth-20-a.png",
+    "side_b": "map-tiles/return-to-hoth-20-b.png"
+  },
+  {
+    "id": "c0c7376b-d422-4bd3-b748-2b9df05f9e08",
+    "name": "Return to Hoth 21",
+    "number": 21,
+    "side_a": "map-tiles/return-to-hoth-21-a.png",
+    "side_b": "map-tiles/return-to-hoth-21-b.png"
+  },
+  {
+    "id": "a616ee48-c7fa-4017-b64b-f7d0f1865ca1",
+    "name": "Return to Hoth 22",
+    "number": 22,
+    "side_a": "map-tiles/return-to-hoth-22-a.png",
+    "side_b": "map-tiles/return-to-hoth-22-b.png"
+  },
+  {
+    "id": "f90cb737-b99e-458a-b180-2589512bb80f",
+    "name": "Return to Hoth 23",
+    "number": 23,
+    "side_a": "map-tiles/return-to-hoth-23-a.png",
+    "side_b": "map-tiles/return-to-hoth-23-b.png"
+  },
+  {
+    "id": "73378fec-2501-4f96-b91c-ee28fd411f9b",
+    "name": "Return to Hoth 24",
+    "number": 24,
+    "side_a": "map-tiles/return-to-hoth-24-a.png",
+    "side_b": "map-tiles/return-to-hoth-24-b.png"
+  },
+  {
+    "id": "3117e77f-776a-402f-84f7-595f52164df5",
+    "name": "Return to Hoth 25",
+    "number": 25,
+    "side_a": "map-tiles/return-to-hoth-25-a.png",
+    "side_b": "map-tiles/return-to-hoth-25-b.png"
+  },
+  {
+    "id": "513d946f-be6b-4756-8384-9c5e57a3dcd0",
+    "name": "Return to Hoth 26",
+    "number": 26,
+    "side_a": "map-tiles/return-to-hoth-26-a.png",
+    "side_b": "map-tiles/return-to-hoth-26-b.png"
+  },
+  {
+    "id": "11bce1e0-0ea4-43a4-a516-d5203ee5b7d4",
+    "name": "Return to Hoth 27",
+    "number": 27,
+    "side_a": "map-tiles/return-to-hoth-27-a.png",
+    "side_b": "map-tiles/return-to-hoth-27-b.png"
+  },
+  {
+    "id": "be063259-4c2e-434f-b9f0-ac4550adc31d",
+    "name": "Return to Hoth 28",
+    "number": 28,
+    "side_a": "map-tiles/return-to-hoth-28-a.png",
+    "side_b": "map-tiles/return-to-hoth-28-b.png"
+  },
+  {
+    "id": "99395782-0c17-4e52-aeec-5db33e012ae7",
+    "name": "The Bespin Gambit 01",
+    "number": 1,
+    "side_a": "map-tiles/the-bespin-gambit-01-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-01-b.png"
+  },
+  {
+    "id": "f4e79423-6e0f-4453-bbe7-96770b640fd3",
+    "name": "The Bespin Gambit 02",
+    "number": 2,
+    "side_a": "map-tiles/the-bespin-gambit-02-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-02-b.png"
+  },
+  {
+    "id": "7a238eaa-b4f8-4462-98ec-de4a055ed7ec",
+    "name": "The Bespin Gambit 03",
+    "number": 3,
+    "side_a": "map-tiles/the-bespin-gambit-03-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-03-b.png"
+  },
+  {
+    "id": "921505d1-e89c-4829-8748-c68eff0f04e5",
+    "name": "The Bespin Gambit 04",
+    "number": 4,
+    "side_a": "map-tiles/the-bespin-gambit-04-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-04-b.png"
+  },
+  {
+    "id": "b176d312-e1e8-444e-b2af-a7ec3a382673",
+    "name": "The Bespin Gambit 05",
+    "number": 5,
+    "side_a": "map-tiles/the-bespin-gambit-05-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-05-b.png"
+  },
+  {
+    "id": "adc8af5f-222d-4da3-a1ae-e2ce3c52077a",
+    "name": "The Bespin Gambit 06",
+    "number": 6,
+    "side_a": "map-tiles/the-bespin-gambit-06-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-06-b.png"
+  },
+  {
+    "id": "22ca6e81-e318-40c8-a493-d262ac6093e5",
+    "name": "The Bespin Gambit 07",
+    "number": 7,
+    "side_a": "map-tiles/the-bespin-gambit-07-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-07-b.png"
+  },
+  {
+    "id": "cdeb19ac-63fc-478e-94e1-947189b6ea9a",
+    "name": "The Bespin Gambit 08",
+    "number": 8,
+    "side_a": "map-tiles/the-bespin-gambit-08-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-08-b.png"
+  },
+  {
+    "id": "a38abd7e-8c55-40e1-821f-a689331e5c2c",
+    "name": "The Bespin Gambit 09",
+    "number": 9,
+    "side_a": "map-tiles/the-bespin-gambit-09-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-09-b.png"
+  },
+  {
+    "id": "3e035697-12ba-45e3-bdc6-1928431dfcd9",
+    "name": "The Bespin Gambit 10",
+    "number": 10,
+    "side_a": "map-tiles/the-bespin-gambit-10-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-10-b.png"
+  },
+  {
+    "id": "7f74c18d-7592-4058-a0b5-5160c8785b59",
+    "name": "The Bespin Gambit 11",
+    "number": 11,
+    "side_a": "map-tiles/the-bespin-gambit-11-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-11-b.png"
+  },
+  {
+    "id": "a495d48e-6472-4783-a49b-3b80bf53b9fd",
+    "name": "The Bespin Gambit 12",
+    "number": 12,
+    "side_a": "map-tiles/the-bespin-gambit-12-a.png",
+    "side_b": "map-tiles/the-bespin-gambit-12-b.png"
+  },
+  {
+    "id": "ae38dd1e-91c9-4142-8027-f0a7342d9833",
+    "name": "Jabba's Realm 01",
+    "number": 1,
+    "side_a": "map-tiles/jabbas-realm-01-a.png",
+    "side_b": "map-tiles/jabbas-realm-01-b.png"
+  },
+  {
+    "id": "30b61841-e434-4dad-8504-47474b33dfdd",
+    "name": "Jabba's Realm 02",
+    "number": 2,
+    "side_a": "map-tiles/jabbas-realm-02-a.png",
+    "side_b": "map-tiles/jabbas-realm-02-b.png"
+  },
+  {
+    "id": "4f26c82c-4dcd-4146-bdc5-907cdc04c70a",
+    "name": "Jabba's Realm 03",
+    "number": 3,
+    "side_a": "map-tiles/jabbas-realm-03-a.png",
+    "side_b": "map-tiles/jabbas-realm-03-b.png"
+  },
+  {
+    "id": "4fd3dd3e-dd26-4190-b6df-4c8e5d12a27e",
+    "name": "Jabba's Realm 04",
+    "number": 4,
+    "side_a": "map-tiles/jabbas-realm-04-a.png",
+    "side_b": "map-tiles/jabbas-realm-04-b.png"
+  },
+  {
+    "id": "3ea46265-5ec8-4e6f-9cfa-4844e89dd383",
+    "name": "Jabba's Realm 05",
+    "number": 5,
+    "side_a": "map-tiles/jabbas-realm-05-a.png",
+    "side_b": "map-tiles/jabbas-realm-05-b.png"
+  },
+  {
+    "id": "2e99e566-bef6-45d4-b49f-e612966ec916",
+    "name": "Jabba's Realm 06",
+    "number": 6,
+    "side_a": "map-tiles/jabbas-realm-06-a.png",
+    "side_b": "map-tiles/jabbas-realm-06-b.png"
+  },
+  {
+    "id": "33f951b8-cd71-4363-9a1e-820a6f91f484",
+    "name": "Jabba's Realm 07",
+    "number": 7,
+    "side_a": "map-tiles/jabbas-realm-07-a.png",
+    "side_b": "map-tiles/jabbas-realm-07-b.png"
+  },
+  {
+    "id": "c8837028-bdde-4a61-a966-26c40ea106cd",
+    "name": "Jabba's Realm 08",
+    "number": 8,
+    "side_a": "map-tiles/jabbas-realm-08-a.png",
+    "side_b": "map-tiles/jabbas-realm-08-b.png"
+  },
+  {
+    "id": "60c58af1-120a-4358-acbe-c2dcc8889501",
+    "name": "Jabba's Realm 09",
+    "number": 9,
+    "side_a": "map-tiles/jabbas-realm-09-a.png",
+    "side_b": "map-tiles/jabbas-realm-09-b.png"
+  },
+  {
+    "id": "20984659-eee5-4de0-8c4c-d0b34dd3af9b",
+    "name": "Jabba's Realm 10",
+    "number": 10,
+    "side_a": "map-tiles/jabbas-realm-10-a.png",
+    "side_b": "map-tiles/jabbas-realm-10-b.png"
+  },
+  {
+    "id": "2ec7c932-f231-4483-a115-96e56ed76ad7",
+    "name": "Jabba's Realm 11",
+    "number": 11,
+    "side_a": "map-tiles/jabbas-realm-11-a.png",
+    "side_b": "map-tiles/jabbas-realm-11-b.png"
+  },
+  {
+    "id": "bb924da4-5968-46d8-9302-f4907f1a5885",
+    "name": "Jabba's Realm 12",
+    "number": 12,
+    "side_a": "map-tiles/jabbas-realm-12-a.png",
+    "side_b": "map-tiles/jabbas-realm-12-b.png"
+  },
+  {
+    "id": "ed47f77a-5d6f-42f4-ac28-ec86513f92e6",
+    "name": "Jabba's Realm 13",
+    "number": 13,
+    "side_a": "map-tiles/jabbas-realm-13-a.png",
+    "side_b": "map-tiles/jabbas-realm-13-b.png"
+  },
+  {
+    "id": "a04cb86d-cf1f-4c59-ae3b-b7f631bc88b7",
+    "name": "Jabba's Realm 14",
+    "number": 14,
+    "side_a": "map-tiles/jabbas-realm-14-a.png",
+    "side_b": "map-tiles/jabbas-realm-14-b.png"
+  },
+  {
+    "id": "e7fb41fd-96ec-4fc7-bde9-83f73d3ee458",
+    "name": "Jabba's Realm 15",
+    "number": 15,
+    "side_a": "map-tiles/jabbas-realm-15-a.png",
+    "side_b": "map-tiles/jabbas-realm-15-b.png"
+  },
+  {
+    "id": "b9aeb0f2-8f19-48d4-980c-1e634cd4925a",
+    "name": "Jabba's Realm 16",
+    "number": 16,
+    "side_a": "map-tiles/jabbas-realm-16-a.png",
+    "side_b": "map-tiles/jabbas-realm-16-b.png"
+  },
+  {
+    "id": "e2cff431-62a0-42a3-a59b-bf3f5e31617d",
+    "name": "Jabba's Realm 17",
+    "number": 17,
+    "side_a": "map-tiles/jabbas-realm-17-a.png",
+    "side_b": "map-tiles/jabbas-realm-17-b.png"
+  },
+  {
+    "id": "65a0570a-d48a-4ae7-aaa8-cbd2dcf806af",
+    "name": "Heart of the Empire 01",
+    "number": 1,
+    "side_a": "map-tiles/heart-of-the-empire-01-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-01-b.png"
+  },
+  {
+    "id": "86bfa122-172a-4d72-bf83-e292f46ae084",
+    "name": "Heart of the Empire 02",
+    "number": 2,
+    "side_a": "map-tiles/heart-of-the-empire-02-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-02-b.png"
+  },
+  {
+    "id": "1c80fec4-8e2d-4e88-8c69-b3fcb896fad4",
+    "name": "Heart of the Empire 03",
+    "number": 3,
+    "side_a": "map-tiles/heart-of-the-empire-03-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-03-b.png"
+  },
+  {
+    "id": "cbd347a8-e2e5-4cb4-ab6c-63ca728820f0",
+    "name": "Heart of the Empire 04",
+    "number": 4,
+    "side_a": "map-tiles/heart-of-the-empire-04-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-04-b.png"
+  },
+  {
+    "id": "8f5ed2fa-54de-4c83-9b75-2f26ead6eb0d",
+    "name": "Heart of the Empire 05",
+    "number": 5,
+    "side_a": "map-tiles/heart-of-the-empire-05-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-05-b.png"
+  },
+  {
+    "id": "b832b6ad-d89b-488b-bae4-1815151b6920",
+    "name": "Heart of the Empire 06",
+    "number": 6,
+    "side_a": "map-tiles/heart-of-the-empire-06-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-06-b.png"
+  },
+  {
+    "id": "821267ae-cb5e-45dc-90ba-9a4690195985",
+    "name": "Heart of the Empire 07",
+    "number": 7,
+    "side_a": "map-tiles/heart-of-the-empire-07-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-07-b.png"
+  },
+  {
+    "id": "ca31c331-c1a1-4e9c-872d-f892cc4396a1",
+    "name": "Heart of the Empire 08",
+    "number": 8,
+    "side_a": "map-tiles/heart-of-the-empire-08-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-08-b.png"
+  },
+  {
+    "id": "adb2a618-f5c3-419f-9975-67bcefdf6c90",
+    "name": "Heart of the Empire 09",
+    "number": 9,
+    "side_a": "map-tiles/heart-of-the-empire-09-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-09-b.png"
+  },
+  {
+    "id": "fae374a9-996c-41e2-8959-f6632f3e8776",
+    "name": "Heart of the Empire 10",
+    "number": 10,
+    "side_a": "map-tiles/heart-of-the-empire-10-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-10-b.png"
+  },
+  {
+    "id": "837b7f0b-655f-412a-88f6-468710e5ce3b",
+    "name": "Heart of the Empire 11",
+    "number": 11,
+    "side_a": "map-tiles/heart-of-the-empire-11-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-11-b.png"
+  },
+  {
+    "id": "28753e3f-471f-4e0d-b2f6-f454bdbe40d9",
+    "name": "Heart of the Empire 12",
+    "number": 12,
+    "side_a": "map-tiles/heart-of-the-empire-12-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-12-b.png"
+  },
+  {
+    "id": "d614563a-2baa-4e83-baf8-2d889fc5b200",
+    "name": "Heart of the Empire 13",
+    "number": 13,
+    "side_a": "map-tiles/heart-of-the-empire-13-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-13-b.png"
+  },
+  {
+    "id": "fcf42928-b0e2-4bae-ba47-61fbde368139",
+    "name": "Heart of the Empire 14",
+    "number": 14,
+    "side_a": "map-tiles/heart-of-the-empire-14-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-14-b.png"
+  },
+  {
+    "id": "375d407f-cab4-42bc-9863-031f137930a1",
+    "name": "Heart of the Empire 15",
+    "number": 15,
+    "side_a": "map-tiles/heart-of-the-empire-15-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-15-b.png"
+  },
+  {
+    "id": "af0f7f2e-f91c-44a0-a87b-d68a606e4510",
+    "name": "Heart of the Empire 16",
+    "number": 16,
+    "side_a": "map-tiles/heart-of-the-empire-16-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-16-b.png"
+  },
+  {
+    "id": "8e06d518-8bf5-4c7b-9d2c-af9c04dc90d3",
+    "name": "Heart of the Empire 17",
+    "number": 17,
+    "side_a": "map-tiles/heart-of-the-empire-17-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-17-b.png"
+  },
+  {
+    "id": "4a604f03-43a7-4d57-b14f-0fee126539c1",
+    "name": "Heart of the Empire 18",
+    "number": 18,
+    "side_a": "map-tiles/heart-of-the-empire-18-a.png",
+    "side_b": "map-tiles/heart-of-the-empire-18-b.png"
+  },
+  {
+    "id": "7c883d8e-4c85-44e2-88d6-ffaa2cd92ab6",
+    "name": "Tyrants of Lothal 01",
+    "number": 1,
+    "side_a": "map-tiles/tyrants-of-lothal-01-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-01-b.png"
+  },
+  {
+    "id": "0de11b09-56e7-499b-80f7-905a3c72a654",
+    "name": "Tyrants of Lothal 02",
+    "number": 2,
+    "side_a": "map-tiles/tyrants-of-lothal-02-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-02-b.png"
+  },
+  {
+    "id": "b4ab6425-1c6f-4040-b454-dfa9a1e70b40",
+    "name": "Tyrants of Lothal 03",
+    "number": 3,
+    "side_a": "map-tiles/tyrants-of-lothal-03-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-03-b.png"
+  },
+  {
+    "id": "d9cbfbf6-91d9-4077-b062-b2c8927eca1f",
+    "name": "Tyrants of Lothal 04",
+    "number": 4,
+    "side_a": "map-tiles/tyrants-of-lothal-04-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-04-b.png"
+  },
+  {
+    "id": "55f58b79-aef9-489c-b20e-d53350352a08",
+    "name": "Tyrants of Lothal 05",
+    "number": 5,
+    "side_a": "map-tiles/tyrants-of-lothal-05-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-05-b.png"
+  },
+  {
+    "id": "9eadf864-3e66-4bf9-b8bd-d13e17becbe3",
+    "name": "Tyrants of Lothal 06",
+    "number": 6,
+    "side_a": "map-tiles/tyrants-of-lothal-06-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-06-b.png"
+  },
+  {
+    "id": "2de37de8-3269-40f8-ba1a-bc525fae2439",
+    "name": "Tyrants of Lothal 07",
+    "number": 7,
+    "side_a": "map-tiles/tyrants-of-lothal-07-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-07-b.png"
+  },
+  {
+    "id": "18a04066-a95b-48af-8d9f-5b91f748a1d4",
+    "name": "Tyrants of Lothal 08",
+    "number": 8,
+    "side_a": "map-tiles/tyrants-of-lothal-08-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-08-b.png"
+  },
+  {
+    "id": "c540a48a-e5ac-44da-a932-0614e00ec620",
+    "name": "Tyrants of Lothal 09",
+    "number": 9,
+    "side_a": "map-tiles/tyrants-of-lothal-09-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-09-b.png"
+  },
+  {
+    "id": "304a196d-15b6-46bd-a167-42dddef721fe",
+    "name": "Tyrants of Lothal 10",
+    "number": 10,
+    "side_a": "map-tiles/tyrants-of-lothal-10-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-10-b.png"
+  },
+  {
+    "id": "0b9e9e52-bb8d-488b-9f1f-6f336dee04ea",
+    "name": "Tyrants of Lothal 11",
+    "number": 11,
+    "side_a": "map-tiles/tyrants-of-lothal-11-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-11-b.png"
+  },
+  {
+    "id": "1d5b248a-e058-4337-abbc-837ba960962c",
+    "name": "Tyrants of Lothal 12",
+    "number": 12,
+    "side_a": "map-tiles/tyrants-of-lothal-12-a.png",
+    "side_b": "map-tiles/tyrants-of-lothal-12-b.png"
+  }
+]

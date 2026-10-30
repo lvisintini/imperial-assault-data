@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "map-tiles.json#",
+  "title": "Schema for the map tiles data file: the double-sided tiles maps are built from",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "The tile's product and number: \"Core Set 01\", \"Twin Shadows 01\".",
+      "minLength": 1
+    },
+    "number": {
+      "type": "integer",
+      "description": "The number printed on the tile.",
+      "minimum": 1
+    },
+    "side_a": {
+      "description": "The file path for the tile's A side, cut on its outline (transparent notches).",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "side_b": {
+      "description": "The file path for the tile's B side, cut on its outline (transparent notches).",
+      "$ref": "definitions.json#/definitions/image-file-path"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "number",
+    "side_a",
+    "side_b"
+  ],
+  "additionalProperties": false
+}

@@ -54,9 +54,9 @@ class TestIntegrity:
 class TestCardBacksIntegrity:
     """Every card points at its back (card-backs) through back_id (docs/data-model.md → Card backs)."""
 
-    # Records with an image but no back: products, maps, the backs themselves, and heroes (their backs are on their
-    # class cards).
-    NO_BACK = [CONTENT_TYPES.SOURCE, CONTENT_TYPES.MAP, CONTENT_TYPES.CARD, CONTENT_TYPES.HERO]
+    # Records with an image but no back: products, maps, the backs themselves, heroes (their backs are on their class
+    # cards) and map tiles (a tile's back is its other side).
+    NO_BACK = [CONTENT_TYPES.SOURCE, CONTENT_TYPES.MAP, CONTENT_TYPES.CARD, CONTENT_TYPES.HERO, CONTENT_TYPES.MAP_TILES]
     # A child type's cards share their parent's back.
     PARENTS = {CONTENT_TYPES.HERO_CLASS: 'hero_id', CONTENT_TYPES.IMPERIAL_CLASS_CARD: 'class_id',
                CONTENT_TYPES.AGENDA: 'agenda_id'}
@@ -67,7 +67,7 @@ class TestCardBacksIntegrity:
 
     def test_every_type_with_images_has_backs_but_the_exceptions(self):
         imaged = [t for t in CONTENT_TYPES.as_list
-                  if set(get_schema(t)['properties']) & {'image', 'healthy'} and t not in self.NO_BACK]
+                  if set(get_schema(t)['properties']) & {'image', 'healthy', 'side_a'} and t not in self.NO_BACK]
         assert sorted(imaged) == sorted(self.card_types())
 
     def test_back_ids_resolve_and_every_back_is_used(self):
@@ -295,9 +295,12 @@ class TestMissionsIntegrity:
     def test_epilogues_missions_resolve(self, entry, all_data):
         assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MISSIONS], entry['mission_id']) is not None
 
-    def test_skirmish_and_raid_missions_have_a_map(self):
-        assert all(m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS)
-                   if m['content_type'] in (CONTENT_TYPES.SKIRMISH_MISSION, CONTENT_TYPES.RAID_MISSION))
+    def test_every_mission_has_a_map(self):
+        assert [m['id'] for m in get_data(CONTENT_TYPES.MISSIONS) if not m['map_id']] == []
+
+    def test_maps_are_named_once(self):
+        names = [m['name'] for m in get_data(CONTENT_TYPES.MAP)]
+        assert len(names) == len(set(names))
 
     def test_maps_reach_products_through_their_missions(self):
         """A map used by a mission is in its missions' products, so it has no source-contents rows of its own (only a
@@ -312,6 +315,27 @@ class TestMissionsIntegrity:
         """Rows with choice: true are a pick-one group, so a mission has none or at least two."""
         choices = Counter(r['mission_id'] for r in get_data(CONTENT_TYPES.MISSION_REWARDS) if r['choice'])
         assert all(count >= 2 for count in choices.values())
+
+
+class TestMapTilesIntegrity:
+    """Map tiles and the tile sides each map is built from (docs/data-model.md → Maps and map tiles)."""
+
+    def test_tiles_are_named_once_and_in_a_product(self):
+        tiles = get_data(CONTENT_TYPES.MAP_TILES)
+        names = [t['name'] for t in tiles]
+        assert len(names) == len(set(names))
+        in_products = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+                       if r['content_type'] == CONTENT_TYPES.MAP_TILES}
+        assert [t['name'] for t in tiles if t['id'] not in in_products] == []
+
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MAP_LAYOUTS))
+    def test_layouts_resolve(self, entry, all_data):
+        assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP], entry['map_id']) is not None
+        assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP_TILES], entry['tile_id']) is not None
+
+    def test_layouts_dont_repeat(self):
+        rows = [(r['map_id'], r['tile_id'], r['side']) for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)]
+        assert len(rows) == len(set(rows))
 
 
 class TestDeploymentsIntegrity:
