@@ -238,8 +238,8 @@ Guide, Campaign Guide, Campaign Log, FAQ, Tournament Regulations, Organized Play
 document prints it, the FAQ's 4 and the tournament regulations' 3.4, or as its file name gives it, Learn to Play's 17,
 the Skirmish Guide's 6 and the Fundamental Event Document's 2.1; null when it has none) and `file`, the PDF in the
 repository's `documents/` folder, under the file name FFG published it with. FFG never published the rules sheets: they are the
-maintainer's scans, as 200 DPI PDFs named after the document (`han-solo-rules-sheet.pdf`); the Ahsoka Tano and Thrawn
-packs' aren't scanned yet. The PDFs are in the release zips but not on the explorer's site (GitHub Pages
+maintainer's scans, as 200 DPI PDFs named after the document (`han-solo-rules-sheet.pdf`); every ally pack, villain
+pack and expansion has one. The PDFs are in the release zips but not on the explorer's site (GitHub Pages
 has a size limit), which links to the repository's copy.
 
 A document reaches products in one of two ways, or neither:
