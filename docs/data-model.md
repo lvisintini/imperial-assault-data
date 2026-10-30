@@ -38,9 +38,10 @@ pack.
 `maps` holds every mission's map: the two-player skirmish maps, the four-player ones (Hoth Battlefield, Nal Hutta
 Borderlands, Temple Gardens) and the raid maps. Raids are played with FFG's *Legends of the Alliance* app, which is a
 source of type `App`. A map is in the products its missions are in (see [Missions](#missions)), so maps have no
-`source-contents` rows of their own while a mission uses them (every map, today). Map images come from the
-[Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res files are
-the ones boardwars serves.
+`source-contents` rows of their own while a mission uses them (every map, today). Skirmish and raid map images come
+from the [Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res
+files are the ones boardwars serves; campaign maps' are drawn from their tiles (see [Maps and map
+tiles](#maps-and-map-tiles)).
 
 Hero class cards, imperial class cards and agenda cards aren't linked to sources directly. They belong to a parent
 record (a hero, an imperial class or an agenda deck) and come with whichever product contains that parent. Missions
@@ -319,7 +320,7 @@ threat, side or agenda mission follows from `content_type`. The index row is wha
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
 - **Map:** `map_id` is the map it's played on. Every mission has one, and a map's products are its missions' products.
-  A campaign mission's map is named after it, and has no image yet (see [Maps and map tiles](#maps-and-map-tiles)).
+  A campaign mission's map is named after it (see [Maps and map tiles](#maps-and-map-tiles)).
 - **Rewards:** `mission-rewards` lists what winning gives, one row per reward, polymorphic like `source-contents`:
   `content_type` + `content_id` name a reward or deployment card, or both are null and `credits` is true. Rows with
   `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
@@ -376,9 +377,9 @@ erDiagram
 ## Maps and map tiles
 
 `maps` holds every mission's map. Skirmish, four-player and raid maps have an image (from the Skirmish Map Project).
-Campaign maps, one per campaign mission and named after it, have none yet (`image` null). Five campaign missions
-have no card, so no `missions` row: each campaign's introduction or finale (Aftermath, Captured, Dark Recon, The
-Battle of Hoth, Trespass). Their maps are in their products directly, through `source-contents`.
+Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Five
+campaign missions have no card, so no `missions` row: each campaign's introduction or finale (Aftermath, Captured,
+Dark Recon, The Battle of Hoth, Trespass). Their maps are in their products directly, through `source-contents`.
 
 Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
@@ -397,6 +398,12 @@ campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuf
 each mission's map sections; the skirmish and raid maps' were entered by the maintainer from their maps (`ia enter`'s
 Map layouts page). Every map has a layout.
 
+The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each tile side placed where
+ImperialCommander2's mission file puts it, at 64 px per square, on a transparent background. They show the tiles only
+(no doors, tokens or figures). A map whose sections replace each other during the mission (Into a Corner, Preventative
+Measures, Trespass, Dangerous Allies, Call to Action, The Final Order, Salvage Operatives) shows its start section;
+the others show every section. Like the tiles, a campaign map's small image is the same file as its large one.
+
 ```mermaid
 erDiagram
     missions }o--|| maps : "map_id"
@@ -408,7 +415,7 @@ erDiagram
     maps {
         uuid id PK
         string name
-        string image "null for campaign maps, for now"
+        string image
     }
     map-tiles {
         uuid id PK
