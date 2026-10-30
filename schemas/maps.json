@@ -15,15 +15,8 @@
       "minLength": 1
     },
     "image": {
-      "description": "The file path for this map's image, or null while there is none (the campaign maps, for now).",
-      "oneOf": [
-        {
-          "$ref": "definitions.json#/definitions/image-file-path"
-        },
-        {
-          "type": "null"
-        }
-      ]
+      "description": "The file path for this map's image",
+      "$ref": "definitions.json#/definitions/image-file-path"
     }
   },
   "required": [

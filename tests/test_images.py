@@ -20,8 +20,7 @@ class ImageDefinition:
         )
 
     def filter(self, content_type, entry):
-        # A null image is a record with none yet (a campaign map).
-        return entry.get(self.attr) is not None and all(
+        return all(
             [self.content_type == content_type] + [entry[k] == v for k, v in self.additional_filters.items()]
         )
 
@@ -172,7 +171,7 @@ class TestImages:
         # the explorer reads both sizes of a map or a tile from there.
         root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../images'))
         for entry in get_data_for(content_type)[content_type]:
-            for path in filter(None, (entry[field] for field in fields)):
+            for path in (entry[field] for field in fields):
                 with open(os.path.join(root, 'large', path), 'rb') as large, \
                         open(os.path.join(root, 'small', path), 'rb') as small:
                     assert large.read() == small.read(), path
