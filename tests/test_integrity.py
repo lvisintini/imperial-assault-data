@@ -320,12 +320,23 @@ class TestMissionsIntegrity:
 
     def test_maps_reach_products_through_their_missions(self):
         """A map used by a mission is in its missions' products, so it has no source-contents rows of its own (only a
-        map no mission uses would have them). Every map is in some product."""
+        map no mission uses would have them), except from a Skirmish Map Mat. Every map is in some product."""
+        mats = {s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['type'] == 'Skirmish Map Mat'}
         used = {m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS) if m['map_id']}
         direct = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
-                  if r['content_type'] == CONTENT_TYPES.MAP}
+                  if r['content_type'] == CONTENT_TYPES.MAP and r['source_id'] not in mats}
         assert not used & direct
         assert {m['id'] for m in get_data(CONTENT_TYPES.MAP)} == used | direct
+
+    def test_a_skirmish_map_mat_is_one_skirmish_map(self):
+        """A mat holds exactly one map, used by skirmish missions, and no two mats hold the same map."""
+        mats = {s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['type'] == 'Skirmish Map Mat'}
+        rows = [r for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS) if r['source_id'] in mats]
+        skirmish = {m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS)
+                    if m['content_type'] == CONTENT_TYPES.SKIRMISH_MISSION}
+        assert mats and sorted(r['source_id'] for r in rows) == sorted(mats)
+        assert all(r['content_type'] == CONTENT_TYPES.MAP and r['quantity'] == 1 for r in rows)
+        assert {r['content_id'] for r in rows} <= skirmish and len({r['content_id'] for r in rows}) == len(rows)
 
     def test_a_choice_has_alternatives(self):
         """Rows with choice: true are a pick-one group, so a mission has none or at least two."""

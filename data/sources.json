@@ -498,5 +498,135 @@
     "announced_date": null,
     "release_date": "2017-11-20",
     "image": "sources/legends-of-the-alliance.png"
+  },
+  {
+    "id": "33043be7-5619-4688-b43b-821884bfde05",
+    "name": "Training Ground",
+    "type": "Skirmish Map Mat",
+    "wave": 8,
+    "product_code": "SWI38",
+    "announced_date": "2016-08-05",
+    "release_date": "2016-12-29",
+    "image": "sources/training-ground.png"
+  },
+  {
+    "id": "980ae67e-38de-4f32-a47b-2573199cb568",
+    "name": "Nelvaanian War Zone",
+    "type": "Skirmish Map Mat",
+    "wave": 8,
+    "product_code": "SWI39",
+    "announced_date": "2016-08-05",
+    "release_date": "2016-12-29",
+    "image": "sources/nelvaanian-war-zone.png"
+  },
+  {
+    "id": "a247f4dd-9abf-4d3d-b5a2-0d715f65cedd",
+    "name": "Coruscant Landfill",
+    "type": "Skirmish Map Mat",
+    "wave": 8,
+    "product_code": "SWI40",
+    "announced_date": "2016-08-05",
+    "release_date": "2016-12-29",
+    "image": "sources/coruscant-landfill.png"
+  },
+  {
+    "id": "b9bd2a60-9c24-4891-8e4f-bb75b19f5a8d",
+    "name": "ISB Headquarters",
+    "type": "Skirmish Map Mat",
+    "wave": 9,
+    "product_code": "SWI44",
+    "announced_date": "2017-01-13",
+    "release_date": "2017-05-11",
+    "image": "sources/isb-headquarters.png"
+  },
+  {
+    "id": "3d8ca25b-67d7-42e5-83e9-453e079ac735",
+    "name": "Anchorhead Cantina",
+    "type": "Skirmish Map Mat",
+    "wave": 9,
+    "product_code": "SWI45",
+    "announced_date": "2017-01-13",
+    "release_date": "2017-05-11",
+    "image": "sources/anchorhead-cantina.png"
+  },
+  {
+    "id": "3089e7f6-443a-492d-90dc-63e1a7ff53f6",
+    "name": "Jabba's Palace",
+    "type": "Skirmish Map Mat",
+    "wave": 10,
+    "product_code": "SWI50",
+    "announced_date": "2017-05-04",
+    "release_date": "2017-10-12",
+    "image": "sources/jabbas-palace.png"
+  },
+  {
+    "id": "39130b4c-c31d-4f17-a901-46d20e7c0a56",
+    "name": "Nal Hutta Swamps",
+    "type": "Skirmish Map Mat",
+    "wave": 10,
+    "product_code": "SWI51",
+    "announced_date": "2017-05-04",
+    "release_date": "2017-10-12",
+    "image": "sources/nal-hutta-swamps.png"
+  },
+  {
+    "id": "dbfa2a82-59cc-4b92-92b8-9ad187c254dd",
+    "name": "Mos Eisley Back Alley",
+    "type": "Skirmish Map Mat",
+    "wave": 10,
+    "product_code": "SWI52",
+    "announced_date": "2017-05-04",
+    "release_date": "2017-10-12",
+    "image": "sources/mos-eisley-back-alley.png"
+  },
+  {
+    "id": "b0ad0493-558f-4c33-8e50-4f9602c64466",
+    "name": "Uscru Entertainment District",
+    "type": "Skirmish Map Mat",
+    "wave": 10,
+    "product_code": "SWI53",
+    "announced_date": "2017-05-04",
+    "release_date": "2017-10-12",
+    "image": "sources/uscru-entertainment-district.png"
+  },
+  {
+    "id": "9a913d88-d5ef-4163-ba9f-388f12e66079",
+    "name": "Tarkin Initiative Labs",
+    "type": "Skirmish Map Mat",
+    "wave": 11,
+    "product_code": "SWI59",
+    "announced_date": "2018-04-13",
+    "release_date": "2018-08-23",
+    "image": "sources/tarkin-initiative-labs.png"
+  },
+  {
+    "id": "56afccc3-c9cf-40b3-8874-62e6eaaa6289",
+    "name": "Lothal Wastes",
+    "type": "Skirmish Map Mat",
+    "wave": 11,
+    "product_code": "SWI60",
+    "announced_date": "2018-04-13",
+    "release_date": "2018-08-23",
+    "image": "sources/lothal-wastes.png"
+  },
+  {
+    "id": "e39223dc-8f5a-4709-9ad2-b43b2729c864",
+    "name": "Coruscant Back Alleys",
+    "type": "Skirmish Map Mat",
+    "wave": 11,
+    "product_code": "SWI61",
+    "announced_date": "2018-04-13",
+    "release_date": "2018-08-23",
+    "image": "sources/coruscant-back-alleys.png"
+  },
+  {
+    "id": "2bd57b98-5930-4733-9891-374b6d0fbfa5",
+    "name": "Endor Defense Station",
+    "type": "Skirmish Map Mat",
+    "wave": 11,
+    "product_code": "SWI62",
+    "announced_date": "2018-04-13",
+    "release_date": "2018-08-23",
+    "image": "sources/endor-defense-station.png"
   }
 ]

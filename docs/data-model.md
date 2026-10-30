@@ -20,7 +20,7 @@ Bossk; the Bossk pack now lists the one (Mercenary) Bossk, card 16.
 
 ## Products and their contents
 
-`sources` are the products (core game, expansions, ally and villain packs). `source-contents` is a join table that
+`sources` are the products (core game, expansions, ally and villain packs, skirmish map mats). `source-contents` is a join table that
 maps each product to the records it contains. It is polymorphic: `content_type` names the target file and
 `content_id` is the `id` of the record in it. A record can appear in more than one product (e.g. a deployment card
 reprinted in a later pack). `quantity` is how many copies of it the product has: the Core Set has two of 15 command
@@ -38,7 +38,13 @@ pack.
 `maps` holds every mission's map: the two-player skirmish maps, the four-player ones (Hoth Battlefield, Nal Hutta
 Borderlands, Temple Gardens) and the raid maps. Raids are played with FFG's *Legends of the Alliance* app, which is a
 source of type `App`. A map is in the products its missions are in (see [Missions](#missions)), so maps have no
-`source-contents` rows of their own while a mission uses them (every map, today). Skirmish and raid map images come
+`source-contents` rows of their own while a mission uses them (every map, today), with one exception: FFG also sold
+13 skirmish maps on their own, as neoprene mats with their own product codes (SWI38 Training Ground to SWI62 Endor
+Defense Station). Each is a source of type `Skirmish Map Mat` with one `source-contents` row straight to its map, so
+those maps are reached both through their missions' products and through their mat. A mat's `wave` and dates are
+those the wiki's main page lists it under (waves 8 to 11), as for every other source; the mats' own wiki pages give
+release dates that don't fit their waves, and aren't used. Mat images come from FFG's product pages, as the Wayback Machine archived them
+(boardwars has none). Skirmish and raid map images come
 from the [Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res
 files are the ones boardwars serves; campaign maps' are drawn from their tiles (see [Maps and map
 tiles](#maps-and-map-tiles)).
