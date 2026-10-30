@@ -33,8 +33,11 @@
       }
     },
     "type": {
-      "description": "Upgrade type",
-      "$ref": "definitions.json#/definitions/buff-type"
+      "description": "Upgrade type: an item.",
+      "allOf": [
+        {"$ref": "definitions.json#/definitions/buff-type"},
+        {"enum": ["Armor", "Equipment", "Melee Weapon", "Melee Weapon Modification", "Ranged Weapon", "Ranged Weapon Modification"]}
+      ]
     },
     "tier": {
       "type": "integer",

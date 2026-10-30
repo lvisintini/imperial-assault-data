@@ -125,11 +125,12 @@
     },
     "buff-type": {
       "type": "string",
-      "description": "Upgrade/Reward/Feat type.",
+      "description": "A hero class, Imperial class, reward or upgrade card's type: an item's (Armor, Equipment, a weapon or a weapon modification), a Group Attachment (attached to an Imperial deployment group), or Feat for every other card. Each collection's schema allows its own values.",
       "enum": [
         "Armor",
         "Equipment",
         "Feat",
+        "Group Attachment",
         "Melee Weapon",
         "Melee Weapon Modification",
         "Ranged Weapon",

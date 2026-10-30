@@ -109,6 +109,7 @@ erDiagram
         uuid id PK
         uuid class_id FK
         string name
+        string type "Feat, Group Attachment"
     }
     command-cards {
         uuid id PK
@@ -128,6 +129,7 @@ erDiagram
     reward-cards {
         uuid id PK
         string name
+        string type "an item, Feat, Group Attachment"
         string class "Regular, Boon, Bane"
         string for "Imperial player, Rebel players"
     }
@@ -177,6 +179,17 @@ the cards the spec lacks (Wave 11, a few later command cards, the companions, ca
 Six cards keep the spec's own spellings instead, as a key must to interoperate: `furyofkashyyk`, `sarlacsweep`,
 `temporaryallianceempire`, `tempoaryalliancescum`, `lukeskywalker` and `lukeskywalkerjedi` (`TestCanonicalNames`
 lists them).
+
+Hero class, Imperial class, reward and upgrade cards have a `type`, from one list in `definitions.json` (`buff-type`)
+of which each collection's schema allows its own values:
+- an item's type (Armor, Equipment, Melee Weapon, Ranged Weapon and their modifications): upgrade cards, and some hero
+  class and reward cards;
+- Group Attachment: a card attached to an Imperial deployment group ("Attach this card to a deployment card"), among
+  the Imperial class cards and the Imperial player's reward cards;
+- Feat: every other hero class, Imperial class and reward card.
+
+Whose card it is comes from its collection and, for reward cards, `for`; how its abilities are used isn't recorded
+yet (#8).
 
 Condition cards come in several products: each expansion or pack that uses a condition includes its own cards. Form
 cards are the Clawdite Shapeshifter's alternative forms: each is `form-of` (in [Record links](#record-links)) both

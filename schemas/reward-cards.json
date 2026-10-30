@@ -40,8 +40,11 @@
       ]
     },
     "type": {
-      "description": "Reward type",
-      "$ref": "definitions.json#/definitions/buff-type"
+      "description": "Reward type: an item, a Group Attachment (an Imperial player card attached to a deployment group), or Feat.",
+      "allOf": [
+        {"$ref": "definitions.json#/definitions/buff-type"},
+        {"enum": ["Armor", "Equipment", "Melee Weapon", "Melee Weapon Modification", "Ranged Weapon", "Ranged Weapon Modification", "Feat", "Group Attachment"]}
+      ]
     },
     "class": {
       "description": "Boon or Bane for Return to Hoth's threat mission rewards (a Boon goes to the Rebel players, a Bane to the Imperial player); Regular for every other reward.",

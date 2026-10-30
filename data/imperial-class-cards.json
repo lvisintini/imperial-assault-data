@@ -4,6 +4,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Assault Armor",
     "xp": 2,
+    "type": "Group Attachment",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-assault-armor.png"
   },
@@ -12,6 +13,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Combat Medic",
     "xp": 1,
+    "type": "Feat",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-combat-medic.png"
   },
@@ -20,6 +22,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Combat Veterans",
     "xp": 4,
+    "type": "Group Attachment",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-combat-veterans.png"
   },
@@ -28,6 +31,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Endless Ranks",
     "xp": 2,
+    "type": "Feat",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-endless-ranks.png"
   },
@@ -36,6 +40,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Riot Grenades",
     "xp": 1,
+    "type": "Group Attachment",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-riot-grenades.png"
   },
@@ -44,6 +49,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Shock Troopers",
     "xp": 3,
+    "type": "Feat",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-shock-troopers.png"
   },
@@ -52,6 +58,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Shock and Awe",
     "xp": 4,
+    "type": "Feat",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-shock-and-awe.png"
   },
@@ -60,6 +67,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Show of Force",
     "xp": null,
+    "type": "Feat",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-show-of-force.png"
   },
@@ -68,6 +76,7 @@
     "class_id": "c027a3f1-5733-5e3c-84c6-914d6d7f8a49",
     "name": "Sustained Fire",
     "xp": 3,
+    "type": "Feat",
     "back_id": "edb2aa29-0ae8-5579-aec9-b3d174892c5e",
     "image": "imperial-class-cards/military-might-sustained-fire.png"
   },
@@ -76,6 +85,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Field General",
     "xp": 3,
+    "type": "Group Attachment",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-field-general.png"
   },
@@ -84,6 +94,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Field Officer",
     "xp": null,
+    "type": "Group Attachment",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-field-officer.png"
   },
@@ -92,6 +103,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Imperial Dedication",
     "xp": 3,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-imperial-dedication.png"
   },
@@ -100,6 +112,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Lead By Example",
     "xp": 4,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-lead-by-example.png"
   },
@@ -108,6 +121,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Noble Sacrifice",
     "xp": 2,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-noble-sacrifice.png"
   },
@@ -116,6 +130,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Optimal Tactics",
     "xp": 4,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-optimal-tactics.png"
   },
@@ -124,6 +139,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Press On",
     "xp": 1,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-press-on.png"
   },
@@ -132,6 +148,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Strategic Planning",
     "xp": 2,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-strategic-planning.png"
   },
@@ -140,6 +157,7 @@
     "class_id": "69863b54-c763-5e8b-ac75-8e93d8f6fc0e",
     "name": "Supervisory Agent",
     "xp": 1,
+    "type": "Feat",
     "back_id": "fe4a4072-adc9-50fa-ad8f-0de005158a42",
     "image": "imperial-class-cards/inspiring-leadership-supervisory-agent.png"
   },
@@ -148,6 +166,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Armor Corps",
     "xp": 1,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-armor-corps.png"
   },
@@ -156,6 +175,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Automated Repairs",
     "xp": 1,
+    "type": "Group Attachment",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-automated-repairs.png"
   },
@@ -164,6 +184,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Explosive Entry",
     "xp": 2,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-explosive-entry.png"
   },
@@ -172,6 +193,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Explosive Munitions",
     "xp": null,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-explosive-munitions.png"
   },
@@ -180,6 +202,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Heavy Firepower",
     "xp": 2,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-heavy-firepower.png"
   },
@@ -188,6 +211,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Mortar",
     "xp": 3,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-mortar.png"
   },
@@ -196,6 +220,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Power to Shields",
     "xp": 4,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-power-to-shields.png"
   },
@@ -204,6 +229,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Rapid Dominance",
     "xp": 4,
+    "type": "Feat",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-rapid-dominance.png"
   },
@@ -212,6 +238,7 @@
     "class_id": "7c103ae6-5b29-5175-b927-ff81dbb065ce",
     "name": "Reactive Armor",
     "xp": 3,
+    "type": "Group Attachment",
     "back_id": "4a1d8174-4206-570b-a6db-a8e6e17e0286",
     "image": "imperial-class-cards/armored-onslaught-reactive-armor.png"
   },
@@ -220,6 +247,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Assassins",
     "xp": 3,
+    "type": "Group Attachment",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-assassins.png"
   },
@@ -228,6 +256,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Exacting Strike",
     "xp": 3,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-exacting-strike.png"
   },
@@ -236,6 +265,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Find the Weakness",
     "xp": 4,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-find-the-weakness.png"
   },
@@ -244,6 +274,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Knowledge of Attack",
     "xp": 2,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-knowledge-of-attack.png"
   },
@@ -252,6 +283,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Pinpoint Accuracy",
     "xp": 1,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-pinpoint-accuracy.png"
   },
@@ -260,6 +292,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Sharpshooters",
     "xp": 1,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-sharpshooters.png"
   },
@@ -268,6 +301,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Single-Minded",
     "xp": 4,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-single-minded.png"
   },
@@ -276,6 +310,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Strike Force",
     "xp": null,
+    "type": "Group Attachment",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-strike-force.png"
   },
@@ -284,6 +319,7 @@
     "class_id": "7b9fdff6-7298-56dc-9533-3727ef6bebd9",
     "name": "Versatile Attack",
     "xp": 2,
+    "type": "Feat",
     "back_id": "519c3edf-3aba-5475-bef0-20ef6684d5b4",
     "image": "imperial-class-cards/precision-training-versatile-attack.png"
   },
@@ -292,6 +328,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Execution Squad",
     "xp": 3,
+    "type": "Group Attachment",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-execution-squad.png"
   },
@@ -300,6 +337,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "In the Shadows",
     "xp": null,
+    "type": "Feat",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-in-the-shadows.png"
   },
@@ -308,6 +346,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Shadow Armor",
     "xp": 2,
+    "type": "Feat",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-shadow-armor.png"
   },
@@ -316,6 +355,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Shadow Corps",
     "xp": 1,
+    "type": "Feat",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-shadow-corps.png"
   },
@@ -324,6 +364,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Stealth",
     "xp": 1,
+    "type": "Group Attachment",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-stealth.png"
   },
@@ -332,6 +373,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Strategic Redeployment",
     "xp": 3,
+    "type": "Feat",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-strategic-redeployment.png"
   },
@@ -340,6 +382,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Surprise Attack",
     "xp": 2,
+    "type": "Feat",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-surprise-attack.png"
   },
@@ -348,6 +391,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "True Shadow",
     "xp": 4,
+    "type": "Group Attachment",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-true-shadow.png"
   },
@@ -356,6 +400,7 @@
     "class_id": "7959f197-28c8-57a4-be06-4d87aea5ec58",
     "name": "Versatility",
     "xp": 4,
+    "type": "Feat",
     "back_id": "7dc811c2-3cd1-5418-a5bd-1e4600f456fe",
     "image": "imperial-class-cards/imperial-black-ops-versatility.png"
   },
@@ -364,6 +409,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Cheap Shot",
     "xp": 2,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-cheap-shot.png"
   },
@@ -372,6 +418,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Guild Hunters",
     "xp": 4,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-guild-hunters.png"
   },
@@ -380,6 +427,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Most Wanted",
     "xp": 4,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-most-wanted.png"
   },
@@ -388,6 +436,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Nowhere to Hide",
     "xp": 3,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-nowhere-to-hide.png"
   },
@@ -396,6 +445,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Nowhere to Run",
     "xp": 3,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-nowhere-to-run.png"
   },
@@ -404,6 +454,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Savage Motivation",
     "xp": 2,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-savage-motivation.png"
   },
@@ -412,6 +463,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Scouted",
     "xp": 1,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-scouted.png"
   },
@@ -420,6 +472,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Vendetta",
     "xp": 1,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-vendetta.png"
   },
@@ -428,6 +481,7 @@
     "class_id": "a1c6e6b8-3f3a-5253-976d-1e9ce252fcfc",
     "name": "Wanted Dead",
     "xp": null,
+    "type": "Feat",
     "back_id": "f2648356-3838-56ad-9b45-25c0b67bcc99",
     "image": "imperial-class-cards/hutt-mercenaries-wanted-dead.png"
   },
@@ -436,6 +490,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Devastating Legion",
     "xp": 4,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-devastating-legion.png"
   },
@@ -444,6 +499,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Fearsome Presence",
     "xp": 1,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-fearsome-presence.png"
   },
@@ -452,6 +508,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Im on the Leader",
     "xp": 2,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-im-on-the-leader.png"
   },
@@ -460,6 +517,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Indomitable",
     "xp": 4,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-indomitable.png"
   },
@@ -468,6 +526,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Inspirational",
     "xp": null,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-inspirational.png"
   },
@@ -476,6 +535,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Leave Them to Me",
     "xp": 3,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-leave-them-to-me.png"
   },
@@ -484,6 +544,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Powerful Foes",
     "xp": null,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-powerful-foes.png"
   },
@@ -492,6 +553,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Prepare the Ambush",
     "xp": 1,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-prepare-the-ambush.png"
   },
@@ -500,6 +562,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Punishing Force",
     "xp": 3,
+    "type": "Feat",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-punishing-force.png"
   },
@@ -508,6 +571,7 @@
     "class_id": "b6d3848b-67e7-5a54-9a27-084405fe51fd",
     "name": "Ringleader",
     "xp": 2,
+    "type": "Group Attachment",
     "back_id": "d0998fe9-e7a3-5a7f-aeb5-6a6833362652",
     "image": "imperial-class-cards/nemeses-ringleader.png"
   },
@@ -516,6 +580,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Executioner",
     "xp": 3,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-executioner.png"
   },
@@ -524,6 +589,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Exploit Weakness",
     "xp": 2,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-exploit-weakness.png"
   },
@@ -532,6 +598,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Heavy Pressure",
     "xp": 2,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-heavy-pressure.png"
   },
@@ -540,6 +607,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "No Quarter",
     "xp": 4,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-no-quarter.png"
   },
@@ -548,6 +616,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Oppression",
     "xp": 4,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-oppression.png"
   },
@@ -556,6 +625,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Prey Upon Doubt",
     "xp": null,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-prey-upon-doubt.png"
   },
@@ -564,6 +634,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Savage Weaponry",
     "xp": 1,
+    "type": "Group Attachment",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-savage-weaponry.png"
   },
@@ -572,6 +643,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Surgical Strike",
     "xp": 1,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-surgical-strike.png"
   },
@@ -580,6 +652,7 @@
     "class_id": "84f5b7d0-8513-5114-af30-ae199892e82f",
     "name": "Weary Target",
     "xp": 3,
+    "type": "Feat",
     "back_id": "98daced2-1971-5152-b383-6a57a7d795cb",
     "image": "imperial-class-cards/subversive-tactics-weary-target.png"
   },
@@ -588,6 +661,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Adaptive Weapons",
     "xp": 4,
+    "type": "Feat",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-adaptive-weapons.png"
   },
@@ -596,6 +670,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Arc Blasters",
     "xp": 3,
+    "type": "Group Attachment",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-arc-blasters.png"
   },
@@ -604,6 +679,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Cloaking Device",
     "xp": 3,
+    "type": "Group Attachment",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-cloaking-device.png"
   },
@@ -612,6 +688,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Experimental Arms",
     "xp": null,
+    "type": "Group Attachment",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-experimental-arms.png"
   },
@@ -620,6 +697,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Failsafe",
     "xp": 2,
+    "type": "Feat",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-failsafe.png"
   },
@@ -628,6 +706,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Hidden Detonators",
     "xp": 2,
+    "type": "Feat",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-hidden-detonators.png"
   },
@@ -636,6 +715,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Jetpacks",
     "xp": 1,
+    "type": "Group Attachment",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-jetpacks.png"
   },
@@ -644,6 +724,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Superior Augments",
     "xp": 4,
+    "type": "Feat",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-superior-augments.png"
   },
@@ -652,6 +733,7 @@
     "class_id": "524a5309-abf2-5b31-be49-af28805ded9d",
     "name": "Technical Support",
     "xp": 1,
+    "type": "Feat",
     "back_id": "28ac4013-e517-530e-bcd3-fb4918f9fbf6",
     "image": "imperial-class-cards/technological-superiority-technical-support.png"
   },
@@ -659,6 +741,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Dark Resurgence",
     "xp": 1,
+    "type": "Feat",
     "id": "ab982516-08f4-5c30-9e5f-577f653ebb93",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-dark-resurgence.png"
@@ -667,6 +750,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Embrace Anger",
     "xp": 2,
+    "type": "Feat",
     "id": "c0565820-4e7f-5c87-9207-a81a2b9d748d",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-embrace-anger.png"
@@ -675,6 +759,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Embrace Fear",
     "xp": 1,
+    "type": "Feat",
     "id": "0e47ad02-9be0-5cd5-84dc-12a3c257bf94",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-embrace-fear.png"
@@ -683,6 +768,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Embrace Hate",
     "xp": 3,
+    "type": "Feat",
     "id": "f670e7e6-e0ba-54fa-8726-5c0b341e032e",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-embrace-hate.png"
@@ -691,6 +777,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Embrace Suffering",
     "xp": 4,
+    "type": "Feat",
     "id": "8df242fe-741b-52d8-813b-bb9f1f825ac5",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-embrace-suffering.png"
@@ -699,6 +786,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Manifest Agression",
     "xp": null,
+    "type": "Feat",
     "id": "580f7528-ef94-5a25-aa11-5dd23396afaf",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-manifest-agression.png"
@@ -707,6 +795,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Supernatural Vigor",
     "xp": 2,
+    "type": "Feat",
     "id": "35187a81-d371-52b7-a32a-5bedc3be172e",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-supernatural-vigor.png"
@@ -715,6 +804,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "The Power of Passion",
     "xp": 4,
+    "type": "Feat",
     "id": "ae147caa-a815-5f51-bc92-75f8e09eb069",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-the-power-of-passion.png"
@@ -723,6 +813,7 @@
     "class_id": "82f414bc-c1fd-5afa-91f2-4557bc364019",
     "name": "Unnatural Abilities",
     "xp": 3,
+    "type": "Group Attachment",
     "id": "500ec469-170c-5032-9150-2d543c7e7aaa",
     "back_id": "a9dd8c40-8eb2-5cb3-96ff-661770c7b9e1",
     "image": "imperial-class-cards/power-of-the-dark-side-unnatural-abilities.png"
@@ -731,6 +822,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Active Surveillance",
     "xp": null,
+    "type": "Feat",
     "id": "6a2ffdc5-e845-5348-a7a2-2e0bb059845e",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-active-surveillance.png"
@@ -739,6 +831,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Blaster Emplacements",
     "xp": 1,
+    "type": "Feat",
     "id": "c926ebb8-ad80-599c-b117-f8d1be8523d0",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-blaster-emplacements.png"
@@ -747,6 +840,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Electromagnetic Disruptors",
     "xp": 3,
+    "type": "Feat",
     "id": "ecf4186e-ef52-54f6-bb61-50b62f36c39e",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-electromagnetic-disruptors.png"
@@ -755,6 +849,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Infrared Scanners",
     "xp": 3,
+    "type": "Feat",
     "id": "038ac081-2cd5-5238-9475-3d5a81798c7f",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-infrared-scanners.png"
@@ -763,6 +858,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Mechanical Protocol",
     "xp": 2,
+    "type": "Feat",
     "id": "568984d3-4f42-566f-9939-5d98c16b2738",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-mechanical-protocol.png"
@@ -771,6 +867,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Overclock",
     "xp": 4,
+    "type": "Feat",
     "id": "f95bea95-4ec5-5b16-b8ff-2183ec08ab50",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-overclock.png"
@@ -779,6 +876,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Remote Activator",
     "xp": 2,
+    "type": "Group Attachment",
     "id": "31c5710c-4b0a-5fc1-a8c2-fad5516db0e1",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-remote-activator.png"
@@ -787,6 +885,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Shielded",
     "xp": 1,
+    "type": "Feat",
     "id": "3bec5a64-90fd-5e66-ae57-d8de0f8c26f8",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-shielded.png"
@@ -795,6 +894,7 @@
     "class_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
     "name": "Targeting Sensors",
     "xp": 4,
+    "type": "Feat",
     "id": "475db8c6-1df8-56ab-b9d2-d9bf8791f09f",
     "back_id": "eb19bb99-8cd9-540f-92c9-d25f5f0f929b",
     "image": "imperial-class-cards/reactive-defenses-targeting-sensors.png"
@@ -804,6 +904,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Commence Landing",
     "xp": null,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-commence-landing.png"
   },
@@ -812,6 +913,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Personal Flagship",
     "xp": 1,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-personal-flagship.png"
   },
@@ -820,6 +922,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Redouble Our Efforts",
     "xp": 1,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-redouble-our-efforts.png"
   },
@@ -828,6 +931,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Implacable",
     "xp": 2,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-implacable.png"
   },
@@ -836,6 +940,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "TIE Landers",
     "xp": 2,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-tie-landers.png"
   },
@@ -844,6 +949,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Tactical Mastery",
     "xp": 3,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-tactical-mastery.png"
   },
@@ -852,6 +958,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "TIE Fighter Patrol",
     "xp": 3,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-tie-fighter-patrol.png"
   },
@@ -860,6 +967,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Indomitable Force",
     "xp": 4,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-indomitable-force.png"
   },
@@ -868,6 +976,7 @@
     "class_id": "31837d35-f02e-556e-a857-20df2f7ccab0",
     "name": "Limitless Arsenal",
     "xp": 4,
+    "type": "Feat",
     "back_id": "e2e82331-d105-5a17-90b2-08a43cba6d97",
     "image": "imperial-class-cards/overwhelming-oppression-limitless-arsenal.png"
   }

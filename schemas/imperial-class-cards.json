@@ -26,6 +26,13 @@
       "description": "The file path for this imperial class card's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
     },
+    "type": {
+      "description": "Imperial class card type: a Group Attachment (attached to a deployment group), or Feat.",
+      "allOf": [
+        {"$ref": "definitions.json#/definitions/buff-type"},
+        {"enum": ["Feat", "Group Attachment"]}
+      ]
+    },
     "xp": {
       "description": "Imperial class xp cost",
       "oneOf":[
@@ -46,7 +53,8 @@
     "back_id",
     "image",
     "class_id",
-    "xp"
+    "xp",
+    "type"
   ],
   "additionalProperties": false
 }

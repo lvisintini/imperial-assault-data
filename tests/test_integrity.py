@@ -437,10 +437,16 @@ class TestHeroClassCardIntegrity:
 class TestRewardIntegrity:
 
     @pytest.mark.parametrize("entry", [
-        d for d in get_data(CONTENT_TYPES.REWARD) if d['type'] == BUFF_TYPES.FEAT
+        d for d in get_data(CONTENT_TYPES.REWARD) if d['type'] in (BUFF_TYPES.FEAT, BUFF_TYPES.GROUP_ATTACHMENT)
     ])
     def test_feat_has_no_traits(self, entry):
         assert entry['traits'] is None
+
+    @pytest.mark.parametrize("entry", [
+        d for d in get_data(CONTENT_TYPES.REWARD) if d['type'] == BUFF_TYPES.GROUP_ATTACHMENT
+    ], ids=lambda r: r['name'])
+    def test_group_attachments_are_for_the_imperial_player(self, entry):
+        assert entry['for'] == 'Imperial player'
 
     @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.REWARD), ids=lambda r: r['name'])
     def test_boons_are_for_the_rebels_and_banes_for_the_imperial_player(self, entry):
