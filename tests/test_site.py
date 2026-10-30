@@ -11,9 +11,15 @@ def get_site_js(name):
 
 
 def site_types():
-    """content type → its entry's source text in types.js."""
+    """content type (or page) → its entry's source text in types.js."""
     entries = get_site_js('types.js').split("file: '")[1:]
     return {entry.split("'", 1)[0]: entry for entry in entries}
+
+
+def data_type(page, entry):
+    """The content type a types.js entry shows: its own, or the one it shows some records of (`of`)."""
+    of = re.search(r"of: '([a-z-]+)'", entry)
+    return of.group(1) if of else page
 
 
 def strings(js_list):
@@ -25,8 +31,20 @@ class TestSite:
 
     def test_types_cover_every_content_type(self):
         files = re.findall(r"file: '([a-z-]+)'", get_site_js('types.js'))
-        assert len(files) == len(set(files))
-        assert set(files) == set(CONTENT_TYPES.as_list) == set(site_types())
+        assert len(files) == len(set(files)) == len(site_types())
+        pages = {page for page, entry in site_types().items() if data_type(page, entry) != page}
+        assert set(files) - pages == set(CONTENT_TYPES.as_list)
+        assert {data_type(page, site_types()[page]) for page in pages} <= set(CONTENT_TYPES.as_list)
+
+    def test_submenus_are_under_top_level_types(self):
+        """A `menu` names a visible type that is in no submenu itself."""
+        types = site_types()
+        for page, entry in types.items():
+            menu = re.search(r"menu: '([a-z-]+)'", entry)
+            if menu:
+                parent = types[menu.group(1)]
+                assert 'hidden: true' not in entry and 'hidden: true' not in parent, page
+                assert "menu: '" not in parent, (page, menu.group(1))
 
     def test_foreign_keys_cover_every_id_field(self):
         """Every uuid field is an FK in FKS, the card back (BACK), or a link of MISSIONS, REWARDS, LINKS or LAYOUTS
@@ -71,17 +89,20 @@ class TestSite:
             set(properties['relation']['enum'] + properties['reverse_relation']['enum'])
 
     def test_default_sorts_use_schema_fields(self):
-        for content_type, entry in site_types().items():
+        """sort names schema fields; without one, lists sort by product (sort.js PRODUCT), then name."""
+        for page, entry in site_types().items():
             if 'hidden: true' in entry:
                 continue
             sort = re.search(r"sort: \[([^\]]*)\]", entry)
             keys = [key.removeprefix('-') for key in strings(sort.group(1))] if sort else ['name']
-            assert set(keys) <= set(get_schema(content_type)['properties']), content_type
+            assert set(keys) <= set(get_schema(data_type(page, entry))['properties']), page
+        assert "defaultSort = type => TYPE[type].sort ?? [PRODUCT, 'name']" in get_site_js('sort.js')
 
     def test_facet_config_uses_schema_fields(self):
         """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave' (facets.js)."""
         definitions = get_schema('definitions')['definitions']
-        for content_type, entry in site_types().items():
+        for page, entry in site_types().items():
+            content_type = data_type(page, entry)
             facets = re.search(r"facets: \[(.*?)\n    \],", entry, re.S)
             derived = {}
             if facets:

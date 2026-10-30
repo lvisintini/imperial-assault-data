@@ -125,18 +125,66 @@ input[type="search"] {
 .choice { display: flex; align-items: baseline; gap: 6px; font-size: 0.875rem; cursor: pointer; }
 .choice .count { margin-left: auto; font-size: 0.75rem; }
 .choice.empty { color: var(--muted); cursor: default; }
-.range { display: flex; align-items: center; gap: 6px; }
-.range input {
-  width: 100%;
-  min-width: 0;
-  padding: 4px 6px;
-  font: inherit;
-  font-size: 0.875rem;
-  color: var(--text);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+/* Two-knob sliders (views.js rangeSlider): two range inputs on one track; only their knobs take the pointer. The
+   span between the knobs (--lo to --hi) is filled in. */
+.range-value { display: block; font-size: 0.875rem; }
+.dual-range {
+  --knob: 16px;
+  position: relative;
+  display: block;
+  height: 24px;
+  margin: 0 calc(var(--knob) / 2);
 }
+.dual-range::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--border) var(--lo), var(--accent) var(--lo), var(--accent) var(--hi),
+    var(--border) var(--hi));
+}
+.dual-range input {
+  position: absolute;
+  top: 0;
+  left: calc(var(--knob) / -2);
+  width: calc(100% + var(--knob));
+  height: 100%;
+  margin: 0;
+  background: none;
+  pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.dual-range input::-webkit-slider-runnable-track { background: none; border: 0; }
+.dual-range input::-moz-range-track { background: none; border: 0; }
+.dual-range input::-webkit-slider-thumb {
+  width: var(--knob);
+  height: var(--knob);
+  pointer-events: auto;
+  cursor: pointer;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.dual-range input::-moz-range-thumb {
+  box-sizing: border-box;
+  width: var(--knob);
+  height: var(--knob);
+  pointer-events: auto;
+  cursor: pointer;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+}
+.dual-range input:focus-visible { outline: none; }
+.dual-range input:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--accent-soft); }
+.dual-range input:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px var(--accent-soft); }
 
 @media (min-width: 900px) {
   .browse { grid-template-columns: 240px minmax(0, 1fr); }
@@ -164,14 +212,18 @@ input[type="search"] {
   object-fit: contain;
 }
 
+/* The navigation (app.js): items wrap onto more lines rather than scroll, so their submenus aren't clipped. */
 .nav {
+  position: relative;
+  z-index: 20;
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
   padding: 8px var(--gutter);
-  overflow-x: auto;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
+.nav-item { position: relative; display: flex; align-items: center; border-radius: 999px; }
 .nav a {
   flex: none;
   padding: 4px 10px;
@@ -181,7 +233,38 @@ input[type="search"] {
   text-decoration: none;
 }
 .nav a:hover { color: var(--text); }
-.nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+.nav a[aria-current="page"], .nav-item.current > .nav-link { color: var(--accent); background: var(--accent-soft); }
+.nav-more {
+  margin-left: -6px;
+  padding: 4px 8px 4px 2px;
+  font: inherit;
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.nav-more:hover, .nav-item.open .nav-more { color: var(--text); }
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+}
+.nav-item.flip .submenu { left: auto; right: 0; }
+.submenu a { border-radius: 4px; }
+.nav-item.open .submenu { display: flex; }
+@media (hover: hover) {
+  .nav-item:hover .submenu { display: flex; }
+}
 
 main {
   max-width: 1200px;
@@ -220,6 +303,16 @@ main {
 }
 .thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .no-image { color: var(--muted); font-size: 0.8rem; }
+.thumb .icon { display: flex; color: var(--muted); }
+.thumb .icon svg { width: 72px; height: 72px; }
+.emblem.rebel { color: #c0392b; }
+.emblem.imperial { color: #5b6b7d; }
+.emblem.mercenary { color: #b7791f; }
+@media (prefers-color-scheme: dark) {
+  .emblem.rebel { color: #ef6a5e; }
+  .emblem.imperial { color: #9fb0c3; }
+  .emblem.mercenary { color: #e0a84a; }
+}
 .tile-title { font-weight: 600; font-size: 0.9rem; overflow-wrap: anywhere; }
 .tile-sub { color: var(--muted); font-size: 0.8rem; }
 .copies { color: var(--muted); font-weight: normal; white-space: nowrap; }

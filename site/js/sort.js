@@ -1,15 +1,20 @@
 import {TYPE} from './types.js';
 
-// Sort keys are field names, '-' first for descending: ['-unique', 'name'].
-export const defaultSort = type => TYPE[type].sort ?? ['name'];
+// Sort keys are field names, '-' first for descending: ['-unique', 'name']. PRODUCT isn't a field: it's a record's
+// earliest product's release date, then product code (ref.release, data.js), and the default for types without a
+// `sort` of their own (types.js); records in no product come last.
+export const PRODUCT = 'product';
+export const defaultSort = type => TYPE[type].sort ?? [PRODUCT, 'name'];
 
 const SCALARS = ['string', 'number', 'boolean'];
 
 // Fields worth sorting a type by: plain values only, not lists, image paths, ids or foreign keys.
 export function sortableFields(type, refs) {
   const fields = new Set(refs.flatMap(ref => Object.keys(ref.record)));
-  return [...fields].filter(field => field !== 'id' && !TYPE[type].images.includes(field) && !field.endsWith('_id')
+  const own = [...fields].filter(field => field !== 'id' && !TYPE[type].images.includes(field) && !field.endsWith('_id')
     && refs.every(({record}) => record[field] == null || SCALARS.includes(typeof record[field])));
+  const byProduct = refs.some(ref => ref.release) || defaultSort(type).includes(PRODUCT);
+  return byProduct && !fields.has(PRODUCT) ? [PRODUCT, ...own] : own;
 }
 
 // Keys from a ?sort= value, keeping only the given fields; the type's default when none are left.
@@ -26,6 +31,8 @@ function compareValues(a, b, ranked = []) {
   return rank(a) - rank(b) || (typeof a === 'string' ? a.localeCompare(b, undefined, {numeric: true}) : a - b);
 }
 
+const valueOf = (ref, field) => field === PRODUCT ? ref.release : ref.record[field];
+
 export function sortRefs(refs, keys) {
   const orders = TYPE[refs[0]?.type]?.order ?? {};
   const order = keys.map(key => {
@@ -34,7 +41,7 @@ export function sortRefs(refs, keys) {
   });
   return [...refs].sort((a, b) => {
     for (const {field, sign, ranked} of order) {
-      const x = a.record[field], y = b.record[field];
+      const x = valueOf(a, field), y = valueOf(b, field);
       if (x == null || y == null) {
         if (x != null || y != null) return x == null ? 1 : -1;  // missing values last, in either direction
         continue;
