@@ -2,12 +2,15 @@ import {BACK, FKS, JOIN, LAYOUTS, LINKS, MISSIONS, REWARDS} from './relations.js
 import {TYPES} from './types.js';
 
 export async function load() {
-  const tables = await Promise.all(TYPES.map(async ({file}) => {
+  const tables = await Promise.all(TYPES.filter(t => !t.of).map(async ({file}) => {
     const res = await fetch(`data/${file}.json`);
     if (!res.ok) throw new Error(`data/${file}.json: HTTP ${res.status}`);
     return [file, await res.json()];
   }));
-  return new Db(Object.fromEntries(tables));
+  const db = new Db(Object.fromEntries(tables));
+  // Pages that show some of another type's records (agenda missions): those refs, as they are.
+  for (const t of TYPES.filter(t => t.of)) db.refs[t.file] = db.refs[t.of].filter(ref => t.where(ref.record));
+  return db;
 }
 
 function push(map, key, value) {
@@ -18,7 +21,9 @@ function push(map, key, value) {
 
 // Records are wrapped in refs, {type, key, index, record}: key is the record's id (a UUID), or its array index in
 // source-contents and mission-rewards, which have no ids; index is its position in the file, used to keep a stable
-// order. A missions row's ref also has `card`, the mission card it stands for.
+// order. A missions row's ref also has `card`, the mission card it stands for, and every ref has `release`, its
+// earliest product's release date and product code ("2014-12-15|SWI01"), or null when it's in no product: the default
+// sort's 'product' key (sort.js).
 class Db {
   constructor(tables) {
     this.refs = {};
@@ -47,6 +52,7 @@ class Db {
     this.#linkParents();
     this.#linkChildProducts();
     this.#linkBacks();
+    for (const refs of Object.values(this.refs)) for (const ref of refs) ref.release = this.#release(ref);
   }
 
   get(type, key) {
@@ -56,6 +62,23 @@ class Db {
   // A mission card's products are its missions row's.
   sources(ref) {
     return this.foundIn.get(this.mission.get(ref) ?? ref) ?? [];
+  }
+
+  // The products a record comes in: its own source-contents rows, or its parent's (hero class cards, agenda cards, ...).
+  // A product is its own.
+  productsOf(ref) {
+    if (ref.type === JOIN.parent) return [ref];
+    const own = this.sources(ref);
+    const parent = this.parent.get(ref);
+    return own.length || !parent ? own : this.sources(parent.ref);
+  }
+
+  // Products without a code of their own (the packs inside the Core Set, the app) sort after those released the same
+  // day.
+  #release(ref) {
+    const keys = this.productsOf(ref.card ?? ref)
+      .map(({record}) => `${record.release_date ?? '9999'}|${record.product_code ?? 'SWI99'}`).sort();
+    return keys[0] ?? null;
   }
 
   #linkSources() {

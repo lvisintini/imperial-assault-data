@@ -4,6 +4,43 @@ import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, 
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, title} from './types.js';
 
+// Stand-ins for a missing image (`icon` in types.js): a PDF page, and simple emblems for each affiliation (a cog for
+// the Empire, a bird for the Rebellion, a crosshair for mercenaries).
+const SPOKE = 'M-3.5 -11 L3.5 -11 L6 -25 L-6 -25 Z';
+const ICONS = {
+  pdf: html`<svg viewBox="0 0 48 60" aria-hidden="true">
+    <path d="M4 2h28l12 12v42a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="var(--surface)"
+      stroke="currentColor" stroke-width="2"/>
+    <path d="M32 2v12h12" fill="none" stroke="currentColor" stroke-width="2"/>
+    <rect x="0" y="30" width="40" height="16" rx="2" fill="#c62828"/>
+    <text x="20" y="42.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff"
+      font-family="system-ui, sans-serif">PDF</text>
+  </svg>`,
+  Imperial: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem imperial">
+    <circle r="28" fill="none" stroke="currentColor" stroke-width="4"/>
+    <circle r="8" fill="none" stroke="currentColor" stroke-width="4"/>
+    ${[0, 60, 120, 180, 240, 300].map(a => html`<path d="${SPOKE}" transform="rotate(${a})" fill="currentColor"/>`)}
+  </svg>`,
+  Rebel: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem rebel">
+    <path d="M0 -30 L4 -8 L4 22 L0 30 L-4 22 L-4 -8 Z" fill="currentColor"/>
+    <path d="M7 -22 C27 -12 29 14 11 27 L9 19 C20 9 20 -5 7 -13 Z" fill="currentColor"/>
+    <path d="M-7 -22 C-27 -12 -29 14 -11 27 L-9 19 C-20 9 -20 -5 -7 -13 Z" fill="currentColor"/>
+  </svg>`,
+  Mercenary: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem mercenary">
+    <circle r="20" fill="none" stroke="currentColor" stroke-width="4"/>
+    <path d="M0 -30 V-12 M0 12 V30 M-30 0 H-12 M12 0 H30" stroke="currentColor" stroke-width="4"/>
+    <circle r="4" fill="currentColor"/>
+  </svg>`,
+  Neutral: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem">
+    <circle r="24" fill="none" stroke="currentColor" stroke-width="4"/>
+  </svg>`,
+};
+
+function iconOf(ref) {
+  const icon = TYPE[ref.type].icon;
+  return icon === 'affiliation' ? ICONS[ref.record.affiliation] ?? ICONS.Neutral : ICONS[icon];
+}
+
 const MERMAID_URL = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
 const DATA_MODEL_URL = 'https://github.com/lvisintini/imperial-assault-data/blob/master/docs/data-model.md';
 // Documents' PDFs stay off GitHub Pages: link to the repository's copy, which GitHub shows in its PDF viewer.
@@ -66,15 +103,20 @@ function subtitle(ref, db) {
   }
 }
 
+// A tile's thumbnail: its image, its type's icon, or nothing.
+function thumb(ref, db, none = html`<span class="no-image">No image</span>`) {
+  const path = thumbPath(ref, db);
+  if (path) return html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">`;
+  const icon = iconOf(ref.card ?? ref);
+  return icon ? html`<span class="icon">${icon}</span>` : none;
+}
+
 // copies: how many of it the product shown has (product contents, "Found in"), when more than one.
 function tile(ref, db, copies) {
-  const path = thumbPath(ref, db);
   const peek = peekPath(ref, db);
   const name = title(ref);
   return html`<a class="tile" href="${href(ref)}"${peek ? html` data-peek="${imageUrl('large', peek)}"` : ''}>
-    <span class="thumb">${path
-      ? html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">`
-      : html`<span class="no-image">No image</span>`}</span>
+    <span class="thumb">${thumb(ref, db)}</span>
     <span class="tile-title">${name}${copies > 1 ? html` <span class="copies">×${copies}</span>` : ''}</span>
     <span class="tile-sub">${subtitle(ref, db)}</span>
   </a>`;
@@ -135,16 +177,25 @@ function groupControls(groupable, groups, defaults) {
     </span>`)}${sameKeys(groups, defaults) ? '' : html`<button type="button" data-group-reset>Reset</button>`}`;
 }
 
-// A fieldset per facet: checkboxes (their counts are filled in by the page) or a min/max pair.
+// A range's slider, its knobs at the filter's bounds (the facet's ends when unset), the span between them filled in
+// (--lo and --hi, as percentages of the track).
+function rangeSlider(facet, filter) {
+  const lo = filter?.min ?? facet.min, hi = filter?.max ?? facet.max;
+  const percent = value => ((value - facet.min) / (facet.max - facet.min)) * 100;
+  return html`<span class="range-value" data-range-value="${facet.id}">${lo} – ${hi}</span>
+    <span class="dual-range" data-range="${facet.id}" style="--lo: ${percent(lo)}%; --hi: ${percent(hi)}%">
+      ${[['min', lo, 'at least'], ['max', hi, 'at most']].map(([bound, value, words]) => html`
+        <input type="range" data-facet="${facet.id}" data-bound="${bound}" min="${facet.min}" max="${facet.max}"
+          step="${facet.step}" value="${value}" aria-label="${facet.label}: ${words}">`)}
+    </span>`;
+}
+
+// A fieldset per facet: checkboxes (their counts are filled in by the page) or a two-knob slider.
 function filterPanel(facets, filters) {
   return facets.map(facet => facet.kind === 'range' ? html`
     <fieldset class="facet">
       <legend>${facet.label}</legend>
-      <span class="range">${['min', 'max'].map((bound, i) => html`${i ? html`<span aria-hidden="true">–</span>` : ''}
-        <input type="number" inputmode="numeric" data-facet="${facet.id}" data-bound="${bound}" min="${facet.min}"
-          max="${facet.max}" placeholder="${facet[bound]}" value="${filters[facet.id]?.[bound] ?? ''}"
-          aria-label="${facet.label}: ${i ? 'at most' : 'at least'}">`)}
-      </span>
+      ${rangeSlider(facet, filters[facet.id])}
     </fieldset>` : html`
     <fieldset class="facet${facet.choices.length > 8 ? ' long' : ''}">
       <legend>${facet.label}</legend>
@@ -189,9 +240,8 @@ const section = (heading, count, body) => html`
 export function landing(db) {
   const tiles = VISIBLE.map(t => {
     const first = sorted(db.refs[t.file])[0];
-    const path = first && thumbPath(first, db);
     return html`<a class="tile" href="#/${t.file}">
-      <span class="thumb">${path ? html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">` : ''}</span>
+      <span class="thumb">${first ? thumb(first, db, '') : ''}</span>
       <span class="tile-title">${t.label}</span>
       <span class="tile-sub">${db.refs[t.file].length} records</span>
     </a>`;
@@ -320,7 +370,7 @@ export function index(db, type, params) {
         state.filters = {};
         state.q = input.value = '';
         for (const box of panel?.querySelectorAll('input[type=checkbox]') ?? []) box.checked = false;
-        for (const bound of panel?.querySelectorAll('input[type=number]') ?? []) bound.value = '';
+        for (const facet of facets.filter(f => f.kind === 'range')) showRange(facet, null);
         update();
         input.focus();
       });
@@ -333,19 +383,34 @@ export function index(db, type, params) {
         else chosen.delete(box.dataset.key);
         update();
       });
-      let typing = null;
+      // Redraw a slider for a filter (null: unset), without re-rendering it (the knob being dragged keeps focus).
+      const showRange = (facet, filter) => {
+        const slider = panel.querySelector(`[data-range="${facet.id}"]`);
+        const [low, high] = slider.querySelectorAll('input');
+        low.value = filter?.min ?? facet.min;
+        high.value = filter?.max ?? facet.max;
+        const percent = value => ((Number(value) - facet.min) / (facet.max - facet.min)) * 100;
+        slider.style.setProperty('--lo', `${percent(low.value)}%`);
+        slider.style.setProperty('--hi', `${percent(high.value)}%`);
+        panel.querySelector(`[data-range-value="${facet.id}"]`).textContent = `${low.value} – ${high.value}`;
+      };
+      let sliding = null;
       panel?.addEventListener('input', event => {
-        const bound = event.target.closest('input[type=number]');
-        if (!bound) return;
-        const read = side => {
-          const value = panel.querySelector(`[data-facet="${bound.dataset.facet}"][data-bound="${side}"]`).value;
-          return value === '' ? null : Number(value);
-        };
-        clearTimeout(typing);
-        typing = setTimeout(() => {
-          state.filters[bound.dataset.facet] = {min: read('min'), max: read('max')};
+        const knob = event.target.closest('input[type=range]');
+        if (!knob) return;
+        const facet = facets.find(f => f.id === knob.dataset.facet);
+        const [low, high] = panel.querySelector(`[data-range="${facet.id}"]`).querySelectorAll('input');
+        // The knobs don't pass each other: the one moved stops at the other.
+        if (Number(low.value) > Number(high.value)) knob.value = knob === low ? high.value : low.value;
+        const min = Number(low.value), max = Number(high.value);
+        // A knob at its end of the track sets no bound, so records without a value aren't left out by default.
+        const filter = {min: min > facet.min ? min : null, max: max < facet.max ? max : null};
+        showRange(facet, filter);
+        clearTimeout(sliding);
+        sliding = setTimeout(() => {
+          state.filters[facet.id] = filter;
           update();
-        }, 250);
+        }, 150);
       });
       // Open beside the list on wide screens; on narrow ones only when filters are already set.
       const wide = globalThis.matchMedia?.('(min-width: 900px)').matches;
@@ -505,7 +570,8 @@ export function detail(db, ref) {
 export function search(db, query) {
   const q = query.trim().toLowerCase();
   // missions rows are named after their cards, which are found already.
-  const matches = q ? VISIBLE.filter(t => t.file !== 'missions')
+  // ... and agenda missions are agenda cards.
+  const matches = q ? VISIBLE.filter(t => t.file !== 'missions' && !t.of)
     .flatMap(t => db.refs[t.file].filter(ref => title(ref).toLowerCase().includes(q))) : [];
   return {
     title: q ? `Search: ${query}` : 'Search',

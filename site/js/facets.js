@@ -1,13 +1,15 @@
 // Facets: the ways a list page can filter and group a type's records, derived from the records themselves.
 //   choice: records have zero or more of a fixed set of values (a field's values, its traits, its products).
 //           Filtering keeps records with any ticked value; grouping puts a record under each of its values.
-//   range:  records have a number, or none. Filtering keeps records within min..max.
+//   range:  records have a number, or none. Filtering keeps records within min..max, set with a two-knob slider
+//           whose steps are the values' greatest common divisor (credits go in tens).
 // Facets combine with AND, the values ticked within one facet with OR.
-import {JOIN} from './relations.js';
-import {TYPE, fieldLabel, title} from './types.js';
+import {FKS} from './relations.js';
+import {TYPE, TYPES, fieldLabel, fileOf, title} from './types.js';
 
 const SKIPPED = new Set(['id', 'name', 'description', 'iaspec']);
 const MAX_CHOICES = 20;  // more distinct strings than this aren't a facet (e.g. names)
+const MAX_PARENTS = 50;  // a parent facet (hero, Imperial class, agenda deck) with more choices than this isn't one
 export const PRODUCT = 'source';
 export const WAVE = 'wave';
 
@@ -32,15 +34,6 @@ function traitFacet({id, label, trait, yes, no}) {
   return booleanFacet(id, label, of, {keys: ['false', 'true'], headings});
 }
 
-// Products a record comes in: its own source-contents rows, or its parent's (hero class cards, agenda cards, ...).
-// A source is its own product, so the sources page gets the same Wave facet, in place of a range on its wave field.
-function products(ref, db) {
-  if (ref.type === JOIN.parent) return [ref];
-  const own = db.sources(ref);
-  const parent = db.parent.get(ref);
-  return own.length || !parent ? own : db.sources(parent.ref);
-}
-
 function fieldFacet(type, field, refs) {
   const values = refs.map(ref => ref.record[field]).filter(v => v != null);
   if (!values.length) return null;
@@ -52,8 +45,9 @@ function fieldFacet(type, field, refs) {
     return booleanFacet(field, label, ({record}) => record[field] == null ? [] : [String(record[field])]);
   }
   if (values.every(v => typeof v === 'number')) {
-    return {id: field, label, kind: 'range', of: ({record}) => record[field] ?? null,
-      min: Math.min(...values), max: Math.max(...values)};
+    const min = Math.min(...values), max = Math.max(...values);
+    if (min === max) return null;
+    return {id: field, label, kind: 'range', of: ({record}) => record[field] ?? null, min, max, step: step(values, min)};
   }
   if (values.every(v => Array.isArray(v) && v.every(x => typeof x === 'string'))) {
     const keys = [...new Set(values.flat())];
@@ -62,14 +56,39 @@ function fieldFacet(type, field, refs) {
   if (values.every(v => typeof v === 'string')) {
     const keys = [...new Set(values)];
     if (keys.length > MAX_CHOICES) return null;
-    const labels = field === 'content_type' ? Object.fromEntries(keys.map(k => [k, TYPE[k]?.label ?? k])) : {};
+    // A content type is named by its page: the missions page's agenda cards are agenda missions.
+    const typeLabel = k => TYPES.find(t => t.of === k)?.label ?? TYPE[k]?.label ?? k;
+    const labels = field === 'content_type' ? Object.fromEntries(keys.map(k => [k, typeLabel(k)])) : {};
     return choice(field, label, ({record}) => (record[field] == null ? [] : [record[field]]), sortKeys(keys), labels);
   }
   return null;
 }
 
+const gcd = (a, b) => b ? gcd(b, a % b) : a;
+
+// The slider's step: the greatest common divisor of the values' distances from the lowest, or 'any' for fractions.
+function step(values, min) {
+  if (!values.every(Number.isInteger)) return 'any';
+  return values.reduce((d, v) => gcd(d, v - min), 0) || 1;
+}
+
+// A choice per parent record, for children of a foreign key in FKS (relations.js): a hero class card's hero, an
+// agenda card's deck. Named after the parent type, its choices in name order.
+function parentFacets(type, refs, db) {
+  return FKS.filter(rel => rel.child === fileOf(type)).map(rel => {
+    const parents = [...new Set(refs.map(ref => db.parent.get(ref)?.ref).filter(Boolean))]
+      .sort((a, b) => title(a).localeCompare(title(b)));
+    if (!parents.length || parents.length > MAX_PARENTS) return null;
+    return choice(rel.field, rel.label ?? TYPE[rel.parent].singular,
+      ref => [db.parent.get(ref)?.ref.key].filter(Boolean), parents.map(p => p.key),
+      Object.fromEntries(parents.map(p => [p.key, title(p)])));
+  });
+}
+
 function productFacets(refs, db) {
-  const found = new Map(refs.map(ref => [ref, products(ref, db)]));
+  // A product is its own (db.productsOf), so the products page gets the same Wave facet, in place of a range on its
+  // wave field.
+  const found = new Map(refs.map(ref => [ref, db.productsOf(ref)]));
   const sources = [...new Set([...found.values()].flat())].sort((a, b) => a.index - b.index);
   if (!sources.length) return [];
   const waveKey = source => source.record.wave == null ? 'none' : String(source.record.wave);
@@ -87,8 +106,8 @@ export function facetsFor(type, refs, db) {
   const t = TYPE[type];
   const fields = [...new Set(refs.flatMap(ref => Object.keys(ref.record)))]
     .filter(f => !SKIPPED.has(f) && !f.endsWith('_id') && !t.images.includes(f));
-  const derived = new Map([...fields.map(f => fieldFacet(type, f, refs)), ...productFacets(refs, db)]
-    .filter(Boolean).map(f => [f.id, f]));
+  const derived = new Map([...parentFacets(type, refs, db), ...fields.map(f => fieldFacet(type, f, refs)),
+    ...productFacets(refs, db)].filter(Boolean).map(f => [f.id, f]));
   if (!t.facets) return [...derived.values()];
   return t.facets.map(spec => typeof spec === 'string' ? derived.get(spec) : traitFacet(spec)).filter(Boolean);
 }
