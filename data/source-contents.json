@@ -7642,5 +7642,17 @@
     "content_type": "maps",
     "content_id": "04778e88-dd82-4c9a-b77f-ad26a8ca6fd1",
     "quantity": 1
+  },
+  {
+    "source_id": "09b48dcb-3462-5d4e-b384-8f8d9a3ae951",
+    "content_type": "documents",
+    "content_id": "35e897b3-bb39-4a86-b757-239ad1c21901",
+    "quantity": 1
+  },
+  {
+    "source_id": "78ecd709-3aad-5571-8f34-86025af1fc16",
+    "content_type": "documents",
+    "content_id": "93c7e343-17d7-403c-8cd6-7af126e3a384",
+    "quantity": 1
   }
 ]

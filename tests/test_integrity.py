@@ -165,6 +165,14 @@ class TestDocumentsIntegrity:
         names = [d['name'] for d in get_data(CONTENT_TYPES.DOCUMENTS)]
         assert len(names) == len(set(names))
 
+    def test_every_pack_and_expansion_has_its_rules_sheet(self):
+        sheets = {d['id'] for d in get_data(CONTENT_TYPES.DOCUMENTS) if d['category'] == 'Rules Sheet'}
+        boxes = Counter(r['source_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
+                        if r['content_type'] == CONTENT_TYPES.DOCUMENTS and r['content_id'] in sheets)
+        for source in get_data(CONTENT_TYPES.SOURCE):
+            expected = 1 if source['type'] in ('Ally Pack', 'Villain Pack', 'Expansion') else 0
+            assert boxes[source['id']] == expected, source['name']
+
 
 class TestRecordLinksIntegrity:
     """record-links (docs/data-model.md → Record links). The schema ties each relation to its reverse and the types

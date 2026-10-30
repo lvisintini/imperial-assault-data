@@ -495,5 +495,19 @@
     "category": "Rules Sheet",
     "version": null,
     "file": "wookiee-warriors-rules-sheet.pdf"
+  },
+  {
+    "id": "35e897b3-bb39-4a86-b757-239ad1c21901",
+    "name": "Ahsoka Tano Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "ahsoka-tano-rules-sheet.pdf"
+  },
+  {
+    "id": "93c7e343-17d7-403c-8cd6-7af126e3a384",
+    "name": "Thrawn Rules Sheet",
+    "category": "Rules Sheet",
+    "version": null,
+    "file": "thrawn-rules-sheet.pdf"
   }
 ]
