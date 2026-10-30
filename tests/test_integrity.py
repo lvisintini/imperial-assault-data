@@ -341,6 +341,10 @@ class TestMapTilesIntegrity:
         assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP], entry['map_id']) is not None
         assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP_TILES], entry['tile_id']) is not None
 
+    def test_every_map_has_a_layout(self):
+        laid_out = {r['map_id'] for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)}
+        assert [m['name'] for m in get_data(CONTENT_TYPES.MAP) if m['id'] not in laid_out] == []
+
     def test_layouts_dont_repeat(self):
         rows = [(r['map_id'], r['tile_id'], r['side']) for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)]
         assert len(rows) == len(set(rows))
