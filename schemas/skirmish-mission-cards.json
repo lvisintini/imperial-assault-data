@@ -23,17 +23,10 @@
       ]
     },
     "scenario": {
-      "description": "Which of its map's two missions this is, as printed on the card (null until entered).",
-      "oneOf": [
-        {
-          "enum": [
-            "A",
-            "B"
-          ]
-        },
-        {
-          "type": "null"
-        }
+      "description": "Which of its map's two missions this is, as printed on the card.",
+      "enum": [
+        "A",
+        "B"
       ]
     },
     "back_id": {

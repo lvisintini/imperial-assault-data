@@ -310,7 +310,7 @@ Every mission has a card in one of six collections:
   `campaign-ally-side-mission-cards` (green) and `campaign-regular-side-mission-cards` (grey);
 - `agenda-cards` with `mission: true` (the Imperial player's agenda missions);
 - `skirmish-mission-cards`: two per skirmish map, with `format` (`Standard`, `Four Player Team Battle`,
-  `Four Player Free-For-All`) and `scenario` (`A` or `B`, as printed; null until entered). Their images are the
+  `Four Player Free-For-All`) and `scenario` (`A` or `B`, as printed; a map's two cards are one of each). Their images are the
   wiki's (boardwars has none), at the standard size turned sideways;
 - `raid-missions`: the raids of FFG's *Legends of the Alliance* app (The Malastarian Outpost, The Gray Cap Cantina),
   played on the raid maps. They're app content, with no card or image; their product is the app.
@@ -327,8 +327,8 @@ threat, side or agenda mission follows from `content_type`. The index row is wha
   ally that comes as a group (Rebel Saboteurs) is its regular card; by the rules, earning the same ally again gives the
   elite card. Rewards for the Imperial player (agenda missions, `imperial_reward` on some side missions, threat
   missions' second reward) are rows like any other; the reward card's `for` says who it's for (`Imperial player`
-  or `Rebel players`), and its `class` whether it's one of Return to Hoth's Boons or Banes. Story mission rewards
-  aren't loaded yet.
+  or `Rebel players`), and its `class` whether it's one of Return to Hoth's Boons or Banes. Story missions have no
+  rows: their cards give no rewards.
 
 The rewards come from each mission's wiki page (imperial-assault-tools' `ia wiki --missions`).
 
@@ -363,7 +363,7 @@ erDiagram
         uuid id PK
         string name
         string format "Standard, Four Player Team Battle, Four Player Free-For-All"
-        string scenario "A, B (null until entered)"
+        string scenario "A, B"
     }
     mission-rewards {
         uuid mission_id FK

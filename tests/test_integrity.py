@@ -303,6 +303,14 @@ class TestMissionsIntegrity:
     def test_epilogues_missions_resolve(self, entry, all_data):
         assert TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MISSIONS], entry['mission_id']) is not None
 
+    def test_a_skirmish_maps_cards_are_scenarios_a_and_b(self):
+        scenarios = {c['id']: c['scenario'] for c in get_data(CONTENT_TYPES.SKIRMISH_MISSION)}
+        by_map = {}
+        for mission in get_data(CONTENT_TYPES.MISSIONS):
+            if mission['content_id'] in scenarios:
+                by_map.setdefault(mission['map_id'], []).append(scenarios[mission['content_id']])
+        assert {map_id: s for map_id, s in by_map.items() if sorted(s) != ['A', 'B']} == {}
+
     def test_every_mission_has_a_map(self):
         assert [m['id'] for m in get_data(CONTENT_TYPES.MISSIONS) if not m['map_id']] == []
 
