@@ -41,9 +41,9 @@ source of type `App`. A map is in the products its missions are in (see [Mission
 `source-contents` rows of their own while a mission uses them (every map, today), with one exception: FFG also sold
 13 skirmish maps on their own, as neoprene mats with their own product codes (SWI38 Training Ground to SWI62 Endor
 Defense Station). Each is a source of type `Skirmish Map Mat` with one `source-contents` row straight to its map, so
-those maps are reached both through their missions' products and through their mat. A mat's `wave` is the one the
-wiki's main page lists it under (8 to 11), its `release_date` is its own wiki page's (null for four that have none),
-and it has no `announced_date`. Mat images come from FFG's product pages, as the Wayback Machine archived them
+those maps are reached both through their missions' products and through their mat. A mat's `wave` and dates are
+those the wiki's main page lists it under (waves 8 to 11), as for every other source; the mats' own wiki pages give
+release dates that don't fit their waves, and aren't used. Mat images come from FFG's product pages, as the Wayback Machine archived them
 (boardwars has none). Skirmish and raid map images come
 from the [Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res
 files are the ones boardwars serves; campaign maps' are drawn from their tiles (see [Maps and map

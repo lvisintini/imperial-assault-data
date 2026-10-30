@@ -2,9 +2,9 @@
 
 FFG sold 13 skirmish maps on their own, as neoprene mats with their own product codes. Each becomes a source of type
 "Skirmish Map Mat" with a source-contents row straight to its map (which its missions' products also reach).
-imperial-assault-tools' ia mats staged them: name, product code and release date from each mat's wiki infobox (null
-where it has none), the main page's wave, no announced date, and the image from FFG's product page as the Wayback
-Machine archived it.
+imperial-assault-tools' ia mats staged them: name and product code from each mat's wiki infobox, wave and dates from
+the wiki's main page (which lists each mat under a wave, with that wave's dates, like every other source), and the
+image from FFG's product page as the Wayback Machine archived it.
 
     uv run python migrations/2.0.0/19_skirmish_map_mats.py --from ../imperial-assault-tools/staging/mats
 Running it again changes nothing.
@@ -34,7 +34,7 @@ def main(staged):
     for mat in mats:
         source_id = str(uuid.uuid4())
         sources.append({'id': source_id, 'name': mat['name'], 'type': TYPE, 'wave': mat['wave'],
-                        'product_code': mat['product_code'], 'announced_date': None,
+                        'product_code': mat['product_code'], 'announced_date': mat['announced_date'],
                         'release_date': mat['release_date'], 'image': mat['image']})
         contents.append({'source_id': source_id, 'content_type': 'maps', 'content_id': mat['map_id'], 'quantity': 1})
         for size in ('large', 'small'):
