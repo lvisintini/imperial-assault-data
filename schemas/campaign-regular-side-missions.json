@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "campaign-threat-mission-cards.json#",
-  "title": "Schema for the campaign threat mission cards data file",
+  "id": "campaign-regular-side-missions.json#",
+  "title": "Schema for the campaign regular side missions data file (grey side missions)",
   "type": "object",
   "definitions": {},
   "properties": {
@@ -11,7 +11,7 @@
     },
     "name": {
       "type": "string",
-      "description": "Threat mission name",
+      "description": "Regular side mission name",
       "minLength": 1
     },
     "back_id": {
@@ -19,7 +19,7 @@
       "$ref": "definitions.json#/definitions/uuid"
     },
     "image": {
-      "description": "The file path for this threat mission's image.",
+      "description": "The file path for this regular side mission's image.",
       "$ref": "definitions.json#/definitions/image-file-path"
     }
   },

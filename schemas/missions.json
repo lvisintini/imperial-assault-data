@@ -10,20 +10,20 @@
       "$ref": "definitions.json#/definitions/uuid"
     },
     "content_type": {
-      "description": "The collection the mission's card is in (agenda-cards: an agenda card that is a mission).",
+      "description": "The collection the mission is in (agenda-cards: an agenda card that is a mission).",
       "enum": [
-        "campaign-story-mission-cards",
-        "campaign-threat-mission-cards",
-        "campaign-hero-side-mission-cards",
-        "campaign-ally-side-mission-cards",
-        "campaign-regular-side-mission-cards",
+        "campaign-story-missions",
+        "campaign-threat-missions",
+        "campaign-hero-side-missions",
+        "campaign-ally-side-missions",
+        "campaign-regular-side-missions",
         "agenda-cards",
-        "skirmish-mission-cards",
+        "skirmish-missions",
         "raid-missions"
       ]
     },
     "content_id": {
-      "description": "The mission card's id in that collection.",
+      "description": "The mission's id in that collection.",
       "$ref": "definitions.json#/definitions/uuid"
     },
     "map_id": {

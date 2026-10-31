@@ -20,7 +20,7 @@ agenda-decks     1──* agenda-cards          (agenda_id)
 heroes           1──* hero-class-cards      (hero_id)
 imperial-classes 1──* imperial-class-cards  (class_id)
 card-backs       1──* <any card>            (back_id)
-missions         1──1 <mission card>        (content_type + content_id; products and rewards attach here)
+missions         1──1 <mission>             (content_type + content_id; products and rewards attach here)
 maps             1──* missions              (map_id; a map is in its missions' products, and its mat's)
 maps             1──* map-layouts *──1 map-tiles   (map_id, tile_id; side and count; tiles are in products)
 missions         1──* mission-rewards       (mission_id; content_type + content_id, or credits)
@@ -148,16 +148,16 @@ The table bellow shows you the expected sizes for all the different images inclu
 | hero-class-cards.image                                |         |          |                    | ✔       |                |            |     |      |
 | imperial-class-cards.image                            |         |          |                    | ✔       |                |            |     |      |
 | supply-cards.image                                    |         |          |                    | ✔       |                |            |     |      |
-| campaign-story-mission-cards.image                    |         | ✔        |                    |         |                |            |     |      |
-| campaign-hero-side-mission-cards.image                |         | ✔        |                    |         |                |            |     |      |
-| campaign-ally-side-mission-cards.image                |         | ✔        |                    |         |                |            |     |      |
-| campaign-regular-side-mission-cards.image             |         | ✔        |                    |         |                |            |     |      |
+| campaign-story-missions.image                         |         | ✔        |                    |         |                |            |     |      |
+| campaign-hero-side-missions.image                     |         | ✔        |                    |         |                |            |     |      |
+| campaign-ally-side-missions.image                     |         | ✔        |                    |         |                |            |     |      |
+| campaign-regular-side-missions.image                  |         | ✔        |                    |         |                |            |     |      |
 | reward-cards.image                                    |         |          |                    | ✔       |                |            |     |      |
 | companion-cards.image                                 |         | ✔        |                    |         |                |            |     |      |
 | upgrade-cards.image                                   |         |          |                    | ✔       |                |            |     |      |
-| campaign-threat-mission-cards.image                   |         | ✔        |                    |         |                |            |     |      |
+| campaign-threat-missions.image                        |         | ✔        |                    |         |                |            |     |      |
 | form-cards.image                                      |         |          |                    |         | ✔              |            |     |      |
-| skirmish-mission-cards.image                          |         |          | ✔                  |         |                |            |     |      |
+| skirmish-missions.image                               |         |          | ✔                  |         |                |            |     |      |
 | epilogue-cards.image                                  |         | ✔        |                    |         |                |            |     |      |
 | map-tiles.side_a                                      |         |          |                    |         |                |            |     | ✔    |
 | map-tiles.side_b                                      |         |          |                    |         |                |            |     | ✔    |
@@ -171,13 +171,13 @@ The table bellow shows you the expected sizes for all the different images inclu
 | card-backs.image(upgrade-cards)                       |         |          |                    | ✔       |                |            |     |      |
 | card-backs.image(reward-cards)                        |         |          |                    | ✔       |                |            |     |      |
 | card-backs.image(supply-cards)                        |         |          |                    | ✔       |                |            |     |      |
-| card-backs.image(campaign-hero-side-mission-cards)    |         | ✔        |                    |         |                |            |     |      |
-| card-backs.image(campaign-ally-side-mission-cards)    |         | ✔        |                    |         |                |            |     |      |
-| card-backs.image(campaign-regular-side-mission-cards) |         | ✔        |                    |         |                |            |     |      |
-| card-backs.image(campaign-story-mission-cards)        |         | ✔        |                    |         |                |            |     |      |
-| card-backs.image(campaign-threat-mission-cards)       |         | ✔        |                    |         |                |            |     |      |
+| card-backs.image(campaign-hero-side-missions)         |         | ✔        |                    |         |                |            |     |      |
+| card-backs.image(campaign-ally-side-missions)         |         | ✔        |                    |         |                |            |     |      |
+| card-backs.image(campaign-regular-side-missions)      |         | ✔        |                    |         |                |            |     |      |
+| card-backs.image(campaign-story-missions)             |         | ✔        |                    |         |                |            |     |      |
+| card-backs.image(campaign-threat-missions)            |         | ✔        |                    |         |                |            |     |      |
 | card-backs.image(form-cards)                          |         |          |                    |         | ✔              |            |     |      |
-| card-backs.image(skirmish-mission-cards)              |         |          | ✔                  |         |                |            |     |      |
+| card-backs.image(skirmish-missions)                   |         |          | ✔                  |         |                |            |     |      |
 | card-backs.image(epilogue-cards)                      |         | ✔        |                    |         |                |            |     |      |
 
 

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "skirmish-mission-cards.json#",
-  "title": "Schema for the skirmish mission cards data file (their maps are on their missions rows)",
+  "id": "skirmish-missions.json#",
+  "title": "Schema for the skirmish missions data file (their maps are on their missions rows)",
   "type": "object",
   "definitions": {},
   "properties": {

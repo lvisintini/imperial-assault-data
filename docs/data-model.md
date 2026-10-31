@@ -145,7 +145,7 @@ erDiagram
     }
     missions {
         uuid id PK
-        string content_type "the mission card's file"
+        string content_type "the mission's collection"
     }
     supply-cards {
         uuid id PK
@@ -323,18 +323,21 @@ erDiagram
 
 ## Missions
 
-Every mission has a card in one of six collections:
-- `campaign-story-mission-cards`, `campaign-threat-mission-cards`;
-- the side missions, by color: `campaign-hero-side-mission-cards` (red; `hero_id` is the hero the mission is for),
-  `campaign-ally-side-mission-cards` (green) and `campaign-regular-side-mission-cards` (grey);
+Every mission is in one of seven collections, most of them cards (their names say missions, since not all are):
+- `campaign-story-missions`, `campaign-threat-missions`. Five story missions have no card, only a map, printed in
+  their campaign guides: Aftermath, Captured (the Core Set's forced mission, still part of its story), Dark Recon, The
+  Battle of Hoth and Trespass. Their `image` and `back_id` are null, and they're indexed, mapped and in their products
+  like every other mission;
+- the side missions, by color: `campaign-hero-side-missions` (red; `hero_id` is the hero the mission is for),
+  `campaign-ally-side-missions` (green) and `campaign-regular-side-missions` (grey);
 - `agenda-cards` with `mission: true` (the Imperial player's agenda missions);
-- `skirmish-mission-cards`: two per skirmish map, with `format` (`Standard`, `Four Player Team Battle`,
+- `skirmish-missions`: two per skirmish map, with `format` (`Standard`, `Four Player Team Battle`,
   `Four Player Free-For-All`) and `scenario` (`A` or `B`, as printed; a map's two cards are one of each). Their images are the
   wiki's (boardwars has none), at the standard size turned sideways;
 - `raid-missions`: the raids of FFG's *Legends of the Alliance* app (The Malastarian Outpost, The Gray Cap Cantina),
   played on the raid maps. They're app content, with no card or image; their product is the app.
 
-`missions` indexes them all, one row per mission card (`content_type` + `content_id`). Whether a mission is a story,
+`missions` indexes them all, one row per mission (`content_type` + `content_id`). Whether a mission is a story,
 threat, side or agenda mission follows from `content_type`. The index row is what the rest of the dataset links to:
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
@@ -353,32 +356,32 @@ The rewards come from each mission's wiki page (imperial-assault-tools' `ia wiki
 
 ```mermaid
 erDiagram
-    missions ||--|| campaign-story-mission-cards : "content_id"
-    missions ||--|| campaign-threat-mission-cards : "content_id"
-    missions ||--|| campaign-hero-side-mission-cards : "content_id"
-    missions ||--|| campaign-ally-side-mission-cards : "content_id"
-    missions ||--|| campaign-regular-side-mission-cards : "content_id"
+    missions ||--|| campaign-story-missions : "content_id"
+    missions ||--|| campaign-threat-missions : "content_id"
+    missions ||--|| campaign-hero-side-missions : "content_id"
+    missions ||--|| campaign-ally-side-missions : "content_id"
+    missions ||--|| campaign-regular-side-missions : "content_id"
     missions ||--|| agenda-cards : "content_id (mission: true)"
-    missions ||--|| skirmish-mission-cards : "content_id"
+    missions ||--|| skirmish-missions : "content_id"
     missions ||--|| raid-missions : "content_id"
     maps ||--o{ missions : "map_id"
-    heroes ||--o{ campaign-hero-side-mission-cards : "hero_id"
+    heroes ||--o{ campaign-hero-side-missions : "hero_id"
     missions ||--o{ mission-rewards : "mission_id"
     mission-rewards }o--o| reward-cards : "content_id"
     mission-rewards }o--o| deployment-cards : "content_id"
 
     missions {
         uuid id PK
-        string content_type "the mission card's file"
+        string content_type "the mission's collection"
         uuid content_id FK "id in that file"
         uuid map_id FK
     }
-    campaign-hero-side-mission-cards {
+    campaign-hero-side-missions {
         uuid id PK
         string name
         uuid hero_id FK
     }
-    skirmish-mission-cards {
+    skirmish-missions {
         uuid id PK
         string name
         string format "Standard, Four Player Team Battle, Four Player Free-For-All"
@@ -396,9 +399,8 @@ erDiagram
 ## Maps and map tiles
 
 `maps` holds every mission's map. Skirmish, four-player and raid maps have an image (from the Skirmish Map Project).
-Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Five
-campaign missions have no card, so no `missions` row: each campaign's introduction or finale (Aftermath, Captured,
-Dark Recon, The Battle of Hoth, Trespass). Their maps are in their products directly, through `source-contents`.
+Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Every
+map is used by a mission, so it reaches its products through its missions (and a skirmish map also through its mat).
 
 Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
@@ -503,12 +505,12 @@ erDiagram
     card-backs ||--|{ reward-cards : "back_id"
     card-backs ||--|{ supply-cards : "back_id"
     card-backs ||--|{ upgrade-cards : "back_id"
-    card-backs ||--|{ campaign-story-mission-cards : "back_id"
-    card-backs ||--|{ campaign-threat-mission-cards : "back_id"
-    card-backs ||--|{ campaign-hero-side-mission-cards : "back_id"
-    card-backs ||--|{ campaign-ally-side-mission-cards : "back_id"
-    card-backs ||--|{ campaign-regular-side-mission-cards : "back_id"
-    card-backs ||--|{ skirmish-mission-cards : "back_id"
+    card-backs ||--|{ campaign-story-missions : "back_id"
+    card-backs ||--|{ campaign-threat-missions : "back_id"
+    card-backs ||--|{ campaign-hero-side-missions : "back_id"
+    card-backs ||--|{ campaign-ally-side-missions : "back_id"
+    card-backs ||--|{ campaign-regular-side-missions : "back_id"
+    card-backs ||--|{ skirmish-missions : "back_id"
 
     card-backs {
         uuid id PK

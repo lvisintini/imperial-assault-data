@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "campaign-ally-side-mission-cards.json#",
-  "title": "Schema for the campaign ally side mission cards data file (green side missions; the allies they give are in mission-rewards)",
+  "id": "campaign-ally-side-missions.json#",
+  "title": "Schema for the campaign ally side missions data file (green side missions; the allies they give are in mission-rewards)",
   "type": "object",
   "definitions": {},
   "properties": {

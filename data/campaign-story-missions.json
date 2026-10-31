@@ -3,240 +3,270 @@
     "id": "fc7f612f-31f6-5553-b2f8-6d4a10cdec0b",
     "name": "Disaster",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/disaster.png"
+    "image": "campaign-story-missions/disaster.png"
   },
   {
     "id": "ca140189-7961-54d4-b1b7-bfc8e851ce79",
     "name": "Home Front",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/home-front.png"
+    "image": "campaign-story-missions/home-front.png"
   },
   {
     "id": "c0e9884f-5105-5af2-ae15-9d0e87ac015f",
     "name": "One Step Behind",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/one-step-behind.png"
+    "image": "campaign-story-missions/one-step-behind.png"
   },
   {
     "id": "505d1d01-157a-573d-8796-bc6dcf69f5a8",
     "name": "Our Last Hope",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/our-last-hope.png"
+    "image": "campaign-story-missions/our-last-hope.png"
   },
   {
     "id": "4f4d1c31-2333-5e70-a4c7-15ba0f6085f6",
     "name": "Rescue Ops",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/rescue-ops.png"
+    "image": "campaign-story-missions/rescue-ops.png"
   },
   {
     "id": "764c7038-a0d7-559d-aa04-7f32a842e518",
     "name": "Return to Echo Base",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/return-to-echo-base.png"
+    "image": "campaign-story-missions/return-to-echo-base.png"
   },
   {
     "id": "ff7455ac-5990-5fbb-a621-77e1dcc61125",
     "name": "The Last Line",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/the-last-line.png"
+    "image": "campaign-story-missions/the-last-line.png"
   },
   {
     "id": "f179602c-4a26-58c7-9d56-a00b321be3c2",
     "name": "White Noise",
     "back_id": "66ef8c5b-29c8-5e05-b1e6-fe1cdb165198",
-    "image": "campaign-story-mission-cards/white-noise.png"
+    "image": "campaign-story-missions/white-noise.png"
   },
   {
     "id": "ac081d23-53c9-541d-92dc-48a04bd84be9",
     "name": "A New Threat",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/a-new-threat.png"
+    "image": "campaign-story-missions/a-new-threat.png"
   },
   {
     "id": "406d6db5-4188-5774-8079-8932fafef5dc",
     "name": "Chain of Command",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/chain-of-command.png"
+    "image": "campaign-story-missions/chain-of-command.png"
   },
   {
     "id": "0302d097-5954-5e79-831a-b966c579ea91",
     "name": "Desperate Hour",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/despertate-hour.png"
+    "image": "campaign-story-missions/despertate-hour.png"
   },
   {
     "id": "d8823fa9-28d5-587e-b082-6eef63381900",
     "name": "Drawn In",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/drawn-in.png"
+    "image": "campaign-story-missions/drawn-in.png"
   },
   {
     "id": "3e5f52c8-a651-5061-a088-7d6e8c8c85df",
     "name": "Fly Solo",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/fly-solo.png"
+    "image": "campaign-story-missions/fly-solo.png"
   },
   {
     "id": "cfc8ef72-404c-5c21-a6a5-1651d6f41961",
     "name": "Imperial Hospitality",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/imperial-hospitality.png"
+    "image": "campaign-story-missions/imperial-hospitality.png"
   },
   {
     "id": "02dcedea-7ff1-5542-ac44-a051bbf310a8",
     "name": "Incoming",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/incoming.png"
+    "image": "campaign-story-missions/incoming.png"
   },
   {
     "id": "b2db846a-7d76-5816-aea1-368d5e9d519b",
     "name": "Last Stand",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/last-stand.png"
+    "image": "campaign-story-missions/last-stand.png"
   },
   {
     "id": "bd6b0551-f71e-593d-9095-f9cfb3000941",
     "name": "The Source",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/the-source.png"
+    "image": "campaign-story-missions/the-source.png"
   },
   {
     "id": "5026f5e9-c8ff-5de8-afe1-02d6a73db2a9",
     "name": "Under Siege",
     "back_id": "21f220a4-b7a2-5095-b44b-f18828461dfc",
-    "image": "campaign-story-mission-cards/under-siege.png"
+    "image": "campaign-story-missions/under-siege.png"
   },
   {
     "id": "93cb831c-d6e7-59ba-a8b0-d0b7b7f2b6e2",
     "name": "Almost Home",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/almost-home.png"
+    "image": "campaign-story-missions/almost-home.png"
   },
   {
     "id": "2f96b6ec-6b0b-50a1-baab-0a62c041d952",
     "name": "Dangerous Allies",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/dangerous-allies.png"
+    "image": "campaign-story-missions/dangerous-allies.png"
   },
   {
     "id": "db1860c8-7832-5497-ab46-666ce9372762",
     "name": "Execute the Plan",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/execute-the-plan.png"
+    "image": "campaign-story-missions/execute-the-plan.png"
   },
   {
     "id": "60a9a403-4373-5c2d-a3f5-3ba170299aca",
     "name": "From All Sides",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/from-all-sides.png"
+    "image": "campaign-story-missions/from-all-sides.png"
   },
   {
     "id": "be1144ec-9be7-5386-899f-ddac397b8f3d",
     "name": "Hostile Negotiations",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/hostile-negotiations.png"
+    "image": "campaign-story-missions/hostile-negotiations.png"
   },
   {
     "id": "8fbb3179-ce3c-57df-8179-afd76d8cb601",
     "name": "Moment of Fate",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/moment-of-fate.png"
+    "image": "campaign-story-missions/moment-of-fate.png"
   },
   {
     "id": "eaef766b-6a3e-50d6-9d7c-0e3149f37d78",
     "name": "Mutiny",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/mutiny.png"
+    "image": "campaign-story-missions/mutiny.png"
   },
   {
     "id": "7a297013-1c25-5127-808c-a925b0e59088",
     "name": "Overcharged",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/overcharged.png"
+    "image": "campaign-story-missions/overcharged.png"
   },
   {
     "id": "bb25a423-f800-5232-a3e1-1b551e599aaf",
     "name": "Storming the Palace",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/storming-the-palace.png"
+    "image": "campaign-story-missions/storming-the-palace.png"
   },
   {
     "id": "e2c497ae-e255-5308-af15-1df8beebf811",
     "name": "Trophy Hunting",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/trophy-hunting.png"
+    "image": "campaign-story-missions/trophy-hunting.png"
   },
   {
     "id": "e0e0b002-7b79-5bac-8fa4-457d5a6fc334",
     "name": "Turf War",
     "back_id": "f4424734-8b5f-548e-892c-0e9b9cb149c4",
-    "image": "campaign-story-mission-cards/turf-war.png"
+    "image": "campaign-story-missions/turf-war.png"
   },
   {
     "id": "dcc07cea-ecdd-5e48-8e87-4230f0cf4d7f",
     "name": "Capital Escape",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/capital-escape.png"
+    "image": "campaign-story-missions/capital-escape.png"
   },
   {
     "id": "916120f0-9c39-57b7-9e95-d21be781d9ff",
     "name": "Disruption",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/disruption.png"
+    "image": "campaign-story-missions/disruption.png"
   },
   {
     "id": "ed74833a-e4da-5d59-9098-934b0bcb7c53",
     "name": "Double Agent",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/double-agent.png"
+    "image": "campaign-story-missions/double-agent.png"
   },
   {
     "id": "48bbb394-89cf-5c61-8613-01b99d194dbf",
     "name": "Enemies Closer",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/enemies-closer.png"
+    "image": "campaign-story-missions/enemies-closer.png"
   },
   {
     "id": "673873cf-1919-549b-807b-af0800597c9c",
     "name": "From Dark Clutches",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/from-dark-clutches.png"
+    "image": "campaign-story-missions/from-dark-clutches.png"
   },
   {
     "id": "c43b6962-fd67-5890-aedd-c0f92bd51247",
     "name": "History Repeats",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/history-repeats.png"
+    "image": "campaign-story-missions/history-repeats.png"
   },
   {
     "id": "d02db3c4-cc01-55ff-927e-b8be338eb9b9",
     "name": "Inside Man",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/inside-man.png"
+    "image": "campaign-story-missions/inside-man.png"
   },
   {
     "id": "219304ae-96a1-5676-8a77-8a34bf3a55a7",
     "name": "Into a Corner",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/into-a-corner.png"
+    "image": "campaign-story-missions/into-a-corner.png"
   },
   {
     "id": "50a9b1f7-6a99-5f1f-849e-7d726fd524b0",
     "name": "On the Run",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/on-the-run.png"
+    "image": "campaign-story-missions/on-the-run.png"
   },
   {
     "id": "d9a7025a-85af-55f4-a8f7-c400a02689a1",
     "name": "On the Trail",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/on-the-trail.png"
+    "image": "campaign-story-missions/on-the-trail.png"
   },
   {
     "id": "4aa85336-e8fd-5355-928c-ee74ff7e3b9e",
     "name": "The Realm of the Dark Side",
     "back_id": "dc9f7288-fb83-521d-802c-edcfda9f5661",
-    "image": "campaign-story-mission-cards/the-realm-of-the-dark-side.png"
+    "image": "campaign-story-missions/the-realm-of-the-dark-side.png"
+  },
+  {
+    "id": "cfc47b02-f625-45de-9e3b-c799b3ceaf3c",
+    "name": "Aftermath",
+    "back_id": null,
+    "image": null
+  },
+  {
+    "id": "59da4503-74fe-4dd4-a579-078b34e75d65",
+    "name": "Captured",
+    "back_id": null,
+    "image": null
+  },
+  {
+    "id": "0f7f18fa-c1c9-49ce-8a4b-9b0e8fe55099",
+    "name": "Dark Recon",
+    "back_id": null,
+    "image": null
+  },
+  {
+    "id": "c864b31a-823f-44c2-89e2-4e5c0a43ba38",
+    "name": "The Battle of Hoth",
+    "back_id": null,
+    "image": null
+  },
+  {
+    "id": "78e60f82-756d-46b5-a15c-dacb4741dbc2",
+    "name": "Trespass",
+    "back_id": null,
+    "image": null
   }
 ]

@@ -48,7 +48,7 @@ export const FKS = [
   {child: 'agenda-cards', field: 'agenda_id', parent: 'agenda-decks', back: 'children'},
   {child: 'hero-class-cards', field: 'hero_id', parent: 'heroes', back: 'children'},
   {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes', back: 'children'},
-  {child: 'campaign-hero-side-mission-cards', field: 'hero_id', parent: 'heroes', label: 'For hero'},
+  {child: 'campaign-hero-side-missions', field: 'hero_id', parent: 'heroes', label: 'For hero'},
   {child: 'missions', field: 'map_id', parent: 'maps', label: 'Map', products: 'children'},
   {child: 'epilogue-cards', field: 'mission_id', parent: 'missions', label: 'Mission', childrenLabel: 'Epilogues'},
 ];

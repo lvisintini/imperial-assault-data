@@ -72,7 +72,7 @@ class TestCardBacksIntegrity:
 
     def test_back_ids_resolve_and_every_back_is_used(self):
         backs = {b['id'] for b in get_data(CONTENT_TYPES.CARD)}
-        used = {r['back_id'] for t in self.card_types() for r in get_data(t)}
+        used = {r['back_id'] for t in self.card_types() for r in get_data(t) if r['back_id']}
         assert used - backs == set()
         assert backs - used == set()
 
@@ -82,6 +82,15 @@ class TestCardBacksIntegrity:
         for card in get_data(content_type):
             backs.setdefault(card[self.PARENTS[content_type]], set()).add(card['back_id'])
         assert {parent: ids for parent, ids in backs.items() if len(ids) > 1} == {}
+
+    def test_only_story_missions_without_a_card_have_no_back(self):
+        """A story mission without a card (no image) has no back, and every other card has one."""
+        for content_type in self.card_types():
+            for record in get_data(content_type):
+                if content_type == CONTENT_TYPES.STORY_MISSION:
+                    assert (record['image'] is None) == (record['back_id'] is None), record['name']
+                else:
+                    assert record['back_id'] is not None, (content_type, record['id'])
 
     def test_back_names_are_unique(self):
         names = [b['name'] for b in get_data(CONTENT_TYPES.CARD)]
@@ -319,14 +328,14 @@ class TestMissionsIntegrity:
         assert len(names) == len(set(names))
 
     def test_maps_reach_products_through_their_missions(self):
-        """A map used by a mission is in its missions' products, so it has no source-contents rows of its own (only a
-        map no mission uses would have them), except from a Skirmish Map Mat. Every map is in some product."""
+        """Every map is used by a mission and is in its missions' products, so it has no source-contents rows of its
+        own, except from a Skirmish Map Mat."""
         mats = {s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['type'] == 'Skirmish Map Mat'}
         used = {m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS) if m['map_id']}
         direct = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
                   if r['content_type'] == CONTENT_TYPES.MAP and r['source_id'] not in mats}
-        assert not used & direct
-        assert {m['id'] for m in get_data(CONTENT_TYPES.MAP)} == used | direct
+        assert direct == set()
+        assert {m['id'] for m in get_data(CONTENT_TYPES.MAP)} == used
 
     def test_a_skirmish_map_mat_is_one_skirmish_map(self):
         """A mat holds exactly one map, used by skirmish missions, and no two mats hold the same map."""

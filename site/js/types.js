@@ -58,29 +58,29 @@ export const TYPES = [
     groups: ['content_type'],
     labels: {content_type: 'Kind'},
     order: {content_type: [
-      'campaign-story-mission-cards', 'campaign-threat-mission-cards', 'campaign-hero-side-mission-cards',
-      'campaign-ally-side-mission-cards', 'campaign-regular-side-mission-cards', 'agenda-cards',
-      'skirmish-mission-cards', 'raid-missions',
+      'campaign-story-missions', 'campaign-threat-missions', 'campaign-hero-side-missions',
+      'campaign-ally-side-missions', 'campaign-regular-side-missions', 'agenda-cards',
+      'skirmish-missions', 'raid-missions',
     ]},
   },
   {
-    file: 'campaign-story-mission-cards', label: 'Story missions', singular: 'Story mission', images: ['image'],
+    file: 'campaign-story-missions', label: 'Story missions', singular: 'Story mission', images: ['image'],
     menu: 'missions',
   },
   {
-    file: 'campaign-threat-mission-cards', label: 'Threat missions', singular: 'Threat mission', images: ['image'],
+    file: 'campaign-threat-missions', label: 'Threat missions', singular: 'Threat mission', images: ['image'],
     menu: 'missions',
   },
   {
-    file: 'campaign-hero-side-mission-cards', label: 'Hero side missions', singular: 'Hero side mission',
+    file: 'campaign-hero-side-missions', label: 'Hero side missions', singular: 'Hero side mission',
     images: ['image'], menu: 'missions',
   },
   {
-    file: 'campaign-ally-side-mission-cards', label: 'Ally side missions', singular: 'Ally side mission',
+    file: 'campaign-ally-side-missions', label: 'Ally side missions', singular: 'Ally side mission',
     images: ['image'], menu: 'missions',
   },
   {
-    file: 'campaign-regular-side-mission-cards', label: 'Regular side missions', singular: 'Regular side mission',
+    file: 'campaign-regular-side-missions', label: 'Regular side missions', singular: 'Regular side mission',
     images: ['image'], menu: 'missions',
   },
   {
@@ -91,7 +91,7 @@ export const TYPES = [
     ],
   },
   {
-    file: 'skirmish-mission-cards', label: 'Skirmish missions', singular: 'Skirmish mission', images: ['image'],
+    file: 'skirmish-missions', label: 'Skirmish missions', singular: 'Skirmish mission', images: ['image'],
     menu: 'missions',
     facets: [
       'format', 'scenario', 'source', 'wave',

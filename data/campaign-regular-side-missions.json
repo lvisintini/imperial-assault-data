@@ -3,102 +3,102 @@
     "id": "daa07dd7-1b27-5596-9ded-de7c48cd0e0f",
     "name": "Canyon Run",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/canyon-run.png"
+    "image": "campaign-regular-side-missions/canyon-run.png"
   },
   {
     "id": "c67e3bb7-3de1-5e39-9109-544c8052ec8c",
     "name": "A Simple Task",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/a-simple-task.png"
+    "image": "campaign-regular-side-missions/a-simple-task.png"
   },
   {
     "id": "552cc30a-a597-59f5-bbf1-f94fbdfa9a39",
     "name": "Generous Donations",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/generous-donations.png"
+    "image": "campaign-regular-side-missions/generous-donations.png"
   },
   {
     "id": "4f5b7161-d467-5e06-9480-de07a1763d6e",
     "name": "Luxury Cruise",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/luxury-cruise.png"
+    "image": "campaign-regular-side-missions/luxury-cruise.png"
   },
   {
     "id": "75a08b34-3887-55ea-955d-0ac3469cad81",
     "name": "Sympathy for the Rebellion",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/sympathy-for-the-rebellion.png"
+    "image": "campaign-regular-side-missions/sympathy-for-the-rebellion.png"
   },
   {
     "id": "352e4f51-3f07-53bb-99a7-4da37c834f6b",
     "name": "Viper's Den",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/vipers-den.png"
+    "image": "campaign-regular-side-missions/vipers-den.png"
   },
   {
     "id": "484690b3-cd69-54b0-92fa-fd5537f7a0de",
     "name": "Cloud City's Secret",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/cloud-citys-secret.png"
+    "image": "campaign-regular-side-missions/cloud-citys-secret.png"
   },
   {
     "id": "0309f344-9aa0-52ac-a7fa-0340fd70e61d",
     "name": "Freedom Fighters",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/freedom-fighters.png"
+    "image": "campaign-regular-side-missions/freedom-fighters.png"
   },
   {
     "id": "d7505130-5266-5969-bae6-1636f7c06664",
     "name": "Hostile Takeover",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/hostile-takeover.png"
+    "image": "campaign-regular-side-missions/hostile-takeover.png"
   },
   {
     "id": "771f18ae-4814-5557-a603-2de10dc4ecc7",
     "name": "Perilous Hunt",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/perilous-hunt.png"
+    "image": "campaign-regular-side-missions/perilous-hunt.png"
   },
   {
     "id": "ce392f3f-3007-5091-8a03-1fda3eeed6bb",
     "name": "Civil Unrest",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/civil-unrest.png"
+    "image": "campaign-regular-side-missions/civil-unrest.png"
   },
   {
     "id": "0522ba28-84e3-5953-9059-9bc0e14605ed",
     "name": "Call to Action",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/call-to-action.png"
+    "image": "campaign-regular-side-missions/call-to-action.png"
   },
   {
     "id": "69e47788-a66e-5e50-9514-de150d3a339d",
     "name": "The Final Order",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/the-final-order.png"
+    "image": "campaign-regular-side-missions/the-final-order.png"
   },
   {
     "id": "03f4e042-9cd9-54a0-b7b1-1ced8189b2f8",
     "name": "Celebration",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/celebration.png"
+    "image": "campaign-regular-side-missions/celebration.png"
   },
   {
     "id": "63813379-f900-5a2c-a9c7-974c9d8b0c3c",
     "name": "Imperial Entanglements",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/imperial-entanglements.png"
+    "image": "campaign-regular-side-missions/imperial-entanglements.png"
   },
   {
     "id": "4ec0a911-ee5a-52a8-9ef2-7072d1460848",
     "name": "Into the Unknown",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/into-the-unknown.png"
+    "image": "campaign-regular-side-missions/into-the-unknown.png"
   },
   {
     "id": "96c41011-61b3-58ed-bbd3-193c0973f6cf",
     "name": "Paying Debts",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-regular-side-mission-cards/paying-debts.png"
+    "image": "campaign-regular-side-missions/paying-debts.png"
   }
 ]
