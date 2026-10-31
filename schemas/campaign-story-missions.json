@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "campaign-story-missions.json#",
+  "title": "Schema for the campaign story missions data file (five have no card, only a map: their image and back_id are null)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "description": "Id for entry: a UUID (see docs/data-model.md).",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "name": {
+      "type": "string",
+      "description": "Story mission name",
+      "minLength": 1
+    },
+    "back_id": {
+      "description": "Foreign key to this card's back in data/card-backs.json; null for a story mission without a card.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/uuid"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "image": {
+      "description": "The file path for this story mission's card image; null for a story mission without a card.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/image-file-path"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "back_id",
+    "image"
+  ],
+  "additionalProperties": false
+}

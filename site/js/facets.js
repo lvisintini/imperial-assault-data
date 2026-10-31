@@ -34,6 +34,26 @@ function traitFacet({id, label, trait, yes, no}) {
   return booleanFacet(id, label, of, {keys: ['false', 'true'], headings});
 }
 
+// A content type named by its page: the missions page's agenda cards are agenda missions.
+const typeLabel = k => TYPES.find(t => t.of === k)?.label ?? TYPE[k]?.label ?? k;
+
+// A choice over a field of the record's children through a foreign key in FKS (relations.js): a map's missions' kinds
+// ({id, label, children: 'missions', field: 'content_type', none}). Values follow the children type's `order`; `none`
+// names a choice for records without children, when given.
+function childFacet({id, label, children, field, none}, refs, db) {
+  const of = ref => {
+    const kids = db.children.get(ref)?.find(group => group.rel.child === children)?.refs ?? [];
+    const keys = [...new Set(kids.map(kid => kid.record[field]).filter(v => v != null))];
+    return keys.length || !none ? keys : ['none'];
+  };
+  const found = new Set(refs.flatMap(of));
+  const order = TYPE[children].order?.[field] ?? [];
+  const keys = [...order.filter(k => found.has(k)),
+    ...[...found].filter(k => !order.includes(k) && k !== 'none').sort(compareKeys), ...found.has('none') ? ['none'] : []];
+  const labels = Object.fromEntries(keys.map(k => [k, k === 'none' ? none : field === 'content_type' ? typeLabel(k) : k]));
+  return keys.length ? choice(id, label, of, keys, labels) : null;
+}
+
 function fieldFacet(type, field, refs) {
   const values = refs.map(ref => ref.record[field]).filter(v => v != null);
   if (!values.length) return null;
@@ -56,8 +76,6 @@ function fieldFacet(type, field, refs) {
   if (values.every(v => typeof v === 'string')) {
     const keys = [...new Set(values)];
     if (keys.length > MAX_CHOICES) return null;
-    // A content type is named by its page: the missions page's agenda cards are agenda missions.
-    const typeLabel = k => TYPES.find(t => t.of === k)?.label ?? TYPE[k]?.label ?? k;
     const labels = field === 'content_type' ? Object.fromEntries(keys.map(k => [k, typeLabel(k)])) : {};
     return choice(field, label, ({record}) => (record[field] == null ? [] : [record[field]]), sortKeys(keys), labels);
   }
@@ -109,7 +127,8 @@ export function facetsFor(type, refs, db) {
   const derived = new Map([...parentFacets(type, refs, db), ...fields.map(f => fieldFacet(type, f, refs)),
     ...productFacets(refs, db)].filter(Boolean).map(f => [f.id, f]));
   if (!t.facets) return [...derived.values()];
-  return t.facets.map(spec => typeof spec === 'string' ? derived.get(spec) : traitFacet(spec)).filter(Boolean);
+  return t.facets.map(spec => typeof spec === 'string' ? derived.get(spec)
+    : spec.children ? childFacet(spec, refs, db) : traitFacet(spec)).filter(Boolean);
 }
 
 export const defaultGroups = (type, facets) => (TYPE[type].groups ?? []).filter(id => facets.some(f => f.id === id));

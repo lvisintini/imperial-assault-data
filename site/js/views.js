@@ -95,7 +95,7 @@ function subtitle(ref, db) {
       record.modes.length === 1 && `${record.modes[0]} only`,
     ].filter(Boolean).join(' · ');
     case 'upgrade-cards': return `Tier ${record.tier}`;
-    case 'skirmish-mission-cards': return [mapOf(ref, db) && title(mapOf(ref, db)), record.scenario,
+    case 'skirmish-missions': return [mapOf(ref, db) && title(mapOf(ref, db)), record.scenario,
       record.format !== 'Standard' && record.format].filter(Boolean).join(' · ');
     case 'miniatures': return record.description;
     case 'documents': return [record.category, record.version && `Version ${record.version}`].filter(Boolean).join(' · ');

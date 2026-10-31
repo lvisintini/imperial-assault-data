@@ -99,7 +99,8 @@ class TestSite:
         assert "defaultSort = type => TYPE[type].sort ?? [PRODUCT, 'name']" in get_site_js('sort.js')
 
     def test_facet_config_uses_schema_fields(self):
-        """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave' (facets.js)."""
+        """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave' (facets.js). A
+        trait facet's trait is a deployment trait; a children facet's children have an FK to the type, and its field."""
         definitions = get_schema('definitions')['definitions']
         for page, entry in site_types().items():
             content_type = data_type(page, entry)
@@ -107,7 +108,15 @@ class TestSite:
             derived = {}
             if facets:
                 for spec in re.findall(r"\{([^}]*)\}", facets.group(1)):
-                    derived[re.search(r"id: '([^']+)'", spec).group(1)] = re.search(r"trait: '([^']+)'", spec).group(1)
+                    facet_id = re.search(r"id: '([^']+)'", spec).group(1)
+                    if 'children:' in spec:
+                        children = re.search(r"children: '([^']+)'", spec).group(1)
+                        assert re.search(rf"\{{child: '{children}', field: '\w+', parent: '{content_type}'",
+                                         get_site_js('relations.js')), (content_type, children)
+                        assert re.search(r"field: '(\w+)'", spec).group(1) in get_schema(children)['properties']
+                        derived[facet_id] = None
+                    else:
+                        derived[facet_id] = re.search(r"trait: '([^']+)'", spec).group(1)
                 named = strings(re.sub(r"\{[^}]*\}", '', facets.group(1)))
             else:
                 named = []
@@ -119,7 +128,7 @@ class TestSite:
             assert set(strings(groups.group(1)) if groups else []) <= set(named) | set(derived), content_type
             for field in re.findall(r"(\w+): \[", order.group(1)) if order else []:
                 assert field in fields, (content_type, field)
-            for trait in derived.values():
+            for trait in filter(None, derived.values()):
                 assert trait in definitions['deployment-trait']['enum'], (content_type, trait)
 
     def test_deployment_affiliation_order_is_the_schema_enum(self):

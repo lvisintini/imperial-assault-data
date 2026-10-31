@@ -4,146 +4,146 @@
     "name": "Past Life Enemies",
     "hero_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/past-life-enemies.png"
+    "image": "campaign-hero-side-missions/past-life-enemies.png"
   },
   {
     "id": "be3b644f-8f22-5743-b8ae-616228927225",
     "name": "Shady Dealings",
     "hero_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/shady-dealings.png"
+    "image": "campaign-hero-side-missions/shady-dealings.png"
   },
   {
     "id": "350dbdcb-efe5-53de-be1f-f4b14cb432e5",
     "name": "Constant Vigilance",
     "hero_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/constant-vigilance.png"
+    "image": "campaign-hero-side-missions/constant-vigilance.png"
   },
   {
     "id": "91f62f69-da99-542a-b43c-bbbe99263288",
     "name": "Know Your Enemy",
     "hero_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/know-your-enemy.png"
+    "image": "campaign-hero-side-missions/know-your-enemy.png"
   },
   {
     "id": "74aac00f-4ff3-578c-a684-25c97aa4d4f9",
     "name": "Preventative Measures",
     "hero_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/preventative-measures.png"
+    "image": "campaign-hero-side-missions/preventative-measures.png"
   },
   {
     "id": "5838bfab-9c6c-594d-af8e-83409f899c61",
     "name": "Brushfire",
     "hero_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/brushfire.png"
+    "image": "campaign-hero-side-missions/brushfire.png"
   },
   {
     "id": "af7e4575-e0ea-5e80-ad85-d3d2b1f67038",
     "name": "Friends of Old",
     "hero_id": "703db9b7-9fac-5e46-98c1-402024692a92",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/friends-of-old.png"
+    "image": "campaign-hero-side-missions/friends-of-old.png"
   },
   {
     "id": "a255c6cf-d742-5697-9d7c-1d70b8a01ef1",
     "name": "High Moon",
     "hero_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/high-moon.png"
+    "image": "campaign-hero-side-missions/high-moon.png"
   },
   {
     "id": "c8222a4b-3e88-5046-a8a1-68a57fc7c436",
     "name": "Indebted",
     "hero_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/indebted.png"
+    "image": "campaign-hero-side-missions/indebted.png"
   },
   {
     "id": "dbd72355-1c8e-5165-95db-4528de470956",
     "name": "Loose Cannon",
     "hero_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/loose-cannon.png"
+    "image": "campaign-hero-side-missions/loose-cannon.png"
   },
   {
     "id": "8648f06d-2466-566f-9cea-a9f88eabaa39",
     "name": "Temptation",
     "hero_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/temptation.png"
+    "image": "campaign-hero-side-missions/temptation.png"
   },
   {
     "id": "1a287eed-f809-51e3-b0e0-a5a4626d8cbb",
     "name": "Panic in the Streets",
     "hero_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/panic-in-the-streets.png"
+    "image": "campaign-hero-side-missions/panic-in-the-streets.png"
   },
   {
     "id": "1953f5ec-34b4-5e43-9cd0-47273f7f6a6c",
     "name": "Reclassified",
     "hero_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/reclassified.png"
+    "image": "campaign-hero-side-missions/reclassified.png"
   },
   {
     "id": "3dd0a3da-27b5-5c66-a845-f37119ea8318",
     "name": "A Hero's Welcome",
     "hero_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/a-heros-welcome.png"
+    "image": "campaign-hero-side-missions/a-heros-welcome.png"
   },
   {
     "id": "fd39549e-6962-5f05-a2e8-a067a7e74c82",
     "name": "Born from Death",
     "hero_id": "40041806-33ed-5af6-8cb8-24d305062048",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/born-from-death.png"
+    "image": "campaign-hero-side-missions/born-from-death.png"
   },
   {
     "id": "39c7c5ed-4615-5a48-9875-11393d42fbec",
     "name": "Extortion",
     "hero_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/extortion.png"
+    "image": "campaign-hero-side-missions/extortion.png"
   },
   {
     "id": "f5ef311b-5f4b-5836-a182-5befe986155b",
     "name": "Extraction",
     "hero_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/extraction.png"
+    "image": "campaign-hero-side-missions/extraction.png"
   },
   {
     "id": "39b93d27-b5d7-5cc1-829c-028df5a3f804",
     "name": "Test of Metal",
     "hero_id": "181967a3-9d17-5192-964a-60417f8d1205",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/test-of-metal.png"
+    "image": "campaign-hero-side-missions/test-of-metal.png"
   },
   {
     "id": "b97211ea-464c-5bd0-9eff-57c369a7846f",
     "name": "Unfinished Business",
     "hero_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/unfninished-business.png"
+    "image": "campaign-hero-side-missions/unfninished-business.png"
   },
   {
     "id": "c2cd2614-a584-5a4e-b5d1-f524d193f1d3",
     "name": "Duel on Devaron",
     "hero_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/duel-on-devaron.png"
+    "image": "campaign-hero-side-missions/duel-on-devaron.png"
   },
   {
     "id": "12665646-7358-579b-bf80-3a55f350e934",
     "name": "Sands of Seelos",
     "hero_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
     "back_id": "dcf85a36-1935-5309-8051-5b1ba6516835",
-    "image": "campaign-hero-side-mission-cards/sands-of-seelos.png"
+    "image": "campaign-hero-side-missions/sands-of-seelos.png"
   }
 ]

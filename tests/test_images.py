@@ -20,7 +20,9 @@ class ImageDefinition:
         )
 
     def filter(self, content_type, entry):
-        return all(
+        """Whether the entry's image is checked: one of this definition's, and not null (a story mission without a
+        card)."""
+        return entry[self.attr] is not None and all(
             [self.content_type == content_type] + [entry[k] == v for k, v in self.additional_filters.items()]
         )
 
