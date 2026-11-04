@@ -416,7 +416,8 @@ A tile's images are cut on its outline: the connector tabs are kept and the notc
 side by side fit as on the table. They're 64 px per square, plus 32 px on each axis that has tabs, and the small
 image is the same file as the large one. They come from the Vassal *Imperial Assault Campaign Module* (1.14). The
 campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuff/ImperialCommander2), summed over
-each mission's map sections; the skirmish and raid maps' were entered by the maintainer from their maps (`ia enter`'s
+each mission's map sections, with the sides it gets wrong corrected from the Campaign Guide (Desperate Hour uses 24B
+and 32B, not 24A and 32A); the skirmish and raid maps' were entered by the maintainer from their maps (`ia enter`'s
 Map layouts page). Every map has a layout.
 
 The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each tile side placed where
