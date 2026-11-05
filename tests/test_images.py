@@ -7,17 +7,19 @@ from tests.utils import get_data_for
 
 
 class ImageDefinition:
-    def __init__(self, image_subdir, ct, attr, dims, **kwargs):
+    def __init__(self, image_subdir, ct, attr, dims, many=False, **kwargs):
         self.image_subdir = image_subdir
         self.content_type = ct
         self.attr = attr
         self.dims = dims
+        self.many = many  # the field is a list of images
         self.additional_filters = kwargs
 
-    def get_image_path_from_entry(self, entry):
-        return os.path.abspath(
-            os.path.join(os.path.dirname(__file__), f'../images/{self.image_subdir}/{entry[self.attr]}')
-        )
+    def get_image_paths_from_entry(self, entry):
+        return [
+            os.path.abspath(os.path.join(os.path.dirname(__file__), f'../images/{self.image_subdir}/{path}'))
+            for path in (entry[self.attr] if self.many else [entry[self.attr]])
+        ]
 
     def filter(self, content_type, entry):
         """Whether the entry's image is checked: one of this definition's, and not null (a story mission without a
@@ -52,6 +54,7 @@ class ImageTestHelper:
     definitions = [
         ImageDefinition('large', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
         ImageDefinition('large', CONTENT_TYPES.MAP, 'image', dims=ANY),
+        ImageDefinition('large', CONTENT_TYPES.MAP, 'hidden_images', dims=ANY, many=True),
         ImageDefinition('large', CONTENT_TYPES.AGENDA, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.COMMAND, 'image', dims=LARGE_MINI),
         ImageDefinition('large', CONTENT_TYPES.CONDITION, 'image', dims=LARGE_MINI),
@@ -79,6 +82,7 @@ class ImageTestHelper:
 
         ImageDefinition('small', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
         ImageDefinition('small', CONTENT_TYPES.MAP, 'image', dims=ANY),
+        ImageDefinition('small', CONTENT_TYPES.MAP, 'hidden_images', dims=ANY, many=True),
         ImageDefinition('small', CONTENT_TYPES.AGENDA, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.COMMAND, 'image', dims=SMALL_MINI),
         ImageDefinition('small', CONTENT_TYPES.CONDITION, 'image', dims=SMALL_MINI),
@@ -126,7 +130,8 @@ class ImageTestHelper:
                     if not image_def.filter(content_type, entry) or image_def.dims is cls.ANY:
                         continue
                     for dims in back_sizes.get(entry['id'], {None}) if back_sizes else [image_def.dims]:
-                        yield (image_def.get_image_path_from_entry(entry), dims)
+                        for path in image_def.get_image_paths_from_entry(entry):
+                            yield (path, dims)
 
     @classmethod
     def get_paths(cls, data):
@@ -134,8 +139,8 @@ class ImageTestHelper:
             for image_def in [image_def for image_def in cls.definitions if content_type == image_def.content_type]:
                 for entry in models:
                     if not image_def.filter(content_type, entry):
-                            continue
-                    yield image_def.get_image_path_from_entry(entry)
+                        continue
+                    yield from image_def.get_image_paths_from_entry(entry)
 
 
 class TestImages:
@@ -166,14 +171,15 @@ class TestImages:
         sizes = ImageTestHelper.back_sizes(get_data_for(*CONTENT_TYPES.as_list), image_subdir)
         assert {back_id: dims for back_id, dims in sizes.items() if len(dims) > 1} == {}
 
-    @pytest.mark.parametrize("content_type,fields", [(CONTENT_TYPES.MAP, ['image']),
+    @pytest.mark.parametrize("content_type,fields", [(CONTENT_TYPES.MAP, ['image', 'hidden_images']),
                                                      (CONTENT_TYPES.MAP_TILES, ['side_a', 'side_b'])])
     def test_maps_and_tiles_small_images_are_their_large_ones(self, content_type, fields):
         # GitHub Pages only publishes images/small/maps and images/small/map-tiles (.github/workflows/pages.yml), and
         # the explorer reads both sizes of a map or a tile from there.
         root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../images'))
         for entry in get_data_for(content_type)[content_type]:
-            for path in (entry[field] for field in fields):
+            paths = [p for field in fields for p in (entry[field] if isinstance(entry[field], list) else [entry[field]])]
+            for path in paths:
                 with open(os.path.join(root, 'large', path), 'rb') as large, \
                         open(os.path.join(root, 'small', path), 'rb') as small:
                     assert large.read() == small.read(), path

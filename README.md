@@ -133,12 +133,13 @@ What follows is a list of all the image types and their sizes for large and smal
 | **Mini (Flipped)**     | 657x424   | 454x293 |
 | **Hero Sheet**         | 1490x1186 | 650x515 |
 
-The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is. A map (`Any`) keeps its own size, and its small image is the same file as its large one. A map tile's side (`Tile`) is cut on its outline: 64 px per square, plus 32 px on each axis that has connector tabs, and its small image is the same file as its large one.
+The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is. A map's image and hidden images (`Any`) keep their own size, and a map's small image is the same file as its large one. A map tile's side (`Tile`) is cut on its outline: 64 px per square, plus 32 px on each axis that has connector tabs, and its small image is the same file as its large one.
 
 |                                                       | Source  | Standard | Standard (Flipped) | Mini    | Mini (Flipped) | Hero Sheet | Any | Tile |
 |-------------------------------------------------------|---------|----------|--------------------|---------|----------------|------------|-----|------|
 | sources.image                                         | ✔       |          |                    |         |                |            |     |      |
 | maps.image                                            |         |          |                    |         |                |            | ✔   |      |
+| maps.hidden_images                                    |         |          |                    |         |                |            | ✔   |      |
 | agenda-cards.image                                    |         | ✔        |                    |         |                |            |     |      |
 | command-cards.image                                   |         |          |                    | ✔       |                |            |     |      |
 | condition-cards.image                                 |         |          |                    | ✔       |                |            |     |      |

@@ -332,6 +332,10 @@ figure { margin: 0; }
 figure img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); }
 figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
 
+.hidden-parts { display: grid; gap: 8px; }
+.hidden-parts summary { cursor: pointer; font-weight: 600; }
+.hidden-parts img { display: block; max-width: 100%; height: auto; margin-top: 8px; border-radius: var(--radius); }
+
 .fields {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);

@@ -17,12 +17,21 @@
     "image": {
       "description": "The file path for this map's image",
       "$ref": "definitions.json#/definitions/image-file-path"
+    },
+    "hidden_images": {
+      "type": "array",
+      "description": "The parts of the map revealed during its mission, an image each in the order the mission reveals them (empty for a map shown whole)",
+      "items": {
+        "$ref": "definitions.json#/definitions/image-file-path"
+      },
+      "uniqueItems": true
     }
   },
   "required": [
     "id",
     "name",
-    "image"
+    "image",
+    "hidden_images"
   ],
   "additionalProperties": false
 }

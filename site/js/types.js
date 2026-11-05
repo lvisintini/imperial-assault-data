@@ -130,7 +130,7 @@ export const TYPES = [
     menu: 'sources',
   },
   {
-    file: 'maps', label: 'Maps', singular: 'Map', images: ['image'],
+    file: 'maps', label: 'Maps', singular: 'Map', images: ['image'], imageLists: ['hidden_images'],
     facets: [
       {id: 'mission-type', label: 'Mission type', children: 'missions', field: 'content_type', none: 'No mission card'},
       'source', 'wave',
