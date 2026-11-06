@@ -390,8 +390,8 @@
   },
   {
     "id": "6366f083-b629-4636-90a9-97351870809d",
-    "name": "Desperate Hour",
-    "image": "maps/desperate-hour.png",
+    "name": "Desperate Hour / Last Stand",
+    "image": "maps/desperate-hour--last-stand.png",
     "hidden_sections": []
   },
   {
@@ -1073,14 +1073,8 @@
   },
   {
     "id": "3b375bd2-ba70-4ad3-b7f6-aa8a4cb21692",
-    "name": "Fire in the Sky",
-    "image": "maps/fire-in-the-sky.png",
-    "hidden_sections": []
-  },
-  {
-    "id": "6bc2b2c1-ffb4-4097-a4dc-92c8a3ba1488",
-    "name": "Infiltrated",
-    "image": "maps/infiltrated.png",
+    "name": "Fire in the Sky / Infiltrated",
+    "image": "maps/fire-in-the-sky--infiltrated.png",
     "hidden_sections": []
   },
   {
