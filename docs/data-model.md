@@ -426,10 +426,11 @@ The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each t
 ImperialCommander2's mission file puts it (as corrected), at 64 px per square, on a transparent background. They show
 the tiles only (no doors, tokens or figures). Most show every section of the map. A map whose parts are revealed as
 the mission goes on (Disruption, Into a Corner, Into the Unknown, Our Last Hope, Race on Ryloth, Survival of the
-Fittest) shows what's on the table at the start in `image`, and each part revealed later in `hidden_images`, an image
-each, in ImperialCommander2's order. A few maps not yet checked whose sections replace each other (Trespass,
+Fittest) shows what's on the table at the start in `image`, and each section revealed later in `hidden_sections`, in
+order, with its name and image (one or more of ImperialCommander2's sections: Disruption's Underworld (Obscured area) is
+17 of them; Into a Corner's Main Street, City Square and Landing are one of the copies IC2 places on each side). A few maps not yet checked whose sections replace each other (Trespass,
 Dangerous Allies, Call to Action, Salvage Operatives) show their start section only. Like the tiles, a campaign map's
-small image, and its hidden images' small ones, are the same files as the large ones.
+small image, and its hidden sections' small ones, are the same files as the large ones.
 
 ```mermaid
 erDiagram
@@ -443,7 +444,7 @@ erDiagram
         uuid id PK
         string name
         string image
-        array hidden_images "the parts revealed during the mission"
+        array hidden_sections "{name, image}: the sections revealed during the mission"
     }
     map-tiles {
         uuid id PK

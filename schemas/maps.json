@@ -18,11 +18,27 @@
       "description": "The file path for this map's image",
       "$ref": "definitions.json#/definitions/image-file-path"
     },
-    "hidden_images": {
+    "hidden_sections": {
       "type": "array",
-      "description": "The parts of the map revealed during its mission, an image each in the order the mission reveals them (empty for a map shown whole)",
+      "description": "The sections of the map revealed during its mission, in order, each with its name and image (empty for a map shown whole)",
       "items": {
-        "$ref": "definitions.json#/definitions/image-file-path"
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The section's name",
+            "minLength": 1
+          },
+          "image": {
+            "description": "The file path for the section's image",
+            "$ref": "definitions.json#/definitions/image-file-path"
+          }
+        },
+        "required": [
+          "name",
+          "image"
+        ],
+        "additionalProperties": false
       },
       "uniqueItems": true
     }
@@ -31,7 +47,7 @@
     "id",
     "name",
     "image",
-    "hidden_images"
+    "hidden_sections"
   ],
   "additionalProperties": false
 }

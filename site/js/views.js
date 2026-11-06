@@ -471,8 +471,8 @@ function fieldValue(ref, field, value, db) {
   if (TYPE[ref.type].images.includes(field) && value) {
     return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;
   }
-  if (TYPE[ref.type].imageLists?.includes(field) && value?.length) {
-    return html`${value.map((path, i) => html`${i ? ', ' : ''}<a href="${imageUrl('large', path)}"><code>${path}</code></a>`)}`;
+  if (TYPE[ref.type].imageSections?.includes(field) && value?.length) {
+    return html`${value.map(({name, image}, i) => html`${i ? ', ' : ''}${name}: <a href="${imageUrl('large', image)}"><code>${image}</code></a>`)}`;
   }
   if (value == null || (Array.isArray(value) && !value.length)) return html`<span class="none">—</span>`;
   if (Array.isArray(value)) return value.join(', ');
@@ -492,12 +492,12 @@ function layoutList(rows, db) {
   })}</div>`;
 }
 
-// The parts of a map revealed during its mission, in order: each stays closed until the viewer opens it.
-function hiddenList(paths) {
-  return html`<div class="hidden-parts">${paths.map((path, i) => html`
+// The sections of a map revealed during its mission, in order: each stays closed until the viewer opens it.
+function hiddenList(sections) {
+  return html`<div class="hidden-sections">${sections.map(({name, image}) => html`
     <details>
-      <summary>Part ${i + 1}</summary>
-      <a href="${imageUrl('large', path)}"><img loading="lazy" src="${imageUrl('large', path)}" alt="Hidden part ${i + 1}"></a>
+      <summary>${name}</summary>
+      <a href="${imageUrl('large', image)}"><img loading="lazy" src="${imageUrl('large', image)}" alt="${name}"></a>
     </details>`)}</div>`;
 }
 
@@ -550,8 +550,8 @@ export function detail(db, ref) {
   if (map) related.push(section('Map', null, grid([map], db)));
   const layout = db.layout.get(ref);
   if (layout) related.push(section('Tiles', layout.length, layoutList(layout, db)));
-  const hidden = (t.imageLists ?? []).flatMap(field => ref.record[field] ?? []);
-  if (hidden.length) related.push(section('Hidden parts', hidden.length, hiddenList(hidden)));
+  const hidden = (t.imageSections ?? []).flatMap(field => ref.record[field] ?? []);
+  if (hidden.length) related.push(section('Hidden sections', hidden.length, hiddenList(hidden)));
   const usedIn = db.usedIn.get(ref);
   if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
   const rewards = db.rewards.get(ref);
