@@ -377,6 +377,52 @@ class TestMapTilesIntegrity:
         rows = [(r['map_id'], r['tile_id'], r['side']) for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)]
         assert len(rows) == len(set(rows))
 
+    @staticmethod
+    def product_codes():
+        """{source id: (product code, 0)}; a product without a code sorts right after the last coded product released
+        on or before it: (that code, 1). The Luke and Vader packs follow the Core Set."""
+        sources = get_data(CONTENT_TYPES.SOURCE)
+        coded = sorted((s['release_date'] or '9999', s['product_code']) for s in sources if s['product_code'])
+        codes = {}
+        for s in sources:
+            if s['product_code']:
+                codes[s['id']] = (s['product_code'], 0)
+            else:
+                before = [code for date, code in coded if date <= (s['release_date'] or '9999')]
+                codes[s['id']] = (before[-1] if before else '', 1)
+        return codes
+
+    @staticmethod
+    def products_of(content_type):
+        codes = TestMapTilesIntegrity.product_codes()
+        found = {}
+        for row in get_data(CONTENT_TYPES.SOURCE_CONTENTS):
+            if row['content_type'] == content_type:
+                found.setdefault(row['content_id'], []).append(codes[row['source_id']])
+        return found
+
+    def test_tiles_are_in_product_code_and_number_order(self):
+        products = self.products_of(CONTENT_TYPES.MAP_TILES)
+        keys = [(min(products[t['id']]), t['number']) for t in get_data(CONTENT_TYPES.MAP_TILES)]
+        assert keys == sorted(keys)
+
+    def test_layouts_are_in_order(self):
+        """By the map's mission product (its missions' earliest product code), the map's name, then the tile's product
+        code descending, its number and the side."""
+        missions = self.products_of(CONTENT_TYPES.MISSIONS)
+        first = {}
+        for mission in get_data(CONTENT_TYPES.MISSIONS):
+            if mission['map_id'] and mission['id'] in missions:
+                first.setdefault(mission['map_id'], []).extend(missions[mission['id']])
+        names = {m['id']: m['name'].casefold() for m in get_data(CONTENT_TYPES.MAP)}
+        tile_products = self.products_of(CONTENT_TYPES.MAP_TILES)
+        codes = sorted({c for found in tile_products.values() for c, _ in found}, reverse=True)
+        tiles = {t['id']: (codes.index(min(c for c, _ in tile_products[t['id']])), t['number'])
+                 for t in get_data(CONTENT_TYPES.MAP_TILES)}
+        keys = [(min(first[r['map_id']]), names[r['map_id']], *tiles[r['tile_id']], r['side'])
+                for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)]
+        assert keys == sorted(keys)
+
 
 class TestDeploymentsIntegrity:
     @pytest.mark.parametrize("entry", [

@@ -408,9 +408,11 @@ map is used by a mission, so it reaches its products through its missions (and a
 Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
   per side (`side_a`, `side_b`). Tiles reach their products through `source-contents`, with `quantity` = how many of
-  that tile the box has.
+  that tile the box has. The file runs by product code, then number.
 - `map-layouts` (no ids): the tile sides a map uses, `{map_id, tile_id, side, count}`, `count` being how many of that
-  side the mission takes. A campaign map whose sections reuse the same tiles as the mission goes on counts the copies
+  side the mission takes. Rows run by the map's mission product (the earliest product code of its missions' products;
+  a product without a code, like the Luke and Vader packs, right after the last coded one released on or before it),
+  the map's name, then the tile's product code descending, its number and the side. A campaign map whose sections reuse the same tiles as the mission goes on counts the copies
   the mission takes (Into a Corner: 18B ×5), not how many times its sections place them; a few uncurated maps still
   count their placements, so a count can be more than a box's copies.
 
