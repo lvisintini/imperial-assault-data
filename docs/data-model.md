@@ -342,7 +342,8 @@ threat, side or agenda mission follows from `content_type`. The index row is wha
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
 - **Map:** `map_id` is the map it's played on. Every mission has one, and a map's products are its missions' products.
-  A campaign mission's map is named after it (see [Maps and map tiles](#maps-and-map-tiles)).
+  A campaign mission's map is named after it, or after the mission whose map it plays on (Last Stand plays on
+  Desperate Hour's; see [Maps and map tiles](#maps-and-map-tiles)).
 - **Rewards:** `mission-rewards` lists what winning gives, one row per reward, polymorphic like `source-contents`:
   `content_type` + `content_id` name a reward or deployment card, or both are null and `credits` is true. Rows with
   `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
@@ -399,7 +400,8 @@ erDiagram
 ## Maps and map tiles
 
 `maps` holds every mission's map. Skirmish, four-player and raid maps have an image (from the Skirmish Map Project).
-Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Every
+Campaign maps, one per campaign mission and named after it (except where missions share one: Last Stand plays on
+Desperate Hour's), have an image drawn from their layout (see below). Every
 map is used by a mission, so it reaches its products through its missions (and a skirmish map also through its mat).
 
 Maps are built from double-sided tiles:
