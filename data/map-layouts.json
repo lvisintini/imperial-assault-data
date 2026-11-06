@@ -6051,7 +6051,7 @@
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
     "tile_id": "58152319-7388-47ee-aa0b-1ab261a5ea6c",
     "side": "B",
-    "count": 4
+    "count": 3
   },
   {
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
@@ -6063,7 +6063,7 @@
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
     "tile_id": "65a15c4e-378e-41e6-805a-5c2738254cf3",
     "side": "B",
-    "count": 2
+    "count": 1
   },
   {
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
@@ -6087,7 +6087,7 @@
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
     "tile_id": "e2ff406c-389f-4790-b4ed-47c1bb561169",
     "side": "B",
-    "count": 5
+    "count": 3
   },
   {
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
@@ -6111,13 +6111,13 @@
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
     "tile_id": "e7fb41fd-96ec-4fc7-bde9-83f73d3ee458",
     "side": "B",
-    "count": 2
+    "count": 1
   },
   {
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
     "tile_id": "30b61841-e434-4dad-8504-47474b33dfdd",
     "side": "B",
-    "count": 2
+    "count": 1
   },
   {
     "map_id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
@@ -8835,25 +8835,25 @@
     "map_id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",
     "tile_id": "e2a809f5-bad9-4fa3-92c5-9e264af2ed9b",
     "side": "B",
-    "count": 3
+    "count": 1
   },
   {
     "map_id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",
     "tile_id": "b22328e9-59f3-4063-a741-8009aed5a57f",
     "side": "B",
-    "count": 3
+    "count": 1
   },
   {
     "map_id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",
     "tile_id": "e2ff406c-389f-4790-b4ed-47c1bb561169",
     "side": "B",
-    "count": 3
+    "count": 1
   },
   {
     "map_id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",
     "tile_id": "d4aa1428-50ff-47ed-ad46-fb062080d154",
     "side": "B",
-    "count": 3
+    "count": 1
   },
   {
     "map_id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",

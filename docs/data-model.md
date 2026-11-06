@@ -425,11 +425,12 @@ were entered by the maintainer from their maps (`ia enter`'s Map layouts page). 
 The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each tile side placed where
 ImperialCommander2's mission file puts it (as corrected), at 64 px per square, on a transparent background. They show
 the tiles only (no doors, tokens or figures). Most show every section of the map. A map whose parts are revealed as
-the mission goes on (Disruption, Into a Corner, Into the Unknown, Our Last Hope, Race on Ryloth, Survival of the
-Fittest) shows what's on the table at the start in `image`, and each section revealed later in `hidden_sections`, in
-order, with its name and image (one or more of ImperialCommander2's sections: Disruption's Underworld (Obscured area) is
-17 of them; Into a Corner's Main Street, City Square and Landing are one of the copies IC2 places on each side). A few maps not yet checked whose sections replace each other (Trespass,
-Dangerous Allies, Call to Action, Salvage Operatives) show their start section only. Like the tiles, a campaign map's
+the mission goes on (Call to Action, Capital Escape, Dangerous Allies, Disruption, From Dark Clutches, Into a Corner,
+Into the Unknown, Mutiny, Our Last Hope, Race on Ryloth, Salvage Operatives, Storming the Palace, Survival of the
+Fittest, Trespass) shows what's on the table at the start in `image`, and each section revealed later in
+`hidden_sections`, in order, with its name and image (one or more of ImperialCommander2's sections: Disruption's
+Underworld (Obscured area) is 17 of them; Into a Corner's Main Street, City Square and Landing are one of the copies IC2
+places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Like the tiles, a campaign map's
 small image, and its hidden sections' small ones, are the same files as the large ones.
 
 ```mermaid

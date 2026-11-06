@@ -446,7 +446,16 @@
     "id": "34cf1b4a-7f3c-4e82-9568-ba2aab920548",
     "name": "Dangerous Allies",
     "image": "maps/dangerous-allies.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Skiff",
+        "image": "maps/dangerous-allies-hidden-1.png"
+      },
+      {
+        "name": "Canyon",
+        "image": "maps/dangerous-allies-hidden-2.png"
+      }
+    ]
   },
   {
     "id": "4590cf90-8ab9-4b1c-8cc8-b2c75ca189d6",
@@ -476,7 +485,16 @@
     "id": "91582d9c-f7dc-4496-a45f-d431c5ebf120",
     "name": "Mutiny",
     "image": "maps/mutiny.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Second Skiff",
+        "image": "maps/mutiny-hidden-1.png"
+      },
+      {
+        "name": "Khetanna",
+        "image": "maps/mutiny-hidden-2.png"
+      }
+    ]
   },
   {
     "id": "f6329d4e-b54d-42d7-bc88-0a8f45ea098f",
@@ -488,7 +506,12 @@
     "id": "93b70be3-aea8-46ee-9b19-172f1678d27f",
     "name": "Storming the Palace",
     "image": "maps/storming-the-palace.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Rancor Pit",
+        "image": "maps/storming-the-palace-hidden-1.png"
+      }
+    ]
   },
   {
     "id": "20e1dabe-2f49-4d95-b9a9-cee2b8163485",
@@ -506,7 +529,12 @@
     "id": "8b008240-ffbc-4a5a-a458-a0d1f0d7d384",
     "name": "Capital Escape",
     "image": "maps/capital-escape.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Command Center",
+        "image": "maps/capital-escape-hidden-1.png"
+      }
+    ]
   },
   {
     "id": "9efaa998-2bef-4487-942a-f1aba4c7aa49",
@@ -547,7 +575,12 @@
     "id": "19c4576a-005c-403e-b55c-9c70d860e50f",
     "name": "From Dark Clutches",
     "image": "maps/from-dark-clutches.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Hidden area",
+        "image": "maps/from-dark-clutches-hidden-1.png"
+      }
+    ]
   },
   {
     "id": "621df554-2bd3-4d0e-95a7-fe5a5af5ab74",
@@ -972,7 +1005,12 @@
     "id": "84061ce9-cd5b-4593-b0ad-dae49bd2ff74",
     "name": "Call to Action",
     "image": "maps/call-to-action.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Fields",
+        "image": "maps/call-to-action-hidden-1.png"
+      }
+    ]
   },
   {
     "id": "f59d5c21-ccd4-4a4e-a807-a98984c11bac",
@@ -1151,7 +1189,12 @@
     "id": "9840728e-6131-43e4-ac17-fa59e34bdc0f",
     "name": "Salvage Operatives",
     "image": "maps/salvage-operatives.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Sand Crawler",
+        "image": "maps/salvage-operatives-hidden-1.png"
+      }
+    ]
   },
   {
     "id": "565ce107-6b2a-4b13-bf97-52cd7f863263",
@@ -1211,6 +1254,11 @@
     "id": "04778e88-dd82-4c9a-b77f-ad26a8ca6fd1",
     "name": "Trespass",
     "image": "maps/trespass.png",
-    "hidden_sections": []
+    "hidden_sections": [
+      {
+        "name": "Skiff",
+        "image": "maps/trespass-hidden-1.png"
+      }
+    ]
   }
 ]
