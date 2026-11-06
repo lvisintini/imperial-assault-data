@@ -2,7 +2,9 @@
 // images/large and images/small); `hidden` keeps a type out of navigation and routing. `menu` puts a type in another
 // type's submenu, in this order. `of` + `where` make a page that isn't a file: some of another type's records (agenda
 // missions), shown and linked as that type's. `sort` is the default order (field names, '-' for descending; when
-// missing, by product, the earliest release date and product code of the products a record comes in, then name).
+// missing, by product, the earliest release date and product code of the products a record comes in, then name;
+// 'product' names that key, and a sort starting with '-product' also lists the type's products newest first, in the
+// Product facet and its groups).
 // `thumb: 'back'` makes tiles show the record's card back instead of its own image, which the peek still shows;
 // `icon` stands in for a missing image: 'pdf', or 'affiliation' (the record's affiliation's emblem). `imageSections`
 // lists fields holding [{name, image}] (a map's hidden sections).
@@ -140,7 +142,7 @@ export const TYPES = [
   },
   {
     file: 'map-tiles', label: 'Map tiles', singular: 'Map tile', images: ['side_a', 'side_b'], menu: 'maps',
-    sort: ['name'],
+    sort: ['-product', 'number'],
     facets: [
       'source', 'wave',
     ],

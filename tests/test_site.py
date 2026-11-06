@@ -89,14 +89,15 @@ class TestSite:
             set(properties['relation']['enum'] + properties['reverse_relation']['enum'])
 
     def test_default_sorts_use_schema_fields(self):
-        """sort names schema fields; without one, lists sort by product (sort.js PRODUCT), then name."""
+        """sort names schema fields or 'product' (sort.js PRODUCT); without one, lists sort by product, then name."""
         for page, entry in site_types().items():
             if 'hidden: true' in entry:
                 continue
             sort = re.search(r"sort: \[([^\]]*)\]", entry)
             keys = [key.removeprefix('-') for key in strings(sort.group(1))] if sort else ['name']
-            assert set(keys) <= set(get_schema(data_type(page, entry))['properties']), page
+            assert set(keys) <= set(get_schema(data_type(page, entry))['properties']) | {'product'}, page
         assert "defaultSort = type => TYPE[type].sort ?? [PRODUCT, 'name']" in get_site_js('sort.js')
+        assert "export const PRODUCT = 'product';" in get_site_js('sort.js')
 
     def test_facet_config_uses_schema_fields(self):
         """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave' (facets.js). A
