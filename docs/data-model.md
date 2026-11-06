@@ -413,8 +413,7 @@ Maps are built from double-sided tiles:
   side the mission takes. Rows run by the map's mission product (the earliest product code of its missions' products;
   a product without a code, like the Luke and Vader packs, right after the last coded one released on or before it),
   the map's name, then the tile's product code descending, its number and the side. A campaign map whose sections reuse the same tiles as the mission goes on counts the copies
-  the mission takes (Into a Corner: 18B ×5), not how many times its sections place them; a few uncurated maps still
-  count their placements, so a count can be more than a box's copies.
+  the mission takes (Into a Corner: 18B ×5), not how many times its sections place them.
 
 So every mission reaches its tiles the same way: mission → map → map layouts → map tiles → products.
 
