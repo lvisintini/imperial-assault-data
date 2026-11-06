@@ -342,7 +342,8 @@ threat, side or agenda mission follows from `content_type`. The index row is wha
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
 - **Map:** `map_id` is the map it's played on. Every mission has one, and a map's products are its missions' products.
-  A campaign mission's map is named after it (see [Maps and map tiles](#maps-and-map-tiles)).
+  A campaign mission's map is named after it; a map that several missions play on is named after each of them, in
+  order ("Desperate Hour / Last Stand"; see [Maps and map tiles](#maps-and-map-tiles)).
 - **Rewards:** `mission-rewards` lists what winning gives, one row per reward, polymorphic like `source-contents`:
   `content_type` + `content_id` name a reward or deployment card, or both are null and `credits` is true. Rows with
   `choice: true` are alternatives: the player picks one (Race on Ryloth: any one Spectre ally, plus Rough Rider). An
@@ -399,16 +400,19 @@ erDiagram
 ## Maps and map tiles
 
 `maps` holds every mission's map. Skirmish, four-player and raid maps have an image (from the Skirmish Map Project).
-Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Every
+Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Two
+are shared by two missions each and named after both: Desperate Hour / Last Stand and Fire in the Sky / Infiltrated
+(their image files join the missions' slugs with `--`: `desperate-hour--last-stand.png`). Every
 map is used by a mission, so it reaches its products through its missions (and a skirmish map also through its mat).
 
 Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
   per side (`side_a`, `side_b`). Tiles reach their products through `source-contents`, with `quantity` = how many of
   that tile the box has.
-- `map-layouts` (no ids): the tile sides a map uses, `{map_id, tile_id, side, count}`, `count` being how many times
-  the map places that side. Some campaign maps are built from sections that replace each other during the mission
-  (Heart of the Empire's Into a Corner), so a count can be more than a box's copies.
+- `map-layouts` (no ids): the tile sides a map uses, `{map_id, tile_id, side, count}`, `count` being how many of that
+  side the mission takes. A campaign map whose sections reuse the same tiles as the mission goes on counts the copies
+  the mission takes (Into a Corner: 18B ×5), not how many times its sections place them; a few uncurated maps still
+  count their placements, so a count can be more than a box's copies.
 
 So every mission reaches its tiles the same way: mission → map → map layouts → map tiles → products.
 
@@ -416,14 +420,21 @@ A tile's images are cut on its outline: the connector tabs are kept and the notc
 side by side fit as on the table. They're 64 px per square, plus 32 px on each axis that has tabs, and the small
 image is the same file as the large one. They come from the Vassal *Imperial Assault Campaign Module* (1.14). The
 campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuff/ImperialCommander2), summed over
-each mission's map sections; the skirmish and raid maps' were entered by the maintainer from their maps (`ia enter`'s
-Map layouts page). Every map has a layout.
+each mission's map sections, and corrected where the maintainer's checks against the Campaign Guide and the rulebooks
+found it wrong: a tile's side (Desperate Hour uses 24B and 32B, not 24A and 32A), a tile it lacks or has too many of,
+or the copies a mission takes (imperial-assault-tools' `ia_tools/ic2.py` `CORRECTIONS`). The skirmish and raid maps'
+were entered by the maintainer from their maps (`ia enter`'s Map layouts page). Every map has a layout.
 
 The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each tile side placed where
-ImperialCommander2's mission file puts it, at 64 px per square, on a transparent background. They show the tiles only
-(no doors, tokens or figures). A map whose sections replace each other during the mission (Into a Corner, Preventative
-Measures, Trespass, Dangerous Allies, Call to Action, The Final Order, Salvage Operatives) shows its start section;
-the others show every section. Like the tiles, a campaign map's small image is the same file as its large one.
+ImperialCommander2's mission file puts it (as corrected), at 64 px per square, on a transparent background. They show
+the tiles only (no doors, tokens or figures). Most show every section of the map. A map whose parts are revealed as
+the mission goes on (Call to Action, Capital Escape, Dangerous Allies, Disruption, From Dark Clutches, Into a Corner,
+Into the Unknown, Mutiny, Our Last Hope, Race on Ryloth, Salvage Operatives, Storming the Palace, Survival of the
+Fittest, Trespass) shows what's on the table at the start in `image`, and each section revealed later in
+`hidden_sections`, in order, with its name and image (one or more of ImperialCommander2's sections: Disruption's
+Underworld (Obscured area) is 17 of them; Into a Corner's Main Street, City Square and Landing are one of the copies IC2
+places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Like the tiles, a campaign map's
+small image, and its hidden sections' small ones, are the same files as the large ones.
 
 ```mermaid
 erDiagram
@@ -437,6 +448,7 @@ erDiagram
         uuid id PK
         string name
         string image
+        array hidden_sections "{name, image}: the sections revealed during the mission"
     }
     map-tiles {
         uuid id PK

@@ -4,7 +4,8 @@
 // missions), shown and linked as that type's. `sort` is the default order (field names, '-' for descending; when
 // missing, by product, the earliest release date and product code of the products a record comes in, then name).
 // `thumb: 'back'` makes tiles show the record's card back instead of its own image, which the peek still shows;
-// `icon` stands in for a missing image: 'pdf', or 'affiliation' (the record's affiliation's emblem).
+// `icon` stands in for a missing image: 'pdf', or 'affiliation' (the record's affiliation's emblem). `imageSections`
+// lists fields holding [{name, image}] (a map's hidden sections).
 // List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
 // ('source', 'wave'; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
 // facet with its own labels, or a field of the record's children (a map's missions' kinds); `groups` is the default grouping (facet ids); `order` fixes the order of a field's
@@ -130,7 +131,7 @@ export const TYPES = [
     menu: 'sources',
   },
   {
-    file: 'maps', label: 'Maps', singular: 'Map', images: ['image'],
+    file: 'maps', label: 'Maps', singular: 'Map', images: ['image'], imageSections: ['hidden_sections'],
     facets: [
       {id: 'mission-type', label: 'Mission type', children: 'missions', field: 'content_type', none: 'No mission card'},
       'source', 'wave',
