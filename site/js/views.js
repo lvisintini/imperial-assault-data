@@ -480,9 +480,11 @@ function fieldValue(ref, field, value, db) {
   return String(value);
 }
 
-// A map's tile sides, each with how many times the map places it.
+// A map's tile sides, each with how many times the map places it: in the map tiles' default order, then by side.
 function layoutList(rows, db) {
-  return html`<div class="grid">${rows.map(({ref, side, count}) => {
+  const tiles = sorted([...new Set(rows.map(row => row.ref))]);
+  const ordered = [...rows].sort((a, b) => tiles.indexOf(a.ref) - tiles.indexOf(b.ref) || a.side.localeCompare(b.side));
+  return html`<div class="grid">${ordered.map(({ref, side, count}) => {
     const path = ref.record[side === 'A' ? 'side_a' : 'side_b'];
     return html`<a class="tile" href="${href(ref)}" data-peek="${imageUrl('large', path)}">
       <span class="thumb"><img loading="lazy" src="${imageUrl('small', path)}" alt=""></span>

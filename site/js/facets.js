@@ -5,6 +5,7 @@
 //           whose steps are the values' greatest common divisor (credits go in tens).
 // Facets combine with AND, the values ticked within one facet with OR.
 import {FKS} from './relations.js';
+import {PRODUCT as PRODUCT_SORT, defaultSort} from './sort.js';
 import {TYPE, TYPES, fieldLabel, fileOf, title} from './types.js';
 
 const SKIPPED = new Set(['id', 'name', 'description', 'iaspec']);
@@ -103,11 +104,12 @@ function parentFacets(type, refs, db) {
   });
 }
 
-function productFacets(refs, db) {
+function productFacets(type, refs, db) {
   // A product is its own (db.productsOf), so the products page gets the same Wave facet, in place of a range on its
-  // wave field.
+  // wave field. Products run in the products file's order, newest first when the type sorts by '-product'.
   const found = new Map(refs.map(ref => [ref, db.productsOf(ref)]));
-  const sources = [...new Set([...found.values()].flat())].sort((a, b) => a.index - b.index);
+  const newest = defaultSort(type)[0] === `-${PRODUCT_SORT}`;
+  const sources = [...new Set([...found.values()].flat())].sort((a, b) => newest ? b.index - a.index : a.index - b.index);
   if (!sources.length) return [];
   const waveKey = source => source.record.wave == null ? 'none' : String(source.record.wave);
   const waves = [...new Set(sources.map(waveKey))].sort(compareKeys);
@@ -125,7 +127,7 @@ export function facetsFor(type, refs, db) {
   const fields = [...new Set(refs.flatMap(ref => Object.keys(ref.record)))]
     .filter(f => !SKIPPED.has(f) && !f.endsWith('_id') && !t.images.includes(f));
   const derived = new Map([...parentFacets(type, refs, db), ...fields.map(f => fieldFacet(type, f, refs)),
-    ...productFacets(refs, db)].filter(Boolean).map(f => [f.id, f]));
+    ...productFacets(type, refs, db)].filter(Boolean).map(f => [f.id, f]));
   if (!t.facets) return [...derived.values()];
   return t.facets.map(spec => typeof spec === 'string' ? derived.get(spec)
     : spec.children ? childFacet(spec, refs, db) : traitFacet(spec)).filter(Boolean);
