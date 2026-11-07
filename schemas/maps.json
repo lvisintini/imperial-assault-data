@@ -41,13 +41,25 @@
         "additionalProperties": false
       },
       "uniqueItems": true
+    },
+    "whole_image": {
+      "description": "For a map with hidden sections: an image of the whole map, its image and then each hidden section in order, in one frame (later sections drawn on top). null for a map without hidden sections.",
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/definitions/image-file-path"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [
     "id",
     "name",
     "image",
-    "hidden_sections"
+    "hidden_sections",
+    "whole_image"
   ],
   "additionalProperties": false
 }

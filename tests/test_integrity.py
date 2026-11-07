@@ -428,6 +428,10 @@ class TestMapTilesIntegrity:
         """{map id: [None, then its hidden sections' names in order]}: the images a map's placements are on."""
         return {m['id']: [None] + [h['name'] for h in m['hidden_sections']] for m in get_data(CONTENT_TYPES.MAP)}
 
+    def test_a_map_has_a_whole_image_when_it_has_hidden_sections(self):
+        maps = get_data(CONTENT_TYPES.MAP)
+        assert [m['name'] for m in maps if bool(m['whole_image']) != bool(m['hidden_sections'])] == []
+
     def test_placements_are_on_the_maps_images(self):
         sections = self.sections()
         wrong = [(r['map_id'], p['section']) for r in get_data(CONTENT_TYPES.MAP_LAYOUTS) for p in r['placements']

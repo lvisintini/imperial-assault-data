@@ -471,6 +471,9 @@ function fieldValue(ref, field, value, db) {
   if (TYPE[ref.type].images.includes(field) && value) {
     return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;
   }
+  if (TYPE[ref.type].pageImages?.[field] && value) {
+    return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;
+  }
   if (TYPE[ref.type].imageSections?.includes(field) && value?.length) {
     return html`${value.map(({name, image}, i) => html`${i ? ', ' : ''}${name}: <a href="${imageUrl('large', image)}"><code>${image}</code></a>`)}`;
   }
@@ -554,6 +557,12 @@ export function detail(db, ref) {
   if (layout) related.push(section('Tiles', layout.length, layoutList(layout, db)));
   const hidden = (t.imageSections ?? []).flatMap(field => ref.record[field] ?? []);
   if (hidden.length) related.push(section('Hidden sections', hidden.length, hiddenList(hidden)));
+  // An image shown in a section of its own: a map's whole map, its image and every hidden section in one frame.
+  for (const [field, heading] of Object.entries(t.pageImages ?? {})) {
+    const image = ref.record[field];
+    if (image) related.push(section(heading, null, html`<a class="page-image" href="${imageUrl('large', image)}">
+      <img loading="lazy" src="${imageUrl('large', image)}" alt="${heading}: ${name}"></a>`));
+  }
   const usedIn = db.usedIn.get(ref);
   if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
   const rewards = db.rewards.get(ref);

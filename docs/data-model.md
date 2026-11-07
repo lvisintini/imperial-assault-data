@@ -449,8 +449,10 @@ Into the Unknown, Mutiny, Our Last Hope, Race on Ryloth, Salvage Operatives, Sto
 Fittest, Trespass) shows what's on the table at the start in `image`, and each section revealed later in
 `hidden_sections`, in order, with its name and image (one or more of ImperialCommander2's sections: Disruption's
 Underworld (Obscured area) is 17 of them; Into a Corner's Main Street, City Square and Landing are one of the copies IC2
-places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Like the tiles, a campaign map's
-small image, and its hidden sections' small ones, are the same files as the large ones.
+places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Such a map also has a
+`whole_image`: its image and then each hidden section, in order, drawn in one frame (where sections replace each other,
+as on Race on Ryloth, the later ones are drawn on top); it's `null` for the rest. Like the tiles, a campaign map's
+small images are the same files as its large ones.
 
 ```mermaid
 erDiagram
@@ -465,6 +467,7 @@ erDiagram
         string name
         string image
         array hidden_sections "{name, image}: the sections revealed during the mission"
+        string whole_image "null without hidden sections"
     }
     map-tiles {
         uuid id PK
