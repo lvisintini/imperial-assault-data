@@ -512,24 +512,22 @@ function layoutList(rows, db) {
     })}</div>`);
 }
 
-// How the Vassal Imperial Assault modules name a tile side: "05A" for the Core Set, "TS 5A", "H05A", "BG05A", "JR05A",
-// "HotE05A", "ToL05A" for the expansions (by product name).
-const VASSAL = {
-  'Imperial Assault': n => String(n).padStart(2, '0'), 'Twin Shadows': n => `TS ${n}`,
-  'Return to Hoth': n => `H${String(n).padStart(2, '0')}`, 'The Bespin Gambit': n => `BG${String(n).padStart(2, '0')}`,
-  "Jabba's Realm": n => `JR${String(n).padStart(2, '0')}`, 'Heart of the Empire': n => `HotE${String(n).padStart(2, '0')}`,
-  'Tyrants of Lothal': n => `ToL${String(n).padStart(2, '0')}`,
+// A product's short name in a map's tile list, as the Vassal Imperial Assault modules prefix its tiles (the Core Set's
+// have none there).
+const SHORT = {
+  'Imperial Assault': 'Core', 'Twin Shadows': 'TS', 'Return to Hoth': 'H', 'The Bespin Gambit': 'BG',
+  "Jabba's Realm": 'JR', 'Heart of the Empire': 'HotE', 'Tyrants of Lothal': 'ToL',
 };
 
-// A map's tile sides as text, in Vassal's names, a line per product: "Core Set 21B ×2" reads "21B ×2".
+// A map's tile sides as text, a line per product (newest first): "ToL  01A, 03A" … "Core  32A(2), 36A(4)", the copies
+// in brackets when the mission takes more than one.
 function layoutText(rows, db) {
-  return html`<dl class="tile-list">${layoutGroups(rows, db).map(({product, rows}) => {
-    const code = VASSAL[product?.record.name] ?? (n => String(n));
-    return html`<dt>${product ? html`<a href="${href(product)}">${title(product)}</a>` : 'No product'}</dt>
-      <dd>${rows.map(({ref, side, count}, i) => html`${i ? ', ' : ''}<a href="${href(ref)}"
-        data-peek="${imageUrl('large', ref.record[side === 'A' ? 'side_a' : 'side_b'])}">${code(ref.record.number)}${side}</a>${
-        count > 1 ? html` <span class="copies">×${count}</span>` : ''}`)}</dd>`;
-  })}</dl>`;
+  return html`<dl class="tile-list">${layoutGroups(rows, db).map(({product, rows}) => html`
+    <dt>${product ? html`<a href="${href(product)}" title="${title(product)}">${SHORT[product.record.name] ?? title(product)}</a>`
+      : 'No product'}</dt>
+    <dd>${rows.map(({ref, side, count}, i) => html`${i ? ', ' : ''}<a href="${href(ref)}"
+      data-peek="${imageUrl('large', ref.record[side === 'A' ? 'side_a' : 'side_b'])}">${
+      String(ref.record.number).padStart(2, '0')}${side}${count > 1 ? `(${count})` : ''}</a>`)}</dd>`)}</dl>`;
 }
 
 // The sections of a map revealed during its mission, in order: each stays closed until the viewer opens it.

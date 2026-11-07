@@ -358,6 +358,7 @@ figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
+.tile-list dt { font-weight: 600; }
 .tile-list dd { margin: 0; }
 .fields dt { color: var(--muted); }
 .fields dd { margin: 0; overflow-wrap: anywhere; }
