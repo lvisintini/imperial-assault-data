@@ -8,7 +8,8 @@
 // `thumb: 'back'` makes tiles show the record's card back instead of its own image, which the peek still shows;
 // `icon` stands in for a missing image: 'pdf', or 'affiliation' (the record's affiliation's emblem). `imageSections`
 // lists fields holding [{name, image}] (a map's hidden sections); `pageImages` maps an image field to the heading of
-// the section of its own it's shown in on the record's page (a map's whole-map image).
+// the section of its own it's shown in on the record's page (a map's whole-map image). `aside: true` shows, next to
+// the image instead of the fields table, the tile list in Vassal's names (a map's), its products and its children.
 // List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
 // ('source', 'wave'; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
 // facet with its own labels, or a field of the record's children (a map's missions' kinds); `groups` is the default grouping (facet ids); `order` fixes the order of a field's
@@ -135,7 +136,7 @@ export const TYPES = [
   },
   {
     file: 'maps', label: 'Maps', singular: 'Map', images: ['image'], imageSections: ['hidden_sections'],
-    pageImages: {whole_image: 'Whole map'},
+    pageImages: {whole_image: 'Whole map'}, aside: true,
     facets: [
       {id: 'mission-type', label: 'Mission type', children: 'missions', field: 'content_type', none: 'No mission card'},
       'source', 'wave',

@@ -346,6 +346,19 @@ figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
+.aside > .related:first-child { margin-top: 0; }
+.aside .related h2 { font-size: 1.1rem; }
+.tile-list {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 16px;
+  margin: 0;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.tile-list dd { margin: 0; }
 .fields dt { color: var(--muted); }
 .fields dd { margin: 0; overflow-wrap: anywhere; }
 code { font-size: 0.85em; }
