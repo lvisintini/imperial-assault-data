@@ -348,6 +348,8 @@ figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
 }
 .aside > .related:first-child { margin-top: 0; }
 .aside .related h2 { font-size: 1.1rem; }
+.aside-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+.aside-columns .grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
 .tile-list {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
@@ -384,6 +386,7 @@ code { font-size: 0.85em; }
 
 @media (max-width: 700px) {
   .detail { grid-template-columns: minmax(0, 1fr); }
+  .aside-columns { grid-template-columns: minmax(0, 1fr); }
   .grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
   .thumb { height: 140px; }
   #search { justify-content: stretch; }

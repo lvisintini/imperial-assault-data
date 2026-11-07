@@ -519,15 +519,13 @@ const SHORT = {
   "Jabba's Realm": 'JR', 'Heart of the Empire': 'HotE', 'Tyrants of Lothal': 'ToL',
 };
 
-// A map's tile sides as text, a line per product (newest first): "ToL  01A, 03A" … "Core  32A(2), 36A(4)", the copies
-// in brackets when the mission takes more than one.
+// A map's tile sides as plain text, a line per product (newest first): "ToL  01A, 03A" … "Core  32A(2), 36A(4)", the
+// copies in brackets when the mission takes more than one.
 function layoutText(rows, db) {
   return html`<dl class="tile-list">${layoutGroups(rows, db).map(({product, rows}) => html`
-    <dt>${product ? html`<a href="${href(product)}" title="${title(product)}">${SHORT[product.record.name] ?? title(product)}</a>`
-      : 'No product'}</dt>
-    <dd>${rows.map(({ref, side, count}, i) => html`${i ? ', ' : ''}<a href="${href(ref)}"
-      data-peek="${imageUrl('large', ref.record[side === 'A' ? 'side_a' : 'side_b'])}">${
-      String(ref.record.number).padStart(2, '0')}${side}${count > 1 ? `(${count})` : ''}</a>`)}</dd>`)}</dl>`;
+    <dt title="${product ? title(product) : ''}">${product ? SHORT[product.record.name] ?? title(product) : 'No product'}</dt>
+    <dd>${rows.map(({ref, side, count}) =>
+      `${String(ref.record.number).padStart(2, '0')}${side}${count > 1 ? `(${count})` : ''}`).join(', ')}</dd>`)}</dl>`;
 }
 
 // The sections of a map revealed during its mission, in order: each stays closed until the viewer opens it.
@@ -561,8 +559,10 @@ export function detail(db, ref) {
     </figure>`);
 
   const related = [];
-  // Next to the image instead of the fields table (types.js aside): the tile list, products and children.
+  // Next to the image instead of the fields table (types.js aside): the tile list, then the products and the children
+  // side by side.
   const aside = t.aside ? [] : null;
+  const columns = t.aside ? [] : null;
   const layout = db.layout.get(ref);
   if (aside && layout) aside.push(section('Tiles', layout.length, layoutText(layout, db)));
   const contents = db.contents.get(ref);
@@ -574,13 +574,13 @@ export function detail(db, ref) {
   const sources = db.sources(ref);
   if (sources.length) {
     const content = db.mission.get(ref) ?? ref;  // a mission card's products are its missions row's
-    (aside ?? related).push(section('Found in', sources.length, grid(sources, db, undefined, source => db.copies.get(source)?.get(content))));
+    (columns ?? related).push(section('Found in', sources.length, grid(sources, db, undefined, source => db.copies.get(source)?.get(content))));
   }
   const parent = db.parent.get(ref);
   if (parent) related.push(section(parent.rel.label ?? TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
   // A mission card's own children, and its missions row's (its epilogues).
   for (const {rel, refs} of [...db.children.get(ref) ?? [], ...db.children.get(db.mission.get(ref)) ?? []]) {
-    (aside ?? related).push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
+    (columns ?? related).push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
   }
   // Record links, a section per relation as read from this end: "Figure of" on a miniature, "Miniatures" on what it
   // stands for, "Required by" on a product.
@@ -623,7 +623,7 @@ export function detail(db, ref) {
       <h1>${name}</h1>
       <div class="detail">
         ${images.length ? html`<div class="images">${images}</div>` : ''}
-        ${aside ? html`<div class="aside">${aside}</div>` : html`<dl class="fields">${Object.entries(ref.record).map(
+        ${aside ? html`<div class="aside">${aside}${columns.length ? html`<div class="aside-columns">${columns}</div>` : ''}</div>` : html`<dl class="fields">${Object.entries(ref.record).map(
           ([field, value]) => html`<dt>${fieldLabel(field)}</dt><dd>${fieldValue(ref, field, value, db)}</dd>`)}
         </dl>`}
       </div>
