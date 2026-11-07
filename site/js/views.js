@@ -560,8 +560,11 @@ export function detail(db, ref) {
   // An image shown in a section of its own: a map's whole map, its image and every hidden section in one frame.
   for (const [field, heading] of Object.entries(t.pageImages ?? {})) {
     const image = ref.record[field];
-    if (image) related.push(section(heading, null, html`<a class="page-image" href="${imageUrl('large', image)}">
-      <img loading="lazy" src="${imageUrl('large', image)}" alt="${heading}: ${name}"></a>`));
+    // Closed until the viewer opens it, like the hidden sections.
+    if (image) related.push(section(heading, null, html`<div class="hidden-sections"><details>
+      <summary>The starting map and every hidden section</summary>
+      <a href="${imageUrl('large', image)}"><img loading="lazy" src="${imageUrl('large', image)}" alt="${heading}: ${name}"></a>
+    </details></div>`));
   }
   const usedIn = db.usedIn.get(ref);
   if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
