@@ -409,11 +409,24 @@ Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
   per side (`side_a`, `side_b`). Tiles reach their products through `source-contents`, with `quantity` = how many of
   that tile the box has. The file runs by product code, then number.
-- `map-layouts` (no ids): the tile sides a map uses, `{map_id, tile_id, side, count}`, `count` being how many of that
-  side the mission takes. Rows run by the map's mission product (the earliest product code of its missions' products;
+- `map-layouts` (no ids): the tile sides a map uses and where they go, `{map_id, tile_id, side, count, placements}`.
+  `count` is how many copies of that side the mission takes. `placements` lists where the map's images put them:
+  `{section, x, y, rotation}` each, `section` being `null` for the map's image or the name of one of its
+  `hidden_sections`. Rows run by the map's mission product (the earliest product code of its missions' products;
   a product without a code, like the Luke and Vader packs, right after the last coded one released on or before it),
-  the map's name, then the tile's product code descending, its number and the side. A campaign map whose sections reuse the same tiles as the mission goes on counts the copies
-  the mission takes (Into a Corner: 18B ×5), not how many times its sections place them.
+  the map's name, then the tile's product code descending, its number and the side; a row's placements by section
+  (the map's image first, then the hidden sections in order), then `y`, then `x`.
+
+  - `x` and `y` are whole squares from the left and the top: the top-left square of the tile's grid once turned (tabs
+    aren't squares). All of a map's placements share one frame, its hidden sections' too, so a revealed area keeps its
+    place next to the rest; the frame starts at 0, 0.
+  - `rotation` is how far the side's image (`side_a` or `side_b`) turns clockwise as placed: 0, 90, 180 or 270.
+  - To draw a placement at 64 px per square, turn the image and put its top-left pixel at `x × 64 − mx`,
+    `y × 64 − my`, where `mx` and `my` are the turned image's tab margins: 16 px on an axis with tabs, 0 without
+    (`(width − squares × 64) / 2`). Drawing a map's or a hidden section's placements this way gives its image.
+  - Every copy is placed, and no one image places a side more often than `count`. A tile a hidden section reuses is
+    placed more often than that: Race on Ryloth takes four Core Set 18B and three Tyrants of Lothal 12B, and its
+    sections, which replace each other, place them 8 and 6 times.
 
 So every mission reaches its tiles the same way: mission → map → map layouts → map tiles → products.
 
@@ -423,8 +436,10 @@ image is the same file as the large one. They come from the Vassal *Imperial Ass
 campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuff/ImperialCommander2), summed over
 each mission's map sections, and corrected where the maintainer's checks against the Campaign Guide and the rulebooks
 found it wrong: a tile's side (Desperate Hour uses 24B and 32B, not 24A and 32A), a tile it lacks or has too many of,
-or the copies a mission takes (imperial-assault-tools' `ia_tools/ic2.py` `CORRECTIONS`). The skirmish and raid maps'
-were entered by the maintainer from their maps (`ia enter`'s Map layouts page). Every map has a layout.
+or the copies a mission takes (imperial-assault-tools' `ia_tools/ic2.py` `CORRECTIONS`). The skirmish, four-player
+and raid maps' placements were found by matching their tiles against the Vassal skirmish module's boards and the
+Skirmish Map Project's images, then checked map by map by the maintainer (imperial-assault-tools' `ia skirmish-maps`).
+Every map has a layout.
 
 The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each tile side placed where
 ImperialCommander2's mission file puts it (as corrected), at 64 px per square, on a transparent background. They show
@@ -462,7 +477,8 @@ erDiagram
         uuid map_id FK
         uuid tile_id FK
         string side "A, B"
-        int count "times the map places it"
+        int count "copies the mission takes"
+        object[] placements "section, x, y, rotation"
     }
 ```
 

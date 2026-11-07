@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "map-layouts.json#",
-  "title": "Schema for the map layouts data file: the tile sides each map is built from",
+  "title": "Schema for the map layouts data file: the tile sides each map is built from, and where they go",
   "type": "object",
   "definitions": {},
   "properties": {
@@ -22,15 +22,63 @@
     },
     "count": {
       "type": "integer",
-      "description": "How many times the map places this side. A map built from sections that replace each other during its mission can place a side more often than a box has copies.",
+      "description": "The copies of this side the mission takes. A tile that a hidden section reuses (recycles) is placed more often than this, but no one image places it more often.",
       "minimum": 1
+    },
+    "placements": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Where the map's images place this side: on the map's image (section null) or on one of its hidden sections' images. Sorted by section (the map's image first, then the hidden sections in order), then y, then x.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "description": "null for the map's image, or the name of one of the map's hidden_sections.",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "x": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Squares from the left: the leftmost square of the tile's grid once turned (tabs aren't squares). A map's placements, hidden sections included, share one frame starting at 0."
+          },
+          "y": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Squares from the top: the topmost square of the tile's grid once turned."
+          },
+          "rotation": {
+            "enum": [
+              0,
+              90,
+              180,
+              270
+            ],
+            "description": "Clockwise degrees that turn the side's image (map-tiles side_a or side_b) as placed."
+          }
+        },
+        "required": [
+          "section",
+          "x",
+          "y",
+          "rotation"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "map_id",
     "tile_id",
     "side",
-    "count"
+    "count",
+    "placements"
   ],
   "additionalProperties": false
 }
