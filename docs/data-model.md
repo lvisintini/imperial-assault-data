@@ -254,7 +254,7 @@ erDiagram
 ## Documents
 
 `documents` are FFG's documents for the game: `name`, `category` (Rulebook, Learn to Play, Rules Reference, Skirmish
-Guide, Campaign Guide, Campaign Log, FAQ, Tournament Regulations, Organized Play, Player Sheet, Rules Sheet), `version` (as the
+Guide, Campaign Log, FAQ, Tournament Regulations, Organized Play, Player Sheet, Rules Sheet), `version` (as the
 document prints it, the FAQ's 4 and the tournament regulations' 3.4, or as its file name gives it, Learn to Play's 17,
 the Skirmish Guide's 6 and the Fundamental Event Document's 2.1; null when it has none) and `file`, the PDF in the
 repository's `documents/` folder, under the file name FFG published it with. FFG never published the rules sheets: they are the
