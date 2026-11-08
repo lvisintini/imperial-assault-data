@@ -43,7 +43,7 @@ class Db {
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
     this.rewardOf = new Map();  // reward ref → mission card refs
     this.links = new Map();     // ref → [{relation, ref}]: its record-links, read from its end
-    this.layout = new Map();    // map ref → [{ref: tile ref, side, count}]
+    this.layout = new Map();    // map ref → [{ref: tile ref, side, count, placements: [{section, x, y, rotation}]}]
     this.usedIn = new Map();    // tile ref → the map refs that use it
     this.#linkSources();
     this.#linkMissions();
@@ -142,7 +142,8 @@ class Db {
         console.warn('Unresolved map-layouts row', record);
         continue;
       }
-      push(this.layout, map, {ref: tile, side: record[LAYOUTS.side], count: record[LAYOUTS.count]});
+      push(this.layout, map, {ref: tile, side: record[LAYOUTS.side], count: record[LAYOUTS.count],
+        placements: record[LAYOUTS.placements] ?? []});
       if (!this.usedIn.get(tile)?.includes(map)) push(this.usedIn, tile, map);
     }
   }

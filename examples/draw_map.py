@@ -8,8 +8,9 @@
 Run from the repo root (it reads ./data and ./images). Each placement is a tile side's image turned clockwise by
 `rotation`, its grid's top-left square at (`x`, `y`). A side's image is 64 px per square plus a 16 px margin at each
 end of an axis with connector tabs, so the image goes at x * 64 minus that margin (and the same for y). Drawn in the
-file's order, then cropped to the tiles, this gives the map images in images/large/maps (up to the order in which
-tiles whose tabs overlap are drawn). The whole map leaves out a tile whose squares a later section's tiles all cover:
+file's order on a page framed on the tiles' squares plus 16 px all round (for the tabs), this gives the map images in
+images/large/maps (up to the order in which tiles whose tabs overlap are drawn): their pixel (16, 16) is the corner of
+the image's top-left square, so square (x, y) starts at 16 + (x - the image's smallest x) * 64. The whole map leaves out a tile whose squares a later section's tiles all cover:
 the revealed tile takes its place.
 """
 import argparse
@@ -53,8 +54,11 @@ def covers(image, placement, margin_x, margin_y):
             if image.getpixel((margin_x + i * SQUARE + SQUARE // 2, margin_y + j * SQUARE + SQUARE // 2))[3] > 127}
 
 
+MARGIN = SQUARE // 4  # px around the squares, for the tabs
+
+
 def draw(found):
-    """The tiles drawn on a transparent page, cropped to them. A tile whose squares later sections' tiles all cover is
+    """The tiles drawn on a transparent page framed on their squares, plus MARGIN all round. A tile whose squares later sections' tiles all cover is
     left out."""
     layers, squares = [], []
     for path, placement in found:
@@ -66,16 +70,19 @@ def draw(found):
         squares.append((placement['section'], covers(image, placement, margin_x, margin_y)))
     later = lambda i: set().union(*(s for section, s in squares[i + 1:] if section != squares[i][0]))
     layers = [layer for i, layer in enumerate(layers) if not squares[i][1] <= later(i)]
-    left = min(x for _, x, _ in layers)
-    top = min(y for _, _, y in layers)
-    width = max(x + image.width for image, x, _ in layers) - left
-    height = max(y + image.height for image, _, y in layers) - top
+    # Each tile's grid: from its image's left plus its margin, as many squares as the image has.
+    grids = [(x + image.width % SQUARE // 2, y + image.height % SQUARE // 2,
+              image.width // SQUARE * SQUARE, image.height // SQUARE * SQUARE) for image, x, y in layers]
+    left = min(gx for gx, _, _, _ in grids) - MARGIN
+    top = min(gy for _, gy, _, _ in grids) - MARGIN
+    width = max(gx + w for gx, _, w, _ in grids) + MARGIN - left
+    height = max(gy + h for _, gy, _, h in grids) + MARGIN - top
     page = Image.new('RGBA', (width, height), (0, 0, 0, 0))
     for image, x, y in layers:
         layer = Image.new('RGBA', page.size, (0, 0, 0, 0))
         layer.paste(image, (x - left, y - top))
         page = Image.alpha_composite(page, layer)  # a tab drawn over its neighbour's notch blends into it
-    return page.crop(page.getbbox())
+    return page
 
 
 def main():

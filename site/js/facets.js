@@ -13,6 +13,7 @@ const MAX_CHOICES = 20;  // more distinct strings than this aren't a facet (e.g.
 const MAX_PARENTS = 50;  // a parent facet (hero, Imperial class, agenda deck) with more choices than this isn't one
 export const PRODUCT = 'source';
 export const WAVE = 'wave';
+export const PRODUCT_TYPE = 'product_type';
 
 const compareKeys = (a, b) => a.localeCompare(b, undefined, {numeric: true});
 
@@ -113,15 +114,18 @@ function productFacets(type, refs, db) {
   if (!sources.length) return [];
   const waveKey = source => source.record.wave == null ? 'none' : String(source.record.wave);
   const waves = [...new Set(sources.map(waveKey))].sort(compareKeys);
+  // Product types in the order their first products come in the products file (Core Game, Expansion, Ally Pack...).
+  const kinds = [...new Set([...sources].sort((a, b) => a.index - b.index).map(s => s.record.type))];
   return [
     choice(PRODUCT, 'Product', ref => found.get(ref).map(s => String(s.key)), sources.map(s => String(s.key)),
       Object.fromEntries(sources.map(s => [String(s.key), s.record.name]))),
     choice(WAVE, 'Wave', ref => [...new Set(found.get(ref).map(waveKey))], waves,
       Object.fromEntries(waves.map(w => [w, w === 'none' ? 'No wave' : `Wave ${w}`]))),
+    choice(PRODUCT_TYPE, 'Product type', ref => [...new Set(found.get(ref).map(s => s.record.type))], kinds),
   ];
 }
 
-// Every facet of a type's records: from its fields, plus product and wave; `facets` in types.js picks and orders them.
+// Every facet of a type's records: from its fields, plus product, wave and product type; `facets` in types.js picks and orders them.
 export function facetsFor(type, refs, db) {
   const t = TYPE[type];
   const fields = [...new Set(refs.flatMap(ref => Object.keys(ref.record)))]

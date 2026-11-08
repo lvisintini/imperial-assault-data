@@ -526,6 +526,27 @@ const SHORT = {
   "Jabba's Realm": 'JR', 'Heart of the Empire': 'HotE', 'Tyrants of Lothal': 'ToL',
 };
 
+// A tile side's short name: "Core 32A", "ToL 01B".
+const tileName = (tile, side, db) => {
+  const product = db.sources(tile)[0];
+  return `${product ? SHORT[product.record.name] ?? title(product) : ''} ${String(tile.record.number).padStart(2, '0')}${side}`.trim();
+};
+
+// A map's image (or a hidden section's, or the whole map's) with a box over each tile on it, which names the tile on
+// hover, or always with the page's "Show tile names" (tiles.js sizes the boxes once the tiles' images load, from
+// map-layouts placements). sections: the placements' sections the image shows (null: the map's own image), in the
+// order they're drawn.
+function mapFrame(ref, db, sections, image, alt) {
+  const boxes = (db.layout.get(ref) ?? []).flatMap(({ref: tile, side, placements}) => placements
+    .filter(p => sections.includes(p.section))
+    .map(p => ({src: imageUrl('small', tile.record[side === 'A' ? 'side_a' : 'side_b']), x: p.x, y: p.y,
+                rotation: p.rotation, layer: sections.indexOf(p.section), label: tileName(tile, side, db),
+                title: `${title(tile)}, side ${side}${p.section ? ` (${p.section})` : ''}`})));
+  return html`<a class="map-frame" href="${imageUrl('large', image)}"${boxes.length ? html` data-boxes="${JSON.stringify(boxes)}"` : ''}>
+    <img loading="lazy" src="${imageUrl('large', image)}" alt="${alt}"><span class="tile-boxes"></span>
+  </a>`;
+}
+
 // A map's tile sides as plain text, a line per product (newest first): "ToL  01A, 03A" … "Core  32A(2), 36A(4)", the
 // copies in brackets when the mission takes more than one.
 function layoutText(rows, db) {
@@ -536,11 +557,11 @@ function layoutText(rows, db) {
 }
 
 // The sections of a map revealed during its mission, in order, each under its name.
-function hiddenList(sections) {
+function hiddenList(ref, db, sections) {
   return html`<div class="hidden-sections">${sections.map(({name, image}) => html`
     <figure>
       <figcaption>${name}</figcaption>
-      <a href="${imageUrl('large', image)}"><img loading="lazy" src="${imageUrl('large', image)}" alt="${name}"></a>
+      ${mapFrame(ref, db, [name], image, name)}
     </figure>`)}</div>`;
 }
 
@@ -554,23 +575,32 @@ function rewardList(rewards, db) {
     ? html`<h3>Choose 1 <span class="count">${choice.length}</span></h3>${block(choice)}` : ''}`;
 }
 
+// A record's fields for its fields table, with a mission card's location (its missions row's) after its own.
+function fieldsOf(ref, db) {
+  const fields = Object.entries(ref.record);
+  const location = db.mission.get(ref)?.record.location;
+  return location && !('location' in ref.record) ? [...fields, ['location', location]] : fields;
+}
+
 export function detail(db, ref) {
   const t = TYPE[ref.type];
   const name = title(ref);
+  const layout = db.layout.get(ref);
   const images = t.images.filter(f => ref.record[f]).map(f => html`
     <figure>
-      <a href="${imageUrl('large', ref.record[f])}">
+      ${layout ? mapFrame(ref, db, [null], ref.record[f], name) : html`<a href="${imageUrl('large', ref.record[f])}">
         <img src="${imageUrl('large', ref.record[f])}" alt="${name}${t.images.length > 1 ? ` (${f})` : ''}">
-      </a>
+      </a>`}
       ${t.images.length > 1 ? html`<figcaption>${fieldLabel(f)}</figcaption>` : ''}
     </figure>`);
+  if (layout?.some(row => row.placements.length)) images.push(html`
+    <label class="tile-toggle"><input type="checkbox" data-show-tiles> Show tile names</label>`);
 
   const related = [];
   // Next to the image instead of the fields table (types.js aside): the tile list, then the products and the children
   // side by side.
   const aside = t.aside ? [] : null;
   const columns = t.aside ? [] : null;
-  const layout = db.layout.get(ref);
   if (aside && layout) aside.push(section('Tiles', layout.length, layoutText(layout, db)));
   const contents = db.contents.get(ref);
   if (contents) {
@@ -600,11 +630,13 @@ export function detail(db, ref) {
   // A map's hidden sections and its whole map (its image and every hidden section in one frame): each a section that
   // stays closed until the viewer opens it.
   const hidden = (t.imageSections ?? []).flatMap(field => ref.record[field] ?? []);
-  if (hidden.length) related.push(closed('Hidden sections', hidden.length, hiddenList(hidden)));
+  if (hidden.length) related.push(closed('Hidden sections', hidden.length, hiddenList(ref, db, hidden)));
   for (const [field, heading] of Object.entries(t.pageImages ?? {})) {
     const image = ref.record[field];
+    // The whole map: the map's image, then each hidden section, the later on top.
+    const every = [null, ...hidden.map(h => h.name)];
     if (image) related.push(closed(heading, null, html`<div class="hidden-sections">
-      <a href="${imageUrl('large', image)}"><img loading="lazy" src="${imageUrl('large', image)}" alt="${heading}: ${name}"></a>
+      ${mapFrame(ref, db, every, image, `${heading}: ${name}`)}
     </div>`));
   }
   const usedIn = db.usedIn.get(ref);
@@ -630,7 +662,7 @@ export function detail(db, ref) {
       <h1>${name}</h1>
       <div class="detail">
         ${images.length ? html`<div class="images">${images}</div>` : ''}
-        ${aside ? html`<div class="aside">${aside}${columns.length ? html`<div class="aside-columns">${columns}</div>` : ''}</div>` : html`<dl class="fields">${Object.entries(ref.record).map(
+        ${aside ? html`<div class="aside">${aside}${columns.length ? html`<div class="aside-columns">${columns}</div>` : ''}</div>` : html`<dl class="fields">${fieldsOf(ref, db).map(
           ([field, value]) => html`<dt>${fieldLabel(field)}</dt><dd>${fieldValue(ref, field, value, db)}</dd>`)}
         </dl>`}
       </div>

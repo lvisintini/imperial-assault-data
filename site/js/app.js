@@ -1,5 +1,6 @@
 import {load} from './data.js';
 import {initPeek} from './peek.js';
+import {initTileBoxes, initTileToggle} from './tiles.js';
 import {html} from './html.js';
 import {MENU, TYPE} from './types.js';
 import * as views from './views.js';
@@ -27,6 +28,7 @@ function resolve(db) {
 function render(db) {
   const view = resolve(db);
   app.innerHTML = String(view.body);
+  initTileBoxes(app);
   document.title = view.title ? `${view.title} · Imperial Assault Data` : 'Imperial Assault Data';
   const {parts: [route], params} = parse(location.hash);
   searchInput.value = route === 'search' ? params.get('q') ?? '' : '';
@@ -103,6 +105,7 @@ document.addEventListener('keydown', event => {
 try {
   const db = await load();
   initPeek(app);
+  initTileToggle(app);
   window.addEventListener('hashchange', () => render(db));
   render(db);
 } catch (error) {

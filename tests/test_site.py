@@ -100,8 +100,9 @@ class TestSite:
         assert "export const PRODUCT = 'product';" in get_site_js('sort.js')
 
     def test_facet_config_uses_schema_fields(self):
-        """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave' (facets.js). A
-        trait facet's trait is a deployment trait; a children facet's children have an FK to the type, and its field."""
+        """facets, groups and order in types.js name schema fields, derived facets, or 'source'/'wave'/'product_type'
+        (facets.js). A trait facet's trait is a deployment trait; a children facet's children have an FK to the type,
+        and its field."""
         definitions = get_schema('definitions')['definitions']
         for page, entry in site_types().items():
             content_type = data_type(page, entry)
@@ -124,7 +125,7 @@ class TestSite:
             groups = re.search(r"groups: \[([^\]]*)\]", entry)
             order = re.search(r"order: \{(.*?)\}", entry, re.S)
             fields = set(get_schema(content_type)['properties']) if 'hidden: true' not in entry else set()
-            known = fields | set(derived) | {'source', 'wave'}
+            known = fields | set(derived) | {'source', 'wave', 'product_type'}
             assert set(named) <= known, content_type
             assert set(strings(groups.group(1)) if groups else []) <= set(named) | set(derived), content_type
             for field in re.findall(r"(\w+): \[", order.group(1)) if order else []:

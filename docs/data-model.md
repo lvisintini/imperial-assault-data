@@ -44,10 +44,10 @@ Defense Station). Each is a source of type `Skirmish Map Mat` with one `source-c
 those maps are reached both through their missions' products and through their mat. A mat's `wave` and dates are
 those the wiki's main page lists it under (waves 8 to 11), as for every other source; the mats' own wiki pages give
 release dates that don't fit their waves, and aren't used. Mat images come from FFG's product pages, as the Wayback Machine archived them
-(boardwars has none). Skirmish and raid map images come
-from the [Skirmish Map Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project), whose half-res
-files are the ones boardwars serves; campaign maps' are drawn from their tiles (see [Maps and map
-tiles](#maps-and-map-tiles)).
+(boardwars has none). Every map's images are drawn from its tiles (see [Maps and map tiles](#maps-and-map-tiles));
+until 2.0.0, skirmish and raid maps had the [Skirmish Map
+Project](https://github.com/nickv2002/Imperial-Assault-Skirmish-Map-Project)'s, whose half-res files are the ones
+boardwars serves.
 
 Hero class cards, imperial class cards and agenda cards aren't linked to sources directly. They belong to a parent
 record (a hero, an imperial class or an agenda deck) and come with whichever product contains that parent. Missions
@@ -264,7 +264,7 @@ has a size limit), which links to the repository's copy.
 
 A document reaches products in one of two ways, or neither:
 - **In the box:** the books and sheets a product ships with are its contents, `source-contents` rows like any other
-  (the Core Set's Learn to Play, Rules Reference Guide and Skirmish Guide, each expansion's rulebook, and the rules
+  (the Core Set's Learn to Play, Rules Reference Guide, Skirmish Guide and Campaign Guide, each expansion's rulebook, and the rules
   sheets: each ally and villain pack's, and each expansion's skirmish sheet).
 - **Published for it:** a document FFG published for a product, but not in its box, is `document-for` it (in
   [Record links](#record-links)): the campaign logs, the Legends of the Alliance rulebook (the app has no box), and the
@@ -341,6 +341,10 @@ Every mission is in one of seven collections, most of them cards (their names sa
 threat, side or agenda mission follows from `content_type`. The index row is what the rest of the dataset links to:
 - **Products:** `source-contents` rows point at index rows (`content_type: "missions"`), never at the cards. An agenda
   mission's row lists its deck's products.
+- **Location:** `location` says where a campaign or agenda mission's rules are: the Core Set's Campaign Guide or an
+  expansion's rulebook, with the page ("Campaign Guide, page 4", "Twin Shadows Rulebook, page 8"), or the pack's
+  rules sheet ("Han Solo Rules Sheet"). From zackgomez.com's [Campaign Tile Guide](https://zackgomez.com/campaign-tile-guide/),
+  with the books named as in `documents`, each in the mission's product's box. `null` for skirmish and raid missions.
 - **Map:** `map_id` is the map it's played on. Every mission has one, and a map's products are its missions' products.
   A campaign mission's map is named after it; a map that several missions play on is named after each of them, in
   order ("Desperate Hour / Last Stand"; see [Maps and map tiles](#maps-and-map-tiles)).
@@ -376,6 +380,7 @@ erDiagram
         string content_type "the mission's collection"
         uuid content_id FK "id in that file"
         uuid map_id FK
+        string location "Campaign Guide, page 4 (null: skirmish, raid)"
     }
     campaign-hero-side-missions {
         uuid id PK
@@ -399,15 +404,17 @@ erDiagram
 
 ## Maps and map tiles
 
-`maps` holds every mission's map. Skirmish, four-player and raid maps have an image (from the Skirmish Map Project).
-Campaign maps, one per campaign mission and named after it, have an image drawn from their layout (see below). Two
+`maps` holds every mission's map, each with an image drawn from its layout (see below): skirmish, four-player and
+raid maps, and campaign maps, one per campaign mission and named after it. Two
 are shared by two missions each and named after both: Desperate Hour / Last Stand and Fire in the Sky / Infiltrated
 (their image files join the missions' slugs with `--`: `desperate-hour--last-stand.png`). Every
 map is used by a mission, so it reaches its products through its missions (and a skirmish map also through its mat).
 
 Maps are built from double-sided tiles:
-- `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, with an image
-  per side (`side_a`, `side_b`). Tiles reach their products through `source-contents`, with `quantity` = how many of
+- `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, how many
+  `squares` it has (both sides the same) and its grid's `width` and `height` in squares as `side_a`'s image is stored,
+  with an image per side (`side_a`, `side_b`; nine tiles' side B image is stored turned a quarter from side A's, so
+  its width is that height: Core Set 02, 03, 18, 20, 21, 27 and 36, Twin Shadows 06 and Jabba's Realm 10). Tiles reach their products through `source-contents`, with `quantity` = how many of
   that tile the box has. The file runs by product code, then number.
 - `map-layouts` (no ids): the tile sides a map uses and where they go, `{map_id, tile_id, side, count, placements}`.
   `count` is how many copies of that side the mission takes. `placements` lists where the map's images put them:
@@ -424,6 +431,9 @@ Maps are built from double-sided tiles:
   - To draw a placement at 64 px per square, turn the image and put its top-left pixel at `x × 64 − mx`,
     `y × 64 − my`, where `mx` and `my` are the turned image's tab margins: 16 px on an axis with tabs, 0 without
     (`(width − squares × 64) / 2`). Drawing a map's or a hidden section's placements this way gives its image.
+  - Each image is framed on the squares its tiles cover plus 16 px all round (for the tabs that stick out), so its
+    pixel (16, 16) is the corner of its top-left square: square (`x`, `y`) starts at `16 + (x − x0) × 64`,
+    `16 + (y − y0) × 64`, where `x0` and `y0` are the smallest `x` and `y` of the placements on that image.
   - Every copy is placed, and no one image places a side more often than `count`. A tile a hidden section reuses is
     placed more often than that: Race on Ryloth takes four Core Set 18B and three Tyrants of Lothal 12B, and its
     sections, which replace each other, place them 8 and 6 times.
@@ -438,12 +448,12 @@ each mission's map sections, and corrected where the maintainer's checks against
 found it wrong: a tile's side (Desperate Hour uses 24B and 32B, not 24A and 32A), a tile it lacks or has too many of,
 or the copies a mission takes (imperial-assault-tools' `ia_tools/ic2.py` `CORRECTIONS`). The skirmish, four-player
 and raid maps' placements were found by matching their tiles against the Vassal skirmish module's boards and the
-Skirmish Map Project's images, then checked map by map by the maintainer (imperial-assault-tools' `ia skirmish-maps`).
-Every map has a layout.
+Skirmish Map Project's images, then checked map by map by the maintainer. Every map has a layout.
 
-The campaign maps' images are drawn by imperial-assault-tools' `ia maps`: each tile side placed where
-ImperialCommander2's mission file puts it (as corrected), at 64 px per square, on a transparent background. They show
-the tiles only (no doors, tokens or figures). Most show every section of the map. A map whose parts are revealed as
+Every map's images are drawn from its tiles at 64 px per square, on a transparent background, framed as above. They
+show the tiles only (no doors, tokens or figures, and no deployment zones). The skirmish, four-player and raid maps'
+are drawn from their placements by imperial-assault-tools' `ia skirmish-maps`; the campaign maps' by `ia maps`, each
+tile side placed where ImperialCommander2's mission file puts it (as corrected). Most show every section of the map. A map whose parts are revealed as
 the mission goes on (Call to Action, Capital Escape, Dangerous Allies, Disruption, From Dark Clutches, Into a Corner,
 Into the Unknown, Mutiny, Our Last Hope, Race on Ryloth, Salvage Operatives, Storming the Palace, Survival of the
 Fittest, Trespass) shows what's on the table at the start in `image`, and each section revealed later in
@@ -452,8 +462,8 @@ Underworld (Obscured area) is 17 of them; Into a Corner's Main Street, City Squa
 places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Such a map also has a
 `whole_image`: its image and then each hidden section, in order, drawn in one frame (where sections replace each other,
 as on Race on Ryloth, the later ones are drawn on top, and a tile whose squares a later section's tiles all cover is
-left out: Dangerous Allies' Canyon 39B takes the place of the Khetanna's 36B); it's `null` for the rest. Like the tiles, a campaign map's
-small images are the same files as its large ones.
+left out: Dangerous Allies' Canyon 39B takes the place of the Khetanna's 36B); it's `null` for the rest. Like the tiles, a map's small
+images are the same files as its large ones.
 
 ```mermaid
 erDiagram
@@ -474,6 +484,9 @@ erDiagram
         uuid id PK
         string name "Core Set 01"
         int number
+        int squares
+        int width "squares, as side_a is stored"
+        int height
         string side_a "image"
         string side_b "image"
     }
