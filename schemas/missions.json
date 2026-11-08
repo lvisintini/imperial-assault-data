@@ -36,13 +36,26 @@
           "type": "null"
         }
       ]
+    },
+    "location": {
+      "description": "Where the mission's rules are, for a campaign or agenda mission: a book and page (\"Campaign Guide, page 4\", \"Twin Shadows Rulebook, page 8\"), or a pack's rules sheet (\"Han Solo Rules Sheet\"), from zackgomez.com's Campaign Tile Guide. null for skirmish and raid missions.",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
   "required": [
     "id",
     "content_type",
     "content_id",
-    "map_id"
+    "map_id",
+    "location"
   ],
   "additionalProperties": false
 }

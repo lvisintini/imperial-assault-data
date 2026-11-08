@@ -320,6 +320,32 @@ class TestMissionsIntegrity:
                 by_map.setdefault(mission['map_id'], []).append(scenarios[mission['content_id']])
         assert {map_id: s for map_id, s in by_map.items() if sorted(s) != ['A', 'B']} == {}
 
+    def test_a_missions_location_is_a_book_page_or_rules_sheet_in_its_product(self):
+        """Campaign and agenda missions say where their rules are: a rulebook in their product's box (the Core Set's
+        Campaign Guide, an expansion's rulebook) with a page, or a pack's rules sheet; skirmish and raid missions
+        don't."""
+        sources = {s['id']: s for s in get_data(CONTENT_TYPES.SOURCE)}
+        documents = {d['id']: d for d in get_data(CONTENT_TYPES.DOCUMENTS)}
+        products, books = {}, {}
+        for row in get_data(CONTENT_TYPES.SOURCE_CONTENTS):
+            products.setdefault(row['content_id'], []).append(sources[row['source_id']])
+            if row['content_type'] == CONTENT_TYPES.DOCUMENTS:
+                document = documents[row['content_id']]
+                books.setdefault(row['source_id'], {})[document['name']] = document['category']
+        wrong = []
+        for mission in get_data(CONTENT_TYPES.MISSIONS):
+            location = mission['location']
+            if mission['content_type'] in (CONTENT_TYPES.SKIRMISH_MISSION, CONTENT_TYPES.RAID_MISSION):
+                ok = location is None
+            else:
+                (product,) = products[mission['id']]
+                book, _, page = (location or '').partition(', page ')
+                category = books.get(product['id'], {}).get(book)
+                ok = (category == 'Rulebook' and page.isdigit()) if page else category == 'Rules Sheet'
+            if not ok:
+                wrong.append((mission['id'], location))
+        assert wrong == []
+
     def test_every_mission_has_a_map(self):
         assert [m['id'] for m in get_data(CONTENT_TYPES.MISSIONS) if not m['map_id']] == []
 
@@ -363,6 +389,27 @@ class TestMapTilesIntegrity:
         in_products = {r['content_id'] for r in get_data(CONTENT_TYPES.SOURCE_CONTENTS)
                        if r['content_type'] == CONTENT_TYPES.MAP_TILES}
         assert [t['name'] for t in tiles if t['id'] not in in_products] == []
+
+    @staticmethod
+    def grid_of(image_path):
+        """(width, height, squares) of a tile side's image: 64 px per square inside the tab margins, a square counted
+        when the tile is at its centre."""
+        from PIL import Image
+        with Image.open(Path('images', 'large', image_path)) as image:
+            alpha = image.convert('RGBA').getchannel('A')
+        width, height = alpha.width // 64, alpha.height // 64
+        x0, y0 = (alpha.width - width * 64) // 2, (alpha.height - height * 64) // 2
+        squares = sum(alpha.getpixel((x0 + i * 64 + 32, y0 + j * 64 + 32)) > 127
+                      for i in range(width) for j in range(height))
+        return width, height, squares
+
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MAP_TILES), ids=lambda t: t['name'])
+    def test_a_tiles_squares_and_grid_are_its_images(self, entry):
+        """squares, width and height are side A's image's; side B has as many squares, its image the same size or
+        turned a quarter."""
+        a, b = self.grid_of(entry['side_a']), self.grid_of(entry['side_b'])
+        assert a == (entry['width'], entry['height'], entry['squares'])
+        assert b in (a, (a[1], a[0], a[2]))
 
     @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MAP_LAYOUTS))
     def test_layouts_resolve(self, entry, all_data):
@@ -422,6 +469,58 @@ class TestMapTilesIntegrity:
         keys = [(min(first[r['map_id']]), names[r['map_id']], *tiles[r['tile_id']], r['side'])
                 for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)]
         assert keys == sorted(keys)
+
+    @staticmethod
+    def sections():
+        """{map id: [None, then its hidden sections' names in order]}: the images a map's placements are on."""
+        return {m['id']: [None] + [h['name'] for h in m['hidden_sections']] for m in get_data(CONTENT_TYPES.MAP)}
+
+    def test_a_map_has_a_whole_image_when_it_has_hidden_sections(self):
+        maps = get_data(CONTENT_TYPES.MAP)
+        assert [m['name'] for m in maps if bool(m['whole_image']) != bool(m['hidden_sections'])] == []
+
+    def test_placements_are_on_the_maps_images(self):
+        sections = self.sections()
+        wrong = [(r['map_id'], p['section']) for r in get_data(CONTENT_TYPES.MAP_LAYOUTS) for p in r['placements']
+                 if p['section'] not in sections[r['map_id']]]
+        assert wrong == []
+        used = {(r['map_id'], p['section']) for r in get_data(CONTENT_TYPES.MAP_LAYOUTS) for p in r['placements']}
+        assert [(m, s) for m, names in sections.items() for s in names if (m, s) not in used] == []
+
+    def test_placements_are_sorted_and_dont_repeat(self):
+        sections = self.sections()
+        for row in get_data(CONTENT_TYPES.MAP_LAYOUTS):
+            keys = [(sections[row['map_id']].index(p['section']), p['y'], p['x']) for p in row['placements']]
+            assert keys == sorted(keys) and len(keys) == len(set(keys)), row
+
+    def test_each_maps_frame_starts_at_0_0(self):
+        frames = {}
+        for row in get_data(CONTENT_TYPES.MAP_LAYOUTS):
+            for p in row['placements']:
+                x, y = frames.get(row['map_id'], (p['x'], p['y']))
+                frames[row['map_id']] = (min(x, p['x']), min(y, p['y']))
+        assert {m: f for m, f in frames.items() if f != (0, 0)} == {}
+
+    def test_every_copy_is_placed_and_no_image_places_more_than_the_copies(self):
+        """A tile a hidden section reuses is placed more often than count, but never more than count times on one
+        image (the map's, or one hidden section's)."""
+        names = {m['id']: m['name'] for m in get_data(CONTENT_TYPES.MAP)}
+        tiles = {t['id']: t['name'] for t in get_data(CONTENT_TYPES.MAP_TILES)}
+        wrong = []
+        for row in get_data(CONTENT_TYPES.MAP_LAYOUTS):
+            label = f"{names[row['map_id']]}: {tiles[row['tile_id']]}{row['side']} x{row['count']}"
+            if len(row['placements']) < row['count']:
+                wrong.append(f"{label}, placed {len(row['placements'])} times")
+            for section, n in Counter(p['section'] for p in row['placements']).items():
+                if n > row['count']:
+                    wrong.append(f'{label}, placed {n} times on {section or "the map"}')
+        assert wrong == []
+
+    def test_skirmish_and_raid_maps_place_each_copy_once(self):
+        maps = {m['map_id'] for m in get_data(CONTENT_TYPES.MISSIONS)
+                if m["content_type"] in (CONTENT_TYPES.SKIRMISH_MISSION, CONTENT_TYPES.RAID_MISSION)}
+        assert [r for r in get_data(CONTENT_TYPES.MAP_LAYOUTS)
+                if r['map_id'] in maps and len(r['placements']) != r['count']] == []
 
 
 class TestDeploymentsIntegrity:

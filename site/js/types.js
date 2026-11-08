@@ -7,9 +7,12 @@
 // Product facet and its groups).
 // `thumb: 'back'` makes tiles show the record's card back instead of its own image, which the peek still shows;
 // `icon` stands in for a missing image: 'pdf', or 'affiliation' (the record's affiliation's emblem). `imageSections`
-// lists fields holding [{name, image}] (a map's hidden sections).
+// lists fields holding [{name, image}] (a map's hidden sections); `pageImages` maps an image field to the heading of
+// the section of its own it's shown in on the record's page (a map's whole-map image); both sections stay closed
+// until opened by their heading. `aside: true` shows, next to
+// the image instead of the fields table, the tile list in Vassal's names (a map's), its products and its children.
 // List pages filter and group by facets (facets.js), derived from the records' fields plus the products they come in
-// ('source', 'wave'; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
+// ('source', 'wave', 'product_type': the products' types; a source is its own product). `facets` picks and orders them, and can add a trait as a yes/no
 // facet with its own labels, or a field of the record's children (a map's missions' kinds); `groups` is the default grouping (facet ids); `order` fixes the order of a field's
 // values, in facets, groups and sorting; `labels` renames a field's facet. A content_type field's values are shown as
 // the types' labels.
@@ -56,7 +59,7 @@ export const TYPES = [
     file: 'missions', label: 'Missions', singular: 'Mission', images: [],
     sort: ['content_type'],
     facets: [
-      'content_type', 'source', 'wave',
+      'content_type', 'source', 'product_type', 'wave',
     ],
     groups: ['content_type'],
     labels: {content_type: 'Kind'},
@@ -134,6 +137,7 @@ export const TYPES = [
   },
   {
     file: 'maps', label: 'Maps', singular: 'Map', images: ['image'], imageSections: ['hidden_sections'],
+    pageImages: {whole_image: 'Whole map'}, aside: true,
     facets: [
       {id: 'mission-type', label: 'Mission type', children: 'missions', field: 'content_type', none: 'No mission card'},
       'source', 'wave',
@@ -144,7 +148,7 @@ export const TYPES = [
     file: 'map-tiles', label: 'Map tiles', singular: 'Map tile', images: ['side_a', 'side_b'], menu: 'maps',
     sort: ['-product', 'number'],
     facets: [
-      'source', 'wave',
+      'squares', 'source', 'wave',
     ],
     groups: ['source'],
   },

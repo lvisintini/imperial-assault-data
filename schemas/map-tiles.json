@@ -19,6 +19,21 @@
       "description": "The number printed on the tile.",
       "minimum": 1
     },
+    "squares": {
+      "type": "integer",
+      "description": "How many squares the tile has (both sides have the same).",
+      "minimum": 1
+    },
+    "width": {
+      "type": "integer",
+      "description": "The width of the tile's grid in squares, as side_a's image is stored (side_b's image is the same size or turned a quarter: its width is this height). Tabs aren't squares.",
+      "minimum": 1
+    },
+    "height": {
+      "type": "integer",
+      "description": "The height of the tile's grid in squares, as side_a's image is stored.",
+      "minimum": 1
+    },
     "side_a": {
       "description": "The file path for the tile's A side, cut on its outline (transparent notches).",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -32,6 +47,9 @@
     "id",
     "name",
     "number",
+    "squares",
+    "width",
+    "height",
     "side_a",
     "side_b"
   ],

@@ -22,7 +22,7 @@ imperial-classes 1──* imperial-class-cards  (class_id)
 card-backs       1──* <any card>            (back_id)
 missions         1──1 <mission>             (content_type + content_id; products and rewards attach here)
 maps             1──* missions              (map_id; a map is in its missions' products, and its mat's)
-maps             1──* map-layouts *──1 map-tiles   (map_id, tile_id; side and count; tiles are in products)
+maps             1──* map-layouts *──1 map-tiles   (map_id, tile_id; side, count and placements; tiles are in products)
 missions         1──* mission-rewards       (mission_id; content_type + content_id, or credits)
 missions         1──* epilogue-cards        (mission_id)
 sources          *──* miniatures            (source-contents; quantity = figures in the product)
@@ -33,6 +33,14 @@ record-links     <any record> ──relation──> <any record>   (from_type + 
 ```
 
 You can find an example on how to do this in the `./examples` folder, along with other examples.
+
+`map-layouts.json` also says where each tile goes on its map: each row's `placements` give the square its grid starts
+on and how far its image turns (see `docs/data-model.md`). Two examples draw a map from them (run from the repo root):
+
+- `uv run python examples/draw_map.py "Into a Corner" [--section Landing | --whole]` writes the map as a PNG, from
+  the tiles' images: the same picture as the map's image in `images/large/maps`.
+- `uv run python examples/map_boxes.py "Into a Corner"` writes a self-contained HTML page (it opens with a double
+  click) drawing the map as boxes, one per tile, with each hidden section in its own colour.
 
 Most entries have an associated image (or 2) that you can find inside the `./images/large` (for high resolution images) and the `./images/small` folder (for low resolution images).
 
@@ -133,13 +141,14 @@ What follows is a list of all the image types and their sizes for large and smal
 | **Mini (Flipped)**     | 657x424   | 454x293 |
 | **Hero Sheet**         | 1490x1186 | 650x515 |
 
-The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is. A map's image and its hidden sections' images (`Any`) keep their own size, and a map's small image is the same file as its large one. A map tile's side (`Tile`) is cut on its outline: 64 px per square, plus 32 px on each axis that has connector tabs, and its small image is the same file as its large one.
+The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is. A map's image, its hidden sections' images and its whole-map image (`Any`) keep their own size, and a map's small image is the same file as its large one. A map tile's side (`Tile`) is cut on its outline: 64 px per square, plus 32 px on each axis that has connector tabs, and its small image is the same file as its large one.
 
 |                                                       | Source  | Standard | Standard (Flipped) | Mini    | Mini (Flipped) | Hero Sheet | Any | Tile |
 |-------------------------------------------------------|---------|----------|--------------------|---------|----------------|------------|-----|------|
 | sources.image                                         | ✔       |          |                    |         |                |            |     |      |
 | maps.image                                            |         |          |                    |         |                |            | ✔   |      |
 | maps.hidden_sections[].image                          |         |          |                    |         |                |            | ✔   |      |
+| maps.whole_image                                      |         |          |                    |         |                |            | ✔   |      |
 | agenda-cards.image                                    |         | ✔        |                    |         |                |            |     |      |
 | command-cards.image                                   |         |          |                    | ✔       |                |            |     |      |
 | condition-cards.image                                 |         |          |                    | ✔       |                |            |     |      |

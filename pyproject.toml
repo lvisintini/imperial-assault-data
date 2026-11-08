@@ -13,6 +13,7 @@ dev = [
     "jsonschema>=4",
     "jsonref>=1",
     "tqdm>=4",
+    "pillow>=11",
 ]
 
 [tool.uv]
