@@ -451,7 +451,8 @@ Fittest, Trespass) shows what's on the table at the start in `image`, and each s
 Underworld (Obscured area) is 17 of them; Into a Corner's Main Street, City Square and Landing are one of the copies IC2
 places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Such a map also has a
 `whole_image`: its image and then each hidden section, in order, drawn in one frame (where sections replace each other,
-as on Race on Ryloth, the later ones are drawn on top); it's `null` for the rest. Like the tiles, a campaign map's
+as on Race on Ryloth, the later ones are drawn on top, and a tile whose squares a later section's tiles all cover is
+left out: Dangerous Allies' Canyon 39B takes the place of the Khetanna's 36B); it's `null` for the rest. Like the tiles, a campaign map's
 small images are the same files as its large ones.
 
 ```mermaid

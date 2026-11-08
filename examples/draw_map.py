@@ -9,7 +9,8 @@ Run from the repo root (it reads ./data and ./images). Each placement is a tile 
 `rotation`, its grid's top-left square at (`x`, `y`). A side's image is 64 px per square plus a 16 px margin at each
 end of an axis with connector tabs, so the image goes at x * 64 minus that margin (and the same for y). Drawn in the
 file's order, then cropped to the tiles, this gives the map images in images/large/maps (up to the order in which
-tiles whose tabs overlap are drawn).
+tiles whose tabs overlap are drawn). The whole map leaves out a tile whose squares a later section's tiles all cover:
+the revealed tile takes its place.
 """
 import argparse
 import json
@@ -45,15 +46,26 @@ def pieces(map_name, sections):
     return sorted(found, key=lambda f: order.index(f[1]['section']))
 
 
+def covers(image, placement, margin_x, margin_y):
+    """The squares a turned tile covers: those of its grid with the tile at their centre."""
+    return {(placement['x'] + i, placement['y'] + j)
+            for i in range(image.width // SQUARE) for j in range(image.height // SQUARE)
+            if image.getpixel((margin_x + i * SQUARE + SQUARE // 2, margin_y + j * SQUARE + SQUARE // 2))[3] > 127}
+
+
 def draw(found):
-    """The tiles drawn on a transparent page, cropped to them."""
-    layers = []
+    """The tiles drawn on a transparent page, cropped to them. A tile whose squares later sections' tiles all cover is
+    left out."""
+    layers, squares = [], []
     for path, placement in found:
         # rotate() turns counter-clockwise: a negative angle turns clockwise. expand keeps the whole tile.
         image = Image.open(Path('images', 'large', path)).convert('RGBA').rotate(-placement['rotation'], expand=True)
         margin_x = (image.width - image.width // SQUARE * SQUARE) // 2
         margin_y = (image.height - image.height // SQUARE * SQUARE) // 2
         layers.append((image, placement['x'] * SQUARE - margin_x, placement['y'] * SQUARE - margin_y))
+        squares.append((placement['section'], covers(image, placement, margin_x, margin_y)))
+    later = lambda i: set().union(*(s for section, s in squares[i + 1:] if section != squares[i][0]))
+    layers = [layer for i, layer in enumerate(layers) if not squares[i][1] <= later(i)]
     left = min(x for _, x, _ in layers)
     top = min(y for _, _, y in layers)
     width = max(x + image.width for image, x, _ in layers) - left

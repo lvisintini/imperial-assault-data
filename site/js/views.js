@@ -231,9 +231,16 @@ function grouped(refs, db, copiesOf) {
     ${grid(byType.get(t.file), db, undefined, copiesOf)}`);
 }
 
+const heading2 = (heading, count) => html`<h2>${heading}${count == null ? '' : html` <span class="count">${count}</span>`}</h2>`;
+// A related section closed until the viewer opens it by its heading.
+const closed = (heading, count, body) => html`
+  <details class="related closed">
+    <summary>${heading2(heading, count)}</summary>
+    ${body}
+  </details>`;
 const section = (heading, count, body) => html`
   <section class="related">
-    <h2>${heading}${count == null ? '' : html` <span class="count">${count}</span>`}</h2>
+    ${heading2(heading, count)}
     ${body}
   </section>`;
 
@@ -528,13 +535,13 @@ function layoutText(rows, db) {
       `${String(ref.record.number).padStart(2, '0')}${side}${count > 1 ? `(${count})` : ''}`).join(', ')}</dd>`)}</dl>`;
 }
 
-// The sections of a map revealed during its mission, in order: each stays closed until the viewer opens it.
+// The sections of a map revealed during its mission, in order, each under its name.
 function hiddenList(sections) {
   return html`<div class="hidden-sections">${sections.map(({name, image}) => html`
-    <details>
-      <summary>${name}</summary>
+    <figure>
+      <figcaption>${name}</figcaption>
       <a href="${imageUrl('large', image)}"><img loading="lazy" src="${imageUrl('large', image)}" alt="${name}"></a>
-    </details>`)}</div>`;
+    </figure>`)}</div>`;
 }
 
 // A mission's rewards: those it always gives, then its alternatives ("Choose 1"). Credits have no record to show.
@@ -590,17 +597,15 @@ export function detail(db, ref) {
   }
   const map = mapOf(ref, db);
   if (map) related.push(section('Map', null, grid([map], db)));
-  if (layout) related.push(section(aside ? 'Tile images' : 'Tiles', layout.length, layoutList(layout, db)));
+  // A map's hidden sections and its whole map (its image and every hidden section in one frame): each a section that
+  // stays closed until the viewer opens it.
   const hidden = (t.imageSections ?? []).flatMap(field => ref.record[field] ?? []);
-  if (hidden.length) related.push(section('Hidden sections', hidden.length, hiddenList(hidden)));
-  // An image shown in a section of its own: a map's whole map, its image and every hidden section in one frame.
+  if (hidden.length) related.push(closed('Hidden sections', hidden.length, hiddenList(hidden)));
   for (const [field, heading] of Object.entries(t.pageImages ?? {})) {
     const image = ref.record[field];
-    // Closed until the viewer opens it, like the hidden sections.
-    if (image) related.push(section(heading, null, html`<div class="hidden-sections"><details>
-      <summary>The starting map and every hidden section</summary>
+    if (image) related.push(closed(heading, null, html`<div class="hidden-sections">
       <a href="${imageUrl('large', image)}"><img loading="lazy" src="${imageUrl('large', image)}" alt="${heading}: ${name}"></a>
-    </details></div>`));
+    </div>`));
   }
   const usedIn = db.usedIn.get(ref);
   if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
@@ -615,6 +620,8 @@ export function detail(db, ref) {
   }
   const backOf = db.backOf.get(ref);
   if (backOf) related.push(section('Back of', backOf.length, grouped(backOf, db)));
+  // Last: a map's tiles' images, by product (beside the image, a map's aside lists them by name).
+  if (layout) related.push(section(aside ? 'Tile images' : 'Tiles', layout.length, layoutList(layout, db)));
 
   return {
     title: name,

@@ -333,8 +333,12 @@ figure img { display: block; max-width: 100%; height: auto; border-radius: var(-
 figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
 
 .hidden-sections { display: grid; gap: 8px; }
-.hidden-sections summary { cursor: pointer; font-weight: 600; }
+.hidden-sections figure { margin: 0; }
+.hidden-sections figcaption { font-weight: 600; }
 .hidden-sections img { display: block; max-width: 100%; height: auto; margin-top: 8px; border-radius: var(--radius); }
+.related.closed > summary { cursor: pointer; }
+.related.closed > summary h2 { display: inline; }
+.related.closed[open] > summary { margin-bottom: 12px; }
 
 .fields {
   display: grid;

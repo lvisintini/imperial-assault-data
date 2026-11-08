@@ -24138,7 +24138,7 @@
       {
         "section": "Canyon",
         "x": 9,
-        "y": 17,
+        "y": 1,
         "rotation": 180
       }
     ]
@@ -24152,7 +24152,7 @@
       {
         "section": "Canyon",
         "x": 13,
-        "y": 20,
+        "y": 4,
         "rotation": 0
       }
     ]
@@ -24180,7 +24180,7 @@
       {
         "section": "Canyon",
         "x": 9,
-        "y": 24,
+        "y": 8,
         "rotation": 90
       }
     ]
@@ -24194,7 +24194,7 @@
       {
         "section": "Canyon",
         "x": 11,
-        "y": 22,
+        "y": 6,
         "rotation": 270
       }
     ]
@@ -24208,13 +24208,13 @@
       {
         "section": "Canyon",
         "x": 13,
-        "y": 17,
+        "y": 1,
         "rotation": 0
       },
       {
         "section": "Canyon",
         "x": 13,
-        "y": 22,
+        "y": 6,
         "rotation": 90
       }
     ]
@@ -24228,7 +24228,7 @@
       {
         "section": "Canyon",
         "x": 13,
-        "y": 19,
+        "y": 3,
         "rotation": 180
       }
     ]
@@ -24242,19 +24242,19 @@
       {
         "section": "Canyon",
         "x": 15,
-        "y": 20,
+        "y": 4,
         "rotation": 90
       },
       {
         "section": "Canyon",
         "x": 8,
-        "y": 26,
+        "y": 10,
         "rotation": 270
       },
       {
         "section": "Canyon",
         "x": 15,
-        "y": 26,
+        "y": 10,
         "rotation": 90
       }
     ]
@@ -24364,7 +24364,7 @@
       {
         "section": "Canyon",
         "x": 8,
-        "y": 20,
+        "y": 4,
         "rotation": 0
       }
     ]
@@ -25497,7 +25497,7 @@
     "placements": [
       {
         "section": "Khetanna",
-        "x": 26,
+        "x": 25,
         "y": 1,
         "rotation": 180
       }
@@ -25553,7 +25553,7 @@
     "placements": [
       {
         "section": "Khetanna",
-        "x": 23,
+        "x": 22,
         "y": 2,
         "rotation": 270
       }
@@ -25567,7 +25567,7 @@
     "placements": [
       {
         "section": "Khetanna",
-        "x": 28,
+        "x": 27,
         "y": 0,
         "rotation": 180
       }
@@ -25581,13 +25581,13 @@
     "placements": [
       {
         "section": "Khetanna",
-        "x": 31,
+        "x": 30,
         "y": 4,
         "rotation": 270
       },
       {
         "section": "Khetanna",
-        "x": 28,
+        "x": 27,
         "y": 11,
         "rotation": 0
       }
@@ -25709,7 +25709,7 @@
     "placements": [
       {
         "section": "Khetanna",
-        "x": 27,
+        "x": 26,
         "y": 7,
         "rotation": 90
       }
@@ -25763,7 +25763,7 @@
       },
       {
         "section": "Khetanna",
-        "x": 26,
+        "x": 25,
         "y": 4,
         "rotation": 0
       }
@@ -25795,7 +25795,7 @@
       },
       {
         "section": "Khetanna",
-        "x": 22,
+        "x": 21,
         "y": 2,
         "rotation": 0
       }
@@ -30945,7 +30945,7 @@
         "section": "Sand Crawler",
         "x": 3,
         "y": 2,
-        "rotation": 270
+        "rotation": 90
       }
     ]
   },
@@ -31895,7 +31895,7 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 30,
+        "x": 21,
         "y": 12,
         "rotation": 270
       }
@@ -31909,7 +31909,7 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 26,
+        "x": 17,
         "y": 12,
         "rotation": 0
       }
@@ -31951,13 +31951,13 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 27,
+        "x": 18,
         "y": 16,
         "rotation": 90
       },
       {
         "section": "Command Center",
-        "x": 31,
+        "x": 22,
         "y": 16,
         "rotation": 0
       }
@@ -31977,7 +31977,7 @@
       },
       {
         "section": "Command Center",
-        "x": 29,
+        "x": 20,
         "y": 16,
         "rotation": 0
       }
@@ -31991,13 +31991,13 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 26,
+        "x": 17,
         "y": 10,
         "rotation": 270
       },
       {
         "section": "Command Center",
-        "x": 31,
+        "x": 22,
         "y": 10,
         "rotation": 270
       }
@@ -32073,7 +32073,7 @@
       },
       {
         "section": "Command Center",
-        "x": 34,
+        "x": 25,
         "y": 13,
         "rotation": 270
       }
@@ -32087,7 +32087,7 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 27,
+        "x": 18,
         "y": 2,
         "rotation": 180
       }
@@ -32101,7 +32101,7 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 29,
+        "x": 20,
         "y": 8,
         "rotation": 90
       }
@@ -32115,13 +32115,13 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 26,
+        "x": 17,
         "y": 8,
         "rotation": 180
       },
       {
         "section": "Command Center",
-        "x": 31,
+        "x": 22,
         "y": 8,
         "rotation": 270
       }
@@ -32135,7 +32135,7 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 28,
+        "x": 19,
         "y": 8,
         "rotation": 0
       }
@@ -32149,13 +32149,13 @@
     "placements": [
       {
         "section": "Command Center",
-        "x": 26,
+        "x": 17,
         "y": 4,
         "rotation": 90
       },
       {
         "section": "Command Center",
-        "x": 33,
+        "x": 24,
         "y": 4,
         "rotation": 270
       }
@@ -32503,7 +32503,7 @@
     "placements": [
       {
         "section": "Landing Platform",
-        "x": 41,
+        "x": 27,
         "y": 1,
         "rotation": 270
       }
@@ -32531,7 +32531,7 @@
     "placements": [
       {
         "section": "Underworld (Visible area)",
-        "x": 33,
+        "x": 19,
         "y": 3,
         "rotation": 0
       }
@@ -32545,7 +32545,7 @@
     "placements": [
       {
         "section": "Underworld (Visible area)",
-        "x": 37,
+        "x": 23,
         "y": 4,
         "rotation": 90
       }
@@ -32559,7 +32559,7 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 31,
+        "x": 17,
         "y": 8,
         "rotation": 270
       }
@@ -32573,7 +32573,7 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 30,
+        "x": 16,
         "y": 5,
         "rotation": 0
       }
@@ -32587,7 +32587,7 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 38,
+        "x": 24,
         "y": 9,
         "rotation": 0
       }
@@ -32601,13 +32601,13 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 34,
+        "x": 20,
         "y": 9,
         "rotation": 180
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 41,
+        "x": 27,
         "y": 9,
         "rotation": 270
       }
@@ -32621,7 +32621,7 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 31,
+        "x": 17,
         "y": 12,
         "rotation": 90
       }
@@ -32635,7 +32635,7 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 36,
+        "x": 22,
         "y": 9,
         "rotation": 0
       }
@@ -32655,13 +32655,13 @@
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 41,
+        "x": 27,
         "y": 11,
         "rotation": 90
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 34,
+        "x": 20,
         "y": 12,
         "rotation": 0
       }
@@ -32675,19 +32675,19 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 38,
+        "x": 24,
         "y": 8,
         "rotation": 90
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 40,
+        "x": 26,
         "y": 9,
         "rotation": 0
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 33,
+        "x": 19,
         "y": 12,
         "rotation": 0
       }
@@ -32719,43 +32719,43 @@
       },
       {
         "section": "Underworld (Visible area)",
-        "x": 35,
+        "x": 21,
         "y": 2,
         "rotation": 180
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 31,
+        "x": 17,
         "y": 4,
         "rotation": 180
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 29,
+        "x": 15,
         "y": 5,
         "rotation": 90
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 34,
+        "x": 20,
         "y": 11,
         "rotation": 0
       },
       {
         "section": "Underworld (Obscured area)",
-        "x": 38,
+        "x": 24,
         "y": 11,
         "rotation": 0
       },
       {
         "section": "Landing Platform",
-        "x": 41,
+        "x": 27,
         "y": 0,
         "rotation": 180
       },
       {
         "section": "Landing Platform",
-        "x": 46,
+        "x": 32,
         "y": 4,
         "rotation": 270
       }
@@ -32783,7 +32783,7 @@
     "placements": [
       {
         "section": "Hideaway",
-        "x": 35,
+        "x": 21,
         "y": 12,
         "rotation": 270
       }
@@ -32797,7 +32797,7 @@
     "placements": [
       {
         "section": "Underworld (Obscured area)",
-        "x": 40,
+        "x": 26,
         "y": 12,
         "rotation": 180
       }
@@ -32851,7 +32851,7 @@
       },
       {
         "section": "Hideaway",
-        "x": 37,
+        "x": 23,
         "y": 16,
         "rotation": 270
       }
