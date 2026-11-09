@@ -406,7 +406,7 @@ class TestMapTilesIntegrity:
     @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MAP_TILES), ids=lambda t: t['name'])
     def test_a_tiles_squares_and_grid_are_its_images(self, entry):
         """squares, width and height are side A's image's; side B has as many squares, its image the same size or
-        turned a quarter."""
+        turned a quarter (each side is stored with its number pill upright)."""
         a, b = self.grid_of(entry['side_a']), self.grid_of(entry['side_b'])
         assert a == (entry['width'], entry['height'], entry['squares'])
         assert b in (a, (a[1], a[0], a[2]))
