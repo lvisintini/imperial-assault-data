@@ -429,12 +429,14 @@ Maps are built from double-sided tiles:
     aren't squares). All of a map's placements share one frame, its hidden sections' too, so a revealed area keeps its
     place next to the rest; the frame starts at 0, 0.
   - `rotation` is how far the side's image (`side_a` or `side_b`) turns clockwise as placed: 0, 90, 180 or 270.
-  - To draw a placement at 64 px per square, turn the image and put its top-left pixel at `x × 64 − mx`,
-    `y × 64 − my`, where `mx` and `my` are the turned image's tab margins: 16 px on an axis with tabs, 0 without
-    (`(width − squares × 64) / 2`). Drawing a map's or a hidden section's placements this way gives its image.
-  - Each image is framed on the squares its tiles cover plus 16 px all round (for the tabs that stick out), so its
-    pixel (16, 16) is the corner of its top-left square: square (`x`, `y`) starts at `16 + (x − x0) × 64`,
-    `16 + (y − y0) × 64`, where `x0` and `y0` are the smallest `x` and `y` of the placements on that image.
+  - To draw a placement from the small images (64 px per square), turn the image and put its top-left pixel at
+    `x × 64 − mx`, `y × 64 − my`, where `mx` and `my` are the turned image's tab margins: 16 px on an axis with tabs, 0
+    without (`(width − squares × 64) / 2`). Drawing a map's or a hidden section's placements this way gives its small
+    image; the large images are the same at 128 px per square (margins of 32).
+  - Each image is framed on the squares its tiles cover plus a quarter square all round (for the tabs that stick out),
+    so a small image's pixel (16, 16) is the corner of its top-left square: square (`x`, `y`) starts at
+    `16 + (x − x0) × 64`, `16 + (y − y0) × 64` (in a large image `32 + (x − x0) × 128`), where `x0` and `y0` are the
+    smallest `x` and `y` of the placements on that image.
   - Every copy is placed, and no one image places a side more often than `count`. A tile a hidden section reuses is
     placed more often than that: Race on Ryloth takes four Core Set 18B and three Tyrants of Lothal 12B, and its
     sections, which replace each other, place them 8 and 6 times.
@@ -442,8 +444,10 @@ Maps are built from double-sided tiles:
 So every mission reaches its tiles the same way: mission → map → map layouts → map tiles → products.
 
 A tile's images are cut on its outline: the connector tabs are kept and the notches are transparent, so tiles placed
-side by side fit as on the table. They're 64 px per square, plus 32 px on each axis that has tabs, and the small
-image is the same file as the large one. They come from the Vassal *Imperial Assault Campaign Module* (1.14). The
+side by side fit as on the table. They're 128 px per square in large and 64 in small (the large image halved), plus
+half a square on each axis that has tabs. They are the maintainer's scans of the printed tiles, fitted onto the tiles
+of the Vassal *Imperial Assault Campaign Module* (1.14), which the dataset had until then, and colour-matched to them
+(imperial-assault-tools' `ia hires-tiles`), each turned so its number pill reads upright. The
 campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuff/ImperialCommander2), summed over
 each mission's map sections, and corrected where the maintainer's checks against the Campaign Guide and the rulebooks
 found it wrong: a tile's side (Desperate Hour uses 24B and 32B, not 24A and 32A), a tile it lacks or has too many of,
@@ -451,7 +455,8 @@ or the copies a mission takes (imperial-assault-tools' `ia_tools/ic2.py` `CORREC
 and raid maps' placements were found by matching their tiles against the Vassal skirmish module's boards and the
 Skirmish Map Project's images, then checked map by map by the maintainer. Every map has a layout.
 
-Every map's images are drawn from its tiles at 64 px per square, on a transparent background, framed as above. They
+Every map's images are drawn from its tiles at 128 px per square (large; small is halved to 64), on a transparent
+background, framed as above. They
 show the tiles only (no doors, tokens or figures, and no deployment zones). The skirmish, four-player and raid maps'
 are drawn from their placements by imperial-assault-tools' `ia skirmish-maps`; the campaign maps' by `ia maps`, each
 tile side placed where ImperialCommander2's mission file puts it (as corrected). Most show every section of the map. A map whose parts are revealed as
@@ -463,8 +468,8 @@ Underworld (Obscured area) is 17 of them; Into a Corner's Main Street, City Squa
 places on each side; Salvage Operatives' Sand Crawler is one of IC2's three positions). Such a map also has a
 `whole_image`: its image and then each hidden section, in order, drawn in one frame (where sections replace each other,
 as on Race on Ryloth, the later ones are drawn on top, and a tile whose squares a later section's tiles all cover is
-left out: Dangerous Allies' Canyon 39B takes the place of the Khetanna's 36B); it's `null` for the rest. Like the tiles, a map's small
-images are the same files as its large ones.
+left out: Dangerous Allies' Canyon 39B takes the place of the Khetanna's 36B); it's `null` for the rest. Like the
+tiles', a map's small images are its large ones halved.
 
 ```mermaid
 erDiagram

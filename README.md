@@ -141,7 +141,7 @@ What follows is a list of all the image types and their sizes for large and smal
 | **Mini (Flipped)**     | 657x424   | 454x293 |
 | **Hero Sheet**         | 1490x1186 | 650x515 |
 
-The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is. A map's image, its hidden sections' images and its whole-map image (`Any`) keep their own size, and a map's small image is the same file as its large one. A map tile's side (`Tile`) is cut on its outline: 64 px per square, plus 32 px on each axis that has connector tabs, and its small image is the same file as its large one.
+The table bellow shows you the expected sizes for all the different images included in this data set. A card back (`card-backs.image`) has the size of the cards whose `back_id` it is. A map's image, its hidden sections' images and its whole-map image (`Any`) keep their own size: 128 px per square in large, and the small image is the large one halved (64 px per square). A map tile's side (`Tile`) is cut on its outline: 128 px per square in large and 64 in small (the large image halved), plus half a square on each axis that has connector tabs (64 px in large, 32 in small).
 
 |                                                       | Source  | Standard | Standard (Flipped) | Mini    | Mini (Flipped) | Hero Sheet | Any | Tile |
 |-------------------------------------------------------|---------|----------|--------------------|---------|----------------|------------|-----|------|
