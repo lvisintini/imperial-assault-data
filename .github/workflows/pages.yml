@@ -35,8 +35,8 @@ jobs:
         run: |
           mv site _site
           mv data images docs _site/
-          # Maps' and map tiles' small images are their large ones; the explorer reads them from images/small
-          # (site/js/views.js).
+          # The explorer reads maps and map tiles from images/small (site/js/views.js); their large images (128 px
+          # per square, twice the small ones) would take the site over Pages' 1 GB.
           rm -r _site/images/large/maps _site/images/large/map-tiles
           du -sh _site
 

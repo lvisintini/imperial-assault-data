@@ -392,10 +392,10 @@ class TestMapTilesIntegrity:
 
     @staticmethod
     def grid_of(image_path):
-        """(width, height, squares) of a tile side's image: 64 px per square inside the tab margins, a square counted
-        when the tile is at its centre."""
+        """(width, height, squares) of a tile side's small image: 64 px per square inside the tab margins (128 in
+        large), a square counted when the tile is at its centre."""
         from PIL import Image
-        with Image.open(Path('images', 'large', image_path)) as image:
+        with Image.open(Path('images', 'small', image_path)) as image:
             alpha = image.convert('RGBA').getchannel('A')
         width, height = alpha.width // 64, alpha.height // 64
         x0, y0 = (alpha.width - width * 64) // 2, (alpha.height - height * 64) // 2

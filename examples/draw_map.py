@@ -5,11 +5,13 @@
     uv run python examples/draw_map.py "Into a Corner" --whole            # the map and every hidden section
     uv run python examples/draw_map.py "Moisture Farm" -o moisture-farm.png
 
-Run from the repo root (it reads ./data and ./images). Each placement is a tile side's image turned clockwise by
-`rotation`, its grid's top-left square at (`x`, `y`). A side's image is 64 px per square plus a 16 px margin at each
+Run from the repo root (it reads ./data and ./images/small; images/large is the same at 128 px per square). Each
+placement is a tile side's image turned clockwise by `rotation`, its grid's top-left square at (`x`, `y`). A side's
+small image is 64 px per square plus a 16 px margin at each
 end of an axis with connector tabs, so the image goes at x * 64 minus that margin (and the same for y). Drawn in the
 file's order on a page framed on the tiles' squares plus 16 px all round (for the tabs), this gives the map images in
-images/large/maps (up to the order in which tiles whose tabs overlap are drawn): their pixel (16, 16) is the corner of
+images/small/maps (up to the order in which tiles whose tabs overlap are drawn, and the small maps being the large
+ones halved): their pixel (16, 16) is the corner of
 the image's top-left square, so square (x, y) starts at 16 + (x - the image's smallest x) * 64. The whole map leaves out a tile whose squares a later section's tiles all cover:
 the revealed tile takes its place.
 """
@@ -19,7 +21,7 @@ from pathlib import Path
 
 from PIL import Image
 
-SQUARE = 64  # px per square in the tiles' images
+SQUARE = 64  # px per square in the tiles' small images
 
 
 def load(name):
@@ -63,7 +65,7 @@ def draw(found):
     layers, squares = [], []
     for path, placement in found:
         # rotate() turns counter-clockwise: a negative angle turns clockwise. expand keeps the whole tile.
-        image = Image.open(Path('images', 'large', path)).convert('RGBA').rotate(-placement['rotation'], expand=True)
+        image = Image.open(Path('images', 'small', path)).convert('RGBA').rotate(-placement['rotation'], expand=True)
         margin_x = (image.width - image.width // SQUARE * SQUARE) // 2
         margin_y = (image.height - image.height // SQUARE * SQUARE) // 2
         layers.append((image, placement['x'] * SQUARE - margin_x, placement['y'] * SQUARE - margin_y))

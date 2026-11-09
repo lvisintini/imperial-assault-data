@@ -3,7 +3,7 @@
     uv run python examples/map_boxes.py "Into a Corner"                 # writes build/Into a Corner.html
     uv run python examples/map_boxes.py "Moisture Farm" -o moisture.html
 
-Run from the repo root (it reads ./data and the tiles' image sizes in ./images). The page has the map's placements
+Run from the repo root (it reads ./data and the tiles' image sizes in ./images/small, 64 px per square). The page has the map's placements
 in it, so it opens with a double click, no server needed.
 
 Each box is a tile's grid: it starts at the placement's (x, y) square and is as many squares wide and tall as the
@@ -17,7 +17,7 @@ import json
 import struct
 from pathlib import Path
 
-SQUARE = 64  # px per square in the tiles' images
+SQUARE = 64  # px per square in the tiles' small images
 
 
 def load(name):
@@ -26,7 +26,7 @@ def load(name):
 
 def squares(path):
     """(width, height) in squares of a tile side's image, unturned: a PNG's size is in its IHDR chunk."""
-    with open(Path('images', 'large', path), 'rb') as image:
+    with open(Path('images', 'small', path), 'rb') as image:
         width, height = struct.unpack('>II', image.read(24)[16:24])
     return width // SQUARE, height // SQUARE
 

@@ -47,9 +47,11 @@ class ImageTestHelper:
 
     ANY = None
     CARDS_USING_IT = 'the size of the cards whose back_id is this back'
-    # A tile's side: 64 px per square, plus 32 px on each axis that has tabs (cut on its outline).
-    TILE_SQUARE, TILE_TABS = 64, (0, 32)
-    TILE = 'a multiple of 64 px on each axis, plus 0 or 32 for the tabs'
+    # A tile's side, cut on its outline: 128 px per square in large and 64 in small, plus half a square on each axis
+    # that has tabs.
+    LARGE_TILE = 'a multiple of 128 px on each axis, plus 0 or 64 for the tabs'
+    SMALL_TILE = 'a multiple of 64 px on each axis, plus 0 or 32 for the tabs'
+    TILE_SQUARES = {LARGE_TILE: 128, SMALL_TILE: 64}
 
     definitions = [
         ImageDefinition('large', CONTENT_TYPES.SOURCE, 'image', dims=SOURCE),
@@ -76,8 +78,8 @@ class ImageTestHelper:
         ImageDefinition('large', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=LARGE_STANDARD_FLIPPED),
         ImageDefinition('large', CONTENT_TYPES.EPILOGUE, 'image', dims=LARGE_STANDARD),
         ImageDefinition('large', CONTENT_TYPES.FORM_CARDS, 'image', dims=LARGE_MINI_FLIPPED),
-        ImageDefinition('large', CONTENT_TYPES.MAP_TILES, 'side_a', dims=TILE),
-        ImageDefinition('large', CONTENT_TYPES.MAP_TILES, 'side_b', dims=TILE),
+        ImageDefinition('large', CONTENT_TYPES.MAP_TILES, 'side_a', dims=LARGE_TILE),
+        ImageDefinition('large', CONTENT_TYPES.MAP_TILES, 'side_b', dims=LARGE_TILE),
 
         ImageDefinition('large', CONTENT_TYPES.CARD, 'image', dims=CARDS_USING_IT),
 
@@ -105,8 +107,8 @@ class ImageTestHelper:
         ImageDefinition('small', CONTENT_TYPES.SKIRMISH_MISSION, 'image', dims=SMALL_STANDARD_FLIPPED),
         ImageDefinition('small', CONTENT_TYPES.EPILOGUE, 'image', dims=SMALL_STANDARD),
         ImageDefinition('small', CONTENT_TYPES.FORM_CARDS, 'image', dims=SMALL_MINI_FLIPPED),
-        ImageDefinition('small', CONTENT_TYPES.MAP_TILES, 'side_a', dims=TILE),
-        ImageDefinition('small', CONTENT_TYPES.MAP_TILES, 'side_b', dims=TILE),
+        ImageDefinition('small', CONTENT_TYPES.MAP_TILES, 'side_a', dims=SMALL_TILE),
+        ImageDefinition('small', CONTENT_TYPES.MAP_TILES, 'side_b', dims=SMALL_TILE),
 
         ImageDefinition('small', CONTENT_TYPES.CARD, 'image', dims=CARDS_USING_IT),
     ]
@@ -175,18 +177,22 @@ class TestImages:
 
     @pytest.mark.parametrize("content_type,fields", [(CONTENT_TYPES.MAP, ['image', 'hidden_sections', 'whole_image']),
                                                      (CONTENT_TYPES.MAP_TILES, ['side_a', 'side_b'])])
-    def test_maps_and_tiles_small_images_are_their_large_ones(self, content_type, fields):
+    def test_maps_and_tiles_small_images_are_their_large_ones_halved(self, content_type, fields):
         # GitHub Pages only publishes images/small/maps and images/small/map-tiles (.github/workflows/pages.yml), and
-        # the explorer reads both sizes of a map or a tile from there.
+        # the explorer reads both sizes of a map or a tile from there: 64 px per square, the large image (128) halved.
+        from PIL import Image, ImageChops
         root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../images'))
         for entry in get_data_for(content_type)[content_type]:
             paths = [p['image'] if isinstance(p, dict) else p
                      for field in fields for p in (entry[field] if isinstance(entry[field], list) else [entry[field]])
                      if p is not None]
             for path in paths:
-                with open(os.path.join(root, 'large', path), 'rb') as large, \
-                        open(os.path.join(root, 'small', path), 'rb') as small:
-                    assert large.read() == small.read(), path
+                with Image.open(os.path.join(root, 'large', path)) as large, \
+                        Image.open(os.path.join(root, 'small', path)) as small:
+                    assert small.size == (large.width // 2, large.height // 2), path
+                    halved = large.convert('RGBA').resize(small.size, Image.BOX)
+                    difference = ImageChops.difference(halved, small.convert('RGBA'))
+                    assert max(high for _, high in difference.getextrema()) <= 2, path
 
     @pytest.mark.parametrize("image_path", list(ImageTestHelper.get_paths(get_data_for(*CONTENT_TYPES.as_list))))
     def test_image_paths(self, image_path):
@@ -199,8 +205,8 @@ class TestImages:
     )
     def test_image_sizes(self, image_path, expected_size):
         size = self.get_image_size(image_path)
-        if expected_size == ImageTestHelper.TILE:
-            assert all(axis % ImageTestHelper.TILE_SQUARE in ImageTestHelper.TILE_TABS
-                       and axis > ImageTestHelper.TILE_SQUARE for axis in size), size
+        if expected_size in ImageTestHelper.TILE_SQUARES:
+            square = ImageTestHelper.TILE_SQUARES[expected_size]
+            assert all(axis % square in (0, square // 2) and axis > square for axis in size), size
         else:
             assert size == expected_size

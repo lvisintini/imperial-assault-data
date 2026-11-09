@@ -70,8 +70,8 @@ const peekPath = (ref, db) => {
   return ownImage(ref) ?? backImage(ref, db) ?? mapImage(ref, db);
 };
 
-// A map's or a tile's small image is its large one (same file), so the site only publishes images/small/maps and
-// images/small/map-tiles (pages.yml).
+// A map's or a tile's small image is its large one halved (64 px per square, against 128), and the site only publishes
+// images/small/maps and images/small/map-tiles (pages.yml: the large ones would take it over Pages' 1 GB).
 const SMALL_ONLY = ['maps/', 'map-tiles/'];
 const imageUrl = (size, path) =>
   `images/${SMALL_ONLY.some(folder => path.startsWith(folder)) ? 'small' : size}/${encodeURI(path)}`;
