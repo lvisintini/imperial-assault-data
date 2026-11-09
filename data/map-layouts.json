@@ -9155,7 +9155,7 @@
         "section": null,
         "x": 16,
         "y": 8,
-        "rotation": 180
+        "rotation": 90
       }
     ]
   },
@@ -18255,7 +18255,7 @@
         "section": null,
         "x": 3,
         "y": 2,
-        "rotation": 90
+        "rotation": 270
       }
     ]
   },
