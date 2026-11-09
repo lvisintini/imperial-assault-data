@@ -33315,7 +33315,7 @@
     "placements": [
       {
         "section": null,
-        "x": 17,
+        "x": 16,
         "y": 4,
         "rotation": 0
       }
@@ -33330,7 +33330,7 @@
       {
         "section": null,
         "x": 5,
-        "y": 6,
+        "y": 4,
         "rotation": 0
       }
     ]
@@ -33344,7 +33344,7 @@
       {
         "section": null,
         "x": 1,
-        "y": 5,
+        "y": 3,
         "rotation": 0
       }
     ]
@@ -33358,7 +33358,7 @@
       {
         "section": null,
         "x": 6,
-        "y": 10,
+        "y": 8,
         "rotation": 180
       }
     ]
@@ -33372,7 +33372,7 @@
       {
         "section": null,
         "x": 6,
-        "y": 3,
+        "y": 1,
         "rotation": 90
       }
     ]
@@ -33386,7 +33386,7 @@
       {
         "section": null,
         "x": 1,
-        "y": 3,
+        "y": 1,
         "rotation": 90
       }
     ]
@@ -33400,7 +33400,7 @@
       {
         "section": null,
         "x": 3,
-        "y": 3,
+        "y": 1,
         "rotation": 0
       }
     ]
@@ -33413,7 +33413,7 @@
     "placements": [
       {
         "section": null,
-        "x": 20,
+        "x": 19,
         "y": 2,
         "rotation": 270
       }
@@ -33428,7 +33428,7 @@
       {
         "section": null,
         "x": 7,
-        "y": 2,
+        "y": 0,
         "rotation": 90
       }
     ]
@@ -33441,7 +33441,7 @@
     "placements": [
       {
         "section": null,
-        "x": 16,
+        "x": 15,
         "y": 4,
         "rotation": 180
       }
@@ -33456,7 +33456,7 @@
       {
         "section": null,
         "x": 5,
-        "y": 3,
+        "y": 1,
         "rotation": 180
       }
     ]
@@ -33470,31 +33470,31 @@
       {
         "section": null,
         "x": 9,
-        "y": 3,
+        "y": 1,
         "rotation": 270
       },
       {
         "section": null,
         "x": 0,
-        "y": 7,
+        "y": 5,
         "rotation": 90
       },
       {
         "section": null,
         "x": 11,
-        "y": 7,
+        "y": 5,
         "rotation": 270
       },
       {
         "section": null,
         "x": 5,
-        "y": 11,
+        "y": 9,
         "rotation": 90
       },
       {
         "section": null,
         "x": 10,
-        "y": 11,
+        "y": 9,
         "rotation": 270
       }
     ]
@@ -33507,13 +33507,13 @@
     "placements": [
       {
         "section": null,
-        "x": 25,
+        "x": 24,
         "y": 4,
         "rotation": 270
       },
       {
         "section": null,
-        "x": 20,
+        "x": 19,
         "y": 9,
         "rotation": 0
       }
@@ -33527,7 +33527,7 @@
     "placements": [
       {
         "section": null,
-        "x": 14,
+        "x": 13,
         "y": 3,
         "rotation": 90
       }
@@ -33541,7 +33541,7 @@
     "placements": [
       {
         "section": null,
-        "x": 20,
+        "x": 19,
         "y": 0,
         "rotation": 180
       }
@@ -33555,13 +33555,13 @@
     "placements": [
       {
         "section": null,
-        "x": 14,
+        "x": 13,
         "y": 2,
         "rotation": 180
       },
       {
         "section": null,
-        "x": 14,
+        "x": 13,
         "y": 7,
         "rotation": 0
       }
@@ -39337,7 +39337,7 @@
     "placements": [
       {
         "section": null,
-        "x": 17,
+        "x": 12,
         "y": 4,
         "rotation": 0
       }
@@ -39365,7 +39365,7 @@
     "placements": [
       {
         "section": null,
-        "x": 17,
+        "x": 12,
         "y": 14,
         "rotation": 180
       }
@@ -39407,13 +39407,13 @@
     "placements": [
       {
         "section": null,
-        "x": 16,
+        "x": 11,
         "y": 5,
         "rotation": 90
       },
       {
         "section": null,
-        "x": 19,
+        "x": 14,
         "y": 17,
         "rotation": 0
       }
@@ -39527,7 +39527,7 @@
     "placements": [
       {
         "section": null,
-        "x": 17,
+        "x": 12,
         "y": 10,
         "rotation": 90
       }
@@ -39541,7 +39541,7 @@
     "placements": [
       {
         "section": null,
-        "x": 17,
+        "x": 12,
         "y": 0,
         "rotation": 180
       }
@@ -39555,25 +39555,25 @@
     "placements": [
       {
         "section": null,
-        "x": 16,
+        "x": 11,
         "y": 1,
         "rotation": 90
       },
       {
         "section": null,
-        "x": 21,
+        "x": 16,
         "y": 1,
         "rotation": 270
       },
       {
         "section": null,
-        "x": 21,
+        "x": 16,
         "y": 7,
         "rotation": 270
       },
       {
         "section": null,
-        "x": 16,
+        "x": 11,
         "y": 15,
         "rotation": 90
       }
