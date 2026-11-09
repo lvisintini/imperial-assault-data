@@ -2,7 +2,8 @@
 // side's grid turned, positioned in percent of the image so it follows the image's size on screen. A map's images are
 // drawn at 64 px per square, framed on their tiles' squares plus 16 px all round, so square (x, y) starts at
 // 16 + (x - the image's smallest x) * 64 px. A side's grid is its image's size in squares (64 px each, inside the 16 px
-// tab margins): read from the image, since some sides' images are stored turned from the other side's.
+// tab margins): read from the image, since each side is stored with its number pill upright, which can turn it from the
+// other side's.
 const SQUARE = 64;
 const MARGIN = 16;
 

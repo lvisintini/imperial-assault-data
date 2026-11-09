@@ -413,8 +413,9 @@ map is used by a mission, so it reaches its products through its missions (and a
 Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, how many
   `squares` it has (both sides the same) and its grid's `width` and `height` in squares as `side_a`'s image is stored,
-  with an image per side (`side_a`, `side_b`; nine tiles' side B image is stored turned a quarter from side A's, so
-  its width is that height: Core Set 02, 03, 18, 20, 21, 27 and 36, Twin Shadows 06 and Jabba's Realm 10). Tiles reach their products through `source-contents`, with `quantity` = how many of
+  with an image per side (`side_a`, `side_b`), each stored with the number pill printed in a corner (its code,
+  "01A") upright. Jabba's Realm 10's sides have their pills a quarter turn apart, so its side B image is stored
+  turned a quarter from side A's, its width being that height. Tiles reach their products through `source-contents`, with `quantity` = how many of
   that tile the box has. The file runs by product code, then number.
 - `map-layouts` (no ids): the tile sides a map uses and where they go, `{map_id, tile_id, side, count, placements}`.
   `count` is how many copies of that side the mission takes. `placements` lists where the map's images put them:
