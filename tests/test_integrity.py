@@ -523,6 +523,50 @@ class TestMapTilesIntegrity:
                 if r['map_id'] in maps and len(r['placements']) != r['count']] == []
 
 
+class TestMapTileMatchesIntegrity:
+    """map-tile-matches: every two sides of a set of interchangeable sides (the same art but for the pill)."""
+
+    @staticmethod
+    def sides():
+        return [((r['tile_id'], r['side']), (r['other_tile_id'], r['other_side']))
+                for r in get_data(CONTENT_TYPES.MAP_TILE_MATCHES)]
+
+    @pytest.mark.parametrize("entry", get_data(CONTENT_TYPES.MAP_TILE_MATCHES))
+    def test_matches_resolve_to_tiles_with_the_same_squares(self, entry, all_data):
+        one = TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP_TILES], entry['tile_id'])
+        other = TestIntegrity.fetch_fk_data(all_data[CONTENT_TYPES.MAP_TILES], entry['other_tile_id'])
+        assert one is not None and other is not None
+        assert one['squares'] == other['squares']
+
+    def test_matches_pair_two_tiles_earlier_first_in_file_order(self):
+        """No tile matched with itself; tile_id is the earlier tile in map-tiles.json, and rows follow that order
+        (by tile_id's side, then other_tile_id's)."""
+        order = {t['id']: n for n, t in enumerate(get_data(CONTENT_TYPES.MAP_TILES))}
+        keys = [((order[a], s), (order[b], t)) for (a, s), (b, t) in self.sides()]
+        assert all(a[0] < b[0] for a, b in keys)
+        assert keys == sorted(set(keys))
+
+    def test_matches_are_whole_sets(self):
+        """Interchangeable is transitive: sides joined through matches are all matched with each other."""
+        pairs = {frozenset(p) for p in self.sides()}
+        parent = {}
+
+        def root(x):
+            parent.setdefault(x, x)
+            while parent[x] != x:
+                x = parent[x]
+            return x
+
+        for a, b in self.sides():
+            parent[root(a)] = root(b)
+        sets = {}
+        for side in parent:
+            sets.setdefault(root(side), []).append(side)
+        missing = [(a, b) for members in sets.values() for i, a in enumerate(members) for b in members[i + 1:]
+                   if frozenset((a, b)) not in pairs]
+        assert missing == []
+
+
 class TestDeploymentsIntegrity:
     @pytest.mark.parametrize("entry", [
         d for d in get_data(CONTENT_TYPES.DEPLOYMENT) if DEPLOYMENT_TRAITS.SKIRMISH_UPGRADE in d['traits']

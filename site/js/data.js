@@ -1,4 +1,4 @@
-import {BACK, FKS, JOIN, LAYOUTS, LINKS, MISSIONS, REWARDS} from './relations.js';
+import {BACK, FKS, JOIN, LAYOUTS, LINKS, MATCHES, MISSIONS, REWARDS} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -45,10 +45,12 @@ class Db {
     this.links = new Map();     // ref → [{relation, ref}]: its record-links, read from its end
     this.layout = new Map();    // map ref → [{ref: tile ref, side, count, placements: [{section, x, y, rotation}]}]
     this.usedIn = new Map();    // tile ref → the map refs that use it
+    this.matches = new Map();   // tile ref → [{side, ref: another tile ref, otherSide}]: its interchangeable sides
     this.#linkSources();
     this.#linkMissions();
     this.#linkRecords();
     this.#linkLayouts();
+    this.#linkMatches();
     this.#linkParents();
     this.#linkChildProducts();
     this.#linkBacks();
@@ -145,6 +147,19 @@ class Db {
       push(this.layout, map, {ref: tile, side: record[LAYOUTS.side], count: record[LAYOUTS.count],
         placements: record[LAYOUTS.placements] ?? []});
       if (!this.usedIn.get(tile)?.includes(map)) push(this.usedIn, tile, map);
+    }
+  }
+
+  #linkMatches() {
+    for (const {record} of this.refs[MATCHES.table]) {
+      const tile = this.get('map-tiles', record[MATCHES.tile]);
+      const other = this.get('map-tiles', record[MATCHES.other]);
+      if (!tile || !other) {
+        console.warn('Unresolved map-tile-matches row', record);
+        continue;
+      }
+      push(this.matches, tile, {side: record[MATCHES.side], ref: other, otherSide: record[MATCHES.otherSide]});
+      push(this.matches, other, {side: record[MATCHES.otherSide], ref: tile, otherSide: record[MATCHES.side]});
     }
   }
 

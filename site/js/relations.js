@@ -42,6 +42,11 @@ export const REWARDS = {table: 'mission-rewards', mission: 'mission_id', type: '
 export const LAYOUTS = {table: 'map-layouts', map: 'map_id', tile: 'tile_id', side: 'side', count: 'count',
   placements: 'placements'};
 
+// map-tile-matches: two tile sides with the same art but for their number pill (interchangeable), tile_id's side and
+// other_tile_id's other_side (both → map-tiles); every two sides of a set have a row, read from either end.
+export const MATCHES = {table: 'map-tile-matches', tile: 'tile_id', side: 'side', other: 'other_tile_id',
+  otherSide: 'other_side'};
+
 // Child → parent foreign keys. `label`/`childrenLabel` name the relation on the child's and the parent's pages, when
 // the types' own labels don't read well (a hero side mission's "For hero"). `products: 'children'` gives the parent its
 // children's products (a map is in the products its missions are in); `back: 'children'` gives it their card back.

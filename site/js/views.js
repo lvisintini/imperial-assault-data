@@ -519,6 +519,15 @@ function layoutList(rows, db) {
     })}</div>`);
 }
 
+// A tile's interchangeable sides (map-tile-matches): for each of its sides, the other tiles' sides with the same art.
+function matchList(rows, db) {
+  return ['A', 'B'].filter(side => rows.some(row => row.side === side)).map(side => {
+    const others = rows.filter(row => row.side === side).map(row => ({ref: row.ref, side: row.otherSide}));
+    return html`<h3>Side ${side} <span class="count">${others.length}</span></h3>
+      ${layoutList(others, db)}`;
+  });
+}
+
 // A product's short name in a map's tile list, as the Vassal Imperial Assault modules prefix its tiles (the Core Set's
 // have none there).
 const SHORT = {
@@ -641,6 +650,8 @@ export function detail(db, ref) {
   }
   const usedIn = db.usedIn.get(ref);
   if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
+  const matches = db.matches.get(ref);
+  if (matches) related.push(section('Interchangeable with', matches.length, matchList(matches, db)));
   const rewards = db.rewards.get(ref);
   if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
   const rewardOf = db.rewardOf.get(ref);

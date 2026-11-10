@@ -157,6 +157,7 @@ export const TYPES = [
   {file: 'mission-rewards', label: 'Mission rewards', singular: 'Mission reward', images: [], hidden: true},
   {file: 'record-links', label: 'Record links', singular: 'Record link', images: [], hidden: true},
   {file: 'map-layouts', label: 'Map layouts', singular: 'Map layout', images: [], hidden: true},
+  {file: 'map-tile-matches', label: 'Map tile matches', singular: 'Map tile match', images: [], hidden: true},
 ];
 
 export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));
