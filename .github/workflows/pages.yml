@@ -46,3 +46,7 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # The site is about 700 MB in some 5,000 files (2.0.0's maps and tiles): GitHub's sync of it can take longer
+          # than the default 10 minutes.
+          timeout: 1800000
