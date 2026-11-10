@@ -648,8 +648,14 @@ export function detail(db, ref) {
       ${mapFrame(ref, db, every, image, `${heading}: ${name}`)}
     </div>`));
   }
+  // A tile's maps, under the side each uses (a map that uses both sides is under each).
   const usedIn = db.usedIn.get(ref);
-  if (usedIn) related.push(section('Used in', usedIn.length, grid(usedIn, db)));
+  if (usedIn) {
+    const sides = ['A', 'B'].filter(side => usedIn[side]);
+    related.push(section('Used in', new Set(sides.flatMap(side => usedIn[side])).size, sides.map(side => html`
+      <h3>Side ${side} <span class="count">${usedIn[side].length}</span></h3>
+      ${grid(usedIn[side], db)}`)));
+  }
   const matches = db.matches.get(ref);
   if (matches) related.push(section('Interchangeable with', matches.length, matchList(matches, db)));
   const rewards = db.rewards.get(ref);
