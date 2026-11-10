@@ -22,25 +22,29 @@
       "$ref": "definitions.json#/definitions/uuid"
     },
     "relation": {
-      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. form-of: the form card is a form of the deployment card. elite-of: the elite deployment card is the elite version of the regular one. campaign-of: the Campaign-only deployment card is the campaign version of the Skirmish-only one. document-for: the document was published for the source (not in its box). requires: the record can only be played with the source. expands: the record adds to the source.",
+      "description": "How the from record relates to the to record. figure-of: the miniature stands for the deployment card or hero. form-of: the form card is a form of the deployment card. companion-of: the companion is put into play by the record (a hero, a card or an Imperial class). elite-of: the elite deployment card is the elite version of the regular one. campaign-of: the Campaign-only deployment card, or the hero, is the campaign version of the Skirmish-only card. related-to: the records bear on each other otherwise (both ways). document-for: the document was published for the source (not in its box). requires: the record can only be played with the source. expands: the record adds to the source.",
       "enum": [
         "figure-of",
         "form-of",
+        "companion-of",
         "elite-of",
         "campaign-of",
         "document-for",
+        "related-to",
         "requires",
         "expands"
       ]
     },
     "reverse_relation": {
-      "description": "The same link read from the to record: has-figure, has-form, regular-of, skirmish-of, has-document, required-by, expanded-by.",
+      "description": "The same link read from the to record: has-figure, has-form, has-companion, regular-of, skirmish-of, has-document, related-to, required-by, expanded-by.",
       "enum": [
         "has-figure",
         "has-form",
+        "has-companion",
         "regular-of",
         "skirmish-of",
         "has-document",
+        "related-to",
         "required-by",
         "expanded-by"
       ]
@@ -74,6 +78,25 @@
       }
     },
     {
+      "description": "A companion and the records that put it into play: a hero, the cards that deploy it, an Imperial class.",
+      "properties": {
+        "relation": {"enum": ["companion-of"]},
+        "reverse_relation": {"enum": ["has-companion"]},
+        "from_type": {"enum": ["companion-cards"]},
+        "to_type": {"enum": ["heroes", "deployment-cards", "supply-cards", "upgrade-cards", "reward-cards",
+                             "imperial-classes", "imperial-class-cards"]}
+      }
+    },
+    {
+      "description": "Two records that bear on each other, read the same from both ends: a command card and the companion it acts on.",
+      "properties": {
+        "relation": {"enum": ["related-to"]},
+        "reverse_relation": {"enum": ["related-to"]},
+        "from_type": {"enum": ["command-cards"]},
+        "to_type": {"enum": ["companion-cards"]}
+      }
+    },
+    {
       "description": "An elite deployment card and the regular card of the same name.",
       "properties": {
         "relation": {"enum": ["elite-of"]},
@@ -83,11 +106,11 @@
       }
     },
     {
-      "description": "A Campaign-only deployment card and its Skirmish-only twin.",
+      "description": "A Campaign-only deployment card and its Skirmish-only twin, or a hero and its Skirmish-only deployment card.",
       "properties": {
         "relation": {"enum": ["campaign-of"]},
         "reverse_relation": {"enum": ["skirmish-of"]},
-        "from_type": {"enum": ["deployment-cards"]},
+        "from_type": {"enum": ["deployment-cards", "heroes"]},
         "to_type": {"enum": ["deployment-cards"]}
       }
     },

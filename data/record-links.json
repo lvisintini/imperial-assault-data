@@ -1854,5 +1854,261 @@
     "to_id": "e9636aee-1434-5477-9dab-937cabae927b",
     "relation": "campaign-of",
     "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "5d883b8b-ea0e-581d-98c4-c4ccadd7558f",
+    "to_type": "reward-cards",
+    "to_id": "daa8f12c-b023-5ed1-b360-00b30c122760",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "3292445b-6a2e-5e7c-be18-ceee868d17bf",
+    "to_type": "deployment-cards",
+    "to_id": "d2c7de25-5a95-5ed8-a73e-4c99317287cf",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "3292445b-6a2e-5e7c-be18-ceee868d17bf",
+    "to_type": "deployment-cards",
+    "to_id": "1fe73f47-e3d6-5f94-ba19-f220582f54f3",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "8b8ee864-1614-5f13-961e-f0c5188c4e10",
+    "to_type": "upgrade-cards",
+    "to_id": "966a8ebc-5cc1-5f20-bd93-569321b5cf08",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "da4e58ff-ee29-5b77-8396-7f0e66adfe41",
+    "to_type": "supply-cards",
+    "to_id": "970d3649-2bc2-57c8-aab3-61edd56f6024",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "4a8d861a-cf73-57da-b713-ff6ab1e350d3",
+    "to_type": "deployment-cards",
+    "to_id": "37ce0ced-e400-5208-bb18-c7cb831de583",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "02506600-fc27-51bc-9b1e-9c6217aa18cb",
+    "to_type": "imperial-classes",
+    "to_id": "97bf2ede-b155-5a09-b390-72fa49028c04",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "02506600-fc27-51bc-9b1e-9c6217aa18cb",
+    "to_type": "imperial-class-cards",
+    "to_id": "6a2ffdc5-e845-5348-a7a2-2e0bb059845e",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "76900d88-dd01-5354-a3da-92907c671a73",
+    "to_type": "heroes",
+    "to_id": "181967a3-9d17-5192-964a-60417f8d1205",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "companion-cards",
+    "from_id": "76900d88-dd01-5354-a3da-92907c671a73",
+    "to_type": "deployment-cards",
+    "to_id": "0ea3a1c5-73d5-59be-aea7-a8568009a470",
+    "relation": "companion-of",
+    "reverse_relation": "has-companion"
+  },
+  {
+    "from_type": "command-cards",
+    "from_id": "017ee815-e425-5c2c-8543-f71ff890ac4c",
+    "to_type": "companion-cards",
+    "to_id": "76900d88-dd01-5354-a3da-92907c671a73",
+    "relation": "related-to",
+    "reverse_relation": "related-to"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "0aeee435-e8a8-54d2-8684-bf245cb104a0",
+    "to_type": "deployment-cards",
+    "to_id": "c1ec5eeb-e148-5f99-a6a5-88fe3ef6280c",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "cba5a369-8eff-5ede-a6a5-ec7062847459",
+    "to_type": "deployment-cards",
+    "to_id": "6c52c1ae-d37e-51e1-ba26-7fe5db38bf90",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "3b88e344-6d87-55fa-8e3e-ebfaf9b0ec31",
+    "to_type": "deployment-cards",
+    "to_id": "f0fc2da5-6a0f-5073-b9bb-01f49eb93349",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "f42d3b44-5e18-54a9-a8f5-38c78dac9723",
+    "to_type": "deployment-cards",
+    "to_id": "db5b3478-512a-5e56-9726-b0c17f428cc5",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "289c0175-d8b4-5d26-b9de-27a62c7af1c2",
+    "to_type": "deployment-cards",
+    "to_id": "9ab864e6-2ab4-5a39-8937-f60ab01f75c3",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "703db9b7-9fac-5e46-98c1-402024692a92",
+    "to_type": "deployment-cards",
+    "to_id": "d6c87c9e-1c69-509d-a651-3dd359e5824d",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "b2f1c557-b491-5633-83ec-f0016e3f10f6",
+    "to_type": "deployment-cards",
+    "to_id": "3e818577-c542-5d2d-a1ff-f5335a365c9c",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "ebb171cc-3c91-561c-90e8-9a5e5a28b69b",
+    "to_type": "deployment-cards",
+    "to_id": "f619747a-eb75-5a8a-ba79-92923d33bc20",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "8680059c-9bf8-5c66-8136-42e56bb94fce",
+    "to_type": "deployment-cards",
+    "to_id": "6f8dac27-bb0e-59f7-af72-8213ed39fd74",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "59154ab5-6c82-5bbe-9d3c-b61ba1604bff",
+    "to_type": "deployment-cards",
+    "to_id": "cfe4e96a-d1eb-5384-83ba-327fcfca1417",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "b34d7353-e502-50d7-96b7-aa20ba38c2c4",
+    "to_type": "deployment-cards",
+    "to_id": "f9969e77-8af5-5451-bbdd-8dc5a2fe27db",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "e128e1b6-574e-5fd8-b83d-8bbc1d92ab31",
+    "to_type": "deployment-cards",
+    "to_id": "6a6b072f-2d16-5a55-8b44-59550b219027",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "4f7e4098-2910-5aa2-8563-0083daf67acf",
+    "to_type": "deployment-cards",
+    "to_id": "3368aa5b-2880-5e10-b2f1-84d730954584",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "40041806-33ed-5af6-8cb8-24d305062048",
+    "to_type": "deployment-cards",
+    "to_id": "f09e903c-7c97-55ea-ba0f-8bdb89d63f13",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "1dd54877-6a5b-581d-8074-9cb833b9b63b",
+    "to_type": "deployment-cards",
+    "to_id": "c401dff8-1079-5bac-900b-217aca0f4fb7",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "1ad2bfe5-42ef-5c75-86fd-f2426fdc1601",
+    "to_type": "deployment-cards",
+    "to_id": "95ea10f3-13c0-51f8-b8a9-e4c90524bbca",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "35d02e98-9a46-58ce-a3b0-d083e7668cba",
+    "to_type": "deployment-cards",
+    "to_id": "310931f2-c1da-5ba5-b71b-a38a3a754978",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "181967a3-9d17-5192-964a-60417f8d1205",
+    "to_type": "deployment-cards",
+    "to_id": "0ea3a1c5-73d5-59be-aea7-a8568009a470",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "8fc74f9d-3fbe-5747-9c4a-0c313623023f",
+    "to_type": "deployment-cards",
+    "to_id": "4ee3ffb7-cf4e-5f11-8f2b-a787bf4dde59",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "454353bc-398d-59d5-b29a-8fe72f56d27a",
+    "to_type": "deployment-cards",
+    "to_id": "60f4e9fd-7e8d-5cc1-b056-13450d469bc0",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
+  },
+  {
+    "from_type": "heroes",
+    "from_id": "1774f2dc-e2aa-5907-9b41-0c7f662f1a7c",
+    "to_type": "deployment-cards",
+    "to_id": "ade8fc28-3c9b-54e0-9323-e49e8b0376cd",
+    "relation": "campaign-of",
+    "reverse_relation": "skirmish-of"
   }
 ]

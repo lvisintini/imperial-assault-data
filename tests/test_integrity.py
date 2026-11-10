@@ -208,11 +208,16 @@ class TestRecordLinksIntegrity:
         assert not validator.is_valid(link | {'from_type': CONTENT_TYPES.SOURCE})   # a type figure-of doesn't link
         assert not validator.is_valid(link | {'relation': 'requires', 'reverse_relation': 'required-by'})  # to a hero
         assert not validator.is_valid(link | {'relation': 'elite-of', 'reverse_relation': 'regular-of'})  # a miniature
+        companion = {'from_type': CONTENT_TYPES.COMPANION, 'from_id': link['from_id'], 'to_type': CONTENT_TYPES.SUPPLY,
+                     'to_id': link['to_id'], 'relation': 'companion-of', 'reverse_relation': 'has-companion'}
+        assert validator.is_valid(companion)
+        assert not validator.is_valid(companion | {'to_type': CONTENT_TYPES.SOURCE})  # a type companion-of doesn't link
+        assert not validator.is_valid(companion | {'to_type': CONTENT_TYPES.COMMAND})  # Droid Mastery: related-to
 
     @staticmethod
-    def linked(relation):
+    def linked(relation, from_type=None):
         return {(link['from_id'], link['to_id']) for link in get_data(CONTENT_TYPES.RECORD_LINKS)
-                if link['relation'] == relation}
+                if link['relation'] == relation and from_type in (None, link['from_type'])}
 
     @staticmethod
     def same_card(a, b):
@@ -242,9 +247,22 @@ class TestRecordLinksIntegrity:
         expected = {(campaign['id'], skirmish['id']) for campaign in cards if campaign['modes'] == ['Campaign']
                     for skirmish in cards if skirmish['modes'] == ['Skirmish'] and self.same_card(campaign, skirmish)
                     and campaign['elite'] == skirmish['elite']}
-        assert self.linked('campaign-of') == expected
+        assert self.linked('campaign-of', CONTENT_TYPES.DEPLOYMENT) == expected
         assert sorted(campaign for campaign, _ in expected) == sorted(
             c['id'] for c in cards if c['modes'] == ['Campaign'])
+
+    def test_heroes_are_of_their_skirmish_cards(self):
+        """campaign-of links every hero to the one Skirmish-only deployment card of its name."""
+        cards = get_data(CONTENT_TYPES.DEPLOYMENT)
+        expected = {(hero['id'], card['id']) for hero in get_data(CONTENT_TYPES.HERO) for card in cards
+                    if card['name'] == hero['name'] and card['modes'] == ['Skirmish']}
+        assert sorted(hero for hero, _ in expected) == sorted(hero['id'] for hero in get_data(CONTENT_TYPES.HERO))
+        assert self.linked('campaign-of', CONTENT_TYPES.HERO) == expected
+
+    def test_every_companion_is_put_into_play(self):
+        """Every companion is companion-of something: the hero, cards or Imperial class that put it into play."""
+        companions = [link for link in get_data(CONTENT_TYPES.RECORD_LINKS) if link['relation'] == 'companion-of']
+        assert {c['id'] for c in get_data(CONTENT_TYPES.COMPANION)} == {link['from_id'] for link in companions}
 
     def test_every_figure_has_a_miniature(self):
         """Every hero, and every deployment card but skirmish upgrades, has a miniature; every miniature stands for

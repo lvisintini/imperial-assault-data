@@ -6,7 +6,7 @@
 // Facets combine with AND, the values ticked within one facet with OR.
 import {FKS} from './relations.js';
 import {PRODUCT as PRODUCT_SORT, defaultSort} from './sort.js';
-import {TYPE, TYPES, fieldLabel, fileOf, title} from './types.js';
+import {TYPE, fieldLabel, fileOf, kindLabel, title} from './types.js';
 
 const SKIPPED = new Set(['id', 'name', 'description', 'iaspec']);
 const MAX_CHOICES = 20;  // more distinct strings than this aren't a facet (e.g. names)
@@ -36,8 +36,8 @@ function traitFacet({id, label, trait, yes, no}) {
   return booleanFacet(id, label, of, {keys: ['false', 'true'], headings});
 }
 
-// A content type named by its page: the missions page's agenda cards are agenda missions.
-const typeLabel = k => TYPES.find(t => t.of === k)?.label ?? TYPE[k]?.label ?? k;
+// A content_type value (a mission's kind) named by its collection: the missions page's agenda cards are agenda missions.
+const typeLabel = kindLabel;
 
 // A choice over a field of the record's children through a foreign key in FKS (relations.js): a map's missions' kinds
 // ({id, label, children: 'missions', field: 'content_type', none}). Values follow the children type's `order`; `none`

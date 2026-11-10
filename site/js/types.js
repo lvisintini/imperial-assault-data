@@ -1,7 +1,13 @@
 // One entry per data/<file>.json, in navigation order. `images` lists the record's image fields (paths relative to
-// images/large and images/small); `hidden` keeps a type out of navigation and routing. `menu` puts a type in another
-// type's submenu, in this order. `of` + `where` make a page that isn't a file: some of another type's records (agenda
-// missions), shown and linked as that type's. `sort` is the default order (field names, '-' for descending; when
+// images/large and images/small); `hidden` keeps a type out of navigation and routing; `page: 'missions'` sends its
+// addresses to the missions page (the mission collections: a mission's page is its missions row's, views.js mission).
+// `nav: false` keeps a type out of the navigation and the landing page, its pages still there (reached through other
+// records'): a record's crumbs are its parent's list and page, then `crumb`: its name ("Missions › Executive
+// Overreach › Epilogue: …"), and the navigation marks its parent's type. `list: false` leaves a type without a list
+// page (form cards and companions, reached through the cards they're forms of or that put them into play): out of the navigation and the landing page,
+// its records' crumbs are its `menu`'s list, which the navigation marks. `menu` puts a type in another type's submenu,
+// in this order. `of` + `where` make a page that isn't a file: some of another type's records, shown and linked as that
+// type's (none today). `sort` is the default order (field names, '-' for descending; when
 // missing, by product, the earliest release date and product code of the products a record comes in, then name;
 // 'product' names that key, and a sort starting with '-product' also lists the type's products newest first, in the
 // Product facet and its groups).
@@ -49,9 +55,12 @@ export const TYPES = [
   },
   {
     file: 'companion-cards', label: 'Companion cards', singular: 'Companion card', images: ['image'],
-    menu: 'deployment-cards',
+    menu: 'deployment-cards', list: false,
   },
-  {file: 'form-cards', label: 'Form cards', singular: 'Form card', images: ['image'], menu: 'deployment-cards'},
+  {
+    file: 'form-cards', label: 'Form cards', singular: 'Form card', images: ['image'], menu: 'deployment-cards',
+    list: false,
+  },
   {file: 'command-cards', label: 'Command cards', singular: 'Command card', images: ['image']},
   {file: 'agenda-decks', label: 'Agenda decks', singular: 'Agenda deck', images: []},
   {file: 'agenda-cards', label: 'Agenda cards', singular: 'Agenda card', images: ['image'], menu: 'agenda-decks'},
@@ -69,43 +78,40 @@ export const TYPES = [
       'skirmish-missions', 'raid-missions',
     ]},
   },
+  // The mission collections: no pages of their own (`page: 'missions'`), their cards are shown on the missions page.
   {
     file: 'campaign-story-missions', label: 'Story missions', singular: 'Story mission', images: ['image'],
-    menu: 'missions',
+    hidden: true, page: 'missions',
   },
   {
     file: 'campaign-threat-missions', label: 'Threat missions', singular: 'Threat mission', images: ['image'],
-    menu: 'missions',
+    hidden: true, page: 'missions',
   },
   {
     file: 'campaign-hero-side-missions', label: 'Hero side missions', singular: 'Hero side mission',
-    images: ['image'], menu: 'missions',
+    images: ['image'], hidden: true, page: 'missions',
   },
   {
     file: 'campaign-ally-side-missions', label: 'Ally side missions', singular: 'Ally side mission',
-    images: ['image'], menu: 'missions',
+    images: ['image'], hidden: true, page: 'missions',
   },
   {
     file: 'campaign-regular-side-missions', label: 'Regular side missions', singular: 'Regular side mission',
-    images: ['image'], menu: 'missions',
-  },
-  {
-    file: 'agenda-missions', label: 'Agenda missions', singular: 'Agenda mission', images: ['image'],
-    of: 'agenda-cards', where: record => record.mission, menu: 'missions',
-    facets: [
-      'agenda_id', 'influence', 'source', 'wave',
-    ],
+    images: ['image'], hidden: true, page: 'missions',
   },
   {
     file: 'skirmish-missions', label: 'Skirmish missions', singular: 'Skirmish mission', images: ['image'],
-    menu: 'missions',
-    facets: [
-      'format', 'scenario', 'source', 'wave',
-    ],
-    order: {format: ['Standard', 'Four Player Team Battle', 'Four Player Free-For-All']},
+    hidden: true, page: 'missions',
   },
-  {file: 'raid-missions', label: 'Raid missions', singular: 'Raid mission', images: [], menu: 'missions'},
-  {file: 'epilogue-cards', label: 'Epilogue cards', singular: 'Epilogue card', images: ['image'], menu: 'missions'},
+  {
+    file: 'raid-missions', label: 'Raid missions', singular: 'Raid mission', images: [], hidden: true,
+    page: 'missions',
+  },
+  // Epilogues are reached through their missions' pages, under which their crumbs put them.
+  {
+    file: 'epilogue-cards', label: 'Epilogue cards', singular: 'Epilogue card', images: ['image'], nav: false,
+    crumb: 'Epilogue',
+  },
   {
     file: 'documents', label: 'Documents', singular: 'Document', images: [], icon: 'pdf',
     facets: [
@@ -166,8 +172,13 @@ export const TYPE = Object.fromEntries(TYPES.map(t => [t.file, t]));
 export const fileOf = type => TYPE[type].of ?? type;
 
 // The navigation: each visible type that isn't in a submenu, with the types in its submenu.
-export const MENU = TYPES.filter(t => !t.hidden && !t.menu)
-  .map(t => ({type: t, children: TYPES.filter(c => !c.hidden && c.menu === t.file)}));
+export const inNav = t => !t.hidden && t.nav !== false && t.list !== false;
+export const MENU = TYPES.filter(t => inNav(t) && !t.menu)
+  .map(t => ({type: t, children: TYPES.filter(c => inNav(c) && c.menu === t.file)}));
+
+// A mission's kind, named after its collection (a missions row's content_type); agenda cards are agenda missions.
+export const kindLabel = (type, one = false) => type === 'agenda-cards'
+  ? (one ? 'Agenda mission' : 'Agenda missions') : TYPE[type]?.[one ? 'singular' : 'label'] ?? type;
 
 export function title(ref) {
   const {record} = ref;

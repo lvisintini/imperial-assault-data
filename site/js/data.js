@@ -1,4 +1,4 @@
-import {BACK, FKS, JOIN, LAYOUTS, LINKS, MATCHES, MISSIONS, REWARDS} from './relations.js';
+import {BACK, FKS, JOIN, LAYOUTS, LINKS, MATCHES, MISSIONS, REWARDS, UNDER} from './relations.js';
 import {TYPES} from './types.js';
 
 export async function load() {
@@ -21,9 +21,9 @@ function push(map, key, value) {
 
 // Records are wrapped in refs, {type, key, index, record}: key is the record's id (a UUID), or its array index in
 // source-contents and mission-rewards, which have no ids; index is its position in the file, used to keep a stable
-// order. A missions row's ref also has `card`, the mission card it stands for, and every ref has `release`, its
+// order. A missions row's ref also has `card`, the mission card it stands for (whose ref has `row`), and every ref has `release`, its
 // earliest product's release date and product code ("2014-12-15|SWI01"), or null when it's in no product: the default
-// sort's 'product' key (sort.js).
+// sort's 'product' key (sort.js). A record whose pages are under another's (relations.js UNDER) has `under`.
 class Db {
   constructor(tables) {
     this.refs = {};
@@ -41,7 +41,7 @@ class Db {
     this.backOf = new Map();    // card-back ref → refs
     this.mission = new Map();   // mission card ref → its missions row
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
-    this.rewardOf = new Map();  // reward ref → mission card refs
+    this.rewardOf = new Map();  // reward ref → missions rows
     this.links = new Map();     // ref → [{relation, ref}]: its record-links, read from its end
     this.layout = new Map();    // map ref → [{ref: tile ref, side, count, placements: [{section, x, y, rotation}]}]
     this.usedIn = new Map();    // tile ref → {A: map refs, B: map refs}: the maps that use each of its sides
@@ -109,17 +109,18 @@ class Db {
         continue;
       }
       row.card = card;
+      card.row = row;
       this.mission.set(card, row);
     }
     for (const {record} of this.refs[REWARDS.table]) {
-      const card = this.get(MISSIONS.table, record[REWARDS.mission])?.card;
+      const row = this.get(MISSIONS.table, record[REWARDS.mission]);
       const reward = record.credits ? null : this.get(record[REWARDS.type], record[REWARDS.id]);
-      if (!card || (!record.credits && !reward)) {
+      if (!row?.card || (!record.credits && !reward)) {
         console.warn('Unresolved mission-rewards row', record);
         continue;
       }
-      push(this.rewards, card, {ref: reward, credits: record.credits, choice: record.choice});
-      if (reward) push(this.rewardOf, reward, card);
+      push(this.rewards, row.card, {ref: reward, credits: record.credits, choice: record.choice});
+      if (reward) push(this.rewardOf, reward, row);
     }
   }
 
@@ -133,6 +134,10 @@ class Db {
       }
       push(this.links, from, {relation: record[LINKS.relation], ref: to});
       push(this.links, to, {relation: record[LINKS.reverse], ref: from});
+    }
+    // A record whose pages are under another's (UNDER): `under` is the first it's linked to, in record-links order.
+    for (const [type, relation] of Object.entries(UNDER)) {
+      for (const ref of this.refs[type]) ref.under = this.links.get(ref)?.find(link => link.relation === relation)?.ref;
     }
   }
 

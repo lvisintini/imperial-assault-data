@@ -56,11 +56,20 @@ erDiagram
 
     miniatures ||--|{ record-links : "figure-of"
     form-cards ||--|{ record-links : "form-of"
+    companion-cards ||--|{ record-links : "companion-of"
     deployment-cards ||--o{ record-links : "elite-of, campaign-of"
+    heroes ||--|| record-links : "campaign-of"
     documents ||--o{ record-links : "document-for"
     record-links }o--o| deployment-cards : "to_id"
     record-links }o--o| heroes : "to_id"
     record-links }o--o| sources : "to_id (document-for, requires, expands)"
+    command-cards ||--o{ record-links : "related-to"
+    record-links }o--o| companion-cards : "to_id (related-to)"
+    record-links }o--o| supply-cards : "to_id (companion-of)"
+    record-links }o--o| upgrade-cards : "to_id (companion-of)"
+    record-links }o--o| reward-cards : "to_id (companion-of)"
+    record-links }o--o| imperial-classes : "to_id (companion-of)"
+    record-links }o--o| imperial-class-cards : "to_id (companion-of)"
 
     card-backs {
         uuid id PK
@@ -269,19 +278,44 @@ cards are the Clawdite Shapeshifter's alternative forms: each is `form-of` (in [
 Clawdite Shapeshifter cards, regular and elite, and its image is named after them
 (`form-cards/clawdite-shapeshifter-scout.png`).
 
+Companion cards are the figures a hero, a card or an Imperial class puts into play beside its own (J4X-7 with Jarrod
+Kelvin, the Pit Droid from its supply card). Each is `companion-of` (in [Record links](#record-links)) everything that
+deploys it, from the wiki's companion pages and the deploying cards' text:
+
+| Companion | Put into play by |
+|---|---|
+| Cam Droid | the Cam Droid reward card |
+| Junk Droid | both Ugnaught Tinkerer cards, regular and elite |
+| R5 Astromech | the R5 Astromech upgrade card |
+| Pit Droid | the Pit Droid supply card |
+| Salacious B. Crumb | the Indentured Jester skirmish upgrade |
+| 88-Z | the Reactive Defenses Imperial class and its Active Surveillance card |
+| J4X-7 | the hero Jarrod Kelvin and his deployment card |
+
+Cards that only mention a companion (Jarrod Kelvin's class cards, the other Reactive Defenses cards) aren't linked.
+The Droid Mastery command card acts on J4X-7 (and can put it back into play) but doesn't bring it, so it's
+`related-to` J4X-7 instead.
+The links are `migrations/2.1.0/01_companions.py`'s.
+
 A deployment card's other versions are record links too:
 - `elite-of` links an elite card to the regular card of the same name, description and affiliation whose modes overlap
   its own (Elite Stormtroopers → Stormtroopers). The Jawa Scavengers' regular card, for Campaign and Skirmish, is the
   regular of both their elite cards, one for each mode.
 - `campaign-of` links a Campaign-only card to its Skirmish-only twin: same name, description, affiliation and elite
   (Agent Blaise's Campaign card → his Skirmish card). Every Campaign-only card has one. The Riot Troopers and Death
-  Troopers are a square: regular and elite, each with a Campaign and a Skirmish card.
+  Troopers are a square: regular and elite, each with a Campaign and a Skirmish card. A hero is `campaign-of` its
+  skirmish deployment card too: every hero has one Skirmish-only card of its name (Jyn Odan → her skirmish card),
+  the campaign version being the hero.
 
 ```mermaid
 erDiagram
     form-cards ||--o{ record-links : "from_id (form-of)"
+    companion-cards ||--o{ record-links : "from_id (companion-of)"
     deployment-cards ||--o{ record-links : "from_id (elite-of, campaign-of)"
+    heroes ||--|| record-links : "from_id (campaign-of)"
     record-links }o--|| deployment-cards : "to_id"
+    record-links }o--o| heroes : "to_id (companion-of)"
+    record-links }o--o| imperial-classes : "to_id (companion-of)"
 ```
 
 ## Miniatures
@@ -365,8 +399,10 @@ to its reverse and to the types it links:
 |-------------|--------------------|--------------|------------------------------|-------------------------------------------------|
 | `figure-of` | `has-figure`       | `miniatures` | `deployment-cards`, `heroes` | the miniature stands for the card or hero       |
 | `form-of`   | `has-form`         | `form-cards` | `deployment-cards`           | the form card is a form of the deployment card  |
+| `companion-of` | `has-companion` | `companion-cards` | `heroes`, `deployment-cards`, `supply-cards`, `upgrade-cards`, `reward-cards`, `imperial-classes`, `imperial-class-cards` | the companion is put into play by the record |
+| `related-to` | `related-to`     | `command-cards` | `companion-cards`           | the records bear on each other, read the same from both ends ("Related"): Droid Mastery and J4X-7 |
 | `elite-of`  | `regular-of`       | `deployment-cards` | `deployment-cards`     | the elite card's regular version (shown as "Regular version" / "Elite version") |
-| `campaign-of` | `skirmish-of`    | `deployment-cards` | `deployment-cards`     | the Campaign-only card's Skirmish-only twin ("Skirmish version" / "Campaign version") |
+| `campaign-of` | `skirmish-of`    | `deployment-cards`, `heroes` | `deployment-cards` | the Campaign-only card's, or the hero's, Skirmish-only card ("Skirmish version" / "Campaign version") |
 | `document-for` | `has-document`  | `documents`  | `sources`                    | the document was published for the product, not in its box |
 | `requires`  | `required-by`      | any record   | `sources`                    | the record can only be played with the product (a raid needs the expansions its map is built from) |
 | `expands`   | `expanded-by`      | any record   | `sources`                    | the record adds to the product (an expansion to the Core Set) |
@@ -383,8 +419,8 @@ erDiagram
         uuid from_id FK
         string to_type "the to record's file"
         uuid to_id FK
-        string relation "figure-of, form-of, elite-of, campaign-of, document-for, requires, expands"
-        string reverse_relation "has-figure, has-form, regular-of, skirmish-of, has-document, required-by, expanded-by"
+        string relation "figure-of, form-of, companion-of, elite-of, campaign-of, document-for, related-to, requires, expands"
+        string reverse_relation "has-figure, has-form, has-companion, regular-of, skirmish-of, has-document, related-to, required-by, expanded-by"
     }
 ```
 
