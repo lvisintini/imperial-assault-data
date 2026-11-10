@@ -148,7 +148,7 @@ export const TYPES = [
     file: 'map-tiles', label: 'Map tiles', singular: 'Map tile', images: ['side_a', 'side_b'], menu: 'maps',
     sort: ['-product', 'number'],
     facets: [
-      'squares', 'source', 'wave',
+      'squares', 'connections', 'source', 'wave',
     ],
     groups: ['source'],
   },

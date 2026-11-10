@@ -6,6 +6,7 @@
     "squares": 36,
     "width": 6,
     "height": 6,
+    "connections": 3,
     "side_a": "map-tiles/core-set-01-a.png",
     "side_b": "map-tiles/core-set-01-b.png"
   },
@@ -16,6 +17,7 @@
     "squares": 24,
     "width": 4,
     "height": 6,
+    "connections": 2,
     "side_a": "map-tiles/core-set-02-a.png",
     "side_b": "map-tiles/core-set-02-b.png"
   },
@@ -26,6 +28,7 @@
     "squares": 22,
     "width": 6,
     "height": 5,
+    "connections": 3,
     "side_a": "map-tiles/core-set-03-a.png",
     "side_b": "map-tiles/core-set-03-b.png"
   },
@@ -36,6 +39,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/core-set-04-a.png",
     "side_b": "map-tiles/core-set-04-b.png"
   },
@@ -46,6 +50,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/core-set-05-a.png",
     "side_b": "map-tiles/core-set-05-b.png"
   },
@@ -56,6 +61,7 @@
     "squares": 15,
     "width": 4,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/core-set-06-a.png",
     "side_b": "map-tiles/core-set-06-b.png"
   },
@@ -66,6 +72,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/core-set-07-a.png",
     "side_b": "map-tiles/core-set-07-b.png"
   },
@@ -76,6 +83,7 @@
     "squares": 12,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/core-set-08-a.png",
     "side_b": "map-tiles/core-set-08-b.png"
   },
@@ -86,6 +94,7 @@
     "squares": 12,
     "width": 4,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/core-set-09-a.png",
     "side_b": "map-tiles/core-set-09-b.png"
   },
@@ -96,6 +105,7 @@
     "squares": 9,
     "width": 3,
     "height": 3,
+    "connections": 2,
     "side_a": "map-tiles/core-set-10-a.png",
     "side_b": "map-tiles/core-set-10-b.png"
   },
@@ -106,6 +116,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/core-set-11-a.png",
     "side_b": "map-tiles/core-set-11-b.png"
   },
@@ -116,6 +127,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-12-a.png",
     "side_b": "map-tiles/core-set-12-b.png"
   },
@@ -126,6 +138,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/core-set-13-a.png",
     "side_b": "map-tiles/core-set-13-b.png"
   },
@@ -136,6 +149,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-14-a.png",
     "side_b": "map-tiles/core-set-14-b.png"
   },
@@ -146,6 +160,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-15-a.png",
     "side_b": "map-tiles/core-set-15-b.png"
   },
@@ -156,6 +171,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 1,
     "side_a": "map-tiles/core-set-16-a.png",
     "side_b": "map-tiles/core-set-16-b.png"
   },
@@ -166,6 +182,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-17-a.png",
     "side_b": "map-tiles/core-set-17-b.png"
   },
@@ -176,6 +193,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/core-set-18-a.png",
     "side_b": "map-tiles/core-set-18-b.png"
   },
@@ -186,6 +204,7 @@
     "squares": 36,
     "width": 6,
     "height": 6,
+    "connections": 3,
     "side_a": "map-tiles/core-set-19-a.png",
     "side_b": "map-tiles/core-set-19-b.png"
   },
@@ -196,6 +215,7 @@
     "squares": 24,
     "width": 4,
     "height": 6,
+    "connections": 2,
     "side_a": "map-tiles/core-set-20-a.png",
     "side_b": "map-tiles/core-set-20-b.png"
   },
@@ -206,6 +226,7 @@
     "squares": 20,
     "width": 5,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/core-set-21-a.png",
     "side_b": "map-tiles/core-set-21-b.png"
   },
@@ -216,6 +237,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/core-set-22-a.png",
     "side_b": "map-tiles/core-set-22-b.png"
   },
@@ -226,6 +248,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/core-set-23-a.png",
     "side_b": "map-tiles/core-set-23-b.png"
   },
@@ -236,6 +259,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/core-set-24-a.png",
     "side_b": "map-tiles/core-set-24-b.png"
   },
@@ -246,6 +270,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/core-set-25-a.png",
     "side_b": "map-tiles/core-set-25-b.png"
   },
@@ -256,6 +281,7 @@
     "squares": 12,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/core-set-26-a.png",
     "side_b": "map-tiles/core-set-26-b.png"
   },
@@ -266,6 +292,7 @@
     "squares": 12,
     "width": 6,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/core-set-27-a.png",
     "side_b": "map-tiles/core-set-27-b.png"
   },
@@ -276,6 +303,7 @@
     "squares": 9,
     "width": 3,
     "height": 3,
+    "connections": 2,
     "side_a": "map-tiles/core-set-28-a.png",
     "side_b": "map-tiles/core-set-28-b.png"
   },
@@ -286,6 +314,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/core-set-29-a.png",
     "side_b": "map-tiles/core-set-29-b.png"
   },
@@ -296,6 +325,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-30-a.png",
     "side_b": "map-tiles/core-set-30-b.png"
   },
@@ -306,6 +336,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/core-set-31-a.png",
     "side_b": "map-tiles/core-set-31-b.png"
   },
@@ -316,6 +347,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-32-a.png",
     "side_b": "map-tiles/core-set-32-b.png"
   },
@@ -326,6 +358,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 1,
     "side_a": "map-tiles/core-set-33-a.png",
     "side_b": "map-tiles/core-set-33-b.png"
   },
@@ -336,6 +369,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-34-a.png",
     "side_b": "map-tiles/core-set-34-b.png"
   },
@@ -346,6 +380,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-35-a.png",
     "side_b": "map-tiles/core-set-35-b.png"
   },
@@ -356,6 +391,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/core-set-36-a.png",
     "side_b": "map-tiles/core-set-36-b.png"
   },
@@ -366,6 +402,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-37-a.png",
     "side_b": "map-tiles/core-set-37-b.png"
   },
@@ -376,6 +413,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-38-a.png",
     "side_b": "map-tiles/core-set-38-b.png"
   },
@@ -386,6 +424,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/core-set-39-a.png",
     "side_b": "map-tiles/core-set-39-b.png"
   },
@@ -396,6 +435,7 @@
     "squares": 48,
     "width": 6,
     "height": 8,
+    "connections": 3,
     "side_a": "map-tiles/twin-shadows-01-a.png",
     "side_b": "map-tiles/twin-shadows-01-b.png"
   },
@@ -406,6 +446,7 @@
     "squares": 13,
     "width": 4,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/twin-shadows-02-a.png",
     "side_b": "map-tiles/twin-shadows-02-b.png"
   },
@@ -416,6 +457,7 @@
     "squares": 8,
     "width": 3,
     "height": 3,
+    "connections": 2,
     "side_a": "map-tiles/twin-shadows-03-a.png",
     "side_b": "map-tiles/twin-shadows-03-b.png"
   },
@@ -426,6 +468,7 @@
     "squares": 24,
     "width": 6,
     "height": 6,
+    "connections": 3,
     "side_a": "map-tiles/twin-shadows-04-a.png",
     "side_b": "map-tiles/twin-shadows-04-b.png"
   },
@@ -436,6 +479,7 @@
     "squares": 20,
     "width": 3,
     "height": 8,
+    "connections": 3,
     "side_a": "map-tiles/twin-shadows-05-a.png",
     "side_b": "map-tiles/twin-shadows-05-b.png"
   },
@@ -446,6 +490,7 @@
     "squares": 15,
     "width": 5,
     "height": 3,
+    "connections": 2,
     "side_a": "map-tiles/twin-shadows-06-a.png",
     "side_b": "map-tiles/twin-shadows-06-b.png"
   },
@@ -456,6 +501,7 @@
     "squares": 12,
     "width": 3,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/twin-shadows-07-a.png",
     "side_b": "map-tiles/twin-shadows-07-b.png"
   },
@@ -466,6 +512,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/twin-shadows-08-a.png",
     "side_b": "map-tiles/twin-shadows-08-b.png"
   },
@@ -476,6 +523,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/twin-shadows-09-a.png",
     "side_b": "map-tiles/twin-shadows-09-b.png"
   },
@@ -486,6 +534,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/twin-shadows-10-a.png",
     "side_b": "map-tiles/twin-shadows-10-b.png"
   },
@@ -496,6 +545,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/twin-shadows-11-a.png",
     "side_b": "map-tiles/twin-shadows-11-b.png"
   },
@@ -506,6 +556,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/twin-shadows-12-a.png",
     "side_b": "map-tiles/twin-shadows-12-b.png"
   },
@@ -516,6 +567,7 @@
     "squares": 24,
     "width": 4,
     "height": 6,
+    "connections": 3,
     "side_a": "map-tiles/return-to-hoth-01-a.png",
     "side_b": "map-tiles/return-to-hoth-01-b.png"
   },
@@ -526,6 +578,7 @@
     "squares": 30,
     "width": 6,
     "height": 6,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-02-a.png",
     "side_b": "map-tiles/return-to-hoth-02-b.png"
   },
@@ -536,6 +589,7 @@
     "squares": 20,
     "width": 4,
     "height": 5,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-03-a.png",
     "side_b": "map-tiles/return-to-hoth-03-b.png"
   },
@@ -546,6 +600,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-04-a.png",
     "side_b": "map-tiles/return-to-hoth-04-b.png"
   },
@@ -556,6 +611,7 @@
     "squares": 38,
     "width": 8,
     "height": 6,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-05-a.png",
     "side_b": "map-tiles/return-to-hoth-05-b.png"
   },
@@ -566,6 +622,7 @@
     "squares": 35,
     "width": 7,
     "height": 5,
+    "connections": 4,
     "side_a": "map-tiles/return-to-hoth-06-a.png",
     "side_b": "map-tiles/return-to-hoth-06-b.png"
   },
@@ -576,6 +633,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-07-a.png",
     "side_b": "map-tiles/return-to-hoth-07-b.png"
   },
@@ -586,6 +644,7 @@
     "squares": 17,
     "width": 4,
     "height": 5,
+    "connections": 3,
     "side_a": "map-tiles/return-to-hoth-08-a.png",
     "side_b": "map-tiles/return-to-hoth-08-b.png"
   },
@@ -596,6 +655,7 @@
     "squares": 15,
     "width": 4,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-09-a.png",
     "side_b": "map-tiles/return-to-hoth-09-b.png"
   },
@@ -606,6 +666,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/return-to-hoth-10-a.png",
     "side_b": "map-tiles/return-to-hoth-10-b.png"
   },
@@ -616,6 +677,7 @@
     "squares": 12,
     "width": 4,
     "height": 3,
+    "connections": 3,
     "side_a": "map-tiles/return-to-hoth-11-a.png",
     "side_b": "map-tiles/return-to-hoth-11-b.png"
   },
@@ -626,6 +688,7 @@
     "squares": 9,
     "width": 3,
     "height": 3,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-12-a.png",
     "side_b": "map-tiles/return-to-hoth-12-b.png"
   },
@@ -636,6 +699,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/return-to-hoth-13-a.png",
     "side_b": "map-tiles/return-to-hoth-13-b.png"
   },
@@ -646,6 +710,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-14-a.png",
     "side_b": "map-tiles/return-to-hoth-14-b.png"
   },
@@ -656,6 +721,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 1,
     "side_a": "map-tiles/return-to-hoth-15-a.png",
     "side_b": "map-tiles/return-to-hoth-15-b.png"
   },
@@ -666,6 +732,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/return-to-hoth-16-a.png",
     "side_b": "map-tiles/return-to-hoth-16-b.png"
   },
@@ -676,6 +743,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-17-a.png",
     "side_b": "map-tiles/return-to-hoth-17-b.png"
   },
@@ -686,6 +754,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-18-a.png",
     "side_b": "map-tiles/return-to-hoth-18-b.png"
   },
@@ -696,6 +765,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-19-a.png",
     "side_b": "map-tiles/return-to-hoth-19-b.png"
   },
@@ -706,6 +776,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/return-to-hoth-20-a.png",
     "side_b": "map-tiles/return-to-hoth-20-b.png"
   },
@@ -716,6 +787,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-21-a.png",
     "side_b": "map-tiles/return-to-hoth-21-b.png"
   },
@@ -726,6 +798,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-22-a.png",
     "side_b": "map-tiles/return-to-hoth-22-b.png"
   },
@@ -736,6 +809,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-23-a.png",
     "side_b": "map-tiles/return-to-hoth-23-b.png"
   },
@@ -746,6 +820,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-24-a.png",
     "side_b": "map-tiles/return-to-hoth-24-b.png"
   },
@@ -756,6 +831,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-25-a.png",
     "side_b": "map-tiles/return-to-hoth-25-b.png"
   },
@@ -766,6 +842,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/return-to-hoth-26-a.png",
     "side_b": "map-tiles/return-to-hoth-26-b.png"
   },
@@ -776,6 +853,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/return-to-hoth-27-a.png",
     "side_b": "map-tiles/return-to-hoth-27-b.png"
   },
@@ -786,6 +864,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/return-to-hoth-28-a.png",
     "side_b": "map-tiles/return-to-hoth-28-b.png"
   },
@@ -796,6 +875,7 @@
     "squares": 36,
     "width": 6,
     "height": 6,
+    "connections": 3,
     "side_a": "map-tiles/the-bespin-gambit-01-a.png",
     "side_b": "map-tiles/the-bespin-gambit-01-b.png"
   },
@@ -806,6 +886,7 @@
     "squares": 30,
     "width": 8,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/the-bespin-gambit-02-a.png",
     "side_b": "map-tiles/the-bespin-gambit-02-b.png"
   },
@@ -816,6 +897,7 @@
     "squares": 16,
     "width": 4,
     "height": 6,
+    "connections": 3,
     "side_a": "map-tiles/the-bespin-gambit-03-a.png",
     "side_b": "map-tiles/the-bespin-gambit-03-b.png"
   },
@@ -826,6 +908,7 @@
     "squares": 16,
     "width": 6,
     "height": 4,
+    "connections": 1,
     "side_a": "map-tiles/the-bespin-gambit-04-a.png",
     "side_b": "map-tiles/the-bespin-gambit-04-b.png"
   },
@@ -836,6 +919,7 @@
     "squares": 12,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/the-bespin-gambit-05-a.png",
     "side_b": "map-tiles/the-bespin-gambit-05-b.png"
   },
@@ -846,6 +930,7 @@
     "squares": 8,
     "width": 3,
     "height": 3,
+    "connections": 2,
     "side_a": "map-tiles/the-bespin-gambit-06-a.png",
     "side_b": "map-tiles/the-bespin-gambit-06-b.png"
   },
@@ -856,6 +941,7 @@
     "squares": 10,
     "width": 2,
     "height": 5,
+    "connections": 2,
     "side_a": "map-tiles/the-bespin-gambit-07-a.png",
     "side_b": "map-tiles/the-bespin-gambit-07-b.png"
   },
@@ -866,6 +952,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/the-bespin-gambit-08-a.png",
     "side_b": "map-tiles/the-bespin-gambit-08-b.png"
   },
@@ -876,6 +963,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/the-bespin-gambit-09-a.png",
     "side_b": "map-tiles/the-bespin-gambit-09-b.png"
   },
@@ -886,6 +974,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/the-bespin-gambit-10-a.png",
     "side_b": "map-tiles/the-bespin-gambit-10-b.png"
   },
@@ -896,6 +985,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/the-bespin-gambit-11-a.png",
     "side_b": "map-tiles/the-bespin-gambit-11-b.png"
   },
@@ -906,6 +996,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/the-bespin-gambit-12-a.png",
     "side_b": "map-tiles/the-bespin-gambit-12-b.png"
   },
@@ -916,6 +1007,7 @@
     "squares": 35,
     "width": 6,
     "height": 6,
+    "connections": 5,
     "side_a": "map-tiles/jabbas-realm-01-a.png",
     "side_b": "map-tiles/jabbas-realm-01-b.png"
   },
@@ -926,6 +1018,7 @@
     "squares": 30,
     "width": 6,
     "height": 6,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-02-a.png",
     "side_b": "map-tiles/jabbas-realm-02-b.png"
   },
@@ -936,6 +1029,7 @@
     "squares": 30,
     "width": 5,
     "height": 7,
+    "connections": 3,
     "side_a": "map-tiles/jabbas-realm-03-a.png",
     "side_b": "map-tiles/jabbas-realm-03-b.png"
   },
@@ -946,6 +1040,7 @@
     "squares": 27,
     "width": 6,
     "height": 5,
+    "connections": 3,
     "side_a": "map-tiles/jabbas-realm-04-a.png",
     "side_b": "map-tiles/jabbas-realm-04-b.png"
   },
@@ -956,6 +1051,7 @@
     "squares": 24,
     "width": 6,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-05-a.png",
     "side_b": "map-tiles/jabbas-realm-05-b.png"
   },
@@ -966,6 +1062,7 @@
     "squares": 20,
     "width": 4,
     "height": 5,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-06-a.png",
     "side_b": "map-tiles/jabbas-realm-06-b.png"
   },
@@ -976,6 +1073,7 @@
     "squares": 14,
     "width": 5,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/jabbas-realm-07-a.png",
     "side_b": "map-tiles/jabbas-realm-07-b.png"
   },
@@ -986,6 +1084,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-08-a.png",
     "side_b": "map-tiles/jabbas-realm-08-b.png"
   },
@@ -996,6 +1095,7 @@
     "squares": 14,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-09-a.png",
     "side_b": "map-tiles/jabbas-realm-09-b.png"
   },
@@ -1006,6 +1106,7 @@
     "squares": 12,
     "width": 3,
     "height": 4,
+    "connections": 2,
     "side_a": "map-tiles/jabbas-realm-10-a.png",
     "side_b": "map-tiles/jabbas-realm-10-b.png"
   },
@@ -1016,6 +1117,7 @@
     "squares": 12,
     "width": 6,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/jabbas-realm-11-a.png",
     "side_b": "map-tiles/jabbas-realm-11-b.png"
   },
@@ -1026,6 +1128,7 @@
     "squares": 8,
     "width": 4,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-12-a.png",
     "side_b": "map-tiles/jabbas-realm-12-b.png"
   },
@@ -1036,6 +1139,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-13-a.png",
     "side_b": "map-tiles/jabbas-realm-13-b.png"
   },
@@ -1046,6 +1150,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/jabbas-realm-14-a.png",
     "side_b": "map-tiles/jabbas-realm-14-b.png"
   },
@@ -1056,6 +1161,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/jabbas-realm-15-a.png",
     "side_b": "map-tiles/jabbas-realm-15-b.png"
   },
@@ -1066,6 +1172,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/jabbas-realm-16-a.png",
     "side_b": "map-tiles/jabbas-realm-16-b.png"
   },
@@ -1076,6 +1183,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/jabbas-realm-17-a.png",
     "side_b": "map-tiles/jabbas-realm-17-b.png"
   },
@@ -1086,6 +1194,7 @@
     "squares": 38,
     "width": 8,
     "height": 5,
+    "connections": 4,
     "side_a": "map-tiles/heart-of-the-empire-01-a.png",
     "side_b": "map-tiles/heart-of-the-empire-01-b.png"
   },
@@ -1096,6 +1205,7 @@
     "squares": 36,
     "width": 6,
     "height": 6,
+    "connections": 4,
     "side_a": "map-tiles/heart-of-the-empire-02-a.png",
     "side_b": "map-tiles/heart-of-the-empire-02-b.png"
   },
@@ -1106,6 +1216,7 @@
     "squares": 24,
     "width": 6,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/heart-of-the-empire-03-a.png",
     "side_b": "map-tiles/heart-of-the-empire-03-b.png"
   },
@@ -1116,6 +1227,7 @@
     "squares": 20,
     "width": 4,
     "height": 5,
+    "connections": 3,
     "side_a": "map-tiles/heart-of-the-empire-04-a.png",
     "side_b": "map-tiles/heart-of-the-empire-04-b.png"
   },
@@ -1126,6 +1238,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/heart-of-the-empire-05-a.png",
     "side_b": "map-tiles/heart-of-the-empire-05-b.png"
   },
@@ -1136,6 +1249,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 3,
     "side_a": "map-tiles/heart-of-the-empire-06-a.png",
     "side_b": "map-tiles/heart-of-the-empire-06-b.png"
   },
@@ -1146,6 +1260,7 @@
     "squares": 12,
     "width": 4,
     "height": 3,
+    "connections": 3,
     "side_a": "map-tiles/heart-of-the-empire-07-a.png",
     "side_b": "map-tiles/heart-of-the-empire-07-b.png"
   },
@@ -1156,6 +1271,7 @@
     "squares": 9,
     "width": 3,
     "height": 3,
+    "connections": 4,
     "side_a": "map-tiles/heart-of-the-empire-08-a.png",
     "side_b": "map-tiles/heart-of-the-empire-08-b.png"
   },
@@ -1166,6 +1282,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/heart-of-the-empire-09-a.png",
     "side_b": "map-tiles/heart-of-the-empire-09-b.png"
   },
@@ -1176,6 +1293,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/heart-of-the-empire-10-a.png",
     "side_b": "map-tiles/heart-of-the-empire-10-b.png"
   },
@@ -1186,6 +1304,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-11-a.png",
     "side_b": "map-tiles/heart-of-the-empire-11-b.png"
   },
@@ -1196,6 +1315,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-12-a.png",
     "side_b": "map-tiles/heart-of-the-empire-12-b.png"
   },
@@ -1206,6 +1326,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-13-a.png",
     "side_b": "map-tiles/heart-of-the-empire-13-b.png"
   },
@@ -1216,6 +1337,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-14-a.png",
     "side_b": "map-tiles/heart-of-the-empire-14-b.png"
   },
@@ -1226,6 +1348,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-15-a.png",
     "side_b": "map-tiles/heart-of-the-empire-15-b.png"
   },
@@ -1236,6 +1359,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-16-a.png",
     "side_b": "map-tiles/heart-of-the-empire-16-b.png"
   },
@@ -1246,6 +1370,7 @@
     "squares": 2,
     "width": 1,
     "height": 2,
+    "connections": 2,
     "side_a": "map-tiles/heart-of-the-empire-17-a.png",
     "side_b": "map-tiles/heart-of-the-empire-17-b.png"
   },
@@ -1256,6 +1381,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/heart-of-the-empire-18-a.png",
     "side_b": "map-tiles/heart-of-the-empire-18-b.png"
   },
@@ -1266,6 +1392,7 @@
     "squares": 35,
     "width": 7,
     "height": 5,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-01-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-01-b.png"
   },
@@ -1276,6 +1403,7 @@
     "squares": 25,
     "width": 5,
     "height": 5,
+    "connections": 3,
     "side_a": "map-tiles/tyrants-of-lothal-02-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-02-b.png"
   },
@@ -1286,6 +1414,7 @@
     "squares": 24,
     "width": 4,
     "height": 6,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-03-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-03-b.png"
   },
@@ -1296,6 +1425,7 @@
     "squares": 16,
     "width": 4,
     "height": 4,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-04-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-04-b.png"
   },
@@ -1306,6 +1436,7 @@
     "squares": 12,
     "width": 4,
     "height": 3,
+    "connections": 3,
     "side_a": "map-tiles/tyrants-of-lothal-05-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-05-b.png"
   },
@@ -1316,6 +1447,7 @@
     "squares": 9,
     "width": 3,
     "height": 3,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-06-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-06-b.png"
   },
@@ -1326,6 +1458,7 @@
     "squares": 9,
     "width": 3,
     "height": 3,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-07-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-07-b.png"
   },
@@ -1336,6 +1469,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-08-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-08-b.png"
   },
@@ -1346,6 +1480,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 4,
     "side_a": "map-tiles/tyrants-of-lothal-09-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-09-b.png"
   },
@@ -1356,6 +1491,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/tyrants-of-lothal-10-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-10-b.png"
   },
@@ -1366,6 +1502,7 @@
     "squares": 4,
     "width": 2,
     "height": 2,
+    "connections": 3,
     "side_a": "map-tiles/tyrants-of-lothal-11-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-11-b.png"
   },
@@ -1376,6 +1513,7 @@
     "squares": 2,
     "width": 2,
     "height": 1,
+    "connections": 1,
     "side_a": "map-tiles/tyrants-of-lothal-12-a.png",
     "side_b": "map-tiles/tyrants-of-lothal-12-b.png"
   }

@@ -414,7 +414,8 @@ Maps are built from double-sided tiles:
 - `map-tiles`: a tile each, `name` ("Core Set 01", "Twin Shadows 01") and the `number` printed on it, how many
   `squares` it has (both sides the same) and its grid's `width` and `height` in squares as `side_a`'s image is stored,
   with an image per side (`side_a`, `side_b`), each stored with the number pill printed in a corner (its code,
-  "01A") upright. Jabba's Realm 10's sides have their pills a quarter turn apart, so its side B image is stored
+  "01A") upright, and its `connections`: the connector tabs that stick out of its outline (not the notches), the
+  same on both sides, counted by the maintainer on the printed tiles (1 to 5). Jabba's Realm 10's sides have their pills a quarter turn apart, so its side B image is stored
   turned a quarter from side A's, its width being that height. Tiles reach their products through `source-contents`, with `quantity` = how many of
   that tile the box has. The file runs by product code, then number.
 - `map-layouts` (no ids): the tile sides a map uses and where they go, `{map_id, tile_id, side, count, placements}`.
@@ -503,6 +504,7 @@ erDiagram
         int squares
         int width "squares, as side_a is stored"
         int height
+        int connections "connector tabs"
         string side_a "image"
         string side_b "image"
     }
