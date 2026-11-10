@@ -2223,7 +2223,7 @@
     "placements": [
       {
         "section": null,
-        "x": 5,
+        "x": 4,
         "y": 0,
         "rotation": 180
       },
@@ -28034,7 +28034,7 @@
       {
         "section": null,
         "x": 2,
-        "y": 4,
+        "y": 5,
         "rotation": 180
       }
     ]
@@ -28076,7 +28076,7 @@
       {
         "section": null,
         "x": 0,
-        "y": 6,
+        "y": 7,
         "rotation": 90
       }
     ]
@@ -28110,7 +28110,7 @@
       {
         "section": null,
         "x": 4,
-        "y": 3,
+        "y": 4,
         "rotation": 180
       },
       {
@@ -34753,7 +34753,7 @@
         "section": null,
         "x": 7,
         "y": 0,
-        "rotation": 90
+        "rotation": 270
       }
     ]
   },
@@ -40935,7 +40935,7 @@
         "section": null,
         "x": 9,
         "y": 7,
-        "rotation": 0
+        "rotation": 180
       }
     ]
   },
