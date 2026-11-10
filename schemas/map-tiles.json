@@ -34,6 +34,11 @@
       "description": "The height of the tile's grid in squares, as side_a's image is stored.",
       "minimum": 1
     },
+    "connections": {
+      "type": "integer",
+      "description": "The tile's connector tabs (the ones that stick out, not the notches), the same on both sides: counted by the maintainer on the printed tiles.",
+      "minimum": 0
+    },
     "side_a": {
       "description": "The file path for the tile's A side, cut on its outline (transparent notches).",
       "$ref": "definitions.json#/definitions/image-file-path"
@@ -50,6 +55,7 @@
     "squares",
     "width",
     "height",
+    "connections",
     "side_a",
     "side_b"
   ],
