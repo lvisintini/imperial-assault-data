@@ -44,7 +44,7 @@ class Db {
     this.rewardOf = new Map();  // reward ref → mission card refs
     this.links = new Map();     // ref → [{relation, ref}]: its record-links, read from its end
     this.layout = new Map();    // map ref → [{ref: tile ref, side, count, placements: [{section, x, y, rotation}]}]
-    this.usedIn = new Map();    // tile ref → the map refs that use it
+    this.usedIn = new Map();    // tile ref → {A: map refs, B: map refs}: the maps that use each of its sides
     this.matches = new Map();   // tile ref → [{side, ref: another tile ref, otherSide}]: its interchangeable sides
     this.#linkSources();
     this.#linkMissions();
@@ -146,7 +146,10 @@ class Db {
       }
       push(this.layout, map, {ref: tile, side: record[LAYOUTS.side], count: record[LAYOUTS.count],
         placements: record[LAYOUTS.placements] ?? []});
-      if (!this.usedIn.get(tile)?.includes(map)) push(this.usedIn, tile, map);
+      const sides = this.usedIn.get(tile) ?? {};
+      if (!this.usedIn.has(tile)) this.usedIn.set(tile, sides);
+      const side = record[LAYOUTS.side];
+      if (!sides[side]?.includes(map)) (sides[side] ??= []).push(map);
     }
   }
 
