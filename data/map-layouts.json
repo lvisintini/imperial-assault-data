@@ -31077,6 +31077,20 @@
   },
   {
     "map_id": "3b1bcab1-1a06-5ce6-bf54-b96cffc217bc",
+    "tile_id": "8278f62b-b448-4987-ab4e-b2379e8cf86b",
+    "side": "B",
+    "count": 1,
+    "placements": [
+      {
+        "section": null,
+        "x": 5,
+        "y": 5,
+        "rotation": 90
+      }
+    ]
+  },
+  {
+    "map_id": "3b1bcab1-1a06-5ce6-bf54-b96cffc217bc",
     "tile_id": "4af356e5-9be6-4879-8954-1ba4580e87c7",
     "side": "B",
     "count": 1,
@@ -31097,9 +31111,9 @@
     "placements": [
       {
         "section": null,
-        "x": 5,
-        "y": 5,
-        "rotation": 270
+        "x": 4,
+        "y": 12,
+        "rotation": 0
       }
     ]
   },
