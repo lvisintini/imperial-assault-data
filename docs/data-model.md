@@ -1,13 +1,77 @@
 # Data model
 
 The dataset is laid out like a relational database: each file in `data/` is a table (a JSON array of records), and
-records point at each other through id fields. This page shows how the 31 files relate. Only key fields are listed;
-see `schemas/` for every field.
+records point at each other through id fields. This page shows how the 35 files relate: first all of them in one
+diagram, then each part with its key fields. See `schemas/` for every field.
+
+## Overview
+
+Every file and every link between them. A polymorphic link (`source-contents`, `missions`, `mission-rewards`,
+`record-links`) is drawn to each type it points at in the data. `card-backs` is linked to all 18 card files through
+`back_id`; to keep the diagram readable those links are only drawn in [Card backs](#card-backs).
+
+```mermaid
+erDiagram
+    sources ||--o{ source-contents : "source_id"
+    source-contents }o--o| sources : "a pack in a box"
+    source-contents }o--o| agenda-decks : "content_id"
+    source-contents }o--o| command-cards : "content_id"
+    source-contents }o--o| companion-cards : "content_id"
+    source-contents }o--o| condition-cards : "content_id"
+    source-contents }o--o| deployment-cards : "content_id"
+    source-contents }o--o| form-cards : "content_id"
+    source-contents }o--o| heroes : "content_id"
+    source-contents }o--o| imperial-classes : "content_id"
+    source-contents }o--o| reward-cards : "content_id"
+    source-contents }o--o| supply-cards : "content_id"
+    source-contents }o--o| upgrade-cards : "content_id"
+    source-contents }o--o| miniatures : "content_id"
+    source-contents }o--o| documents : "content_id"
+    source-contents }o--o| map-tiles : "content_id"
+    source-contents }o--o| maps : "content_id (mats)"
+    source-contents }o--o| missions : "content_id"
+
+    agenda-decks ||--|{ agenda-cards : "agenda_id"
+    heroes ||--|{ hero-class-cards : "hero_id"
+    imperial-classes ||--|{ imperial-class-cards : "class_id"
+
+    missions ||--o| campaign-story-missions : "content_id"
+    missions ||--o| campaign-threat-missions : "content_id"
+    missions ||--o| campaign-hero-side-missions : "content_id"
+    missions ||--o| campaign-ally-side-missions : "content_id"
+    missions ||--o| campaign-regular-side-missions : "content_id"
+    missions ||--o| agenda-cards : "content_id (mission: true)"
+    missions ||--o| skirmish-missions : "content_id"
+    missions ||--o| raid-missions : "content_id"
+    heroes ||--o{ campaign-hero-side-missions : "hero_id"
+    missions ||--o{ mission-rewards : "mission_id"
+    mission-rewards }o--o| reward-cards : "content_id"
+    mission-rewards }o--o| deployment-cards : "content_id"
+    missions ||--o{ epilogue-cards : "mission_id"
+
+    maps ||--|{ missions : "map_id"
+    maps ||--|{ map-layouts : "map_id"
+    map-layouts }o--|| map-tiles : "tile_id"
+    map-tiles ||--o{ map-tile-matches : "tile_id, other_tile_id"
+
+    miniatures ||--|{ record-links : "figure-of"
+    form-cards ||--|{ record-links : "form-of"
+    deployment-cards ||--o{ record-links : "elite-of, campaign-of"
+    documents ||--o{ record-links : "document-for"
+    record-links }o--o| deployment-cards : "to_id"
+    record-links }o--o| heroes : "to_id"
+    record-links }o--o| sources : "to_id (document-for, requires, expands)"
+
+    card-backs {
+        uuid id PK
+        string name "back_id on every card: see Card backs"
+    }
+```
 
 ## Ids
 
-Every record has an `id` (all files but `source-contents`, `mission-rewards` and `record-links`), and every foreign
-key holds one. Ids are lowercase UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
+Every record has an `id` (all files but `source-contents`, `mission-rewards`, `record-links`, `map-layouts` and
+`map-tile-matches`), and every foreign key holds one. Ids are lowercase UUIDs (`definitions.json#/definitions/uuid`), unique across the whole dataset:
 - Records that existed in 1.x have `uuid5(NAMESPACE, "<content type>:<old numeric id>")`, where `NAMESPACE` is
   `uuid5(NAMESPACE_URL, "https://github.com/lvisintini/imperial-assault-data")`. So 1.x ids can be translated: in
   Python, `uuid.uuid5(NAMESPACE, "deployment-cards:114")` is the 1.x Stormtrooper (114). Card backs had no id; theirs
@@ -72,6 +136,9 @@ erDiagram
     source-contents }|--|| missions : "content_id"
     source-contents }|--|| supply-cards : "content_id"
     source-contents }|--|| upgrade-cards : "content_id"
+    source-contents }|--|| miniatures : "content_id"
+    source-contents }|--|| documents : "content_id"
+    source-contents }|--|| map-tiles : "content_id"
 
     agenda-decks ||--|{ agenda-cards : "agenda_id"
     heroes ||--|{ hero-class-cards : "hero_id"
