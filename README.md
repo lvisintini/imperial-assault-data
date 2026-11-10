@@ -29,8 +29,9 @@ missions         1──* epilogue-cards        (mission_id)
 sources          *──* miniatures            (source-contents; quantity = figures in the product)
 sources          *──* documents             (source-contents: in the box; record-links document-for: published for it)
 record-links     <any record> ──relation──> <any record>   (from_type + from_id, to_type + to_id; relation and
-                 reverse_relation: figure-of / has-figure, form-of / has-form, elite-of / regular-of,
-                 campaign-of / skirmish-of, document-for / has-document, requires / required-by,
+                 reverse_relation: figure-of / has-figure, form-of / has-form, companion-of / has-companion,
+                 elite-of / regular-of,
+                 campaign-of / skirmish-of, document-for / has-document, related-to, requires / required-by,
                  expands / expanded-by)
 ```
 

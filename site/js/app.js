@@ -3,6 +3,7 @@ import {initPeek} from './peek.js';
 import {initTileBoxes, initTileToggle} from './tiles.js';
 import {html} from './html.js';
 import {MENU, TYPE} from './types.js';
+import {UNDER} from './relations.js';
 import * as views from './views.js';
 
 const app = document.getElementById('app');
@@ -19,10 +20,40 @@ function resolve(db) {
   const q = params.get('q') ?? '';
   if (!type) return views.landing(db);
   if (type === 'search' && key === undefined) return views.search(db, q);
-  if (!TYPE[type] || TYPE[type].hidden || rest.length) return views.notFound();
-  if (key === undefined) return views.index(db, type, params);
-  const ref = db.get(type, key);
-  return ref ? views.detail(db, ref) : views.notFound();
+  // The mission collections' old addresses: a list is the missions page of that kind, a card its mission's page.
+  if (TYPE[type]?.page === 'missions' && !rest.length) {
+    const target = key === undefined ? `#/missions?f.content_type=${type}` : views.href(db.get(type, key) ?? {});
+    if (target.startsWith('#/missions')) {
+      history.replaceState(null, '', target);
+      return resolve(db);
+    }
+  }
+  if (!TYPE[type] || TYPE[type].hidden) return views.notFound();
+  if (key === undefined) return TYPE[type].list === false ? views.notFound() : views.index(db, type, params);
+  let ref = db.get(type, key);
+  // A child under its parent (relations.js FKS `nested`): #/agenda-decks/<deck id>/agenda-cards/<card id>, the
+  // address of a deck page's cards, whose crumbs are the deck's; or under a record it's linked to (UNDER): a form card
+  // under a deployment card it's a form of.
+  let under = null;
+  if (rest.length) {
+    const [childType, childKey, ...more] = rest;
+    const child = db.get(childType, childKey);
+    const parent = child && db.parent.get(child);
+    const nested = parent?.rel.nested && parent.ref === ref;
+    const linked = child && UNDER[childType] && ref
+      && (db.links.get(child) ?? []).some(link => link.relation === UNDER[childType] && link.ref === ref);
+    if (more.length || !ref || !(nested || linked)) return views.notFound();
+    [under, ref] = [ref, child];
+  }
+  if (!ref) return views.notFound();
+  // A form card's own address goes under its deployment card.
+  if (ref.under && !under) {
+    history.replaceState(null, '', views.href(ref));
+    return resolve(db);
+  }
+  // A mission's page: through the missions page, or for an agenda mission as an agenda card (the crumbs show which).
+  if (ref.type === 'missions' || ref.row) return views.mission(db, ref.row ?? ref, ref.type, under);
+  return views.detail(db, ref, under);
 }
 
 function render(db) {
@@ -32,8 +63,10 @@ function render(db) {
   document.title = view.title ? `${view.title} · Imperial Assault Data` : 'Imperial Assault Data';
   const {parts: [route], params} = parse(location.hash);
   searchInput.value = route === 'search' ? params.get('q') ?? '' : '';
+  // A page can be under another type's in the navigation (an epilogue under Missions).
+  const current = view.nav ?? route;
   for (const link of nav.querySelectorAll('a')) {
-    if (link.getAttribute('href') === `#/${route}`) link.setAttribute('aria-current', 'page');
+    if (link.getAttribute('href') === `#/${current}`) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
   }
   // A submenu's page marks its menu too.

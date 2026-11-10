@@ -20,17 +20,26 @@ export const LINK_RELATIONS = {
   'has-figure': 'Miniatures',
   'form-of': 'Form of',
   'has-form': 'Forms',
+  'companion-of': 'Companion of',
+  'has-companion': 'Companions',
   'elite-of': 'Regular version',
   'regular-of': 'Elite version',
   'campaign-of': 'Skirmish version',
   'skirmish-of': 'Campaign version',
   'document-for': 'Document for',
   'has-document': 'Documents',
+  'related-to': 'Related',
   'requires': 'Requires',
   'required-by': 'Required by',
   'expands': 'Expands',
   'expanded-by': 'Expanded by',
 };
+
+// Types whose pages are only under a record they're linked to, by the relation that links them: a form card's under
+// a deployment card it's a form of (#/deployment-cards/<id>/form-cards/<id>, crumbs "Deployment cards › Clawdite
+// Shapeshifter"), a companion's under what puts it into play (#/heroes/<id>/companion-cards/<id>, "Heroes › Jarrod
+// Kelvin"). Linked from elsewhere (products, search), it's under the first of them in record-links.json.
+export const UNDER = {'form-cards': 'form-of', 'companion-cards': 'companion-of'};
 
 // mission-rewards: what a mission (its index row) gives, a record of any type through content_type + content_id, or
 // credits (no record). Rows with `choice` are alternatives: the player picks one.
@@ -50,10 +59,12 @@ export const MATCHES = {table: 'map-tile-matches', tile: 'tile_id', side: 'side'
 // Child → parent foreign keys. `label`/`childrenLabel` name the relation on the child's and the parent's pages, when
 // the types' own labels don't read well (a hero side mission's "For hero"). `products: 'children'` gives the parent its
 // children's products (a map is in the products its missions are in); `back: 'children'` gives it their card back.
+// `nested` gives the children on the parent's page addresses under it (#/heroes/<id>/hero-class-cards/<id>), whose
+// crumbs are the parent's list and page; elsewhere their crumbs are the parent's list and theirs.
 export const FKS = [
-  {child: 'agenda-cards', field: 'agenda_id', parent: 'agenda-decks', back: 'children'},
-  {child: 'hero-class-cards', field: 'hero_id', parent: 'heroes', back: 'children'},
-  {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes', back: 'children'},
+  {child: 'agenda-cards', field: 'agenda_id', parent: 'agenda-decks', back: 'children', nested: true},
+  {child: 'hero-class-cards', field: 'hero_id', parent: 'heroes', back: 'children', nested: true},
+  {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes', back: 'children', nested: true},
   {child: 'campaign-hero-side-missions', field: 'hero_id', parent: 'heroes', label: 'For hero'},
   {child: 'missions', field: 'map_id', parent: 'maps', label: 'Map', products: 'children'},
   {child: 'epilogue-cards', field: 'mission_id', parent: 'missions', label: 'Mission', childrenLabel: 'Epilogues'},

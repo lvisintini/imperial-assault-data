@@ -1,8 +1,8 @@
 import {html} from './html.js';
-import {BACK, FKS, LINK_RELATIONS} from './relations.js';
+import {BACK, FKS, LINK_RELATIONS, UNDER} from './relations.js';
 import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, writeFilters} from './facets.js';
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
-import {TYPE, TYPES, fieldLabel, title} from './types.js';
+import {TYPE, TYPES, fieldLabel, inNav, kindLabel, title} from './types.js';
 
 // Stand-ins for a missing image (`icon` in types.js): a PDF page, and simple emblems for each affiliation (a cog for
 // the Empire, a bird for the Rebellion, a crosshair for mercenaries).
@@ -47,8 +47,15 @@ const DATA_MODEL_URL = 'https://github.com/lvisintini/imperial-assault-data/blob
 const DOCUMENTS_URL = 'https://github.com/lvisintini/imperial-assault-data/blob/master/documents';
 const VISIBLE = TYPES.filter(t => !t.hidden);
 
-// A missions row links to, and looks like, its mission card.
-export const href = ref => `#/${(ref.card ?? ref).type}/${(ref.card ?? ref).key}`;
+// A mission's page is its missions row's, whichever card it has (a missions row looks like its card). An agenda card
+// links to its own page, which shows the same when it's a mission (app.js).
+// A form card's page is under a deployment card's (relations.js UNDER).
+export const href = ref => ref.type === 'missions' || TYPE[ref.type]?.page === 'missions' && ref.row
+  ? `#/missions/${(ref.row ?? ref).key}`
+  : ref.under ? childHref(ref.under, ref) : `#/${ref.type}/${ref.key}`;
+
+// A child's address under its parent's page: #/agenda-decks/<id>/agenda-cards/<id>.
+export const childHref = (parent, child) => `${href(parent)}/${child.type}/${child.key}`;
 
 // In the given order, or the type's default one (lists of a single type).
 const sorted = (refs, keys) => refs.length ? sortRefs(refs, keys ?? defaultSort(refs[0].type)) : refs;
@@ -81,7 +88,7 @@ const mapOf = (ref, db) => db.parent.get(db.mission.get(ref))?.ref;
 const mapImage = (ref, db) => mapOf(ref, db)?.record.image;
 
 function subtitle(ref, db) {
-  if (ref.card) return TYPE[ref.card.type].singular;
+  if (ref.card) return kindLabel(ref.card.type, true);
   const {record} = ref;
   const parent = db.parent.get(ref);
   if (parent) return title(parent.ref);
@@ -112,10 +119,11 @@ function thumb(ref, db, none = html`<span class="no-image">No image</span>`) {
 }
 
 // copies: how many of it the product shown has (product contents, "Found in"), when more than one.
-function tile(ref, db, copies) {
+// link: the tile's address, when not the record's own (a deck's cards, under the deck).
+function tile(ref, db, copies, link = href(ref)) {
   const peek = peekPath(ref, db);
   const name = title(ref);
-  return html`<a class="tile" href="${href(ref)}"${peek ? html` data-peek="${imageUrl('large', peek)}"` : ''}>
+  return html`<a class="tile" href="${link}"${peek ? html` data-peek="${imageUrl('large', peek)}"` : ''}>
     <span class="thumb">${thumb(ref, db)}</span>
     <span class="tile-title">${name}${copies > 1 ? html` <span class="copies">×${copies}</span>` : ''}</span>
     <span class="tile-sub">${subtitle(ref, db)}</span>
@@ -123,8 +131,9 @@ function tile(ref, db, copies) {
 }
 
 // copiesOf: ref → how many copies to show on its tile (see tile).
-const grid = (refs, db, keys, copiesOf = () => null) =>
-  html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db, copiesOf(ref)))}</div>`;
+// linkOf: ref → the tile's address, when not the record's own.
+const grid = (refs, db, keys, copiesOf = () => null, linkOf = href) =>
+  html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db, copiesOf(ref), linkOf(ref)))}</div>`;
 
 // Nested sections by facet (facets.js): <h2> for the first level, <h3> below it. Records with several values (traits,
 // products) appear under each of them; records with none come last.
@@ -224,11 +233,12 @@ function rerender(container, markup) {
 }
 
 // Refs of mixed types, one sub-heading per type, in navigation order.
-function grouped(refs, db, copiesOf) {
+// linkOf: ref → its tile's address, when not the record's own (see grid).
+function grouped(refs, db, copiesOf, linkOf = href) {
   const byType = Map.groupBy(refs, ref => ref.type);
   return TYPES.filter(t => byType.has(t.file)).map(t => html`
-    <h3><a href="#/${t.file}">${t.label}</a> <span class="count">${byType.get(t.file).length}</span></h3>
-    ${grid(byType.get(t.file), db, undefined, copiesOf)}`);
+    <h3>${t.list === false ? t.label : html`<a href="#/${t.file}">${t.label}</a>`} <span class="count">${byType.get(t.file).length}</span></h3>
+    ${grid(byType.get(t.file), db, undefined, copiesOf, linkOf)}`);
 }
 
 const heading2 = (heading, count) => html`<h2>${heading}${count == null ? '' : html` <span class="count">${count}</span>`}</h2>`;
@@ -245,7 +255,7 @@ const section = (heading, count, body) => html`
   </section>`;
 
 export function landing(db) {
-  const tiles = VISIBLE.map(t => {
+  const tiles = TYPES.filter(inNav).map(t => {
     const first = sorted(db.refs[t.file])[0];
     return html`<a class="tile" href="#/${t.file}">
       <span class="thumb">${first ? thumb(first, db, '') : ''}</span>
@@ -584,14 +594,77 @@ function rewardList(rewards, db) {
     ? html`<h3>Choose 1 <span class="count">${choice.length}</span></h3>${block(choice)}` : ''}`;
 }
 
-// A record's fields for its fields table, with a mission card's location (its missions row's) after its own.
-function fieldsOf(ref, db) {
-  const fields = Object.entries(ref.record);
-  const location = db.mission.get(ref)?.record.location;
-  return location && !('location' in ref.record) ? [...fields, ['location', location]] : fields;
+// A fields table: [label, value] rows.
+const fieldsTable = rows => html`<dl class="fields">${rows.map(([label, value]) => html`<dt>${label}</dt><dd>${value}</dd>`)}
+  </dl>`;
+
+// The products a record comes in, each with how many copies it has of it, when more than one.
+const foundIn = (ref, sources, db) =>
+  section('Found in', sources.length, grid(sources, db, undefined, source => db.copies.get(source)?.get(ref)));
+
+// A child's parent: a hero class card's hero, a hero side mission's ("For hero"), an epilogue's mission.
+const parentSection = ({rel, ref}, db) => section(rel.label ?? TYPE[rel.parent].singular, null, grid([ref], db));
+
+// Record links, a section per relation as read from this end: "Figure of" on a miniature, "Miniatures" on what it
+// stands for, "Required by" on a product.
+// Records whose pages are under the linked ones (relations.js UNDER: a deployment card's forms) link under this one.
+function linkSections(ref, db) {
+  const linkOf = other => UNDER[other.type] && (db.links.get(other) ?? [])
+    .some(link => link.relation === UNDER[other.type] && link.ref === ref) ? childHref(ref, other) : href(other);
+  return Object.entries(LINK_RELATIONS).flatMap(([relation, heading]) => {
+    const refs = (db.links.get(ref) ?? []).filter(link => link.relation === relation).map(link => link.ref);
+    return refs.length ? [section(heading, refs.length, grouped(refs, db, undefined, linkOf))] : [];
+  });
 }
 
-export function detail(db, ref) {
+// A map's hidden sections and its whole map (its image and every hidden section in one frame, the later on top): each
+// a section that stays closed until the viewer opens it. Nothing for other records.
+function mapSections(ref, db) {
+  const t = TYPE[ref.type];
+  const hidden = (t.imageSections ?? []).flatMap(field => ref.record[field] ?? []);
+  const out = hidden.length ? [closed('Hidden sections', hidden.length, hiddenList(ref, db, hidden))] : [];
+  for (const [field, heading] of Object.entries(t.pageImages ?? {})) {
+    const image = ref.record[field];
+    const every = [null, ...hidden.map(h => h.name)];
+    if (image) out.push(closed(heading, null, html`<div class="hidden-sections">
+      ${mapFrame(ref, db, every, image, `${heading}: ${title(ref)}`)}
+    </div>`));
+  }
+  return out;
+}
+
+function backSection(ref, db) {
+  const back = db.back.get(ref);
+  const via = back.via ? ` (on its ${TYPE[back.via.type].label.toLowerCase()})` : '';
+  return section(`Card back${via}`, null, grid([back.ref], db));
+}
+
+const SHOW_TILES = html`<label class="tile-toggle"><input type="checkbox" data-show-tiles> Show tile names</label>`;
+
+// The crumbs of a record's page, and the navigation link to mark:
+// - a child under its parent's address (a deck's agenda card, a deployment card's form card): the parent's list and
+//   page, "Agenda decks › Agents of the Empire";
+// - elsewhere, a child of a `nested` relation (relations.js FKS): its parent's list and its own, "Agenda decks › Agenda
+//   cards";
+// - a type left out of the navigation (types.js `nav: false`, epilogue cards): its parent's list and page, then
+//   `crumb`: its name, "Missions › Executive Overreach › Epilogue: Sparks";
+// - else its type's list, or for a type without one (types.js `list: false`, form cards) its menu's.
+function crumbs(ref, under, db) {
+  const t = TYPE[ref.type];
+  const list = type => html`<a href="#/${type}">${TYPE[type].label}</a>`;
+  const page = parent => html`${list(parent.type)} › <a href="${href(parent)}">${title(parent)}</a>`;
+  const parent = db.parent.get(ref);
+  if (under) return {nav: under.type, html: page(under)};
+  if (parent?.rel.nested) return {nav: ref.type, html: html`${list(parent.rel.parent)} › ${list(ref.type)}`};
+  if (t.nav === false && parent) {
+    return {nav: parent.ref.type, html: html`${page(parent.ref)} › ${t.crumb ?? t.singular}: ${title(ref)}`};
+  }
+  const home = t.list === false ? t.menu : ref.type;  // a type without a list page: its menu's (form cards)
+  return {nav: home, html: list(home)};
+}
+
+// under: the parent whose address the page is under (app.js), or null.
+export function detail(db, ref, under = null) {
   const t = TYPE[ref.type];
   const name = title(ref);
   const layout = db.layout.get(ref);
@@ -602,8 +675,7 @@ export function detail(db, ref) {
       </a>`}
       ${t.images.length > 1 ? html`<figcaption>${fieldLabel(f)}</figcaption>` : ''}
     </figure>`);
-  if (layout?.some(row => row.placements.length)) images.push(html`
-    <label class="tile-toggle"><input type="checkbox" data-show-tiles> Show tile names</label>`);
+  if (layout?.some(row => row.placements.length)) images.push(SHOW_TILES);
 
   const related = [];
   // Next to the image instead of the fields table (types.js aside): the tile list, then the products and the children
@@ -618,36 +690,15 @@ export function detail(db, ref) {
     related.push(section('Contents', refs.length, grouped(refs, db, content => copies?.get(content))));
   }
   const sources = db.sources(ref);
-  if (sources.length) {
-    const content = db.mission.get(ref) ?? ref;  // a mission card's products are its missions row's
-    (columns ?? related).push(section('Found in', sources.length, grid(sources, db, undefined, source => db.copies.get(source)?.get(content))));
-  }
+  if (sources.length) (columns ?? related).push(foundIn(ref, sources, db));
   const parent = db.parent.get(ref);
-  if (parent) related.push(section(parent.rel.label ?? TYPE[parent.rel.parent].singular, null, grid([parent.ref], db)));
-  // A mission card's own children, and its missions row's (its epilogues).
-  for (const {rel, refs} of [...db.children.get(ref) ?? [], ...db.children.get(db.mission.get(ref)) ?? []]) {
-    (columns ?? related).push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
+  if (parent) related.push(parentSection(parent, db));
+  for (const {rel, refs} of db.children.get(ref) ?? []) {
+    const linkOf = rel.nested ? child => childHref(ref, child) : href;
+    (columns ?? related).push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length,
+      grid(refs, db, undefined, undefined, linkOf)));
   }
-  // Record links, a section per relation as read from this end: "Figure of" on a miniature, "Miniatures" on what it
-  // stands for, "Required by" on a product.
-  for (const [relation, heading] of Object.entries(LINK_RELATIONS)) {
-    const refs = (db.links.get(ref) ?? []).filter(link => link.relation === relation).map(link => link.ref);
-    if (refs.length) related.push(section(heading, refs.length, grouped(refs, db)));
-  }
-  const map = mapOf(ref, db);
-  if (map) related.push(section('Map', null, grid([map], db)));
-  // A map's hidden sections and its whole map (its image and every hidden section in one frame): each a section that
-  // stays closed until the viewer opens it.
-  const hidden = (t.imageSections ?? []).flatMap(field => ref.record[field] ?? []);
-  if (hidden.length) related.push(closed('Hidden sections', hidden.length, hiddenList(ref, db, hidden)));
-  for (const [field, heading] of Object.entries(t.pageImages ?? {})) {
-    const image = ref.record[field];
-    // The whole map: the map's image, then each hidden section, the later on top.
-    const every = [null, ...hidden.map(h => h.name)];
-    if (image) related.push(closed(heading, null, html`<div class="hidden-sections">
-      ${mapFrame(ref, db, every, image, `${heading}: ${name}`)}
-    </div>`));
-  }
+  related.push(...linkSections(ref, db), ...mapSections(ref, db));
   // A tile's maps, under the side each uses (a map that uses both sides is under each).
   const usedIn = db.usedIn.get(ref);
   if (usedIn) {
@@ -658,40 +709,108 @@ export function detail(db, ref) {
   }
   const matches = db.matches.get(ref);
   if (matches) related.push(section('Interchangeable with', matches.length, matchList(matches, db)));
-  const rewards = db.rewards.get(ref);
-  if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
   const rewardOf = db.rewardOf.get(ref);
   if (rewardOf) related.push(section('Reward from', rewardOf.length, grouped(rewardOf, db)));
-  const back = db.back.get(ref);
-  if (back) {
-    const via = back.via ? ` (on its ${TYPE[back.via.type].label.toLowerCase()})` : '';
-    related.push(section(`Card back${via}`, null, grid([back.ref], db)));
-  }
+  if (db.back.has(ref)) related.push(backSection(ref, db));
   const backOf = db.backOf.get(ref);
   if (backOf) related.push(section('Back of', backOf.length, grouped(backOf, db)));
   // Last: a map's tiles' images, by product (beside the image, a map's aside lists them by name).
   if (layout) related.push(section(aside ? 'Tile images' : 'Tiles', layout.length, layoutList(layout, db)));
 
+  const trail = crumbs(ref, under, db);
   return {
     title: name,
+    nav: trail.nav,
     body: html`
-      <p class="crumbs"><a href="#/${ref.type}">${t.label}</a></p>
+      <p class="crumbs">${trail.html}</p>
       <h1>${name}</h1>
       <div class="detail">
         ${images.length ? html`<div class="images">${images}</div>` : ''}
-        ${aside ? html`<div class="aside">${aside}${columns.length ? html`<div class="aside-columns">${columns}</div>` : ''}</div>` : html`<dl class="fields">${fieldsOf(ref, db).map(
-          ([field, value]) => html`<dt>${fieldLabel(field)}</dt><dd>${fieldValue(ref, field, value, db)}</dd>`)}
-        </dl>`}
+        ${aside ? html`<div class="aside">${aside}${columns.length ? html`<div class="aside-columns">${columns}</div>` : ''}</div>` : fieldsTable(Object.entries(ref.record).map(
+          ([field, value]) => [fieldLabel(field), fieldValue(ref, field, value, db)]))}
       </div>
       ${related}`,
   };
 }
 
+// A mission's page, one for every kind: its card (none for a raid or a cardless story mission) and fields, its type
+// (the collection) first and its location and map last; its products, the hero or agenda deck it's for, its rewards and
+// epilogues; then its map: the image with its tiles, beside it the tile list and the map's other missions, then the
+// map's hidden sections, whole map and tile images; last, the card back. `via` is the page it's reached through:
+// 'missions' (crumbs: Missions), or 'agenda-cards' for an agenda mission reached as an agenda card, with its card's
+// crumbs: under its deck when `under` it (a deck page's link), else the agenda cards list (crumbs).
+export function mission(db, row, via, under = null) {
+  const card = row.card;
+  const name = title(row);
+  const map = db.parent.get(row)?.ref;
+  const image = card.record.image;
+  const fields = [
+    ['Type', kindLabel(card.type, true)],
+    ...Object.entries(card.record).map(([field, value]) => [fieldLabel(field), fieldValue(card, field, value, db)]),
+    ...row.record.location == null ? [] : [['Location', row.record.location]],
+    ['Map', map ? html`<a href="${href(map)}">${title(map)}</a>` : html`<span class="none">—</span>`],
+  ];
+
+  const related = [];
+  const sources = db.sources(card);
+  if (sources.length) related.push(foundIn(row, sources, db));
+  const parent = db.parent.get(card);
+  if (parent) related.push(parentSection(parent, db));
+  const rewards = db.rewards.get(card);
+  if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
+  for (const {rel, refs} of [...db.children.get(card) ?? [], ...db.children.get(row) ?? []]) {
+    related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
+  }
+  related.push(...linkSections(card, db));
+  if (map) related.push(...missionMap(map, row, db));
+  if (db.back.has(card)) related.push(backSection(card, db));
+  const layout = map && db.layout.get(map);
+  if (layout) related.push(closed('Tile images', layout.length, layoutList(layout, db)));
+
+  const trail = crumbs(via === 'missions' ? row : card, under, db);
+  return {
+    title: name,
+    nav: trail.nav,
+    body: html`
+      <p class="crumbs">${trail.html}</p>
+      <h1>${name}</h1>
+      <div class="detail">
+        ${image ? html`<div class="images"><figure><a href="${imageUrl('large', image)}">
+          <img src="${imageUrl('large', image)}" alt="${name}"></a></figure></div>` : ''}
+        ${fieldsTable(fields)}
+      </div>
+      ${related}`,
+  };
+}
+
+// A mission's map: its image with a box per tile, beside it its tile list and the map's other missions (a skirmish
+// map's other scenario, a campaign map's other mission); then its hidden sections and whole map.
+function missionMap(map, row, db) {
+  const layout = db.layout.get(map) ?? [];
+  const others = (db.children.get(map) ?? []).filter(({rel}) => rel.child === 'missions')
+    .flatMap(({refs}) => refs).filter(ref => ref !== row);
+  const aside = [
+    layout.length ? section('Tiles', layout.length, layoutText(layout, db)) : '',
+    others.length ? section('Also on this map', others.length, grid(others, db)) : '',
+  ];
+  return [html`
+    <section class="related">
+      <h2>Map: <a href="${href(map)}">${title(map)}</a></h2>
+      <div class="detail">
+        <div class="images">
+          <figure>${mapFrame(map, db, [null], map.record.image, title(map))}</figure>
+          ${layout.some(r => r.placements.length) ? SHOW_TILES : ''}
+        </div>
+        <div class="aside">${aside}</div>
+      </div>
+    </section>`, ...mapSections(map, db)];
+}
+
 export function search(db, query) {
   const q = query.trim().toLowerCase();
-  // missions rows are named after their cards, which are found already.
-  // ... and agenda missions are agenda cards.
-  const matches = q ? VISIBLE.filter(t => t.file !== 'missions' && !t.of)
+  // Missions are found through their missions rows (named after their cards), whose collections have no pages; an
+  // agenda mission is also an agenda card.
+  const matches = q ? VISIBLE.filter(t => !t.of)
     .flatMap(t => db.refs[t.file].filter(ref => title(ref).toLowerCase().includes(q))) : [];
   return {
     title: q ? `Search: ${query}` : 'Search',
