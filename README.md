@@ -80,7 +80,9 @@ Please [open a ticket](https://github.com/lvisintini/imperial-assault-data/issue
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :tada:
 
-When adding images please use [TinyPNG](https://tinypng.com/) to reduce their file size as much as possible without affecting image quality.
+Card and product images are palette PNGs (256 colours at most). Most were compressed with [TinyPNG](https://tinypng.com/);
+since 2.0.0 new ones are quantised locally by imperial-assault-tools, which is enough. The map tiles and maps are
+full-colour PNGs.
 
 If you want to contribute to the project and you know how to program in python, you may be interesting on setting up a development environment, although this is optional.
 
