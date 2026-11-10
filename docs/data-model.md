@@ -457,7 +457,10 @@ A tile's images are cut on its outline: the connector tabs are kept and the notc
 side by side fit as on the table. They're 128 px per square in large and 64 in small (the large image halved), plus
 half a square on each axis that has tabs. They are the maintainer's scans of the printed tiles, fitted onto the tiles
 of the Vassal *Imperial Assault Campaign Module* (1.14), which the dataset had until then, and colour-matched to them
-(imperial-assault-tools' `ia hires-tiles`), each turned so its number pill reads upright. The
+(imperial-assault-tools' `ia hires-tiles`), each turned so its number pill reads upright, then straightened on its own
+printed grid: turned and moved so the thin lines printed on its squares' edges sit exactly on its image's squares. A
+tile's print and its cut are a pixel or two apart on the printed tiles (up to about 5 px at 128 px per square), so where
+two tiles meet on a map their printed lines carry on and their cut edges may overlap or leave a hairline gap. The
 campaign maps' layouts come from [ImperialCommander2](https://github.com/GlowPuff/ImperialCommander2), summed over
 each mission's map sections, and corrected where the maintainer's checks against the Campaign Guide and the rulebooks
 found it wrong: a tile's side (Desperate Hour uses 24B and 32B, not 24A and 32A), a tile it lacks or has too many of,
