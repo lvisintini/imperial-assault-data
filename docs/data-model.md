@@ -443,6 +443,15 @@ Maps are built from double-sided tiles:
 
 So every mission reaches its tiles the same way: mission → map → map layouts → map tiles → products.
 
+- `map-tile-matches` (no ids): tile sides with the same art but for their number pill, so one can stand in for the
+  other on a map (Twin Shadows 10A for Core Set 35A), `{tile_id, side, other_tile_id, other_side}`. Every two sides of
+  a set of interchangeable sides have a row, `tile_id` the tile earlier in `map-tiles.json`, rows in that file's
+  order; sides are only ever matched to the same art as stored (both pills upright), so there's no turn. Some sets
+  have a side of each of several products (Core Set 36A, Twin Shadows 11A, Return to Hoth 28A, The Bespin Gambit 10A,
+  Jabba's Realm 15A and 17A, Tyrants of Lothal 12A), some pair sides of one product (Return to Hoth 21A and 22A), and
+  an A side can match a B side (Heart of the Empire 13B and 15A). They were found by comparing the tiles' images
+  (imperial-assault-tools' `ia tile-matches`) and ruled by the maintainer, set by set, on the printed tiles.
+
 A tile's images are cut on its outline: the connector tabs are kept and the notches are transparent, so tiles placed
 side by side fit as on the table. They're 128 px per square in large and 64 in small (the large image halved), plus
 half a square on each axis that has tabs. They are the maintainer's scans of the printed tiles, fitted onto the tiles
@@ -476,6 +485,7 @@ erDiagram
     missions }o--|| maps : "map_id"
     maps ||--o{ map-layouts : "map_id"
     map-layouts }o--|| map-tiles : "tile_id"
+    map-tiles ||--o{ map-tile-matches : "tile_id, other_tile_id"
     sources ||--o{ source-contents : "source_id"
     source-contents }o--|| map-tiles : "content_id (quantity = copies)"
 
@@ -502,6 +512,12 @@ erDiagram
         string side "A, B"
         int count "copies the mission takes"
         object[] placements "section, x, y, rotation"
+    }
+    map-tile-matches {
+        uuid tile_id FK "the earlier tile"
+        string side "A, B"
+        uuid other_tile_id FK
+        string other_side "A, B: the same art"
     }
 ```
 

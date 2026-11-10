@@ -41,6 +41,7 @@ SOURCES = [
     'mission-rewards',
     'map-tiles',
     'map-layouts',
+    'map-tile-matches',
 ]
 
 

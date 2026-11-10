@@ -43,7 +43,8 @@
         "mission-rewards",
         "record-links",
         "map-tiles",
-        "map-layouts"
+        "map-layouts",
+        "map-tile-matches"
       ]
     },
     "affiliation": {

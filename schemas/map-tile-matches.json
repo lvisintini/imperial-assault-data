@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "map-tile-matches.json#",
+  "title": "Schema for the map tile matches data file: tile sides with the same art but for their number pill (interchangeable)",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "tile_id": {
+      "description": "Foreign key to the tile in data/map-tiles.json: the one earlier in that file.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "side": {
+      "description": "The side of tile_id.",
+      "enum": [
+        "A",
+        "B"
+      ]
+    },
+    "other_tile_id": {
+      "description": "Foreign key to the other tile in data/map-tiles.json, later in that file.",
+      "$ref": "definitions.json#/definitions/uuid"
+    },
+    "other_side": {
+      "description": "The side of other_tile_id with the same art as tile_id's side. Both sides are stored with their number pill upright, and the art lines up as stored: no turn.",
+      "enum": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "required": [
+    "tile_id",
+    "side",
+    "other_tile_id",
+    "other_side"
+  ],
+  "additionalProperties": false
+}
