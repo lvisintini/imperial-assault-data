@@ -117,7 +117,7 @@ class TestSourcesIntegrity:
         assert {m['name'] for m in get_data(CONTENT_TYPES.MINIATURES) if m['id'] not in listed} == set()
 
     def test_core_set_copies_match_ffgs_component_list(self):
-        core = next(s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['name'] == 'Imperial Assault')
+        core = next(s['id'] for s in get_data(CONTENT_TYPES.SOURCE) if s['product_code'] == 'SWI01')
         missions = {m['id']: m['content_type'] for m in get_data(CONTENT_TYPES.MISSIONS)}
         copies = Counter()
         for row in get_data(CONTENT_TYPES.SOURCE_CONTENTS):

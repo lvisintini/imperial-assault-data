@@ -541,7 +541,7 @@ function matchList(rows, db) {
 // A product's short name in a map's tile list, as the Vassal Imperial Assault modules prefix its tiles (the Core Set's
 // have none there).
 const SHORT = {
-  'Imperial Assault': 'Core', 'Twin Shadows': 'TS', 'Return to Hoth': 'H', 'The Bespin Gambit': 'BG',
+  'Imperial Assault Core Set': 'Core', 'Twin Shadows': 'TS', 'Return to Hoth': 'H', 'The Bespin Gambit': 'BG',
   "Jabba's Realm": 'JR', 'Heart of the Empire': 'HotE', 'Tyrants of Lothal': 'ToL',
 };
 
