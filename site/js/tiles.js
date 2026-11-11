@@ -55,14 +55,16 @@ async function fill(frame) {
   }));
 }
 
-// After each render: fill the page's map images' boxes; "Show tile names" (data-show-tiles) names every tile at once.
+// After each render: fill the page's map images' boxes. Each image's "Show tile names" (data-show-tiles) names all of
+// its tiles at once: those of its .map-view.
 export function initTileBoxes(root) {
-  root.classList.remove('show-tiles');
   for (const frame of root.querySelectorAll('.map-frame[data-boxes]')) fill(frame);
 }
 
 export function initTileToggle(root) {
   root.addEventListener('change', event => {
-    if (event.target.matches('[data-show-tiles]')) root.classList.toggle('show-tiles', event.target.checked);
+    if (event.target.matches('[data-show-tiles]')) {
+      event.target.closest('.map-view').classList.toggle('show-tiles', event.target.checked);
+    }
   });
 }

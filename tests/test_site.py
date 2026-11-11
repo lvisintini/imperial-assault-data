@@ -89,13 +89,16 @@ class TestSite:
             set(properties['relation']['enum'] + properties['reverse_relation']['enum'])
 
     def test_default_sorts_use_schema_fields(self):
-        """sort names schema fields or 'product' (sort.js PRODUCT); without one, lists sort by product, then name."""
+        """sort names schema fields, a foreign key without its _id (its parent's name: a hero class card's 'hero') or
+        'product' (sort.js PRODUCT); without one, lists sort by product, then name."""
         for page, entry in site_types().items():
             if 'hidden: true' in entry:
                 continue
             sort = re.search(r"sort: \[([^\]]*)\]", entry)
             keys = [key.removeprefix('-') for key in strings(sort.group(1))] if sort else ['name']
-            assert set(keys) <= set(get_schema(data_type(page, entry))['properties']) | {'product'}, page
+            properties = set(get_schema(data_type(page, entry))['properties'])
+            parents = {field.removesuffix('_id') for field in properties if field.endswith('_id')}
+            assert set(keys) <= properties | parents | {'product'}, page
         assert "defaultSort = type => TYPE[type].sort ?? [PRODUCT, 'name']" in get_site_js('sort.js')
         assert "export const PRODUCT = 'product';" in get_site_js('sort.js')
 
