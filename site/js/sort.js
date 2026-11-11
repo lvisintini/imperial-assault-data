@@ -2,7 +2,8 @@ import {TYPE} from './types.js';
 
 // Sort keys are field names, '-' first for descending: ['-unique', 'name']. PRODUCT isn't a field: it's a record's
 // earliest product's release date, then product code (ref.release, data.js), and the default for types without a
-// `sort` of their own (types.js); records in no product come last.
+// `sort` of their own (types.js); records in no product come last. A foreign key's name without its _id ('hero') is
+// its parent's name (ref.parents, data.js).
 export const PRODUCT = 'product';
 export const defaultSort = type => TYPE[type].sort ?? [PRODUCT, 'name'];
 
@@ -13,8 +14,9 @@ export function sortableFields(type, refs) {
   const fields = new Set(refs.flatMap(ref => Object.keys(ref.record)));
   const own = [...fields].filter(field => field !== 'id' && !TYPE[type].images.includes(field) && !field.endsWith('_id')
     && refs.every(({record}) => record[field] == null || SCALARS.includes(typeof record[field])));
+  const parents = [...new Set(refs.flatMap(ref => Object.keys(ref.parents ?? {})))].filter(key => !fields.has(key));
   const byProduct = refs.some(ref => ref.release) || defaultSort(type).includes(PRODUCT);
-  return byProduct && !fields.has(PRODUCT) ? [PRODUCT, ...own] : own;
+  return [...byProduct && !fields.has(PRODUCT) ? [PRODUCT] : [], ...parents, ...own];
 }
 
 // Keys from a ?sort= value, keeping only the given fields; the type's default when none are left.
@@ -31,7 +33,8 @@ function compareValues(a, b, ranked = []) {
   return rank(a) - rank(b) || (typeof a === 'string' ? a.localeCompare(b, undefined, {numeric: true}) : a - b);
 }
 
-const valueOf = (ref, field) => field === PRODUCT ? ref.release : ref.record[field];
+const valueOf = (ref, field) => field === PRODUCT ? ref.release
+  : field in ref.record ? ref.record[field] : ref.parents?.[field];
 
 export function sortRefs(refs, keys) {
   const orders = TYPE[refs[0]?.type]?.order ?? {};

@@ -17,6 +17,18 @@ export const PRODUCT_TYPE = 'product_type';
 
 const compareKeys = (a, b) => a.localeCompare(b, undefined, {numeric: true});
 
+// Product types in the products page's Type order (Core Game, Expansion, Ally Pack, Villain Pack...).
+const PRODUCT_TYPES = TYPE.sources.order.type;
+const byType = (a, b) => (PRODUCT_TYPES.indexOf(a) >>> 0) - (PRODUCT_TYPES.indexOf(b) >>> 0);
+
+// The products' order in the Product filter: the Core Game and the expansions by product code; then the products
+// without a code, in the products file's order (the Luke Skywalker and Darth Vader packs in the Core Set, the app);
+// then every other product (ally and villain packs, map mats) by product code.
+const BOXES = new Set(['Core Game', 'Expansion']);
+const productRank = ({record}) => BOXES.has(record.type) ? 0 : record.product_code == null ? 1 : 2;
+const byProductOrder = (a, b) => productRank(a) - productRank(b)
+  || (a.record.product_code ?? '').localeCompare(b.record.product_code ?? '') || a.index - b.index;
+
 // `heading` is a value's group heading, when it isn't its label.
 function choice(id, label, of, keys, labels = {}, headings = {}) {
   const choices = keys.map(key => ({key, label: labels[key] ?? key, heading: headings[key] ?? labels[key] ?? key}));
@@ -66,6 +78,12 @@ function fieldFacet(type, field, refs) {
   if (values.every(v => typeof v === 'boolean')) {
     return booleanFacet(field, label, ({record}) => record[field] == null ? [] : [String(record[field])]);
   }
+  // A number field listed in `choices` (an upgrade card's tier) is ticked value by value, as "Tier 2" in groups.
+  if (TYPE[type].choices?.includes(field) && values.every(v => typeof v === 'number')) {
+    const keys = [...new Set(values)].sort((a, b) => a - b).map(String);
+    return choice(field, label, ({record}) => (record[field] == null ? [] : [String(record[field])]), keys, {},
+      Object.fromEntries(keys.map(k => [k, `${label} ${k}`])));
+  }
   if (values.every(v => typeof v === 'number')) {
     const min = Math.min(...values), max = Math.max(...values);
     if (min === max) return null;
@@ -114,24 +132,30 @@ function productFacets(type, refs, db) {
   if (!sources.length) return [];
   const waveKey = source => source.record.wave == null ? 'none' : String(source.record.wave);
   const waves = [...new Set(sources.map(waveKey))].sort(compareKeys);
-  // Product types in the order their first products come in the products file (Core Game, Expansion, Ally Pack...).
-  const kinds = [...new Set([...sources].sort((a, b) => a.index - b.index).map(s => s.record.type))];
+  // Product types in the products page's Type order (Core Game, Expansion, Ally Pack, Villain Pack...).
+  const kinds = [...new Set(sources.map(s => s.record.type))].sort(byType);
+  const product = choice(PRODUCT, 'Product', ref => found.get(ref).map(s => String(s.key)), sources.map(s => String(s.key)),
+    Object.fromEntries(sources.map(s => [String(s.key), s.record.name])));
+  // Its groups keep the products' order; its filter lists them as byProductOrder does (`options`, views.js
+  // filterPanel).
+  const at = new Map(product.choices.map(c => [c.key, c]));
+  product.options = [...sources].sort(byProductOrder).map(s => at.get(String(s.key)));
   return [
-    choice(PRODUCT, 'Product', ref => found.get(ref).map(s => String(s.key)), sources.map(s => String(s.key)),
-      Object.fromEntries(sources.map(s => [String(s.key), s.record.name]))),
+    product,
+    choice(PRODUCT_TYPE, 'Product type', ref => [...new Set(found.get(ref).map(s => s.record.type))], kinds),
     choice(WAVE, 'Wave', ref => [...new Set(found.get(ref).map(waveKey))], waves,
       Object.fromEntries(waves.map(w => [w, w === 'none' ? 'No wave' : `Wave ${w}`]))),
-    choice(PRODUCT_TYPE, 'Product type', ref => [...new Set(found.get(ref).map(s => s.record.type))], kinds),
   ];
 }
 
-// Every facet of a type's records: from its fields, plus product, wave and product type; `facets` in types.js picks and orders them.
+// Every facet of a type's records: product, product type and wave first, then its parent's and its fields'; `facets` in
+// types.js picks and orders them.
 export function facetsFor(type, refs, db) {
   const t = TYPE[type];
   const fields = [...new Set(refs.flatMap(ref => Object.keys(ref.record)))]
     .filter(f => !SKIPPED.has(f) && !f.endsWith('_id') && !t.images.includes(f));
-  const derived = new Map([...parentFacets(type, refs, db), ...fields.map(f => fieldFacet(type, f, refs)),
-    ...productFacets(type, refs, db)].filter(Boolean).map(f => [f.id, f]));
+  const derived = new Map([...productFacets(type, refs, db), ...parentFacets(type, refs, db),
+    ...fields.map(f => fieldFacet(type, f, refs))].filter(Boolean).map(f => [f.id, f]));
   if (!t.facets) return [...derived.values()];
   return t.facets.map(spec => typeof spec === 'string' ? derived.get(spec)
     : spec.children ? childFacet(spec, refs, db) : traitFacet(spec)).filter(Boolean);

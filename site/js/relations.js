@@ -60,14 +60,19 @@ export const MATCHES = {table: 'map-tile-matches', tile: 'tile_id', side: 'side'
 // the types' own labels don't read well (a hero side mission's "For hero"). `products: 'children'` gives the parent its
 // children's products (a map is in the products its missions are in); `back: 'children'` gives it their card back.
 // `nested` gives the children on the parent's page addresses under it (#/heroes/<id>/hero-class-cards/<id>), whose
-// crumbs are the parent's list and page; elsewhere their crumbs are the parent's list and theirs.
+// crumbs are the parent's list and page; elsewhere their crumbs are the parent's list and theirs. `section: false`
+// leaves the parent's tile off the child's page (an agenda card's deck, an Imperial class card's class, an epilogue's
+// mission, a hero side mission's hero): its fields table's row links to it.
 export const FKS = [
-  {child: 'agenda-cards', field: 'agenda_id', parent: 'agenda-decks', back: 'children', nested: true},
+  {child: 'agenda-cards', field: 'agenda_id', parent: 'agenda-decks', back: 'children', nested: true,
+    section: false},
   {child: 'hero-class-cards', field: 'hero_id', parent: 'heroes', back: 'children', nested: true},
-  {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes', back: 'children', nested: true},
-  {child: 'campaign-hero-side-missions', field: 'hero_id', parent: 'heroes', label: 'For hero'},
+  {child: 'imperial-class-cards', field: 'class_id', parent: 'imperial-classes', back: 'children', nested: true,
+    section: false},
+  {child: 'campaign-hero-side-missions', field: 'hero_id', parent: 'heroes', label: 'For hero', section: false},
   {child: 'missions', field: 'map_id', parent: 'maps', label: 'Map', products: 'children'},
-  {child: 'epilogue-cards', field: 'mission_id', parent: 'missions', label: 'Mission', childrenLabel: 'Epilogues'},
+  {child: 'epilogue-cards', field: 'mission_id', parent: 'missions', label: 'Mission', childrenLabel: 'Epilogues',
+    section: false},
 ];
 
 // Every card's back: back_id → card-backs, on each type whose records have the field. A parent whose FKS entry has

@@ -1,4 +1,5 @@
 import {load} from './data.js';
+import {initFlip} from './flip.js';
 import {initPeek} from './peek.js';
 import {initTileBoxes, initTileToggle} from './tiles.js';
 import {html} from './html.js';
@@ -20,9 +21,11 @@ function resolve(db) {
   const q = params.get('q') ?? '';
   if (!type) return views.landing(db);
   if (type === 'search' && key === undefined) return views.search(db, q);
-  // The mission collections' old addresses: a list is the missions page of that kind, a card its mission's page.
+  // The mission collections' old addresses: a list is the missions page of that kind, a card its mission's page; and
+  // the maps' (types.js `page: 'missions'`): the list is the missions page, a map its first mission's page.
   if (TYPE[type]?.page === 'missions' && !rest.length) {
-    const target = key === undefined ? `#/missions?f.content_type=${type}` : views.href(db.get(type, key) ?? {});
+    const list = type === 'maps' ? '#/missions' : `#/missions?f.content_type=${type}`;
+    const target = key === undefined ? list : views.href(db.get(type, key) ?? {});
     if (target.startsWith('#/missions')) {
       history.replaceState(null, '', target);
       return resolve(db);
@@ -139,6 +142,7 @@ try {
   const db = await load();
   initPeek(app);
   initTileToggle(app);
+  initFlip(app);
   window.addEventListener('hashchange', () => render(db));
   render(db);
 } catch (error) {

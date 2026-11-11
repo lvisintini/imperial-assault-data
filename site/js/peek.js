@@ -1,5 +1,7 @@
-// A larger view of a card while the pointer rests on its tile, or while keyboard focus is on it. Only where there's a
-// real hover (a mouse or trackpad): on touch screens tapping a tile opens its page, as before.
+// A larger view of a card while the pointer rests on its tile (data-peek: the large image), or a record's tile while it
+// rests on a link to it (data-peek-tile: the tile in the <template> beside the link, as a product in a fields table's
+// Found in), or while keyboard focus is on it. Only where there's a real hover (a mouse or trackpad): on touch screens
+// tapping a tile opens its page, as before.
 const DELAY = 300;  // ms of hovering before the peek shows, so sweeping across the grid doesn't flash it
 const GAP = 12;     // px between the tile and the peek, and the peek and the viewport's edges
 
@@ -13,7 +15,8 @@ export function initPeek(root, media = matchMedia('(hover: hover) and (pointer: 
   panel.hidden = true;
   const image = document.createElement('img');
   image.alt = '';
-  panel.append(image);
+  const card = document.createElement('div');  // a link's tile
+  panel.append(image, card);
   document.body.append(panel);
 
   let timer = null, pending = null, shown = null, keyboard = false;
@@ -33,8 +36,15 @@ export function initPeek(root, media = matchMedia('(hover: hover) and (pointer: 
     clearTimeout(timer);
     pending = null;
     shown = tile;
-    const src = new URL(tile.dataset.peek, location.href).href;
-    if (image.src !== src) image.src = src;
+    const template = tile.hasAttribute('data-peek-tile') && tile.parentElement.querySelector('template');
+    panel.classList.toggle('peek-card', Boolean(template));
+    image.hidden = Boolean(template);
+    card.hidden = !template;
+    if (template) card.replaceChildren(template.content.cloneNode(true));
+    else {
+      const src = new URL(tile.dataset.peek, location.href).href;
+      if (image.src !== src) image.src = src;
+    }
     panel.hidden = false;
     place();
   };
@@ -43,7 +53,7 @@ export function initPeek(root, media = matchMedia('(hover: hover) and (pointer: 
     pending = shown = null;
     panel.hidden = true;
   };
-  const tileOf = target => target instanceof Element ? target.closest('.tile[data-peek]') : null;
+  const tileOf = target => target instanceof Element ? target.closest('[data-peek], [data-peek-tile]') : null;
 
   root.addEventListener('pointerover', event => {
     const tile = tileOf(event.target);

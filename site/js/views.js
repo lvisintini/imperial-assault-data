@@ -4,9 +4,9 @@ import {anyActive, applyFilters, counts, defaultGroups, facetsFor, readFilters, 
 import {defaultSort, parseSort, sameKeys, sortRefs, sortableFields} from './sort.js';
 import {TYPE, TYPES, fieldLabel, inNav, kindLabel, title} from './types.js';
 
-// Stand-ins for a missing image (`icon` in types.js): a PDF page, and simple emblems for each affiliation (a cog for
-// the Empire, a bird for the Rebellion, a crosshair for mercenaries).
-const SPOKE = 'M-3.5 -11 L3.5 -11 L6 -25 L-6 -25 Z';
+// Stand-ins for a missing image (`icon` in types.js): a PDF page, and each affiliation's emblem (site/icons: the
+// Imperial crest, the Rebel starbird, the Mandalorian skull for mercenaries; every miniature has one of the three).
+const emblem = name => html`<img class="emblem" src="icons/${name}.png" alt="">`;
 const ICONS = {
   pdf: html`<svg viewBox="0 0 48 60" aria-hidden="true">
     <path d="M4 2h28l12 12v42a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="var(--surface)"
@@ -16,29 +16,20 @@ const ICONS = {
     <text x="20" y="42.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff"
       font-family="system-ui, sans-serif">PDF</text>
   </svg>`,
-  Imperial: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem imperial">
-    <circle r="28" fill="none" stroke="currentColor" stroke-width="4"/>
-    <circle r="8" fill="none" stroke="currentColor" stroke-width="4"/>
-    ${[0, 60, 120, 180, 240, 300].map(a => html`<path d="${SPOKE}" transform="rotate(${a})" fill="currentColor"/>`)}
-  </svg>`,
-  Rebel: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem rebel">
-    <path d="M0 -30 L4 -8 L4 22 L0 30 L-4 22 L-4 -8 Z" fill="currentColor"/>
-    <path d="M7 -22 C27 -12 29 14 11 27 L9 19 C20 9 20 -5 7 -13 Z" fill="currentColor"/>
-    <path d="M-7 -22 C-27 -12 -29 14 -11 27 L-9 19 C-20 9 -20 -5 -7 -13 Z" fill="currentColor"/>
-  </svg>`,
-  Mercenary: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem mercenary">
-    <circle r="20" fill="none" stroke="currentColor" stroke-width="4"/>
-    <path d="M0 -30 V-12 M0 12 V30 M-30 0 H-12 M12 0 H30" stroke="currentColor" stroke-width="4"/>
-    <circle r="4" fill="currentColor"/>
-  </svg>`,
-  Neutral: html`<svg viewBox="-32 -32 64 64" aria-hidden="true" class="emblem">
-    <circle r="24" fill="none" stroke="currentColor" stroke-width="4"/>
-  </svg>`,
+  Imperial: emblem('imperial'),
+  Rebel: emblem('rebel'),
+  Mercenary: emblem('mercenary'),
 };
+
+// The tile of a mission's credits reward (rewardList).
+const CREDITS = html`<div class="tile">
+  <span class="thumb"><span class="icon"><img class="emblem" src="icons/credits.svg" alt=""></span></span>
+  <span class="tile-title">Credits</span>
+</div>`;
 
 function iconOf(ref) {
   const icon = TYPE[ref.type].icon;
-  return icon === 'affiliation' ? ICONS[ref.record.affiliation] ?? ICONS.Neutral : ICONS[icon];
+  return icon === 'affiliation' ? ICONS[ref.record.affiliation] : ICONS[icon];
 }
 
 const MERMAID_URL = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
@@ -49,7 +40,8 @@ const VISIBLE = TYPES.filter(t => !t.hidden);
 
 // A mission's page is its missions row's, whichever card it has (a missions row looks like its card). An agenda card
 // links to its own page, which shows the same when it's a mission (app.js).
-// A form card's page is under a deployment card's (relations.js UNDER).
+// A map's is its (first) mission's (data.js sets its row). A form card's page is under a deployment card's (relations.js
+// UNDER).
 export const href = ref => ref.type === 'missions' || TYPE[ref.type]?.page === 'missions' && ref.row
   ? `#/missions/${(ref.row ?? ref).key}`
   : ref.under ? childHref(ref.under, ref) : `#/${ref.type}/${ref.key}`;
@@ -60,21 +52,23 @@ export const childHref = (parent, child) => `${href(parent)}/${child.type}/${chi
 // In the given order, or the type's default one (lists of a single type).
 const sorted = (refs, keys) => refs.length ? sortRefs(refs, keys ?? defaultSort(refs[0].type)) : refs;
 
-const ownImage = ref => ref.record[TYPE[ref.type].images.find(f => ref.record[f])];
+// field: the image to show instead of the record's first (a list page's types.js altThumb: a tile's side B).
+const ownImage = (ref, field) => (field && ref.record[field])
+  || ref.record[TYPE[ref.type].images.find(f => ref.record[f])];
 const backImage = (ref, db) => db.back.get(ref)?.ref.record.image;
 
 // Tiles show a record's own image, or its card back when it has none (agenda decks, imperial classes) or its type
 // asks for it (`thumb: 'back'`: heroes), or, for a mission with neither (raids), its map. The peek prefers the
 // record's own image.
-function thumbPath(ref, db) {
+function thumbPath(ref, db, field) {
   ref = ref.card ?? ref;
   return (TYPE[ref.type].thumb === 'back'
-    ? backImage(ref, db) ?? ownImage(ref) : ownImage(ref) ?? backImage(ref, db)) ?? mapImage(ref, db);
+    ? backImage(ref, db) ?? ownImage(ref, field) : ownImage(ref, field) ?? backImage(ref, db)) ?? mapImage(ref, db);
 }
 
-const peekPath = (ref, db) => {
+const peekPath = (ref, db, field) => {
   ref = ref.card ?? ref;
-  return ownImage(ref) ?? backImage(ref, db) ?? mapImage(ref, db);
+  return ownImage(ref, field) ?? backImage(ref, db) ?? mapImage(ref, db);
 };
 
 // A map's or a tile's small image is its large one halved (64 px per square, against 128), and the site only publishes
@@ -106,13 +100,12 @@ function subtitle(ref, db) {
       record.format !== 'Standard' && record.format].filter(Boolean).join(' · ');
     case 'miniatures': return record.description;
     case 'documents': return [record.category, record.version && `Version ${record.version}`].filter(Boolean).join(' · ');
-    case 'card-backs': return [...new Set((db.backOf.get(ref) ?? []).map(card => TYPE[card.type].label))].join(', ');
   }
 }
 
 // A tile's thumbnail: its image, its type's icon, or nothing.
-function thumb(ref, db, none = html`<span class="no-image">No image</span>`) {
-  const path = thumbPath(ref, db);
+function thumb(ref, db, field, none = html`<span class="no-image">No image</span>`) {
+  const path = thumbPath(ref, db, field);
   if (path) return html`<img loading="lazy" src="${imageUrl('small', path)}" alt="">`;
   const icon = iconOf(ref.card ?? ref);
   return icon ? html`<span class="icon">${icon}</span>` : none;
@@ -120,11 +113,12 @@ function thumb(ref, db, none = html`<span class="no-image">No image</span>`) {
 
 // copies: how many of it the product shown has (product contents, "Found in"), when more than one.
 // link: the tile's address, when not the record's own (a deck's cards, under the deck).
-function tile(ref, db, copies, link = href(ref)) {
-  const peek = peekPath(ref, db);
+// field: the image field to show (see ownImage), or none for the record's first.
+function tile(ref, db, copies, link = href(ref), field) {
+  const peek = peekPath(ref, db, field);
   const name = title(ref);
   return html`<a class="tile" href="${link}"${peek ? html` data-peek="${imageUrl('large', peek)}"` : ''}>
-    <span class="thumb">${thumb(ref, db)}</span>
+    <span class="thumb">${thumb(ref, db, field)}</span>
     <span class="tile-title">${name}${copies > 1 ? html` <span class="copies">×${copies}</span>` : ''}</span>
     <span class="tile-sub">${subtitle(ref, db)}</span>
   </a>`;
@@ -132,13 +126,14 @@ function tile(ref, db, copies, link = href(ref)) {
 
 // copiesOf: ref → how many copies to show on its tile (see tile).
 // linkOf: ref → the tile's address, when not the record's own.
-const grid = (refs, db, keys, copiesOf = () => null, linkOf = href) =>
-  html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db, copiesOf(ref), linkOf(ref)))}</div>`;
+// field: the image field the tiles show (see ownImage).
+const grid = (refs, db, keys, copiesOf = () => null, linkOf = href, field) =>
+  html`<div class="grid">${sorted(refs, keys).map(ref => tile(ref, db, copiesOf(ref), linkOf(ref), field))}</div>`;
 
 // Nested sections by facet (facets.js): <h2> for the first level, <h3> below it. Records with several values (traits,
 // products) appear under each of them; records with none come last.
-function sections(refs, levels, db, keys, depth = 0) {
-  if (!levels.length) return grid(refs, db, keys);
+function sections(refs, levels, db, keys, field, depth = 0) {
+  if (!levels.length) return grid(refs, db, keys, undefined, undefined, field);
   const [facet, ...rest] = levels;
   const groups = facet.choices.map(c => [c.heading, refs.filter(ref => facet.of(ref).includes(c.key))]);
   groups.push([`No ${facet.label.toLowerCase()}`, refs.filter(ref => !facet.of(ref).length)]);
@@ -146,7 +141,7 @@ function sections(refs, levels, db, keys, depth = 0) {
     const count = html` <span class="count">${members.length}</span>`;
     return html`<section class="group">
       ${depth ? html`<h3>${heading}${count}</h3>` : html`<h2>${heading}${count}</h2>`}
-      ${sections(members, rest, db, keys, depth + 1)}
+      ${sections(members, rest, db, keys, field, depth + 1)}
     </section>`;
   });
 }
@@ -208,7 +203,7 @@ function filterPanel(facets, filters) {
     </fieldset>` : html`
     <fieldset class="facet${facet.choices.length > 8 ? ' long' : ''}">
       <legend>${facet.label}</legend>
-      ${facet.choices.map(c => html`<label class="choice">
+      ${(facet.options ?? facet.choices).map(c => html`<label class="choice">
         <input type="checkbox" data-facet="${facet.id}" data-key="${c.key}"
           ${filters[facet.id]?.has(c.key) ? html`checked` : ''}>
         <span class="choice-label">${c.label}</span> <span class="count" data-count="${facet.id}:${c.key}"></span>
@@ -237,7 +232,7 @@ function rerender(container, markup) {
 function grouped(refs, db, copiesOf, linkOf = href) {
   const byType = Map.groupBy(refs, ref => ref.type);
   return TYPES.filter(t => byType.has(t.file)).map(t => html`
-    <h3>${t.list === false ? t.label : html`<a href="#/${t.file}">${t.label}</a>`} <span class="count">${byType.get(t.file).length}</span></h3>
+    <h3>${t.list === false || t.hidden ? t.label : html`<a href="#/${t.file}">${t.label}</a>`} <span class="count">${byType.get(t.file).length}</span></h3>
     ${grid(byType.get(t.file), db, undefined, copiesOf, linkOf)}`);
 }
 
@@ -258,7 +253,7 @@ export function landing(db) {
   const tiles = TYPES.filter(inNav).map(t => {
     const first = sorted(db.refs[t.file])[0];
     return html`<a class="tile" href="#/${t.file}">
-      <span class="thumb">${first ? thumb(first, db, '') : ''}</span>
+      <span class="thumb">${first ? thumb(first, db, undefined, '') : ''}</span>
       <span class="tile-title">${t.label}</span>
       <span class="tile-sub">${db.refs[t.file].length} records</span>
     </a>`;
@@ -313,12 +308,16 @@ export function index(db, type, params) {
     keys: parseSort(type, params.get('sort'), fields),
     groups: readGroups(params.get('group'), groupable, defaults),
     filters: readFilters(params, facets),
+    // types.js altThumb: the tiles show that image instead (a tile's side B), ?thumb=<field>.
+    alt: Boolean(t.altThumb) && params.get('thumb') === t.altThumb.field,
   };
   const matching = () => applyFilters(refs, facets, state.filters, state.q);
   const list = shown => {
     if (!shown.length) return html`<p class="status">No matches.</p>`;
     const levels = state.groups.map(id => groupable.find(f => f.id === id));
-    return levels.length ? sections(shown, levels, db, state.keys) : grid(shown, db, state.keys);
+    const field = state.alt ? t.altThumb.field : undefined;
+    return levels.length ? sections(shown, levels, db, state.keys, field)
+      : grid(shown, db, state.keys, undefined, undefined, field);
   };
   return {
     title: t.label,
@@ -330,6 +329,8 @@ export function index(db, type, params) {
         <div class="sort" id="sort">${sortControls(type, fields, state.keys)}</div>
         ${groupable.length
           ? html`<div class="sort" id="group">${groupControls(groupable, state.groups, defaults)}</div>` : ''}
+        ${t.altThumb ? html`<label class="tile-toggle"><input type="checkbox" id="alt-thumb"${state.alt ? ' checked' : ''}>
+          ${t.altThumb.label}</label>` : ''}
       </div>
       <div class="browse">
         ${facets.length ? html`<details class="filters" id="filters">
@@ -354,6 +355,7 @@ export function index(db, type, params) {
           state.q.trim() && `q=${encodeURIComponent(state.q.trim())}`,
           !sameKeys(state.keys, defaultSort(type)) && `sort=${state.keys.join(',')}`,
           !sameKeys(state.groups, defaults) && `group=${state.groups.join(',') || 'none'}`,
+          state.alt && `thumb=${t.altThumb.field}`,
           ...writeFilters(state.filters, facets),
         ].filter(Boolean);
         // replaceState doesn't fire hashchange, so changing the controls doesn't re-render the page (or steal focus).
@@ -380,6 +382,10 @@ export function index(db, type, params) {
 
       input.addEventListener('input', () => {
         state.q = input.value;
+        update();
+      });
+      el.querySelector('#alt-thumb')?.addEventListener('change', event => {
+        state.alt = event.target.checked;
         update();
       });
       summary.addEventListener('click', event => {
@@ -476,23 +482,30 @@ export function index(db, type, params) {
   };
 }
 
+// A record's fields table rows, leaving out what the page already shows: its id, its name when it's the page's title,
+// its image fields and its card back (the image turns over to it). Any other field gets a row, so a field added to a
+// type later shows up. A foreign key's row is named without its _id ("Agenda", linking to the deck).
+const fieldRows = (ref, db) => Object.entries(ref.record)
+  .filter(([field, value]) => field !== 'id' && field !== BACK.field && !(field === 'name' && value === title(ref))
+    && !isImageField(ref.type, field))
+  .map(([field, value]) => [fieldLabel(isFk(ref.type, field) ? field.replace(/_id$/, '') : field),
+    fieldValue(ref, field, value, db)]);
+
+const isFk = (type, field) => FKS.some(rel => rel.child === type && rel.field === field);
+
+const isImageField = (type, field) => {
+  const t = TYPE[type];
+  return t.images.includes(field) || field in (t.pageImages ?? {}) || (t.imageSections ?? []).includes(field);
+};
+
 function fieldValue(ref, field, value, db) {
-  const fk = field === BACK.field ? BACK : FKS.find(rel => rel.child === ref.type && rel.field === field);
+  const fk = FKS.find(rel => rel.child === ref.type && rel.field === field);
   if (fk) {
     const parent = db.get(fk.parent, value);
-    if (parent) return html`<a href="${href(parent)}">${title(parent)}</a>`;
+    if (parent) return peekLink(parent, db);
   }
   if (ref.type === 'documents' && field === 'file') {
     return html`<a href="${DOCUMENTS_URL}/${value}"><code>${value}</code></a>`;
-  }
-  if (TYPE[ref.type].images.includes(field) && value) {
-    return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;
-  }
-  if (TYPE[ref.type].pageImages?.[field] && value) {
-    return html`<a href="${imageUrl('large', value)}"><code>${value}</code></a>`;
-  }
-  if (TYPE[ref.type].imageSections?.includes(field) && value?.length) {
-    return html`${value.map(({name, image}, i) => html`${i ? ', ' : ''}${name}: <a href="${imageUrl('large', image)}"><code>${image}</code></a>`)}`;
   }
   if (value == null || (Array.isArray(value) && !value.length)) return html`<span class="none">—</span>`;
   if (Array.isArray(value)) return value.join(', ');
@@ -500,10 +513,11 @@ function fieldValue(ref, field, value, db) {
   return String(value);
 }
 
-// A map's tile sides grouped by the product the tiles come in, newest product first (the map tiles' default order),
-// then by number and side; each with how many copies the mission takes.
+// A map's tile sides grouped by the product the tiles come in, newest product first (as Vassal lists them; the map
+// tiles' list runs oldest first), then by number and side; each with how many copies the mission takes.
+const LAYOUT_ORDER = ['-product', 'number'];
 function layoutGroups(rows, db) {
-  const tiles = sorted([...new Set(rows.map(row => row.ref))]);
+  const tiles = sorted([...new Set(rows.map(row => row.ref))], LAYOUT_ORDER);
   const ordered = [...rows].sort((a, b) => tiles.indexOf(a.ref) - tiles.indexOf(b.ref) || a.side.localeCompare(b.side));
   const groups = new Map();
   for (const row of ordered) {
@@ -515,28 +529,37 @@ function layoutGroups(rows, db) {
   return [...groups.values()];
 }
 
-// The thumbnails of a map's tile sides, a group per product.
-function layoutList(rows, db) {
-  return layoutGroups(rows, db).map(({product, rows}) => html`
+// The thumbnails of a map's tile sides, a group per product; or, with byProduct false, in one grid in the same order.
+function layoutList(rows, db, byProduct = true) {
+  const groups = layoutGroups(rows, db);
+  if (!byProduct) return tileSideGrid(groups.flatMap(group => group.rows));
+  return groups.map(({product, rows}) => html`
     ${product ? html`<h3><a href="${href(product)}">${title(product)}</a> <span class="count">${rows.length}</span></h3>` : ''}
-    <div class="grid">${rows.map(({ref, side, count}) => {
-      const path = ref.record[side === 'A' ? 'side_a' : 'side_b'];
-      return html`<a class="tile" href="${href(ref)}" data-peek="${imageUrl('large', path)}">
-        <span class="thumb"><img loading="lazy" src="${imageUrl('small', path)}" alt=""></span>
-        <span class="tile-title">${title(ref)}${side}${count > 1 ? html` <span class="copies">×${count}</span>` : ''}</span>
-        <span class="tile-sub">Side ${side}</span>
-      </a>`;
-    })}</div>`);
+    ${tileSideGrid(rows)}`);
 }
 
-// A tile's interchangeable sides (map-tile-matches): for each of its sides, the other tiles' sides with the same art.
+const tileSideGrid = rows => html`<div class="grid">${rows.map(({ref, side, count}) => {
+  const path = ref.record[side === 'A' ? 'side_a' : 'side_b'];
+  return html`<a class="tile" href="${href(ref)}" data-peek="${imageUrl('large', path)}">
+    <span class="thumb"><img loading="lazy" src="${imageUrl('small', path)}" alt=""></span>
+    <span class="tile-title">${title(ref)}${side}${count > 1 ? html` <span class="copies">×${count}</span>` : ''}</span>
+    <span class="tile-sub">Side ${side}</span>
+  </a>`;
+})}</div>`;
+
+// A tile's interchangeable sides (map-tile-matches): for each of its sides, the other tiles' sides with the same art,
+// newest product first, in one grid.
 function matchList(rows, db) {
-  return ['A', 'B'].filter(side => rows.some(row => row.side === side)).map(side => {
+  return sideColumns(['A', 'B'].filter(side => rows.some(row => row.side === side)).map(side => {
     const others = rows.filter(row => row.side === side).map(row => ({ref: row.ref, side: row.otherSide}));
     return html`<h3>Side ${side} <span class="count">${others.length}</span></h3>
-      ${layoutList(others, db)}`;
-  });
+      ${layoutList(others, db, false)}`;
+  }));
 }
+
+// A tile's sections grouped by side (Used in, Interchangeable with): a column per side, one under the other on narrow
+// screens.
+const sideColumns = groups => html`<div class="side-columns">${groups.map(group => html`<div>${group}</div>`)}</div>`;
 
 // A product's short name in a map's tile list, as the Vassal Imperial Assault modules prefix its tiles (the Core Set's
 // have none there).
@@ -552,18 +575,20 @@ const tileName = (tile, side, db) => {
 };
 
 // A map's image (or a hidden section's, or the whole map's) with a box over each tile on it, which names the tile on
-// hover, or always with the page's "Show tile names" (tiles.js sizes the boxes once the tiles' images load, from
-// map-layouts placements). sections: the placements' sections the image shows (null: the map's own image), in the
-// order they're drawn.
+// hover, or always with its own "Show tile names" under it (tiles.js sizes the boxes once the tiles' images load, from
+// map-layouts placements; the toggle names the tiles of its .map-view only). sections: the placements' sections the
+// image shows (null: the map's own image), in the order they're drawn.
+const SHOW_TILES = html`<label class="tile-toggle"><input type="checkbox" data-show-tiles> Show tile names</label>`;
+
 function mapFrame(ref, db, sections, image, alt) {
   const boxes = (db.layout.get(ref) ?? []).flatMap(({ref: tile, side, placements}) => placements
     .filter(p => sections.includes(p.section))
     .map(p => ({src: imageUrl('small', tile.record[side === 'A' ? 'side_a' : 'side_b']), x: p.x, y: p.y,
                 rotation: p.rotation, layer: sections.indexOf(p.section), label: tileName(tile, side, db),
                 title: `${title(tile)}, side ${side}${p.section ? ` (${p.section})` : ''}`})));
-  return html`<a class="map-frame" href="${imageUrl('large', image)}"${boxes.length ? html` data-boxes="${JSON.stringify(boxes)}"` : ''}>
+  return html`<div class="map-view"><a class="map-frame" href="${imageUrl('large', image)}"${boxes.length ? html` data-boxes="${JSON.stringify(boxes)}"` : ''}>
     <img loading="lazy" src="${imageUrl('large', image)}" alt="${alt}"><span class="tile-boxes"></span>
-  </a>`;
+  </a>${boxes.length ? SHOW_TILES : ''}</div>`;
 }
 
 // A map's tile sides as plain text, a line per product (newest first): "ToL  01A, 03A" … "Core  32A(2), 36A(4)", the
@@ -584,38 +609,104 @@ function hiddenList(ref, db, sections) {
     </figure>`)}</div>`;
 }
 
-// A mission's rewards: those it always gives, then its alternatives ("Choose 1"). Credits have no record to show.
+// A mission's rewards: those it always gives, then its alternatives ("Choose 1"). Credits have no record to show:
+// their tile is the credit symbol (site/icons/credits.svg), and isn't a link.
 function rewardList(rewards, db) {
-  const block = rows => html`${rows.some(r => r.credits) ? html`<p>Credits</p>` : ''}${
-    rows.some(r => r.ref) ? html`<div class="grid">${rows.filter(r => r.ref).map(r => tile(r.ref, db))}</div>` : ''}`;
+  const block = rows => html`<div class="grid">${rows.map(r => r.ref ? tile(r.ref, db) : CREDITS)}</div>`;
   const always = rewards.filter(r => !r.choice);
   const choice = rewards.filter(r => r.choice);
   return html`${always.length ? block(always) : ''}${choice.length
     ? html`<h3>Choose 1 <span class="count">${choice.length}</span></h3>${block(choice)}` : ''}`;
 }
 
-// A fields table: [label, value] rows.
-const fieldsTable = rows => html`<dl class="fields">${rows.map(([label, value]) => html`<dt>${label}</dt><dd>${value}</dd>`)}
-  </dl>`;
+// A fields table under its "Data" heading: [label, value] rows.
+// Nothing when there are no rows (a card back: all its page shows of it is its name and image).
+const fieldsTable = rows => !rows.length ? '' : html`<section class="data">${heading2('Data')}<dl class="fields">${rows.map(([label, value]) => html`<dt>${label}</dt><dd>${value}</dd>`)}
+  </dl></section>`;
+
+// The "Found in" row of a record's fields table: the products it comes in, a line each, as name, type and wave
+// ("Twin Shadows · Expansion · Wave 1"), with how many copies it has of it when more than one; hovering a product's
+// link peeks at its tile, as it shows in a grid (peek.js). Nothing when it's in none. counted: the record the
+// products' copies are counted for (a mission's missions row).
+function foundInRow(sources, counted, db) {
+  if (!sources.length) return [];
+  return [['Found in', html`<ul class="field-list">${sources.map(source => {
+    const copies = db.copies.get(source)?.get(counted);
+    return html`<li><a href="${href(source)}" data-peek-tile>${title(source)}</a> <span class="none">· ${subtitle(source, db)}</span>${
+      copies > 1 ? html` <span class="copies">×${copies}</span>` : ''}<template>${tile(source, db, copies)}</template></li>`;
+  })}</ul>`]];
+}
 
 // The products a record comes in, each with how many copies it has of it, when more than one.
-const foundIn = (ref, sources, db) =>
-  section('Found in', sources.length, grid(sources, db, undefined, source => db.copies.get(source)?.get(ref)));
+// A link to a record in a fields table, peeking at its tile on hover (peek.js: the <template> beside it).
+const peekLink = (ref, db) => html`<a href="${href(ref)}" data-peek-tile>${title(ref)}</a><template>${tile(ref, db)}</template>`;
 
-// A child's parent: a hero class card's hero, a hero side mission's ("For hero"), an epilogue's mission.
-const parentSection = ({rel, ref}, db) => section(rel.label ?? TYPE[rel.parent].singular, null, grid([ref], db));
+// Records as a fields table value, a line each, their links peeking at their tiles (a mission's epilogues).
+const refList = (refs, db) => html`<ul class="field-list">${refs.map(ref => html`<li>${peekLink(ref, db)}</li>`)}</ul>`;
+
+// A child's parent: a hero class card's hero, a hero side mission's ("For hero"), an epilogue's mission. None for a
+// parent whose FKS entry has `section: false` (an agenda card's deck, an Imperial class card's class, an epilogue's
+// mission, a hero side mission's hero).
+const parentSection = ({rel, ref}, db) => rel.section === false ? ''
+  : section(rel.label ?? TYPE[rel.parent].singular, null, grid([ref], db));
 
 // Record links, a section per relation as read from this end: "Figure of" on a miniature, "Miniatures" on what it
 // stands for, "Required by" on a product.
 // Records whose pages are under the linked ones (relations.js UNDER: a deployment card's forms) link under this one.
-function linkSections(ref, db) {
-  const linkOf = other => UNDER[other.type] && (db.links.get(other) ?? [])
-    .some(link => link.relation === UNDER[other.type] && link.ref === ref) ? childHref(ref, other) : href(other);
-  return Object.entries(LINK_RELATIONS).flatMap(([relation, heading]) => {
+// keep: which relations to show (the page's own sections, or those beside its image: BESIDE, types.js related).
+function linkSections(ref, db, keep) {
+  const linkOf = linkUnder(ref, db);
+  return Object.entries(LINK_RELATIONS).filter(([relation]) => keep(relation)).flatMap(([relation, heading]) => {
     const refs = (db.links.get(ref) ?? []).filter(link => link.relation === relation).map(link => link.ref);
-    return refs.length ? [section(heading, refs.length, grouped(refs, db, undefined, linkOf))] : [];
+    return refs.length ? [section(heading, refs.length, UNGROUPED.has(relation) ? grid(refs, db, undefined, undefined, linkOf)
+      : grouped(refs, db, undefined, linkOf))] : [];
   });
 }
+
+// A linked record's address from this record's page: under it when its page is (relations.js UNDER), else its own.
+const linkUnder = (ref, db) => other => UNDER[other.type] && (db.links.get(other) ?? [])
+  .some(link => link.relation === UNDER[other.type] && link.ref === ref) ? childHref(ref, other) : href(other);
+
+// A record's Related row under its fields table (types.js related: a hero's side mission, miniature, companion and
+// Skirmish version): a tile each, as many to a row as the column takes, each with what it is above it. Records of a
+// child type or a record-link relation, in the order `related` lists them.
+function relatedRow(ref, db, related) {
+  const tiles = Object.entries(related).flatMap(([key, label]) => {
+    const children = (db.children.get(ref) ?? []).find(({rel}) => rel.child === key);
+    const refs = children ? children.refs
+      : (db.links.get(ref) ?? []).filter(link => link.relation === key).map(link => link.ref);
+    const linkOf = children?.rel.nested ? child => childHref(ref, child) : linkUnder(ref, db);
+    return sorted(refs).map(other => html`<div class="related-tile">
+      <span class="relation">${label}</span>${tile(other, db, null, linkOf(other))}</div>`);
+  });
+  return tiles.length ? section('Related', tiles.length, html`<div class="related-row">${tiles}</div>`) : '';
+}
+
+// A record's children under its fields table in a column per value of one of their fields (types.js columns: an
+// Imperial class's cards by XP), records without a value first; each column labelled, its tiles in the type's order.
+function childColumns(ref, db, {child, field, label, none}) {
+  const group = (db.children.get(ref) ?? []).find(({rel}) => rel.child === child);
+  if (!group) return '';
+  const linkOf = group.rel.nested ? other => childHref(ref, other) : href;
+  const values = [...new Set(group.refs.map(other => other.record[field] ?? null))]
+    .sort((a, b) => (a !== null) - (b !== null) || a - b);
+  return section(TYPE[child].label, group.refs.length, html`<div class="value-columns">${values.map(value => html`
+    <div class="value-column"><span class="relation">${value === null ? none : `${label} ${value}`}</span>${
+      sorted(group.refs.filter(other => (other.record[field] ?? null) === value))
+        .map(other => tile(other, db, null, linkOf(other)))}</div>`)}</div>`);
+}
+
+// Relations whose records show in one grid, not grouped by type: a miniature's Figure of (its hero and its deployment
+// cards together), and Companions (all companion cards).
+const UNGROUPED = new Set(['figure-of', 'has-companion']);
+// Relations shown under the fields table, beside the page's image, in smaller tiles: companions, either way.
+const BESIDE = new Set(['companion-of', 'has-companion']);
+
+// A page's fields table with what goes under it, beside the image: one over the other when there's more than it.
+const column = items => {
+  const shown = items.filter(Boolean);
+  return shown.length > 1 ? html`<div class="stack">${shown}</div>` : shown;
+};
 
 // A map's hidden sections and its whole map (its image and every hidden section in one frame, the later on top): each
 // a section that stays closed until the viewer opens it. Nothing for other records.
@@ -633,13 +724,31 @@ function mapSections(ref, db) {
   return out;
 }
 
-function backSection(ref, db) {
-  const back = db.back.get(ref);
-  const via = back.via ? ` (on its ${TYPE[back.via.type].label.toLowerCase()})` : '';
-  return section(`Card back${via}`, null, grid([back.ref], db));
+// A card's image with the other side behind it, and a button that turns it over (flip.js): its card back, or a hero's
+// wounded side behind its healthy one. Each side links to its large image.
+function flipCard(name, front, back) {
+  const face = (side, cls, hidden) => html`<a class="flip-face ${cls}" href="${imageUrl('large', side.image)}"
+    ${hidden ? 'inert' : ''}><img src="${imageUrl('large', side.image)}" alt="${name} (${side.label.toLowerCase()})"></a>`;
+  return html`<figure class="flip" data-flip>
+    <div class="flip-card">${face(front, 'flip-front', false)}${face(back, 'flip-back', true)}</div>
+    <figcaption><button type="button" class="flip-toggle" data-flip-toggle aria-pressed="false"
+      data-front="Show ${back.label.toLowerCase()}" data-back="Show ${front.label.toLowerCase()}">
+      <span aria-hidden="true">↻</span> <span data-flip-label>Show ${back.label.toLowerCase()}</span></button>
+    </figcaption>
+  </figure>`;
 }
 
-const SHOW_TILES = html`<label class="tile-toggle"><input type="checkbox" data-show-tiles> Show tile names</label>`;
+// The back a card's image turns over to: its own card back, not one it shows for its cards (a hero's: its class
+// cards turn over to it). Card backs have no pages: a card's is seen by turning it over.
+const ownBack = (ref, db) => {
+  const back = db.back.get(ref);
+  return back && !back.via ? back.ref.record.image : null;
+};
+
+
+// A record's name in its page's heading and in crumbs: an elite deployment card's says so, as it shares its name with
+// the regular card ("Clawdite Shapeshifter (Elite)").
+const pageName = ref => ref.type === 'deployment-cards' && ref.record.elite ? `${title(ref)} (Elite)` : title(ref);
 
 // The crumbs of a record's page, and the navigation link to mark:
 // - a child under its parent's address (a deck's agenda card, a deployment card's form card): the parent's list and
@@ -652,7 +761,7 @@ const SHOW_TILES = html`<label class="tile-toggle"><input type="checkbox" data-s
 function crumbs(ref, under, db) {
   const t = TYPE[ref.type];
   const list = type => html`<a href="#/${type}">${TYPE[type].label}</a>`;
-  const page = parent => html`${list(parent.type)} › <a href="${href(parent)}">${title(parent)}</a>`;
+  const page = parent => html`${list(parent.type)} › <a href="${href(parent)}">${pageName(parent)}</a>`;
   const parent = db.parent.get(ref);
   if (under) return {nav: under.type, html: page(under)};
   if (parent?.rel.nested) return {nav: ref.type, html: html`${list(parent.rel.parent)} › ${list(ref.type)}`};
@@ -663,59 +772,64 @@ function crumbs(ref, under, db) {
   return {nav: home, html: list(home)};
 }
 
-// under: the parent whose address the page is under (app.js), or null.
+// under: the parent whose address the page is under (app.js), or null. Maps have no pages of their own: each is shown
+// on its missions' pages (views.mission).
 export function detail(db, ref, under = null) {
   const t = TYPE[ref.type];
-  const name = title(ref);
-  const layout = db.layout.get(ref);
-  const images = t.images.filter(f => ref.record[f]).map(f => html`
+  const name = pageName(ref);
+  const back = t.images.length === 1 && ref.record[t.images[0]] ? ownBack(ref, db) : null;
+  const flips = ref.type === 'heroes' && ref.record.healthy && ref.record.wounded;
+  const images = flips ? [flipCard(name, {label: 'Healthy', image: ref.record.healthy},
+    {label: 'Wounded', image: ref.record.wounded})]
+    : back ? [flipCard(name, {label: 'Front', image: ref.record[t.images[0]]}, {label: 'Back', image: back})]
+    : t.images.filter(f => ref.record[f]).map(f => html`
     <figure>
-      ${layout ? mapFrame(ref, db, [null], ref.record[f], name) : html`<a href="${imageUrl('large', ref.record[f])}">
+      <a href="${imageUrl('large', ref.record[f])}">
         <img src="${imageUrl('large', ref.record[f])}" alt="${name}${t.images.length > 1 ? ` (${f})` : ''}">
-      </a>`}
+      </a>
       ${t.images.length > 1 ? html`<figcaption>${fieldLabel(f)}</figcaption>` : ''}
     </figure>`);
-  if (layout?.some(row => row.placements.length)) images.push(SHOW_TILES);
+  // A record without images of its own shows its cards' back instead (types.js pageBack: an Imperial class, an agenda
+  // deck).
+  const pageBack = t.pageBack && !images.length ? db.back.get(ref)?.ref.record.image : null;
+  if (pageBack) images.push(html`<figure><a href="${imageUrl('large', pageBack)}">
+    <img src="${imageUrl('large', pageBack)}" alt="${name} (card back)"></a></figure>`);
+  // Or its type's icon (types.js pageIcon: a miniature's affiliation emblem).
+  if (t.pageIcon && !images.length) images.push(html`<figure><span class="page-icon">${iconOf(ref)}</span></figure>`);
 
   const related = [];
-  // Next to the image instead of the fields table (types.js aside): the tile list, then the products and the children
-  // side by side.
-  const aside = t.aside ? [] : null;
-  const columns = t.aside ? [] : null;
-  if (aside && layout) aside.push(section('Tiles', layout.length, layoutText(layout, db)));
   const contents = db.contents.get(ref);
   if (contents) {
     const refs = [...contents.values()].flat();
     const copies = db.copies.get(ref);
     related.push(section('Contents', refs.length, grouped(refs, db, content => copies?.get(content))));
   }
-  const sources = db.sources(ref);
-  if (sources.length) (columns ?? related).push(foundIn(ref, sources, db));
+  // Its products: its own, or its parent's (an agenda card's deck's, a hero class card's hero's).
   const parent = db.parent.get(ref);
+  const own = db.sources(ref);
+  const sources = own.length || !parent ? own : db.sources(parent.ref);
   if (parent) related.push(parentSection(parent, db));
+  // What its Related row under the fields table shows (types.js related) has no section of its own.
+  const inRow = new Set([...Object.keys(t.related ?? {}), ...t.columns ? [t.columns.child] : []]);
   for (const {rel, refs} of db.children.get(ref) ?? []) {
+    if (inRow.has(rel.child)) continue;
     const linkOf = rel.nested ? child => childHref(ref, child) : href;
-    (columns ?? related).push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length,
+    related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length,
       grid(refs, db, undefined, undefined, linkOf)));
   }
-  related.push(...linkSections(ref, db), ...mapSections(ref, db));
-  // A tile's maps, under the side each uses (a map that uses both sides is under each).
+  related.push(...linkSections(ref, db, relation => !BESIDE.has(relation) && !inRow.has(relation)));
+  // A tile's maps, under the side each uses (a map that uses both sides is under each); each links to its mission.
   const usedIn = db.usedIn.get(ref);
   if (usedIn) {
     const sides = ['A', 'B'].filter(side => usedIn[side]);
-    related.push(section('Used in', new Set(sides.flatMap(side => usedIn[side])).size, sides.map(side => html`
+    related.push(section('Used in', new Set(sides.flatMap(side => usedIn[side])).size, sideColumns(sides.map(side => html`
       <h3>Side ${side} <span class="count">${usedIn[side].length}</span></h3>
-      ${grid(usedIn[side], db)}`)));
+      ${grid(usedIn[side], db)}`))));
   }
   const matches = db.matches.get(ref);
   if (matches) related.push(section('Interchangeable with', matches.length, matchList(matches, db)));
   const rewardOf = db.rewardOf.get(ref);
   if (rewardOf) related.push(section('Reward from', rewardOf.length, grouped(rewardOf, db)));
-  if (db.back.has(ref)) related.push(backSection(ref, db));
-  const backOf = db.backOf.get(ref);
-  if (backOf) related.push(section('Back of', backOf.length, grouped(backOf, db)));
-  // Last: a map's tiles' images, by product (beside the image, a map's aside lists them by name).
-  if (layout) related.push(section(aside ? 'Tile images' : 'Tiles', layout.length, layoutList(layout, db)));
 
   const trail = crumbs(ref, under, db);
   return {
@@ -724,48 +838,66 @@ export function detail(db, ref, under = null) {
     body: html`
       <p class="crumbs">${trail.html}</p>
       <h1>${name}</h1>
-      <div class="detail">
+      <div class="detail${t.sideBySide ? ' side-by-side' : ''}">
         ${images.length ? html`<div class="images">${images}</div>` : ''}
-        ${aside ? html`<div class="aside">${aside}${columns.length ? html`<div class="aside-columns">${columns}</div>` : ''}</div>` : fieldsTable(Object.entries(ref.record).map(
-          ([field, value]) => [fieldLabel(field), fieldValue(ref, field, value, db)]))}
+        ${column([fieldsTable([...fieldRows(ref, db), ...foundInRow(sources, ref, db)]),
+          ...linkSections(ref, db, relation => BESIDE.has(relation) && !inRow.has(relation)),
+          t.related ? relatedRow(ref, db, t.related) : '',
+          t.columns ? childColumns(ref, db, t.columns) : ''])}
       </div>
       ${related}`,
   };
 }
 
-// A mission's page, one for every kind: its card (none for a raid or a cardless story mission) and fields, its type
-// (the collection) first and its location and map last; its products, the hero or agenda deck it's for, its rewards and
-// epilogues; then its map: the image with its tiles, beside it the tile list and the map's other missions, then the
-// map's hidden sections, whole map and tile images; last, the card back. `via` is the page it's reached through:
-// 'missions' (crumbs: Missions), or 'agenda-cards' for an agenda mission reached as an agenda card, with its card's
-// crumbs: under its deck when `under` it (a deck page's link), else the agenda cards list (crumbs).
+// A mission's page, one for every kind: its card (none for a raid or a cardless story mission; it turns over to its
+// back) and, beside it, its map's tile list, its fields and its rewards, one over the other: its type (the collection)
+// first, then the card's, its location, (a skirmish mission's) map, the map's other missions, epilogues and products;
+// then its map (named only for a skirmish mission): the image with its tiles, then the map's hidden sections, whole
+// map and tile images; then the hero it's for. `via` is the page it's reached through: 'missions' (crumbs: Missions),
+// or 'agenda-cards' for an agenda mission reached as an agenda card, with its card's crumbs: under its deck when
+// `under` it (a deck page's link), else the agenda cards list (crumbs).
 export function mission(db, row, via, under = null) {
   const card = row.card;
   const name = title(row);
   const map = db.parent.get(row)?.ref;
   const image = card.record.image;
+  const back = image ? ownBack(card, db) : null;  // the card turns over to it
+  // Only a skirmish map has a name of its own; any other is named after its missions.
+  const mapName = map && card.type === 'skirmish-missions' ? title(map) : null;
+  // The map's other missions: a skirmish map's other scenario, a campaign map's other mission.
+  const others = (map && db.children.get(map) || []).filter(({rel}) => rel.child === 'missions')
+    .flatMap(({refs}) => refs).filter(ref => ref !== row);
   const fields = [
     ['Type', kindLabel(card.type, true)],
-    ...Object.entries(card.record).map(([field, value]) => [fieldLabel(field), fieldValue(card, field, value, db)]),
+    ...fieldRows(card, db),
     ...row.record.location == null ? [] : [['Location', row.record.location]],
-    ['Map', map ? html`<a href="${href(map)}">${title(map)}</a>` : html`<span class="none">—</span>`],
+    ...mapName ? [['Map', mapName]] : [],
+    ...others.length ? [['Also on this map', refList(others, db)]] : [],
+    // Its epilogues (only here: no section of their own).
+    ...(db.children.get(row) ?? []).map(({rel, refs}) => [rel.childrenLabel ?? TYPE[rel.child].label, refList(refs, db)]),
+    ...foundInRow(db.sources(card), row, db),
   ];
 
+  // Its map first, with its hidden sections, whole map and tile images.
   const related = [];
-  const sources = db.sources(card);
-  if (sources.length) related.push(foundIn(row, sources, db));
-  const parent = db.parent.get(card);
-  if (parent) related.push(parentSection(parent, db));
-  const rewards = db.rewards.get(card);
-  if (rewards) related.push(section('Rewards', rewards.length, rewardList(rewards, db)));
-  for (const {rel, refs} of [...db.children.get(card) ?? [], ...db.children.get(row) ?? []]) {
-    related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
-  }
-  related.push(...linkSections(card, db));
-  if (map) related.push(...missionMap(map, row, db));
-  if (db.back.has(card)) related.push(backSection(card, db));
+  if (map) related.push(...missionMap(map, mapName, db));
   const layout = map && db.layout.get(map);
   if (layout) related.push(closed('Tile images', layout.length, layoutList(layout, db)));
+  const parent = db.parent.get(card);
+  if (parent) related.push(parentSection(parent, db));
+  for (const {rel, refs} of db.children.get(card) ?? []) {
+    related.push(section(rel.childrenLabel ?? TYPE[rel.child].label, refs.length, grid(refs, db)));
+  }
+  related.push(...linkSections(card, db, relation => !BESIDE.has(relation)));
+  // Beside the card, one over the other: the map's tiles, the fields table, the rewards and companions (smaller
+  // tiles).
+  const rewards = db.rewards.get(card);
+  const beside = column([
+    layout ? section('Tiles', layout.length, layoutText(layout, db)) : '',
+    fieldsTable(fields),
+    rewards ? section('Rewards', rewards.length, rewardList(rewards, db)) : '',
+    ...linkSections(card, db, relation => BESIDE.has(relation)),
+  ]);
 
   const trail = crumbs(via === 'missions' ? row : card, under, db);
   return {
@@ -775,33 +907,26 @@ export function mission(db, row, via, under = null) {
       <p class="crumbs">${trail.html}</p>
       <h1>${name}</h1>
       <div class="detail">
-        ${image ? html`<div class="images"><figure><a href="${imageUrl('large', image)}">
-          <img src="${imageUrl('large', image)}" alt="${name}"></a></figure></div>` : ''}
-        ${fieldsTable(fields)}
+        ${image ? html`<div class="images">${back ? flipCard(name, {label: 'Front', image}, {label: 'Back', image: back})
+          : html`<figure><a href="${imageUrl('large', image)}">
+          <img src="${imageUrl('large', image)}" alt="${name}"></a></figure>`}</div>` : ''}
+        ${beside}
       </div>
       ${related}`,
   };
 }
 
-// A mission's map: its image with a box per tile, beside it its tile list and the map's other missions (a skirmish
-// map's other scenario, a campaign map's other mission); then its hidden sections and whole map.
-function missionMap(map, row, db) {
+// A mission's map: its image with a box per tile, the page's width; then its hidden sections and whole map. Its tile
+// list and other missions are at the top of the page, with the mission's fields.
+function missionMap(map, name, db) {
   const layout = db.layout.get(map) ?? [];
-  const others = (db.children.get(map) ?? []).filter(({rel}) => rel.child === 'missions')
-    .flatMap(({refs}) => refs).filter(ref => ref !== row);
-  const aside = [
-    layout.length ? section('Tiles', layout.length, layoutText(layout, db)) : '',
-    others.length ? section('Also on this map', others.length, grid(others, db)) : '',
-  ];
   return [html`
     <section class="related">
-      <h2>Map: <a href="${href(map)}">${title(map)}</a></h2>
-      <div class="detail">
+      <h2>Map${name ? `: ${name}` : ''}</h2>
+      <div class="detail wide">
         <div class="images">
           <figure>${mapFrame(map, db, [null], map.record.image, title(map))}</figure>
-          ${layout.some(r => r.placements.length) ? SHOW_TILES : ''}
         </div>
-        <div class="aside">${aside}</div>
       </div>
     </section>`, ...mapSections(map, db)];
 }

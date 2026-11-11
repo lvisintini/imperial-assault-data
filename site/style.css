@@ -191,10 +191,11 @@ input[type="search"] {
   .filters { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; }
 }
 
-/* The hover peek (peek.js): a large image beside the tile, never in the pointer's way. */
+/* The hover peek (peek.js): a large image beside the tile, or a record's tile beside a link to it, never in the
+   pointer's way; above the navigation (z-index 20), so a link near the top isn't hidden under it. */
 .peek {
   position: fixed;
-  z-index: 10;
+  z-index: 30;
   padding: 6px;
   pointer-events: none;
   background: var(--surface);
@@ -202,7 +203,10 @@ input[type="search"] {
   border-radius: var(--radius);
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
 }
-.peek[hidden] { display: none; }
+.peek[hidden], .peek [hidden] { display: none; }
+/* A link's tile: the tile itself, at a grid column's width, with the peek's shadow. */
+.peek.peek-card { padding: 0; background: none; border: none; }
+.peek-card .tile { width: 180px; box-sizing: border-box; }
 .peek img {
   display: block;
   width: 340px;
@@ -290,6 +294,7 @@ main {
   border-radius: var(--radius);
 }
 .tile:hover, .tile:focus-visible { border-color: var(--accent); }
+div.tile:hover { border-color: var(--border); }  /* not a link (a mission's credits reward) */
 
 .thumb {
   display: flex;
@@ -304,15 +309,19 @@ main {
 .thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .no-image { color: var(--muted); font-size: 0.8rem; }
 .thumb .icon { display: flex; color: var(--muted); }
-.thumb .icon svg { width: 72px; height: 72px; }
-.emblem.rebel { color: #c0392b; }
-.emblem.imperial { color: #5b6b7d; }
-.emblem.mercenary { color: #b7791f; }
-@media (prefers-color-scheme: dark) {
-  .emblem.rebel { color: #ef6a5e; }
-  .emblem.imperial { color: #9fb0c3; }
-  .emblem.mercenary { color: #e0a84a; }
+.thumb .icon svg, .thumb .icon img { width: 72px; height: 72px; object-fit: contain; }
+/* A page's icon where its image would be (types.js pageIcon: a miniature's affiliation emblem). */
+.page-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(320px, 100%);
+  aspect-ratio: 1;
+  color: var(--muted);
+  background: var(--thumb-bg);
+  border-radius: var(--radius);
 }
+.page-icon svg, .page-icon img { width: 50%; height: 50%; object-fit: contain; }
 .tile-title { font-weight: 600; font-size: 0.9rem; overflow-wrap: anywhere; }
 .tile-sub { color: var(--muted); font-size: 0.8rem; }
 .copies { color: var(--muted); font-weight: normal; white-space: nowrap; }
@@ -325,20 +334,99 @@ main {
   gap: 24px;
   align-items: start;
 }
-.detail > :only-child { grid-column: 1 / -1; }
+/* A table without images spans the page; images without a table (a hero, a card back) keep their column, so a hero
+   sheet isn't blown up to the page's width. */
+.detail > :only-child:not(.images) { grid-column: 1 / -1; }
+/* A mission's map (views.js missionMap) does take the page's width. */
+.detail.wide > .images { grid-column: 1 / -1; }
+/* Boxes one over the other in a column: a mission's tile list over its fields table. */
+.stack { display: grid; gap: 24px; align-content: start; }
+.stack > .related { margin-top: 0; }
+/* A page's Related row (views.js relatedRow): its tiles share the column's width, each labelled with what it is. */
+.related-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; }
+.related-tile { display: grid; grid-template-rows: auto 1fr; gap: 4px; min-width: 0; }
+.related-tile .tile { height: 100%; box-sizing: border-box; }
+.relation { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+/* A page's children in a column per value (views.js childColumns: an Imperial class's cards by XP), wrapping when narrow. */
+.value-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 8px; align-items: start; }
+.value-column { display: grid; gap: 6px; min-width: 0; }
+/* Tiles beside a page's image (a mission's rewards, companions): smaller, so a few fit across the column. */
+.stack .grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+.stack .thumb { height: 110px; }
+.stack .thumb .icon svg, .stack .thumb .icon img { width: 56px; height: 56px; }
+.stack .related h3 { margin-top: 12px; }
+/* A page's images in the middle of their column, both ways: the column runs the height of the row (the table beside
+   it may be taller) and its images sit at the centre of it. */
+.detail > .images { align-self: stretch; align-content: center; justify-items: center; }
+.detail figure { text-align: center; }
+.detail figure img { margin-inline: auto; }
+
+/* A tile's page (types.js sideBySide): its sides and the fields table in three columns; narrower, the two sides with
+   the table under both; narrower still, one column. */
+.detail.side-by-side { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.detail.side-by-side > .images { display: contents; }
+.detail.side-by-side figure { align-self: center; }
+@media (max-width: 1000px) {
+  .detail.side-by-side { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .detail.side-by-side > .data { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .detail.side-by-side { grid-template-columns: minmax(0, 1fr); }
+}
 
 .images { display: grid; gap: 12px; }
 figure { margin: 0; }
 figure img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); }
 figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
 
+/* A card that turns over to its back, or a hero to its wounded side (flip.js): both sides stacked in one cell, the
+   back turned away, and the card turned half round to show it. */
+.flip { perspective: 1600px; width: fit-content; max-width: 100%; }
+.flip-card {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.flip.flipped .flip-card { transform: rotateY(180deg); }
+.flip-face {
+  grid-area: 1 / 1;
+  display: block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.15);
+}
+.flip-back { transform: rotateY(180deg); }
+.flip figcaption { display: flex; justify-content: center; margin-top: 8px; }
+.flip-toggle {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 4px 12px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.flip-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.flip-toggle span[aria-hidden] { display: inline-block; transition: transform 0.6s; }
+.flip.flipped .flip-toggle span[aria-hidden] { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .flip-card, .flip-toggle span[aria-hidden] { transition: none; }
+}
+
 .hidden-sections { display: grid; gap: 8px; }
-.hidden-sections figure { margin: 0; }
+.hidden-sections figure { margin: 0; text-align: center; }
 .hidden-sections figcaption { font-weight: 600; }
 .hidden-sections .map-frame { margin-top: 8px; }
 
-/* A map image with a box over each tile (tiles.js): the tile's name on hover, or all of them with Show tile names. */
-.map-frame { position: relative; display: block; width: fit-content; max-width: 100%; }
+/* A map image with its own Show tile names toggle under it (views.js mapFrame). */
+.map-view { display: grid; gap: 8px; justify-items: center; }
+/* A map image with a box over each tile (tiles.js): the tile's name on hover, or all of them with Show tile names;
+   in the middle of its column (a mission's map, its hidden sections, its whole map). */
+.map-frame { position: relative; display: block; width: fit-content; max-width: 100%; margin-inline: auto; }
 .map-frame img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); }
 .tile-boxes { position: absolute; inset: 0; pointer-events: none; }
 .tile-box {
@@ -368,10 +456,11 @@ figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
-.aside > .related:first-child { margin-top: 0; }
-.aside .related h2 { font-size: 1.1rem; }
-.aside-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
-.aside-columns .grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+/* A field with a value per line (views.js foundInRow: Found in). */
+.field-list { margin: 0; padding: 0; list-style: none; }
+.side-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.side-columns > div > h3:first-child { margin-top: 0; }
+
 .tile-list {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
@@ -408,7 +497,7 @@ code { font-size: 0.85em; }
 
 @media (max-width: 700px) {
   .detail { grid-template-columns: minmax(0, 1fr); }
-  .aside-columns { grid-template-columns: minmax(0, 1fr); }
+  .side-columns { grid-template-columns: minmax(0, 1fr); }
   .grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
   .thumb { height: 140px; }
   #search { justify-content: stretch; }

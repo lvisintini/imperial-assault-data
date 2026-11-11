@@ -1,6 +1,9 @@
 import {BACK, FKS, JOIN, LAYOUTS, LINKS, MATCHES, MISSIONS, REWARDS, UNDER} from './relations.js';
 import {TYPES} from './types.js';
 
+// The missions' maps (missions.map_id).
+const MAP = FKS.find(rel => rel.child === MISSIONS.table && rel.parent === 'maps');
+
 export async function load() {
   const tables = await Promise.all(TYPES.filter(t => !t.of).map(async ({file}) => {
     const res = await fetch(`data/${file}.json`);
@@ -38,7 +41,6 @@ class Db {
     this.parent = new Map();    // child ref → {rel, ref}
     this.children = new Map();  // parent ref → [{rel, refs}]
     this.back = new Map();      // ref → {ref: card-back ref, via: a child ref when it's its cards' back}
-    this.backOf = new Map();    // card-back ref → refs
     this.mission = new Map();   // mission card ref → its missions row
     this.rewards = new Map();   // mission card ref → [{ref (null for credits), credits, choice}]
     this.rewardOf = new Map();  // reward ref → missions rows
@@ -111,6 +113,9 @@ class Db {
       row.card = card;
       card.row = row;
       this.mission.set(card, row);
+      // A map has no page of its own: its address is its first mission's (views.href).
+      const map = this.get(MAP.parent, row.record[MAP.field]);
+      if (map && !map.row) map.row = row;
     }
     for (const {record} of this.refs[REWARDS.table]) {
       const row = this.get(MISSIONS.table, record[REWARDS.mission]);
@@ -177,6 +182,8 @@ class Db {
         const parent = this.get(rel.parent, child.record[rel.field]);
         if (!parent) continue;
         this.parent.set(child, {rel, ref: parent});
+        // Its parent's name, as a sort key named after the field without its _id (sort.js: a hero class card's 'hero').
+        child.parents = {...child.parents, [rel.field.replace(/_id$/, '')]: parent.record.name};
         const groups = this.children.get(parent) ?? [];
         if (!this.children.has(parent)) this.children.set(parent, groups);
         const group = groups.find(g => g.rel === rel);
@@ -222,6 +229,5 @@ class Db {
 
   #setBack(ref, back, via) {
     this.back.set(ref, {ref: back, via});
-    push(this.backOf, back, ref);
   }
 }
